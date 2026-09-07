@@ -1,0 +1,1538 @@
+setvar strS[1000] = "BG012"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1000] = ""
+label 1
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08D.mp3
+setvar strS[1001] = "CGNG10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HQF.aac
+text @[Furukawa]
+text Good morning.
+text @[Tomoya]
+text Yeah, 'morning...
+if intF[16] == 1
+	goto s1
+fi
+goto 2
+label s1
+text Waking up this early... because I think it'll be fun...?
+text If this girl's able to make me feel like that... she must be amazing.
+label 2
+setvar strS[1001] = "CGNG30"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG30.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HQG.aac
+text @[Furukawa]
+text Umm...
+text Furukawa searches for a topic of conversation.
+text @[Tomoya]
+text Your voice sounds worn out, you know.
+text In an attempt to give her a helping hand, I break the ice.
+setvar strS[1001] = "CGNG14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HQH.aac
+text @[Furukawa]
+text What? Do you really think so...?
+text @[Tomoya]
+text Well, you did do all of that practicing yesterday...
+setvar strS[1001] = "CGNG10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HQI.aac
+text @[Furukawa]
+text Yes, I did practice a lot.
+text @[Tomoya]
+text I hope you get to start practicing plays instead of information sessions after this.
+setvar strS[1001] = "CGNG23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HQJ.aac
+text @[Furukawa]
+text Yes, me too!
+if intF[819] == 1
+	goto s2
+fi
+goto 6
+label s2
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 3
+label s3
+setvar strS[1000] = ""
+label 3
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s4
+fi
+goto 4
+label s4
+setvar strS[1000] = ""
+label 4
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I part with Furukawa, and as I'm heading toward the classroom...
+text Something small dashes past me once again.
+choice Call out to it|Do nothing
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s5
+fi
+goto 5
+label s5
+setvar intF[126] + 1
+if rtf0 != ""
+	setvar rtf1 = "SEEN6424_0_0.scr"
+	setvar rtl1 = "rtl0"
+fi
+if rtf0 == ""
+	setvar rtf0 = "SEEN6424_0_0.scr"
+	setvar rtl0 = "rtl0"
+fi
+jump SEEN1004_0_0.scr
+label rtl0
+if rtf1 == ""
+	setvar rtf0 = ""
+fi
+if rtf1 != ""
+	setvar rtf1 = ""
+fi
+goto 6
+label 5
+if intF[1089] == 1
+	goto s6
+fi
+goto 6
+label s6
+text @[Tomoya]
+text (She sure puts a lot of work into something so pointless...)
+text I look at her as she falls out of view.
+label 6
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s7
+fi
+goto 7
+label s7
+setvar strS[1000] = ""
+label 7
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG021B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s8
+fi
+goto 8
+label s8
+setvar strS[1000] = ""
+label 8
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08D.mp3
+text Sunohara still isn't around.
+text He's probably late yet again.
+text I get to my chair and begin to look out the window.
+setvar strS[1000] = "BG021A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s9
+fi
+goto 9
+label s9
+setvar strS[1000] = ""
+label 9
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I stay there doing the same thing even after classes start.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s10
+fi
+goto 10
+label s10
+setvar strS[1000] = ""
+label 10
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG021B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s11
+fi
+goto 11
+label s11
+setvar strS[1000] = ""
+label 11
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Fourth period ends.
+text @[Tomoya]
+text (Guess I'll go...)
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s12
+fi
+goto 12
+label s12
+setvar strS[1000] = ""
+label 12
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGSH10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HQK.aac
+text @[Sunohara]
+text Whoa... Oh, hey, it's you, Okazaki.
+text Just as I leave the classroom, I happen to run into Sunohara.
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HQL.aac
+text @[Sunohara]
+text You going to get lunch?
+text @[Tomoya]
+text Don't follow me.
+sound HQM.aac
+text @[Sunohara]
+text Oh, don't be like that. Wait for me while I put my bag down.
+sound HQN.aac
+text @[Sunohara]
+text I'll get bread from the cafeteria too.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Sunohara enters the classroom.
+text I walk off without waiting for him.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s13
+fi
+goto 13
+label s13
+setvar strS[1000] = ""
+label 13
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 60
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG024"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s14
+fi
+goto 14
+label s14
+setvar strS[1000] = ""
+label 14
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 60
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HQO.aac
+text @[Sunohara]
+text Hey, I told you to wait for me. You're so anti-social, you know?
+text Sunohara ends up in the courtyard, having followed us there.
+setvar strS[1001] = "CGNG25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HQP.aac
+text @[Furukawa]
+text Hello, Sunohara-san.
+text Furukawa welcomes him with a smile.
+setvar strS[1001] = "CGSH10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HQQ.aac
+text @[Sunohara]
+text Aren't you two gonna eat lunch?
+sound HQR.aac
+text @[Furukawa]
+text I'm sorry, we both just finished.
+text @[Tomoya]
+text You're too slow.
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HQS.aac
+text @[Sunohara]
+text The cafeteria was super packed.
+setvar strS[1001] = "CGSH25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HQT.aac
+text @[Sunohara]
+text Well, I guess I'll start eating.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Sunohara plunges his hand inside the paper bag he's holding and pulls a piece of bread out.
+setvar strS[1001] = "CGNG10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HQU.aac
+text @[Furukawa]
+text Oh, please take my seat.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Furukawa gets up as she says this.
+sound HQV.aac
+text @[Furukawa]
+text We'll scoot over, won't we?
+text @[Tomoya]
+text Yeah....
+text After she gets my approval, she makes space by sitting back down closer to me.
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HQW.aac
+text @[Sunohara]
+text Sorry.
+text Sunohara sits down next to Furukawa.
+setvar strS[1001] = "CGSH25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HQX.aac
+text @[Sunohara]
+text Time to eat!
+text Just as he bites into his bread...
+setvar strS[1001] = "CGSH15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HQY.aac
+text @[Sunohara]
+text Hmm?
+text He looks toward the school building and stops chewing.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Ahead of him...
+text Is a female student by herself.
+text A new visitor.
+text She spots us, walks over, and stops directly in front of us.
+sound HQZ.aac
+text @[Female Student]
+text Um, my name is Sugisaka. I'm Nishina-san's friend.
+text Despite the rough stares pointed her way coming from me and Sunohara, she does her best to greet us calmly.
+setvar strS[1001] = "CGSH14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HR0.aac
+text @[Sunohara]
+text Oh, you.
+text Sunohara is the first to stand.
+setvar strS[1001] = "CGNG16Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HR1.aac
+text @[Furukawa]
+text Please wait, Sunohara-san.
+text Furukawa grabs his arm.
+sound HR2.aac
+text @[Furukawa]
+text Please, let me handle this.
+setvar strS[1001] = "CGSH15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HR3.aac
+text @[Sunohara]
+text ...
+sound HR4.aac
+text @[Sunohara]
+text ...Fine, whatever.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Sugisaka. I remember Sunohara saying that name. The culprit behind the threatening letter.
+text Furukawa probably knows that too.
+setvar strS[1001] = "CGNG10Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HR5.aac
+text @[Furukawa]
+text My name is Nagisa Furukawa. I'm a third-year student.
+sound HR6.aac
+text @[Furukawa]
+text What brings you all the way here...?
+sound HR7.aac
+text @[Sugisaka]
+text I came here to talk to you about Nishina-san. Will you please hear me out?
+sound HR8.aac
+text @[Furukawa]
+text Yes, of course. Please go ahead.
+sound HR9.aac
+text @[Sugisaka]
+text I... don't really want this to spread around the campus. Will you promise me to keep it to yourselves?
+sound HRA.aac
+text @[Furukawa]
+text Yes, we promise. This conversation stays here.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text The girl looks at me next.
+text @[Tomoya]
+text Oh, sure. I won't tell anyone. He won't either.
+text I give her my word.
+sound HRB.aac
+text @[Sugisaka]
+text Thank you.
+sound HRC.aac
+text @[Sugisaka]
+text First, I apologize for writing that awful letter. That was something I did on my own.
+sound HRD.aac
+text @[Sugisaka]
+text I thought that we wouldn't be able to form the choral club unless I did something like that...
+sound HRE.aac
+text @[Sugisaka]
+text I'm very sorry.
+setvar strS[1001] = "CGNG10Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HRF.aac
+text @[Furukawa]
+text You don't need to worry one bit.
+text Sunohara's fists are sitting on top of his knees, trembling.
+sound HRG.aac
+text @[Furukawa]
+text Please continue.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HRH.aac
+text @[Sugisaka]
+text ...Okay.
+sound HRI.aac
+text @[Sugisaka]
+text Nishina-san... Rie-chan... is a very talented girl.
+sound HRJ.aac
+text @[Sugisaka]
+text She's musically talented.
+sound HRK.aac
+text @[Sugisaka]
+text She played the violin ever since she was little.
+sound HRL.aac
+text @[Sugisaka]
+text She won lots of contests...
+sound HRM.aac
+text @[Sugisaka]
+text And even got to play in huge halls in front of massive crowds of people.
+sound HRN.aac
+text @[Sugisaka]
+text She looked so majestic... and so beautiful...
+sound HRO.aac
+text @[Sugisaka]
+text She was so cool.
+sound HRP.aac
+text @[Sugisaka]
+text Lots of adults had great hopes for her future.
+sound HRQ.aac
+text @[Sugisaka]
+text She had plans to attend a high school overseas, actually.
+sound HRR.aac
+text @[Sugisaka]
+text That way, she would be able to have even better musical instructors.
+music ~
+sound HRS.aac
+text @[Sugisaka]
+text But just before she could...
+text She looks down, her voice beginning to quiver.
+music BGM01.mp3
+sound HRT.aac
+text @[Sugisaka]
+text Rie-chan... got in an accident...
+text I don't want to hear this. This is going to turn into...
+sound HRU.aac
+text @[Sugisaka]
+text ...And her hands couldn't grip things like they used to be able to.
+text ...The same story... as mine.
+sound HRV.aac
+text @[Sugisaka]
+text She... wasn't able to play the violin any longer...
+sound HRW.aac
+text @[Sugisaka]
+text And couldn't go to that high school out of the country, either...
+sound HRX.aac
+text @[Sugisaka]
+text That's when she came to this school.
+sound HRY.aac
+text @[Sugisaka]
+text Together with me...
+sound HRZ.aac
+text @[Sugisaka]
+text After the accident, Rie-chan seemed so lifeless...
+sound HS0.aac
+text @[Sugisaka]
+text I tried really hard to cheer her up, but nothing worked...
+sound HS1.aac
+text @[Sugisaka]
+text It made me sad too.
+sound HS2.aac
+text @[Furukawa]
+text ...
+sound HS3.aac
+text @[Sugisaka]
+text But then, one day, we met someone wonderful.
+sound HS4.aac
+text @[Sugisaka]
+text Our ancient literature teacher... Koumura-sensei.
+sound HS5.aac
+text @[Sugisaka]
+text Koumura-sensei taught Rie-chan how amazing music can be all over again.
+sound HS6.aac
+text @[Sugisaka]
+text He told her that even if she couldn't play an instrument, she could still make music.
+sound HS7.aac
+text @[Sugisaka]
+text And after he did, he began to sing...
+sound HS8.aac
+text @[Sugisaka]
+text Though his voice was hoarse and he wasn't always on tune... he was singing from the heart...
+sound HS9.aac
+text @[Sugisaka]
+text That song touched Rie-chan...
+sound HSA.aac
+text @[Sugisaka]
+text And she began to sing too.
+sound HSB.aac
+text @[Sugisaka]
+text When she did, she looked like the old, energetic Rie-chan.
+sound HSC.aac
+text @[Sugisaka]
+text After that, she started to want to show as many people as she could how wonderful singing can be.
+sound HSD.aac
+text @[Sugisaka]
+text That's why she wanted to make a choral club, something this school doesn't have.
+sound HSE.aac
+text @[Sugisaka]
+text ...Together with Koumura-sensei.
+sound HSF.aac
+text @[Sugisaka]
+text I feel the same way.
+text She wipes the tears that have begun to well in her eyes... and smiles as she talks.
+text And then...
+sound HSG.aac
+text @[Sugisaka]
+text Please. Don't get in Rie-chan's way.
+text She bows deeply.
+setvar strS[1001] = "CGNG18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HSH.aac
+text @[Furukawa]
+text ...
+text Furukawa... is sitting there, still as can be.
+setvar strS[1001] = "CGSH21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HSI.aac
+text @[Sunohara]
+text Don't listen to her, Furukawa!
+text Sunohara starts to shout.
+sound HSJ.aac
+text @[Sunohara]
+text What kind of coward would use a handicap like that to try to earn someone's sympathy?!
+sound HSK.aac
+text @[Sunohara]
+text ...A handicap like that... You're naive for thinking you could pull that to get us on your side!
+if intF[16] == 0
+	goto s15
+fi
+goto 15
+label s15
+text When he says those words, I realize something.
+text The three of us are alike.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text All three of us had no choice but to abandon something we wanted to do because of bad luck.
+text All three of us were denied our modest little high school dreams.
+text ──"I understand that feeling."
+text I hear Furukawa's words in my head.
+text Us three are closer than I thought.
+text And none of us ever used that bad luck as a shield.
+text Sunohara and I never tried to get back into a club, and turned into the people we are now.
+text And Furukawa is struggling to start all over from scratch after she spent nearly a year fighting her illness before finally beating it.
+text That's why Sunohara can't forgive someone trying to use something similar as a shield.
+text I... feel the same way.
+setvar strS[1001] = "CGSH21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+label 15
+sound HSL.aac
+text @[Sunohara]
+text That kind... of handicap...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Sunohara tosses the half-eaten piece of bread in his hand to the ground.
+text It bounces and rolls toward the feet of the girl in front of us, Sugisaka.
+text Despite all that, she just continues to look down at the ground, not so much as flinching.
+setvar strS[1001] = "CGNG18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HSM.aac
+text @[Furukawa]
+text ...
+setvar strS[1001] = "CGNG16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HSN.aac
+text @[Furukawa]
+text I...
+sound HSO.aac
+text @[Furukawa]
+text I can't say no to that.
+setvar strS[1001] = "CGNG32"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HSP.aac
+text @[Furukawa]
+text In fact... I should be the one asking for forgiveness.
+setvar strS[1001] = "CGNG34"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG34.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HSQ.aac
+text @[Furukawa]
+text I was trying to get Koumura-sensei to be the drama club advisor for my own sake... while all of that was going on, unknown to me.
+text @[Tomoya]
+text Furukawa.
+text @[Tomoya]
+text There's nothing you could've done about that... You didn't know.
+sound HSR.aac
+text @[Furukawa]
+text But now I do know. So...
+sound HSS.aac
+text @[Furukawa]
+text I'll give up.
+text @[Tomoya]
+text Why...?
+setvar strS[1001] = "CGNG16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HST.aac
+text @[Furukawa]
+text If I try to do what I want to do... then Nishina-san's dreams won't be able to come true.
+setvar strS[1001] = "CGNG18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HSU.aac
+text @[Furukawa]
+text I'm going to give up.
+sound HSV.aac
+text @[Sugisaka]
+text Thank you.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text This Sugisaka girl raises her head after thanking Furukawa.
+text And then...
+text She returns to the school building... with a clear expression on her face.
+setvar strS[1001] = "CGSH21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HSW.aac
+text @[Sunohara]
+text You idiot!
+text Sunohara keeps screaming the words over and over, even after we can no longer see her.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Furukawa picks up the piece of bread that's fallen on the ground and gives it back to him.
+sound HSX.aac
+text @[Sunohara]
+text Dammit...
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s16
+fi
+goto 16
+label s16
+setvar strS[1000] = ""
+label 16
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG026"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s17
+fi
+goto 17
+label s17
+setvar strS[1000] = ""
+label 17
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Afterward, we head to the teacher's room and talk to Koumura.
+text Sunohara is already gone. He went off somewhere, still bubbling with rage.
+text I just stand behind Furukawa and listen to her talk.
+sound HSY.aac
+text @[Koumura]
+text Is that... all right?
+setvar strS[1001] = "CGNG32"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HSZ.aac
+text @[Furukawa]
+text Yes. And I was the only one who wanted to create the drama club in the first place.
+sound HT0.aac
+text @[Furukawa]
+text I don't have anyone else who wants to join.
+sound HT1.aac
+text @[Koumura]
+text I... see. Are plays... not popular in this day and age?
+sound HT2.aac
+text @[Furukawa]
+text That may be the case...
+setvar strS[1001] = "CGNG10Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HT3.aac
+text @[Furukawa]
+text But I like them.
+sound HT4.aac
+text @[Koumura]
+text Hmm... I'm sure... you'll have other opportunities.
+setvar strS[1001] = "CGNG10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HT5.aac
+text @[Furukawa]
+text That's all, Koumura-sensei.
+sound HT6.aac
+text @[Furukawa]
+text Please take good care of Nishina-san, Sugisaka-san, and...
+sound HT7.aac
+text @[Furukawa]
+text ...All of the many other choral club members who I haven't met yet.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Having entrusted the future of the choral club to the elderly teacher, we leave the teachers' room.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s18
+fi
+goto 18
+label s18
+setvar strS[1000] = ""
+label 18
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG024Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s19
+fi
+goto 19
+label s19
+setvar strS[1000] = ""
+label 19
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text We don't bother going to the club room... instead heading to the courtyard, bags in hand.
+text All we can do now is go home.
+text @[Tomoya]
+text Isn't there something else we can do...?
+text @[Tomoya]
+text There has to be something...
+setvar strS[1001] = "CGNG32"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HT8.aac
+text @[Furukawa]
+text It's fine, Okazaki-san.
+sound HT9.aac
+text @[Furukawa]
+text I made a promise to Sugisaka-san. That's why I won't try to create a drama club any longer.
+text @[Tomoya]
+text You never promised her that. All you said is that you wouldn't get in the choral club's way.
+setvar strS[1001] = "CGNG16Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HTA.aac
+text @[Furukawa]
+text Okazaki-san.
+text @[Tomoya]
+text What?
+setvar strS[1001] = "CGNG18Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG18Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HTB.aac
+text @[Furukawa]
+text ...
+setvar strS[1001] = "CGNG10Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HTC.aac
+text @[Furukawa]
+text I had a lot of fun.
+text @[Tomoya]
+text Doing what?
+sound HTD.aac
+text @[Furukawa]
+text Working together.
+sound HTE.aac
+text @[Furukawa]
+text We may not have been able to accomplish our goals, but the things we gained were even more important than doing that.
+setvar strS[1001] = "CGNG23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HTF.aac
+text @[Furukawa]
+text I was able to become good friends with you, Okazaki-san.
+sound HTG.aac
+text @[Furukawa]
+text I was able to become friends with Sunohara-san too.
+setvar strS[1001] = "CGNG10Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HTH.aac
+text @[Furukawa]
+text Me, of all people.
+setvar strS[1001] = "CGNG32"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HTI.aac
+text @[Furukawa]
+text Me... an awkward crybaby.
+text @[Tomoya]
+text I guess you're right...
+text @[Tomoya]
+text But you know, Furukawa.
+text @[Tomoya]
+text You've become a lot stronger than you were.
+text @[Tomoya]
+text Compared to back when you were stuck worrying at the bottom of that hill.
+text @[Tomoya]
+text Even if you are awkward or a crybaby...
+text @[Tomoya]
+text You worked hard to get to where you are now.
+text @[Tomoya]
+text You worked hard... even worrying about other peoples' problems like they were your own.
+music ~
+sound HTJ.aac
+text @[Furukawa]
+text Really?
+text @[Tomoya]
+text Yeah. At least, that's how I feel about it.
+setvar strS[1000] = "FGNG02A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s20
+fi
+goto 20
+label s20
+setvar strS[1000] = ""
+label 20
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 98
+music BGM02A.mp3
+sound HTK.aac
+text @[Furukawa]
+text I'm happy to hear that, then.
+sound HTL.aac
+text @[Furukawa]
+text My body... may be weak...
+setvar strS[1000] = "FGNG02B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s21
+fi
+goto 21
+label s21
+setvar strS[1000] = ""
+label 21
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound HTM.aac
+text @[Furukawa]
+text But I've been trying to become someone with strength. Someone who never gives up...
+text Tears suddenly start to drip from the sides of Furukawa's eyes.
+sound HTN.aac
+text @[Furukawa]
+text I'm so happy...
+sound HTO.aac
+text @[Furukawa]
+text I'm so glad...
+text And then...
+setvar strS[1000] = "FGNG02C"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s22
+fi
+goto 22
+label s22
+setvar strS[1000] = ""
+label 22
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text She looks down, puts both hands to her eyes, and starts crying.
+text I place my hand on her head.
+sound HTP.aac
+text @[Furukawa]
+text ...Again?
+if intF[16] == 1
+	goto s23
+fi
+goto 23
+label s23
+goto 24
+label 23
+text @[Tomoya]
+text ...
+choice Stay like this|Embrace her
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s24
+fi
+goto 26
+label s24
+label 24
+text She's like a child... always trying so hard.
+text It's just that her bad luck keeps her from seeing the results she deserves.
+text That's why I want to comfort her like this.
+text @[Tomoya]
+text In that case, you need to keep putting your all into it and moving forward.
+sound HTQ.aac
+text @[Furukawa]
+text Yes... you're right.
+text Furukawa wipes her tears.
+setvar strS[1000] = "BG024Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s25
+fi
+goto 25
+label s25
+setvar strS[1000] = ""
+label 25
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Other fun things will come along.
+text @[Tomoya]
+text And you might still be able to act in plays, anyway.
+setvar strS[1001] = "CGNG33"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG33.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound HTR.aac
+text @[Furukawa]
+text Yes...
+sound HTS.aac
+text @[Furukawa]
+text I'll give it my best!
+text She says the words as if to encourage herself.
+goto 36
+label 26
+if intF[1089] == 1
+	goto s26
+fi
+goto 36
+label s26
+if 0 == 0
+	goto s27
+fi
+goto 27
+label s27
+setvar strS[1000] = "KURO"
+goto 29
+label 27
+if 0 == 1
+	goto s28
+fi
+goto 28
+label s28
+setvar strS[1000] = "SIRO"
+goto 29
+label 28
+setvar strS[1000] = "KURO"
+label 29
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "FGNG02D"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s29
+fi
+goto 30
+label s29
+setvar strS[1000] = ""
+label 30
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 98
+text My body instinctively moves to embrace Furukawa from behind.
+sound HTT.aac
+text @[Furukawa]
+text I wish you wouldn't do that...
+sound HTU.aac
+text @[Furukawa]
+text When you do... it's so comforting that I feel like crying.
+text @[Tomoya]
+text You're already crying.
+sound HTV.aac
+text @[Furukawa]
+text Yes, but I'll cry more...
+text @[Tomoya]
+text That's fine. Something sad happened, so it's okay if you cry.
+sound HTW.aac
+text @[Furukawa]
+text ...
+setvar strS[1000] = "FGNG02E"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s30
+fi
+goto 31
+label s30
+setvar strS[1000] = ""
+label 31
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 55
+text Furukawa continues to cry for a while.
+text Part of me wishes we could stay here like this forever.
+text As I start feeling a need to protect her, I unconsciously place my hand on her head.
+text But honestly, I always wanted to be closer to her like this as I consoled her.
+text This tiny little person supported me... and I wanted to support her.
+text I want her to feel at ease.
+text @[Tomoya]
+text Hey, Furukawa.
+sound HTX.aac
+text @[Furukawa]
+text Yes...
+text @[Tomoya]
+text Once we wake up tomorrow...
+text @[Tomoya]
+text Don't you think it'd be fun if we were a couple?
+text @[Tomoya]
+text Me as your boyfriend, and you as my girlfriend.
+text @[Tomoya]
+text I bet that'll make our time at school a lot of fun.
+text @[Tomoya]
+text Don't you?
+sound HTY.aac
+text @[Furukawa]
+text I don't.
+sound HTZ.aac
+text @[Furukawa]
+text You'll probably get annoyed at me, Okazaki-san. No matter what I do, I fail.
+text @[Tomoya]
+text That's not true.
+sound HU0.aac
+text @[Furukawa]
+text Why do you say that?
+text @[Tomoya]
+text ...Because I love you, Furukawa.
+text I confess my feelings to her.
+text @[Tomoya]
+text So there's no way that something like that could happen.
+setvar strS[1000] = "FGNG02F"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s31
+fi
+goto 32
+label s31
+setvar strS[1000] = ""
+label 32
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 55
+sound HU1.aac
+text @[Furukawa]
+text Is that really true...?
+text @[Tomoya]
+text I'm sure it'll be fun. No, I'll make it fun.
+sound HU2.aac
+text @[Furukawa]
+text No, that's...
+sound HU3.aac
+text @[Furukawa]
+text I don't want you... doing all the work by yourself.
+sound HU4.aac
+text @[Furukawa]
+text I want you... to let me try too.
+text @[Tomoya]
+text Oh...
+sound HU5.aac
+text @[Furukawa]
+text Yes...
+text @[Tomoya]
+text In that case, Furukawa... I'm gonna ask you something, and I want you to tell me "yes."
+sound HU6.aac
+text @[Furukawa]
+text ...
+text @[Tomoya]
+text Furukawa, will you be my girlfriend?
+sound HU7.aac
+text @[Furukawa]
+text ...
+text A few moments pass.
+text She doesn't turn to look at me, nor does she nod...
+text But she does say something quietly.
+if 0 == 0
+	goto s32
+fi
+goto 33
+label s32
+setvar strS[1000] = "KURO"
+goto 35
+label 33
+if 0 == 1
+	goto s33
+fi
+goto 34
+label s33
+setvar strS[1000] = "SIRO"
+goto 35
+label 34
+setvar strS[1000] = "KURO"
+label 35
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text "Yes, please..."
+setvar intF[136] = 1
+label 36
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0

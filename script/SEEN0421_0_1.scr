@@ -1,0 +1,465 @@
+label 52
+setvar strS[1000] = "KURO"
+label 53
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text I end up tagging along.
+text I just stand by, my eyes drinking in the scene as Sunohara plays games (I don't want to play something on someone else's money).
+if intF[635] == 0
+	goto s51
+fi
+goto 54
+label s51
+text Still, it's worthwhile on some level. Doing this has at least helped kill time that would've otherwise been dull.
+goto 61
+label 54
+if intF[635] == 1
+	goto s52
+fi
+goto 61
+label s52
+text As I stand there, I think about going back to Misae-san's room at night.
+if intF[500] == 1
+	if intF[501] == 1
+		goto s53
+	fi
+fi
+goto 57
+label s53
+text @[Tomoya]
+text (Huh. Miyazawa in the afternoon and Misae-san at night...)
+text @[Tomoya]
+text (...It almost feels like I'm walking straight from one woman's room to the next...)
+choice Don't go|Persist and go to Misae-san's room
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s54
+fi
+goto 55
+label s54
+text Yeah. I'll spend tonight with Sunohara like I always do...
+goto 56
+label 55
+if intF[1089] == 1
+	goto s55
+fi
+goto 56
+label s55
+text Yeah. I'll go to Misae-san's room.
+jump SEEN7500_1_0.scr
+label 56
+goto 61
+label 57
+if intF[500] == 0
+	goto s56
+fi
+if intF[501] == 0
+	goto s56
+fi
+goto 61
+label s56
+if intF[213] == 1
+	goto s57
+fi
+goto 60
+label s57
+text @[Tomoya]
+text (Huh. Spending the afternoon with Tomoyo and the evening with Misae-san...)
+text @[Tomoya]
+text (...It almost feels like I'm walking straight from one woman to the next...)
+choice Don't go|Persist and go to Misae-san's room
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s58
+fi
+goto 58
+label s58
+text Yeah. I'll spend tonight with Sunohara like I always do...
+goto 59
+label 58
+if intF[1089] == 1
+	goto s59
+fi
+goto 59
+label s59
+text Yeah. I'll go to Misae-san's room.
+jump SEEN7500_1_0.scr
+label 59
+goto 61
+label 60
+if intF[213] == 0
+	goto s60
+fi
+goto 61
+label s60
+text It's probably far more interesting than spending the evening with Sunohara.
+jump SEEN7500_1_0.scr
+label 61
+goto 68
+label 62
+if intF[213] == 1
+	goto s61
+fi
+goto 68
+label s61
+setvar strS[1000] = "BG021H"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s62
+fi
+goto 63
+label s62
+setvar strS[1000] = ""
+label 63
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGSH25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YE.aac
+text @[Sunohara]
+text Heh, must have gone a little too hard there.
+sound YF.aac
+text @[Sunohara]
+text Six points in one match? Doesn't that basically make me a J-Leaguer?
+text @[Tomoya]
+text Yeah, you're a prodigy. You're more than a J-Leaguer, you're a J-Beefer.
+setvar strS[1001] = "CGSH10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YG.aac
+text @[Sunohara]
+text What's that? It sounds super cool.
+text @[Tomoya]
+text I thought it sounded more delicious than cool.
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YH.aac
+text @[Sunohara]
+text In any case, I'm only giving it half of what I've got.
+text @[Tomoya]
+text I heard you wheezing up a storm during the second half.
+sound YI.aac
+text @[Sunohara]
+text Well, it has been a while since I've moved around.
+if intF[610] == 1
+	goto s63
+fi
+goto 67
+label s63
+label 64
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YJ.aac
+text @[Sunohara]
+text Okay, this is where today really starts to get serious...
+text @[Tomoya]
+text Serious?
+setvar strS[1001] = "CGSH18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YK.aac
+text @[Sunohara]
+text ...Did you forget about our conversation yesterday?
+sound YL.aac
+text @[Sunohara]
+text Yusuke Yoshino said he'd listen to me playing guitar, remember?
+text @[Tomoya]
+text Oh yeah, that's right...
+text @[Tomoya]
+text But you don't own a guitar.
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YM.aac
+text @[Sunohara]
+text No problem. I've already found someone I can borrow one from.
+text I doubt it's a friend... Poor kid.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s64
+fi
+goto 65
+label s64
+setvar strS[1000] = ""
+label 65
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 60
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG046"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s65
+fi
+goto 66
+label s65
+setvar strS[1000] = ""
+label 66
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 60
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08A.mp3
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YN.aac
+text @[Sunohara]
+text Heh, just check out how cool I look.
+text Sunohara comes back with an electric guitar across his shoulder.
+text He even has a mini-amp attached to his strap so that people can hear him even if he's outside.
+text @[Tomoya]
+text But even if you do show up with a guitar... it'll be obvious that you can't play.
+sound YO.aac
+text @[Sunohara]
+text That's where you're wrong... The guy who owns this showed me a little trick.
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YP.aac
+text @[Sunohara]
+text He said that even an amateur like me could pull it off.
+text @[Tomoya]
+text Huh, really? Show me, then.
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YQ.aac
+text @[Sunohara]
+text Sure. Just one second...
+text Sunohara flips the switch and tests the sound on the amp.
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YR.aac
+text @[Sunohara]
+text Here goes...
+text @[Tomoya]
+text Uh-huh.
+setvar strS[1001] = "CGSH17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YS.aac
+text @[Sunohara]
+text Secret technique... Guitar Skiratch!!
+text Sunohara presses his pick against the guitar's strings, then slides it up toward the neck.
+text *SKREEEEE*
+setvar strS[1001] = "CGSH25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YT.aac
+text @[Sunohara]
+text What do you think? I sound just like a real guitar player, right?
+text @[Tomoya]
+text Well, a little, but... I wouldn't call that playing the guitar.
+text @[Tomoya]
+text Also, it's pronounced "scratch," not "skiratch."
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YU.aac
+text @[Sunohara]
+text Hah... I've planned it all out. As soon as I do this move, you need to say the following:
+text @[Tomoya]
+text What? Why me?
+setvar strS[1001] = "CGSH10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YV.aac
+text @[Sunohara]
+text "...Wow, Sunohara. You're as good as I expected. But you should stop now. Save the rest for your fans."
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YW.aac
+text @[Sunohara]
+text Got that?
+sound YX.aac
+text @[Sunohara]
+text What do you think? It'd totally make me look like someone who's really good but doesn't play for small crowds because it'd be a waste. Right?
+text @[Tomoya]
+text It'd be nice if it did.
+text Would this plan actually work...?
+setvar strS[1001] = "CGSH18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YY.aac
+text @[Sunohara]
+text C'mon, let's go.
+text With that, Sunohara tugs on my hand.
+if rtf0 != ""
+	setvar rtf1 = "SEEN0421_0_1.scr"
+	setvar rtl1 = "rtl9"
+fi
+if rtf0 == ""
+	setvar rtf0 = "SEEN0421_0_1.scr"
+	setvar rtl0 = "rtl9"
+fi
+jump SEEN7100_1_0.scr
+label rtl9
+if rtf1 == ""
+	setvar rtf0 = ""
+fi
+if rtf1 != ""
+	setvar rtf1 = ""
+fi
+goto 68
+label 67
+if intF[610] == 0
+	goto s66
+fi
+goto 68
+label s66
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YZ.aac
+text @[Sunohara]
+text Let's go off and have some fun somewhere.
+jump SEEN0421_0_0.scr 49
+label 68
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s67
+fi
+goto 69
+label s67
+setvar strS[1000] = ""
+label 69
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+jump SEEN0422_0_0.scr

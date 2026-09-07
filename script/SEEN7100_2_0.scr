@@ -1,0 +1,2424 @@
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s15
+fi
+goto 17
+label s15
+setvar strS[1000] = ""
+label 17
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08D.mp3
+sound C.aac
+text As always, I finish up work and get into the passenger's seat of Yoshino-san's truck.
+text I look at the landscape flowing by, at the salarymen and at the students returning home, and stare into space, thinking about my value in society.
+text As always, Yoshino-san is silent.
+text Making up for that, the radio has been running, covering up the vacuum of our silence.
+text That was our usual routine.
+if intF[613] == 0
+	goto s16
+fi
+goto 18
+label s16
+text An intense guitar intro comes forth from the speakers.
+text Then come the drums, along with a shout.
+text It's a voice I remember hearing somewhere.
+text I wonder where...
+text As I think about it, Yoshino-san turns the radio tuner.After some noise, the radio switches to live coverage of a professional baseball game.
+text That's also where I let my thinking come to a halt.
+sound ~
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+label 18
+text From the speakers comes forth an intro I remember hearing before.
+text It's an intense guitar rhythm, as if the artist is just hacking away at the strings.
+text Then come the drums, along with a shout.
+text Aah, that's a coincidence if I ever saw one...
+text I look at Yoshino-san's profile.
+text @[Tomoya]
+text ...
+sound QDW.aac
+text @[Yoshino]
+text ...That's right. You lied to me long ago, didn't you?
+text @[Tomoya]
+text Huh?
+sound QDX.aac
+text @[Yoshino]
+text You said you played the drums.
+text @[Tomoya]
+text O-Oh, yeah...
+sound QDY.aac
+text @[Yoshino]
+text And the other guy'd also never played a guitar before in his life, wasn't that right?
+text @[Tomoya]
+text That's right...
+sound QDZ.aac
+text @[Yoshino]
+text What was that all about?
+text @[Tomoya]
+text ...
+choice Answer honestly|Try and deceive him somehow
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s17
+fi
+goto 19
+label s17
+goto 20
+label 19
+if intF[1089] == 1
+	goto s18
+fi
+goto 20
+label s18
+text @[Tomoya]
+text Well...
+text What can I say to deceive him...?
+text @[Tomoya]
+text It's because it looked like we were going to have to do a band for to school festival.
+text @[Tomoya]
+text That's all.
+text I say as I tamper with the radio tuner.
+text After some noise, the radio switches to live coverage of a professional baseball game.
+text @[Yoshino]
+text ...
+text Yoshino-san doesn't say anything else.
+text I wonder if he was just casually reminded of the past.
+sound ~
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+label 20
+text @[Tomoya]
+text It's probably just as you think.
+sound QE0.aac
+text @[Yoshino]
+text So he was the instigator?
+text @[Tomoya]
+text Yes. His little sister was a fan, apparently...
+sound QE1.aac
+text @[Yoshino]
+text Hm...
+text @[Tomoya]
+text But, I also started to like you, so much that I even bought your CD after that...
+text Just why am I making excuses here...?
+text What did I say that day?
+text Something like me not being a fan, so I don't care how he takes my words?
+text And look at me now... all flustered like this...
+text It's so ironic...
+text Right now, we are professional senpai and kouhai.
+text To have him find out about what happened back then, after having gotten this close to each other...
+sound QE2.aac
+text @[Yoshino]
+text Why, thank you.
+text @[Yoshino]
+text ...
+text ...This is so damn awkward.
+choice Change the channel|Sing
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s19
+fi
+goto 21
+label s19
+text I silently tamper with the radio tuner.
+text After some noise, the radio switches to live coverage of a professional baseball game.
+text @[Yoshino]
+text ...
+text Yoshino-san doesn't say anything else.
+text I wonder if he was just casually reminded of the past.
+sound ~
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+goto 22
+label 21
+if intF[1089] == 1
+	goto s20
+fi
+goto 22
+label s20
+label 22
+text @[Tomoya]
+text Um, I can actually sing the entire song from memory.
+text @[Yoshino]
+text ...
+text I sing along to the melody coming from the radio.
+text I really sing it, with no mistakes at all.
+text Although I did say I could sing it, I was surprised I actually managed it.
+text What started it all was me destroying Sunohara's mixtape...
+text but after that, I got so interested in him that I even bought his CD myself.
+text I think back on when I listened to it every day for a period of time.
+text @[Tomoya]
+text (I really listened to it a lot, huh...)
+text The radio has already gone on to the next song.
+text It's a hip-hip song that sounds like it might be popular.
+text One that Sunohara might have liked.
+text @[Tomoya]
+text To be honest, I'd forgotten about it until now...
+text @[Tomoya]
+text But I kind of feel like listening to it again now.
+text @[Tomoya]
+text Though I don't actually have that many CDs, and I don't normally listen to music all that much, either...
+text @[Tomoya]
+text So I bought it, despite that.
+text @[Yoshino]
+text ...
+sound ~
+text Yoshino-san stops the vehicle.
+text We're back at the station.
+sound QE3.aac
+text @[Yoshino]
+text ...Shall I tell you an old story?
+text @[Tomoya]
+text Huh?
+sound QE4.aac
+text @[Yoshino]
+text It's a story about a certain young rocker.
+text @[Tomoya]
+text Ah, okay.
+text I answer like that without thinking, but...
+text I wonder if this really a story I am supposed to hear.
+text I guess I ended up proving it to him.
+text Just how much I like his song.
+text This is my own responsibility.
+text A responsibility I should have born last year to begin with.
+sound QE5.aac
+text @[Yoshino]
+text Let's go grab some coffee first, then.
+music ~
+sound QE6.aac
+text @[Yoshino]
+text Since it's going to be a long story.
+setvar strS[1000] = "BG035AY"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s21
+fi
+goto 23
+label s21
+setvar strS[1000] = ""
+label 23
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM01.mp3
+sound QE7.aac
+text @[Yoshino]
+text Long ago...
+sound QE8.aac
+text @[Yoshino]
+text There was an ill-mannered boy living in this town.
+sound QE9.aac
+text @[Yoshino]
+text He had no parents, so ever since he was little, he'd only learned bad things... and he only ever did whatever he wanted.
+sound QEA.aac
+text @[Yoshino]
+text Being reckless felt comfortable to him.
+sound QEB.aac
+text @[Yoshino]
+text He had his first encounter with music at the age of thirteen.
+sound QEC.aac
+text @[Yoshino]
+text That was the time of the Band Boom... and all the boy's friends had taken an interest in music.
+sound QED.aac
+text @[Yoshino]
+text So the boy snatched a guitar from someone, and started playing.
+sound QEE.aac
+text @[Yoshino]
+text He copied various European styles.
+sound QEF.aac
+text @[Yoshino]
+text He even started to enjoy singing.
+sound QEG.aac
+text @[Yoshino]
+text He would barge into other people's performances and snatch away the microphone.
+sound QEH.aac
+text @[Yoshino]
+text At that time, too, he still felt comfortable being reckless.
+sound QEI.aac
+text @[Yoshino]
+text However, by then, that was no longer a bad thing.
+sound QEJ.aac
+text @[Yoshino]
+text That's right... that was simply what rock was.
+sound QEK.aac
+text @[Yoshino]
+text Shouting, breaking things, jumping into a sea of people...
+sound QEL.aac
+text @[Yoshino]
+text No matter what he did, all of the boy's recklessnesses would be tolerated there.
+sound QEM.aac
+text @[Yoshino]
+text If he could just live his life holding onto that, he could start living without being talked about behind his back anymore.
+sound QEN.aac
+text @[Yoshino]
+text Of course, he'd occasionally let loose as well.
+sound QEO.aac
+text @[Yoshino]
+text However, the people around him would only laugh whenever he did.
+sound QEP.aac
+text @[Yoshino]
+text Even when he entered high school, the time where everyone thinks solely about entering university, the boy was immersed in music.
+sound QEQ.aac
+text @[Yoshino]
+text I'll make my living off my music. That's what he thought.
+sound QER.aac
+text @[Yoshino]
+text That was the only thing on his mind.
+sound QES.aac
+text @[Yoshino]
+text Because if he did anything else other than music, he would lose his footing in life.
+sound QET.aac
+text @[Yoshino]
+text Even if he himself would never consider himself as having lost his footing... society would still reproach him for having done so.
+sound QEU.aac
+text @[Yoshino]
+text They would think of what he did as wrong, and try to correct him.
+sound QEV.aac
+text @[Yoshino]
+text If he didn't do music, there wouldn't be anyone around him to laugh.
+sound QEW.aac
+text @[Yoshino]
+text That's why, at the end of his second year, the boy had made up his mind.
+if 0 == 0
+	goto s22
+fi
+goto 24
+label s22
+setvar strS[1000] = "KURO"
+goto 26
+label 24
+if 0 == 1
+	goto s23
+fi
+goto 25
+label s23
+setvar strS[1000] = "SIRO"
+goto 26
+label 25
+setvar strS[1000] = "KURO"
+label 26
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound QEX.aac
+text @[Yoshino]
+text At the start of his third year, he had an encounter.
+sound QEY.aac
+text @[Yoshino]
+text It was with a female teacher who had recently started working at the school.
+sound QEZ.aac
+text @[Yoshino]
+text The boy was singing and playing guitar in an empty classroom, not caring what people thought about him, when she walked in like a stray child.
+sound QF0.aac
+text @[Yoshino]
+text She applauded for him, said he was really good.
+sound QF1.aac
+text @[Yoshino]
+text He'd been singing a love song.
+sound QF2.aac
+text @[Yoshino]
+text The lyrics were just embarrassing, but...
+sound QF3.aac
+text @[Yoshino]
+text The woman sincerely understood their meaning.
+sound QF4.aac
+text @[Yoshino]
+text Even after that, the two continued talking about the song.
+sound QF5.aac
+text @[Yoshino]
+text Then people started calling her via the PA, and she finally remembered she'd actually been on her way to her next class.
+sound QF6.aac
+text @[Yoshino]
+text She seemed wise, but she was actually quite clumsy.
+sound QF7.aac
+text @[Yoshino]
+text After that, the boy and the woman talked to each other many times.
+sound QF8.aac
+text @[Yoshino]
+text His female classmates had all laughed at him, saying that there's no way he could make a living off his music.
+sound QF9.aac
+text @[Yoshino]
+text However, she was different.
+sound VYX.aac
+text "...Your dream will come true as long as you keep at it, so don't quit, okay?"
+sound QFA.aac
+text @[Yoshino]
+text She told him, as she held his hands.
+sound QFB.aac
+text @[Yoshino]
+text He'd fallen in love with her.
+sound QFC.aac
+text @[Yoshino]
+text He hadn't had all that much opportunity to talk with her, but once they started talking, their conversations would just keep on going...
+sound QFD.aac
+text @[Yoshino]
+text and even a poor speaker like him was able to talk about a lot of things...
+sound QFE.aac
+text @[Yoshino]
+text That woman brought out the best in him.
+sound QFF.aac
+text @[Yoshino]
+text On the day they parted, this is what he told the female teacher.
+sound QFG.aac
+text @[Yoshino]
+text "I'll definitely go pro and become famous."
+sound QFH.aac
+text @[Yoshino]
+text "So when I do... please go out with me."
+sound QFI.aac
+text @[Yoshino]
+text She agreed without hesitation.
+sound QFJ.aac
+text @[Yoshino]
+text Maybe she thought it was impossible for him to become a professional...
+sound QFK.aac
+text @[Yoshino]
+text But even so, the boy would be fine with that.
+sound QFL.aac
+text @[Yoshino]
+text Because the music he had depended on turned into a goal.
+sound QFM.aac
+text @[Yoshino]
+text And so, believing he would definitely make his living off his music...
+sound QFN.aac
+text @[Yoshino]
+text The boy left this town after he graduated, and went to the capital.
+setvar strS[1000] = "BG035AY"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s24
+fi
+goto 27
+label s24
+setvar strS[1000] = ""
+label 27
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Yoshino]
+text ...
+sound QFO.aac
+text @[Yoshino]
+text ...Am I boring you?
+text @[Tomoya]
+text No, I'd quite like to hear the rest as soon as possible.
+text @[Yoshino]
+text ...
+sound QFP.aac
+text @[Yoshino]
+text ...This isn't a story you can rush, unfortunately.
+text He says, and continues the story.
+if 0 == 0
+	goto s25
+fi
+goto 28
+label s25
+setvar strS[1000] = "KURO"
+goto 30
+label 28
+if 0 == 1
+	goto s26
+fi
+goto 29
+label s26
+setvar strS[1000] = "SIRO"
+goto 30
+label 29
+setvar strS[1000] = "KURO"
+label 30
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound QFQ.aac
+text @[Yoshino]
+text He went to an audition.
+sound QFR.aac
+text @[Yoshino]
+text And although he didn't make the cut... the judges awarded him a special prize, and just like that, he was heading off to his debut.
+sound QFS.aac
+text @[Yoshino]
+text It had been so easy, it was almost anti-climactic.
+sound QFT.aac
+text @[Yoshino]
+text However, it was that moment that his dream had come true.
+sound QFU.aac
+text @[Yoshino]
+text "Take that!" he thought at the people who had rebuked him.
+sound QFV.aac
+text @[Yoshino]
+text "Now I'll be able to live my life, unseparated from music..."
+sound QFW.aac
+text @[Yoshino]
+text Thinking that, the boy felt relieved.
+sound QFX.aac
+text @[Yoshino]
+text After that, his life became frantic.
+sound QFY.aac
+text @[Yoshino]
+text Everything became about his music.
+sound QFZ.aac
+text @[Yoshino]
+text It had always been hard for him to relax and deal with things.
+sound QG0.aac
+text @[Yoshino]
+text That's why he sang what he wanted to sing, with everything he had.
+sound QG1.aac
+text @[Yoshino]
+text At times, he would sing like he was spitting out the lyrics.
+sound QG2.aac
+text @[Yoshino]
+text He would sing in weeping tones.
+sound QG3.aac
+text @[Yoshino]
+text He would even sing ugly things.
+sound QG4.aac
+text @[Yoshino]
+text But it's exactly because they were ugly, that he sang them with that much more vigor.
+sound QG5.aac
+text @[Yoshino]
+text And when he did, it looked beautiful.
+sound QG6.aac
+text @[Yoshino]
+text Living itself started looking vibrant.
+sound QG7.aac
+text @[Yoshino]
+text That's because living itself is the ugliest thing of all...
+sound QG8.aac
+text @[Yoshino]
+text It also gave birth to an incredible amount of strength.
+sound QG9.aac
+text @[Yoshino]
+text The first time he gave a live performance...
+sound QGA.aac
+text @[Yoshino]
+text Or perhaps the first time his records went on sale, and fans all over the country were listening to him all at once...
+sound QGB.aac
+text @[Yoshino]
+text Ever since that day, he gave birth to a strength that enabled people to live strongly...
+sound QGC.aac
+text @[Yoshino]
+text It's what they call "empathy."
+sound QGD.aac
+text @[Yoshino]
+text People empathized with his songs, deriving from them the strength to live.
+sound QGE.aac
+text @[Yoshino]
+text Of course it wouldn't be the sole thing in their lives, but it definitely helped people.
+sound QGF.aac
+text @[Yoshino]
+text He'd experienced that himself firsthand.
+sound QGG.aac
+text @[Yoshino]
+text Until the day he encountered music, he was a good-for-nothing person who would hurt others, and even himself...
+sound QGH.aac
+text @[Yoshino]
+text Someone who hadn't ever been considerate of others...
+sound QGI.aac
+text @[Yoshino]
+text So now, having found his meaning in life, the boy vowed in his heart that this was the role he wanted to fulfill.
+sound QGJ.aac
+text @[Yoshino]
+text However... that was the last time everything would be going well.
+if 1 == 0
+	goto s27
+fi
+goto 31
+label s27
+setvar strS[1000] = "KURO"
+goto 33
+label 31
+if 1 == 1
+	goto s28
+fi
+goto 32
+label s28
+setvar strS[1000] = "SIRO"
+goto 33
+label 32
+setvar strS[1000] = "KURO"
+label 33
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound QGK.aac
+text @[Yoshino]
+text One day, he was approached with a proposal for a TV program.
+sound QGL.aac
+text @[Yoshino]
+text It was to be a documentary about him going around visiting his fans.
+sound QGM.aac
+text @[Yoshino]
+text They weren't just normal fans, either.
+sound QGN.aac
+text @[Yoshino]
+text They were those who were saved by his music... and were still facing adversity even then.
+sound QGO.aac
+text @[Yoshino]
+text Until then, he'd continued to obstinately refuse any request to be on television. However...
+sound QGP.aac
+text @[Yoshino]
+text ...he could sense the director's sincere attitude about the whole thing...
+sound QGQ.aac
+text @[Yoshino]
+text ...and more than anything, he figured it would be best for his future if he interacted with his fans.
+sound QGR.aac
+text @[Yoshino]
+text And thus, filming started.
+sound QGS.aac
+text @[Yoshino]
+text He'd gotten an idea of what it would be like from letters...
+sound QGT.aac
+text @[Yoshino]
+text ...but the scene in front of his eyes was just overwhelming.
+sound QGU.aac
+text @[Yoshino]
+text It was even greater than he had imagined.
+sound QGV.aac
+text @[Yoshino]
+text He met people who had crumbled ─ both their lives and their actual bodies...
+sound QGW.aac
+text @[Yoshino]
+text ...people who were truly using his songs as a crutch, and he felt he was being relied upon.
+sound QGX.aac
+text @[Yoshino]
+text At that time, he realized.
+sound QGY.aac
+text @[Yoshino]
+text That his words... no longer belonged to just him.
+sound QGZ.aac
+text @[Yoshino]
+text However...
+sound QH0.aac
+text @[Yoshino]
+text He truly didn't understand at all.
+sound QH1.aac
+text @[Yoshino]
+text He didn't understand why it was that his songs provided salvation in their hearts in the first place.
+sound QH2.aac
+text @[Yoshino]
+text After that, they would still be looking to him as a crutch.
+sound QH3.aac
+text @[Yoshino]
+text Just how was he supposed to respond to that...?
+sound QH4.aac
+text @[Yoshino]
+text The music he had composed up until then had always been solely for himself.
+sound QH5.aac
+text @[Yoshino]
+text A place where he wouldn't be reproved for doing what he himself wanted. That was all the music world had been for him.
+sound QH6.aac
+text @[Yoshino]
+text He had no memory of ever having sung for someone else.
+sound QH7.aac
+text @[Yoshino]
+text But because of that project, he could no longer remain unaware of it.
+sound QH8.aac
+text @[Yoshino]
+text Those with physical handicaps...
+sound QH9.aac
+text @[Yoshino]
+text Those who live while suffering tremendously because of their parents.
+sound QHA.aac
+text @[Yoshino]
+text Those whose minds were weak, and seemed even now like they were about to break down...
+sound QHB.aac
+text @[Yoshino]
+text And those were just a small part of them...
+sound QHC.aac
+text @[Yoshino]
+text There were thousands, tens of thousands, that he hadn't even met who were also looking to his music for aid...
+sound QHD.aac
+text @[Yoshino]
+text And he was made to realize... that he had to start making music for their sake now.
+sound QHE.aac
+text @[Yoshino]
+text When filming ended, he was asked to sing one of his songs with an acoustic guitar for the ending of the show.
+sound QHF.aac
+text @[Yoshino]
+text But his hands were shaking at that point, and he couldn't play properly.
+sound QHG.aac
+text @[Yoshino]
+text They had to change the program's ending to a scene of him walking, with his CD playing in the background.
+sound QHH.aac
+text @[Yoshino]
+text And then...
+sound QHI.aac
+text @[Yoshino]
+text After filming ended, he became unable to compose music anymore.
+sound QHJ.aac
+text @[Yoshino]
+text He couldn't even sing the songs he'd been singing up until then with a straight face.
+sound QHK.aac
+text @[Yoshino]
+text Now that he knew the truth, he could only ridicule himself for the shallow songs he had written up until then.
+sound QHL.aac
+text @[Yoshino]
+text Reality is something far, far more overwhelming.
+sound QHM.aac
+text @[Yoshino]
+text All he knew was superficial nonsense. At best, he had just been trying to act cool.
+if 0 == 0
+	goto s29
+fi
+goto 34
+label s29
+setvar strS[1000] = "KURO"
+goto 36
+label 34
+if 0 == 1
+	goto s30
+fi
+goto 35
+label s30
+setvar strS[1000] = "SIRO"
+goto 36
+label 35
+setvar strS[1000] = "KURO"
+label 36
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound QHN.aac
+text @[Yoshino]
+text He continued distressing himself over this.
+sound QHO.aac
+text @[Yoshino]
+text He couldn't sing. And he couldn't write songs.
+sound QHP.aac
+text @[Yoshino]
+text The record company told him to take a break for a while.
+sound QHQ.aac
+text @[Yoshino]
+text He'd been frantically recording songs and doing performances ever since he'd made his debut, after all...
+sound QHR.aac
+text @[Yoshino]
+text So it was only natural he was tired.
+sound QHS.aac
+text @[Yoshino]
+text He spent his time in idleness, not even enjoying the rare break from work...
+sound QHT.aac
+text @[Yoshino]
+text About half a year had passed.
+sound QHU.aac
+text @[Yoshino]
+text One of the people he'd met via the program...
+music ~
+sound QHV.aac
+text @[Yoshino]
+text ...committed a crime.
+sound QHW.aac
+text @[Yoshino]
+text A big crime. One that cannot ever be undone.
+music BGM29.mp3
+sound QHX.aac
+text @[Yoshino]
+text A face he recognized... was displayed on TV.
+sound QHY.aac
+text @[Yoshino]
+text He thought it was all his fault.
+sound QHZ.aac
+text @[Yoshino]
+text It was all because he let himself come to a stop.
+sound QI0.aac
+text @[Yoshino]
+text ...He simply had to go on.
+sound QI1.aac
+text @[Yoshino]
+text He had to keep on going, for the sake of those that needed him.
+sound QI2.aac
+text @[Yoshino]
+text Thinking that, he grabbed his guitar...
+sound QI3.aac
+text @[Yoshino]
+text ...and started singing again.
+sound QI4.aac
+text @[Yoshino]
+text It was probably from there... that he started running himself to ruin.
+sound QI5.aac
+text @[Yoshino]
+text He became unable to distinguish what he was singing from reality.
+sound QI6.aac
+text @[Yoshino]
+text It had reached the point that he started living a life of ideals.
+sound QI7.aac
+text @[Yoshino]
+text Fixated on the idea that that was what everyone needed...
+sound QI8.aac
+text @[Yoshino]
+text Even he didn't really understand why he was singing these things.
+sound QI9.aac
+text @[Yoshino]
+text But he shook off his doubts... and continued singing.
+sound QIA.aac
+text @[Yoshino]
+text It was a battle.
+sound QIB.aac
+text @[Yoshino]
+text But as he continued fighting, he continued making enemies.
+sound QIC.aac
+text @[Yoshino]
+text He continued bellowing; he continued verbally assaulting them.
+sound QID.aac
+text @[Yoshino]
+text Toward the enemies he himself was continuing to create...
+sound QIE.aac
+text @[Yoshino]
+text In the end, his ideals and lip service simply didn't stand a chance to them anymore.
+sound QIF.aac
+text @[Yoshino]
+text In order to mow them down, he had no other choice but to strike out at reality itself.
+sound QIG.aac
+text @[Yoshino]
+text Because there was nothing more pitiful than the reality he was facing at that moment.
+sound QIH.aac
+text @[Yoshino]
+text As a result, his songs deviated from ideals, and instead became something degenerate.
+sound QII.aac
+text @[Yoshino]
+text They no longer granted hope or courage, just the bitterness of reality.
+sound QIJ.aac
+text @[Yoshino]
+text He even stopped singing his love songs.
+sound QIK.aac
+text @[Yoshino]
+text They were unsightly.
+sound QIL.aac
+text @[Yoshino]
+text Whenever he was about to sing, he'd get sick to his stomach.
+sound QIM.aac
+text @[Yoshino]
+text All of it was hypocrisy.
+sound QIN.aac
+text @[Yoshino]
+text He was projecting a false image.
+sound QIO.aac
+text @[Yoshino]
+text He couldn't even understand himself anymore.
+sound QIP.aac
+text @[Yoshino]
+text His lyrics became inconsistent.
+sound QIQ.aac
+text @[Yoshino]
+text Once he got to his second line, he'd already contradicted his first.
+sound QIR.aac
+text @[Yoshino]
+text He even sang that if you want to live, then you should die.
+sound QIS.aac
+text @[Yoshino]
+text It was just abnormal.
+sound QIT.aac
+text @[Yoshino]
+text All that was left... was for his pretenses to come falling down.
+sound QIU.aac
+text @[Yoshino]
+text He was supposed to just sing whatever he wanted to sing.
+sound QIV.aac
+text @[Yoshino]
+text It had been hopeless to try to sing just to save other people.
+sound QIW.aac
+text @[Yoshino]
+text It could only end with him breaking down.
+sound QIX.aac
+text @[Yoshino]
+text Maybe he shouldn't have been so weak.
+sound QIY.aac
+text @[Yoshino]
+text No, that's wrong. If he was too strong, that itself would have been hypocrisy.
+sound QIZ.aac
+text @[Yoshino]
+text He felt sick to his stomach...
+sound QJ0.aac
+text @[Yoshino]
+text He was in constant contradiction with himself.
+sound QJ1.aac
+text @[Yoshino]
+text But he also had to cover up those contradictions somehow.
+sound QJ2.aac
+text @[Yoshino]
+text In the midst of his contradictions, he had to pretend as if he hadn't noticed them.
+sound QJ3.aac
+text @[Yoshino]
+text Because he was scared of losing his music.
+sound QJ4.aac
+text @[Yoshino]
+text Music was the only thing he had.
+sound QJ5.aac
+text @[Yoshino]
+text And to protect that, he turned to drugs.
+sound QJ6.aac
+text @[Yoshino]
+text He was already in complete contradiction now.
+sound QJ7.aac
+text @[Yoshino]
+text The music he had depended on so people wouldn't hold him in contempt...
+sound QJ8.aac
+text @[Yoshino]
+text In order to protect that, he started doing something so incredibly contemptable...
+sound QJ9.aac
+text @[Yoshino]
+text But at the time, he didn't even realize that.
+sound QJA.aac
+text @[Yoshino]
+text Because he'd succeeded at masking all of his contradictions to the public.
+sound QJB.aac
+text @[Yoshino]
+text As long as he continued doing drugs, he continued wanting to sing.
+sound QJC.aac
+text @[Yoshino]
+text Even if he couldn't sing properly, he would still record his songs.
+sound QJD.aac
+text @[Yoshino]
+text He'd buy his drugs himself, late at night.
+sound QJE.aac
+text @[Yoshino]
+text Carefree from any suspicions.
+sound QJF.aac
+text @[Yoshino]
+text But he got tracked soon enough.
+sound QJG.aac
+text @[Yoshino]
+text He was tried for his crime, and locked up in prison.
+music ~
+sound QJH.aac
+text @[Yoshino]
+text Before he knew it, he was lying on top of a white hospital bed, being treated for drug dependence.
+sound QJI.aac
+text @[Yoshino]
+text He had his mind and body completely rinsed...
+sound QJJ.aac
+text @[Yoshino]
+text And when he finally left the hospital...
+sound QJK.aac
+text @[Yoshino]
+text He'd lost his place in the world.
+music BGM18B.mp3
+sound QJL.aac
+text @[Yoshino]
+text Just about everyone knew his face.
+sound QJM.aac
+text @[Yoshino]
+text As an insane rocker that failed in trying to found a cult.
+sound QJN.aac
+text @[Yoshino]
+text Everyone was pointing at him, whispering behind his back.
+sound QJO.aac
+text @[Yoshino]
+text It was the destruction of someone who had made a mistake.
+sound QJP.aac
+text @[Yoshino]
+text Just where was he supposed to go to now?
+sound QJQ.aac
+text @[Yoshino]
+text With that tainted body of his.
+sound QJR.aac
+text @[Yoshino]
+text Even if he washed his body, his sin would be stuck on him for the rest of his life.
+sound QJS.aac
+text @[Yoshino]
+text Along with his face that everyone knew.
+sound QJT.aac
+text @[Yoshino]
+text He'd lost music, he didn't have any parents... there was nothing left for him to do.
+sound QJU.aac
+text @[Yoshino]
+text As is the nature of good-for-nothing people like him...
+sound QJV.aac
+text @[Yoshino]
+text ...after losing his sole support in life...
+sound QJW.aac
+text @[Yoshino]
+text ...all that was left was to keep on falling down, without restraint.
+sound QJX.aac
+text @[Yoshino]
+text He started living like a vagrant.
+sound QJY.aac
+text @[Yoshino]
+text He even continued perpetuating his crimes.
+sound QJZ.aac
+text @[Yoshino]
+text It was his only choice.
+sound QK0.aac
+text @[Yoshino]
+text He started thinking that if living itself was really such an ugly thing, then he'd rather lose his life.
+sound QK1.aac
+text @[Yoshino]
+text He spent every day in the depths of the abyss.
+sound QK2.aac
+text @[Yoshino]
+text And amidst a life like that, this is what he wished, just once...
+sound QK3.aac
+text @[Yoshino]
+text "I want to go back to my hometown..."
+sound QK4.aac
+text @[Yoshino]
+text If he could go back to that time he enjoyed most in life, even if for just a second...
+sound QK5.aac
+text @[Yoshino]
+text That's all he wanted...
+sound QK6.aac
+text @[Yoshino]
+text So, solely for that reason...
+sound QK7.aac
+text @[Yoshino]
+text He returned to his old home where he was born and raised.
+setvar strS[1000] = "BG033"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s31
+fi
+goto 37
+label s31
+setvar strS[1000] = ""
+label 37
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QK8.aac
+text @[Yoshino]
+text And there...
+sound QK9.aac
+text @[Yoshino]
+text ...he had a reunion.
+sound QKA.aac
+text @[Yoshino]
+text He stepped down from the bus...
+sound QKB.aac
+text @[Yoshino]
+text ...and as he staggered onward like some sleepwalker, with no possessions of his own... there, at the end of his path...
+sound QKC.aac
+text @[Yoshino]
+text ...was the female teacher from that day.
+sound QKD.aac
+text @[Yoshino]
+text It was a complete coincidence.
+sound QKE.aac
+text @[Yoshino]
+text And to him... it was the worst thing that could have happened.
+sound QKF.aac
+text @[Yoshino]
+text "How cruel is this world...?"
+sound QKG.aac
+text @[Yoshino]
+text "Do you have to go that far to torment me...?"
+sound QKH.aac
+text @[Yoshino]
+text "Right in front of the person I professed my dreams to..."
+sound QKI.aac
+text @[Yoshino]
+text "I committed these crimes, destroyed my dreams... Just why did she have to appear...?"
+sound QKJ.aac
+text @[Yoshino]
+text "Does this town hate me...?"
+sound QKK.aac
+text @[Yoshino]
+text "Is that how heavy my crimes are...?"
+sound QKL.aac
+text @[Yoshino]
+text "That you have to smash my mind to bits like this...?"
+sound QKM.aac
+text @[Yoshino]
+text "Really, I just want to end it all..."
+sound QKN.aac
+text @[Yoshino]
+text That's what he thought.
+sound QKO.aac
+text @[Yoshino]
+text But...
+sound QKP.aac
+text @[Yoshino]
+text That person just continued smiling at him gently...
+sound QKQ.aac
+text @[Yoshino]
+text And she asked him...
+music ~
+sound QKR.aac
+text Are you still continuing your music?
+sound QKS.aac
+text ...Your dream will come true as long as you keep at it, so don't quit, okay?
+sound QKT.aac
+text @[Yoshino]
+text Hearing those words...
+music BGM25B.mp3
+setvar strS[1000] = "FGSB06"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s32
+fi
+goto 38
+label s32
+setvar strS[1000] = ""
+label 38
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 98
+sound QKU.aac
+text @[Yoshino]
+text He cried.
+sound QKV.aac
+text @[Yoshino]
+text The tears continued spilling out one after another... they wouldn't stop...
+sound QKW.aac
+text @[Yoshino]
+text He sobbed, and continued crying like a child.
+sound QKX.aac
+text @[Yoshino]
+text Even now... this town was the same as before...
+sound QKY.aac
+text @[Yoshino]
+text It was the same as when he was still following his dreams...
+sound QKZ.aac
+text @[Yoshino]
+text It was the same as when he was a boy.
+sound QL0.aac
+text @[Yoshino]
+text It was gentle...
+sound QL1.aac
+text @[Yoshino]
+text Things should have just remained like this to begin with...
+sound QL2.aac
+text @[Yoshino]
+text He should have just remained here in this town...
+sound QL3.aac
+text @[Yoshino]
+text He should have just continued staying here, all the while loving her...
+sound QL4.aac
+text @[Yoshino]
+text And he... should have continued singing his love songs, if only just for her...
+sound QL5.aac
+text @[Yoshino]
+text Not for anyone else...
+sound QL6.aac
+text @[Yoshino]
+text But just for the person he loved...
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s33
+fi
+goto 39
+label s33
+setvar strS[1000] = ""
+label 39
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG035AY"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s34
+fi
+goto 40
+label s34
+setvar strS[1000] = ""
+label 40
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text ......
+text Yoshino-san lowers his head.
+text His bangs fall over his face, hiding his expression from me.
+text @[Yoshino]
+text ...
+setvar strS[1001] = "CGYS11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QL7.aac
+text @[Yoshino]
+text ...Hungry.
+text @[Tomoya]
+text Huh?
+setvar strS[1001] = "CGYS16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QL8.aac
+text @[Yoshino]
+text I'm pretty hungry.
+text He says, and looks up.
+text He's the same Yoshino-san as always.
+choice Agree|Ask if there's more
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s35
+fi
+goto 41
+label s35
+text @[Tomoya]
+text I'm pretty hungry too.
+setvar strS[1001] = "CGYS12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QL9.aac
+text @[Yoshino]
+text Let's hurry back, then.
+text @[Tomoya]
+text All right!
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text This person is... probably still singing, even now.
+text For the person... waiting for him at home.
+setvar intF[614] = 1
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+goto 42
+label 41
+if intF[1089] == 1
+	goto s36
+fi
+goto 42
+label s36
+label 42
+text @[Tomoya]
+text After that...
+text @[Tomoya]
+text What happened with the female teacher and the boy after he grew up?
+setvar strS[1001] = "CGYS11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QLA.aac
+text @[Yoshino]
+text Ah...
+sound QLB.aac
+text @[Yoshino]
+text She's continued to stay by his side, even now.
+text That's good, then.
+text This person is... probably still singing, even now.
+text That's what I thought.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s37
+fi
+goto 43
+label s37
+setvar strS[1000] = ""
+label 43
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08D.mp3
+sound C.aac
+sound QLC.aac
+text @[Yoshino]
+text That reminds me, the high school you went to was the prep school at the top of the hill, wasn't it...?
+text As I enter the truck, Yoshino-san asks me as if he just casually remembered.
+text @[Tomoya]
+text Yes.
+sound QLD.aac
+text @[Yoshino]
+text I believe that woman used to teach there, actually...
+text @[Tomoya]
+text Huh? Seriously? Then I've met her?
+sound QLE.aac
+text @[Yoshino]
+text No, probably not... you graduated in the spring of last year, didn't you?
+text @[Tomoya]
+text Yes.
+sound QLF.aac
+text @[Yoshino]
+text I suppose you just missed each other, then. She quit the moment you enrolled.
+text @[Tomoya]
+text Oh...
+text @[Tomoya]
+text Is it all right if I hear her name just in case, though?
+sound QLG.aac
+text @[Yoshino]
+text Hm? Sure...
+sound QLH.aac
+text @[Yoshino]
+text She's called Ibuki. You probably don't know it.
+if intF[29] == 0
+	goto s38
+fi
+goto 44
+label s38
+text @[Tomoya]
+text Yeah... I don't.
+sound QLI.aac
+text @[Yoshino]
+text That's what I thought.
+sound QLJ.aac
+text @[Yoshino]
+text Well, it would be different if you repeated a year or something.
+text @[Tomoya]
+text Huh?
+sound QLK.aac
+text @[Yoshino]
+text What? You actually repeated a year?
+text @[Tomoya]
+text No, not me...
+text @[Tomoya]
+text But my girlfriend did...
+sound QLL.aac
+text @[Yoshino]
+text Wha?
+sound QLM.aac
+text @[Yoshino]
+text But isn't she still in school right now? Even if she's in the third year, shouldn't she be around the same age as you?
+text @[Tomoya]
+text No, she's actually repeated twice now...
+text Though she'd probably get pretty mad if she found out I've been blabbing away her secrets.
+sound QLN.aac
+text @[Yoshino]
+text Seriously...?
+text @[Tomoya]
+text Ibuki... san, was it?
+sound QLO.aac
+text @[Yoshino]
+text Whatever...
+text It seems he regrets having told me everything, believing we wouldn't have any common ground anyway.
+text I guess I'll ask Nagisa once I get back home.
+goto 45
+label 44
+if intF[29] == 1
+	goto s39
+fi
+goto 45
+label s39
+text I'm just about to say I don't know her when I stop myself.
+text Ibuki...
+text Wasn't she that teacher I met at Furukawa Bread?
+text The one that was supposed to be Nagisa's homeroom teacher...
+text @[Tomoya]
+text I know her.
+sound QLP.aac
+text @[Yoshino]
+text What? Don't tell me... you repeated a year?
+text @[Tomoya]
+text No, not me...
+text @[Tomoya]
+text But my girlfriend did...
+sound QLQ.aac
+text @[Yoshino]
+text Wha?
+sound QLR.aac
+text @[Yoshino]
+text But isn't she still in school right now? Even if she's in the third year, shouldn't she be around the same age as you?
+text @[Tomoya]
+text No, she's actually repeated twice now...
+text Though she'd probably get pretty mad if she found out I've been blabbing away her secrets.
+sound QLS.aac
+text @[Yoshino]
+text Seriously...?
+text It seems he regrets having told me everything, believing we wouldn't have any common ground anyway.
+text I'll tell Nagisa once I get back home.
+label 45
+sound ~
+music ~
+if 0 == 0
+	goto s40
+fi
+goto 46
+label s40
+setvar strS[1000] = "KURO"
+goto 48
+label 46
+if 0 == 1
+	goto s41
+fi
+goto 47
+label s41
+setvar strS[1000] = "SIRO"
+goto 48
+label 47
+setvar strS[1000] = "KURO"
+label 48
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG044N1"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s42
+fi
+goto 49
+label s42
+setvar strS[1000] = ""
+label 49
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM19.mp3
+if intF[29] == 0
+	goto s43
+fi
+goto 50
+label s43
+text @[Tomoya]
+text Hey, do you happen to know a teacher called Ibuki?
+text I immediately ask her over dinner.
+setvar strS[1001] = "CGNG23A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QLT.aac
+text @[Nagisa]
+text Ibuki-sensei? I know her quite well.
+text @[Tomoya]
+text Oh, so you do know her!
+text That makes me happy.
+setvar strS[1001] = "CGNG10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QLU.aac
+text @[Nagisa]
+text But why do you know about Ibuki-sensei, Tomoya-kun?
+text @[Tomoya]
+text Listen up. This will blow your mind.
+sound QLV.aac
+text @[Nagisa]
+text My mind's already blown.
+goto 51
+label 50
+if intF[29] == 1
+	goto s44
+fi
+goto 51
+label s44
+text @[Tomoya]
+text So hey, you know Ibuki-sensei, right? I've met her once myself too.
+text I immediately ask her over dinner.
+setvar strS[1001] = "CGNG23A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QLW.aac
+text @[Nagisa]
+text Yes. You've met her too, on the day you practiced for your basketball match.
+sound QLX.aac
+text @[Nagisa]
+text What about Ibuki-sensei?
+text @[Tomoya]
+text Listen up. This will blow your mind.
+label 51
+text @[Tomoya]
+text As a matter of fact, a senpai over at work is Ibuki-sensei's boyfriend.
+setvar strS[1001] = "CGNG14A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG14A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QLY.aac
+text @[Nagisa]
+text Huh! That's a surprise.
+text @[Tomoya]
+text Not just that, but he's also... a former professional musician that used to sell ridiculously well.
+sound QLZ.aac
+text @[Nagisa]
+text That's amazing!
+text @[Tomoya]
+text Yeah, but that senpai... Yoshino-san has also gone through a lot.
+setvar strS[1001] = "CGNG13A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG13A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QM0.aac
+text @[Nagisa]
+text Oh...
+text @[Tomoya]
+text He lost a lot of things, and in the end, lost his sole support in life.
+text @[Tomoya]
+text And so it was Ibuki-sensei that spoke to him kindly when he finally came back to this town...
+text @[Tomoya]
+text ...and became Yoshino-san's new support.
+setvar strS[1001] = "CGNG10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QM1.aac
+text @[Nagisa]
+text Ibuki-sensei really is amazing...
+sound QM2.aac
+text @[Nagisa]
+text She's truly an amazing teacher.
+text @[Tomoya]
+text You're the one who fulfills that role for me, by the way.
+setvar strS[1001] = "CGNG13A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG13A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QM3.aac
+text @[Nagisa]
+text Huh...?
+text @[Tomoya]
+text So you can bet you're about amazing as she is.
+setvar strS[1001] = "CGNG32A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QM4.aac
+text @[Nagisa]
+text Th-Thank you very much.
+text @[Tomoya]
+text No, I should be thanking you.
+bgload KURO.jpg 55
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text After that, I dig up Yoshino-san's CD from my bag, and listen to it with Nagisa.
+setvar strS[1001] = "CGNG10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QM5.aac
+text @[Nagisa]
+text I've heard this voice before.
+text @[Tomoya]
+text So he really is famous, huh?
+sound QM6.aac
+text @[Nagisa]
+text Yes. His voice is so lovely, so of course I wouldn't forget it.
+setvar strS[1001] = "CGNG23A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QM7.aac
+text @[Nagisa]
+text The music is really good too.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I'd thought Nagisa might think his music is a bit too noisy, but it appears she liked it.
+text Yoshino-san's songs may be loud, but the melodies themselves are quite approachable and melancholy.
+text That part of them must have struck Nagisa's heartstrings too.
+text @[Tomoya]
+text You know, though, Yoshino-san was even younger than I am now when he released this CD.
+setvar strS[1001] = "CGNG10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QM8.aac
+text @[Nagisa]
+text Really? That's amazing...
+text @[Tomoya]
+text Yeah...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text A pure, unhesitating voice.
+text The Yoshino-san on this CD was singing his own song.
+text His message came across exactly because it wasn't meant for others.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s45
+fi
+goto 52
+label s45
+setvar strS[1000] = ""
+label 52
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG090"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s46
+fi
+goto 53
+label s46
+setvar strS[1000] = ""
+label 53
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I stare at the ceiling as I think back on what I heard today.
+text On the successes and failures that someone like me has never experienced.
+text I've no doubt that reality is even more fierce than I've been imagining.
+text Because although I may have considered my life meaningless before... I've never once actually considered ending it.
+if 0 == 0
+	goto s47
+fi
+goto 54
+label s47
+setvar strS[1000] = "KURO"
+goto 56
+label 54
+if 0 == 1
+	goto s48
+fi
+goto 55
+label s48
+setvar strS[1000] = "SIRO"
+goto 56
+label 55
+setvar strS[1000] = "KURO"
+label 56
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG044"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s49
+fi
+goto 57
+label s49
+setvar strS[1000] = ""
+label 57
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM19.mp3
+text The next morning.
+setvar strS[1001] = "CGNG10EZ"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10EZ.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QM9.aac
+text @[Nagisa]
+text Um, is it all right if I borrow this CD today?
+text She asks me as I prepare for work, holding Yoshino-san's CD in her hand.
+text @[Tomoya]
+text You're going to take it to school? That's pretty courageous coming from you.
+text @[Tomoya]
+text All right, then, you go listen to it during class until your head explodes.
+setvar strS[1001] = "CGNG16E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QMA.aac
+text @[Nagisa]
+text I can't do something like that! I have to listen to the teacher's lesson.
+setvar strS[1001] = "CGNG10EZ"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10EZ.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QMB.aac
+text @[Nagisa]
+text The CD is for when I come back.
+sound QMC.aac
+text @[Nagisa]
+text I was thinking I would take this and go visit Ibuki-sensei...
+setvar strS[1001] = "CGNG32E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QMD.aac
+text @[Nagisa]
+text Well... to be honest, I didn't want to visit her until graduation...
+sound QME.aac
+text @[Nagisa]
+text But once I listened to this, I found myself wanting to tell her what I think of it.
+text @[Tomoya]
+text Her, and not the artist himself?
+sound QMF.aac
+text @[Nagisa]
+text Yes... because you said it yourself... The artist, Yoshino-san...
+sound QMG.aac
+text @[Nagisa]
+text He's gone through a lot of things...
+sound QMH.aac
+text @[Nagisa]
+text It might be that he doesn't want people to pry too much.
+sound QMI.aac
+text @[Nagisa]
+text And I think I'd be able to find out if I ask Ibuki-sensei...
+sound QMJ.aac
+text @[Nagisa]
+text Of course, I won't ask for all the details...
+text He barely just got to the point with me where he could freely speak of his past.
+text He probably won't take it favourably if some stranger he barely knows suddenly told him their impressions of his song.
+text @[Tomoya]
+text I see... I guess that makes sense.
+text @[Tomoya]
+text You go do that.
+text That's why this is how I answer her.
+setvar strS[1001] = "CGNG10E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QMK.aac
+text @[Nagisa]
+text All right. I'll borrow this for now, then.
+text That reminds me, the day after tomorrow is a holiday.
+choice Wait until the day after tomorrow and go together|Let Nagisa go alone
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s50
+fi
+goto 58
+label s50
+goto 63
+label 58
+if intF[1089] == 1
+	goto s51
+fi
+goto 63
+label s51
+if 0 == 0
+	goto s52
+fi
+goto 59
+label s52
+setvar strS[1000] = "KURO"
+goto 61
+label 59
+if 0 == 1
+	goto s53
+fi
+goto 60
+label s53
+setvar strS[1000] = "SIRO"
+goto 61
+label 60
+setvar strS[1000] = "KURO"
+label 61
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG044N1"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s54
+fi
+goto 62
+label s54
+setvar strS[1000] = ""
+label 62
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I ask Nagisa about Yoshino-san's girlfriend over dinner.
+setvar strS[1001] = "CGNG10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QML.aac
+text @[Nagisa]
+text I met Ibuki-sensei today.
+text @[Tomoya]
+text Oh, yeah, you went there today.
+text @[Tomoya]
+text So, what happened?
+sound QMM.aac
+text @[Nagisa]
+text Yes. I told her my impressions.
+sound QMN.aac
+text @[Nagisa]
+text And she was really surprised when I did.
+text @[Tomoya]
+text You're not telling me even Ibuki-sensei didn't know Yoshino-san was a former musician, are you...?
+sound QMO.aac
+text @[Nagisa]
+text No, no, of course she knew that.
+sound QMP.aac
+text @[Nagisa]
+text I'm sure she was just surprised that I was so moved by this... rock music, is what it's called?
+sound QMQ.aac
+text @[Nagisa]
+text And then she told me this.
+sound QMR.aac
+text @[Nagisa]
+text "I really wish Yoshino-san would go back to his music."
+text @[Tomoya]
+text I'm pretty sure he still sings for Ibuki-sensei, though... or am I wrong?
+sound QMS.aac
+text @[Nagisa]
+text Yes, that's right.
+sound QMT.aac
+text @[Nagisa]
+text But Ibuki-sensei said she wanted far, far more people to hear him sing...
+sound QMU.aac
+text @[Nagisa]
+text Because Yoshino-san's music is beautiful and passionate...
+sound QMV.aac
+text @[Nagisa]
+text I agree with her.
+text @[Tomoya]
+text I see now...
+text @[Tomoya]
+text So even his actual girlfriend, Ibuki-sensei, agrees...
+text @[Tomoya]
+text I bet she's probably always wanted to do something about it...
+text But it's exactly because she knew of his past, that she must have not been able to make the suggestion.
+text So when faced with the reality that Nagisa, a girl that doesn't seem like she'd be interested in rock at all, was so moved by it, she must have re-evaluated the situation.
+text Thinking that Yoshino-san really should continue moving people's hearts.
+text @[Tomoya]
+text Say, Nagisa.
+sound QMW.aac
+text @[Nagisa]
+text Yes?
+text @[Tomoya]
+text How about you help, too?
+setvar strS[1001] = "CGNG23A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QMX.aac
+text @[Nagisa]
+text Of course.
+text @[Tomoya]
+text You know what I'm asking you to help with, then?
+sound QMY.aac
+text @[Nagisa]
+text You're a kind person, Tomoya-kun, so it's obvious.
+sound QMZ.aac
+text @[Nagisa]
+text You want Yoshino-san to go back to making CDs so people will listen to him again.
+text @[Tomoya]
+text Yeah, exactly.
+text It was a stupid question on my part.
+jump SEEN7100_2_1.scr 77
+label 63
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s55
+fi
+goto 64
+label s55
+setvar strS[1000] = ""
+label 64
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text It's the day she's going to visit Ibuki-sensei.
+setvar strS[1000] = "BG001"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s56
+fi
+goto 65
+label s56
+setvar strS[1000] = ""
+label 65
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM14.mp3
+text We go by Nagisa's house first.
+text It was so we could buy some bread as a present for Ibuki-sensei.
+setvar strS[1000] = "BG007"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s57
+fi
+goto 66
+label s57
+setvar strS[1000] = ""
+label 66
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QN0.aac
+text @[Nagisa]
+text We're back.
+setvar strS[1001] = "CGSN10E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN10E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QN1.aac
+text @[Sanae]
+text Welcome back.
+text Sanae-san is looking after the store.
+setvar strS[1001] = "CGSN12E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN12E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QN2.aac
+text @[Sanae]
+text Good afternoon, Tomoya-san!
+text @[Tomoya]
+text Wassup.
+setvar strS[1001] = "CGNG17B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG17B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QN3.aac
+text @[Nagisa]
+text Mom!
+sound QN4.aac
+text @[Sanae]
+text Yes, what is it?
+sound QN5.aac
+text @[Nagisa]
+text We came for some bread.
+setvar strS[1001] = "CGSN11E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN11E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QN6.aac
+text @[Sanae]
+text Okay. Please take however many you'd like.
+sound QN7.aac
+text @[Nagisa]
+text No, I'll buy them with my own money.
+setvar strS[1001] = "CGSN10E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN10E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QN8.aac
+text @[Sanae]
+text There are going to be leftovers anyway, so you really don't need to pay.
+setvar strS[1001] = "CGNG16BZ"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16BZ.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QN9.aac
+text @[Nagisa]
+text No, I can't just not pay!
+setvar strS[1001] = "CGSN11E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN11E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QNA.aac
+text @[Sanae]
+text You really don't need to pay.
+text Neither of them is budging even an inch.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text I guess... I'll pay, then.
+sound QNB.aac
+setvar strS[1017] = "Nagisa"
+setvar strS[1020] = "Huh?"
+setvar strS[1018] = "Sanae"
+setvar strS[1021] = "Huh?"
+text @[Nagisa Sanae]
+text @Huh?
+text Huh?
+text It's kind of amusing how I surprised the both of them.
+text @[Tomoya]
+text I have a job, so no worries there.
+setvar strS[1001] = "CGNG16BZ"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16BZ.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QNC.aac
+text @[Nagisa]
+text Oh, no, Tomoya-kun. Now I feel bad.
+setvar strS[1001] = "CGSN15E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN15E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QND.aac
+text @[Sanae]
+text That's right, Tomoya-san. We should be helping each other out when things get tough.
+text @[Tomoya]
+text No, I'm not the one who's gonna eat these...
+setvar strS[1001] = "CGNG17B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG17B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QNE.aac
+text @[Nagisa]
+text I told you on the phone yesterday that we're going to visit Ibuki-sensei.
+setvar strS[1001] = "CGSN11HE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN11HE.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QNF.aac
+text @[Sanae]
+text Yes, I remember that.
+text Did she really remember?
+sound QNG.aac
+text @[Nagisa]
+text She wasn't at home, so I asked you.
+setvar strS[1001] = "CGSN10HE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN10HE.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QNH.aac
+text @[Sanae]
+text Yes. I did just as you wanted, and told Ibuki-sensei that you were coming.
+sound QNI.aac
+text @[Sanae]
+text So she's waiting at her home right now.
+setvar strS[1001] = "CGNG32B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QNJ.aac
+text @[Nagisa]
+text I wonder if she was actually busy...
+setvar strS[1001] = "CGSN11E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN11E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QNK.aac
+text @[Sanae]
+text Oh, it's fine. Don't worry. Just go visit her.
+setvar strS[1001] = "CGNG10B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QNL.aac
+text @[Nagisa]
+text Okay, I will.
+sound QNM.aac
+text @[Nagisa]
+text And I'll bring lots of bread too.
+setvar strS[1001] = "CGNG23B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QNN.aac
+text @[Nagisa]
+text Since Sensei really likes our bread.
+text @[Tomoya]
+text It doesn't seem right to be giving a present you got for free, though.
+setvar strS[1001] = "CGSN10E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN10E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QNO.aac
+text @[Sanae]
+text That's true. All right, then.
+setvar strS[1001] = "CGSN12HE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN12HE.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QNP.aac
+text @[Sanae]
+text In that case, I'll make them 10 yen a piece.
+text @[Tomoya]
+text Please don't!
+sound QNQ.aac
+text @[Nagisa]
+text Please let us pay the regular price.
+setvar strS[1001] = "CGSN14E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN14E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QNR.aac
+text @[Sanae]
+text Oh, well... all right.
+setvar strS[1001] = "CGSN10HE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN10HE.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QNS.aac
+text @[Sanae]
+text I'll just treat you the same as any customer.
+setvar strS[1001] = "CGNG10B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QNT.aac
+text @[Nagisa]
+text Thank you very much.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She gives her thanks and picks up a tray.
+setvar strS[1001] = "CGNG10B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QNU.aac
+text @[Nagisa]
+text Tomoya-kun, could you grab the bread?
+text @[Tomoya]
+text O-Okay...
+sound QNV.aac
+text @[Nagisa]
+text Please take two of this. And one of this, also.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I do as she instructs and fill the tray with bread.
+bgload KURO.jpg 55
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGSN11E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN11E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QNW.aac
+text @[Sanae]
+text Well, be sure to say hi to her for me, okay?
+sound QNX.aac
+text @[Nagisa]
+text Okay.
+text We receive the bag of bread, and leave Furukawa Bread behind.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s58
+fi
+goto 67
+label s58
+setvar strS[1000] = ""
+label 67
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG033"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s59
+fi
+jump SEEN7100_2_1.scr 68
+label s59
+setvar strS[1000] = ""
+jump SEEN7100_2_1.scr

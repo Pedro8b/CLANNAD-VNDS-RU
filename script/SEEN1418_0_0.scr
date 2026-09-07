@@ -1,0 +1,441 @@
+text *Tap*
+text *Tap* ... *T-T-Tap*
+text @[Tomoya]
+text Hmm...?
+text Someone is tapping on my back.
+text *Tap* *Tap*
+text From the armpit to the waist.
+text *Tap* ... *T-T-Tap*
+text @[Tomoya]
+text What do you want?!
+music ~
+sound 25Z.aac
+text @[Voice]
+text Wah...
+text I turn around just in time to catch the sight of a girl running away.
+music BGM04A.mp3
+text I recognize the figure. Must be the wood-carving girl I met yesterday.
+text @[Tomoya]
+text Is she some kind of a pervert...
+bgload KURO.jpg 88
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Tap*
+text @[Tomoya]
+text (Again...)
+text *Tap* ... *T-T-Tap*
+text I decide to stop walking and see what happens.
+text *Tap* *T-T-Tap* *T-T-Tap*
+text Not letting go of the opportunity, she keeps touching all over the place.
+text A passing female student can't hold in her laughter as she looks at us.
+text *Tap*
+text @[Tomoya]
+text (THAT is my groin...)
+text *Tap*
+text She taps there again.
+text @[Tomoya]
+text (So you're interested in that place THAT much...)
+text *Squeeze*
+text @[Tomoya]
+text Don't grab it!
+sound 260.aac
+text @[Voice]
+text Wah...
+text Surprised by my voice, she loses her balance and falls on her behind.
+text Now she's standing up, tapping lightly on her skirt to brush off the dust.
+text Catching her should be a piece of cake now...
+choice Gotta catch 'er|Let her go
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s0
+fi
+goto 1
+label s0
+text After all that, now she's turning her back on me, intending to run off again.
+text @[Tomoya]
+text Too slow!
+text Got her arm.
+setvar strS[1001] = "CGFU17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 261.aac
+text @[Female Student]
+text Wah...
+text @[Tomoya]
+text Got some business with me?
+text @[Tomoya]
+text Or have you finally awakened to gender differences at your age?
+sound 262.aac
+text @[Female Student]
+text @Searching for...
+delay 67
+text the knife...
+text @[Tomoya]
+text Knife?
+text @[Tomoya]
+text Oh right, that...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text It totally slipped my mind, but I still haven't given back the knife I took from her.
+text So she was searching my body for it?
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 263.aac
+text @[Female Student]
+text Give it back.
+goto 2
+label 1
+if intF[1089] == 1
+	goto s1
+fi
+goto 2
+label s1
+text When I turn around, she's already running away.
+text I decide to give it some time and watch as she turns to hide around the corner. She then sticks part of her face out from behind the wall to spy on me.
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text ...Sorry, but you're too obvious.
+text @[Tomoya]
+text (Just what kind of business does she have with someone like me...)
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I stick my hands nonchalantly in my jacket pockets.
+text @[Tomoya]
+text (Ah...)
+text The thing inside reminds me of the incident yesterday.
+text @[Tomoya]
+text (So this is what she was looking for...)
+text I grab it and take it out.
+text ...The knife.
+text *Click* *Click* *Click*
+text The sounds of approaching footsteps pull me away from my thought. I raise my head just in time to see a girl desperately running toward me.
+text Our eyes meet.
+setvar strS[1001] = "CGFU17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 264.aac
+text @[Female Student]
+text Ah...
+setvar strS[1001] = "CGFU30"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU30.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 265.aac
+text @[Female Student]
+text *Whish*
+text Okay, she hits the window. Game over.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Are you trying to take the knife back from me?
+setvar strS[1001] = "CGFU30"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU30.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 266.aac
+text @[Female Student]
+text Hyuu─ hyorooroo─
+text @[Tomoya]
+text Hold yourself together. Can you hear me?
+sound 267.aac
+text @[Female Student]
+text ...
+text A complete lack of attention.
+text I push her nose upward with my fingers, making it look like a pig's snout.
+setvar strS[1001] = "CGFU31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 268.aac
+text @[Female Student]
+text Uhh...
+sound 269.aac
+text @[Female Student]
+text Uhhh...
+text She's unable to resist, and her head is pushed backward.
+setvar strS[1001] = "CGFU17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 26A.aac
+text @[Female Student]
+text Haahh... Please stop with that!
+text She jerks my hand away, finally showing me her eyes.
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 26B.aac
+text @[Female Student]
+text Are you trying to make Fuko's nose point permanently skyward?
+text @[Tomoya]
+text I did it because you were ignoring me.
+sound 26C.aac
+text @[Female Student]
+text That's not true. Fuko just noticed you now.
+text @[Tomoya]
+text Stop lying. You jumped at me trying to take that knife back.
+setvar strS[1001] = "CGFU19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 26D.aac
+text @[Female Student]
+text Knife?
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 26E.aac
+text @[Female Student]
+text Right, the knife. Actually, it belongs to Fuko.
+text You suck at acting.
+sound 26F.aac
+text @[Female Student]
+text Give it back.
+label 2
+text @[Tomoya]
+text How about your hand?
+sound 26G.aac
+text @[Female Student]
+text It doesn't hurt anymore. Completely healed.
+text @[Tomoya]
+text But it's still got a bandage on it.
+sound 26H.aac
+text @[Female Student]
+text This is just as a precaution.
+text @[Tomoya]
+text Well then, shake my hand.
+text *Grip*
+setvar strS[1001] = "CGFU17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 26I.aac
+text @[Female Student]
+text Hmm...
+text She's trying to endure it.
+text @[Tomoya]
+text Next, high five.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Clap*
+setvar strS[1001] = "CGFU17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 26J.aac
+text @[Female Student]
+text Hmm...
+text She's still trying to endure it.
+text @[Tomoya]
+text Very well, boxing training.
+sound 26K.aac
+text @[Female Student]
+text Huh?
+text @[Tomoya]
+text You be the trainer. Just pose like this.
+text I make her put her hands up in front of her chest.
+text @[Tomoya]
+text I'll punch your hands saying "Jab, jab, straight!" so you have to reply with "One, two, one-two," got it?
+sound 26L.aac
+text @[Female Student]
+text O-Okay...
+text @[Tomoya]
+text Are you ready?
+setvar strS[1001] = "CGFU31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 26M.aac
+text @[Female Student]
+text Sure...
+text She closes her eyes.
+text @[Tomoya]
+text What kind of trainer closes their eyes? Now, open your eyes and brace yourself!
+setvar strS[1001] = "CGFU23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 26N.aac
+text @[Female Student]
+text Okay...
+text Her reluctant face is now equipped with round, opened eyes, making for a rather spectacular sight.
+text @[Tomoya]
+text Here we go...
+sound 26O.aac
+text @[Female Student]
+text Sure...
+text @[Tomoya]
+text I'll hit with one-hundred percent power. Ready for it?
+sound 26P.aac
+text @[Female Student]
+text Sure...
+text @[Tomoya]
+text Jab, jab, straight!
+text I spice things up a little by raising my voice.
+setvar strS[1001] = "CGFU31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 26Q.aac
+text @[Female Student]
+text One, two, one-two!
+text *Bap*
+text Very slowly, I put the knife into her hand.
+sound 26R.aac
+text @[Female Student]
+text One, two, one-two!
+text She's still going at it.
+text @[Tomoya]
+text Look, I gave you back the knife.
+setvar strS[1001] = "CGFU19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 26S.aac
+text @[Female Student]
+text Huh?
+text @[Tomoya]
+text If you hurt yourself, I'll come and take it away again. Got it? Just be careful so you won't go through this whole ordeal again.
+sound 26T.aac
+text @[Female Student]
+text Ah, of course.
+text @[Tomoya]
+text Bye, then.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I say goodbye without looking at her face and start walking away.
+music ~
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+jump SEEN1418_1_0.scr

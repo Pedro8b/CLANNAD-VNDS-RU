@@ -1,0 +1,983 @@
+setvar intF[1110] = 5
+setvar intF[1112] = 1
+setvar strS[1004] = "SDTA0505"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1004] = ""
+label 1
+bgload SCLAB00.jpg 45
+delay 60
+setimg SCLAP07.png 5 5
+setimg SCLA0505.png 159 160
+delay 120
+if 0 == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = "KURO"
+goto 4
+label 2
+if 0 == 1
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = "SIRO"
+goto 4
+label 3
+setvar strS[1000] = "KURO"
+label 4
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG035"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 5
+label s3
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08D.mp3
+text We spend our last day having a good time in the shopping district.
+text Buying some junk food, hanging around at the game center...
+text Tomoyo looked truly feminine whenever she played a game.
+text Her movements unsteady and unsure, her hero would just get beaten up by enemies.
+setvar strS[1001] = "CGTM31S"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM31S.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 75A.aac
+text @[Tomoyo]
+text I really don't agree with what happened just now.
+text It was just so much fun.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text That's right.
+text I'd actually be fine with just living like this every day.
+text I'm truly glad Tomoyo came into my life.
+text I'm truly glad, so...
+text That's why I...
+choice Think things are fine like this|Think things can't go on like this
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s4
+fi
+goto 6
+label s4
+setvar intF[221] = 1
+goto 7
+label 6
+if intF[1089] == 1
+	goto s5
+fi
+goto 7
+label s5
+label 7
+if 0 == 0
+	goto s6
+fi
+goto 8
+label s6
+setvar strS[1000] = "KURO"
+goto 10
+label 8
+if 0 == 1
+	goto s7
+fi
+goto 9
+label s7
+setvar strS[1000] = "SIRO"
+goto 10
+label 9
+setvar strS[1000] = "KURO"
+label 10
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG035Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s8
+fi
+goto 11
+label s8
+setvar strS[1000] = ""
+label 11
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Isn't it about time you tell me?
+setvar strS[1001] = "CGTM11S"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11S.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 75B.aac
+text @[Tomoyo]
+text Tell you what?
+text @[Tomoya]
+text Why you want to enter the student council.
+text @[Tomoya]
+text There shouldn't be any reason to keep it a secret from me anymore.
+text @[Tomoya]
+text Since I'm your boyfriend and all.
+sound 75C.aac
+text @[Tomoyo]
+text You really want to know?
+text @[Tomoya]
+text Yeah, I'd like to know.
+sound 75D.aac
+text @[Tomoyo]
+text It's not at all interesting, you know.
+text @[Tomoya]
+text I wasn't expecting it to be interesting.
+text @[Tomoya]
+text It's just that it has to do with you, and so I want to know. That's all.
+setvar strS[1001] = "CGTM22S"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM22S.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 75E.aac
+text @[Tomoyo]
+text I see...
+sound 75F.aac
+text @[Tomoyo]
+text Then I guess it can't be helped.
+sound 75G.aac
+text @[Tomoyo]
+text I'll tell you.
+text Tomoyo looks yearningly into the setting sun.
+sound 75H.aac
+text @[Tomoyo]
+text Many people have a reason for not going wild.
+sound 75I.aac
+text @[Tomoyo]
+text Do you know what that reason is?
+text @[Tomoya]
+text Hmm, let's see...
+text @[Tomoya]
+text Talent, for example?
+text @[Tomoya]
+text If you have talent, then it's clear what you have to do in life. All you have to do is engross yourself in your talent.
+setvar strS[1001] = "CGTM19S"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM19S.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 75J.aac
+text @[Tomoyo]
+text You're quite smart, aren't you?
+text @[Tomoya]
+text What, I was right...?
+setvar strS[1001] = "CGTM10S"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM10S.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 75K.aac
+text @[Tomoyo]
+text But what do you do if you don't have any talent?
+sound 75L.aac
+text @[Tomoyo]
+text Talent isn't something an ordinary person has.
+sound 75M.aac
+text @[Tomoyo]
+text What's an ordinary person supposed to do?
+text @[Tomoya]
+text Love. They just have to fall in love.
+setvar strS[1001] = "CGTM18S"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM18S.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 75N.aac
+text @[Tomoyo]
+text Ugh, that's so sweet I'm gonna get cavities.
+text ...But aren't the two of us in love right now?
+sound 75O.aac
+text @[Tomoyo]
+text Not to mention, if your love ended up unrequited, it'd be horrible...
+text @[Tomoya]
+text That's true...
+setvar strS[1001] = "CGTM22S"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM22S.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 75P.aac
+text @[Tomoyo]
+text You still don't know?
+sound 75Q.aac
+text @[Tomoyo]
+text The answer is very close to you.
+sound 75R.aac
+text @[Tomoyo]
+text Well, it's probably because it's so close that nobody ever notices it.
+text When she said those words, I somehow felt like I knew what she meant.
+text However, that answer doesn't really seem to work.
+text For me, at least.
+sound 75S.aac
+text @[Tomoyo]
+text The answer is family.
+text I was right on the money.
+text @[Tomoya]
+text But there are also situations where your family depresses you so much that it makes you go wild instead.
+text @[Tomoya]
+text Like my case, for example...
+setvar strS[1001] = "CGTM11S"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11S.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 75T.aac
+text @[Tomoyo]
+text You're not actually going wild though, are you?
+sound 75U.aac
+text @[Tomoyo]
+text It only looks that way because your waking time's shifted a bit.
+text @[Tomoya]
+text Well, I guess.
+text @[Tomoya]
+text But there really are people whose families are so depressing that they do run wild, you know?
+setvar strS[1001] = "CGTM22S"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM22S.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 75V.aac
+text @[Tomoyo]
+text Yeah, I guess there are.
+sound 75W.aac
+text @[Tomoyo]
+text Those people are just being shameful.
+sound 75X.aac
+text @[Tomoyo]
+text They'll notice that themselves when they get more life experience.
+text @[Tomoya]
+text Are you serious...?
+sound 75Y.aac
+text @[Tomoyo]
+text Your family doesn't even have to be your real family. It's fine if they're just friends.
+sound 75Z.aac
+text @[Tomoyo]
+text They're just an existence that feels like family.
+text @[Tomoya]
+text In that case, I feel like I sort of do understand, but...
+text @[Tomoya]
+text No wait... Does you saying this mean...
+setvar strS[1001] = "CGTM11S"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11S.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 760.aac
+text @[Tomoyo]
+text What?
+text @[Tomoya]
+text You don't have a family?
+setvar strS[1001] = "CGTM10S"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM10S.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 761.aac
+text @[Tomoyo]
+text I do, and they're all in good health.
+text @[Tomoya]
+text What are you talking about, then...?
+sound 762.aac
+text @[Tomoyo]
+text The reverse of what I was talking about just now.
+sound 763.aac
+text @[Tomoyo]
+text In other words, there are also situations where you don't have a family, even if you have a real family.
+setvar strS[1001] = "CGTM22S"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM22S.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 764.aac
+text @[Tomoyo]
+text And that was it in my case.
+sound 765.aac
+text @[Tomoyo]
+text Ever since I was little, I never got along with my parents.
+text @[Tomoya]
+text But were things so bad that you'd fight?
+setvar strS[1001] = "CGTM32S"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM32S.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 766.aac
+text @[Tomoyo]
+text It wasn't as simple as that...
+sound 767.aac
+text @[Tomoyo]
+text Fighting is just about the only thing we wouldn't do.
+text @[Tomoya]
+text Well, I don't really know your situation, so...
+sound 768.aac
+text @[Tomoyo]
+text Our household just didn't feel warm at all.
+sound 769.aac
+text @[Tomoyo]
+text They were always cold and apathetic. No matter what happened.
+sound 76A.aac
+text @[Tomoyo]
+text Even when I started elementary school, even during sports day, even when I got good grades, even when I got a prize for a drawing for summer vacation homework...
+sound 76B.aac
+text @[Tomoyo]
+text They never cared at all.
+text @[Tomoya]
+text ...
+setvar strS[1001] = "CGTM22S"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM22S.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 76C.aac
+text @[Tomoyo]
+text Do you understand now, Tomoya?
+text @[Tomoya]
+text Yeah, I understand a little now.
+sound 76D.aac
+text @[Tomoyo]
+text I was raised without any love.
+sound 76E.aac
+text @[Tomoyo]
+text I never even learned what that was to begin with.
+text @[Tomoya]
+text Say, Tomoyo.
+setvar strS[1001] = "CGTM11S"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11S.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 76F.aac
+text @[Tomoyo]
+text What is it? I'm in the middle of my story.
+text @[Tomoya]
+text Um... is it all right if I move behind you?
+sound 76G.aac
+text @[Tomoyo]
+text Behind me?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Tomoyo looks behind her. Of course, there's nothing there.
+text But it must have just been that she was so caught up in what she was saying that she didn't realize what I meant.
+text So without replying, I do what I wanted to do.
+text I move around her and cling tightly to her back.
+text As if relieved, Tomoyo takes a deep breath.
+sound 76H.aac
+text @[Tomoyo]
+text They couldn't be happy unless they betrayed each other.
+sound 76I.aac
+text @[Tomoyo]
+text But that kind of thing won't give you happiness at all.
+text @[Tomoya]
+text Yeah... I agree.
+sound 76J.aac
+text @[Tomoyo]
+text The entire time... I was emotionally unstable.
+sound 76K.aac
+text @[Tomoyo]
+text I felt like I could never forgive them for any of it. But then a few seconds later, I'd feel like I COULD forgive them for the exact same things.
+sound 76L.aac
+text @[Tomoyo]
+text Then a couple more seconds later, all of it would just turn into an object of hatred for me.
+sound 76M.aac
+text @[Tomoyo]
+text That was the cycle I'd go through.
+sound 76N.aac
+text @[Tomoyo]
+text I'm sure everyone goes through something like this at some point in their lives.
+text @[Tomoya]
+text But everyone manages to get through that.
+sound 76O.aac
+text @[Tomoyo]
+text That's right. By being supported by someone.
+sound 76P.aac
+text @[Tomoyo]
+text I didn't have anyone like that.
+sound 76Q.aac
+text @[Tomoyo]
+text That's why I went wild.
+sound 76R.aac
+text @[Tomoyo]
+text Of course, I admit that I was more fragile than other people.
+sound 76S.aac
+text @[Tomoyo]
+text Since all I could ever do was blame other people for everything.
+sound 76T.aac
+text @[Tomoyo]
+text But after that, I found someone to support me.
+sound 76U.aac
+text @[Tomoyo]
+text And so a lot of things became clear to me.
+text @[Tomoya]
+text If that person was a man, I'm probably going to go mad with jealousy.
+sound 76V.aac
+text @[Tomoyo]
+text It was a man.
+text @[Tomoya]
+text Are you serious...?
+sound 76W.aac
+text @[Tomoyo]
+text Mhm. It was my little brother.
+text @[Tomoya]
+text I never knew. So you had a little brother...
+sound 76X.aac
+text @[Tomoyo]
+text I do. He was raised just the way I was back then.
+sound 76Y.aac
+text @[Tomoyo]
+text To be honest, I was actually quite bitter toward that very brother.
+sound 76Z.aac
+text @[Tomoyo]
+text While everything was turning into an object for my hatred, even my own brother wasn't immune...
+text @[Tomoya]
+text Right...
+sound 770.aac
+text @[Tomoyo]
+text My little brother was always afraid...
+sound 771.aac
+text @[Tomoyo]
+text And when I think back, all I can ever remember of him is that pained look on his face.
+sound 772.aac
+text @[Tomoyo]
+text I never knew he could even smile...
+sound 773.aac
+text @[Tomoyo]
+text I truly wasn't a good sister at all...
+text @[Tomoya]
+text It's not your fault.
+sound 774.aac
+text @[Tomoyo]
+text I'll take those as words of consolation.
+text @[Tomoya]
+text I'm so useless as a boyfriend.
+sound 775.aac
+text @[Tomoyo]
+text This runs really deep for me. Please cut me at least a little slack on this.
+text @[Tomoya]
+text Okay... Please continue.
+sound 776.aac
+text @[Tomoyo]
+text I'm pretty sure my brother didn't run wild because I beat him to it.
+sound 777.aac
+text @[Tomoyo]
+text I ran away before he could.
+sound 778.aac
+text @[Tomoyo]
+text I abandoned my little brother.
+sound 779.aac
+text @[Tomoyo]
+text I left him all alone in that family...
+sound 77A.aac
+text @[Tomoyo]
+text ...and he tried holding on to that family.
+sound 77B.aac
+text @[Tomoyo]
+text He tried to cling to it because it was his true family. Even though it had stopped being an actual family.
+sound 77C.aac
+text @[Tomoyo]
+text Do you know how irrational and meaningless that is?
+text @[Tomoya]
+text I do...
+sound 77D.aac
+text @[Tomoyo]
+text Then spring, two years ago.
+sound 77E.aac
+text @[Tomoyo]
+text My parents eventually, or rather, finally... tried to divorce.
+sound 77F.aac
+text @[Tomoyo]
+text In a way, they fed on each other's misery, so I never thought it would happen.
+sound 77G.aac
+text @[Tomoyo]
+text But I guess, in the end, that's still how things ended up.
+sound 77H.aac
+text @[Tomoyo]
+text It's nothing strange. Since both of them were already with other people at this point...
+sound 77I.aac
+text @[Tomoyo]
+text Our family wasn't going to be a family anymore. It never really had been in the first place, but even so, it was still ours...
+sound 77J.aac
+text @[Tomoyo]
+text And now that family was really going to fall apart.
+sound 77K.aac
+text @[Tomoyo]
+text My little brother was afraid of that.
+sound 77L.aac
+text @[Tomoyo]
+text And so, he went to his last resort.
+sound 77M.aac
+text @[Tomoyo]
+text A last resort... that you can probably use only once...
+sound 77N.aac
+text @[Tomoyo]
+text Can you imagine what he did...?
+text @[Tomoya]
+text No...
+music ~
+sound 77O.aac
+text @[Tomoyo]
+text He threw himself onto the road.
+sound 77P.aac
+text @[Tomoyo]
+text Right in front of an oncoming car.
+text @[Tomoya]
+text ...
+if 0 == 0
+	goto s9
+fi
+goto 12
+label s9
+setvar strS[1000] = "KURO"
+goto 14
+label 12
+if 0 == 1
+	goto s10
+fi
+goto 13
+label s10
+setvar strS[1000] = "SIRO"
+goto 14
+label 13
+setvar strS[1000] = "KURO"
+label 14
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+music BGM18B.mp3
+sound 77Q.aac
+text @[Tomoyo]
+text It was a hospital in a small town...
+sound 77R.aac
+text @[Tomoyo]
+text In a small hospital room...
+sound 77S.aac
+text @[Tomoyo]
+text That's where the entire family gathered.
+sound 77T.aac
+text @[Tomoyo]
+text Their faces were human faces.
+sound 77U.aac
+text @[Tomoyo]
+text They made faces you'd expect actual people to make.
+sound 77V.aac
+text @[Tomoyo]
+text They looked pale, though...
+sound 77W.aac
+text @[Tomoyo]
+text My little brother managed to escape death.
+sound 77X.aac
+text @[Tomoyo]
+text It was miraculous...
+sound 77Y.aac
+text @[Tomoyo]
+text My little brother risked his own life to try and hold onto our family.
+sound 77Z.aac
+text @[Tomoyo]
+text For those people who did nothing...
+sound 780.aac
+text @[Tomoyo]
+text With no love or kindness to spare at all...
+sound 781.aac
+text @[Tomoyo]
+text ...For this family only in name.
+text @[Tomoyo]
+text ...
+sound 782.aac
+text @[Tomoyo]
+text He might have died, you know...
+sound 783.aac
+text @[Tomoyo]
+text But the result was instant.
+sound 784.aac
+text @[Tomoyo]
+text Because after he did that, we all finally realized...
+sound 785.aac
+text @[Tomoyo]
+text My brother...
+sound 786.aac
+text @[Tomoyo]
+text We were faced with the danger that he, a member of our family, might have died...
+sound 787.aac
+text @[Tomoyo]
+text People don't notice things until it's too late...
+sound 788.aac
+text @[Tomoyo]
+text What idiots we were.
+sound 789.aac
+text @[Tomoyo]
+text My brother realized that...
+sound 78A.aac
+text @[Tomoyo]
+text In our household, he was the only one who noticed...
+text I notice that Tomoyo's shoulder is shivering, and so I put more force into my arms as I hold her.
+sound 78B.aac
+text @[Tomoyo]
+text My brother, who was completely in tatters...
+sound 78C.aac
+text @[Tomoyo]
+text His body was in such a bad state. Yet, for the first time in his life, he smiled from the bottom of his heart...
+sound 78D.aac
+text @[Tomoyo]
+text Close to the hospital was a street lined with sakura trees...
+setvar intF[1112] = 0
+setvar strS[1000] = "BG080"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s11
+fi
+goto 15
+label s11
+setvar strS[1000] = ""
+label 15
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text My little brother, riding in a wheelchair...
+text And I was pushing that wheelchair...
+text And he was laughing, just like a child...
+text If you have something to laugh about, then why don't you walk on your own two feet...
+text You would have been able to look at the sakura from the same height as me if you did...
+text Even so, he still just laughed innocently...
+text With a smile that, for the longest time, I didn't even know was possible...
+text And so I cried...
+setvar strS[1000] = "FGTM02"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s12
+fi
+goto 16
+label s12
+setvar strS[1000] = ""
+label 16
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 98
+sound 78E.aac
+text Nee-chan, why're you looking down?
+sound 78F.aac
+text Come on. If you don't look up, you can't see the sakura.
+text ...
+sound 78G.aac
+text Nee-chan...
+sound 78H.aac
+text The sakura are really pretty, you know...
+text ...
+delay 90
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s13
+fi
+goto 17
+label s13
+setvar strS[1000] = ""
+label 17
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar intF[1112] = 1
+setvar strS[1000] = "BG035Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s14
+fi
+goto 18
+label s14
+setvar strS[1000] = ""
+label 18
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM01.mp3
+sound 78I.aac
+text @[Tomoyo]
+text For me, he was the best little brother I could ask for.
+sound 78J.aac
+text @[Tomoyo]
+text I can be proud of him from the bottom of my heart.
+text @[Tomoya]
+text Yeah.
+sound 78K.aac
+text @[Tomoyo]
+text I actually take a little pride in him these days.
+sound 78L.aac
+text @[Tomoyo]
+text Well, I wouldn't normally talk about this with other people, though.
+sound 78M.aac
+text @[Tomoyo]
+text Ever since that day, I decided to do my best and hold onto my family, together with my little brother.
+sound 78N.aac
+text @[Tomoyo]
+text I studied a great deal.
+sound 78O.aac
+text @[Tomoyo]
+text After one year, I was even able to enter a school of this caliber.
+sound 78P.aac
+text @[Tomoyo]
+text And when I did, my parents had smiles on their faces.
+sound 78Q.aac
+text @[Tomoyo]
+text It really knocked my socks off, you might say.
+sound 78R.aac
+text @[Tomoyo]
+text It's fun now, too, working hard to see their faces like that.
+text @[Tomoya]
+text That so? I guess things are fine now, then.
+sound 78S.aac
+text @[Tomoyo]
+text Yeah, you don't need to worry.
+text @[Tomoya]
+text In the midst of your talk, I was thinking of eloping with you or something.
+sound 78T.aac
+text @[Tomoyo]
+text Are you serious? That's a pretty startling statement, if so.
+text @[Tomoya]
+text I was half-joking, but I was also half-serious.
+sound 78U.aac
+text @[Tomoyo]
+text In that case, I'm half-annoyed, and half-happy.
+sound 78V.aac
+text @[Tomoyo]
+text But there's no hate in my family right now, so we won't be doing that.
+text @[Tomoya]
+text That's a pity.
+text @[Tomoya]
+text So in other words...
+text I then let go of Tomoyo.
+text @[Tomoya]
+text You want to become student council president to surprise your parents?
+sound 78W.aac
+text @[Tomoyo]
+text It's not a simple reason like that.
+text @[Tomoya]
+text Then what is it?
+setvar strS[1001] = "CGTM22S"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM22S.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 78X.aac
+text @[Tomoyo]
+text Did you know? There used to be a row of sakura trees right beyond this point.
+text @[Tomoya]
+text Hm?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I don't know how that's related to what we're talking about, but I shift my attention over that way.
+text I was able to see a tract of brown land far away.
+text The words "Housing Development" come to mind.
+text @[Tomoya]
+text Oh, yeah, I remember now...
+setvar strS[1001] = "CGTM22S"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM22S.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 78Y.aac
+text @[Tomoyo]
+text The town is changing. That's natural, though.
+sound 78Z.aac
+text @[Tomoyo]
+text It was that place from my memories.
+sound 790.aac
+text @[Tomoyo]
+text Just beyond that is the little hospital I mentioned.
+text @[Tomoya]
+text Ah... I see.
+text I understood.
+text @[Tomoya]
+text This is the road you walked on with your little brother, isn't it?
+sound 791.aac
+text @[Tomoyo]
+text That's right.
+sound 792.aac
+text @[Tomoyo]
+text I had wanted to walk through here one more time.
+sound 793.aac
+text @[Tomoyo]
+text Standing side by side with my little brother, in the midst of the falling cherry blossoms.
+sound 794.aac
+text @[Tomoyo]
+text And I wanted to have the conversation I couldn't have back then because I was crying.
+sound 795.aac
+text @[Tomoyo]
+text I wanted to tell him, "Yeah, they're beautiful."
+sound 796.aac
+text @[Tomoyo]
+text That was all I wanted...
+sound 797.aac
+text @[Tomoyo]
+text The town will change. There's nothing we can do about that.
+sound 798.aac
+text @[Tomoyo]
+text But if it's possible to fight it, I want to fight it with everything I have.
+sound 799.aac
+text @[Tomoyo]
+text To save all the pleasant memories I have here, to make sure they can be left in peace.
+sound 79A.aac
+text @[Tomoyo]
+text That's why I want to save the row of sakura lining the hill-road to school with my own two hands.
+text @[Tomoya]
+text So that's how it was...
+sound 79B.aac
+text @[Tomoyo]
+text To save that row of sakura trees. That will be my presidential promise.
+sound 79C.aac
+text @[Tomoyo]
+text And remember, this isn't something I want to do just for myself.
+sound 79D.aac
+text @[Tomoyo]
+text It's also for the students who come to our school, and all the students who will enroll in the future. It's for everyone.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s15
+fi
+goto 19
+label s15
+setvar strS[1000] = ""
+label 19
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+jump SEEN2506_0_0.scr

@@ -1,0 +1,102 @@
+setvar intF[1112] = 0
+bgload SFWEC00.jpg 60
+delay 8
+setimg SFWEC24.png 148 172
+delay 287
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s27
+fi
+goto 28
+label s27
+setvar strS[1000] = ""
+label 28
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG301"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s28
+fi
+goto 29
+label s28
+setvar strS[1000] = ""
+label 29
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM26B.mp3
+text We place the final parts into the head, the "eyes."
+text Now, the junk-doll is complete.
+text ..."Done!"
+text The girl lies down and stretches her tired limbs.
+text I stay in place, facing the doll in anticipation for it to begin moving.
+text It's a clumsy, misshapen figure, sure.
+text Its arms are of different lengths, and the bottom of its mouth is protruding.
+text What a funny face.
+text Nevertheless, it's a new friend; someone to be a companion with.
+text So I'll just have to ignore the fact that it looks a little silly.
+text I keep waiting.
+text My new companion doesn't move though, even after waiting for a while.
+text ......
+text The girl sits up from the floor.
+text She joins me in looking at the unmoving doll.
+text Perhaps we need to do something special to make it start moving.
+text I try to remember the first thing I did.
+text That's right. I practiced walking.
+text Since this is my friend, I feel as though I need to be the first one to teach it this.
+text So that's what I'll do.
+text I walk a short distance away from it and clap my hands, just as she once did for me.
+text It's a signal that even a newborn can understand: come here.
+text My hands make a dull thunk as I clap them together.
+text ......
+text *Thunk* *Thunk*
+text ......
+text The doll makes no attempt to stand.
+text *Thunk* *Thunk*
+text I continue to clap my hands together.
+text Still, it shows no signs of engaging.
+text Its head hangs low, almost as if dead.
+text *Thunk* *Thunk*
+text ......
+text The girl is now looking at me as I clap my hands. I don't know how long she's been watching.
+text She slides over on her knees, then hugs me with so much force that I almost fall over.
+text And then, she cries.
+text ..."I'm sorry. I'm sorry."
+text She repeats the words again and again.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s29
+fi
+goto 30
+label s29
+setvar strS[1000] = ""
+label 30
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar intF[1112] = 1
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+jump SEEN6900_6_0.scr

@@ -1,0 +1,567 @@
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s8
+fi
+goto 9
+label s8
+setvar strS[1000] = ""
+label 9
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s9
+fi
+goto 10
+label s9
+setvar strS[1000] = ""
+label 10
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM15.mp3
+text I'm at the usual corner of the hallway.
+text Kotomi isn't here yet.
+text I place my bag by my feet and lean against the wall.
+text Who should I introduce her to today?
+text My mind is buzzing with thoughts.
+text The whole building is filled with after-school bustle.
+text Students carrying their bags are walking home in a procession.
+bgload KURO.jpg 55
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Kotomi is taking a long time to show up.
+text I wait another fifteen minutes.
+text I hear the chime for a school announcement
+sound VY6.aac
+text Ichinose-san of Class 3-A. Ichinose-san of Class 3-A. Please come to the teacher's office.
+text It's summoning Kotomi.
+text Why would they be calling her?
+text Is it because she's an honor student, or is it about her truancy? It's hard to tell.
+text Either way, it'll be a while before she gets here.
+text But if she takes too long, the person I want her to meet might go home.
+text While I'm wondering what to do, the chime rings again.
+sound VY7.aac
+text Ichinose-san of Class 3-A. Ichinose-san of Class 3-A...
+text It must be important for the same broadcast to repeat every five minutes.
+text Maybe she's somewhere where she can't hear the announcement.
+text Or maybe she's already gone home...
+text I'm starting to get worried.
+text Maybe I shouldn't have forced her to meet new people.
+text Or maybe she's had a sudden emergency.
+text I don't think Kotomi would break a promise or ignore the school announcement.
+choice Go to the teacher's office|Wait a little longer
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s10
+fi
+goto 15
+label s10
+text I decide to go to the teacher's office.
+text I don't want to be nosy, but knowing how stubborn Kotomi is, I have to go.
+text She might be frozen in indecision, not knowing which one to prioritize.
+text @[Tomoya]
+text (Wait, that'd make her a robot...)
+text The fact that it's possible is scary.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s11
+fi
+goto 11
+label s11
+setvar strS[1000] = ""
+label 11
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG026"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s12
+fi
+goto 12
+label s12
+setvar strS[1000] = ""
+label 12
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Excuse me!
+text I make a half-hearted greeting and enter the teacher's office.
+text The guidance counselor glares at me and turns away rather unsubtly.
+text I look around and see the Class A homeroom teacher stand up.
+text @[Tomoya]
+text Ichinose hasn't come yet?
+sound C7M.aac
+text @[Class A Homeroom Teacher]
+text What?
+text She looks at me strangely.
+text I'm not in any of her classes and have never talked to her before, so I guess it's only natural.
+text @[Tomoya]
+text Um, I made a promise to meet with her...
+sound C7N.aac
+text @[Class A Homeroom Teacher]
+text Meet with her? With Ichinose-san? You?
+text You don't have to be so blatant with your surprise.
+text @[Tomoya]
+text She didn't show up at our meeting place, so I thought she might have come here first. I just wanted to check...
+sound C7O.aac
+text @[Class A Homeroom Teacher]
+text Oh? Ichinose-san is meeting with you, huh?
+text She sizes me up.
+sound C7P.aac
+text @[Class A Homeroom Teacher]
+text You're Okazaki-kun from Class D, right?
+text @[Tomoya]
+text Yes, ma'am.
+text After answering her, she smiles pointedly.
+sound C7Q.aac
+text @[Class A Homeroom Teacher]
+text You're pretty famous, you and Sunohara-kun. In a different way from Ichinose-san, of course.
+text @[Tomoya]
+text Is that so?
+text I'm annoyed at being paired with Sunohara, but I just nod obediently for now.
+sound C7R.aac
+text @[Class A Homeroom Teacher]
+text If Ichinose-san promised to meet you first and didn't go, she probably isn't at school anymore.
+text @[Tomoya]
+text How do you know that?
+sound C7S.aac
+text @[Class A Homeroom Teacher]
+text A similar thing has happened before. I'm almost positive that's the case this time.
+text @[Tomoya]
+text It's happened before...?
+sound C7T.aac
+text @[Class A Homeroom Teacher]
+text Well, see you. If you're not in a club, you should go home, too.
+text After saying that, she quickly heads to the visitor's room.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s13
+fi
+goto 13
+label s13
+setvar strS[1000] = ""
+label 13
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s14
+fi
+goto 14
+label s14
+setvar strS[1000] = ""
+label 14
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I return to our meeting spot, but as expected, Kotomi still isn't here.
+bgload KURO.jpg 55
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I wait another twenty minutes before giving up.
+goto 16
+label 15
+if intF[1089] == 1
+	goto s15
+fi
+goto 16
+label s15
+text I decide to wait a little longer.
+text Even if she were to go to the teacher's office, she'd tell me first.
+text I usually make her wait, so this is a good experience for me.
+text .........
+text ......
+text ...
+bgload KURO.jpg 55
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I wait for thirty minutes, but Kotomi never shows.
+text I give up on waiting for her.
+setvar intF[411] = 1
+label 16
+text @[Tomoya]
+text What happened to her...?
+text Just as I bend over to pick up my bag...
+text I hear the sound of campus shoes walking toward me. They stop in front of me.
+text @[Tomoya]
+text (She's finally here...)
+text I look up and smile.
+text @[Tomoya]
+text You're a little late today.
+setvar strS[1001] = "CGSH10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound C7U.aac
+text @[Sunohara]
+text Yeah, some stuff happened.
+text @[Tomoya]
+text Well, let's go.
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound C7V.aac
+text @[Sunohara]
+text Yeah, let's go.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text We start walking together.
+music ~
+text @[Tomoya]
+text Why are two guys walking together like friends?! I don't get you!
+music BGM10B.mp3
+setvar strS[1001] = "CGSH18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound C7W.aac
+text @[Sunohara]
+text You're the one who's completely incomprehensible!
+text @[Tomoya]
+text Not as much as you.
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound C7X.aac
+text @[Sunohara]
+text Whatever. Stop this stupid crap and let's go.
+text @[Tomoya]
+text Huh?
+sound C7Y.aac
+text @[Sunohara]
+text You weren't waiting for me?
+text @[Tomoya]
+text Not even for a second.
+setvar strS[1001] = "CGSH15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound C7Z.aac
+text @[Sunohara]
+text Didn't you say "You're a little late today"?
+text @[Tomoya]
+text Your subconscious caused you to imagine it because you don't have any friends.
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound C80.aac
+text @[Sunohara]
+text I know you're being dodgy, but you're being a huge ass in the process.
+text @[Tomoya]
+text Then name one good friend of yours.
+setvar strS[1001] = "CGSH20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound C81.aac
+text @[Sunohara]
+text One good friend...?
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound C82.aac
+text @[Sunohara]
+text ...
+sound C83.aac
+text @[Sunohara]
+text ......
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s16
+fi
+goto 17
+label s16
+setvar strS[1000] = ""
+label 17
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM15.mp3
+setvar strS[1000] = "BG016"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s17
+fi
+goto 18
+label s17
+setvar strS[1000] = ""
+label 18
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I leave the lonely Sunohara behind.
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM10B.mp3
+sound C84.aac
+text @[Sunohara]
+text Don't leave me here!
+text He catches up to me, filled with desperation.
+sound C85.aac
+text @[Sunohara]
+text You! You!
+text @[Tomoya]
+text What?
+setvar strS[1001] = "CGSH17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound C86.aac
+text @[Sunohara]
+text You're a good friend! We're delinquents and failures, but we're irreplaceable buddies, right?
+text This manly piece of garbage faces me head-on and starts saying a bunch of stuff.
+text @[Tomoya]
+text Sunohara...
+setvar strS[1001] = "CGSH10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound C87.aac
+text @[Sunohara]
+text Okazaki...
+text @[Tomoya]
+text The only funny thing about what happened was your face.
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound C88.aac
+text @[Sunohara]
+text Who the hell do you think you are?
+text @[Tomoya]
+text A complete stranger.
+music ~
+setvar strS[1000] = "BG015"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s18
+fi
+goto 19
+label s18
+setvar strS[1000] = ""
+label 19
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM15.mp3
+text I leave him behind.
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM10B.mp3
+sound C89.aac
+text @[Sunohara]
+text What the hell? I'm gonna kick your ass!
+text He catches up to me, filled with desperation.
+text @[Tomoya]
+text Hello, stranger. Do you want something from me?
+setvar strS[1001] = "CGSH26"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH26.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound C8A.aac
+text @[Sunohara]
+text I was kidding. Please wait. Don't say we're strangers. Let's go together, please.
+text What a lonely guy.
+text @[Tomoya]
+text If you insist, I guess I don't have a choice.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I don't know how it ended up like this, but I decide to go with my (self-proclaimed) friend.
+text @[Tomoya]
+text Well, that's life.
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound C8B.aac
+text @[Sunohara]
+text I don't get you. Especially your life.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s19
+fi
+goto 20
+label s19
+setvar strS[1000] = ""
+label 20
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0

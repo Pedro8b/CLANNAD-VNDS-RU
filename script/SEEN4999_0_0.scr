@@ -1,0 +1,64 @@
+setvar intF[1110] = 0
+setvar intF[1112] = 0
+setvar strS[1004] = "SDTA4999"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1004] = ""
+label 1
+delay 120
+music BGM15.mp3
+setvar strS[1000] = "BG023"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = ""
+label 2
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text A weekday at school.
+text I lay on my side in an empty classroom.
+text Beyond this empty space is an empty sky.
+text @[Tomoya]
+text In the end, I keep coming back here...
+text Even my whispers are empty and devoid of meaning.
+text When will my life change?
+text Will there come a day when it will change?
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = ""
+label 3
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I close my eyes.
+text Someday, my life will change.
+text Right now, time is my only ally.
+delay 30
+music ~
+delay 300
+delay 120
+cleartext
+jump main.scr

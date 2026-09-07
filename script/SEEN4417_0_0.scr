@@ -1,0 +1,1396 @@
+text @[Tomoya]
+text (I'm going to play hooky.)
+text I stand up and quickly leave the classroom.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1000] = ""
+label 1
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = ""
+label 2
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM14.mp3
+text I spend the first five minutes of class in the restroom.
+text After that, I head to the old building.
+text I quietly walk through the hallways.
+text In the classrooms, everyone is listening to boring lectures.
+text It's as if this side of the space belongs entirely to me.
+text No one else would be walking here right now.
+setvar strS[1001] = "CGKT10B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT10B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text It feels good.
+text @[Tomoya]
+text Hey.
+text I feel so good that I give a friendly hello to the female student who shouldn't be here.
+text @[Tomoya]
+text Hey, wait!
+text Realizing that I shouted, I quickly drop the volume of my voice.
+text @[Tomoya]
+text What are you doing here?
+setvar strS[1001] = "CGKT11B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BN0.aac
+text @[Girl]
+text ???
+sound BN1.aac
+text @[Girl]
+text ??
+sound BN2.aac
+text @[Girl]
+text ?
+setvar strS[1001] = "CGKT21B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT21B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BN3.aac
+text @[Girl]
+text ...
+text It seems that she's lost in deep philosophical thought.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text I guess that was a bad question.
+text @[Tomoya]
+text Let me ask something more normal.
+setvar strS[1001] = "CGKT10B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT10B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She nods.
+text @[Tomoya]
+text Do you always go truant like this?
+text She nods.
+text Quite the shameless one.
+text She's carrying a stack of hardcover books like she'd carry a pile of bricks.
+setvar strS[1001] = "CGKT12B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BN4.aac
+text @[Girl]
+text Let's go.
+text She says that as if we had promised to meet up.
+choice Follow her|Wander around alone
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 1
+	goto s2
+fi
+goto 4
+label s2
+text @[Tomoya]
+text No, I have something to do.
+text I don't know what I have to do, but I say that and turn her down.
+text It's more fun being truant alone, and she should feel the same.
+setvar strS[1001] = "CGKT11B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BN5.aac
+text @[Girl]
+text Um...
+sound BN6.aac
+text @[Girl]
+text Is it important?
+text She says that with a serious face.
+text @[Tomoya]
+text Yeah, it's important.
+sound BN7.aac
+text @[Girl]
+text Very important?
+text @[Tomoya]
+text Yeah, it's very important.
+text I answer while hoping that she doesn't dig deeper into the matter.
+sound BN8.aac
+text @[Girl]
+text I see...
+text She says that with a hint of sadness.
+text @[Tomoya]
+text See ya.
+setvar strS[1001] = "CGKT10B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT10B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BN9.aac
+text @[Girl]
+text Okay.
+sound BNA.aac
+text @[Girl]
+text See you tomorrow.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She trots off with her books in hand.
+text @[Tomoya]
+text What a weirdo...
+text Something about her puts me off.
+text After she's out of sight, I continue on.
+text I guess I'll be going to an empty classroom in the old building. Again.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 3
+label s3
+setvar strS[1000] = ""
+label 3
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text .........
+text ......
+text ...
+text I stay in the empty classroom until fourth period ends.
+setvar intF[402] = 1
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+label 4
+text It's no fun wandering around alone. I decide to go with her.
+bgload KURO.jpg 55
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Not minding me one bit, she continues walking.
+text She doesn't seem to be fazed by the weight of the books stacked against her chest.
+text She doesn't even try to hide from the classes in session.
+text She's so open about it that it doesn't even seem like she's being truant.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s4
+fi
+goto 5
+label s4
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG020"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s5
+fi
+goto 6
+label s5
+setvar strS[1000] = ""
+label 6
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text We arrive in front of the library.
+text The sign that reads "Closed" is hung on the door.
+text Naturally, it's not open.
+text On a whim, I try opening the door. It slides right open.
+setvar strS[1001] = "CGKT11B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BNB.aac
+text @[Girl]
+text Huh?
+text @[Tomoya]
+text Why are you surprised?
+sound BNC.aac
+text @[Girl]
+text Um...
+sound BND.aac
+text @[Girl]
+text Very mysterious.
+text @[Tomoya]
+text This is kind of...
+text The conversation feels off, just like when I first met her.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She passes by me and goes inside.
+text I follow her in.
+music ~
+setvar strS[1000] = "BG027"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s6
+fi
+goto 7
+label s6
+setvar strS[1000] = ""
+label 7
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM05A.mp3
+text Unchanged, the bookshelves are still lined up systematically.
+text She gazes at them as if meeting old friends.
+text She must like them a lot. I, on the other hand, have nothing to do.
+text @[Tomoya]
+text Whatever.
+setvar strS[1001] = "CGKT12B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text When I mumble that, she turns and smiles softly.
+text Possibly because we're both truants, she seems oddly friendly to me.
+text She really seems a bit too... unworldly.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I look around the library.
+text Naturally, there's no one here but us.
+text @[Tomoya]
+text Do you always come here at this time?
+setvar strS[1001] = "CGKT12B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BNE.aac
+text @[Girl]
+text Mostly.
+sound BNF.aac
+text @[Girl]
+text I come later in the day if there's a class I have to go to in the morning.
+text The fact that she calls them classes she "has to go to" instead of classes she "needs to take" makes it amazing.
+text Just like Sunohara and me, she only thinks about attendance requirements.
+text But something feels off.
+text She doesn't have the smell of idiocy like Sunohara and me.
+text Smell of idiocy?
+text I try smelling myself.
+text Good. At the very least, I can't tell.
+text It's probably the same principle of how your own socks don't smell to you.
+text In other words, what I just did was entirely unnecessary.
+setvar strS[1001] = "CGKT11B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BNG.aac
+text @[Girl]
+text ?
+text She looks at me mysteriously.
+text @[Tomoya]
+text Don't worry about an idiot like me. Do what you want.
+text I don't care anymore, so I say that.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She then puts her belongings on top of the desk.
+setvar strS[1001] = "CGKT12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BNH.aac
+text @[Girl]
+text Wait just a second.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She trots over to the windows.
+text She opens a few windows to let in some fresh air.
+text Then she goes behind the librarian's desk and opens a locker with cleaning supplies.
+text She returns with a mop.
+text Before my eyes, she starts cleaning.
+sound BNI.aac
+text @[Girl]
+text There we go. There we go...
+text She tries her best to mop the floorboards with those thin arms of hers.
+text She told me to wait, so I stand by with nothing to do.
+text I feel like an annoying customer who walked into a store before business hours.
+text I wonder if I'll get something for waiting.
+text @[Tomoya]
+text Hot coffee.
+text I try ordering.
+setvar strS[1001] = "CGKT11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BNJ.aac
+text @[Girl]
+text ?
+text She stops mopping and looks at me weirdly.
+text It seems that they don't serve coffee here.
+text @[Tomoya]
+text How about a rice omelet?
+sound BNK.aac
+text @[Girl]
+text T...
+setvar strS[1001] = "CGKT10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BNL.aac
+text @[Girl]
+text Tomato.
+text @[Tomoya]
+text Olive.
+sound BNM.aac
+text @[Girl]
+text Eggs.
+text @[Tomoya]
+text S-Simian.
+sound BNN.aac
+text @[Girl]
+text N'Djamena.
+text @[Tomoya]
+text Apple...
+text @[Tomoya]
+text Hey, wait. What the hell is N'Djamena?
+setvar strS[1001] = "CGKT12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BNO.aac
+text @[Girl]
+text The capital of Chad in Africa.
+sound BNP.aac
+text @[Girl]
+text It's a city located about 100 km northeast of Lake Chad. The population is...
+text @[Tomoya]
+text You don't need to explain it...
+setvar strS[1001] = "CGKT11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BNQ.aac
+text @[Girl]
+text ??
+sound BNR.aac
+text @[Girl]
+text Then what should I do...?
+text That's what I want to know.
+text @[Tomoya]
+text Let's just say N'Djamena isn't allowed.
+setvar strS[1001] = "CGKT10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BNS.aac
+text @[Girl]
+text ...
+setvar strS[1001] = "CGKT10B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT10B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BNT.aac
+text @[Girl]
+text Are you a bully?
+text @[Tomoya]
+text I'm not.
+sound BNU.aac
+text @[Girl]
+text But I can't continue.
+text @[Tomoya]
+text We're done with the word game. Just keep cleaning.
+setvar strS[1001] = "CGKT10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Nod*
+text She nods and starts mopping again.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Phew...
+text I have nothing to do, so I sit down on a nearby chair.
+text I rest my chin on my hand and continue to watch how she cleans.
+text She keeps mopping the floor by the seats again and again.
+text For someone skipping out on class to come to the library, she's pretty admirable.
+text I suppose it's natural since she sits on the floor when she reads.
+text I look up and see the books she brought, stacked on top of the desk.
+text Like last time, they're all thick technical books with the library's stamp on them.
+choice Check for cut-up pages|Leave it alone because I don't care
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s7
+fi
+goto 8
+label s7
+text I decide to check if any of the pages are cut.
+text I grab the book closest to me.
+text I look at the cover, but the title is worn away.
+text I bet I wouldn't understand a single word.
+text I open the book and look inside.
+text @[Tomoya]
+text Th-This is...
+text My eyes widen.
+text It's way beyond my petty worries about cut-up pages...
+goto 9
+label 8
+if intF[1089] == 1
+	goto s8
+fi
+goto 9
+label s8
+text I decide to leave it alone.
+text I'd be the last person to sound convincing by telling her what to do.
+text Still...
+text I grab the book closest to me on a whim.
+text I look at the cover, but the title is worn away.
+text I bet I wouldn't understand a single word.
+text I open the book and look inside.
+text My eyes widen.
+setvar intF[403] = 1
+label 9
+text The pages are printed in English.
+text It's a technical book from overseas, apparently.
+text @[Tomoya]
+text Gah.
+text I snap the book shut.
+text Why would you even bring this to school?
+text @[Tomoya]
+text You can read English?
+text She answers me with a nod, all the while still cleaning.
+setvar strS[1001] = "CGKT12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BNV.aac
+text @[Girl]
+text It's a little hard to write, but reading is easy.
+text @[Tomoya]
+text If you could write in English too, I'd be really surprised.
+setvar strS[1001] = "CGKT11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Girl]
+text ??
+text She's not bluffing.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Then again, she wouldn't lug these heavy things around if she couldn't read them.
+text Maybe she used to live overseas.
+setvar strS[1001] = "CGKT14A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT14A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BNX.aac
+text @[Girl]
+text I'm done cleaning.
+sound BNY.aac
+text @[Girl]
+text Neat and tidy.
+text @[Tomoya]
+text Oh. That's nice.
+sound BNZ.aac
+text @[Girl]
+text It feels great when things are clean and shiny.
+text @[Tomoya]
+text Yeah, I guess.
+sound BO0.aac
+text @[Girl]
+text Sitting on a floor this clean won't get my skirt dirty.
+text So that's why.
+setvar strS[1001] = "CGKT12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BO1.aac
+text @[Girl]
+text Wait just a little longer.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She runs back to the librarian's desk.
+text She puts the mop away in the locker and takes out a cushion in its place.
+text Seems like she keeps that cushion behind the librarian's desk when she's not here.
+text Considering how the library is unlocked during class, I have to wonder if the library assistant is even doing their job.
+sound BO2.aac
+text @[Girl]
+text Hey.
+text She drops the cushion onto the floor.
+text Then she picks up the books she brought and lays them in a circle around the cushion.
+text She probably wants to be surrounded by her favorite books. Literally.
+sound BO3.aac
+text @[Girl]
+text Now it's perfect.
+text She nods to herself in satisfaction before taking off her campus shoes.
+sound BO4.aac
+text @[Girl]
+text Here we go...
+text Then she takes each sock off while still standing.
+text She's really treating the library like her own room.
+text Before my eyes, she's become barefoot.
+setvar strS[1001] = "CGKT12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BO5.aac
+text @[Girl]
+text This feels better.
+text She says that with an innocent smile.
+sound BO6.aac
+text @[Girl]
+text It's cool, but also warm.
+text Her words contradict each other, but I think I get what she means.
+text This mysterious girl tries her best to make conversation with me even though we just met.
+text Looking past her slender legs, books are lined up on the shelves, covered in dust.
+text This sight seems unreal, yet feels eerily familiar.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BO7.aac
+text @[Girl]
+text Here we go...
+text She sits down on the cushion.
+text Wondering to myself about why she would sit in the corner, she looks up at me.
+setvar strS[1001] = "CGKT12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BO8.aac
+text @[Girl]
+text Here.
+text She pats the half of the cushion she left empty.
+text @[Tomoya]
+text You want me to sit with you?
+text She nods.
+text Our bodies would have to make contact for me to sit there.
+text @[Tomoya]
+text I'll stick with the chair.
+setvar strS[1001] = "CGKT11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BO9.aac
+text @[Girl]
+text ...?
+text She looks at me as if surprised.
+sound BOA.aac
+text @[Girl]
+text You won't read with me?
+text That's impossible in more ways than one.
+text @[Tomoya]
+text Unfortunately, you'll have to read on your own.
+text @[Tomoya]
+text Just assume I'm not here.
+sound BOB.aac
+text @[Girl]
+text ??
+text She looks as if she's coming to a realization while looking at me.
+sound BOC.aac
+text @[Girl]
+text Um...
+setvar strS[1001] = "CGKT18A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT18A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BOD.aac
+text @[Girl]
+text Okay...
+text She looks down as if depressed.
+text @[Tomoya]
+text I'll be right here looking at you.
+text I add.
+setvar strS[1001] = "CGKT12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Just saying that lights up her face.
+sound BOE.aac
+text @[Girl]
+text Okay.
+sound BOF.aac
+text @[Girl]
+text I only need you to... look at me.
+text She seems really happy.
+text Does she like being watched as she reads books that much?
+text In a way, that's an amazing hobby.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I decide to stick around and watch.
+text She holds down the hem of her skirt while repositioning herself on the cushion.
+text Looks like she found her best position.
+setvar strS[1001] = "CGKT12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BOG.aac
+text @[Girl]
+text I'll be reading now.
+text @[Tomoya]
+text Yeah. Read as much as you want.
+text @[Tomoya]
+text Oh yeah. You don't need to read out loud.
+text I add that because hearing her read in English would seem weird.
+sound BOH.aac
+text @[Girl]
+text Um...
+sound BOI.aac
+text @[Girl]
+text Then I'll read this one.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She holds up a nearby book and opens it on her lap.
+text She flips through the pages to find where she last left off.
+text Her hands stop and she begins reading.
+text She's serious about this.
+text Because the sentences go left to right, I can see her eyes moving in the same direction. It's funny.
+text I get the feeling that her reading speed is abnormally fast.
+text Oh, she's turning a page.
+text Wow, she's on the second page already.
+text @[Tomoya]
+text Wait, am I really just going to sit here and watch?
+text I blurt that out but get no response.
+text The girl is immersed in her book.
+text I'm left to my own devices.
+text @[Tomoya]
+text What to do now...
+text I mumble that and look out the window.
+text It's a bright and sunny day.
+text The light reflecting off the curtains is blinding.
+text They're probably playing a ball game in gym class. I hear cheers from time to time.
+text And to my side is the sound of turning pages...
+text What a peaceful day.
+text The mid-April weather is gentle.
+text Besides the book-loving girl and me, there's no one else in the library.
+text There's only one thing to do.
+text @[Tomoya]
+text All right.
+text @[Tomoya]
+text I'm napping.
+text I put my head down on the desk and slowly close my eyes...
+music ~
+setvar strS[1000] = "SIRO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s9
+fi
+goto 10
+label s9
+setvar strS[1000] = ""
+label 10
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+delay 180
+text Where... am I?
+text I hear a sound.
+text A sound I've never heard before.
+text But it's a familiar sound.
+text I slowly open my eyes.
+setvar strS[1000] = "BG027"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s10
+fi
+goto 11
+label s10
+setvar strS[1000] = ""
+label 11
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Ding dong...
+text @[Tomoya]
+text ...
+text It's the school bell.
+text I raise my head and look around at my surroundings.
+text It takes me a while to realize that I'm in the library and not a classroom.
+text How long have I been asleep?
+text The girl looks up from her book and peers at my face.
+music BGM05A.mp3
+setvar strS[1001] = "CGKT12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BOJ.aac
+text @[Girl]
+text Are you awake?
+text @[Tomoya]
+text What time is it...?
+sound BOK.aac
+text @[Girl]
+text Noon.
+text @[Tomoya]
+text Oh...
+text It feels like I slept for much longer.
+sound BOL.aac
+text @[Girl]
+text Did you sleep a lot?
+text @[Tomoya]
+text Yeah.
+sound BOM.aac
+text @[Girl]
+text Oh.
+sound BON.aac
+text @[Girl]
+text That's good.
+text @[Tomoya]
+text Did you read a lot?
+text She nods.
+sound BOO.aac
+text @[Girl]
+text Yes. I read a lot.
+text @[Tomoya]
+text Oh. That's nice.
+sound BOP.aac
+text @[Girl]
+text Um...
+sound BOQ.aac
+text @[Girl]
+text Do you want to eat lunch?
+if intF[1] == 1
+	goto s11
+fi
+goto 14
+label s11
+text @[Tomoya]
+text Yeah. I'm hungry.
+setvar strS[1001] = "CGKT15A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT15A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text The moment I say that, she partly closes her eyes and smiles.
+sound BOR.aac
+text @[Girl]
+text Then let's do halfsies.
+text I'm surprised to find that hearing her say that makes me happy.
+setvar strS[1001] = "CGKT12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Was I always this outgoing?
+text @[Tomoya]
+text No, I'll pass.
+text I doubt myself and change my attitude.
+setvar strS[1001] = "CGKT11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BOS.aac
+text @[Girl]
+text ?
+text She tips her head in confusion.
+text Seeing that makes me want to laugh.
+text A short time ago, I wouldn't have actively interacted with strangers like this.
+if intF[3] == 1
+	goto s12
+fi
+goto 12
+label s12
+text Eating bread with Furukawa would have been impossible.
+text I've even promised to help her with her drama club.
+text I think I'm changing.
+goto 13
+label 12
+if intF[3] == 0
+	goto s13
+fi
+goto 13
+label s13
+text Am I really changing?
+label 13
+setvar strS[1001] = "CGKT18A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT18A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BOT.aac
+text @[Girl]
+text Um...
+sound BOU.aac
+text @[Girl]
+text Are you actually full?
+text She whispers that question while moving her eyes with reservation.
+text @[Tomoya]
+text It's not that.
+goto 16
+label 14
+if intF[1] == 0
+	goto s14
+fi
+goto 16
+label s14
+text @[Tomoya]
+text No, I'll pass.
+text Following her glance, I notice that there are two pairs of chopsticks on the lid of the lunch box.
+text One pair has a childish vermilion lacquer and the other is longer and has a black lacquer.
+text @[Tomoya]
+text Are those... for me?
+text She nods again.
+text To her, this act of kindness probably doesn't mean anything.
+text @[Tomoya]
+text Phew...
+text I think of the hill in front of the school for some reason.
+text Being deeply involved with someone is like shouldering unnecessary baggage.
+text The slope you want to avoid will seem even steeper.
+text Thinking this way, I guess I haven't changed at all.
+text @[Tomoya]
+text I'll pass.
+text I know she wants to respond after I say that.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text See ya.
+text I pay her no mind and leave the library.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s15
+fi
+goto 15
+label s15
+setvar strS[1000] = ""
+label 15
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar intF[402] = 1
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+label 16
+text I'm about to answer, but then I notice her gaze.
+text She had already taken her lunch box out of her bag.
+text There are two pairs of chopsticks on top of the lid.
+text One pair has a childish vermilion lacquer and the other is longer and has a black lacquer.
+text @[Tomoya]
+text Are those... for me?
+text She nods again.
+text @[Tomoya]
+text Phew...
+text To be honest, that makes me happy. But I don't understand why she'd go to such lengths.
+text Is she this nice to everyone?
+text She really doesn't seem to be the type.
+text @[Tomoya]
+text By the way, what's your name?
+setvar strS[1001] = "CGKT11B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BOV.aac
+text @[Girl]
+text ???
+text Don't be totally surprised at that.
+text @[Tomoya]
+text Your name. If you don't want to say, that's okay.
+setvar strS[1001] = "CGKT11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BOW.aac
+text @[Girl]
+text Um...
+text After a while...
+setvar strS[1001] = "CGKT12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BOX.aac
+text @[Girl]
+text Kotomi.
+sound BOY.aac
+text @[Girl]
+text Three hiragana letters, Kotomi.
+sound BOZ.aac
+text @[Girl]
+text Call me Kotomi-chan.
+text Calling her with a "-chan" is highly inappropriate at our age.
+text @[Tomoya]
+text Can't I just call you by your name?
+text After saying that, she gives her usual nod.
+text @[Tomoya]
+text I'm Tomoya Okazaki.
+text @[Tomoya]
+text You can call me however you want.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I stand up from my chair and stretch.
+text She stands up, too.
+text Then she stares straight at me.
+setvar strS[1001] = "CGKT10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BP0.aac
+text @[Kotomi]
+text Tomoya-kun.
+text That's what she calls me.
+sound BP1.aac
+text @[Kotomi]
+text Tomoya-kun. Tomoya-kun. Tomoya-kun.
+text Why are you repeating it?
+setvar strS[1001] = "CGKT11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BP2.aac
+text @[Kotomi]
+text Tomoya-kun?
+text Why are you making it a question?
+sound BP3.aac
+text @[Kotomi]
+text @Tomoya......
+delay 129
+text -kun...
+text She hesitates for no reason.
+sound BP4.aac
+text @[Kotomi]
+text ...
+setvar strS[1001] = "CGKT12B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BP5.aac
+text @[Kotomi]
+text Tomoya-kun.
+text As if confirming her words, she says it clearly once more.
+setvar strS[1001] = "CGKT15B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT15B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BP6.aac
+text @[Kotomi]
+text It feels strange.
+text After saying that, she smiles gently.
+text No matter how you look at it, you're the strange one here.
+text @[Tomoya]
+text Whatever.
+text I shouldn't be killing time here.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text See ya.
+text I try to leave, but stop in my tracks.
+text Why? Because she's looking at me as if trying to say something.
+text @[Tomoya]
+text Are you going to keep reading?
+text I turn around and ask her.
+setvar strS[1001] = "CGKT12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BP7.aac
+text @[Kotomi]
+text I'll be here in the afternoon again.
+if intF[403] == 0
+	goto s16
+fi
+goto 17
+label s16
+text @[Tomoya]
+text Don't cut up the pages today.
+setvar strS[1001] = "CGKT11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text After saying that, she seems to be at a loss for words.
+setvar strS[1001] = "CGKT12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She gives an ambiguous smile.
+label 17
+text @[Tomoya]
+text See ya.
+sound BP8.aac
+text @[Kotomi]
+text Okay.
+sound BP9.aac
+text @[Kotomi]
+text See you tomorrow.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I leave the library.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s17
+fi
+goto 18
+label s17
+setvar strS[1000] = ""
+label 18
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar intF[404] = 1
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0

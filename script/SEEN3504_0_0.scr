@@ -1,0 +1,252 @@
+setvar intF[1110] = 4
+setvar intF[1112] = 1
+setvar strS[1004] = "SDTA0504"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1004] = ""
+label 1
+bgload SCLAB00.jpg 45
+delay 60
+setimg SCLAP06.png 5 5
+setimg SCLA0504.png 159 160
+delay 120
+if 0 == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = "KURO"
+goto 4
+label 2
+if 0 == 1
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = "SIRO"
+goto 4
+label 3
+setvar strS[1000] = "KURO"
+label 4
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG035"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 5
+label s3
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM09A.mp3
+text It's Sunday. Just like yesterday, I am here at the shopping district.
+text When I woke up this afternoon, the first thing that came into my view is a small paper bag.
+text It's the one with the tarot cards that Kyou handed me yesterday.
+text She had told me to give this to Fujibayashi and to tell her that it is from me.
+text In any case, I suppose I'll comply and go with her plan.
+text However... if that is all I give her, then it'd make me feel ashamed of myself.
+text The fact that the first present I am giving my girlfriend isn't something I bought.
+text On top of that, it was given to me by her sister.
+text @[Tomoya]
+text If I remember correctly, it should be around here...
+text I glance around in an attempt to find the store that I can only faintly remember.
+text I spot the store in a corner; its showcase is gorgeous compared to the other stores.
+text @[Tomoya]
+text There it is.
+text Having found my destination I start walking toward it.
+sound AAN.aac
+text @[Store Employee]
+text Welcome.
+text A female sales clerk notices and starts talking to me.
+sound AAO.aac
+text @[Store Employee]
+text Here for a gift?
+text @[Tomoya]
+text Ah, yes.
+text I answer as I look at the many glittering accessories that are lined up neatly inside the showcase.
+text The contents aren't the same as last week...
+sound AAP.aac
+text @[Store Employee]
+text Are you looking for something in particular?
+sound AAQ.aac
+text @[Store Employee]
+text I recommend getting necklaces or bracelets to go with the light clothing next season.
+text She says, brandishing a business smile.
+text @[Tomoya]
+text Um... I want a pendant.
+sound AAR.aac
+text @[Store Employee]
+text A pendant, is it? In that case, the emerald here is on sale this month.
+sound AAS.aac
+text @[Store Employee]
+text Although the chains are made of platinum, they are very affordable.
+text @[Tomoya]
+text ...
+text I stare at the number of zeroes and count.
+text There is a gap between the resulting tally and what is currently in my wallet.
+sound AAT.aac
+text @[Store Employee]
+text Should I take it out for you to hold it?
+text @[Tomoya]
+text N-Nah, I'm fine.
+text @[Tomoya]
+text Rather than that, where's the stuff that was on display here last week?
+sound AAU.aac
+text @[Store Employee]
+text Oh, they are over here.
+text With a smile on her face, the clerk leads me inside.
+text As I am not too used to these sorts of shops, I hesitate a little about stepping inside.
+sound AAV.aac
+text @[Store Employee]
+text Over here.
+text With her unfaltering smile, the clerk holds her hand out at the showcase.
+text I look at the showcase and find several rings and pendants that I had seen before.
+sound AAW.aac
+text @[Store Employee]
+text Did you find what you are looking for?
+text @[Tomoya]
+text Uh... umm...
+text I start looking at each pendant in order.
+text There's green... blue... red... and one that changes color depending on the light...
+text The lights inside the showcase illuminate the silver, giving it a radiant shine.
+text To think that I would look at these kinds of things seriously...
+text I quietly smile bitterly to myself.
+sound AAX.aac
+text @[Store Employee]
+text If there's something that interests you, would you like me to take it out?
+text @[Tomoya]
+text Eh? Uh, give me a moment.
+text I feel as if I'm being rushed.
+text Why are accessory store clerks always in such a hurry?
+text I stare at the pendants inside the showcase and compare them.
+text If I remember correctly, the one she said last time is...
+text My eyes stop at a gleaming gemstone.
+sound AAY.aac
+text @[Store Employee]
+text Found what you are looking for?
+text @[Tomoya]
+text Yes, please show me this gemstone pendant.
+sound AAZ.aac
+text @[Store Employee]
+text Um... would that be the tanzanite or the amethyst?
+text @[Tomoya]
+text Eh... uhh... well...
+text Which one was it...?
+choice Tanzanite|Amethyst
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s4
+fi
+goto 6
+label s4
+text @[Tomoya]
+text May I have the tanzanite pendant?
+setvar intF[311] = 1
+label 6
+if intF[1089] == 1
+	goto s5
+fi
+goto 7
+label s5
+text @[Tomoya]
+text May I have the amethyst pendant?
+setvar intF[310] = 1
+label 7
+sound AB0.aac
+text @[Store Employee]
+text Yes, right away.
+text She takes it out of the case and hands it to me.
+sound AB1.aac
+text @[Store Employee]
+text What do you think?
+text @[Tomoya]
+text Hm, yeah, I'll take this.
+sound AB2.aac
+text @[Store Employee]
+text Yes, right away.
+sound AB3.aac
+text @[Store Employee]
+text Would the chain's length be okay as it is?
+text @[Tomoya]
+text Eh? What do you mean, the length?
+sound AB4.aac
+text @[Store Employee]
+text Right now it is forty-five centimeters long. The gemstone will be right around where your collarbones are if you wear it.
+sound AB5.aac
+text @[Store Employee]
+text It would feel a little short, and if you are not used to wearing these, you may find it a little hard to breathe...
+text @[Tomoya]
+text Um, I'm not the one who'll be wearing it...
+sound AB6.aac
+text @[Store Employee]
+text Ah, is this a gift?
+text @[Tomoya]
+text Yeah, sorta...
+sound AB7.aac
+text @[Store Employee]
+text For your girlfriend?
+text @[Tomoya]
+text Yeah...
+sound AB8.aac
+text @[Store Employee]
+text In that case, I think it will be perfect as is.
+text @[Tomoya]
+text I see. I'll take it, then.
+sound AB9.aac
+text @[Store Employee]
+text Yes, right away.
+text The store clerk takes the pendant out of the showcase and very carefully wipes it with a felt cloth that she pulled out from her pocket. She then shows it to me.
+text Perhaps it's made for polishing silver. The metal parts now have an even more exceptional shine.
+sound ABA.aac
+text @[Store Employee]
+text Will this do?
+text @[Tomoya]
+text Yes.
+sound ABB.aac
+text @[Store Employee]
+text We also have gift cases for 500 yen. Would you like one?
+text @[Tomoya]
+text Ah, then please put it in one.
+sound ABC.aac
+text @[Store Employee]
+text Very well.
+text The store clerk looks at me once more with the smile that I have now grown accustomed to and starts walking toward the cashier.
+text I follow behind her.
+text As I look at the clerk wrapping the pendant neatly by hand, I imagine myself handing this to her.
+text I wonder if she'll be happy with this.
+text Today, I learned that buying something for someone can be unexpectedly fun.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s6
+fi
+goto 8
+label s6
+setvar strS[1000] = ""
+label 8
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music ~
+jump SEEN3505_0_0.scr

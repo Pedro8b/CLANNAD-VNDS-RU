@@ -1,0 +1,86 @@
+if intF[111] == 0
+	if intF[112] == 0
+		goto s0
+	fi
+fi
+goto 3
+label s0
+setvar strS[1001] = "CGNG13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 20P.aac
+text @[{$lnmA}]
+text Is something wrong, Fu-chan?
+text {$lnmA} asks as she lets go of Fuko.
+setvar strS[1001] = "CGFU19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 20Q.aac
+text @[Fuko]
+text Eh? What do you mean?
+text @[Tomoya]
+text Your reaction was totally different when I did it!
+sound 20R.aac
+text @[Fuko]
+text Yes?
+setvar strS[1001] = "CGNG16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[0] = lnmE
+if strS[0] > "Okazaki-san"
+	setvar intA[1000] = 1
+fi
+if strS[0] < "Okazaki-san"
+	setvar intA[1000] = -1
+fi
+if strS[0] == "Okazaki-san"
+	setvar intA[1000] = 0
+fi
+if strS[0] > "Tomoya-kun"
+	setvar intA[1001] = 1
+fi
+if strS[0] < "Tomoya-kun"
+	setvar intA[1001] = -1
+fi
+if strS[0] == "Tomoya-kun"
+	setvar intA[1001] = 0
+fi
+if intA[1000] == 0
+	goto s1
+fi
+goto 1
+label s1
+sound 20S.aac
+goto 2
+label 1
+sound 20T.aac
+label 2
+text @[{$lnmA}]
+text {$lnmE}, don't you feel sorry for her yelling at her like that?
+text @[Tomoya]
+text ...Fine. Do whatever you want.
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+label 3
+text @Well, gotta do something to warn her...
+jump SEEN1006_1_0.scr

@@ -1,0 +1,27 @@
+label 104
+if intF[1089] == 1
+	goto s84
+fi
+goto 105
+label s84
+jump SEEN5424_0_0.scr 41
+label 105
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s85
+fi
+goto 106
+label s85
+setvar strS[1000] = ""
+label 106
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+jump SEEN5425_0_0.scr

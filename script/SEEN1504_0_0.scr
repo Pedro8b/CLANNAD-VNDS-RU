@@ -1,0 +1,775 @@
+setvar intF[1110] = 4
+setvar intF[1112] = 1
+setvar strS[1004] = "SDTA0504"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1004] = ""
+label 1
+bgload SCLAB00.jpg 45
+delay 60
+setimg SCLAP06.png 5 5
+setimg SCLA0504.png 159 160
+delay 120
+if 0 == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = "KURO"
+goto 4
+label 2
+if 0 == 1
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = "SIRO"
+goto 4
+label 3
+setvar strS[1000] = "KURO"
+label 4
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG033"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 5
+label s3
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM14.mp3
+text Only two days left until the holidays are over. Today, I decide to take a detour before going to {$lnmA}'s house.
+text If she's there, we can have a little chitchat and...
+text ...more importantly, find a way to hint to her that Fuko has taken classes with us.
+if 0 == 0
+	goto s4
+fi
+goto 6
+label s4
+setvar strS[1000] = "KURO"
+goto 8
+label 6
+if 0 == 1
+	goto s5
+fi
+goto 7
+label s5
+setvar strS[1000] = "SIRO"
+goto 8
+label 7
+setvar strS[1000] = "KURO"
+label 8
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG042"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s6
+fi
+goto 9
+label s6
+setvar strS[1000] = ""
+label 9
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text ......
+text ...There she is.
+text She's watering the flower bed today, too.
+text @[Tomoya]
+text Kouko-san.
+setvar strS[1001] = "CGKO10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 480.aac
+text @[Kouko]
+text Yes?
+setvar strS[1001] = "CGKO12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 481.aac
+text @[Kouko]
+text Ah, Okazaki-san, good afternoon.
+text @[Tomoya]
+text Good afternoon.
+if intF[136] == 0
+	goto s7
+fi
+goto 10
+label s7
+text @[Tomoya]
+text Actually... I...
+setvar strS[1001] = "CGKO10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 482.aac
+text @[Kouko]
+text Yes?
+text She keeps gazing at me.
+text How do I tell her about that?
+text How can I express my feelings right now?
+setvar strS[1001] = "CGKO11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 483.aac
+text @[Kouko]
+text Something good seems to have happened to you.
+text @[Tomoya]
+text What...?
+sound 484.aac
+text @[Kouko]
+text You seem very lively today.
+text @[Tomoya]
+text You can tell?
+sound 485.aac
+text @[Kouko]
+text Yes, of course.
+setvar strS[1001] = "CGKO20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 486.aac
+text @[Kouko]
+text If she can become happy...
+sound 487.aac
+text @[Kouko]
+text I will be... very happy too.
+text I wonder if it's already reached her...
+setvar strS[1001] = "CGKO14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 488.aac
+text @[Kouko]
+text That's why, please...
+setvar strS[1001] = "CGKO12H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO12H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 489.aac
+text @[Kouko]
+text Please take good care of Nagisa-chan.
+text *Thunk* I suddenly lose all the strength in my legs.
+text @[Tomoya]
+text You got it wrong!
+setvar strS[1001] = "CGKO13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 48A.aac
+text @[Kouko]
+text Really? Didn't you start going out with Nagisa-chan?
+text @[Tomoya]
+text You totally got it wrong.
+setvar strS[1001] = "CGKO11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 48B.aac
+text @[Kouko]
+text I'm so sorry, I've jumped to conclusions.
+setvar strS[1001] = "CGKO10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 48C.aac
+text @[Kouko]
+text If that's not the case, what happened?
+text Her eyes are filled with anticipation.
+text I want to tell her everything right away.
+text But that would mean betraying Fuko.
+text @[Tomoya]
+text ...
+text @[Tomoya]
+text Hmm... It's so hard to say...
+text Just how can I explain it to her...
+goto 11
+label 10
+if intF[136] == 1
+	goto s8
+fi
+goto 11
+label s8
+setvar strS[1001] = "CGKO10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 48D.aac
+text @[Kouko]
+text Were you able to make peace with Nagisa-chan?
+text @[Tomoya]
+text Yes, perfectly.
+setvar strS[1001] = "CGKO11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 48E.aac
+text @[Kouko]
+text Is that so? I'm glad you did.
+text @[Tomoya]
+text Yeah.
+text @[Tomoya]
+text Actually... I...
+setvar strS[1001] = "CGKO10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 48F.aac
+text @[Kouko]
+text Yes?
+text She keeps gazing at me.
+text How do I tell her about that?
+text How can I express my feelings right now?
+sound 48G.aac
+text @[Kouko]
+text Something good seems to have happened to you.
+text @[Tomoya]
+text What...?
+sound 48H.aac
+text @[Kouko]
+text You seem very lively today.
+sound 48I.aac
+text @[Kouko]
+text Is it about Nagisa-chan?
+text @[Tomoya]
+text No, not that.
+text @[Tomoya]
+text How should I put it...
+label 11
+setvar strS[1001] = "CGKO11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 48J.aac
+text @[Kouko]
+text If it's so hard to say, you don't have to force yourself.
+sound 48K.aac
+text @[Kouko]
+text You can feel happy just by being around a happy person.
+sound 48L.aac
+text @[Kouko]
+text I'm feeling so much better simply because you've brought so much cheer with you.
+sound 48M.aac
+text @[Kouko]
+text Thank you very much.
+text I didn't know there are things that could be conveyed even without words.
+text @[Tomoya]
+text If so, please let me stay just for a bit longer.
+setvar strS[1001] = "CGKO10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 48N.aac
+text @[Kouko]
+text Please stay as long as you want to.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Kouko-san returns to watering the flowers.
+text Then...
+music ~
+sound 48O.aac
+text @[Kouko]
+text It's getting a bit dull, isn't it? Let's talk about something.
+text She stops her hands and turns to me.
+setvar strS[1001] = "CGKO10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 48P.aac
+text @[Kouko]
+text It's about my little sister, Fuko.
+sound 48Q.aac
+text @[Kouko]
+text Whom you've so kindly cared about.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s9
+fi
+goto 12
+label s9
+setvar strS[1000] = ""
+label 12
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG002"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s10
+fi
+goto 13
+label s10
+setvar strS[1000] = ""
+label 13
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM01.mp3
+text As always, Fuko's devoting herself to carving starfish.
+text Standing next to each other, {$lnmA} and I can only keep watching her.
+text Then I remember...
+text ...what Kouko-san told me.
+if 0 == 0
+	goto s11
+fi
+goto 14
+label s11
+setvar strS[1000] = "KURO"
+goto 16
+label 14
+if 0 == 1
+	goto s12
+fi
+goto 15
+label s12
+setvar strS[1000] = "SIRO"
+goto 16
+label 15
+setvar strS[1000] = "KURO"
+label 16
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG042"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s13
+fi
+goto 17
+label s13
+setvar strS[1000] = ""
+label 17
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGKO10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 48R.aac
+text @[Kouko]
+text She was always with me.
+sound 48S.aac
+text @[Kouko]
+text She was able to be herself in front of me.
+setvar strS[1001] = "CGKO13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 48T.aac
+text @[Kouko]
+text But it took me so long to realize that that wasn't the case when she was outside...
+sound 48U.aac
+text @[Kouko]
+text I didn't know.
+setvar strS[1001] = "CGKO14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 48V.aac
+text @[Kouko]
+text I didn't know it was that hard for her to make friends.
+setvar strS[1001] = "CGKO13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 48W.aac
+text @[Kouko]
+text It was the year I became a teacher. During summer vacation, we went to the beach with a few of our relatives.
+sound 48X.aac
+text @[Kouko]
+text There was a girl there about Fu-chan's age.
+sound 48Y.aac
+text @[Kouko]
+text But she was always trying to hide behind me.
+sound 48Z.aac
+text @[Kouko]
+text Even when the relatives tried to talk to her, she couldn't greet them properly...
+sound 490.aac
+text @[Kouko]
+text That was when I first realized...
+sound 491.aac
+text @[Kouko]
+text That Fu-chan wouldn't try to get close to anyone.
+setvar strS[1001] = "CGKO14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 492.aac
+text @[Kouko]
+text Even when people just called her name, she would get scared and run away...
+sound 493.aac
+text @[Kouko]
+text That's the kind of child she is.
+setvar strS[1001] = "CGKO18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 494.aac
+text @[Kouko]
+text When everyone was playing in the sea, Fu-chan just stayed on the beach.
+sound 495.aac
+text @[Kouko]
+text She was there playing with starfish.
+sound 496.aac
+text @[Kouko]
+text All alone.
+sound 497.aac
+text @[Kouko]
+text She was just the same when she graduated from middle school.
+setvar strS[1001] = "CGKO13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 498.aac
+text @[Kouko]
+text I thought it wouldn't be good for her to go on like that...
+sound 499.aac
+text @[Kouko]
+text That's why, during spring break, I left her on her own.
+sound 49A.aac
+text @[Kouko]
+text It was a really hard thing to do.
+sound 49B.aac
+text @[Kouko]
+text It was the first time we didn't spend a vacation together...
+setvar strS[1001] = "CGKO14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 49C.aac
+text @[Kouko]
+text No matter how worried I got... I tried not to meet her...
+sound 49D.aac
+text @[Kouko]
+text I kept on pretending to be busy.
+setvar strS[1001] = "CGKO18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 49E.aac
+text @[Kouko]
+text Fu-chan... she must have been so lonely.
+sound 49F.aac
+text @[Kouko]
+text Before that, we would always go places together...
+sound 49G.aac
+text @[Kouko]
+text But... I thought that loneliness would urge her to make friends at her new school...
+setvar strS[1001] = "CGKO13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 49H.aac
+text @[Kouko]
+text And then, on the morning of the entrance ceremony...
+sound 49I.aac
+text @[Kouko]
+text She told me...
+sound 49J.aac
+text @[Kouko]
+text That she would try her best to make a lot of friends...
+sound 49K.aac
+text @[Kouko]
+text I think she knew that's what I wanted her to do.
+sound 49L.aac
+text @[Kouko]
+text ...
+sound 49M.aac
+text @[Kouko]
+text It was a very refreshing morning.
+sound 49N.aac
+text @[Kouko]
+text It was really a pleasant morning.
+setvar strS[1001] = "CGKO14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 49O.aac
+text @[Kouko]
+text And yet, she was so lonely, right up to the moment when...
+if 0 == 0
+	goto s14
+fi
+goto 18
+label s14
+setvar strS[1000] = "KURO"
+goto 20
+label 18
+if 0 == 1
+	goto s15
+fi
+goto 19
+label s15
+setvar strS[1000] = "SIRO"
+goto 20
+label 19
+setvar strS[1000] = "KURO"
+label 20
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text That day, on her way home, the accident happened.
+text Kouko-san ended up acting cold to Fuko until the last time they talked to each other.
+text And for both Fuko and Kouko-san, her cold attitude at that moment has become frozen in time.
+if intF[140] == 0
+	goto s16
+fi
+goto 21
+label s16
+text I can't...
+text I can't even imagine how painful it must have been for her during the last two years.
+text Then...
+text It hasn't ended.
+label 21
+music ~
+setvar strS[1000] = "BG002"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s17
+fi
+goto 22
+label s17
+setvar strS[1000] = ""
+label 22
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Fuko.
+text The name just slips out of my mouth for no apparent reason.
+music BGM08D.mp3
+setvar strS[1001] = "CGFU19A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 49P.aac
+text @[Fuko]
+text Yes?
+text Her hands stop moving, and she turns to face me.
+text I want to show her.
+text I want Kouko-san to know that her little sister doesn't run away when being talked to anymore, that Fuko now knows how to respond.
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 49Q.aac
+text @[Fuko]
+text Don't call if you don't have anything to say. That's very rude.
+text ...Her mouth is still just as harsh as always, though.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s18
+fi
+goto 23
+label s18
+setvar strS[1000] = ""
+label 23
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+jump SEEN1505_0_0.scr

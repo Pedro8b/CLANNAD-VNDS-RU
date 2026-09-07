@@ -1,0 +1,1779 @@
+setvar intF[1110] = 12
+setvar intF[1112] = 0
+setvar strS[1004] = "SDTA0512"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1004] = ""
+label 1
+setvar strS[1000] = "BG051F"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = ""
+label 2
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM15.mp3
+text I wake up to the sound of birdsong.
+text Upon opening my eyes, a bright blue sky fills my vision.
+text @[Tomoya]
+text ...?
+text My bed feels prickly and cold.
+text I feel around and find nothing but wet grass.
+text Why was I sleeping here?
+text That's right. I'm in Kotomi's garden.
+text I feel like I was dreaming.
+text That was...
+if intF[416] == 7
+	goto s2
+fi
+goto 3
+label s2
+text I start to get up and notice my jacket spread across my stomach.
+text @[Tomoya]
+text Oh yeah...
+text I'm starting to remember.
+text After digging up the soil in the flower bed, I sat down and rolled over onto my side to rest.
+text And after that, I...
+text I...
+text @[Tomoya]
+text ??
+text My memory is failing me.
+text I was on the ground and I was cold, so I went to... grab my jacket?
+text @[Tomoya]
+text ???
+label 3
+text The tail of the dream slips through my grasp just as I'm about to catch it.
+text @[Tomoya]
+text Oh well.
+text I let out a big yawn and stretch.
+text Despite having slept outdoors, I feel rested.
+text I squint in the morning sun as I look up at Kotomi's house.
+text As usual, it looks deserted.
+text @[Tomoya]
+text Good morning, Kotomi.
+text Then I look around at the garden; a work in progress.
+text I really need to finish it up today.
+text @[Tomoya]
+text Time to get started.
+text I stand up.
+setvar strS[1000] = "SIRO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 4
+label s3
+setvar strS[1000] = ""
+label 4
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text My first job of the day is to trim the garden trees.
+text Referencing the book I bought yesterday, I start by using the hedge clippers.
+text The trees don't come out as nicely as if a pro had done it, but they look much different with shorter branches.
+text After trimming down the branches that were sticking out, more light is getting through to the garden.
+text I can hear some kids, maybe in kindergarten or elementary school, chatting on their way to school.
+text I hear the noise of a truck engine pull up near the hedge.
+text I put down the clippers and head to the front.
+setvar strS[1000] = "BG050B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s4
+fi
+goto 5
+label s4
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Just as I thought, it's a truck bearing the hardware store's logo.
+text A tall guy I assume to be the driver is looking at the nameplate in front of the house.
+text @[Tomoya]
+text Hello.
+sound E5O.aac
+text @[Driver]
+text You are... Okazaki-san, correct?
+text @[Tomoya]
+text Yes, that's right.
+text My name is different from the one on the nameplate, which explains his confusion.
+sound E5P.aac
+text @[Driver]
+text I'm here to deliver the stuff you purchased yesterday.
+text @[Tomoya]
+text Can you drop them off inside the gate? I'll carry them the rest of the way.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s5
+fi
+goto 6
+label s5
+setvar strS[1000] = ""
+label 6
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG051F"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s6
+fi
+goto 7
+label s6
+setvar strS[1000] = ""
+label 7
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Phew...
+text I take a break after bringing the stuff to the corner of the garden.
+text Leaf mold, fertilizer, flowers, a bag with additional tools and accessories.
+text After parting with Kyou and the others yesterday, I spent all of my savings on these things.
+text I mixed and matched the different types of flowers I found in the gardening section.
+text Even in their plastic pots, their colors are bringing life back to the garden.
+text Using a hose, I draw some water from the faucet.
+text I scrub down the dirty bricks with the water.
+text Then I lay down the leaf mold.
+text I mix it with the soil I dug up last night, then till it with a spade. I'll let it sit in the sun for a while.
+text Next up is some lawn maintenance.
+text I don't have time to lay new sod, so I decide to just mow the existing grass.
+text I change out the lawnmower's blades and oil them up.
+text Starting at the edge of the lawn, I push the lawnmower with all my strength.
+text There's a loud rumbling sound as the tires and blades start to spin.
+text A shower of grass kicks up into the air, spewing into a receptacle.
+text I don't know how many times I walk back and forth mowing the entire lawn.
+setvar strS[1000] = "SIRO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s7
+fi
+goto 8
+label s7
+setvar strS[1000] = ""
+label 8
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text The garden looks really different now that the grass is trimmed.
+text It looked so gloomy up to now, but it suddenly seems much brighter.
+text The last thing to work on is the flower bed.
+text I take the flowers from their pots and plant them one by one, keeping color coordination in mind.
+text The bricks draw a gently sloping curve.
+text The blooming flowers of early summer give off fresh fragrances and colors.
+text The open space with its clean-cut grass.
+text In the middle of it all is a bright white table and two garden chairs.
+text I feel a strange sense of confirmation, as if the jigsaw pieces of my dreams are sliding into place.
+text I forget everything and immerse myself in gardening.
+music ~
+delay 120
+setvar strS[1000] = "SIRO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s8
+fi
+goto 9
+label s8
+setvar strS[1000] = ""
+label 9
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Late in the afternoon, my work is done.
+delay 120
+setvar strS[1000] = "BG051I"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s9
+fi
+goto 10
+label s9
+setvar strS[1000] = ""
+label 10
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM05B.mp3
+text The garden is back to how it used to be.
+text The precious place where Kotomi and I first met.
+text I can't believe that I actually finished it.
+text The types of flowers or the length of the grass might not be exactly right.
+text But still, I did everything I could.
+text I don't think anything's missing.
+text Wait, yes there is.
+text One large and very important piece is still missing.
+text In order for it all to come together...
+text All I can do now is wait.
+text I just realized that I'm insanely tired.
+text It's a comfortable sort of exhaustion. I feel like I could sleep for days.
+text But I can't sleep just yet.
+text Now that the garden is back to the way it used to be, there are other things to do.
+text I go to a garden chair which now looks just like it does in my memories.
+text I poke at the seat to make sure the paint is dry.
+text And then I slowly sit down.
+text I put on my jacket and rummage around in my pockets.
+text Inside is the book that Kotomi entrusted to me.
+text The book with the leather cover.
+text Like some old and worn dictionary, the edges of the pages are curled.
+text I open the cover to take a look inside.
+text The faded pages have a color similar to baked bread and the book is worm-eaten in many places.
+text Why did Kotomi tell me not to read it?
+text The answer must be inside.
+text @[Tomoya]
+text Sorry, but I'm going to read it.
+text I whisper that to suppress the small pangs of guilt I'm feeling.
+text I turn to the inside cover and start reading.
+text It seems like... a collection of short stories.
+text Possibly because the book is translated from another language, it's far from an easy read.
+text I skim through the first few stories and move on to another one.
+text It appears to be a story about a girl who says she's from the future who meets a middle-aged man...
+text @[Tomoya]
+text ...
+text Soon, I look up from the pages.
+text @[Tomoya]
+text *Yawwwwwwn*
+text I let out a big yawn.
+text I'm extremely sleepy.
+text It must be because of how comfortable the garden is.
+text I try to return my attention to the book.
+text @[Tomoya]
+text ...
+text I realize that the book has slipped from my fingers onto my lap.
+text The gentle wind flips through the pages.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s10
+fi
+goto 11
+label s10
+setvar strS[1000] = ""
+label 11
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Unable to bear it anymore, I close my eyes.
+text A soft sense of sleepiness wraps around my head.
+text A distant memory washes over me like a high tide.
+text Back then...
+text That's right, I was with Kotomi...
+text No, that's not true.
+text That book was newer, bigger, and had a nicer binding.
+text Low tide arrives to sweep me away, and my consciousness fades.
+delay 30
+sound VYQ.aac
+text "Day before yesterday I saw a rabbit..."
+text Gradually, I forget where I am and what day it is.
+delay 30
+sound VYR.aac
+text "...and yesterday a deer..."
+text I sense that I'm very close to being swept away into sleep.
+text That's right.
+text It's not that the book was bigger. We were...
+text We were smaller.
+music ~
+delay 180
+setvar strS[1000] = "SIRO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s11
+fi
+goto 12
+label s11
+setvar strS[1000] = ""
+label 12
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+delay 60
+text I got lost.
+text It's because the usual field I played at became off-limits for some reason.
+text All the neighborhood kids started looking for a new place to play.
+text Before I knew it, I was all alone.
+text I was in an unfamiliar residential area.
+text As a child, it felt like I was in another country.
+text Feeling dusk creeping up behind me, I walked faster.
+text Just as I was on the verge of running...
+text I heard a strange noise coming from behind a tall hedge.
+text It was a noise I'd never heard before.
+text But it felt nostalgic for some reason.
+text Drawn by the noise, I looked for a way past the hedge.
+text I found an opening in the leaves and stiff branches and pushed my way through.
+delay 60
+setvar strS[1000] = "BG051S"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s12
+fi
+goto 13
+label s12
+setvar strS[1000] = ""
+label 13
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM25B.mp3
+text It was a beautiful garden.
+text Uniformly cut grass, a bright white patio set.
+text The flower bed was overflowing with flowers whose names I didn't know.
+text Even the dusk couldn't enter that place.
+text It struck me as a special place that would forever remain unchanged.
+text As I was about to turn around to bring everyone else there...
+text I saw a girl I didn't know.
+text She was staring at me while holding a violin and bow.
+text After we exchanged a few words, she awkwardly smiled at me.
+text She and I became friends.
+setvar strS[1000] = "SIRO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s13
+fi
+goto 14
+label s13
+setvar strS[1000] = ""
+label 14
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text After that, I went to visit her house almost every day.
+text Lots of sun from the garden shone on the floor of her living room.
+text I could smell the lingering fragrance of a tobacco pipe.
+sound E5Q.aac
+text @[Kotomi]
+text It's the smell of Daddy's tobacco.
+text Even as a child, that seemed high class to me. It was different from what the other adults smoked.
+text She enjoyed playing house the most.
+text But playing house with her was... a little different.
+text She pointed at and named each of the dishes with her chubby finger.
+text After that, she placed her palms together.
+sound E5R.aac
+text @[Kotomi]
+text Let us eat.
+text @[Tomoya]
+text Let's eat...
+sound E5S.aac
+text @[Kotomi]
+text Please help yourself.
+text She made a big deal out of it and stared at me.
+sound E5T.aac
+text @[Kotomi]
+text Say "ah."
+text She picked up the "food" with some disposable chopsticks and held it out in front of me.
+text And when I didn't put it in my mouth, she looked like she was about to cry.
+text @[Tomoya]
+text I can't eat this.
+text The feast was made out of clay.
+text @[Tomoya]
+text No fair. You have to eat it too, Kotomi-chan.
+text @[Tomoya]
+text Here's your half, Kotomi-chan.
+text I put a lot of the clay cooking onto her paper plate.
+sound E5U.aac
+text @[Kotomi]
+text Yes. This is my half.
+sound E5V.aac
+text @[Kotomi]
+text Halfsies with Tomoya-kun.
+text She gave a big smile.
+delay 60
+text In the end, I never told my other friends about that garden.
+text I never really liked playing in large groups anyway...
+text I wanted to keep this secret all to myself.
+delay 60
+setvar strS[1000] = "BG051S"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s14
+fi
+goto 15
+label s14
+setvar strS[1000] = ""
+label 15
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text When it was nice out, we'd play in the garden.
+text We'd run around barefoot on the lawn and play tag or hide-and-seek.
+text But there were too few people for tag, and she'd always be on the verge of tears if I found a great hiding spot.
+text There were many different kinds of flowers blooming in the small flower bed.
+text She knew the names of all of them.
+sound E5W.aac
+text @[Kotomi]
+text This is a California poppy, this is a begonia, this is a pansy...
+sound E5X.aac
+text @[Kotomi]
+text And this one is...
+sound E5Y.aac
+text @[Kotomi]
+text Chry...
+text @[Tomoya]
+text Chry?
+sound E5Z.aac
+text @[Kotomi]
+text Um...
+sound E60.aac
+text @[Mother]
+text Chrysanthemum paludosum.
+sound E61.aac
+text @[Mother]
+text It's also called a North Pole.
+text Her mother, who was in the garden hanging up the laundry, gently taught us.
+text She was wearing her usual bright white apron.
+text She was always smiling.
+text I was envious.
+text This is what I wanted most in the world.
+sound E62.aac
+text @[Mother]
+text Say, Kotomi-chan. Since the weather's so nice, why don't you go play outside with Tomoya-kun?
+text Kotomi always looked troubled whenever she was told to do that.
+sound E63.aac
+text @[Kotomi]
+text But we're already outside.
+sound E64.aac
+text @[Mother]
+text This is just our garden, isn't it?
+sound E65.aac
+text @[Kotomi]
+text The garden is outside.
+sound E66.aac
+text @[Mother]
+text But...
+sound E67.aac
+text @[Kotomi]
+text It's outside.
+text She wouldn't budge.
+text Her mother sighed and looked into Kotomi's face.
+sound E68.aac
+text @[Mother]
+text "Outside" means beyond the hedge.
+sound E69.aac
+text @[Mother]
+text The outside world is very big and has lots of stuff you've never seen before, Kotomi-chan.
+sound E6A.aac
+text @[Kotomi]
+text It's scary, so I don't want to.
+text @[Tomoya]
+text It's not scary at all.
+text I said that as someone who came from "outside."
+sound E6B.aac
+text @[Mother]
+text That's right...
+sound E6C.aac
+text @[Mother]
+text Tomoya-kun is a really good boy.
+sound E6D.aac
+text @[Mother]
+text Kotomi-chan is a bad girl.
+sound E6E.aac
+text @[Kotomi]
+text I'm not a bad girl.
+sound E6F.aac
+text @[Kotomi]
+text I want to go outside, but...
+sound E6G.aac
+text @[Kotomi]
+text I'll do it next time.
+text After she said that, her mother burst out laughing.
+text I didn't understand what was so funny.
+sound E6H.aac
+text @[Mother]
+text ...Well, let's have snack time.
+text She brought us a freshly-baked sponge cake and some mysterious tea that smelled like flowers.
+sound E6I.aac
+text @[Kotomi]
+text My mommy made this.
+sound E6J.aac
+text @[Kotomi]
+text It's very good.
+sound E6K.aac
+text @[Kotomi]
+text Let us eat.
+text @[Tomoya]
+text Let's eat...
+text After repeating after her, I picked at a slice in the middle.
+sound E6L.aac
+text @[Kotomi]
+text Tomoya-kun, um...
+sound E6M.aac
+text @[Kotomi]
+text The ones on the end taste best.
+text She said that with more confidence than when she recited the flower names.
+setvar strS[1000] = "SIRO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s15
+fi
+goto 16
+label s15
+setvar strS[1000] = ""
+label 16
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+delay 60
+text On cold days, we read together.
+text I knew right away that she was different from the other kids.
+text She easily read books with difficult words and kanji characters.
+sound E6N.aac
+text It's hard to write, but reading is easy.
+text Her smile was tinged with pride when she said that.
+text Her favorite book was this brand new, really nice looking book with a brown leather cover.
+text She said her father bought it for her when she entered elementary school.
+text I found it boring because it was too difficult to read.
+sound E6O.aac
+text @[Kotomi]
+text It's not interesting?
+text Noticing that I wasn't having any fun, she asked me that while tilting her head to one side.
+text @[Tomoya]
+text I don't get it.
+sound E6P.aac
+text @[Kotomi]
+text It's the same for me...
+sound E6Q.aac
+text @[Kotomi]
+text But Daddy told me to read lots of books.
+text @[Tomoya]
+text This is too hard.
+sound E6R.aac
+text @[Kotomi]
+text He said that it doesn't matter if I don't understand it yet.
+sound E6S.aac
+text @[Kotomi]
+text He said that I'll understand one day.
+sound E6T.aac
+text @[Kotomi]
+text He said it's because there's lots of stuff I still have to learn.
+sound E6U.aac
+text @[Kotomi]
+text I want to read all of the books in the world.
+sound E6V.aac
+text @[Kotomi]
+text If I can learn lots of stuff, that would be very, very wonderful.
+sound E6W.aac
+text @[Kotomi]
+text Don't you think so, Tomoya-kun?
+text @[Tomoya]
+text Yeah, I guess...
+text She smiled at me despite my halfhearted answer.
+text She really looked happy.
+sound E6X.aac
+text @[Kotomi]
+text Oh, I know. I've got a good idea.
+sound E6Y.aac
+text @[Kotomi]
+text Let's just read the wonderful parts.
+sound E6Z.aac
+text @[Kotomi]
+text We'll read them again and again until we memorize them.
+sound E70.aac
+text @[Kotomi]
+text And then someday we can think of them even without the book.
+sound E71.aac
+text @[Kotomi]
+text So let's start from the beginning.
+text She started reading her favorite parts awkwardly.
+text I tried to follow along.
+text I felt like a terrible student...
+text She was diligent and kept trying to teach me again and again...
+delay 60
+setvar strS[1000] = "BG051S"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s16
+fi
+goto 17
+label s16
+setvar strS[1000] = ""
+label 17
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound E72.aac
+text @[Kotomi]
+text I'll have a birthday party soon.
+text She told me that with the setting sun shining on her cheeks.
+text We were tired from playing and were sitting down, looking out at the garden.
+sound E73.aac
+text @[Kotomi]
+text I want you to come, Tomoya-kun.
+text @[Tomoya]
+text How many people will be there?
+text I didn't want to meet people I didn't know.
+sound E74.aac
+text @[Kotomi]
+text There will be four people.
+text She said that proudly.
+sound E75.aac
+text @[Kotomi]
+text Tomoya-kun, me, Mommy, and...
+text @[Tomoya]
+text Who's the last one?
+sound E76.aac
+text @[Kotomi]
+text Daddy.
+text @[Tomoya]
+text You don't call that a party.
+text I told her that, secretly feeling relieved.
+sound E77.aac
+text @[Kotomi]
+text ?
+text @[Tomoya]
+text Parties have lots more people.
+text She started looking sad after I said that.
+sound E78.aac
+text @[Kotomi]
+text Oh...
+sound E79.aac
+text @[Kotomi]
+text But it's still a birthday party.
+sound E7A.aac
+text @[Kotomi]
+text Daddy said he'll give me a giant teddy bear.
+sound E7B.aac
+text @[Kotomi]
+text Mommy said she'll make us a huge feast.
+sound E7C.aac
+text @[Kotomi]
+text And...
+text @[Tomoya]
+text ...I have to go home soon.
+text It was getting dark out, and I stood up.
+text Maybe it was because I felt envious as she spoke so proudly of her parents.
+text I put on my shoes and socks, then walked across the garden.
+sound E7D.aac
+text @[Kotomi]
+text Tomoya-kun, see you tomorrow.
+text She said that to me as usual.
+text @[Tomoya]
+text I might not come tomorrow.
+text And just as usual, that's how I responded.
+text She looked straight at me and seemed to be thinking about something.
+sound E7E.aac
+text @[Kotomi]
+text You don't have to come tomorrow.
+text @[Tomoya]
+text Huh?
+text That was the first time she said something like that.
+sound E7F.aac
+text @[Kotomi]
+text I'll try to be okay even if you don't come tomorrow.
+sound E7G.aac
+text @[Kotomi]
+text But please, please come to my birthday party.
+sound E7H.aac
+text @[Kotomi]
+text You really, really have to.
+sound E7I.aac
+text @[Kotomi]
+text I'll be waiting for you.
+sound E7J.aac
+text @[Kotomi]
+text I'll be waiting...
+delay 60
+setvar strS[1000] = "SIRO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s17
+fi
+goto 18
+label s17
+setvar strS[1000] = ""
+label 18
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+delay 60
+text I thought to myself that I'd better give her a present.
+text Her birthday.
+text I didn't have anything she would like, and I couldn't buy her anything.
+text I decided to bring her some friends.
+text She might be happy even if I were the only one there.
+text Even if I came alone, I could celebrate with her even if I didn't bring a present.
+text But I had to do something for her.
+text I went around to all the girls in the neighborhood.
+text I told them about a beautiful garden, delicious sweets, and a slightly strange girl.
+text I invited them to a birthday party that was coming up.
+text The girls all smiled, albeit a little uneasily, but none of them agreed to go.
+text I told my usual friends.
+text They teased me because I was "playing with girls."
+text I went all over, talking to anyone I knew. Everyone turned me down.
+text After my very last friend declined, I realized that the sun had already set.
+text I figured her birthday party would already be over.
+text I was too ashamed to face her.
+text With heavy feet, I walked home.
+text Tears welled up in my eyes at the sounds of my lonely footsteps.
+text I really liked her.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s18
+fi
+goto 19
+label s18
+setvar strS[1000] = ""
+label 19
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+delay 60
+text Midnight passed and I still couldn't fall asleep.
+text After my father went to bed, I snuck out of the house.
+text I felt I had to apologize for not going to her party.
+text I felt I had to apologize for not giving her a present.
+text But in truth, I didn't care about any of that.
+text I just wanted to see her.
+text I wanted to see the girl who would always, without fail, say "see you tomorrow."
+delay 120
+text Her house was cloaked in darkness, without a single light to be seen. It looked like a haunted castle.
+text I gathered all of my courage and pushed through the gap in the hedge.
+text The garden was frighteningly dark at this hour.
+text It looked as if everything were dead.
+text The table, the chairs, the flower bed... it looked like everything had been swapped with an artificial version of itself.
+text The insects sounded like machines, and they seemed to be growing louder and louder.
+text @[Tomoya]
+text Kotomi-chan.
+text I whispered her name in the darkness.
+text @[Tomoya]
+text Kotomi-chan, Kotomi-chan... Kotomi-chan.
+text No matter how long I waited, it didn't seem like she would appear.
+text The glass door was open just a crack.
+text Feeling drawn to it, I slid it open and went into the living room.
+text It was even darker in there than in the garden.
+text The air was stagnant and cold, as if the house had been abandoned for a long time.
+text I walked quietly and moved deeper.
+text The guilt of doing something bad and an indescribable worry were blending inside of me.
+text Had decades passed in the short time I hadn't been here?
+text Was this all a dream?
+text Will I never see her again?
+text And then I smelled something burning.
+text I heard the sounds of sobbing.
+text She was crying!
+text I ran upstairs.
+text Almost tripping over the steep stairs, I ran upward.
+text I crashed through the door at the end of the hallway.
+text There she was.
+text Sitting on the floor, crying.
+text What appeared to be a book was burning in front of her.
+text The orange flames danced as if they were alive.
+text I tried to put out the fire.
+text I ran to the kitchen, filled a cup with water, and went up and down the stairs repeatedly.
+text Despite my efforts, the flames would not subside. They soon spread to the carpet.
+text I clenched my teeth and doused the fire with water several times.
+text Just as I began to think all was lost, a crowd of unfamiliar adults came into the room.
+text They used their clothes to extinguish the fire.
+text She was crying the whole time.
+text She covered her face with her tiny palms and sat there crying.
+text It was like she had forgotten how to do anything but cry.
+text In an attempt to protect her, I stood between her and the adults.
+text I expected them to yell at her for playing with fire.
+text The adults tried to gather the charred pieces of paper.
+text Then they bent down and softly spoke to her.
+sound VYS.aac
+text "This wasn't it."
+sound VYT.aac
+text "You don't need to cry."
+sound VYV.aac
+text "This was something for you."
+text But she didn't stop crying.
+text They all looked really sad.
+text There was no way for me to know what had happened.
+text But I knew one thing...
+text The smell of the tobacco pipe, the bright white apron...
+text The beautiful garden, the mysterious girl...
+text All of that was gone.
+delay 60
+setvar strS[1000] = "BG051S"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s19
+fi
+goto 20
+label s19
+setvar strS[1000] = ""
+label 20
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I never went back to that house.
+text I went back to playing with the neighborhood boys as if nothing had happened.
+text Neither that garden nor that girl ever crossed my mind again.
+text And soon I forgot all about her.
+text Why did I forget about her?
+text Why did I forget...?
+delay 60
+music ~
+setvar strS[1000] = "SIRO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s20
+fi
+goto 21
+label s20
+setvar strS[1000] = ""
+label 21
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 301
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM05E.mp3
+text A dream...?
+text Is this a dream?
+text Where... am I?
+text I hear a sound from somewhere.
+text A sound I've never heard before.
+text Yet it feels strangely nostalgic.
+text I slowly open my eyes.
+delay 60
+setvar strS[1000] = "FGKT06A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s21
+fi
+goto 22
+label s21
+setvar strS[1000] = ""
+label 22
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 301
+delay 60
+sound E7K.aac
+text @[Girl]
+text Um...
+sound E7L.aac
+text @[Girl]
+text Who are you?
+sound E7M.aac
+text @[Girl]
+text They told me that I can't let strangers inside.
+text @[Tomoya]
+text What is this place?
+sound E7N.aac
+text @[Girl]
+text My home.
+text @[Tomoya]
+text Who are you?
+sound E7O.aac
+text @[Girl]
+text Kotomi...
+sound E7P.aac
+text @[Girl]
+text Three hiragana letters, Kotomi.
+sound E7Q.aac
+text @[Girl]
+text Call me Kotomi-chan.
+text @[Tomoya]
+text What's that?
+sound E7R.aac
+text @[Girl]
+text A violin.
+text @[Tomoya]
+text It sounds funny.
+sound E7S.aac
+text @[Girl]
+text I can't play it well yet.
+setvar strS[1000] = "FGKT06B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s22
+fi
+goto 23
+label s22
+setvar strS[1000] = ""
+label 23
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound E7T.aac
+text @[Girl]
+text But it sounds very, very nice when the teacher plays it.
+text She smiles a little.
+text That's the awkward smile that Kotomi first showed me.
+text That's right.
+text I know.
+text This is a dream.
+text It's a dream of when we were still kids.
+text Back when our entire world was built out of tiny chunks of happiness.
+text Back when we didn't understand what sadness was.
+text I can tell that I'm about to wake up.
+text There's something I have to do.
+text I have to go see Kotomi.
+text She's still crying all by herself in that room.
+text That's why...
+text I slowly open my eyes...
+music ~
+bgload SIRO.jpg 180
+setvar strS[1000] = "FGKT07A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s23
+fi
+goto 24
+label s23
+setvar strS[1000] = ""
+label 24
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 301
+delay 60
+sound E7U.aac
+text @[Kotomi]
+text Are you awake?
+text @[Tomoya]
+text No...
+text @[Tomoya]
+text I still might be dreaming.
+music BGM25B.mp3
+text Kotomi is smiling in front of me.
+text She's standing in the same place, looking out at the same garden, wearing the same awkward smile.
+text It's as if this is a continuation of my dream.
+text She seems so happy.
+sound E7V.aac
+text @[Kotomi]
+text I've always remembered.
+sound E7W.aac
+text @[Kotomi]
+text The boy who wandered into the garden.
+sound E7X.aac
+text @[Kotomi]
+text We played house. We read together.
+sound E7Y.aac
+text @[Kotomi]
+text We played tag together. We played hide-and-seek.
+sound E7Z.aac
+text @[Kotomi]
+text We did halfsies with the sweets my mother made...
+sound E80.aac
+text @[Kotomi]
+text I really, really liked that boy.
+sound E81.aac
+text @[Kotomi]
+text That's why...
+sound E82.aac
+text @[Kotomi]
+text I've been waiting the whole time.
+text Kotomi's eyes are locked with mine.
+text She's waiting for me to say something.
+text So... it's my turn.
+text I can remember everything now.
+text This was her favorite passage from her favorite book back then.
+text We read it over and over again until we memorized the whole conversation.
+text It always started like this...
+text @[Tomoya]
+text I suppose you traveled here by time machine.
+setvar strS[1000] = "FGKT07B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s24
+fi
+goto 25
+label s24
+setvar strS[1000] = ""
+label 25
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound E83.aac
+text @[Kotomi]
+text Oh...
+text Kotomi's eyes widen.
+text She stares at me in disbelief.
+text I wait for her to continue the conversation.
+text Kotomi's lips part.
+setvar strS[1000] = "FGKT07A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s25
+fi
+goto 26
+label s25
+setvar strS[1000] = ""
+label 26
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound E84.aac
+text @[Kotomi]
+text Yes. My father invented one.
+text @[Tomoya]
+text And do you come here often?
+sound E85.aac
+text @[Kotomi]
+text Oh, yes. This is my favorite space-time coordinate.
+sound E86.aac
+text @[Kotomi]
+text I stand here for hours sometimes and look and look and look.
+setvar strS[1000] = "FGKT07C"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s26
+fi
+goto 27
+label s26
+setvar strS[1000] = ""
+label 27
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound E87.aac
+text @[Kotomi]
+text "Day before yesterday I saw a rabbit..."
+sound E88.aac
+text @[Kotomi]
+text "...and yesterday a deer, and today, you."
+text And then she smiles so happily.
+text The Kotomi from back then traveled through time and is now smiling before me.
+text @[Tomoya]
+text I've come to get you.
+text I hold out my hand.
+text I reach out to the little girl who has been waiting for me here in this house.
+text @[Tomoya]
+text Let's go.
+text To the outside world.
+text To where everyone is waiting.
+text And yet...
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s27
+fi
+goto 28
+label s27
+setvar strS[1000] = ""
+label 28
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Kotomi covers her face with her hands.
+music BGM16B.mp3
+sound E89.aac
+text @[Kotomi]
+text I knew... I knew it...
+sound E8A.aac
+text @[Kotomi]
+text Doing this wouldn't bring anything back.
+sound E8B.aac
+text @[Kotomi]
+text My clothes are different. I don't have my violin. My hair ornament is different, too.
+sound E8C.aac
+text @[Kotomi]
+text And Tomoya-kun, you're not a little child anymore.
+sound E8D.aac
+text @[Kotomi]
+text My mother and father will never come back.
+sound E8E.aac
+text @[Kotomi]
+text No matter how many books I read, I'll never become a great person.
+sound E8F.aac
+text @[Kotomi]
+text No matter how many pages I cut out, what I did can never be undone.
+sound E8G.aac
+text @[Kotomi]
+text This world is wrong.
+sound E8H.aac
+text @[Kotomi]
+text The world is wrong without my mother and father.
+sound E8I.aac
+text @[Kotomi]
+text Why am I here?
+sound E8J.aac
+text @[Kotomi]
+text Why was I left behind?
+sound E8K.aac
+text @[Kotomi]
+text I wanted to go with them.
+sound E8L.aac
+text @[Kotomi]
+text I wanted to be on that airplane with my mother and father.
+sound E8M.aac
+text @[Kotomi]
+text I wanted to sink to the bottom of the ocean with them...
+setvar strS[1000] = "SIRO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s28
+fi
+goto 29
+label s28
+setvar strS[1000] = ""
+label 29
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music ~
+text @[Tomoya]
+text No!
+sound E8N.aac
+text @[Kotomi]
+text Huh...?
+bgload FGKT10A.jpg 180
+music BGM18A.mp3
+sound E8O.aac
+text @[Kotomi]
+text Oh...
+text @[Tomoya]
+text Please... please don't...
+text @[Tomoya]
+text Please don't say sad things like that.
+text @[Tomoya]
+text I love you, Kotomi.
+text @[Tomoya]
+text I'd be sad if you were gone.
+text Kotomi's sadness is my sadness.
+text I couldn't protect her during her darkest, saddest, most painful time.
+text But I know.
+text Even now, Kotomi is here.
+text The sadness of that day remains in her heart.
+text That's why I'm here to get her.
+text To take her out into the vast and bright outside world.
+text I will never again leave her all alone in that house.
+setvar strS[1000] = "FGKT10B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s29
+fi
+goto 30
+label s29
+setvar strS[1000] = ""
+label 30
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 55
+sound E8P.aac
+text @[Kotomi]
+text Me, too...
+sound E8Q.aac
+text @[Kotomi]
+text I love you too, Tomoya-kun.
+sound E8R.aac
+text @[Kotomi]
+text I really, really love you.
+sound E8S.aac
+text @[Kotomi]
+text I've loved you ever since we met.
+sound E8T.aac
+text @[Kotomi]
+text But...
+sound E8U.aac
+text @[Kotomi]
+text I'm scared.
+sound E8V.aac
+text @[Kotomi]
+text I'm scared because I know.
+sound E8W.aac
+text @[Kotomi]
+text No matter how much you love someone, they will eventually go away.
+sound E8X.aac
+text @[Kotomi]
+text They will disappear when you're most happy.
+sound E8Y.aac
+text @[Kotomi]
+text That's something I can't do anything about.
+sound E8Z.aac
+text @[Kotomi]
+text I'm so scared...
+text @[Tomoya]
+text I'm right here.
+text @[Tomoya]
+text I'm right here looking at you, Kotomi.
+text @[Tomoya]
+text I will always be by your side, looking at you.
+sound E90.aac
+text @[Kotomi]
+text But...
+sound E91.aac
+text @[Kotomi]
+text But someday, we won't be able to see each other anymore.
+text @[Tomoya]
+text Yeah.
+text @[Tomoya]
+text We can't be together forever.
+text @[Tomoya]
+text One day, we won't be able to see each other anymore.
+text @[Tomoya]
+text I don't know when that will happen.
+text @[Tomoya]
+text It might even be today.
+text @[Tomoya]
+text But you know what?
+text I softly caress Kotomi's hair.
+text Her childish hair ornament trembles, as if waiting for my words.
+text @[Tomoya]
+text If I go away ahead of you, Kotomi...
+text @[Tomoya]
+text I will still always be by your side.
+text @[Tomoya]
+text Even if you can't see me... even if you can't talk to me...
+text @[Tomoya]
+text I will be close to you, watching over you.
+text @[Tomoya]
+text I will always protect you, Kotomi.
+text @[Tomoya]
+text Even if we can't meet, I will always be by your side.
+text @[Tomoya]
+text So that you'll always keep going.
+text @[Tomoya]
+text All the while wishing that you'll be happier tomorrow than you are today.
+text @[Tomoya]
+text That's why I...
+setvar strS[1000] = "FGKT10A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s30
+fi
+goto 31
+label s30
+setvar strS[1000] = ""
+label 31
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text I clench my fists.
+text This is the girl who has been waiting for me all along.
+text This is the girl who I've finally reunited with.
+text The large, empty gap of years that separates us is vast.
+text But I want to be kind to her to make up for those lost years.
+setvar strS[1000] = "FGKT10B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s31
+fi
+goto 32
+label s31
+setvar strS[1000] = ""
+label 32
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 55
+sound E92.aac
+text @[Kotomi]
+text I...
+sound E93.aac
+text @[Kotomi]
+text I'm a crybaby...
+sound E94.aac
+text @[Kotomi]
+text Tomoya-kun, if you ever go away, I know I'd cry.
+sound E95.aac
+text @[Kotomi]
+text I don't think my tears would ever stop.
+sound E96.aac
+text @[Kotomi]
+text I might not notice even when you're by my side.
+sound E97.aac
+text @[Kotomi]
+text I might even hate you, Tomoya-kun...
+sound E98.aac
+text @[Kotomi]
+text Even so...
+sound E99.aac
+text @[Kotomi]
+text Will you always be with me?
+text @[Tomoya]
+text Yes.
+sound E9A.aac
+text @[Kotomi]
+text Will you always watch over me?
+text @[Tomoya]
+text Yes.
+sound E9B.aac
+text @[Kotomi]
+text Will you watch over me even if we can't see each other anymore?
+text @[Tomoya]
+text I promise.
+text @[Tomoya]
+text Doing that is what will make me happy.
+sound E9C.aac
+text @[Kotomi]
+text But...
+text @[Tomoya]
+text No more buts.
+if intF[416] == 7
+	goto s32
+fi
+goto 34
+label s32
+sound E9D.aac
+text @[Kotomi]
+text Okay...
+sound E9E.aac
+text @[Kotomi]
+text But... but...
+sound E9F.aac
+text @[Kotomi]
+text Right now...
+sound E9G.aac
+text @[Kotomi]
+text Tomoya-kun, you're here.
+sound E9H.aac
+text @[Kotomi]
+text You're here to get me.
+sound E9I.aac
+text @[Kotomi]
+text You're really warm, Tomoya-kun.
+sound E9J.aac
+text @[Kotomi]
+text And I really, really love you, Tomoya-kun.
+sound E9K.aac
+text @[Kotomi]
+text That's why...
+sound E9L.aac
+text @[Kotomi]
+text Just watching isn't enough for me.
+bgload SIRO.jpg 180
+setvar strS[1000] = "FGKT11"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s33
+fi
+goto 33
+label s33
+setvar strS[1000] = ""
+label 33
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 301
+text Our lips touch.
+text Her lips are smooth, moist, soft, and warm.
+text I don't know why, but it feels nostalgic.
+text This girl has been waiting for me all along.
+text Kotomi is the one closest to me.
+text And from now on, she'll be by my side.
+text Our lips separate.
+sound E9M.aac
+text @[Kotomi]
+text Tomoya-ku─
+text Finally able to breathe, Kotomi tries to say my name.
+sound E9N.aac
+text @[Kotomi]
+text Mm...
+text I cover her lips with mine again.
+text I hug Kotomi even closer.
+text I try to tell her that I'm right here.
+text Kotomi's voice, Kotomi's hair, Kotomi's warmth, Kotomi's touch...
+text I try to etch everything into memory.
+text Even if I disappear from this world...
+text Even if my entire existence vanishes completely...
+text I want to tell Kotomi that we've been together since a long time ago...
+bgload SIRO.jpg 180
+delay 60
+text And...
+text We sit down on the floor, side by side.
+text We're both barefoot and our shoulders are touching as we watch the garden turn to gold in the light.
+goto 36
+label 34
+if intF[416] <= 6
+	goto s34
+fi
+goto 36
+label s34
+bgload SIRO.jpg 180
+setvar strS[1000] = "FGKT11"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s35
+fi
+goto 35
+label s35
+setvar strS[1000] = ""
+label 35
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 301
+text Our lips touch.
+text I don't know why, but it feels nostalgic.
+text This girl has been waiting for me all along.
+text Kotomi is the one closest to me.
+text And from now on, she'll be by my side.
+text Our lips separate and touch again.
+text I hug Kotomi even closer.
+text I try to etch everything into memory.
+text Even if I disappear from this world...
+text Even if my entire existence vanishes completely...
+text I want to tell Kotomi that we've been together since a long time ago...
+bgload SIRO.jpg 180
+delay 60
+text And...
+text We sit down on the floor, side by side.
+text We're both barefoot and our shoulders are touching as we watch the garden turn to gold in the light.
+label 36
+text Just like how we did when we were kids.
+text Kotomi doesn't say anything.
+text The light and the wind are becoming softer by the second.
+text As if drawn to it, Kotomi stands up.
+text She walks into the garden.
+setvar strS[1000] = "BG051J"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s36
+fi
+goto 37
+label s36
+setvar strS[1000] = ""
+label 37
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM17A.mp3
+text Kotomi's bare feet touch the grass.
+text As if whispering a secret to me, her long hair floats in the breeze.
+text I follow after her.
+text Kotomi quietly breathes in... and then looks around the garden.
+setvar strS[1001] = "CGKT12C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+setimg CGKT12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound E9O.aac
+text @[Kotomi]
+text The wind is blowing...
+sound E9P.aac
+text @[Kotomi]
+text The grass feels good.
+sound E9Q.aac
+text @[Kotomi]
+text The paint smells new.
+sound E9R.aac
+text @[Kotomi]
+text The smell of the earth and the grass.
+sound E9S.aac
+text @[Kotomi]
+text The smell of the pretty flowers.
+sound E9T.aac
+text @[Kotomi]
+text The sounds of the birds.
+sound E9U.aac
+text @[Kotomi]
+text The sounds of the swaying leaves.
+sound E9V.aac
+text @[Kotomi]
+text The sun feels warm...
+setvar strS[1001] = "CGKT12D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She puts her palms together, trying to scoop up the sunlight.
+sound E9W.aac
+text @[Kotomi]
+text It's not visible, but I can still see it.
+sound E9X.aac
+text @[Kotomi]
+text I can't touch it, but it still feels warm.
+setvar strS[1001] = "CGKT15D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT15D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound E9Y.aac
+text @[Kotomi]
+text It's so mysterious...
+text She says each and every thing that comes to mind.
+text And she notices the book with the leather cover sitting on the table.
+text She doesn't even need to turn the old, tattered pages.
+text From this point on, we'll write our own continuation of the story.
+setvar strS[1001] = "CGKT13C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT13C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound E9Z.aac
+text @[Kotomi]
+text "Day before yesterday I saw a rabbit..."
+sound EA0.aac
+text @[Kotomi]
+text "...and yesterday a deer..."
+sound EA1.aac
+text @[Kotomi]
+text "...and today, you."
+text Our eyes lock.
+sound EA2.aac
+text @[Kotomi]
+text You are Tomoya-kun.
+text A light comes back into her.
+sound EA3.aac
+text @[Kotomi]
+text Tomoya-kun is Tomoya-kun.
+text She whispers my name.
+setvar strS[1001] = "CGKT16C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT16C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EA4.aac
+text @[Kotomi]
+text My dearest one.
+text We hold hands.
+text So that we'll never again be apart.
+text @[Tomoya]
+text Kotomi.
+text @[Tomoya]
+text Let's go outside together.
+text @[Tomoya]
+text Don't worry. It's not scary.
+text @[Tomoya]
+text I'll always be with you.
+text Kotomi nods to me.
+delay 60
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s37
+fi
+goto 38
+label s37
+setvar strS[1000] = ""
+label 38
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG050Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s38
+fi
+goto 39
+label s38
+setvar strS[1000] = ""
+label 39
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+delay 60
+text Outside, the sun is setting.
+text The roads of the residential district are stained by the late afternoon light.
+text I watch Kotomi cautiously as she stands there barefoot.
+text She's like a small child who has just left her house for the first time.
+text It's as if this is her first time on a beach and she's letting the waves wash over her feet.
+setvar strS[1001] = "CGKT31D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT31D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EA5.aac
+text @[Kotomi]
+text ...It feels strange.
+text She smiles gently.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Then she looks up.
+text She squints in the bright light and opens her arms to the vast sky.
+setvar strS[1000] = "BG084"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s39
+fi
+goto 40
+label s39
+setvar strS[1000] = ""
+label 40
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text The tattered clouds are dyed red and reflect in Kotomi's eyes.
+text Kotomi stays that way for a while.
+text It's like she just remembered that the sky is there.
+text The outside world.
+text The vast sky that appears to stretch forever.
+text An unknown future awaits us out there.
+sound EA6.aac
+text @[Kotomi]
+text The sky is so pretty.
+text @[Tomoya]
+text Yeah.
+text @[Tomoya]
+text It's pretty.
+text I smile at Kotomi.
+text I smile at the person I will be with from now on.
+text Even if you can't see me, I can see you.
+text Even if we can't meet, I will always be by your side.
+text Until the day we part...
+text In this moment, at least... in this world...
+text I can feel Kotomi, and Kotomi can feel me.
+delay 60
+delay 60
+music ~
+setvar strS[1000] = "SIRO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s40
+fi
+goto 41
+label s40
+setvar strS[1000] = ""
+label 41
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+delay 120
+jump SEEN4513_0_0.scr

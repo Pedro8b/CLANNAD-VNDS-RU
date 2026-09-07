@@ -1,0 +1,491 @@
+text Then, the next moment...
+setvar strS[1000] = "BG080"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1000] = ""
+label 1
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar intA[1000] = 4600
+setvar intA[1001] = 46
+if 50 <= 0
+	goto s1
+fi
+goto 2
+label s1
+setvar intA[1001] + 1
+label 2
+text *Wham*
+text The person walking in front of me... is sent flying into the air.
+setvar strS[1000] = "BG033"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = ""
+label 3
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM11.mp3
+text @[Tomoya]
+text For real?!
+text Kyou hit somebody with her bike!
+sound UQK.aac
+text @[Kyou]
+text Sorry! Apologize for me, okay?!
+text @[Tomoya]
+text What? You out of your mind?!
+text *Vroom* *Vrooom* ...
+text The sounds of her bike's tailpipe grow farther and farther away.
+text She actually drove off...
+text The person she hit... is lying on the ground... not moving an inch.
+text Fearfully, I approach.
+text @[Tomoya]
+text ...Hey, you still alive?
+text .........
+text ......
+text ...
+text The person lying on the ground does not respond.
+text This isn't good...
+text When an acquaintance commits a crime, is it better to convince her to turn herself in...
+text Or would it be better if I just kept my mouth shut, since there are no other witnesses...?
+text Nah... perhaps it's for the best if I just pretend this never happened, and walk away...
+choice Leave|Try shaking the person
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s3
+fi
+goto 4
+label s3
+text What a pain. Count me out.
+text It's not like anyone witnessed it.
+text And even if they did, I'm not the culprit.
+sound UQL.aac
+text @[Children]
+text Mommy, there's someone on the ground there!
+sound UQM.aac
+text @[Mother]
+text Oh, you're right. I wonder if the student over there knows who it is?
+text Crap... now there are witnesses.
+label 4
+if intF[1089] == 1
+	goto s4
+fi
+goto 5
+label s4
+text *Shake*
+text Yeah, I suppose I can probably keep getting Kyou to treat me to lunch if I blackmail her over this...
+text Hey, no!!
+label 5
+text @[Tomoya]
+text Hey, you. You okay? Answer me!
+text I kneel down, and lightly shake the motionless victim by the shoulder.
+text It's quite slender.
+text Could she be a girl...?
+text @[Tomoya]
+text Hey?
+text *Twitch* ...
+text Oh, did I see movement?
+text @[Tomoya]
+text Hey, you okay?
+text I try shaking once again, and...
+music ~
+setvar strS[1001] = "CGKP14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGKP14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Pop*!
+music BGM08A.mp3
+sound UQN.aac
+text @[??]
+text Wwaaaaaahhh!
+text @[Tomoya]
+text Whoa...!
+sound UQO.aac
+text @[??]
+text Wh-What's going on?! What was that just now?!
+text @[Tomoya]
+text Y-You're alive...?
+sound UQP.aac
+text @[??]
+text It felt like there was suddenly a wham, then I was sent spinning, then I heard a screech and then everything went black...
+text @[Tomoya]
+text Uh... you were hit by a motorcycle.
+setvar strS[1001] = "CGKP17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UQQ.aac
+text @[??]
+text ...By a bike?
+text The victim's head tilts to the side with a mystified expression.
+text Is this a girl...? A guy...? Doesn't look like there are any boobs, but the atmosphere and vibe that this person gives off feels rather strange...
+setvar strS[1001] = "CGKP18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UQR.aac
+text @[??]
+text ...
+setvar strS[1001] = "CGKP12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UQS.aac
+text @[??]
+text Oh, again?
+text The victim says as their hands clap together, as if remembering what happened.
+text @[Tomoya]
+text Wait... "Again"?!
+setvar strS[1001] = "CGKP11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UQT.aac
+text @[??]
+text These kind of things do happen once in a while, no?
+sound UQU.aac
+text @[??]
+text It would've been a problem if it was a car, but I can handle a bike.
+text @[Tomoya]
+text ...You can handle... that...?
+text ...You were sent flying, you know...?
+text @[Tomoya]
+text Are you feeling... all right?
+setvar strS[1001] = "CGKP10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UQV.aac
+text @[??]
+text Eh? Nothing really feels out of place.
+text @[Tomoya]
+text I see... that's great, then...
+setvar strS[1001] = "CGKP18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UQW.aac
+text @[??]
+text By the way, what time is it?
+text @[Tomoya]
+text Hm? It's past ten.
+setvar strS[1001] = "CGKP14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UQX.aac
+text @[??]
+text Whoa! This isn't good! I'll be late for my interview for the part time job!
+music ~
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Ah! Hey!
+text Before I could finish, the victim suddenly sped off.
+text And rather quickly too.
+music BGM14.mp3
+text @[Tomoya]
+text ...I wonder if that person is gonna be fine...
+text Was it because they collided at just the right angle, or is it just because that person is very robust...?
+text In any case, it seems Kyou got out of this one without becoming a criminal.
+text Even so...
+text @[Tomoya]
+text ...What a lively person...
+text I let out a sigh, thanks to a person whose name I don't know who had disappeared at the corner.
+text @[Tomoya]
+text Hm...?
+text Suddenly, I notice a white envelope when I look down at the ground.
+text @[Tomoya]
+text Is this that person's...?
+text I look around, but no longer see anyone.
+text In any case, I pick it up.
+text On the corner of the envelope is the word "Resume" in red letters.
+text ...That reminds me. That person did say they were going to an interview.
+text But if that's the case, wouldn't it be problematic that they don't have this?
+text @[Tomoya]
+text ...
+text Even so, I have no idea where they could be, so it's not like I can give it back...
+text That being the case, it would also make me feel bad to just leave something like a resume there.
+choice Find the address and give it back|Tear it up
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s5
+fi
+goto 6
+label s5
+text It feels kind of wrong, but it's not like I can just leave it behind like this.
+text I take out the resume from the envelope.
+text The handwriting is surprisingly poor...
+text @[Tomoya]
+text Uhh...
+text Name... blank...
+text Age... blank too...
+text Address... also blank...
+text Telephone number... blank again...
+text Education...
+text Employment history...
+text ......
+text Not a single thing is written on it...
+text It probably hasn't been filled in yet...
+text ...Well, on the right side...
+text Subjects good at... Lunch...
+text Subjects bad at... Homeroom...
+text Motivation... Want money...
+text Interests... Not something I can tell people...
+text Current health... I'll sue if this is sexual harassment...
+text Strong points... I think guys should aim to be men...
+text @[Tomoya]
+text ...
+text What in the world is this self appeal sentence supposed to be about?
+text Still... this handwriting is awful...
+text The letters look so wrinkled, like a bunch of worms.
+text In any case, without anything that remotely resembles an address, I can't bring this to them.
+text Without a choice, I fold the resume and toss it in my bag.
+setvar intF[320] = 1
+label 6
+if intF[1089] == 1
+	goto s6
+fi
+goto 7
+label s6
+text *Tear* ... *Tear* ...
+text Starting from the corner, I rip the piece of paper into shreds.
+text Then, I toss the flakes of paper into the gutter on the side of the road.
+text @[Tomoya]
+text Okay... guess I'll go now.
+label 7
+music ~
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s7
+fi
+goto 8
+label s7
+setvar strS[1000] = ""
+label 8
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08B.mp3
+text Just when I reach school, the bell for the end of second period rings.
+setvar strS[1001] = "CGKY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UQY.aac
+text @[Kyou]
+text Ah, Tomoya! How was that the person I hit?
+text @[Tomoya]
+text You have some nerve to ask me that...
+setvar strS[1001] = "CGKY15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UQZ.aac
+text @[Kyou]
+text Eh? No injuries, right?
+text @[Tomoya]
+text No injuries, but what would you do if there were?
+setvar strS[1001] = "CGKY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UR0.aac
+text @[Kyou]
+text Oh, it's okay! That feeling I got when we collided was different!
+text @[Tomoya]
+text Feeling?
+setvar strS[1001] = "CGKY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UR1.aac
+text @[Kyou]
+text Yeah. How should I put it? You know that heavy feeling when you crush into flesh and bones? There was none of that!
+sound UR2.aac
+text @[Kyou]
+text Maybe that person did something to reduce the impact. Might be an expert at it or something.
+text I think we can say you are quite out of the ordinary yourself to know how it feels when you crush flesh and bones with your bike...
+text @[Tomoya]
+text Even if that were the case, don't you think it's more of a moral problem for you to run away like that?
+setvar strS[1001] = "CGKY10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UR3.aac
+text @[Kyou]
+text Well, if you weren't there, I would've stopped.
+sound UR4.aac
+text @[Kyou]
+setvar intA[1000] = 2300
+setvar intA[1001] = 23
+if 50 <= 0
+	goto s8
+fi
+goto 9
+label s8
+setvar intA[1001] + 1
+label 9
+text Hell, I was actually going for you anyway...
+text ...That is quite a disturbing thing to say...
+text ......
+text Could it be that she found out what happened to Botan on Saturday...?
+setvar strS[1001] = "CGKY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UR5.aac
+text @[Kyou]
+text Well, nothing happened in the end, no? It all went okay, then!
+text Kyou says as she laughs, and then throws something at me.
+text @[Tomoya]
+text What's this?
+setvar strS[1001] = "CGKY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UR6.aac
+text @[Kyou]
+text Fruit milk. We'll call that my thanks in any case. Drink it as you spend ten minutes feeling grateful.
+text @[Tomoya]
+text You're telling me to feel grateful for your "thanks"?
+text @[Tomoya]
+text Also, if you're offering your thanks, don't say "in any case".
+setvar strS[1001] = "CGKY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UR7.aac
+text @[Kyou]
+text Giving you a juice pack is my thanks. Now since I picked you a tasty one, you should be feeling grateful, no?
+text With a smile on her face, she explains her absurd logic.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I let out a deep sigh, and raise my hand anyway to express my gratitude.
+music ~
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+jump SEEN7600_1_0.scr

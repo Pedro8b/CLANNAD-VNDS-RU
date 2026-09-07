@@ -1,0 +1,55 @@
+label 52
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+if intG[8] == 0
+	goto s44
+fi
+goto 53
+label s44
+gsetvar intG[8] = 1
+gsetvar intG[0] + 1
+bgload SHGET01.jpg 45
+setimg SHGET26.png 119 -11
+delay 1
+bgload SHGET01.jpg
+setimg SHGET26.png 119 14
+delay 1
+bgload SHGET01.jpg
+setimg SHGET26.png 119 39
+setimg SHGET32.png 120 30
+delay 1
+bgload SHGET01.jpg
+setimg SHGET26.png 119 64
+setimg SHGET32.png 120 25
+delay 1
+bgload SHGET01.jpg
+setimg SHGET26.png 119 89
+setimg SHGET23.png 123 25
+setimg SHGET32.png 120 80
+delay 1
+bgload SHGET01.jpg
+setimg SHGET26.png 119 114
+setimg SHGET23.png 123 15
+setimg SHGET32.png 120 75
+setimg SHGET25.png 123 100
+delay 1
+bgload SHGET01.jpg
+setimg SHGET26.png 119 139
+setimg SHGET23.png 123 10
+setimg SHGET32.png 120 70
+setimg SHGET25.png 123 95
+delay 1
+bgload SIRO.jpg 30
+sound I.aac
+delay 30
+label 53
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0

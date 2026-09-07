@@ -1,0 +1,1140 @@
+text Tomoyo and I start running.
+text However, someone suddenly grabs my arm.
+text @[Tomoya]
+text How persistent can you be?!
+text Thinking it's another one of those guys we wiped the floor with earlier, I shake it off.
+sound 7UP.aac
+text @[Voice]
+text It's just me.
+text When I do, I hear a large voice that rings out over the sound of the crowd.
+setvar strS[1001] = "CGMS15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text When I look back, standing there is Misae-san.
+text @[Tomoya]
+text What, so it's just you, Misae-san...? Is there something you want?
+sound 7UQ.aac
+text @[Misae]
+text Say... I can't find him again. Could you help me look?
+text @[Tomoya]
+text Your cat?
+setvar strS[1001] = "CGMS17H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS17H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7UR.aac
+text @[Misae]
+text Yes.
+sound 7US.aac
+text @[Misae]
+text Sunohara's passed out over at the dorm, so it seems you've come here alone, right?
+text The bear standing next to me with her arms folded apparently looks like she's not with me.
+setvar strS[1001] = "CGMS11H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS11H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7UT.aac
+text @[Misae]
+text Come on, please?
+text Well, even if you say that...
+choice Help|Refuse
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s36
+fi
+goto 52
+label s36
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Is it all right if we help find this person's cat?
+text I whisper into the bear's ear.
+setvar strS[1001] = "CGTM40"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM40.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She nods deeply.
+text I totally thought she was going to be reluctant here, so that unhesitating response was a surprise.
+setvar strS[1001] = "CGMS15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7UU.aac
+text @[Misae]
+text Oh, so this bear is a friend of yours?
+text @[Tomoya]
+text Pretty much.
+sound 7UV.aac
+text @[Misae]
+text It's not Sunohara, though... Right?
+text @[Tomoya]
+text Well, does it really matter?
+text She'd probably make fun of me if she found out I was accompanied by a girl, so I'll just tell a little white lie.
+text @[Tomoya]
+text So, why're you searching inside the school building?
+sound 7UW.aac
+text @[Misae]
+text Since I chased it all the way to the school gates.
+text @[Tomoya]
+text So you mean he just plain ran away from you again.
+text @[Tomoya]
+text Have you considered that maybe he hates you?
+setvar strS[1001] = "CGMS13H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS13H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7UX.aac
+text @[Misae]
+text Aah... I wonder...
+sound 7UY.aac
+text @[Misae]
+text It's not like I'd even mind that much, even if he disappeared right now...
+sound 7UZ.aac
+text @[Misae]
+text But we've been together for so long, and he's always been there in my room...
+sound 7V0.aac
+text @[Misae]
+text It's not like he's got any chance of winning if he ever got into a fight with another stray. So wouldn't it be horrible if he got killed trying to do something like that?
+sound 7V1.aac
+text @[Misae]
+text After coming this far, I just feel I should be taking care of him.
+text @[Tomoya]
+text I don't think he'd die or anything, though...
+text @[Tomoya]
+text Well, whatever. Let's go search.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Just as I'm about to ask where we should start searching, a cat appears out of nowhere, carried by the scruff of its neck.
+setvar strS[1001] = "CGTM40"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM40.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Bear]
+text ...
+text It's Tomoyo.
+text @[Tomoya]
+text Damn, you're pretty quick!
+text @[Tomoya]
+text But that's not the one.
+text The cat Tomoyo had caught was just another stray cat you could find anywhere.
+setvar strS[1001] = "CGMS15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7V2.aac
+text @[Misae]
+text It's a tabby. The cat I'm looking for, I mean.
+setvar strS[1001] = "CGTM40"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM40.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Bear]
+text ...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She crouches and lets the cat go, and then immediately gets back up and dashes away.
+text That is one incredibly agile bear.
+setvar strS[1001] = "CGMS17H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS17H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7V3.aac
+text @[Misae]
+text I don't know who that is, but it's quite a strong helper.
+text It looks like things'll be fine even if we don't do anything.
+if 0 == 0
+	goto s37
+fi
+goto 37
+label s37
+setvar strS[1000] = "KURO"
+goto 39
+label 37
+if 0 == 1
+	goto s38
+fi
+goto 38
+label s38
+setvar strS[1000] = "SIRO"
+goto 39
+label 38
+setvar strS[1000] = "KURO"
+label 39
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG020"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s39
+fi
+goto 40
+label s39
+setvar strS[1000] = ""
+label 40
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGTM40"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM40.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text The bear stands in front of a classroom and beckons us over.
+text Apparently he's in the classroom.
+text The face of the bear looks as calm as ever, but its shoulders are heaving up and down furiously.
+text @[Tomoya]
+text You really gave it your all in searching, didn't you?
+setvar strS[1001] = "CGMS15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7V4.aac
+text @[Misae]
+text Really, it's a very nice thing to do for a total stranger like me.
+setvar strS[1001] = "CGTM40"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM40.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Bear]
+text ...
+setvar strS[1001] = "CGMS17H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS17H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7V5.aac
+text @[Misae]
+text Ah, could it be... We know each other?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text The bear's body faces toward the window.
+text And then she points her thumb over her shoulder to the classroom, as if to say, "Just get going, already."
+setvar strS[1001] = "CGMS15H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS15H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7V6.aac
+text @[Misae]
+text A bear of few words, huh...
+sound 7V7.aac
+text @[Misae]
+text Although I do feel now I've met you somewhere.
+sound 7V8.aac
+text @[Misae]
+text You're a girl, aren't you?
+text @[Tomoya]
+text Come on, Misae-san. The cat'll run away if we don't go and catch it quickly.
+text I don't know what made her guess that it's a girl, but I try urging her on so she won't find out.
+music ~
+setvar strS[1001] = "CGMS17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7V9.aac
+text @[Misae]
+text Ah, you're right.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Misae-san enters the classroom, and I follow after her.
+setvar strS[1000] = "BG023"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s40
+fi
+goto 41
+label s40
+setvar strS[1000] = ""
+label 41
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08D.mp3
+text The classroom is empty.
+text I can hear distant, boisterous noises from outside. The room itself though, is completely silent, as if abandoned.
+setvar strS[1001] = "CGMS15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7VA.aac
+text @[Misae]
+text ...Is he here?
+text @[Tomoya]
+text Dunno...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She crouches and looks around the floor.
+setvar strS[1001] = "CGMS17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7VB.aac
+text @[Tomoya & Misae]
+text Ah, there he is.
+text We both call out at the same time.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text He's curled up asleep at the far end of the room.
+text Weaving our way through the desks, we approach him.
+sound 7VC.aac
+text @[Misae]
+text Aah... I really wonder what this little guy came all the way here for.
+text The cat, noticing Misae-san, lifts his head.
+if intG[13] == 0
+	goto s41
+fi
+goto 42
+label s41
+sound 7VD.aac
+text @[Misae]
+text Hey, hey.
+text Misae-san beckons him over.
+text The cat kneads his paws on her hand a couple times.
+sound 7VE.aac
+text @[Misae]
+text Don't play around, come on, come here.
+text Misae-san opens both her arms, but he won't come up and jump onto her chest.
+text All he does is chase the tip of her finger around for a bit.
+setvar strS[1001] = "CGMS14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7VF.aac
+text @[Misae]
+text Aah, come on, what are you so unhappy about...
+sound 7VG.aac
+text @[Misae]
+text Have you started not liking being with me?
+text @[Tomoya]
+text (I guess my business is finished here...)
+music ~
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text With Misae-san still talking to the cat, I leave the classroom.
+goto 47
+label 42
+if intG[13] == 1
+	goto s42
+fi
+goto 47
+label s42
+setvar strS[1000] = "FGSB07A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s43
+fi
+goto 43
+label s43
+setvar strS[1000] = ""
+label 43
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 98
+sound 7VH.aac
+text @[Misae]
+text Hey, hey.
+text Misae-san beckons him over.
+text The cat kneads his paws on her hand a couple times.
+sound 7VI.aac
+text @[Misae]
+text Don't play around, come on, come here.
+text Misae-san opens both her arms, but he won't come up and jump onto her chest.
+text All he does is chase the tip of her finger around for a bit.
+sound 7VJ.aac
+text @[Misae]
+text Aah, come on, what are you so unhappy about...
+sound 7VK.aac
+text @[Misae]
+text Have you started not liking being with me?
+music ~
+text @[Tomoya]
+text ...
+text At that moment, I felt like I could hear the cat's voice.
+music BGM01.mp3
+text Not a meow, but its "thoughts."
+text It was a strange feeling.
+sound 7VL.aac
+text @[Misae]
+text Aah, come on. Let's go home, okay?
+text Misae-san grabs the cat by the scruff with her other hand.
+text @[Tomoya]
+text Say, Misae-san.
+text @[Tomoya]
+text Why don't you play with him like that for a bit?
+sound 7VM.aac
+text @[Misae]
+text Huh? Why?
+text @[Tomoya]
+text Well, I don't really know, but...
+text @[Tomoya]
+text I feel like I heard that it's fun.
+sound 7VN.aac
+text @[Misae]
+text Huh? And who said that?
+text @[Tomoya]
+text This guy.
+sound 7VO.aac
+text @[Misae]
+text Don't be silly, this little guy is a cat.
+text @[Tomoya]
+text Of course, I know that.
+text @[Tomoya]
+text But I heard it.
+text @[Tomoya]
+text Say... Misae-san.
+sound 7VP.aac
+text @[Misae]
+text What is it?
+text @[Tomoya]
+text Didn't you promise something?
+sound 7VQ.aac
+text @[Misae]
+text Promise what? And to who?
+text @[Tomoya]
+text Well...
+text I think deeply, frantically trying to recover the emotions instilled in that feeling I had just now.
+text @[Tomoya]
+text ...
+text As I go silent, the clamor from outside becomes louder.
+text Ah... I see. Today is...
+text @[Tomoya]
+text The Founder's Festival.
+text That's the answer that comes to mind.
+text @[Tomoya]
+text It was a promise that you'd go to the Founder's Festival with someone.
+setvar strS[1000] = "FGSB07C"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s44
+fi
+goto 44
+label s44
+setvar strS[1000] = ""
+label 44
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 55
+sound 7VR.aac
+text @[Misae]
+text Huh...?
+text @[Tomoya]
+text And so it was almost like that promise was fulfilled, and he's really glad...
+text @[Tomoya]
+text I heard a voice saying he's enjoying it.
+text @[Tomoya]
+text That it may have taken a long time, but you've finally managed to make good on that promise.
+sound 7VS.aac
+text @[Misae]
+text ...
+sound 7VT.aac
+text @[Misae]
+text Other than that...
+sound 7VU.aac
+text @[Misae]
+text Did he say anything else...?
+text @[Tomoya]
+text Yeah...
+text @[Tomoya]
+text I only heard him for a moment.
+text The cat continues kneading his paws on Misae-san, who's sitting there dumbfounded.
+text It looked like he's entranced in playing, and it's all he's thinking about.
+text As if that promise had been everything to him.
+setvar strS[1000] = "FGSB07B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s45
+fi
+goto 45
+label s45
+setvar strS[1000] = ""
+label 45
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 55
+sound 7VV.aac
+text @[Misae]
+text Aah... I don't remember promising something like that to a cat, though...
+sound 7VW.aac
+text @[Misae]
+text But, well...
+setvar strS[1000] = "FGSB07D"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s46
+fi
+goto 46
+label s46
+setvar strS[1000] = ""
+label 46
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 55
+sound 7VX.aac
+text @[Misae]
+text I guess I'll play with him today.
+sound 7VY.aac
+text @[Misae]
+text @Really...
+delay 68
+text He's such a burden.
+text I leave Misae-san, who's still messing about with the cat, in the empty classroom...
+text And leave the room.
+if intG[31] == 0
+	goto s47
+fi
+goto 47
+label s47
+gsetvar intG[31] = 1
+gsetvar intG[0] + 1
+bgload SHGET00.jpg 45
+setimg SHGET26.png 119 -11
+delay 1
+bgload SHGET00.jpg
+setimg SHGET26.png 119 14
+delay 1
+bgload SHGET00.jpg
+setimg SHGET26.png 119 39
+setimg SHGET32.png 120 30
+delay 1
+bgload SHGET00.jpg
+setimg SHGET26.png 119 64
+setimg SHGET32.png 120 25
+delay 1
+bgload SHGET00.jpg
+setimg SHGET26.png 119 89
+setimg SHGET23.png 123 25
+setimg SHGET32.png 120 80
+delay 1
+bgload SHGET00.jpg
+setimg SHGET26.png 119 114
+setimg SHGET23.png 123 15
+setimg SHGET32.png 120 75
+setimg SHGET25.png 123 100
+delay 1
+bgload SHGET00.jpg
+setimg SHGET26.png 119 139
+setimg SHGET23.png 123 10
+setimg SHGET32.png 120 70
+setimg SHGET25.png 123 95
+delay 1
+bgload SIRO.jpg 30
+sound I.aac
+delay 30
+label 47
+if 0 == 0
+	goto s48
+fi
+goto 48
+label s48
+setvar strS[1000] = "KURO"
+goto 50
+label 48
+if 0 == 1
+	goto s49
+fi
+goto 49
+label s49
+setvar strS[1000] = "SIRO"
+goto 50
+label 49
+setvar strS[1000] = "KURO"
+label 50
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG020"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s50
+fi
+goto 51
+label s50
+setvar strS[1000] = ""
+label 51
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Thanks for helping out.
+setvar strS[1001] = "CGTM40"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM40.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I say my thanks to Tomoyo, who's still standing in the hallway.
+text @[Tomoya]
+text Are you still doing fine on time?
+text @[Bear]
+text ...
+text She gives a small, uneasy nod.
+text @[Tomoya]
+text Let's hurry, then.
+text She gives a bigger nod.
+music ~
+goto 53
+label 52
+if intF[1089] == 1
+	goto s51
+fi
+goto 53
+label s51
+text @[Tomoya]
+text Even if you ignore him, won't he come home eventually, anyway?
+setvar strS[1001] = "CGMS15H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS15H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7VZ.aac
+text @[Misae]
+text Well, that might be true, but still...
+text @[Tomoya]
+text Well, if he doesn't come home today, I'll help you with looking for him tomorrow.
+sound 7W0.aac
+text @[Misae]
+text You promise?
+text @[Tomoya]
+text Yeah, I promise.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Finally getting through that situation, I run through the hallways with Tomoyo.
+label 53
+goto 55
+label 54
+if intF[634] == 0
+	goto s52
+fi
+goto 55
+label s52
+text Tomoyo and I start running.
+label 55
+setvar strS[1000] = "BG015A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s53
+fi
+goto 56
+label s53
+setvar strS[1000] = ""
+label 56
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08C.mp3
+text We finally manage to slip out of the crowd of the school building.
+setvar strS[1001] = "CGTM40"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM40.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Bear]
+text ...
+text Tomoyo gives a few hard tugs on the edge of my shirt.
+text @[Tomoya]
+text What's wrong?
+text She points at the refreshment booth right next to us.
+text It's selling ice cream.
+text @[Tomoya]
+text You want to eat ice cream?
+text She nods deeply.
+text @[Tomoya]
+text You want to eat some together?
+text *Nod*
+text @[Bear]
+text ...
+text @[Tomoya]
+text Am I buying?
+text *Nod*
+text @[Tomoya]
+text Why, you... Man, it's a pretty nasty situation to be in, having to buy ice cream for both myself and a bear...
+text @[Bear]
+text ...
+text @[Tomoya]
+text Yeah, I get it. Don't look at me with those enthusiastic eyes.
+text @[Tomoya]
+text Hey, I'd like two ice creams, please.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I say this to the person tending the shop.
+sound 7W1.aac
+text @[Store Employee]
+text We have chocolate, vanilla, strawberry, and melon. Which one would you like?
+text @[Tomoya]
+text She asks.
+setvar strS[1001] = "CGTM40"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM40.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Bear]
+text ...
+text @[Tomoya]
+text Vanilla?
+text She shakes her head.
+text @[Tomoya]
+text Chocolate?
+text *Shake* *Shake*
+text @[Tomoya]
+text Come on, just say it!
+text @[Bear]
+text ...
+text The bear comes close and embraces me.
+sound 7W2.aac
+text @[Bear]
+text ...Strawberry, of course!
+text @[Tomoya]
+text What's this "of course"? It's the first I've heard of it!
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I distance myself from the bear and face the shop attendant once more.
+text @[Tomoya]
+text Vanilla and strawberry.
+sound 7W3.aac
+text @[Store Employee]
+text That makes 200 yen for the both of them.
+text @[Tomoya]
+text That's pretty expensive...
+text I exchange a bill for the ice creams.
+text @[Tomoya]
+text Here you go.
+text I give one of them to Tomoyo.
+text @[Tomoya]
+text Well...?
+text @[Tomoya]
+text How do you plan on eating this?
+text @[Bear]
+text ...
+text @[Tomoya]
+text That mouth doesn't open, does it?
+text Seeming troubled, she looks at her surroundings.
+text Then, she grabs my arm and starts running off with me.
+bgload KURO.jpg 88
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text When we get under the shade of a tree, she finally takes off the costume.
+text Sweat is dripping from her forehead like a waterfall.
+setvar strS[1001] = "CGTM25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7W4.aac
+text @[Tomoyo]
+text ...Haah... haah...
+text She's breathing heavily.
+text @[Tomoya]
+text You sure look like you're having an incredible amount of fun.
+setvar strS[1001] = "CGTM16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7W5.aac
+text @[Tomoyo]
+text Of course I am.
+sound 7W6.aac
+text @[Tomoyo]
+text After all is said and done, this IS a festival, after all...
+text @[Tomoya]
+text It looks to me like you're just forcing yourself to have fun, though...
+setvar strS[1001] = "CGTM18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7W7.aac
+text @[Tomoyo]
+text Of course I'm not forcing myself...!
+text @[Tomoya]
+text Well, you look restless...
+setvar strS[1001] = "CGTM33"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM33.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7W8.aac
+text @[Tomoyo]
+text Yes... Maybe I am...
+sound 7W9.aac
+text @[Tomoyo]
+text I mean... I've never been to this kind of thing without looking out of place.
+text I think you've been looking plenty out of place already, though...
+music ~
+sound 7WA.aac
+text @[Tomoyo]
+text Not to mention... I'm not alone here this time...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Tomoyo's hot red face turns toward me.
+music BGM08D.mp3
+text I've always been happy with Tomoyo's honest confessions to me.
+text I'd say that a normal person would be so embarrassed, they'd really hesitate to do so.
+text Not even bothered by our ice cream melting, we kiss under the tree.
+setvar strS[1001] = "CGTM22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7WB.aac
+text @[Tomoyo]
+text It really is hot, isn't it?
+text @[Tomoya]
+text You're the only one who's hot. I feel cool right now.
+sound 7WC.aac
+text @[Tomoyo]
+text You're quite the calm one, aren't you Tomoya?
+text @[Tomoya]
+text Well, not really...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I shift my gaze to the bustling crowd of people.
+text Within it is a single small child.
+text He bumps into the legs of the students walking around, looking at many points as if he's about to fall down.
+text @[Tomoya]
+text Look.
+setvar strS[1001] = "CGTM22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7WD.aac
+text @[Tomoyo]
+text Mhm.
+text Tomoyo sees it too.
+sound 7WE.aac
+text @[Tomoyo]
+text I'll go for a bit.
+text @[Tomoya]
+text True student council president material.
+setvar strS[1001] = "CGTM16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7WF.aac
+text @[Tomoyo]
+text Yes... Really, what a hopeless child.
+text I wonder if she likes children.
+text Almost as if taking this opportunity as a nice excuse, I puff out my chest for her.
+text @[Tomoya]
+text I'll come too.
+setvar strS[1001] = "CGTM22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7WG.aac
+text @[Tomoyo]
+text No, the ice cream'll melt if you do. Please wait here.
+text @[Tomoya]
+text Really?
+sound 7WH.aac
+text @[Tomoyo]
+text Yes. I'll be right back.
+text Believing in her words, I decide to wait.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Her long hair fluttering in the wind, she gallantly goes running over.
+text She crouches down and talks to the child.
+text She protects him with both arms as she does, so he won't get kicked by students passing through.
+text And the child smiles back at her.
+text I guess even a child that young can feel how uplifting it is to have Tomoyo so close to you.
+text At the very least, I can guarantee that with her around, being in this school will be safer than any other place out there.
+text Tomoyo embraces the child. She then holds him by the backside and lifts him up.
+text She starts running around, weaving her way through the surging crowd.
+text I bet she's looking for his parents.
+music ~
+text However, after a few steps, her run comes to a halt.
+text Tomoyo stands stock still.
+music BGM01.mp3
+text At the end of my gaze... Several male students are weaving through the crowd in a similar way, and start approaching Tomoyo.
+text From that, I can vaguely imagine what this is about.
+text The bear costume lying at my feet.
+text It's about why she'd been wearing that up until now.
+text Even when Tomoyo ran up to the child, she ought to have been wearing this.
+text If she did, she might have not been caught...
+text ...by the people from the student council.
+text From their exchange afterward, I can hazard a guess as to what this is all about, although I can't hear what they're saying.
+text She's probably saying, "I'm making sure this child is taken to his parents."
+text And in return, the student council is probably saying, "Then we'll make sure that is indeed all you do."
+text When it ends, Tomoyo comes running up to me.
+text She makes sure to smile for me, even as sweat is causing her hair to stick to her forehead.
+text @[Tomoya]
+text ...
+text I wonder why she's able to smile like that.
+text I wasn't able to figure it out.
+text Because she was causing so much trouble for the people close to her.
+text Betraying all their expectations, only for the likes of me.
+text In my hand...
+music ~
+text the ice cream continues to melt.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s54
+fi
+goto 57
+label s54
+setvar strS[1000] = ""
+label 57
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+jump SEEN2513_0_0.scr

@@ -1,0 +1,2586 @@
+label 52
+text @[{$lnmA}]
+text Is she your friend, {$lnmE}?
+text @[Tomoya]
+text We're not that close... but, well, whatever.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text There, she's my acquaintance. Hurry up.
+label 53
+text I push Fuko's shoulder.
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+if intF[131] == 1
+	goto s48
+fi
+goto 54
+label s48
+sound 3KE.aac
+text @[Fuko]
+text Fuko will try not to fall into the relaxing trap again this time!
+text Speaking of which... I remember that now. They've already met once when I left Fuko here.
+sound 3KF.aac
+text @[Fuko]
+text Fuko's going.
+goto 55
+label 54
+if intF[131] == 0
+	goto s49
+fi
+goto 55
+label s49
+sound 3KG.aac
+text @[Fuko]
+text Yes. Fuko's going now.
+label 55
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text With a starfish in hand, Fuko walks closer to the female student.
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3KH.aac
+text @[Fuko]
+text Excuse me, please have this!
+setvar strS[1001] = "CGYK16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3KI.aac
+text @[Miyazawa]
+text Huh?
+sound 3KJ.aac
+text @[Fuko]
+text Here. This is something for you.
+setvar strS[1001] = "CGYK10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3KK.aac
+text @[Miyazawa]
+text Really? Can I have it?
+sound 3KL.aac
+text @[Fuko]
+text Of course.
+setvar strS[1001] = "CGYK11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3KM.aac
+text @[Miyazawa]
+text Then I would be happy to receive it.
+sound 3KN.aac
+text @[Miyazawa]
+text Thank you very much.
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3KO.aac
+text @[Fuko]
+text She took it!
+text Fuko turns around and strikes a victory pose.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+if intF[500] == 0
+	goto s50
+fi
+goto 56
+label s50
+text Hmm... Maybe I have chosen the wrong target...
+text Why did I pick the girl with an impossibly big tolerance to just about anything...
+goto 57
+label 56
+if intF[500] == 1
+	goto s51
+fi
+goto 57
+label s51
+text I have chosen the wrong target...
+text There is no way this girl would do anything that might hurt someone else's feelings.
+label 57
+music ~
+setvar strS[1001] = "CGYK11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3KP.aac
+text @[Miyazawa]
+text But in return...
+sound 3KQ.aac
+text @[Miyazawa]
+text Please let me treat you to some coffee.
+if intF[131] == 1
+	goto s52
+fi
+goto 59
+label s52
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text With that said, she starts making coffee for us.
+music BGM07B.mp3
+setvar strS[1001] = "CGFU16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGFU16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3KR.aac
+text @[Fuko]
+text It's coming! Everyone, please be careful!
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text And a leisurely coffee hour commences...
+setvar strS[1001] = "CGYK11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3KS.aac
+text @[Miyazawa]
+text Fuko-san wants a lot of sugar, right?
+sound 3KT.aac
+text @[Miyazawa]
+text I also have snacks here if you want.
+sound 3KU.aac
+text @[Miyazawa]
+text This is very sweet and tasty.
+setvar strS[1001] = "CGYK12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3KV.aac
+text @[Miyazawa]
+text Oh, you've just spilled your coffee. I still have plenty, so please take your time and enjoy.
+setvar strS[1001] = "CGFU34"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU34.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3KW.aac
+text @[Fuko]
+text Fuko won't fall for that again...
+text Looks like you already fell.
+bgload KURO.jpg 55
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGYK10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3KX.aac
+text @[Miyazawa]
+text I see. So that's why Fuko-san has been trying so hard to deliver these carvings to everyone.
+setvar strS[1001] = "CGFU34"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU34.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3KY.aac
+text @[Fuko]
+text Fwoooh~
+setvar strS[1001] = "CGYK11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3KZ.aac
+text @[Miyazawa]
+text It's such a wonderful thing to do. Please try your best. I'm always here to support you.
+setvar strS[1001] = "CGFU34"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU34.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3L0.aac
+text @[Fuko]
+text Hwoooh~
+text Reply to her properly.
+setvar strS[1001] = "CGYK12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3L1.aac
+text @[Miyazawa]
+text That goes for all of you. Please try your best!
+text She sees us off with a smile.
+music ~
+setvar strS[1000] = "BG019"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s53
+fi
+goto 58
+label s53
+setvar strS[1000] = ""
+label 58
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08C.mp3
+setvar strS[1001] = "CGFU34"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU34.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3L2.aac
+text @[Fuko]
+text Hwoooh~
+text @[Tomoya]
+text Hey, Fuko, pull yourself together.
+text I knock her on the head.
+setvar strS[1001] = "CGFU19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3L3.aac
+text @[Fuko]
+text Ha!
+text Okay, she's back.
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3L4.aac
+text @[Fuko]
+text Did you see her gnashing her teeth and being all "Why is this girl the only one who won't do what I want her to..."
+text @[Tomoya]
+text Well, that's because you were doing everything exactly the way she wanted you to.
+sound 3L5.aac
+text @[Fuko]
+text More importantly, what about the result?
+goto 61
+label 59
+if intF[131] == 0
+	goto s54
+fi
+goto 61
+label s54
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text With that said, she starts making coffee for us.
+music BGM07B.mp3
+text And a leisurely coffee hour commences...
+setvar strS[1001] = "CGFU12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3L6.aac
+text @[Fuko]
+text It's very comfortable here.
+sound 3L7.aac
+text @[Miyazawa]
+text Please stay as long as you want.
+setvar strS[1001] = "CGFU34"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU34.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3L8.aac
+text @[Fuko]
+text Fuko is feeling all dizzy...
+text You're getting too relaxed...
+bgload KURO.jpg 55
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGYK10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3L9.aac
+text @[Miyazawa]
+text I see. So that's why Fuko-san has been trying so hard to deliver these carvings to everyone.
+setvar strS[1001] = "CGFU34"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU34.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3LA.aac
+text @[Fuko]
+text Fwoooh~
+setvar strS[1001] = "CGYK11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3LB.aac
+text @[Miyazawa]
+text It's such a wonderful thing to do. Please try your best. I'm always here to support you.
+setvar strS[1001] = "CGFU34"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU34.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3LC.aac
+text @[Fuko]
+text Hwoooh~
+text Reply to her properly.
+setvar strS[1001] = "CGYK12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3LD.aac
+text @[Miyazawa]
+text That goes for all of you. Please try your best!
+text She sees us off with a smile.
+music ~
+setvar strS[1000] = "BG019"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s55
+fi
+goto 60
+label s55
+setvar strS[1000] = ""
+label 60
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08C.mp3
+setvar strS[1001] = "CGFU34"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU34.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3LE.aac
+text @[Fuko]
+text Hwoooh~
+text @[Tomoya]
+text Hey, Fuko, pull yourself together.
+text I knock her on the head.
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3LF.aac
+text @[Fuko]
+text Ha!
+text Okay, she's back.
+sound 3LG.aac
+text @[Fuko]
+text What about the result?
+label 61
+setvar strS[1001] = "CGNG14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3LH.aac
+text @[{$lnmA}]
+text That's right. I got too relaxed and completely forgot about it!
+sound 3LI.aac
+text @[{$lnmA}]
+text We're in the middle of an important conversation about whether we would keep going with starfish or not.
+setvar strS[1001] = "CGNG10Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3LJ.aac
+text @[{$lnmA}]
+text But as she was pleased to receive it, I think we can stick with starfish.
+text @[Tomoya]
+text Are you serious...
+text @[Tomoya]
+text Fine, whatever... Just don't tell anyone they're starfish, okay?
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3LK.aac
+text @[Fuko]
+text Fuko wants to tell them.
+text @[Tomoya]
+text The girl just now was a special case. She has inhuman tolerance to just about anything.
+sound 3LL.aac
+text @[Fuko]
+text Depending on the person, Fuko wants to tell them the truth.
+goto 63
+goto 63
+label 62
+if intF[500] == 0
+	goto s56
+fi
+goto 63
+label s56
+setvar strS[1001] = "CGYK11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3LM.aac
+text @[Female Student]
+text Welcome.
+setvar strS[1001] = "CGYK10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3LN.aac
+text @[Female Student]
+text Oh? Are you a first timer?
+text ...Is this some kind of a store...?
+setvar strS[1001] = "CGYK11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3LO.aac
+text @[Female Student]
+text Nice to meet you. My name is Miyazawa.
+text @[Tomoya]
+text Well, whatever. At least there's someone here. Your turn, Fuko.
+goto 53
+label 63
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I imagine Fuko walking up to a student and...
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3LP.aac
+text @[Fuko]
+text ...Actually it's a starfish.
+text ...whispering that in their ear.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text It's no different from a bad prank...
+text @[Tomoya]
+text They are going to scream!
+setvar strS[1001] = "CGFU18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3LQ.aac
+text @[Fuko]
+text They won't.
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3LR.aac
+text @[Fuko]
+text They'll just smile because their starfish dream came true at last.
+text @[Tomoya]
+text Yeah, maybe in your dreams...
+sound 3LS.aac
+text @[Fuko]
+text Then... after everyone has received their starfish, the truth shall be revealed through the school broadcast system.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Bing bong bing boooong.
+sound VXZ.aac
+text "...Actually, it's a starfish."
+text @[Tomoya]
+text I admit I would like to see all the students fall over at the same time...
+setvar strS[1001] = "CGFU18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3LT.aac
+text @[Fuko]
+text They won't fall over.
+sound 3LU.aac
+text @[Fuko]
+text They'll celebrate. Like a festival.
+setvar strS[1001] = "CGFU30"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU30.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3LV.aac
+text @[Fuko]
+text Surely, it will become Starfish Memorial Day. And just like School Foundation Day, everyone will get a day off.
+text @[Tomoya]
+text Where on earth could you find such a school...
+text @[Tomoya]
+text (More than that...)
+text ...So we're going with starfish after all?
+music ~
+if 0 == 0
+	goto s57
+fi
+goto 64
+label s57
+setvar strS[1000] = "KURO"
+goto 66
+label 64
+if 0 == 1
+	goto s58
+fi
+goto 65
+label s58
+setvar strS[1000] = "SIRO"
+goto 66
+label 65
+setvar strS[1000] = "KURO"
+label 66
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s59
+fi
+goto 67
+label s59
+setvar strS[1000] = ""
+label 67
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM04A.mp3
+text As lunch break arrives, Fuko goes out to distribute starfish again.
+text Several of the students ignore her, but overall, it's going smoothly.
+text @[Tomoya]
+text (But those several students...)
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3LW.aac
+text @[Fuko]
+text Please, please come to Fuko's sister's wedding.
+sound 3LX.aac
+text @[Male Student]
+text Well... if I can find the time.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text They would then put on a forced smile and walk away awkwardly with an oversized starfish in hand.
+setvar strS[1001] = "CGNG10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3LY.aac
+text @[{$lnmA}]
+text Fu-chan, thank you for the hard work.
+setvar strS[1001] = "CGFU30"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU30.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3LZ.aac
+text @[Fuko]
+text Yeah, it was tiring...
+text @[Tomoya]
+text Your muscles must be all stiff now. Let me help.
+setvar strS[1001] = "CGFU19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3M0.aac
+text @[Fuko]
+text Huh?
+choice Massage her shoulders|Massage her nose
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s60
+fi
+goto 70
+label s60
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Squeeze*
+text I put my hands on her shoulder and slowly grab to loosen them.
+setvar strS[1001] = "CGFU34"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU34.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3M1.aac
+text @[Fuko]
+text Fweh...
+text Did she just make that sound?
+text @[Tomoya]
+text You're like a middle-aged woman.
+setvar strS[1001] = "CGFU17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3M2.aac
+text @[Fuko]
+text Why is that?
+text @[Tomoya]
+text Young people don't feel that good having their shoulders massaged.
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3M3.aac
+text @[Fuko]
+text That's not true. Fuko is very young.
+text @[Tomoya]
+text Then keep on staying sharp when I do the massage.
+sound 3M4.aac
+text @[Fuko]
+text Okay.
+text *Squeeze*
+setvar strS[1001] = "CGFU34"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU34.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3M5.aac
+text @[Fuko]
+text Hya...
+text @[Tomoya]
+text See? You're an old lady after all.
+setvar strS[1001] = "CGFU33"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU33.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3M6.aac
+text @[Fuko]
+text It's unbelievable how rude you are!
+sound 3M7.aac
+text @[Fuko]
+text Fuko is incredibly young.
+sound 3M8.aac
+text @[Fuko]
+text She can still go into theaters with kiddy tickets!
+text ...Is that something to be proud of?
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3M9.aac
+text @[Sunohara]
+text This brat is quite interesting.
+text @[Tomoya]
+text Right?
+setvar strS[1001] = "CGNG18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[0] = lnmE
+if strS[0] > "Okazaki-san"
+	setvar intA[1000] = 1
+fi
+if strS[0] < "Okazaki-san"
+	setvar intA[1000] = -1
+fi
+if strS[0] == "Okazaki-san"
+	setvar intA[1000] = 0
+fi
+if strS[0] > "Tomoya-kun"
+	setvar intA[1001] = 1
+fi
+if strS[0] < "Tomoya-kun"
+	setvar intA[1001] = -1
+fi
+if strS[0] == "Tomoya-kun"
+	setvar intA[1001] = 0
+fi
+if intA[1000] == 0
+	goto s61
+fi
+goto 68
+label s61
+sound 3MA.aac
+goto 69
+label 68
+sound 3MB.aac
+label 69
+text @[{$lnmA}]
+text It looks to me {$lnmE} is making Fuko even more tired than she already is.
+goto 75
+label 70
+if intF[1089] == 1
+	goto s62
+fi
+goto 75
+label s62
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Pinch*
+text I pinch Fuko's nose to help loosen it.
+setvar strS[1001] = "CGFU31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3MC.aac
+text @[Fuko]
+text Mmm─!
+sound 3MD.aac
+text @[Fuko]
+text Noses aren't for massaging!
+setvar intF[105] + 1
+if intF[105] == 2
+	if intF[124] > 0
+		goto s63
+	fi
+fi
+goto 73
+label s63
+text Hm... I wonder what this feeling is...
+delay 60
+sound F.aac
+text @You have mastered the "Pinching Fuko\'s Nose" skill!
+delay 312
+if intF[125] == 1
+	goto s64
+fi
+goto 71
+label s64
+delay 60
+sound G.aac
+text @You have changed your class to "Fuko Master"!
+delay 312
+gsetvar intG[22] = 1
+text ...That doesn't make me feel happy at all.
+goto 72
+label 71
+if intF[125] == 0
+	goto s65
+fi
+goto 72
+label s65
+text So I'm just an idiot after all...
+label 72
+goto 74
+label 73
+if intF[105] < 2
+	goto s66
+fi
+if intF[124] == 0
+	goto s66
+fi
+goto 74
+label s66
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She uses both of her hands to bash mine away.
+label 74
+text @[Tomoya]
+text I thought you might be tired because your nose is so small that you can't breathe properly.
+setvar strS[1001] = "CGFU33"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU33.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3ME.aac
+text @[Fuko]
+text Fuko's nose isn't small at all!
+sound 3MF.aac
+text @[Fuko]
+text If you have to know, it's kind of like Cleopatra's nose.
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3MG.aac
+text @[Sunohara]
+text Hahah, this brat sure says funny things.
+sound 3MH.aac
+text @[Sunohara]
+text Okazaki, you should learn from her. Your jokes should be more like hers. They're meant to bring joy to people.
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3MI.aac
+text @[Fuko]
+text It wasn't a joke!
+setvar strS[1001] = "CGSH27"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH27.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3MJ.aac
+text @[Sunohara]
+text So you were serious?!
+text @[Tomoya]
+text This is what she really is.
+setvar strS[1001] = "CGSH24"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3MK.aac
+text @[Sunohara]
+text Haha...
+setvar strS[1001] = "CGNG18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3ML.aac
+text @[{$lnmA}]
+text It looks to me you two are making Fuko even more tired than she already was.
+label 75
+setvar strS[1001] = "CGFU18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3MM.aac
+text @[Fuko]
+text Seriously, you are really rude.
+text @[Tomoya]
+text Is 'rude' the only word you know?
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3MN.aac
+text @[Fuko]
+text Okazaki-san is such a mass of rudeness that it's the only word your ears can pick up.
+setvar strS[1001] = "CGNG16Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[0] = lnmE
+if strS[0] > "Okazaki-san"
+	setvar intA[1000] = 1
+fi
+if strS[0] < "Okazaki-san"
+	setvar intA[1000] = -1
+fi
+if strS[0] == "Okazaki-san"
+	setvar intA[1000] = 0
+fi
+if strS[0] > "Tomoya-kun"
+	setvar intA[1001] = 1
+fi
+if strS[0] < "Tomoya-kun"
+	setvar intA[1001] = -1
+fi
+if strS[0] == "Tomoya-kun"
+	setvar intA[1001] = 0
+fi
+if intA[1000] == 0
+	goto s67
+fi
+goto 76
+label s67
+sound 3MO.aac
+goto 77
+label 76
+sound 3MP.aac
+label 77
+text @[{$lnmA}]
+text That's right. If {$lnmE} wasn't so rude, you wouldn't have to hear it so often.
+sound 3MQ.aac
+text @[{$lnmA}]
+text I have never been called that before.
+text @[Tomoya]
+text Fine, got it, I'm a rude guy.
+if intF[136] == 0
+	goto s68
+fi
+goto 80
+label s68
+sound 3MR.aac
+text @[Furukawa]
+text I think you should try to improve yourself.
+text @[Tomoya]
+text Right, right.
+setvar strS[1001] = "CGSH17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3MS.aac
+text @[Sunohara]
+text Don't give her that attitude!!
+text @[Tomoya]
+text Why are you the one getting angry at me?!
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3MT.aac
+text @[Sunohara]
+text Because I like Nagisa-chan.
+setvar strS[1001] = "CGNG31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3MU.aac
+text @[Furukawa]
+text Thank you very much.
+sound 3MV.aac
+text @[Furukawa]
+text But... I think Sunohara-san deserves someone much better than me!
+if intF[139] == 0
+	goto s69
+fi
+goto 78
+label s69
+text @[Tomoya]
+text In case you didn't get it, she just turned you down.
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3MW.aac
+text @[Sunohara]
+text That's nooooot true!!
+goto 79
+label 78
+if intF[139] == 1
+	goto s70
+fi
+goto 79
+label s70
+text @[Tomoya]
+text You got turned down twice.
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3MX.aac
+text @[Sunohara]
+text It hurts pretty bad, you know!
+label 79
+goto 81
+label 80
+if intF[136] == 1
+	goto s71
+fi
+goto 81
+label s71
+sound 3MY.aac
+text @[Nagisa]
+text You should try to improve yourself and not be so stubborn about it.
+text @[Tomoya]
+text Right, right.
+setvar strS[1001] = "CGSH17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3MZ.aac
+text @[Sunohara]
+text Don't give her that attitude!!
+text @[Tomoya]
+text Why are you the one getting angry at me?!
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3N0.aac
+text @[Sunohara]
+text Because I like Nagisa-chan.
+setvar strS[1001] = "CGNG31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3N1.aac
+text @[Nagisa]
+text I'm sorry, Sunohara-san...
+sound 3N2.aac
+text @[Nagisa]
+text But because I'm Tomoya-kun's girlfriend...
+text @[Tomoya]
+text Please don't go all lovey-dovey like befooooore!
+setvar strS[1001] = "CGNG13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3N3.aac
+text @[Nagisa]
+text Huh?
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3N4.aac
+text @[Sunohara]
+text Hahah, he's such a shy boy.
+text I clutch Sunohara's hair and pull him closer.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text HAH? Now try saying that again, servant.
+setvar strS[1001] = "CGSH24"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3N5.aac
+text @[Sunohara]
+text Right, let's go to the next location.
+setvar strS[1001] = "CGNG17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3N6.aac
+text @[Nagisa]
+text Tomoya-kun, you must not be violent! Sunohara-san is trying so hard to help us.
+text @[Tomoya]
+text Right, right.
+setvar strS[1001] = "CGSH17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3N7.aac
+text @[Sunohara]
+text Don't give her that attitude!!
+text @[Tomoya]
+text Don't repeat that again!
+label 81
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Well, for the time being...
+text @[Tomoya]
+text Lunch break is almost over, anyway. Wanna go debrief?
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s72
+fi
+goto 82
+label s72
+setvar strS[1000] = ""
+label 82
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG023"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s73
+fi
+goto 83
+label s73
+setvar strS[1000] = ""
+label 83
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08C.mp3
+text We go back to our headquarters.
+text @[Tomoya]
+text Many of the students accepted the starfish, but some of them simply just ignored her.
+text @[Tomoya]
+text Do you know why, Fuko?
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3N8.aac
+text @[Fuko]
+text Maybe because Fuko didn't smile enough.
+text @[Tomoya]
+text ...I have never seen your smile.
+sound 3N9.aac
+text @[Fuko]
+text That's not true. If anything, Fuko is a smiling master.
+text @[Tomoya]
+text Don't spit out such a lie with a straight face.
+setvar strS[1001] = "CGNG10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3NA.aac
+text @[{$lnmA}]
+text Fu-chan is more about relieving others than smiling. That's why she's a relief master.
+text @[Tomoya]
+text I think she's a master at intimidating others.
+setvar strS[1001] = "CGNG16Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3NB.aac
+text @[{$lnmA}]
+text There's no such mastery.
+text @[Tomoya]
+text There is no relief mastery, either.
+setvar strS[1001] = "CGFU33A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU33A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3NC.aac
+text @[Fuko]
+text Enough! Fuko's fine with being the master of shyness!
+text @[Tomoya]
+text That's the first time I've seen anyone snap like that.
+setvar strS[1001] = "CGSH15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3ND.aac
+text @[Sunohara]
+text More importantly, what's the answer?
+text Sunohara, the least likely candidate to help us get back to the main topic, just miraculously did so.
+text @[Tomoya]
+text Did you see their emblems?
+setvar strS[1001] = "CGSH20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3NE.aac
+text @[Sunohara]
+text Huh? What about their embalems?
+text Don't say "embalem."
+text @[Tomoya]
+text The color.
+setvar strS[1001] = "CGSH19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3NF.aac
+text @[Sunohara]
+text That means... their school years?
+text @[Tomoya]
+text Yeah...
+text @[Tomoya]
+text ...All of them were third-year students.
+setvar strS[1001] = "CGNG14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3NG.aac
+text @[{$lnmA}]
+text ...Does it mean anything special? What's different about third-year students?
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3NH.aac
+text @[Fuko]
+text They must have been infected by weirdo illness like Okazaki-san.
+text @[Tomoya]
+text That's not it...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text People like us who've given up on going to university have it easy, of course...
+text @[Tomoya]
+text But it's not normally supposed to be like this, right?
+text @[Tomoya]
+text Their minds are so taken up with entrance exams that they have no extra space to consider other people's feelings.
+text @[Tomoya]
+text Going out to have fun with someone? They don't even have that luxury.
+setvar strS[1001] = "CGNG16Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3NI.aac
+text @[{$lnmA}]
+text It's not about having fun.
+text @[Tomoya]
+text It is to them, right?
+setvar strS[1001] = "CGNG18Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG18Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3NJ.aac
+text @[{$lnmA}]
+text ...
+setvar strS[1001] = "CGSH18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3NK.aac
+text @[Sunohara]
+text But even with only first- and second-year students, shouldn't there be enough people already?
+text @[Tomoya]
+text There would be no problem if that's the case...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text How does that sound, Fuko?
+setvar strS[1001] = "CGFU30A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU30A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3NL.aac
+text @[Fuko]
+text But the third-year students...
+sound 3NM.aac
+text @[Fuko]
+text They were in the same grade as Fuko two years ago.
+sound 3NN.aac
+text @[Fuko]
+text Fuko really wants them to come to say their congratulations.
+text @[Tomoya]
+text ...I thought so.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text The only person in school who knows Fuko is also a third-year student.
+text Being ignored by her must have been quite a shock to Fuko.
+setvar strS[1001] = "CGNG10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[0] = lnmE
+if strS[0] > "Okazaki-san"
+	setvar intA[1000] = 1
+fi
+if strS[0] < "Okazaki-san"
+	setvar intA[1000] = -1
+fi
+if strS[0] == "Okazaki-san"
+	setvar intA[1000] = 0
+fi
+if strS[0] > "Tomoya-kun"
+	setvar intA[1001] = 1
+fi
+if strS[0] < "Tomoya-kun"
+	setvar intA[1001] = -1
+fi
+if strS[0] == "Tomoya-kun"
+	setvar intA[1001] = 0
+fi
+if intA[1000] == 0
+	goto s74
+fi
+goto 84
+label s74
+sound 3NO.aac
+goto 85
+label 84
+sound 3NP.aac
+label 85
+text @[{$lnmA}]
+text {$lnmE} is in third year, too. He must have a lot of friends.
+text @[Tomoya]
+text Well, there are some if you count the bad "friends," too...
+text @[Tomoya]
+text But there's no point in counting them, right?
+sound 3NQ.aac
+text @[{$lnmA}]
+text How about Sunohara-san?
+setvar strS[1001] = "CGSH15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3NR.aac
+text @[Sunohara]
+text Same as him.
+setvar strS[1001] = "CGSH20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3NS.aac
+text @[Sunohara]
+text Speaking of which, isn't Nagisa-chan also a third-year? You can ask your friends, right?
+setvar strS[1001] = "CGNG32"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3NT.aac
+text @[{$lnmA}]
+text But... I am... in my second year as a third-year student...
+sound 3NU.aac
+text @[{$lnmA}]
+text So I don't have any friends...
+sound 3NV.aac
+text @[Sunohara]
+text Huh...?
+setvar strS[1001] = "CGNG31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3NW.aac
+text @[{$lnmA}]
+text I'm really sorry...
+sound 3NX.aac
+text @[{$lnmA}]
+text ...
+sound 3NY.aac
+text @[Sunohara]
+text "Second year"...?
+sound 3NZ.aac
+text @[{$lnmA}]
+text Yes.
+sound 3O0.aac
+text @[Sunohara]
+text ...Does that mean you repeated a year?
+sound 3O1.aac
+text @[{$lnmA}]
+text Yes, that's right...
+setvar strS[1001] = "CGNG32"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3O2.aac
+text @[{$lnmA}]
+text Please don't act so surprised, though...
+setvar strS[1001] = "CGSH24"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3O3.aac
+text @[Sunohara]
+text No, of course not... I'm not surprised at all.
+sound 3O4.aac
+text @[Sunohara]
+text Not to mention it may happen to me, too...
+setvar strS[1001] = "CGSH25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3O5.aac
+text @[Sunohara]
+text A repeating Nagisa-chan sounds just as attractive to me!
+setvar strS[1001] = "CGNG31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3O6.aac
+text @[{$lnmA}]
+text I don't really understand what you mean by that... but thank you very much.
+text @[Tomoya]
+text ...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text The atmosphere has gotten so heavy.
+setvar strS[1001] = "CGFU30A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU30A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3O7.aac
+text @[Fuko]
+text Please don't worry about it.
+text Fuko breaks the silence for us.
+sound 3O8.aac
+text @[Fuko]
+text Even Fuko knows enough not to have such expectations.
+text ...I can sense bitterness in her words.
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3O9.aac
+text @[Fuko]
+text But it's not right to cheat like that.
+sound 3OA.aac
+text @[Fuko]
+text Fuko will just do it straightforward.
+text @[Tomoya]
+text Yeah, I guess so. We can only try.
+text That's all I can say.
+music ~
+if 0 == 0
+	goto s75
+fi
+goto 86
+label s75
+setvar strS[1000] = "KURO"
+goto 88
+label 86
+if 0 == 1
+	goto s76
+fi
+goto 87
+label s76
+setvar strS[1000] = "SIRO"
+goto 88
+label 87
+setvar strS[1000] = "KURO"
+label 88
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s77
+fi
+goto 89
+label s77
+setvar strS[1000] = ""
+label 89
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM04A.mp3
+text Later, Fuko keeps going around giving her carvings to people, even during the short breaks.
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3OB.aac
+text @[Fuko]
+text We will try to focus on the third-year students.
+sound 3OC.aac
+text @[{$lnmA}]
+text Fu-chan, let's try our best!
+sound 3OD.aac
+text @[Fuko]
+text Yes.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text In the end, it's no different from the lunch break. Those third-years don't even talk to Fuko.
+text I wonder what we're doing wrong.
+setvar strS[1000] = "BG021"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s78
+fi
+goto 90
+label s78
+setvar strS[1000] = ""
+label 90
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGFU12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3OE.aac
+text @[Fuko]
+text I think... you can relax more with this than studying.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Fuko holds out a starfish right in front of a student reading a reference book.
+sound 3OF.aac
+text @[Student]
+text ...
+sound 3OG.aac
+text @[Student]
+text ...YOU'RE BOTHERING ME!!!
+text @[Tomoya]
+text Okay.
+setvar strS[1001] = "CGFU19A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3OH.aac
+text @[Fuko]
+text Huh?
+text @[Tomoya]
+text It's your fault.
+sound 3OI.aac
+text @[Fuko]
+text Why is it Fuko's fault?
+text @[Tomoya]
+text Or rather...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I look around the classroom.
+text Even though it's break time, everyone is sitting in front of their desks studying while noting things down with a pencil.
+text @[Tomoya]
+text I don't think they're in any position to care about others...
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3OJ.aac
+text @[Fuko]
+text It's exactly because they're having such a hard time studying...
+sound 3OK.aac
+text @[Fuko]
+text They need to relax with this starfish.
+setvar strS[1001] = "CGFU21A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU21A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3OL.aac
+text @[Fuko]
+text You just need to immerse yourself into the starfish world like this...
+text @[Fuko]
+text ...
+text *Thump*
+setvar strS[1001] = "CGFU17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3OM.aac
+text @[Fuko]
+text Wah...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text A male student suddenly enters through the door and bumps into Fuko, making her drop the starfish.
+text The starfish rolls a few times on the ground before making its way to another student's leg and tipping over.
+setvar strS[1001] = "CGFU32"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU32.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3ON.aac
+text @[Fuko]
+text Sorry...
+sound 3OO.aac
+text @[Female Student]
+text Is this yours... Ibuki-san?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music ~
+text The female student who picks up the starfish is the same girl whom Fuko talked to a few days ago... Her name was Mitsui, if I remember correctly.
+music BGM08D.mp3
+setvar strS[1001] = "CGFU15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3OP.aac
+text @[Fuko]
+text Ah, yes...
+sound 3OQ.aac
+text @[Mitsui]
+text Here.
+text She gives the carving back to Fuko.
+setvar strS[1001] = "CGFU12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3OR.aac
+text @[Fuko]
+text If you could...
+text As soon as Fuko takes it in her hands, she pushes it back in front of the girl.
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3OS.aac
+text @[Fuko]
+text Please accept this.
+sound 3OT.aac
+text @[Mitsui]
+text Say... Ibuki-san.
+setvar strS[1001] = "CGFU19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3OU.aac
+text @[Fuko]
+text Yes?
+sound 3OV.aac
+text @[Mitsui]
+text I've been watching for a while... Everyone is feeling disturbed, you know.
+sound 3OW.aac
+text @[Fuko]
+text Huh...?
+sound 3OX.aac
+text @[Mitsui]
+text They're focusing on their studying, right?
+sound 3OY.aac
+text @[Fuko]
+text Yes, they are.
+sound 3OZ.aac
+text @[Mitsui]
+text Ibuki-san is... still a first-year, so you probably don't know...
+sound 3P0.aac
+text @[Mitsui]
+text But we are having a really hard time right now.
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3P1.aac
+text @[Fuko]
+text It's... understandable.
+sound 3P2.aac
+text @[Fuko]
+text But that's exactly why you should keep this nearby.
+sound 3P3.aac
+text @[Mitsui]
+text What is it you are holding?
+sound 3P4.aac
+text @[Fuko]
+text It's a starfish.
+sound 3P5.aac
+text @[Mitsui]
+text ...If you could make progress on studying just by having a starfish with you, everyone would be doing that.
+setvar strS[1001] = "CGFU12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3P6.aac
+text @[Fuko]
+text You may not make any progress, but having it makes you feel relaxed.
+sound 3P7.aac
+text @[Mitsui]
+text Having a starfish does?
+sound 3P8.aac
+text @[Fuko]
+text Yes.
+sound 3P9.aac
+text @[Mitsui]
+text Please stop with the joke.
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3PA.aac
+text @[Fuko]
+text It's not a joke.
+sound 3PB.aac
+text @[Mitsui]
+text Ibuki-san, I'm the class representative, so please let me say this.
+sound 3PC.aac
+text @[Mitsui]
+text Please don't bother the students of this class.
+sound 3PD.aac
+text @[Mitsui]
+text And please restrain yourself from entering this classroom.
+setvar strS[1001] = "CGFU17A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3PE.aac
+text @[Fuko]
+text Eh...
+setvar strS[1001] = "CGFU32A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU32A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Fuko]
+text ...
+sound 3PF.aac
+text @[Mitsui]
+text And you, too.
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s79
+fi
+goto 91
+label s79
+setvar strS[1000] = ""
+label 91
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She locks us out of the classroom.
+setvar strS[1001] = "CGSH14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3PG.aac
+text @[Sunohara]
+text Just who does she think she is?
+setvar strS[1001] = "CGNG16Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3PH.aac
+text @[{$lnmA}]
+text She's the class rep. You can't blame her for that, Sunohara-san.
+sound 3PI.aac
+text @[Sunohara]
+text Tsk...
+sound 3PJ.aac
+text @[{$lnmA}]
+text In fact, we did... make quite a commotion in there.
+setvar strS[1001] = "CGFU32A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU32A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Fuko]
+text ...
+text Fuko seems depressed.
+text I guess it's an obvious reaction, being talked to like that by your first friend in the school.
+setvar strS[1001] = "CGSH15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3PK.aac
+text @[Sunohara]
+text It's like everyone turns into a different person the moment they enter third year...
+text @[Tomoya]
+text That can't be helped... They are betting their whole lives on studying now.
+music ~
+if 0 == 0
+	goto s80
+fi
+goto 92
+label s80
+setvar strS[1000] = "KURO"
+goto 94
+label 92
+if 0 == 1
+	goto s81
+fi
+goto 93
+label s81
+setvar strS[1000] = "SIRO"
+goto 94
+label 93
+setvar strS[1000] = "KURO"
+label 94
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG023Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s82
+fi
+goto 95
+label s82
+setvar strS[1000] = ""
+label 95
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM15.mp3
+text After school, when there are fewer people around, Fuko returns to her task making starfish.
+text Unable to help, we're just standing around idly watching her working.
+setvar strS[1001] = "CGSH15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3PL.aac
+text @[Sunohara]
+text It's so boring...
+setvar strS[1001] = "CGNG10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3PM.aac
+text @[{$lnmA}]
+text That's not true. I don't feel bored at all watching Fu-chan.
+setvar strS[1001] = "CGSH25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3PN.aac
+text @[Sunohara]
+text Yeah, that's right!
+text Well, at least looking at Sunohara makes me want to punch his face. That's slightly less boring.
+setvar strS[1001] = "CGFU21A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU21A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3PO.aac
+text @[Fuko]
+text Another one is done.
+text Fuko raises the newly-made starfish up in both hands.
+sound 3PP.aac
+text @[{$lnmA}]
+text It's really well done.
+sound 3PQ.aac
+text @[Fuko]
+text Yes, it's the cutest one yet.
+setvar strS[1001] = "CGNG23Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3PR.aac
+text @[{$lnmA}]
+text It looks like it could come to life any moment.
+setvar strS[1001] = "CGFU21A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU21A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 3PS.aac
+text @[Fuko]
+text You really think so? You really think so?
+text ...She's reacting as if someone's just complimented her on a new outfit.
+text Listening to her joyful voice, you'd hardly believe it was all over a carving of a starfish...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text (Seriously, you two are acting like high school girls, you know?)
+text Well, I've known them for quite a while, so obviously I already know that for a fact.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s83
+fi
+goto 96
+label s83
+setvar strS[1000] = ""
+label 96
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+jump SEEN1501_0_0.scr

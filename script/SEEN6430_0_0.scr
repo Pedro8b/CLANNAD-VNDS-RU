@@ -1,0 +1,3480 @@
+setvar intF[1110] = 30
+setvar intF[1112] = 1
+setvar strS[1004] = "SDTA0430"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1004] = ""
+label 1
+bgload SCLAB00.jpg 45
+delay 60
+setimg SCLAP02.png 5 5
+setimg SCLA0430.png 159 160
+delay 120
+if 0 == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = "KURO"
+goto 4
+label 2
+if 0 == 1
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = "SIRO"
+goto 4
+label 3
+setvar strS[1000] = "KURO"
+label 4
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG033A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 5
+label s3
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM14.mp3
+if intF[24] == 1
+	goto s4
+fi
+goto 6
+label s4
+setvar strS[1001] = "CGNG10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J8Y.aac
+text @[Nagisa]
+text Good morning.
+text @[Tomoya]
+text ...'Morning...
+setvar strS[1001] = "CGNG16Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J8Z.aac
+text @[Nagisa]
+text You sound like you're in pain.
+text @[Tomoya]
+text My entire body aches...
+sound J90.aac
+text @[Nagisa]
+text Were you practicing yesterday?
+text @[Tomoya]
+text Yeah...
+setvar strS[1001] = "CGNG31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J91.aac
+text @[Nagisa]
+text I'm sorry for going off and having fun by myself...
+text @[Tomoya]
+text No, it's fine. You were trying to make sure that Mei-chan had a good time.
+text @[Tomoya]
+text Did she?
+setvar strS[1001] = "CGNG10Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J92.aac
+text @[Nagisa]
+text Oh, yes. In fact, I had so much fun that I almost feel bad about it.
+sound J93.aac
+text @[Nagisa]
+text She said to say hello to you too, Tomoya-kun.
+text @[Tomoya]
+text Oh, yeah. She already left, didn't she?
+sound J94.aac
+text @[Nagisa]
+text Yes, she went home yesterday evening.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text ...Sunohara would have been at school with me at that hour.
+text ......
+text I shouldn't think about it too much.
+goto 7
+label 6
+if intF[24] == 0
+	goto s5
+fi
+goto 7
+label s5
+setvar strS[1001] = "CGNG10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J95.aac
+text @[Nagisa]
+text Good morning.
+text @[Tomoya]
+text ...'Morning...
+setvar strS[1001] = "CGNG16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J96.aac
+text @[Nagisa]
+text You sound like you're in pain.
+text @[Tomoya]
+text My entire body aches...
+text @[Tomoya]
+text It's 'cause I don't normally exercise...
+sound J97.aac
+text @[Nagisa]
+text Are you okay?
+text @[Tomoya]
+text Yeah...
+label 7
+setvar strS[1001] = "CGNG10Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J98.aac
+text @[Nagisa]
+text Um, I brought sandwiches today.
+sound J99.aac
+text @[Nagisa]
+text They're not store-bought. I made them myself.
+sound J9A.aac
+text @[Nagisa]
+text Although I did have some help from my mom.
+setvar strS[1001] = "CGNG23Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J9B.aac
+text @[Nagisa]
+text Let's all eat them together once the match is over.
+text @[Tomoya]
+text Yeah...
+text @[Tomoya]
+text I'm looking forward to it...
+setvar strS[1001] = "CGNG12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J9C.aac
+text @[Nagisa]
+text You really do seem to be in pain.
+text @[Tomoya]
+text Like I said, I'll be fine...
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s6
+fi
+goto 8
+label s6
+setvar strS[1000] = ""
+label 8
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG021B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s7
+fi
+goto 9
+label s7
+setvar strS[1000] = ""
+label 9
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM09C.mp3
+text Lunch break.
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J9D.aac
+text @[Sunohara]
+text 'Morning.
+text Sunohara finally shows up.
+if intF[829] == 1
+	goto s8
+fi
+goto 12
+label s8
+if intF[27] == 1
+	goto s9
+fi
+if intF[17] == 1
+	if intF[18] == 1
+		goto s9
+	fi
+fi
+goto 10
+label s9
+text @[Tomoya]
+text You're the most excited out of all of us for the match, yet you're the latest to school?
+sound J9E.aac
+text @[Sunohara]
+text I need to get my sleep!
+text @[Tomoya]
+text And I'm saying you got more than enough.
+text @[Tomoya]
+text Whether or not we get embarrassed is up to how you perform, so do us a favor and don't drop the ball, no pun intended.
+text I smack him on the shoulder as I say this.
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J9F.aac
+text @[Sunohara]
+text GYYYYAAAAAAAAAAAAaaaaaaaaaaaaaahh──────!
+text @[Tomoya]
+text Whoa... what the hell, man? Why are you just yelling for no reason?
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J9G.aac
+text @[Sunohara]
+text Er, it's nothing...
+text @[Tomoya]
+text Don't scare me like that.
+text I smack him on the arm next.
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J9H.aac
+text @[Sunohara]
+text GYYYYAAAAAAAAAAAAaaaaaaaaaaaaaahh──────!
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text ...
+text @[Tomoya]
+text ...Wait, are your muscles hurting from practice yesterday?
+sound J9I.aac
+text @[Sunohara]
+text Yeah, looks like it...
+text I smack his upper arm one more time.
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J9J.aac
+text @[Sunohara]
+text GYYYYAAAAAAAAAAAAaaaaaaaaaaaaaahh──────!
+sound J9K.aac
+text @[Sunohara]
+text Are you trying to kill me?!
+text @[Tomoya]
+text ...
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Nagisa won't be of any help either way, and I've got a bum shoulder.
+text And now Sunohara is on the verge of death because of his muscle pain...
+text @[Tomoya]
+text Maybe we should just forfeit...
+sound J9L.aac
+text @[Sunohara]
+text Forfeit what?
+text @[Tomoya]
+text The match, what else?
+setvar strS[1001] = "CGSH21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J9M.aac
+text @[Sunohara]
+text Oh stop being so pathetic, ya idiot.
+sound J9N.aac
+text @[Sunohara]
+text Just think of how much work we've put in for today!
+text *Tap*
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J9O.aac
+text @[Sunohara]
+text GYYYYAAAAAAAAAAAAaaaaaaaaaaaaaahh─────!
+text @[Tomoya]
+text You think you'd be able to play like that?
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J9P.aac
+text @[Sunohara]
+text Even if it feels like my body can't, I'm still doing it.
+sound J9Q.aac
+text @[Sunohara]
+text I don't care if it means I have to crawl around on the floor...
+sound J9R.aac
+text @[Sunohara]
+text That's how life is in the Sunohara 3-on-3 club...
+text Don't go around naming the club after yourself without at least consulting us first. That's just rude.
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J9S.aac
+text @[Sunohara]
+text Okazaki. You're still on for today, right?
+text Can't he channel this courage and bravado of his into something that could actually help us?
+text But, well... I guess you could say the same thing about me.
+text @[Tomoya]
+text Okay, fine... You'll be happy if I do, right?
+setvar strS[1001] = "CGSH21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J9T.aac
+text @[Sunohara]
+text Yep!
+goto 11
+label 10
+if intF[27] == 0
+	goto s10
+fi
+goto 11
+label s10
+goto 20
+label 11
+goto 25
+label 12
+if intF[826] == 1
+	goto s11
+fi
+goto 19
+label s11
+setvar strS[1001] = "CGSH20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J9U.aac
+text @[Sunohara]
+text Let's go check in with Tomoyo.
+text @[Tomoya]
+text Oh, good point.
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s12
+fi
+goto 13
+label s12
+setvar strS[1000] = ""
+label 13
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J9V.aac
+text @[Sunohara]
+text Agh...
+text @[Tomoya]
+text Does your body ache too?
+setvar strS[1001] = "CGSH24"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J9W.aac
+text @[Sunohara]
+text Heh... I might've put a little too much hustle into my step yesterday.
+text @[Tomoya]
+text Same here. It hurts just to walk.
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J9X.aac
+text @[Sunohara]
+text There's a trick to it.
+sound J9Y.aac
+text @[Sunohara]
+text If you only move your body from the knees down like this, and take little baby steps, it doesn't hurt.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Waddle* *Waddle* *Waddle*
+text His upper body is absolutely still as he walks. He looks like a real creeper.
+text @[Tomoya]
+text Let's see, then...
+text Out of options, I decide to give it a shot too.
+text *Waddle* *Waddle* *Waddle*
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J9Z.aac
+text @[Sunohara]
+text Yeah, that's it. You're pretty good.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Waddle* *Waddle* *Waddle*
+text *Waddle* *Waddle* *Waddle* *Waddle*
+sound JA0.aac
+text @[Female Student]
+text Eeek!
+text We walk around school while keeping our upper bodies totally still, looking like real goons I'm sure.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s13
+fi
+goto 14
+label s13
+setvar strS[1000] = ""
+label 14
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG017"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s14
+fi
+goto 15
+label s14
+setvar strS[1000] = ""
+label 15
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Once we get to Tomoyo's class, we grab a student leaving the room and tell them to get Tomoyo to meet us where we are.
+setvar strS[1001] = "CGTM13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JA1.aac
+text @[Tomoyo]
+text Oh, you guys.
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JA2.aac
+text @[Sunohara]
+text You're with us, right?
+text Sunohara asks Tomoyo as he stares at her face.
+setvar strS[1001] = "CGTM13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoyo]
+text ...
+text She thinks for a bit, and then...
+setvar strS[1001] = "CGTM14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JA3.aac
+text @[Tomoyo]
+text You guys are hopeless...
+text ...Gives us an answer.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JA4.aac
+text @[Male Student]
+text Hey, Sakagami. Let me give this to you right now.
+text A boy appears by her side and hands Tomoyo a beat-up cloth bag.
+setvar strS[1001] = "CGTM20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JA5.aac
+text @[Tomoyo]
+text Okay, thanks.
+sound JA6.aac
+text @[Male Student]
+text It's seriously bad news if you try to wear the wrong size, so don't hurt yourself.
+sound JA7.aac
+text @[Tomoyo]
+text Yeah.
+sound JA8.aac
+text @[Sunohara]
+text Wait, are those...
+sound JA9.aac
+text @[Tomoyo]
+text Yeah, they're shoes.
+text She takes a pair of basketball shoes out from the bag.
+text I can tell by the size and color that they're women's shoes. The kid from just a second ago probably knew someone who had a pair.
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JAA.aac
+text @[Sunohara]
+text Even we're just wearing regular gym shoes...
+setvar strS[1001] = "CGTM16H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM16H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JAB.aac
+text @[Tomoyo]
+text Are you two ready?
+sound JAC.aac
+text @[Tomoyo]
+text If we're doing this, losing isn't an option.
+sound JAD.aac
+text @[Tomoyo]
+text We're winning.
+text A promising teammate we seem to have all the sudden.
+if 0 == 0
+	goto s15
+fi
+goto 16
+label s15
+setvar strS[1000] = "KURO"
+goto 18
+label 16
+if 0 == 1
+	goto s16
+fi
+goto 17
+label s16
+setvar strS[1000] = "SIRO"
+goto 18
+label 17
+setvar strS[1000] = "KURO"
+label 18
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text After two more hours of class, school ends.
+goto 25
+label 19
+if intF[826] == 0
+	goto s17
+fi
+goto 25
+label s17
+label 20
+text @[Tomoya]
+text I was worried that you wouldn't show.
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JAE.aac
+text @[Sunohara]
+text Of course I would. Think of how hard I've worked for this.
+text @[Tomoya]
+text All right, you ready to grab lunch?
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s18
+fi
+goto 21
+label s18
+setvar strS[1000] = ""
+label 21
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JAF.aac
+text @[Sunohara]
+text Agh...
+text @[Tomoya]
+text Does your body ache like hell too?
+setvar strS[1001] = "CGSH24"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JAG.aac
+text @[Sunohara]
+text Heh... I might've put a little too much hustle into my step yesterday.
+text @[Tomoya]
+text Same here. It hurts just to walk.
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JAH.aac
+text @[Sunohara]
+text There's a trick to it.
+sound JAI.aac
+text @[Sunohara]
+text If you only move your body from the knees down like this, and take little baby steps, it doesn't hurt.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Waddle* *Waddle* *Waddle*
+text His upper body is absolutely still as he walks. He looks like a real creeper.
+text @[Tomoya]
+text Let's see, then...
+text Out of options, I decide to give it a shot too.
+text *Waddle* *Waddle* *Waddle*
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JAJ.aac
+text @[Sunohara]
+text Yeah, that's it. You're pretty good.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Waddle* *Waddle* *Waddle*
+text *Waddle* *Waddle* *Waddle* *Waddle*
+sound JAK.aac
+text @[Female Student]
+text Eeek!
+text We walk around school while keeping our upper bodies totally still, looking like real goons I'm sure.
+if 0 == 0
+	goto s19
+fi
+goto 22
+label s19
+setvar strS[1000] = "KURO"
+goto 24
+label 22
+if 0 == 1
+	goto s20
+fi
+goto 23
+label s20
+setvar strS[1000] = "SIRO"
+goto 24
+label 23
+setvar strS[1000] = "KURO"
+label 24
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text After two more hours of class, school ends.
+label 25
+if intF[826] == 1
+	goto s21
+fi
+goto 27
+label s21
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s22
+fi
+goto 26
+label s22
+setvar strS[1000] = ""
+label 26
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGTM10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoyo]
+text ...
+text We meet up with Tomoyo in the hallway.
+setvar strS[1001] = "CGNG17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JAL.aac
+text @[Nagisa]
+text I'm sorry I'm late.
+text Nagisa also comes from her own class, holding her bag and something wrapped in a handkerchief.
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JAM.aac
+text @[Sunohara]
+text All right... Why don't we get going?
+text We walk as a group with Sunohara leading the way.
+goto 41
+label 27
+if intF[827] == 1
+	goto s23
+fi
+goto 30
+label s23
+setvar strS[1000] = "BG020"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s24
+fi
+goto 28
+label s24
+setvar strS[1000] = ""
+label 28
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGSH18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JAN.aac
+text @[Sunohara]
+text I wonder if we can really count on her...
+sound JAO.aac
+text @[Nagisa]
+text We're about to ask, so you need to believe.
+setvar strS[1001] = "CGSH15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JAP.aac
+text @[Sunohara]
+text But she hasn't even practiced...
+text @[Tomoya]
+text Well she did say that she was so busy that she might get wrinkles in her brow...
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JAQ.aac
+text @[Sunohara]
+text This is only making me feel more and more uneasy...
+setvar strS[1001] = "CGNG23Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JAR.aac
+text @[Nagisa]
+text It's going to be okay. I'm sure she'll do an excellent job.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text We open the door to the empty classroom.
+setvar strS[1000] = "BG023"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s25
+fi
+goto 29
+label s25
+setvar strS[1000] = ""
+label 29
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text There we find Fuko, hard at work carving. Just as we left her two days ago.
+text @[Tomoya]
+text Hey, Fuko.
+setvar strS[1001] = "CGFU13A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU13A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JAS.aac
+text @[Fuko]
+text ...Wha?
+text She raises her head.
+sound JAT.aac
+text @[Fuko]
+text All of you are here together. Is something the matter?
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JAU.aac
+text @[Sunohara]
+text Agh... she's totally forgotten.
+setvar strS[1001] = "CGSH17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JAV.aac
+text @[Sunohara]
+text Hup!
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Sunohara puts one fist on each of Fuko's temples.
+setvar strS[1001] = "CGFU16A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU16A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JAW.aac
+text @[Fuko]
+text Mmmgh! That hurts!
+text They're suddenly at odds with each other.
+setvar strS[1001] = "CGNG16Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JAX.aac
+text @[Nagisa]
+text Please stop, Sunohara-san!
+sound JAY.aac
+text @[Nagisa]
+text Everyone forgets things sometimes!
+setvar strS[1001] = "CGSH18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JAZ.aac
+text @[Sunohara]
+text We've been practicing every day for today's match!
+sound JB0.aac
+text @[Sunohara]
+text Wouldn't you feel sad if someone forgot about it after all the work we've put in?!
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JB1.aac
+text @[Fuko]
+text Now Fuko remembers! Today is the cricket match!
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JB2.aac
+text @[Sunohara]
+text It's basketball!!
+setvar strS[1001] = "CGFU12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JB3.aac
+text @[Fuko]
+text Either one. Today is the day when Fuko plays and makes a lot of people know about her.
+sound JB4.aac
+text @[Sunohara]
+text That's right. And you need to be serious about this if you want that to happen.
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JB5.aac
+text @[Fuko]
+text Rest assured! Fuko has the horsepower of 1.5 humans!
+text @[Tomoya]
+text Yet another oddly uninspiring statement from her...
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JB6.aac
+text @[Sunohara]
+text Is this really going to work...?
+goto 41
+label 30
+if intF[832] == 1
+	goto s26
+fi
+goto 33
+label s26
+setvar strS[1000] = "BG019"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s27
+fi
+goto 31
+label s27
+setvar strS[1000] = ""
+label 31
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text We head to the reference room in the old school building to get Miyazawa, the girl who will be helping us.
+setvar strS[1000] = "BG028"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s28
+fi
+goto 32
+label s28
+setvar strS[1000] = ""
+label 32
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JB7.aac
+text @[Sunohara]
+text 'Sup.
+text Sunohara opens the door and greets her.
+setvar strS[1001] = "CGYK11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JB8.aac
+text @[Miyazawa]
+text Welcome.
+text ...For just a split second, it felt like there were people around.
+text What's more, it's not only one or two people we're talking about here...
+text But Miyazawa is inside all by herself.
+text Maybe it was my imagination...
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JB9.aac
+text @[Sunohara]
+text Are you ready?
+setvar strS[1001] = "CGYK16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JBA.aac
+text @[Miyazawa]
+text Excuse me?
+sound JBB.aac
+text @[Sunohara]
+text For the basketball game.
+setvar strS[1001] = "CGYK15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JBC.aac
+text @[Miyazawa]
+text Oh, is that starting now?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She closes the book she's in the middle of reading and stands up.
+setvar strS[1001] = "CGYK10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JBD.aac
+text @[Miyazawa]
+text I can play whenever you need me.
+sound JBE.aac
+text @[Sunohara]
+text Okay, let's go.
+goto 41
+label 33
+if intF[833] == 1
+	goto s29
+fi
+goto 37
+label s29
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s30
+fi
+goto 34
+label s30
+setvar strS[1000] = ""
+label 34
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG034"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s31
+fi
+goto 35
+label s31
+setvar strS[1000] = ""
+label 35
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text We head to the dorm to get Misae-san, who's going to be helping us out today.
+setvar strS[1000] = "BG045"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s32
+fi
+goto 36
+label s32
+setvar strS[1000] = ""
+label 36
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text We knock on Misae-san's door.
+sound JBF.aac
+text @[Voice]
+text Comiiing.
+setvar strS[1001] = "CGMS10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JBG.aac
+text @[Misae]
+text What is it?
+setvar strS[1001] = "CGSH10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JBH.aac
+text @[Sunohara]
+text Let's play basketball!
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *BA-KRAK*
+text @[Tomoya]
+text Nagisa, you say it.
+setvar strS[1001] = "CGNG17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JBI.aac
+text @[Nagisa]
+text Ah, okay.
+setvar strS[1001] = "CGNG10Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JBJ.aac
+text @[Nagisa]
+text Our basketball match is about to start.
+sound JBK.aac
+text @[Nagisa]
+text Do you have the time to join?
+setvar strS[1001] = "CGMS15H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS15H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JBL.aac
+text @[Misae]
+text Oh, that's today...
+setvar strS[1001] = "CGMS13H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS13H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JBM.aac
+text @[Misae]
+text Well, okay... I do have some work left over, but I'll just finish it tonight...
+setvar strS[1001] = "CGNG32"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JBN.aac
+text @[Nagisa]
+text I'm sorry...
+sound JBO.aac
+text @[Nagisa]
+text Please let me help you later.
+setvar strS[1001] = "CGMS10H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS10H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JBP.aac
+text @[Misae]
+text Oh, it's fine. You don't have to worry about that.
+setvar strS[1001] = "CGMS18H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS18H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JBQ.aac
+text @[Misae]
+text This is my job, after all.
+goto 41
+label 37
+if intF[834] == 1
+	goto s33
+fi
+goto 39
+label s33
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s34
+fi
+goto 38
+label s34
+setvar strS[1000] = ""
+label 38
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGKY14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JBR.aac
+text @[Kyou]
+text What took you so long?!
+text Kyou and Nagisa are already waiting for us in the hallway.
+setvar strS[1001] = "CGKY13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JBS.aac
+text @[Kyou]
+text Aren't you acting a little lax for people about to go up against a team of experts?
+text @[Tomoya]
+text Huh, you seem pretty excited...
+setvar strS[1001] = "CGKY33"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY33.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JBT.aac
+text @[Kyou]
+text Heh... Heh heh heh... I guarantee you that we're winning today's match...
+setvar strS[1001] = "CGSH24"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JBU.aac
+text @[Sunohara]
+text Um, did something happen?
+setvar strS[1001] = "CGKY33"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY33.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JBV.aac
+text @[Kyou]
+text There's a guy in my class who's on the varsity basketball team.
+text @[Tomoya]
+text Okay...
+sound JBW.aac
+text @[Kyou]
+text It looks like he found out that I'm going to be playing in today's game... And guess what he said.
+setvar strS[1001] = "CGSH20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JBX.aac
+text @[Sunohara]
+text What'd he say?
+setvar strS[1001] = "CGKY33"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY33.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JBY.aac
+text @[Kyou]
+text "Wow, Fujibayashi. You've sunk pretty low if you're teaming up with those losers..."
+setvar strS[1001] = "CGKY32"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGKY32.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JBZ.aac
+text @[Kyou]
+text Gaaaaahhh! That pisses me off!
+text @[Tomoya]
+text Wow... Losers, eh...?
+sound JC0.aac
+text @[Kyou]
+text I want to turn that stupid smirking face of his into a crimson mask of pain and agony!!
+setvar strS[1001] = "CGKY14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGKY14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JC1.aac
+text @[Kyou]
+text Tomoya! Is it against the rules to slam the ball into an opponent's face?
+setvar strS[1001] = "CGNG33"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG33.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JC2.aac
+text @[Nagisa]
+text Um, please calm down.
+text @[Tomoya]
+text If the ref doesn't catch you, it's part of the game.
+setvar strS[1001] = "CGNG16Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JC3.aac
+text @[Nagisa]
+text Tomoya-kun!
+text From the sound of it, Nagisa doesn't seem very happy with me.
+text But being called a loser really does get the blood boiling.
+setvar strS[1001] = "CGKY33"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY33.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JC4.aac
+text @[Kyou]
+text Okay, why don't we get going.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Kyou starts walking off with a fearless smile on her face.
+text I walk alongside her.
+text Nagisa and Sunohara follow a little behind us.
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JC5.aac
+text @[Sunohara]
+text ...Nagisa-chan... I might've made some mistakes putting this team together...
+setvar strS[1001] = "CGNG10Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JC6.aac
+text @[Nagisa]
+text Don't worry, they might be saying things like that right now, but I'm sure they'll play fair and square once the match─
+setvar strS[1001] = "CGKY33"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY33.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JC7.aac
+text @[Kyou]
+text If it turns into a free-for-all, can I take advantage of the confusion and elbow one of them?
+text @[Tomoya]
+text Elbow shots to the side are especially effective; they drain stamina.
+sound JC8.aac
+text @[Kyou]
+text Ah, I see.
+setvar strS[1001] = "CGSH24"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JC9.aac
+text @[Sunohara]
+text @...
+text @[Nagisa]
+text ...
+goto 41
+label 39
+if intF[835] == 1
+	goto s35
+fi
+goto 41
+label s35
+setvar strS[1000] = "BG021H"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s36
+fi
+goto 40
+label s36
+setvar strS[1000] = ""
+label 40
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Once classes end, Sunohara and I walk over to Fujibayashi's seat.
+setvar strS[1001] = "CGSH10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JCA.aac
+text @[Sunohara]
+text Okay, you ready?
+setvar strS[1001] = "CGRY20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JCB.aac
+text @[Ryou]
+text Y-Yes, I'll do my best.
+text @[Tomoya]
+text Eh, you don't have to push yourself too hard.
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JCC.aac
+text @[Ryou]
+text N-No, if I'm doing this, I want to be of use... I-I'm going to give it my all.
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JCD.aac
+text @[Sunohara]
+text Don't worry. Even your fortune told us that we'd win.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JCE.aac
+text @[Girl]
+text Okazaki-kun, Sunohara-kun?
+text A girl's voice calls out to us from behind.
+setvar strS[1001] = "CGSH20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JCF.aac
+text @[Sunohara]
+text Huh? What is it?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JCG.aac
+text @[Girl]
+text Hang in there.
+sound JCH.aac
+text @[Girl]
+text I'm sure you'll get another chance someday.
+sound JCI.aac
+text @[Girl]
+text Don't get discouraged, Okazaki-kun.
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JCJ.aac
+text @[Sunohara]
+text Heh, hear that, Okazaki? Looks like people are expecting a lot from us.
+sound JCK.aac
+text @[Sunohara]
+text Now we've gotta win.
+text @[Tomoya]
+text Er... I don't think they're cheering us on, exactly...
+sound JCL.aac
+text @[Sunohara]
+text C'mon, let's get going.
+label 41
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s37
+fi
+goto 42
+label s37
+setvar strS[1000] = ""
+label 42
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG029A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s38
+fi
+goto 43
+label s38
+setvar strS[1000] = ""
+label 43
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text The building is already bustling with activity.
+text Half of it is taken up by the basketball team. Across from them, on the other side of a net, is the volleyball club.
+text They don't seem to have been given any instructions yet, as they're all practicing freely.
+text ...I remember this sight.
+text I used to be one of those guys.
+music ~
+text But now...
+text I look down at my own body.
+music BGM08D.mp3
+text I'm still dressed in my school uniform.
+text How ironic that I have to play basketball ─ the sport I used to be completely into, the sport I loved ─ dressed like this. What a freaking joke.
+setvar strS[1001] = "CGNG32"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JCM.aac
+text @[Nagisa]
+text I'm feeling really nervous...
+if intF[829] == 0
+	goto s39
+fi
+goto 44
+label s39
+text @[Tomoya]
+text All you have to do is watch.
+sound JCN.aac
+text @[Nagisa]
+text I know that.
+goto 45
+label 44
+if intF[829] == 1
+	goto s40
+fi
+goto 45
+label s40
+text @[Tomoya]
+text This is no different from just playing around.
+label 45
+setvar strS[1001] = "CGNG17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JCO.aac
+text @[Nagisa]
+text But... you're going to be playing members of the basketball team. That's incredible.
+sound JCP.aac
+text @[Nagisa]
+text Just look. They're all so good.
+text They'd probably be mad if they heard that; seems to imply that, even though they're so good, they're still going up against us ─ a no-name group of kids who don't even play the sport.
+sound JCQ.aac
+text @[Nagisa]
+text They practice like this every day.
+setvar strS[1001] = "CGNG32"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JCR.aac
+text @[Nagisa]
+text We've just recently put our team together... and we have to face them.
+sound JCS.aac
+text @[Nagisa]
+text We've been walking a completely different path than they have.
+setvar strS[1001] = "CGNG16Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JCT.aac
+text @[Nagisa]
+text Just think of how much stronger our friendship has gotten because of that; and it's all happened in such a short period of time too.
+sound JCU.aac
+text @[Nagisa]
+text If we're able to win...
+setvar strS[1001] = "CGNG17Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG17Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JCV.aac
+text @[Nagisa]
+text ...that would mean we've created even stronger ties over the past few days than the ties shared by the basketball team over who-knows how long.
+setvar strS[1001] = "CGNG32"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JCW.aac
+text @[Nagisa]
+text That would be amazing...
+sound JCX.aac
+text @[Nagisa]
+text I'm clumsy... and I've lived in my own little world, separated from everyone else, for all this time...
+sound JCY.aac
+text @[Nagisa]
+text All I ever do is drag people down, but...
+setvar strS[1001] = "CGNG16Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JCZ.aac
+text @[Nagisa]
+text If we all work together here, we'll be able to do something even more impressive than what people living normal lives could accomplish under the same circumstances...
+sound JD0.aac
+text @[Nagisa]
+text That's what a win would prove...
+text @[Tomoya]
+text Yeah... you're right.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I really understand how Nagisa feels.
+text Sunohara has been living his life in the same way I have too.
+if intF[829] == 1
+	goto s41
+fi
+goto 46
+label s41
+text But real life isn't that rosy.
+label 46
+if intF[829] == 1
+	if intF[830] == 1
+		if intF[610] == 1
+			goto s42
+		fi
+	fi
+fi
+goto 47
+label s42
+music ~
+sound JD1.aac
+text @[Voice]
+text Where's the Furukawa team?
+text I hear a voice come from behind us as our group stands around doing nothing.
+setvar strS[1001] = "CGNG13Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG13Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JD2.aac
+text @[Furukawa]
+text Huh? Oh, yes, I'm Furukawa.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Nagisa turns around.
+music BGM14.mp3
+setvar strS[1001] = "CGYS10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text There stands a tall man.
+text @[Tomoya]
+text Yo...Yoshino Yusuke!
+setvar strS[1001] = "CGYS16A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS16A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JD3.aac
+text @[Yoshino]
+text Don't yell another person's name like that.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Suddenly, the room erupts with chatter and whispers.
+text Everyone seems to have reacted to Yoshino Yusuke's name.
+text In particular, the girls' reactions are amazing. They're forming a circle around us from a distance.
+setvar strS[1001] = "CGYS16A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS16A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JD4.aac
+text @[Yoshino]
+text I'm heading back...
+sound JD5.aac
+text @[Yoshino]
+text Wait, but... I did make a promise...
+sound JD6.aac
+text @[Yoshino]
+text Ah, how did I end up having to do this...?
+setvar strS[1001] = "CGSH10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JD7.aac
+text @[Sunohara]
+text What are you here for today, Yoshino-san?
+setvar strS[1001] = "CGYS10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JD8.aac
+text @[Yoshino]
+text Oh, you're on the team too...?
+text Yoshino-san looks as Sunohara as he says the words.
+setvar strS[1001] = "CGYS16A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS16A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JD9.aac
+text @[Yoshino]
+text *Sigh*
+sound JDA.aac
+text @[Yoshino]
+text I'm... the man here to help you.
+text @[Tomoya]
+text Wha? Why you again?!
+sound JDB.aac
+text @[Yoshino]
+text Someone who I couldn't tell no asked me to...
+text @[Tomoya]
+text Who, exactly?
+setvar strS[1001] = "CGYS11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JDC.aac
+text @[Yoshino]
+text I can't tell you that. It's a secret...
+sound JDD.aac
+text @[Sunohara]
+text Who could it be?
+text The two of us look at each other.
+setvar strS[1001] = "CGYS16A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS16A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JDE.aac
+text @[Yoshino]
+text Oh, am I just getting in your way? Glad to hear that. I'm going home, then.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JDF.aac
+text @[Nagisa]
+text P-Please wait!
+text Nagisa's loud words cause him to stop.
+setvar strS[1001] = "CGNG16Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JDG.aac
+text @[Nagisa]
+text Um... I don't have any confidence in my own abilities, so I'd like to ask you to play on the team...
+setvar strS[1001] = "CGYS10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JDH.aac
+text @[Yoshino]
+text Hunh? A girl like you was going to go at it with a bunch of boys?
+sound JDI.aac
+text @[Yoshino]
+text That was awfully reckless of you.
+sound JDJ.aac
+text @[Nagisa]
+text Yes...
+setvar strS[1001] = "CGYS11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JDK.aac
+text @[Yoshino]
+text I understand... I'll help you.
+sound JDL.aac
+text @[Yoshino]
+text And you guys did help me out with my own work.
+setvar strS[1001] = "CGYS16A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS16A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JDM.aac
+text @[Yoshino]
+text But I don't like standing out in a crowd. Could you get rid of all these people?
+text He looks around at the inquisitive eyes surrounding us.
+setvar strS[1001] = "CGNG16Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JDN.aac
+text @[Nagisa]
+text Tomoya-kun.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Hey, Sunohara.
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JDO.aac
+text @[Sunohara]
+text Okay!
+setvar strS[1001] = "CGSH17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JDP.aac
+text @[Sunohara]
+text Hey, what the hell are you doing here? Shoo, shoo!
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JDQ.aac
+text @[Girl]
+text Aaaahhh!!
+text It works instantly. The onlookers scatter like a flock of birds.
+text The guys from the basketball team approach us in their place.
+sound JDR.aac
+text @[Basketball Club's Member]
+text What's all the fuss about here?
+text @[Tomoya]
+text Hey, so this guy isn't a student at the school, but can we have him help our team out?
+sound JDS.aac
+text @[Basketball Club's Member]
+text That's fine. Even an experienced player won't have the benefit of teamwork if he has to play with you two.
+text @[Tomoya]
+text By the way, how much basketball have you played?
+setvar strS[1001] = "CGYS10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JDT.aac
+text @[Yoshino]
+text Oh, so you're going to be playing basketball...
+sound JDU.aac
+text @[Yoshino]
+text I guess I played it during P.E. while I was a student.
+sound JDV.aac
+text @[Basketball Club's Member]
+text Hah! Some help you guys have.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text They're not taking us the least bit seriously.
+text I'm starting to worry too, but he should still be leaps and bounds better than Nagisa.
+music ~
+sound JDW.aac
+text @[Basketball Club's Member]
+text So, are you ready?
+setvar intF[831] = 1
+setvar intF[829] = 0
+setvar intF[828] = 0
+goto 48
+label 47
+text ......
+text A number of basketball team players are looking our way.
+text We stand out in the gym big time, wearing our school uniforms.
+text One person in the crowd begins walking toward us.
+music ~
+sound JDX.aac
+text @[Basketball Club's Member]
+text Are you ready?
+if intF[833] == 1
+	goto s43
+fi
+goto 48
+label s43
+sound JDY.aac
+text @[Basketball Club's Member]
+text Wait, Misae-san?!
+music BGM10.mp3
+setvar strS[1001] = "CGMS10E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS10E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JDZ.aac
+text @[Misae]
+text What, you got a problem?
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JE0.aac
+text @[Sunohara]
+text She'll be the one helping us out. She's related to the school, so it's okay, right?
+sound JE1.aac
+text @[Basketball Club's Member]
+text I don't mind, but you do know that our team is all guys, right?
+setvar strS[1001] = "CGMS18E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS18E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JE2.aac
+text @[Misae]
+text Whatever, your team can have whoever you want on it.
+sound JE3.aac
+text @[Basketball Club's Member]
+text Ack... Misae-san seems kinda fired up about this...
+music ~
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JE4.aac
+text @[Basketball Club's Member]
+text So that's your team?
+label 48
+text The kid asks us this while looking and snickering at the makeshift team before him.
+music BGM09A.mp3
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JE5.aac
+text @[Sunohara]
+text Yeah. I've never been a fan of form over function.
+text Sunohara replies with a fearless laugh of his own.
+sound JE6.aac
+text @[Basketball Club's Member]
+text Then let's get started. It'll be annoying if our advisor sees us doing this.
+setvar strS[1001] = "CGSH20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JE7.aac
+text @[Sunohara]
+text Who's your advisor again? Ooue?
+sound JE8.aac
+text @[Basketball Club's Member]
+text Yeah.
+text Oogami is not only the basketball team advisor, he's also the teacher in charge of guidance counseling.
+text We've met him more than a few times in that capacity.
+setvar strS[1001] = "CGSH24"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JE9.aac
+text @[Sunohara]
+text Yeah, that would be annoying. Let's hurry up and get this over with.
+sound JEA.aac
+text @[Basketball Club's Member]
+text Then you go wait under that hoop while we figure out our team.
+setvar strS[1001] = "CGSH18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JEB.aac
+text @[Sunohara]
+text Just bring out the varsity team.
+sound JEC.aac
+text @[Basketball Club's Member]
+text Aahaha! Well, do your best and just maybe that'll happen.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text He laughs as he goes back to the rest of the team.
+setvar strS[1001] = "CGSH15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JED.aac
+text @[Sunohara]
+text Hah... That's right, laugh.
+setvar strS[1001] = "CGSH14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JEE.aac
+text @[Sunohara]
+text But...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Sunohara looks up through the second floor aisles.
+sound JEF.aac
+text @[Sunohara]
+text I don't see those choral club girls anywhere...
+text @[Tomoya]
+text Do you actually think they're the kind of people who would take you up on your challenge and come watch?
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JEG.aac
+text @[Sunohara]
+text Whatever. The rumors of our miraculous achievement will reach them regardless.
+text @[Tomoya]
+text Or the rumors of how arrogant you were about your own abilities.
+setvar strS[1001] = "CGSH24"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JEH.aac
+text @[Sunohara]
+text ...
+sound JEI.aac
+text @[Sunohara]
+text If those kinds of rumors start going around...
+text @[Tomoya]
+text I'm not gonna be able to come to school...
+sound JEJ.aac
+text @[Sunohara]
+text Yeah, definitely.
+music ~
+text @[Tomoya]
+text Our only option is to win.
+sound JEK.aac
+text @[Sunohara]
+text Yep!
+music BGM11.mp3
+text @[Tomoya]
+text Shall we go?
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JEL.aac
+text @[Sunohara]
+text Awright!
+if intF[831] == 1
+	goto s44
+fi
+goto 49
+label s44
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JEM.aac
+text @[Nagisa]
+text Please.
+text Nagisa bows her head to Yoshino-san.
+setvar strS[1001] = "CGYS10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JEN.aac
+text @[Yoshino]
+text Yeah. I'll give it my all.
+label 49
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text The other team seems to have decided on their players as well. Three guys are walking our way, shoulder to shoulder.
+if intF[826] == 1
+	goto s45
+fi
+jump SEEN6430_0_1.scr 53
+label s45
+text We start the game with the ball.
+setvar strS[1001] = "CGSH13B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JEO.aac
+text @[Sunohara]
+text Tomoyo... remember that thing I told you about earlier? We're doing that as the first play of the game.
+setvar strS[1001] = "CGTM18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JEP.aac
+text @[Tomoyo]
+text We haven't even practiced it! Like I'd be able to pull that off.
+sound JEQ.aac
+text @[Sunohara]
+text I know you can do it.
+sound JER.aac
+text @[Tomoyo]
+text You DON'T know that.
+text Tomoyo and Sunohara are discussing their secret plans so loudly that everyone can hear.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I pass the ball to Sunohara.
+text A hand comes out of nowhere to grab it, but the ball makes it to Sunohara by a hair's width.
+text @[Tomoya]
+text (They'll try to swoop right in if we do stuff like that...)
+text Sunohara feints one way to shake off a defender, then hurls the ball toward the hoop.
+text Is he going for a three-pointer...?
+text @[Tomoya]
+text What an amateur...
+text Just as I think this...
+text I see someone in the air right next to the hoop.
+text @[Tomoya]
+text An alley-oop...?!
+text She grabs the ball with both hands, and then...
+text *BWOOF*
+text Slams it through the hoop.
+text A moment after the ball lands, so does she, followed by a long streak of hair.
+setvar strS[1001] = "CGTM16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JES.aac
+text @[Tomoyo]
+text How was that? Not bad for my first try, right?
+text She nonchalantly delivers the line before walking through the mouth-gaping, dumbfounded defense.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JET.aac
+text @[Nagisa]
+text You're very good at this, Sakagami-san!
+text That's a bit of an understatement.
+setvar strS[1001] = "CGSH12B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JEU.aac
+text @[Sunohara]
+text Ehh, well it was your first try. I'll give you a passing grade.
+text Sunohara holds back the joy welling up in his body and turns it into sarcasm instead.
+text I think the opposing team has to be shaken after seeing that alley-oop, then hearing the words "first try" on top of it.
+text But, they're not shaking. In fact, they're not moving at all. They're still suspended in mid-gasp, motionless from awing at what just took place.
+setvar strS[1001] = "CGTM18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JEV.aac
+text @[Tomoyo]
+text What else are you expecting me to do?
+setvar strS[1001] = "CGSH13B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JEW.aac
+text @[Sunohara]
+text Well, don't show everyone your panties while you're in the air.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 6.aac
+text *BOOT*
+setvar strS[1001] = "CGTM24"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM24.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JEX.aac
+text @[Tomoyo]
+text I'm never doing that again.
+setvar strS[1001] = "CGSH24B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JEY.aac
+text @[Sunohara]
+text No, I'm just kidding... I couldn't see anything, so just keep on leaping through the air!
+setvar strS[1001] = "CGTM13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JEZ.aac
+text @[Tomoyo]
+text You're telling the truth, right...?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Tomoyo hits one basket after the next.
+text By the time I realize it, the area around the entrance to the gym is covered with school uniforms.
+setvar strS[1001] = "CGSH13B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JF0.aac
+text @[Sunohara]
+text It looks like we've got a good crowd going.
+text @[Tomoya]
+text Is it just me, or does it seem like most of them are only cheering on Tomoyo?
+text The feeling is so intense that it wouldn't surprise me if we came to school tomorrow and Tomoyo had her own fan club.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JF1.aac
+text @[Captain]
+text We're switching players!
+text The captain's enraged voice echoes through the building.
+text @[Tomoya]
+text Well, I did expect us to make it this far at least...
+setvar strS[1001] = "CGSH13B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JF2.aac
+text @[Sunohara]
+text So this is where the real showdown begins, once the varsity team comes in...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text If their entire team gets replaced with varsity guys, it's going to suddenly get way harder.
+text I can tell this from the moment I try to pass the ball inbounds.
+text I'd need a huge opening in order to get it to an amateur like Sunohara without it falling into the defenders' hands.
+text In that case, Tomoyo's the only one I can count on.
+text Tomoyo finds an opening and rushes over. A defender moves in the same direction, trying to cut her off.
+text Thanks to this, Sunohara ends up being open.
+text I throw him a no-look pass.
+text *THUD*
+setvar strS[1001] = "CGSH23B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JF3.aac
+text @[Sunohara]
+text Oww!
+text It smashes straight into Sunohara's face.
+text @[Tomoya]
+text You're not supposed to get faked out by your own teammates!!
+setvar strS[1001] = "CGSH16B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JF4.aac
+text @[Sunohara]
+text Ouch... yeah, yeah. I'll get it next time.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text The body checks on Tomoyo have also gotten harder. She's no match for the varsity players physically, so they get the better of her multiple times.
+text But at least on defense, both Tomoyo and Sunohara move around the court well, grabbing rebounds and stealing the other team's passes more than once.
+text It's rare to see a game this low-scoring.
+text But...
+setvar strS[1001] = "CGSH16B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JF5.aac
+text @[Sunohara]
+text Haaah... haaah...
+text As Sunohara's breathing gets more labored, the balance starts to crumble.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text The opposing team starts to complete more passes, and they make shot after shot.
+text I look at the scoreboard.
+text They're now within one point of us.
+text @[Tomoya]
+text How much time is left?
+sound JF6.aac
+text @[Nagisa]
+text There aren't even thirty seconds remaining.
+text @[Tomoya]
+text Move, Sunohara! It's just thirty seconds!
+setvar strS[1001] = "CGSH24B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JF7.aac
+text @[Sunohara]
+text Heh, don't worry about it...
+text *Clatter* *Clatter*
+text @[Tomoya]
+text It looks like your knees are chattering.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Tomoyo, can you still move around?
+setvar strS[1001] = "CGTM16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JF8.aac
+text @[Tomoyo]
+text Of course I can.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Okay, we're making this basket.
+text I match Tomoyo's pace and throw a leading bounce pass.
+text It's over if they manage to surround her. She immediately leads off with two steps and leaps toward the basket.
+text She goes for a layup.
+text But then, another hand reaches toward the ball.
+text Tomoyo, still floating in midair, switches the ball from her dominant hand to her left hand.
+text @[Tomoya]
+text (Nice!)
+text She tosses the ball in the air by the hoop with a gentle touch, then lands having successfully tripped up the defense.
+text Sunohara is now in the air, having taken her place. He'd been left completely open.
+setvar strS[1001] = "CGSH21B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH21B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JF9.aac
+text @[Sunohara]
+text All right!
+text He takes the ball in both hands...
+text *CLONK*
+text And hurls it to the ground.
+text Without it going through the hoop.
+text "Daaagh!" I hear crowds of students cheering us on collapse in shock.
+text @[Tomoya]
+text Why would you try to dunk the ball when you can't even reach the hoop?
+setvar strS[1001] = "CGSH24B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JFA.aac
+text @[Sunohara]
+text I normally can, I just wasn't able to that time. Heh heh.
+text @[Tomoya]
+text This is all because you tried to act cool when you're clearly exhausted.
+text @[Tomoya]
+text Do you have any idea how important that one shot was?
+setvar strS[1001] = "CGSH16B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JFB.aac
+text @[Sunohara]
+text We just have to make the next one, right? Okay, okay.
+text @[Tomoya]
+text Listen, you...
+setvar strS[1001] = "CGTM12H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM12H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JFC.aac
+text @[Tomoyo]
+text Are you two just going to leave me to play defense on my own...?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Psst*
+text The other team makes a perfect layup.
+setvar strS[1001] = "CGTM13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoyo]
+text ...
+sound JFD.aac
+text @[Tomoyo]
+text I see... Now I understand what you guys are thinking.
+sound JFE.aac
+text @[Tomoyo]
+text You're just giving up. I get it.
+setvar strS[1001] = "CGTM31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JFF.aac
+text @[Tomoyo]
+text You ought to tell me those kinds of things earlier. I was out there actually trying and looking stupid for it...
+setvar strS[1001] = "CGSH24B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JFG.aac
+text @[Sunohara]
+text Er, it's nothing...
+sound JFH.aac
+text @[Sunohara]
+text Hey, it'll be more exciting if we win from behind at the very end, anyway.
+sound JFI.aac
+text @[Sunohara]
+text It's all part of the plan. Right, Okazaki?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Uhh, yeah... That's right, Tomoyo.
+text @[Tomoya]
+text There's no time left. We'll get the ball to you and end it with one last shot.
+setvar strS[1001] = "CGTM18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JFJ.aac
+text @[Tomoyo]
+text Getting that one shot isn't an easy task at this point in time...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JP1.aac
+text @[Basketball Club's Member]
+text Hey, hurry it up!
+text @[Tomoya]
+text Yeah, one second.
+text @[Tomoya]
+text Are you two ready?
+text I get in a huddle with the other two and give them instructions for the final play.
+choice Give Tomoyo the last shot|I'll take the last shot
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s46
+fi
+goto 50
+label s46
+goto 51
+label 50
+if intF[1089] == 1
+	goto s47
+fi
+goto 51
+label s47
+setvar intF[836] = 1
+label 51
+setvar strS[1001] = "CGTM13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JFK.aac
+text @[Tomoyo]
+text Got it.
+setvar strS[1001] = "CGSH13B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JFL.aac
+text @[Sunohara]
+text I just hope it goes well.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text We scatter across the court.
+text If this first pass gets stolen, it's game over.
+text The other team knows that, so they're playing even harder defense than normal.
+text The opposing formation switches around and around so quickly that I start to feel dizzy...
+text I toss the ball inbounds.
+text It reaches Tomoyo.
+text She passes it back to me before she's surrounded.
+text I dribble the ball and cut through the center.
+text The other team acts like they've been taken by surprise.
+text It's because I haven't gone into the paint a single time until now.
+text One, two...
+text ...Layup!
+text I see a shadow pass across my vision.
+text I move the ball across my chest and into my left hand, just like I saw Tomoyo do.
+text Then, I leave the ball floating in the air, trusting that Sunohara is behind me.
+sound JFM.aac
+text @[Sunohara]
+text All right, here we goooo!!
+text Sunohara's voice.
+text I turn around to see Sunohara landing on the ground, the ball in his hands.
+text Sunohara's defender quickly comes around to cover him.
+text He fakes one way, then tosses the ball against the floor.
+text It bounces high in the air.
+text Tomoyo grabs it as she runs forward.
+music ~
+text She shakes off her defender, and then...
+if intF[836] == 0
+	goto s48
+fi
+jump SEEN6430_0_1.scr 52
+label s48
+text She goes for a layup.
+text The ball circles around the hoop.
+text Centrifugal force causes the ball to go off trajectory... and fall to the court.
+text ......
+text Silence comes over the entire building.
+sound JFN.aac
+text @[Voice]
+text Time's up!
+text A voice announces our fate.
+music BGM09A.mp3
+text Moments later, the basketball team is cheering with joy.
+sound JP6.aac
+text @[Club Member]
+text That was close!!
+sound JFO.aac
+text @[Club Member]
+text Eh, that wasn't a bad warm-up for today's practice.
+sound JFP.aac
+text @[Club Member]
+text It'd be funny if they thought we were really trying just now.
+setvar strS[1001] = "CGSH17B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH17B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JFQ.aac
+text @[Sunohara]
+text You were trying like crazy!!
+text @[Tomoya]
+text Don't, Sunohara.
+text @[Tomoya]
+text They won, so they're allowed to say whatever they want.
+setvar strS[1001] = "CGSH16B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JFR.aac
+text @[Sunohara]
+text But... aren't you frustrated?
+text @[Tomoya]
+text We lost. We should resign ourselves to that fact.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text The crowd quickly starts to scatter.
+text I notice a number of teachers heading our way, seemingly parting the crowd of students.
+text They're probably the advisors for whatever clubs use the gym.
+sound JFS.aac
+text @[Voice]
+text What in the world is going on here?!
+text Leading them is Ooue, the guidance counselor.
+setvar strS[1001] = "CGSH27B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH27B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JFT.aac
+text @[Sunohara]
+text Oh crap... We gotta scram.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Sunohara sprints for the emergency exit on the opposite side of the gym.
+text @[Tomoya]
+text See you later.
+setvar strS[1001] = "CGTM18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JFU.aac
+text @[Tomoyo]
+text Yeah...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Tomoyo follows him.
+text I can't sit around either.
+text @[Tomoya]
+text Nagisa, we're leaving too.
+sound JFV.aac
+text @[Nagisa]
+text Ah, okay.
+setvar intF[837] = 1
+jump SEEN6430_0_1.scr

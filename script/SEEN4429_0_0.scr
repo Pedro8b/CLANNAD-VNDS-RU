@@ -1,0 +1,501 @@
+setvar intF[1110] = 29
+setvar intF[1112] = 1
+setvar strS[1004] = "SDTA0429"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1004] = ""
+label 1
+bgload SCLAB00.jpg 45
+delay 60
+setimg SCLAP01.png 5 5
+setimg SCLA0429.png 159 160
+delay 120
+setvar strS[1000] = "BG009M"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = ""
+label 2
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I wake up late this morning.
+text I'm still thinking about the dream I had.
+text Then I fall back asleep.
+text This is the greatest luxury in my life.
+setvar strS[1000] = "SIRO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = ""
+label 3
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text .........
+text ......
+text ...
+setvar strS[1000] = "BG009"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 4
+label s3
+setvar strS[1000] = ""
+label 4
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM15.mp3
+text Afternoon.
+text I finish eating and consider what to do.
+text Yesterday was hectic, so I want to relax a bit today.
+text Thinking back, I can't help but smile wryly.
+text I didn't expect to ever think about "relaxing at home."
+text @[Tomoya]
+text (I wonder what they're doing...?)
+text I start thinking about the people who gather at the drama club room.
+text It's nice outside today.
+text It might be nice to wander around instead of running from something for a change.
+choice Stay at home|Go outside
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s4
+fi
+goto 7
+label s4
+text @[Tomoya]
+text (Going outside is a pain...)
+text Besides, I get to see them a bit too much anyway.
+setvar strS[1000] = "BG009M"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s5
+fi
+goto 5
+label s5
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I close the curtains and prepare to sleep in for the third time.
+text .........
+text ......
+text ...
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s6
+fi
+goto 6
+label s6
+setvar strS[1000] = ""
+label 6
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I spend the entire day sleeping.
+text I should try to work harder tomorrow...
+music ~
+goto 22
+label 7
+if intF[1089] == 1
+	goto s7
+fi
+goto 22
+label s7
+text I decide to go outside.
+text I rise from the bed and get dressed.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s8
+fi
+goto 8
+label s8
+setvar strS[1000] = ""
+label 8
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG035"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s9
+fi
+goto 9
+label s9
+setvar strS[1000] = ""
+label 9
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I spend this holiday looking around town.
+text Aside from there being more people than usual, not much else is different.
+text I wander around aimlessly, not looking for anything in particular.
+text It takes a lot to get myself out here, but I always end up doing the same things.
+text Walking around without any particular purpose, I suddenly feel nervous.
+text It's too much trouble to go to Sunohara's place...
+text @[Tomoya]
+text I'll just go to school...
+text Mumbling that, I smirk to myself.
+text I wouldn't expect to hear that from someone who's perpetually late and truant.
+text Despite that, my legs carry me somewhere I don't really want to go.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s10
+fi
+goto 10
+label s10
+setvar strS[1000] = ""
+label 10
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG015"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s11
+fi
+goto 11
+label s11
+setvar strS[1000] = ""
+label 11
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text The school is surprisingly crowded for a holiday.
+text The chatting students seem more cheery than during regular weekdays. It's probably because they're more relaxed.
+setvar strS[1000] = "BG057"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s12
+fi
+goto 12
+label s12
+setvar strS[1000] = ""
+label 12
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text When I enter the front field, I pass by club members running laps.
+text I hear cries from the other fields that sound like the soccer team and baseball team competing against each other.
+text @[Tomoya]
+text All this effort on a day off...
+text Just a short time ago, I would have resented them.
+text Since club members are here, the school building should be open, too.
+text I head to the shoe lockers.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s13
+fi
+goto 13
+label s13
+setvar strS[1000] = ""
+label 13
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG016"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s14
+fi
+goto 14
+label s14
+setvar strS[1000] = ""
+label 14
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text The inside of the building is, as expected, empty.
+text It may be different in the hall with all the club rooms.
+text I subconsciously start heading to the drama club room, but I stop myself.
+text Somewhere outside the window, I hear all sorts of sounds.
+text It sounds like the concert band tuning up. A cacophony of noise from brass instruments.
+text These sounds mix with cheers from the field.
+text From the gym, I hear bamboo swords smacking against each other and the heavy sounds of bouncing balls.
+text One strange sound is interwoven among all the others.
+text It sounds like a saw cutting wood.
+text I listen carefully, trying to pinpoint the origin of the sound.
+text @[Tomoya]
+text Is that...?
+text I start walking again.
+setvar strS[1000] = "BG020"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s15
+fi
+goto 15
+label s15
+setvar strS[1000] = ""
+label 15
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text After climbing up the stairs of the old building, my supposition is confirmed.
+text *Screech* *Screech* *Screech* *Screech* *Screech*
+text I can hear a noise resembling a hacksaw up ahead.
+text That means... it's coming from the library.
+text There's only one person who would use a saw... I mean, a violin inside the library...
+text As usual, the placard reads "Closed."
+text Also as usual, the crooked sliding door is slightly ajar.
+text Seeing that, I feel a slight sense of relief.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s16
+fi
+goto 16
+label s16
+setvar strS[1000] = ""
+label 16
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music ~
+text I peer through the opening.
+setvar strS[1000] = "BG027"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s17
+fi
+goto 17
+label s17
+setvar strS[1000] = ""
+label 17
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM05A.mp3
+text Kotomi is in there.
+text Like always, she's in her uniform while standing barefoot in front of the display shelf.
+text The only difference is that she's holding a violin instead of a book.
+setvar strS[1001] = "CGKT32E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT32E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Scree* *Scree* *Scree* *Scree* *Scree* *Scree* *Scree*
+text She's playing a short melody over and over and over again.
+text I guess practice tunes are all like that.
+text The sound itself is as horrible as before, but she seems to be playing with more care than yesterday.
+text *Creeeee* *Creeeee* *Creeeee* *Creeeee*
+text She plays the same melody in a different pitch.
+text I don't know too much about it, but this must be how beginners practice.
+setvar strS[1001] = "CGKT30E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT30E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound CSX.aac
+text @[Kotomi]
+text Phew...
+text She wipes the sweat off her forehead, her chin remaining on the violin's chin rest.
+sound CSY.aac
+text @[Kotomi]
+text Not good enough.
+sound CSZ.aac
+text @[Kotomi]
+text I have to surprise everyone...
+text She then places the bow back on the strings.
+setvar strS[1001] = "CGKT32E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT32E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Scree* *Scree* *Scree* *Scree* *Scree* *Scree* *Scree*
+text @[Tomoya]
+text (I'd better not bother her...)
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Right when I'm about to move away from the door, she stops playing.
+sound CT0.aac
+text @[Kotomi]
+text Who's there?
+text I frantically push myself against the wall.
+text After a few seconds of silence, I start to hear the noise again.
+text *Scree* *Scree* *Scree* *Scree* *Scree* *Scree* *Scree*
+text Her concentration must be faltering since her performance seems a little clumsier.
+setvar strS[1000] = "BG020"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s18
+fi
+goto 18
+label s18
+setvar strS[1000] = ""
+label 18
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I tiptoe away from the library.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s19
+fi
+goto 19
+label s19
+setvar strS[1000] = ""
+label 19
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG012"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s20
+fi
+goto 20
+label s20
+setvar strS[1000] = ""
+label 20
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08D.mp3
+text I descend the slope alone.
+text Until a few weeks ago, the trees were full of peach-colored petals.
+text I look up to find a green tunnel that's terrible on the eyes.
+text Beyond that is the unchanging blue sky of late afternoon.
+text @[Tomoya]
+text (I didn't have anything...)
+text A realization comes to me suddenly.
+text I didn't have anything to motivate me and I couldn't find anything new...
+text After my father became like that, I didn't want to go anywhere near my house...
+text Everything just seemed like a huge pain in the ass...
+text "I'm the only one who's special. The rest of the world is boring."
+text I felt as if taking that attitude absolved me.
+text But now...
+text Now I have a goal.
+text I want to hear Kotomi play her violin.
+text @[Tomoya]
+text That's not a bad goal...
+text I whisper that out loud to nobody in particular.
+setvar intF[416] + 1
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s21
+fi
+goto 21
+label s21
+setvar strS[1000] = ""
+label 21
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+label 22
+music ~
+jump SEEN4430_0_0.scr

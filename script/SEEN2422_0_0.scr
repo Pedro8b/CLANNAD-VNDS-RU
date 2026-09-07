@@ -1,0 +1,870 @@
+setvar strS[1000] = "BG015"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1000] = ""
+label 1
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I take a look at my watch.
+text Third period is nearly over and lunch break is about to start.
+setvar strS[1000] = "BG016"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = ""
+label 2
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Until last year I would just enter the classroom without caring what period it was.
+text Occasionally I would get into an argument with the teacher right then and there and I would end up interrupting class.
+text But if I continued doing that now that I'm a third-year, it would be a bother to my classmates, who are working hard studying for their exams right now.
+text Trying to come to school during the break is more or less me being considerate in my own way.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = ""
+label 3
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music ~
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 4
+label s3
+setvar strS[1000] = ""
+label 4
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text (Not to mention it's also better to stay on the teachers' good sides...)
+text There's no one who could take me to task for anything if I come to school during the break.
+music BGM06.mp3
+setvar strS[1001] = "CGTM13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoyo]
+text ...
+text ...Nope, there is one.
+setvar strS[1001] = "CGTM18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5UL.aac
+text @[Tomoyo]
+text Where were you going with your bag at this time of day?
+sound 5UM.aac
+text @[Tomoyo]
+text Don't tell me you only just arrived at school.
+text I wonder what would happen if I told her I did...
+choice I'm on my way home|Stay silent
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s4
+fi
+goto 5
+label s4
+text @[Tomoya]
+text I'm on my way home.
+setvar strS[1001] = "CGTM11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5UN.aac
+text @[Tomoyo]
+text Eh...? Why, are you not feeling well?
+text @[Tomoya]
+text Er, yeah... I wonder if I have a cold.
+sound 5UO.aac
+text @[Tomoyo]
+text Is your house close by?
+sound 5UP.aac
+text @[Tomoyo]
+text If it is, I don't mind escorting you there.
+text I didn't think she was seriously going to worry about me.
+text If she finds out I lied, I might just end up flying through the air...
+text @[Tomoya]
+text Nah, I'll be fine by myself.
+sound 5UQ.aac
+text @[Tomoyo]
+text Are you sure?
+sound 5UR.aac
+text @[Tomoyo]
+text How's your fever?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Tomoyo brushes up her bangs and moves her forehead toward mine.
+text I quickly avoid her.
+setvar strS[1001] = "CGTM11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5US.aac
+text @[Tomoyo]
+text Why are you backing up?
+text @[Tomoya]
+text W-Well...
+setvar strS[1001] = "CGTM18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5UT.aac
+text @[Tomoyo]
+text I'm just going to check your temperature.
+text @[Tomoya]
+text No need for that.
+sound 5UU.aac
+text @[Tomoyo]
+text Just be patient and stay still.
+text She grabs both my shoulders with an eagle grip.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She then pushes me up against the wall and moves her face toward mine.
+text Our foreheads come together.
+text The back of my head is against the wall. Right now my head is completely sandwiched.
+text @[Tomoya]
+text (This definitely looks like a love scene...)
+text Even my mouth is at a position where we could kiss if I raised my chin even a little.
+setvar strS[1001] = "CGTM19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5UV.aac
+text @[Tomoyo]
+text I... don't think you have a fever.
+text Still in that same position, Tomoyo speaks.
+text I can feel her damp breath hitting the tip of my nose.
+text @[Tomoya]
+text That sure is strange...
+setvar strS[1001] = "CGTM11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5UW.aac
+text @[Tomoyo]
+text Or what, you're only just starting to feel sick?
+text @[Tomoya]
+text Yes... I'm only just starting to feel sick.
+sound 5UX.aac
+text @[Tomoyo]
+text You say that, but you haven't coughed even once.
+text @[Tomoya]
+text Yeah... I actually want to cough.
+text @[Tomoya]
+text But with your face so close right now, I just feel like it'd be bad if I did...
+setvar strS[1001] = "CGTM13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5UY.aac
+text @[Tomoyo]
+text As if you could stop coughing just because you think it's bad.
+sound 5UZ.aac
+text @[Tomoyo]
+text So what is this, then? Because you haven't coughed at all this entire time, which makes it seem like you're actually perfectly healthy.
+text @[Tomoya]
+text It's because I've been holding it in!
+sound 5V0.aac
+text @[Tomoyo]
+text You can't hold in a cough.
+text @[Tomoya]
+text Yeah, I'm actually about to cough.
+text @[Tomoya]
+text And when I do, you're going to catch a cold too.
+sound 5V1.aac
+text @[Tomoyo]
+text I don't mind.
+text @[Tomoyo]
+text ...
+text For a while, she holds me still.
+text I was thinking of whether I should cough or not, but I just couldn't when I considered I would be coughing right in the face of a girl.
+text @[Tomoyo]
+text ...
+setvar strS[1001] = "CGTM18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5V2.aac
+text @[Tomoyo]
+text I guess you really are just feigning illness.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Finally, she lets go of me and puts some distance between us.
+setvar strS[1001] = "CGTM22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5V3.aac
+text @[Tomoyo]
+text But you were being considerate of me a little just now, weren't you?
+sound 5V4.aac
+text @[Tomoyo]
+text I won't tolerate lies, but I like that side of you quite a lot.
+text @[Tomoya]
+text What would have happened if I had coughed?
+sound 5V5.aac
+text @[Tomoyo]
+text I think I'd probably hate you.
+text ...Then all of this would have ended right here, right now. Wouldn't that be nice?
+text I somewhat regret it.
+sound 5V6.aac
+text @[Tomoyo]
+text So in any case, you need to actually go to class, all right?
+text @[Tomoya]
+text Yeah... All right.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5V7.aac
+text @[Voice]
+text Oh, it's you, Okazaki. Good morning!
+text One student greets me, then goes back into the classroom.
+setvar strS[1001] = "CGTM19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5V8.aac
+text @[Tomoyo]
+text ...Good morning?
+text @[Tomoya]
+text Eh? No, that guy was half-asleep, surely...
+text @[Tomoya]
+text I've been here ever since this morning, after all...
+setvar strS[1001] = "CGTM18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5V9.aac
+text @[Tomoyo]
+text Then how about I ask someone in your class about the actual situation?
+text @[Tomoya]
+text Huh...?
+sound 5VA.aac
+text @[Tomoyo]
+text Whether you have really been here since first period, that is.
+text @[Tomoya]
+text No, wait!
+sound 5VB.aac
+text @[Tomoyo]
+text What? Have you decided you'll actually say it for yourself?
+text @[Tomoya]
+text Yeah. I'm late. And is that so bad?
+text I become defiant.
+setvar strS[1001] = "CGTM14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5VC.aac
+text @[Tomoyo]
+text Really...
+sound 5VD.aac
+text @[Tomoyo]
+text That you would lie about leaving early just to hide the fact that you were late...
+text Surprisingly, Tomoyo didn't scold me over this.
+goto 6
+label 5
+if intF[1089] == 1
+	goto s5
+fi
+goto 6
+label s5
+text @[Tomoya]
+text Well, I have some stuff going on. So don't ask about why I'm late.
+setvar strS[1001] = "CGTM13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5VE.aac
+text @[Tomoyo]
+text You tell me not to ask, but that only makes me want to ask even more.
+text @[Tomoya]
+text Please don't.
+sound 5VF.aac
+text @[Tomoyo]
+text Then how about I ask someone in your class about the actual situation?
+text @[Tomoya]
+text Huh...?
+setvar strS[1001] = "CGTM18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5VG.aac
+text @[Tomoyo]
+text Whether you have really been here since first period, that is.
+text @[Tomoya]
+text No, wait!
+sound 5VH.aac
+text @[Tomoyo]
+text What? Have you decided you'll actually say it for yourself?
+text @[Tomoya]
+text Yeah. I'm late. And is that so bad?
+text I become defiant.
+setvar strS[1001] = "CGTM11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5VI.aac
+text @[Tomoyo]
+text You ask me whether it's bad, but I can't give an answer other than "Yes, it's bad."
+text Surprisingly, Tomoyo didn't scold me over this.
+text @[Tomoya]
+text Yeah, because it's obvious it is.
+label 6
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Well, I'll hurry along now, then.
+text Seeing a good opportunity, I cut the conversation and try to detach as quickly as possible.
+setvar strS[1001] = "CGTM18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5VJ.aac
+text @[Tomoyo]
+text Wait. Tell me the reason. The reason why you're late.
+text @[Tomoya]
+text I just overslept is all.
+text She was about to try and follow me all the way into the classroom, so I answer her in order to keep her out.
+setvar strS[1001] = "CGTM11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5VK.aac
+text @[Tomoyo]
+text I see... You're not a morning person, huh.
+text @[Tomoya]
+text Don't just suddenly decide that for yourself.
+sound 5VL.aac
+text @[Tomoyo]
+text Was there any specific reason for it, then?
+text @[Tomoya]
+text That doesn't matter, does it?
+sound 5VM.aac
+text @[Tomoyo]
+text I'm asking because I'm worried, you know?
+sound 5VN.aac
+text @[Tomoyo]
+text Or, what...? Am I bothering you?
+choice You are bothering me|No, it's not like that
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s6
+fi
+goto 8
+label s6
+text @[Tomoya]
+text You are bothering me. Isn't it obvious?
+text @[Tomoya]
+text Being late certainly is bad, but the reason for it is family business, so don't ask about it.
+text @[Tomoya]
+text I mean, you aren't a teacher, are you?
+text @[Tomoya]
+text Not to mention you're not even my senior, either. You're my junior.
+setvar strS[1001] = "CGTM31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5VO.aac
+text @[Tomoyo]
+text That's right... I'm your junior.
+sound 5VP.aac
+text @[Tomoyo]
+text But even if I'm your junior, I don't think being worried about you is a bad thing...
+text She looks clearly disheartened.
+text I felt like she was infringing too much on my personal life, so I may have ended up being too harsh on her.
+text However, there just wasn't a stop to her bothering me, so I had to confront her about it like this sooner or later.
+text Tomoyo has common sense, so this should have been enough to get the message across.
+sound 5VQ.aac
+text @[Tomoyo]
+text I'm sorry... I feel like I pried too much.
+text @[Tomoya]
+text No, it's fine as long as you understand.
+sound 5VR.aac
+text @[Tomoyo]
+text But, just one thing... Try not to be late, if you can... That's all.
+text @[Tomoya]
+text Yeah... All right.
+setvar strS[1001] = "CGTM22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5VS.aac
+text @[Tomoyo]
+text Well, then, classes are starting... So I have to go.
+text @[Tomoya]
+text Yeah, see you later.
+sound 5VT.aac
+text @[Tomoyo]
+text Mhm.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I look at her as she walks away and falls out of view.
+text With this, she'll probably stop interfering with my business.
+text @[Tomoya]
+text (She's not a bad person, though...)
+text Right then, the bell rings, signalling the start of fourth period.
+text @[Tomoya]
+text Oh, damn...
+music ~
+text I hurry into the classroom.
+setvar strS[1000] = "BG021"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s7
+fi
+goto 7
+label s7
+setvar strS[1000] = ""
+label 7
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08A.mp3
+setvar strS[1001] = "CGSH10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5VU.aac
+text @[Sunohara]
+text Hey.
+text Right when Sunohara sits down, he starts talking to me.
+text @[Tomoya]
+text Why, you're early.
+setvar strS[1001] = "CGSH15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5VV.aac
+text @[Sunohara]
+text Well, after what happened yesterday, I figured I would just come to school during lunch break.
+text @[Tomoya]
+text That's very wise of you.
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5VW.aac
+text @[Sunohara]
+text Let's relax as much as possible today.
+text @[Tomoya]
+text Yeah, let's...
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+goto 9
+label 8
+if intF[1089] == 1
+	goto s8
+fi
+goto 9
+label s8
+label 9
+text @[Tomoya]
+text No, it's not like you're bothering me or anything...
+text @[Tomoya]
+text How should I put it...
+text @[Tomoya]
+text I'm saying, don't you have far more important things to do?
+sound 5VX.aac
+text @[Tomoyo]
+text More important things?
+text @[Tomoya]
+text Yeah. Didn't you only get admitted not too long ago?
+text @[Tomoya]
+text I mean, even yesterday you just left your friends in the dark.
+text @[Tomoya]
+text Shouldn't you try to follow up with them?
+sound 5VY.aac
+text @[Tomoyo]
+text You say things like "leave in the dark" and "follow up," but I don't really understand what you mean.
+sound 5VZ.aac
+text @[Tomoyo]
+text Did I do something wrong?
+text @[Tomoya]
+text This morning, did you talk to those people you were with yesterday?
+sound 5W0.aac
+text @[Tomoyo]
+text Yeah, I did.
+text @[Tomoya]
+text Was it the same as always?
+sound 5W1.aac
+text @[Tomoyo]
+text It was the same as always.
+text @[Tomoya]
+text They didn't say anything about me?
+sound 5W2.aac
+text @[Tomoyo]
+text Yeah, they did, actually.
+text @[Tomoya]
+text What did they say?
+sound 5W3.aac
+text @[Tomoyo]
+text "You were talking so casually, so are you two friends?"
+text @[Tomoya]
+text And then?
+sound 5W4.aac
+text @[Tomoyo]
+text Well, I just told them I only met you the other day, and everyone busted up laughing.
+text @[Tomoya]
+text Don't you think they were actually making fun of you?
+setvar strS[1001] = "CGTM18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5W5.aac
+text @[Tomoyo]
+text No, they weren't. Even I can figure out that much.
+sound 5W6.aac
+text @[Tomoyo]
+text I mean, after that...
+setvar strS[1001] = "CGTM33"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM33.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5W7.aac
+text @[Tomoyo]
+text They said that that was just like me, and to never change.
+text If it's enough to make Tomoyo smile and get embarrassed about, they must have been genuine words.
+text In that case, I'd just stir things up unnecessarily if I kept asking along these lines.
+text @[Tomoya]
+text All right, I understand now.
+setvar strS[1001] = "CGTM11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5W8.aac
+text @[Tomoyo]
+text Understand what?
+setvar strS[1001] = "CGTM18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5W9.aac
+text @[Tomoyo]
+text Or actually, you changed the subject, didn't you?
+sound 5WA.aac
+text @[Tomoyo]
+text How about answering that question I asked you?
+text @[Tomoya]
+text The bell rings.
+text I take a look at my watch.
+setvar strS[1001] = "CGTM19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5WB.aac
+text @[Tomoyo]
+text Huh?
+text And right after, the bell signalling the start of fourth period rings.
+text @[Tomoya]
+text See you later.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music ~
+text I fly into the classroom, as if running away.
+setvar strS[1000] = "BG021"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s9
+fi
+goto 10
+label s9
+setvar strS[1000] = ""
+label 10
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08A.mp3
+setvar strS[1001] = "CGSH10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5WC.aac
+text @[Sunohara]
+text Hey.
+text Right when Sunohara sits down, he starts talking to me.
+text @[Tomoya]
+text Why, you're early.
+setvar strS[1001] = "CGSH15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5WD.aac
+text @[Sunohara]
+text Well, after what happened yesterday, I figured I would just come to school during lunch break.
+text @[Tomoya]
+text Well, I'm thankful for that.
+text @[Tomoya]
+text Otherwise, I might get dragged around to wake you up again.
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5WE.aac
+text @[Sunohara]
+text Let's relax as much as possible today.
+text @[Tomoya]
+text Yeah, let's...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar intF[214] = 1
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+jump SEEN2422_1_0.scr

@@ -1,0 +1,868 @@
+setvar intF[1110] = 6
+setvar intF[1112] = 0
+setvar strS[1004] = "SDTA0506"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s36
+fi
+goto 38
+label s36
+setvar strS[1004] = ""
+label 38
+bgload SCLAB00.jpg 45
+delay 60
+setimg SCLAP01.png 5 5
+setimg SCLA0506.png 159 160
+delay 120
+if 0 == 0
+	goto s37
+fi
+goto 39
+label s37
+setvar strS[1000] = "KURO"
+goto 41
+label 39
+if 0 == 1
+	goto s38
+fi
+goto 40
+label s38
+setvar strS[1000] = "SIRO"
+goto 41
+label 40
+setvar strS[1000] = "KURO"
+label 41
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s39
+fi
+goto 42
+label s39
+setvar strS[1000] = ""
+label 42
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08A.mp3
+text I am walking in the hallway after second period.
+text Strolling past all the other classrooms, I am on my way to the restroom.
+text @[Tomoya]
+text ...?
+text I feel pretty bothered by all people staring at me.
+text I get the feeling that lots of people are trying to get a glimpse of me through the windows.
+text It's true that I am rarely here this early...
+text But, no, I've been getting here during the morning lately.
+text It really bugs me...
+text After taking care of my business in the restroom, I can still feel everyone looking at me on my way back to the classroom.
+text It feels as if people are talking behind my back.
+text When I take a closer look, I notice it is both boys and girls staring at me.
+text @[Tomoya]
+text Hm?
+text Then, when I look in front of me, I see Kyou by chance.
+text Right as she's heading into her classroom.
+text @[Tomoya]
+text Yo.
+setvar strS[1001] = "CGKY25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AE8.aac
+text @[Kyou]
+text ...?
+text Hearing my voice, Kyou turns around.
+setvar strS[1001] = "CGKY33"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY33.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AE9.aac
+text @[Kyou]
+text Heheeh, Tomoya...
+text @[Tomoya]
+text ...? Why're you looking at me like that?
+sound AEA.aac
+text @[Kyou]
+text Oh come on now. I heard you two kissed.
+text @[Tomoya]
+text Huh?! Who did you hear that from?! Don't tell me you made Fujibayashi spill it!
+setvar strS[1001] = "CGKY31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AEB.aac
+text @[Kyou]
+text What makes you think that I'd have to press Ryou for an answer?!
+text @[Tomoya]
+text Then how did you find out...?
+text @[Tomoya]
+text Wait... hey! Did you actually tail us despite saying you wouldn't?!
+setvar strS[1001] = "CGKY33"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY33.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AEC.aac
+text @[Kyou]
+text Heh...
+text She sneers.
+text @[Tomoya]
+text ...? Am I wrong...?
+sound AED.aac
+text @[Kyou]
+text You know... even though there was a curtain separating you from the rest of the world, kissing in an arcade is still a big no-no.
+sound AEE.aac
+text @[Kyou]
+text Everyone knows already.
+text @[Tomoya]
+text ...Everyone...? Ahh?!
+text Hearing her say so, I finally realize.
+text Was everyone staring at me because... somebody saw us yesterday...?
+setvar strS[1001] = "CGKY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AEF.aac
+text @[Kyou]
+text Just like that, the couple that everyone's talking about was born!
+text @[Tomoya]
+text Geez... what a pain...
+setvar strS[1001] = "CGKY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AEG.aac
+text @[Kyou]
+text Well, it's fine now, isn't it? You guys are a couple. It would have gotten out sooner or later anyway.
+text @[Tomoya]
+text Well, that might be true...
+text @[Tomoya]
+text The way this is spreading is pretty unpleasant...
+sound AEH.aac
+text @[Kyou]
+text Well, now it won't be so easy to break up.
+text @[Tomoya]
+text I wasn't planning on breaking up with her.
+setvar strS[1001] = "CGKY15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AEI.aac
+text @[Kyou]
+text Is that so?
+text @[Tomoya]
+text What? You want me to?
+setvar strS[1001] = "CGKY16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AEJ.aac
+text @[Kyou]
+text Uh... that's not what I mean, but...
+sound AEK.aac
+text @[Kyou]
+text Well... how should I say this...
+sound AEL.aac
+text @[Kyou]
+text ...Well...
+setvar strS[1001] = "CGKY19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AEM.aac
+text @[Kyou]
+text You like Ryou... right?
+text @[Tomoya]
+text Like her, huh...? Well...
+setvar strS[1001] = "CGKY13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AEN.aac
+text @[Kyou]
+text You mean you are going out with her even though you don't actually like her?
+text @[Tomoya]
+text You know... you were the one who told me to go out with her to start with.
+setvar strS[1001] = "CGKY14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AEO.aac
+text @[Kyou]
+text Even so─
+text @[Tomoya]
+text Weren't you the one who told me it's better to strengthen our bond as lovers instead of as friends?
+setvar strS[1001] = "CGKY15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AEP.aac
+text @[Kyou]
+text Eh? Ah... y-yeah.
+text @[Tomoya]
+text You were right on the money.
+text @[Tomoya]
+text All the things that I wouldn't have learned were we just friends. They've really made me think a lot.
+text @[Tomoya]
+text At the very least... Yeah, if I have to pick between whether I like her or not or somewhere in-between... I'd say I like her.
+setvar strS[1001] = "CGKY18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AEQ.aac
+text @[Kyou]
+text I... see...
+setvar strS[1001] = "CGKY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AER.aac
+text @[Kyou]
+text Well, guess that makes me your cupid, then.
+text @[Tomoya]
+text Seems like it.
+setvar strS[1001] = "CGKY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AES.aac
+text @[Kyou]
+text Ahahaha, then be sure to thank me tons!
+sound AET.aac
+text @[Kyou]
+text I'll be okay with you treating me to a fruit milk every time we see each other.
+text @[Tomoya]
+text I bet you're going to come to my classroom once a day just so we see each other.
+setvar strS[1001] = "CGKY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AEU.aac
+text @[Kyou]
+text Oh, you figured?
+text @[Tomoya]
+text Well, yeah.
+setvar strS[1001] = "CGKY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AEV.aac
+text @[Kyou]
+text Ahahaha, then hurry up and get to know Ryou like you know me.
+sound AEW.aac
+text @[Kyou]
+text Once you get there, you two will truly live up to your name as a couple.
+text @[Tomoya]
+text Yeah, I'll try my best.
+setvar strS[1001] = "CGKY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AEX.aac
+text @[Kyou]
+text Yep!
+sound AEY.aac
+text @[Kyou]
+text Okay then, class is about to start.
+text @[Tomoya]
+text Hm? Oh.
+sound AEZ.aac
+text @[Kyou]
+text See ya.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Hey, Kyou.
+setvar strS[1001] = "CGKY25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AF0.aac
+text @[Kyou]
+text Hm?
+text @[Tomoya]
+text Err... Thanks.
+sound AF1.aac
+text @[Kyou]
+text ...
+setvar strS[1001] = "CGKY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AF2.aac
+text @[Kyou]
+text Yep!
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s40
+fi
+goto 43
+label s40
+setvar strS[1000] = ""
+label 43
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08B.mp3
+setvar strS[1000] = "BG021Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s41
+fi
+goto 44
+label s41
+setvar strS[1000] = ""
+label 44
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text After school, I can hear the voices of people working their butts off in club activities coming from the fields.
+text And then, inside our classroom─
+sound AF3.aac
+text @[Female Student]
+text Ryou-chan, thanks!
+sound AF4.aac
+text @[Ryou]
+text It's okay. I'm happy that I could help.
+text One last person waves goodbye as she exits the classroom.
+text Only Fujibayashi and I are left.
+setvar strS[1001] = "CGRY17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AF5.aac
+text @[Ryou]
+text Phew...
+text @[Tomoya]
+text Nice work.
+setvar strS[1001] = "CGRY14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AF6.aac
+text @[Ryou]
+text Ah... uh... I-I'm sorry for making you wait this long... well...
+sound AF7.aac
+text @[Ryou]
+text Since I'm now using tarot cards for my fortune telling, everybody has become very interested...
+text @[Tomoya]
+text Nah, I don't mind.
+setvar strS[1001] = "CGRY19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AF8.aac
+text @[Ryou]
+text I really wanted to finish up earlier, but... well...
+setvar strS[1001] = "CGRY22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AF9.aac
+text @[Ryou]
+text M-My inspiration wouldn't stop...
+text @[Tomoya]
+text Light bulbs going off much brighter than before?
+setvar strS[1001] = "CGRY19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AFA.aac
+text @[Ryou]
+text Y-Yes. Much.
+text @[Tomoya]
+text I see. Well, it's okay as long as you are having fun.
+setvar strS[1001] = "CGRY22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AFB.aac
+text @[Ryou]
+text Th-Thank you very much...
+sound AFC.aac
+text @[Ryou]
+text But I'll try to finish up a little earlier next time...
+text @[Tomoya]
+text I don't really mind, you know.
+setvar strS[1001] = "CGRY21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AFD.aac
+text @[Ryou]
+text @No, it's just... Okazaki-kun, I want to have more time...
+delay 352
+text to spend with you alone.
+text @[Tomoya]
+text Eh...
+music ~
+setvar strS[1001] = "CGRY20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AFE.aac
+text @[Ryou]
+text Ah... um... well...
+text @[Tomoya]
+text I'm surprised... I wouldn't think you would say something so bold...
+music BGM25B.mp3
+setvar strS[1001] = "CGRY19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AFF.aac
+text @[Ryou]
+text Ah... uhh... is that bad...?
+text @[Tomoya]
+text Nah, not really...
+setvar strS[1001] = "CGRY22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AFG.aac
+text @[Ryou]
+text It's just... um... it doesn't feel natural if we don't say what we are thinking as lovers...
+setvar strS[1001] = "CGRY21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AFH.aac
+text @[Ryou]
+text I just thought that if we speak our minds, we can understand each other better.
+text @[Tomoya]
+text I see...
+text @[Tomoya]
+text Yeah.
+setvar strS[1001] = "CGRY22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AFI.aac
+text @[Ryou]
+text I got...
+sound AFJ.aac
+text @[Ryou]
+text ...a lot of help from Onee-chan.
+setvar strS[1001] = "CGRY19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AFK.aac
+text @[Ryou]
+text If it was just me alone, I am sure we wouldn't have ended up together like this.
+text @[Tomoya]
+text Yeah, frankly, I think so too.
+sound AFL.aac
+text @[Ryou]
+text But... I can't keep relying on her.
+setvar strS[1001] = "CGRY22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AFM.aac
+text @[Ryou]
+text I want to make the most out of this opportunity Onee-chan gave me.
+text @[Tomoya]
+text Yeah, that's right.
+text @[Tomoya]
+text I too... want to put this opportunity she gave us to use.
+setvar strS[1001] = "CGRY19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AFN.aac
+text @[Ryou]
+text Eh...
+text @[Tomoya]
+text Anyway, think we can use each other's first names?
+text I say, and place my hands on her shoulders.
+text Then, faintly... really faintly, I pull her toward me.
+setvar strS[1001] = "FGKY03C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+setimg FGKY03C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Slowly, the distance between us diminishes.
+text @[Tomoya]
+text ...Ryou.
+setvar strS[1001] = "FGKY03A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+setimg FGKY03A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AFO.aac
+text @[Ryou]
+text Ah...
+sound AFP.aac
+text @[Ryou]
+text Tomoya... kun.
+text Not far from me, there is a smile filled with joy and happiness.
+text The possibility that a small opportunity will turn into a huge step forward...
+text My...
+text No.
+music ~
+text @Our journey begins here.
+delay 300
+cleartext
+music BGM33.mp3
+bgload SIRO.jpg 1186
+bgload SR_NAME3_0.jpg 45
+bgload SR_NAME3_1.jpg 45
+bgload SR_NAME3_2.jpg 45
+bgload SR_NAME3_3.jpg 45
+bgload SR_NAME3_4.jpg 45
+bgload SR_NAME3_5.jpg 45
+bgload SR_NAME3_6.jpg 45
+bgload SR_NAME3_7.jpg 45
+bgload SR_NAME3_8.jpg 45
+bgload SR_NAME3_9.jpg 45
+bgload SR_NAME3_10.jpg 45
+bgload SR_NAME3_11.jpg 45
+bgload SR_NAME3_12.jpg 45
+bgload SR_NAME3_13.jpg 45
+bgload SR_NAME3_14.jpg 45
+bgload SR_NAME3_15.jpg 45
+bgload SR_NAME3_16.jpg 45
+bgload SR_NAME3_17.jpg 45
+bgload SR_NAME3_18.jpg 45
+bgload SR_NAME3_19.jpg 45
+bgload SR_NAME3_20.jpg 45
+bgload SR_NAME3_21.jpg 45
+bgload SR_NAME3_22.jpg 45
+bgload SR_NAME3_23.jpg 45
+bgload SR_NAME3_24.jpg 45
+bgload SR_NAME3_25.jpg 45
+bgload SR_NAME3_26.jpg 45
+bgload SR_NAME3_27.jpg 45
+bgload SR_NAME3_28.jpg 45
+bgload SR_NAME3_29.jpg 45
+bgload SR_NAME3_30.jpg 45
+bgload SR_NAME3_31.jpg 45
+bgload SR_NAME3_32.jpg 45
+bgload SR_NAME3_33.jpg 45
+bgload SR_NAME3_34.jpg 45
+bgload SR_NAME3_35.jpg 45
+bgload SR_NAME3_36.jpg 45
+bgload SR_NAME3_37.jpg 45
+bgload SR_NAME3_38.jpg 45
+bgload SR_NAME3_39.jpg 45
+bgload SR_NAME3_40.jpg 45
+bgload SR_NAME3_41.jpg 45
+bgload SR_NAME3_42.jpg 45
+bgload SR_NAME3_43.jpg 45
+bgload SR_NAME3_44.jpg 45
+bgload SR_NAME3_45.jpg 45
+bgload SR_NAME3_46.jpg 45
+bgload SR_NAME3_47.jpg 45
+bgload SR_NAME3_48.jpg 45
+bgload SR_NAME3_49.jpg 45
+bgload SR_NAME3_50.jpg 45
+bgload SR_NAME3_51.jpg 45
+bgload SR_NAME3_52.jpg 45
+bgload SR_NAME3_53.jpg 45
+bgload SR_NAME3_54.jpg 45
+bgload SR_NAME3_55.jpg 45
+bgload SR_NAME3_56.jpg 45
+bgload SR_NAME3_57.jpg 45
+bgload SR_NAME3_58.jpg 45
+bgload SR_NAME3_59.jpg 45
+bgload SR_NAME3_60.jpg 45
+bgload SR_NAME3_61.jpg 45
+bgload SR_NAME3_62.jpg 45
+bgload SR_NAME3_63.jpg 45
+bgload SR_NAME3_64.jpg 45
+bgload SR_NAME3_65.jpg 45
+bgload SR_NAME3_66.jpg 45
+bgload SR_NAME3_67.jpg 45
+bgload SR_NAME3_68.jpg 45
+bgload SR_NAME3_69.jpg 45
+bgload SR_NAME3_70.jpg 45
+bgload SR_NAME3_71.jpg 45
+bgload SR_NAME3_72.jpg 45
+bgload SR_NAME3_73.jpg 45
+bgload SR_NAME3_74.jpg 45
+bgload SR_NAME3_75.jpg 45
+bgload SR_NAME3_76.jpg 45
+bgload SR_NAME3_77.jpg 45
+bgload SR_NAME3_78.jpg 45
+bgload SR_NAME3_79.jpg 45
+bgload SR_NAME3_80.jpg 45
+bgload SR_NAME3_81.jpg 45
+bgload SR_NAME3_82.jpg 45
+bgload SR_NAME3_83.jpg 45
+bgload SR_NAME3_84.jpg 45
+bgload SR_NAME3_85.jpg 45
+bgload SR_NAME3_86.jpg 45
+bgload SR_NAME3_87.jpg 45
+bgload SR_NAME3_88.jpg 45
+bgload SR_NAME3_89.jpg 45
+bgload SR_NAME3_90.jpg 45
+bgload SR_NAME3_91.jpg 45
+bgload SR_NAME3_92.jpg 45
+bgload SR_NAME3_93.jpg 45
+bgload SR_NAME3_94.jpg 45
+bgload SR_NAME3_95.jpg 45
+bgload SR_NAME3_96.jpg 45
+bgload SR_NAME3_97.jpg 45
+bgload SR_NAME3_98.jpg 45
+bgload SR_NAME3_99.jpg 45
+bgload SR_NAME3_100.jpg 45
+bgload SR_NAME3_101.jpg 45
+bgload SR_NAME3_102.jpg 45
+bgload SR_NAME3_103.jpg 45
+bgload SR_NAME3_104.jpg 45
+bgload SR_NAME3_105.jpg 45
+bgload SR_NAME3_106.jpg 45
+bgload SR_NAME3_107.jpg 45
+bgload SR_NAME3_108.jpg 45
+bgload SR_NAME3_109.jpg 45
+bgload SR_NAME3_110.jpg 45
+bgload SR_NAME3_111.jpg 45
+bgload SR_NAME3_112.jpg 45
+bgload SR_NAME3_113.jpg 45
+bgload SR_NAME3_114.jpg 45
+bgload SR_NAME3_115.jpg 45
+bgload SR_NAME3_116.jpg 45
+bgload SR_NAME3_117.jpg 45
+bgload SR_NAME3_118.jpg 45
+bgload SR_NAME3_119.jpg 45
+bgload SR_NAME3_120.jpg 45
+bgload SR_NAME3_121.jpg 45
+bgload SR_NAME3_122.jpg 45
+bgload SR_NAME3_123.jpg 45
+bgload SR_NAME3_124.jpg 45
+bgload SR_NAME3_125.jpg 45
+bgload SR_NAME3_126.jpg 45
+bgload SR_NAME3_127.jpg 45
+bgload SR_NAME3_128.jpg 45
+bgload SR_NAME3_129.jpg 45
+bgload SR_NAME3_130.jpg 45
+bgload SR_NAME3_131.jpg 45
+bgload SR_NAME3_132.jpg 45
+bgload SR_NAME3_133.jpg 45
+bgload SR_NAME3_134.jpg 45
+bgload SR_NAME3_135.jpg 45
+bgload SR_NAME3_136.jpg 45
+bgload SR_NAME3_137.jpg 45
+bgload SR_NAME3_138.jpg 45
+bgload SR_NAME3_139.jpg 45
+bgload SR_NAME3_140.jpg 45
+bgload SR_NAME3_141.jpg 45
+bgload SR_NAME3_142.jpg 45
+bgload SR_NAME3_143.jpg 45
+bgload SR_NAME3_144.jpg 45
+bgload SR_NAME3_145.jpg 45
+bgload SIRO.jpg 45
+delay 295
+setimg SR_C_COPY.png 200 184
+delay 424
+bgload SIRO.jpg 0
+music ~
+jump main.scr

@@ -1,0 +1,114 @@
+setvar intF[1112] = 0
+bgload SFWEC00.jpg 60
+delay 8
+setimg SFWEC25.png 148 172
+delay 229
+bgload SIRO.jpg 47
+music BGM26B.mp3
+text This world really had come to an end.
+text No new life will be born here.
+text I understand that well now.
+text There's no life within those animals. They're simply "things" that have taken the form of living creatures.
+text The only thing here with life is her.
+text But if that really is the case... Then what about me?
+text I have a will, of course; I'm not like them in that regard, I guess.
+text I love her. I want to be with her forever.
+text No matter where she walks, I'll follow her.
+text Even if she hates me, I'll follow her.
+text That's my will, and those are my emotions.
+text It's proof that I'm me.
+text But then, where could I have come from?
+text Where did this "will" of mine come from?
+text I search my memories.
+text I come across one from before I was born.
+text It's there at the bottom of my sluggish consciousness.
+text Either long ago or in the distant future, I'm not really sure... Regardless, I'm there.
+text In a place that makes my heart feel warm.
+text ..."Was it better than here?"
+text ..."Did you like it there?"
+text ..."Was it less lonely than this place?"
+text Yes...
+text It was a place full of fun, a place where I wasn't lonely.
+text I was there.
+text If only I didn't have this body... Would I have been able to go back there?
+text But now I have a body that ties my consciousness down.
+text A body that she made for me.
+text I'm living here at the end of this world.
+text While I don't know how that happened...
+text I'm fine with it.
+text Because at least she's not alone anymore.
+setvar strS[1000] = "BG306"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s30
+fi
+goto 31
+label s30
+setvar strS[1000] = ""
+label 31
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text We put the unmoving junk-doll in the ground.
+text It's a burial of sorts.
+text The girl is quiet the whole time.
+text When our work is over, I grab her hand and pull it.
+text ..."Hm?"
+text She looks down at me.
+text I put my hand into hers.
+text ..."You want to make a new one?"
+text I nod.
+text ..."But it won't move."
+text ..."We can't make... a new friend."
+text She says it with a melancholic voice.
+text I shake my head.
+text ..."You want to make something else?"
+text Nod.
+text ..."What?"
+text I stand there, completely motionless.
+text I don't know either, to be honest.
+text I just feel as though that's what needs to happen.
+text She's able to take a bunch of junk and make something out of it.
+text That's something I can't do.
+text It's something special that only she can.
+text In that case, I'm sure it must mean something.
+text I turn around.
+text Even the cabin that the two of us live in was built by her, wasn't it?
+text ..."I can't make something that big."
+text That's what she tells me, anyhow.
+text ..."But maybe, with enough time, I could."
+text I nod my head.
+text ..."What should we do, then?"
+text I begin to hop up and down in the air.
+text I want something that will make me this excited.
+text She can make it, and I'll help.
+text It seems like it'll be so much fun.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s31
+fi
+goto 32
+label s31
+setvar strS[1000] = ""
+label 32
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar intF[1112] = 1
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+jump SEEN6900_7_0.scr

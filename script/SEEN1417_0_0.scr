@@ -1,0 +1,687 @@
+if intF[3] == 1
+	goto s0
+fi
+goto 1
+label s0
+text I take a peek inside.
+text Seems like no one's around....
+text I open the door.
+label 1
+setvar strS[1000] = "BG023"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = ""
+label 2
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I assumed the room would be empty, but a young female student sits near the windows.
+music ~
+setvar strS[1000] = "FGFU01A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = ""
+label 3
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 98
+music BGM15.mp3
+text The sunlight pouring in prevents me from getting a clear look at her face, leaving only her silhouette visible.
+text She's carving a block of wood with a knife.
+text *Skritch* ... *Skritch*
+text Her concentration seems to have erased my existence completely from her senses.
+text There's something irresistibly cute about the way she's working so hard on it.
+text For a while, I just stand there, watching.
+setvar strS[1000] = "FGFU01B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 4
+label s3
+setvar strS[1000] = ""
+label 4
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound 256.aac
+text @[Female Student]
+text Ah!
+text Her hands stop as she finally notices my presence.
+text @[Female Student]
+text ...
+text Her eyes meet mine; she freezes.
+text @[Female Student]
+text ...
+text @[Tomoya]
+text What's wrong?
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s4
+fi
+goto 5
+label s4
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG023"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s5
+fi
+goto 6
+label s5
+setvar strS[1000] = ""
+label 6
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM04A.mp3
+sound 257.aac
+text @[Female Student]
+text Wah...
+text Suddenly, she jumps up and runs toward a corner of the room.
+text She reminds me of a cat caught trying to steal food.
+text Except a cat probably wouldn't be clutching a knife the whole time.
+text @[Tomoya]
+text (Note to self: Don't surprise the girl with the knife. You may end up getting stabbed.)
+text @[Female Student]
+text ...
+text Holding her ground, she cautiously watches my every move, still as can be.
+text I find it funny wondering if she's trying to hide by standing perfectly still. Better yet, she's in the corner of the room, effectively the most visible spot in the whole place.
+text @[Tomoya]
+text (Well, then, what should I do now...)
+choice Just leave|Try talking to her
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 1
+	goto s6
+fi
+goto 12
+label s6
+if intF[2] == 0
+	goto s7
+fi
+goto 7
+label s7
+text I remember now.
+text The empty classrooms in this building are used by cultural clubs.
+label 7
+text @[Tomoya]
+text Say, is this the art club's room?
+text @[Female Student]
+text ...
+text @[Tomoya]
+text Uh... Hey, I'm talking to you.
+setvar strS[1001] = "CGFU19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She reluctantly points a finger at herself and tilts her head to the side.
+text @[Tomoya]
+text Yeah, you. As if there's anyone else here.
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She raises her index finger. Maybe she wants me to repeat the question?
+text @[Tomoya]
+text Is this the art club's room?
+setvar strS[1001] = "CGFU10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Still standing tightly in the corner, she shakes her head nervously.
+text @[Tomoya]
+text Oh, right, other club members would be here if it was.
+text @[Tomoya]
+text So, d'you just skip too many art classes and end up with piles of homework? Something like that?
+text She shakes her head again.
+text @[Tomoya]
+text Then, it's just a hobby?
+text She shakes her head again.
+text @[Tomoya]
+text Then just what on earth are you doing here?
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 258.aac
+text @[Female Student]
+text Do you mean this?
+text She shows me the wooden block she was working on, holding it in front of her chest.
+text @[Tomoya]
+text Yeah, that.
+sound 259.aac
+text @[Female Student]
+text This is... a favorite... thing...
+setvar strS[1001] = "CGFU34A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+setimg CGFU34A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Female Student]
+text ...
+text Suddenly, she has a euphoric look on her face.
+text It's as if she's lost in a reverie, dreaming up something really fabulous.
+text @[Female Student]
+text ...
+text @[Tomoya]
+text (She's so full of openings...)
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text With a few steps, I quickly close the distance between the two of us...
+text ...and proceed to take the knife from her hand.
+setvar strS[1001] = "CGFU17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25A.aac
+text @[Female Student]
+text Ah!
+text @[Tomoya]
+text Relax, I'll give it back.
+text @[Tomoya]
+text Isn't it kinda dangerous using a knife like this?
+text Now that I'm closer, I can see a bandage covering one of her hands.
+text @[Female Student]
+text ...
+text From the intense look she's giving me, I can tell she wants her knife back.
+text @[Tomoya]
+text You know, you should stop using this thing.
+setvar strS[1001] = "CGFU19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25B.aac
+text @[Female Student]
+text ...What?
+text @[Tomoya]
+text Your hand. I can tell it's a mess. Is carving wood really worth cutting yourself up like that?
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25C.aac
+text @[Female Student]
+text It's a personal thing... It's none of your concern!
+sound 25D.aac
+text @[Female Student]
+text Give it back.
+text @[Tomoya]
+text Doesn't your hand hurt, though?
+sound 25E.aac
+text @[Female Student]
+text No.
+text @[Tomoya]
+text Liar.
+sound 25F.aac
+text @[Female Student]
+text This is... just as a precautionary thing.
+text @[Tomoya]
+text Well then, shake my hand!
+sound 25G.aac
+text @[Female Student]
+text Okay.
+text I put a bit of strength into my grip.
+setvar strS[1001] = "CGFU31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25H.aac
+text @[Female Student]
+text Ugh...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text In a flash, she pushes me away and our distance reverts back to what it was before I took the knife.
+text She's squatting down in the opposite corner now.
+text @[Tomoya]
+text (It looks like that really hurt...)
+text A few moments pass...
+setvar strS[1001] = "CGFU17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25I.aac
+text @[Female Student]
+text That didn't hurt.
+text On the verge of tears, she stands back in front of me.
+sound 25J.aac
+text @[Female Student]
+text Give it back.
+text @[Tomoya]
+text Can we shake hands again?
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25K.aac
+text @[Female Student]
+text No.
+text @[Tomoya]
+text Why?
+sound 25L.aac
+text @[Female Student]
+text We've already shaken once, so that's enough. A handshake is not something you do more than once per time.
+text @[Tomoya]
+text Okay, that makes sense.
+text @[Tomoya]
+text In that case, how about a high five?
+setvar strS[1001] = "CGFU19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25M.aac
+text @[Female Student]
+text High five?
+text @[Tomoya]
+text You know, like in sports ─ when a player scores a point or something, their teammate raises a hand and they clap them together in the air.
+sound 25N.aac
+text @[Female Student]
+text We haven't scored any points.
+text @[Tomoya]
+text Okay, then let's pretend we did.
+text @[Tomoya]
+text Okay, here goes.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I awkwardly take a free-throw pose and toss the air ball toward an imaginary basket.
+text @[Tomoya]
+text And... it's good!
+text @[Tomoya]
+text Come on, raise your hand.
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25O.aac
+text @[Female Student]
+text Okay.
+text *Clap*
+text It's less of a high five and more of just a straight-up slap, really.
+setvar strS[1001] = "CGFU31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25P.aac
+text @[Female Student]
+text Ugh...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Once again, she pushes me away and runs toward the opposite corner.
+text @[Tomoya]
+text (It should've hurt more than the handshake... We were literally hitting each other's hand...)
+text A few moments pass...
+setvar strS[1001] = "CGFU17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25Q.aac
+text @[Female Student]
+text That didn't hurt.
+text She stood before me with trails of tears on her face.
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25R.aac
+text @[Female Student]
+text Give it back.
+text @[Tomoya]
+text Unlike a handshake, we can do a high five as many times as we like.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text And... it's in there!
+text @[Tomoya]
+text Now raise your hand.
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25S.aac
+text @[Female Student]
+text Okay.
+text *Clap*
+setvar strS[1001] = "CGFU31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25T.aac
+text @[Female Student]
+text Ugh...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text There she goes again.
+text @[Tomoya]
+text That's why I've been telling you, stop carving until your hand's completely healed.
+text I put the knife into my pocket.
+setvar strS[1001] = "CGFU17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25U.aac
+text @[Female Student]
+text Give it back.
+text She just won't give up.
+if intF[3] == 1
+	goto s8
+fi
+goto 8
+label s8
+text @[Tomoya]
+text What if someone were trying to enjoy their club activities in peace nearby? If something happens to you in here, do you know how much trouble that'd cause them?
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25V.aac
+text @[Female Student]
+text There shouldn't be anyone around here.
+text @[Tomoya]
+text Club season's coming up. People are going to start using the rooms around here.
+text @[Tomoya]
+text That's why you should be patient until your injury heals.
+text @[Tomoya]
+text Besides, you can't make a decent carving with your hand in that condition, right?
+goto 9
+label 8
+if intF[3] == 0
+	goto s9
+fi
+goto 9
+label s9
+text @[Tomoya]
+text Be patient until your hand is healed.
+text @[Tomoya]
+text You can't make anything good with that injury, right?
+label 9
+text @[Tomoya]
+text I don't know why you're pushing yourself so hard, but it'd be better if the final product is in perfect condition, right?
+setvar strS[1001] = "CGFU32"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU32.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25W.aac
+text @[Female Student]
+text But...
+sound 25X.aac
+text @[Female Student]
+text There's not enough time to wait until it's healed.
+text @[Tomoya]
+text The teacher who gave you this assignment must be a real tyrant.
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25Y.aac
+text @[Female Student]
+text No, this is a personal project.
+text @[Tomoya]
+text Then there's no problem. Just give your hand a rest for a bit.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text With that said, I leave the classroom.
+music ~
+setvar strS[1000] = "BG020"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s10
+fi
+goto 10
+label s10
+setvar strS[1000] = ""
+label 10
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM14.mp3
+text From the corridor, I look back into the classroom. She's still standing there looking down helplessly on her half-finished work of art.
+text Her tears are about to burst out.
+text @[Tomoya]
+text (Maybe that was a bit too mean...?)
+text @[Tomoya]
+text (But only an idiot would try to carve with a hand like that...)
+text @[Tomoya]
+text (You should take better care of your body...)
+text Overworking an injury could lead to permanent damage that you'll regret the rest of your life.
+text I understand that better than anyone.
+text @[Tomoya]
+text Tsk...
+if intF[3] == 1
+	goto s11
+fi
+goto 11
+label s11
+text Rotating my shoulder, I look out the window.
+text Naturally, my eyes wander gradually lower... And there she is.
+label 11
+setvar intF[130] = 1
+goto 14
+label 12
+if intF[1089] == 0
+	goto s12
+fi
+goto 14
+label s12
+text She seems to be frightened, so maybe I should just leave her alone.
+text @[Tomoya]
+text Sorry I startled you. I'll be leaving now.
+text Leaving behind those words, I step out of the classroom.
+music ~
+setvar strS[1000] = "BG020"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s13
+fi
+goto 13
+label s13
+setvar strS[1000] = ""
+label 13
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+if intF[3] == 1
+	goto s14
+fi
+goto 14
+label s14
+music BGM14.mp3
+text Well then, what should I do now...
+text I look out the window.
+text Naturally, my eyes wander gradually lower... And there she is.
+label 14
+setvar intF[129] = 1
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0

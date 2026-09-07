@@ -1,0 +1,693 @@
+music ~
+setvar strS[1000] = "FGKY04A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s16
+fi
+goto 18
+label s16
+setvar strS[1000] = ""
+label 18
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text *Munch* *Munch*
+sound X.aac
+bgload FGKY04A_INVERT.jpg 0
+bgload SIRO.jpg 0
+delay 1
+bgload {$strS[1000]}.jpg 4
+music BGM11.mp3
+text @[Tomoya]
+text ...
+text Wh-What's this strange flavor that's filling my mouth...?
+text It kind of tastes sour... and salty... and then there's a hint of fruity sweetness to it...
+text The texture mostly feels like tamagoyaki, but it has this strange granular feeling to it.
+setvar strS[1000] = "FGKY04A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s17
+fi
+goto 19
+label s17
+setvar strS[1000] = ""
+label 19
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound 9X9.aac
+text @[Ryou]
+text Okazaki-kun...? What's the matter?
+sound 9XA.aac
+text @[Botan]
+text Puhi?
+sound 9XB.aac
+text @[Kyou]
+text How's Ryou's food? Hey, Tomoya?
+text @[Tomoya]
+text ...
+text How should I answer them?
+text Should I just give it to them straight and say that it's terrible?
+text Well, if I did that then Fujibyashi might break into tears.
+text That said, saying it tastes good poses a huge risk.
+text I'd likely be saddled with the task to finish it all...
+sound 9XC.aac
+text @[Ryou]
+text ...Okazaki-kun...?
+text @[Tomoya]
+text ...A-Ahh...
+choice It's good...|It's terrible...
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s18
+fi
+goto 20
+label s18
+text @[Tomoya]
+text ...
+text Wait... should I really be saying it's good?
+text As her boyfriend, wouldn't pointing out my girlfriend's weaknesses actually be better?
+text Let's say I tell her this is good; will she believe what I say and keep making food like that...?
+text Which means... in the end, I'll keep eating stuff like that.
+text That would be terrible.
+label 20
+if intF[1089] == 1
+	goto s19
+fi
+goto 21
+label s19
+text @[Tomoya]
+text ...
+text It's terrible... It's true that it's terrible.
+text But is it really okay if I just come right out and say that straight up?
+text Since I'm her boyfriend, I need to handle this with care when I tell her...
+text That's right. I can't just slam her cooking for how bad it is.
+text I should tell her what's bad about it... no, that's wrong. I should tell her what she can do to improve.
+text As for ways that she can improve her tamagoyaki...
+text ......
+text I am drawing a blank...
+label 21
+sound 9XD.aac
+text @[Ryou]
+text Um... is something the matter...?
+setvar strS[1000] = "BG057E"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s20
+fi
+goto 22
+label s20
+setvar strS[1000] = ""
+label 22
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text As I worry about coming up with a response, Botan suddenly jumps off my lap.
+text He slowly walks toward the lunch box that Fujibayashi made.
+setvar strS[1001] = "CGBT10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGBT10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Sniff Sniff* *Sniff Sniff*
+text He takes in the smell...
+text *Chomp*
+text ...and eats the tamagoyaki.
+text @[Tomoya]
+text Ah...
+text I blurt out instinctively.
+text At the same time, I can see a change coming over Botan.
+setvar strS[1001] = "CGBT17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGBT17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text His small body suddenly flinches, and the hair on his back stands up.
+setvar strS[1001] = "CGBT14"
+text Then, just like that, he falls over with a thud. His short legs twitching so rapidly they leave behind an afterimage.
+setvar strS[1001] = "CGKY16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9XE.aac
+text @[Kyou]
+text Wh-Whoa! Botan?! What's wrong, Botan?!
+setvar strS[1001] = "CGRY14A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY14A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9XF.aac
+text @[Ryou]
+text Eh...? Ah... wahh... huh? Why?
+text @[Tomoya]
+text ...
+text I didn't say a thing.
+music ~
+setvar strS[1000] = "BG080"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s21
+fi
+goto 23
+label s21
+setvar strS[1000] = ""
+label 23
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text In any case...
+text The lunch box that Fujibayashi made has been sealed away, and we eat from the other three, just like yesterday.
+setvar strS[1000] = "BG057E"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s22
+fi
+goto 24
+label s22
+setvar strS[1000] = ""
+label 24
+setvar strS[1001] = "CGRY23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM14.mp3
+sound 9XG.aac
+text @[Ryou]
+text Aww... I'm sorry...
+text @[Tomoya]
+text Don't worry about it. Wasn't that the first time you cooked?
+setvar strS[1001] = "CGRY14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9XH.aac
+text @[Ryou]
+text Uhh... um... is your stomach... well... okay, Okazaki-kun?
+text @[Tomoya]
+text For the time being, yeah.
+setvar strS[1001] = "CGKY16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9XI.aac
+text @[Kyou]
+text Botan... it's water. Here, water.
+setvar strS[1001] = "CGBT14"
+sound 9XJ.aac
+text @[Botan]
+text *Twitch* *Twitch*
+text @[Tomoya]
+text He suffered quite a bit, though. For how small his body is, that little bit must have been too much.
+setvar strS[1001] = "CGRY25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9XK.aac
+text @[Ryou]
+text Ah... uhh...
+sound 9XL.aac
+text @[Kyou]
+text Botan~ Botan!
+text Seeing the trembling baby boar, Fujibayashi's shoulders droop.
+text *Ding dong*
+text Amidst that, the first bell rings, bringing lunch to an end.
+text @[Tomoya]
+text Kyou, how's Botan doing?
+setvar strS[1001] = "CGKY16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9XM.aac
+text @[Kyou]
+text It's no good. His breathing stabilized, but he's still not waking up.
+text @[Tomoya]
+text It's time for afternoon classes already.
+setvar strS[1001] = "CGKY18B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY18B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9XN.aac
+text @[Kyou]
+text Hm...
+text With the frozen Botan in her arms, Kyou stands up. She stares at the ground, thinking hard about something.
+setvar strS[1001] = "CGKY10B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY10B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Then, she turns to me.
+setvar strS[1001] = "CGKY10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9XO.aac
+text @[Kyou]
+text Tomoya.
+text She walks toward me and hands me the frozen Botan.
+text Instinctively, my hands reach out and take Botan.
+setvar strS[1001] = "CGBT14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGBT14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9XP.aac
+text @[Botan]
+text ...
+text He's completely unconscious...
+setvar strS[1001] = "CGKY12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9XQ.aac
+text @[Kyou]
+text I'll leave him in your care.
+text @[Tomoya]
+text Huh?
+setvar strS[1001] = "CGKY21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9XR.aac
+text @[Kyou]
+text I have P.E. next.
+sound 9XS.aac
+text @[Kyou]
+text So I'm leaving him with you.
+text @[Tomoya]
+text Wait... again?!
+setvar strS[1001] = "CGKY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9XT.aac
+text @[Kyou]
+text You'll be fine. If he comes to, just tell him "plushie" and he'll stay still.
+text @[Tomoya]
+text Nah, that's not the problem. You see, I don't want my reputation to get any worse.
+setvar strS[1001] = "CGKY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9XU.aac
+text @[Kyou]
+text Who cares about that.
+text This bitch...
+text Planning to complain, I stare at Kyou.
+setvar strS[1001] = "CGKY22A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY22A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text However, I was dissuaded when I noticed that her expression is different from usual.
+text There's a rather girlish, weak feel to it...
+sound 9XV.aac
+text @[Kyou]
+text I beg of you. We can't just leave him like this...
+sound 9XW.aac
+text @[Kyou]
+text You're the only one who I can ask.
+text @[Tomoya]
+text ...
+text @[Tomoya]
+text ...Haah...
+text I sigh.
+text When she's asking me like this, there's no way I can refuse.
+text I bring Botan to my embrace once again.
+text @[Tomoya]
+text Treat me to lunch next time, okay?
+setvar strS[1001] = "CGKY19A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY19A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9XX.aac
+text @[Kyou]
+text Will you look after him for me?
+text @[Tomoya]
+text Well, we really can't just leave him like this.
+text @[Tomoya]
+text And Fujibayashi can't handle it, no?
+setvar strS[1001] = "CGRY14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9XY.aac
+text @[Ryou]
+text Aww... I-I'm sorry.
+setvar strS[1001] = "CGKY21A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY21A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9XZ.aac
+text @[Kyou]
+text Oh, I-I don't mean like it's your fault, Ryou. It's just your affinity with animals...
+sound 9Y0.aac
+text @[Kyou]
+text It's okay! We live together anyway, so you two will get along fine with time.
+setvar strS[1001] = "CGRY23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9Y1.aac
+text @[Ryou]
+text ...Okay...
+text @[Tomoya]
+text In any case, don't you need to go already, Kyou?
+text @[Tomoya]
+text If you have P.E., you're going to have to change, no?
+setvar strS[1001] = "CGKY16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9Y2.aac
+text @[Kyou]
+text Ah! That's right! Ur-Urgh, I still need to pack up the lunch box!
+setvar strS[1001] = "CGRY14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9Y3.aac
+text @[Ryou]
+text Ah... Onee-chan, I'll do it...
+setvar strS[1001] = "CGKY21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9Y4.aac
+text @[Kyou]
+text Really? I'll leave it to you then!
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Kyou clasps her hands together in front of her face and bows, and then heads off to the campus building.
+text @[Tomoya]
+text Now, let's clean up and head back to the classroom.
+setvar strS[1001] = "CGRY19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9Y5.aac
+text @[Ryou]
+text Y-Yes.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s23
+fi
+goto 25
+label s23
+setvar strS[1000] = ""
+label 25
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text The final bell rings, starting fifth period.
+setvar strS[1000] = "BG021A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s24
+fi
+goto 26
+label s24
+setvar strS[1000] = ""
+label 26
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM10.mp3
+sound 9Y6.aac
+text @[Male Student]
+setvar intA[1000] = 2300
+setvar intA[1001] = 23
+if 50 <= 0
+	goto s25
+fi
+goto 27
+label s25
+setvar intA[1001] + 1
+label 27
+text Hey, Okazaki's holding a stuffed toy again.
+sound 9Y7.aac
+text @[Male Student]
+setvar intA[1000] = 2300
+setvar intA[1001] = 23
+if 50 <= 0
+	goto s26
+fi
+goto 28
+label s26
+setvar intA[1001] + 1
+label 28
+text He seems to like it quite a bit.
+sound 9Y8.aac
+text @[Male Student]
+setvar intA[1000] = 2300
+setvar intA[1001] = 23
+if 50 <= 0
+	goto s27
+fi
+goto 29
+label s27
+setvar intA[1001] + 1
+label 29
+text Maybe it's really just a pillow.
+sound 9Y9.aac
+text @[Male Student]
+setvar intA[1000] = 2300
+setvar intA[1001] = 23
+if 50 <= 0
+	goto s28
+fi
+goto 30
+label s28
+setvar intA[1001] + 1
+label 30
+text But doesn't it look like it's shaking?
+text @[Tomoya]
+text ...
+text I can hear people whispering about me but I choose to ignore them.
+text Botan still hasn't woken up.
+text Well, if he did wake up, that'd put me in a pretty bad spot.
+sound 9YA.aac
+text @[Male Student]
+setvar intA[1000] = 2300
+setvar intA[1001] = 23
+if 50 <= 0
+	goto s29
+fi
+goto 31
+label s29
+setvar intA[1001] + 1
+label 31
+text That reminds me. Have you heard about the guys' restroom?
+sound 9YB.aac
+text @[Male Student]
+setvar intA[1000] = 2300
+setvar intA[1001] = 23
+if 50 <= 0
+	goto s30
+fi
+goto 32
+label s30
+setvar intA[1001] + 1
+label 32
+text You mean the one that says "My very own room"?
+sound 9YC.aac
+text @[Male Student]
+setvar intA[1000] = 2300
+setvar intA[1001] = 23
+if 50 <= 0
+	goto s31
+fi
+goto 33
+label s31
+setvar intA[1001] + 1
+label 33
+text Nah, this one's even better. It says "My love nest" now.
+sound 9YD.aac
+text @[Male Student]
+setvar intA[1000] = 2300
+setvar intA[1001] = 23
+if 50 <= 0
+	goto s32
+fi
+goto 34
+label s32
+setvar intA[1001] + 1
+label 34
+text Aw, man! I don't want to go anywhere near that!
+text @[Tomoya]
+text Ah...
+text ...I forgot about him again.
+text Well... with how things turned out, guess I shouldn't go over there carelessly...
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s33
+fi
+goto 35
+label s33
+setvar strS[1000] = ""
+label 35
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+jump SEEN3502_0_0.scr

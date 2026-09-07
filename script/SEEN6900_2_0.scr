@@ -1,0 +1,126 @@
+setvar intF[1112] = 0
+bgload SFWEC00.jpg 60
+delay 8
+setimg SFWEC21.png 148 172
+delay 287
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s11
+fi
+goto 12
+label s11
+setvar strS[1000] = ""
+label 12
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG302"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s12
+fi
+goto 13
+label s12
+setvar strS[1000] = ""
+label 13
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM26B.mp3
+text Next, I see a floor.
+text I'm staring straight at it.
+text What was it? I feel like I was in the middle of something.
+text I move my "head" up to change views.
+setvar strS[1000] = "BG301"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s13
+fi
+goto 14
+label s13
+setvar strS[1000] = ""
+label 14
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I see her.
+text The girl that's been watching me.
+text Her hand extends to me.
+text I reach my own "hand" out toward it.
+text Our hands overlap.
+text While I can't feel anything... I still know they're together.
+text As this happens, I realize something:
+text I really have been born into this world.
+text I've ended up existing after all.
+text She can touch me.
+text It's a sad world.
+text But she's kind.
+text When I touch her hand, both sadness and kindness fill my "heart" at the same time.
+text I was born into this place because I sought her.
+text ...Sacrificing my life in a new world, the happiness I could have had, and everything else.
+text She pulls my hand up so that I can stand, and then leaves my side again.
+text Once she's a few steps ahead of me, she claps her hands.
+text I begin walking toward her.
+text That's right... I was practicing walking; that's what I was doing before.
+text My memory is sluggish.
+text I can't remember anything without working to do so.
+text She's clapping her hands, still.
+text I should go.
+text But my legs don't move the way I want them to.
+text I fall forward yet again.
+text But even so, she takes my hand once more and pulls me to my feet.
+text How many times have I tried to walk?
+text Finally, I manage to reach her.
+text She holds my body, no more than half the height of hers, in her arms.
+text ..."You did a good job."
+text Warmth.
+text This world's one source of warmth.
+text The warmth that I sought.
+text Though my body of scrap can't feel the warmth of hers.
+text I look up at her face.
+text There are so many things I want to ask her.
+text But I have no mouth, so I can't speak.
+text I turn my "face" to the window.
+text A light is constantly shining in through it.
+text I want to see the outside world.
+text I want to see the end of the world for myself, with my own "eyes."
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s14
+fi
+goto 15
+label s14
+setvar strS[1000] = ""
+label 15
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar intF[1112] = 1
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+jump SEEN6900_3_0.scr

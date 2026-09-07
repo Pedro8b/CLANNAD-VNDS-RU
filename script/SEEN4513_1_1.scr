@@ -1,0 +1,59 @@
+label 59
+delay 125
+setvar intA[1000] = 0
+if intA[1000] == 0
+	goto s59
+fi
+goto 60
+label s59
+setvar intF[1217] = 1
+goto 61
+label 60
+if intA[1000] == 1
+	goto s60
+fi
+goto 61
+label s60
+setvar intF[1217] = 0
+label 61
+if 1 == 1
+	goto s61
+fi
+goto 62
+label s61
+goto 63
+label 62
+if 1 == 0
+	goto s62
+fi
+goto 63
+label s62
+label 63
+setvar strS[1000] = "SIRO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s63
+fi
+goto 64
+label s63
+setvar strS[1000] = ""
+label 64
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 301
+if intF[1217] == 1
+	goto s64
+fi
+goto 65
+label s64
+goto 66
+label 65
+if intF[1217] == 0
+	goto s65
+fi
+goto 66
+label s65
+label 66
+music ~
+delay 240
+jump SEEN4800_0_0.scr

@@ -1,0 +1,385 @@
+if intF[11] == 1
+	goto s0
+fi
+goto 1
+label s0
+text @[Tomoya]
+text You go ahead.
+setvar strS[1001] = "CGNG13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 28U.aac
+text @[Furukawa]
+text Why...? Can't we go home together?
+text @[Tomoya]
+text Well, I forgot something.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Leaving Furukawa behind, I run after the silhouette.
+bgload KURO.jpg 88
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+goto 2
+label 1
+if intF[11] == 0
+	goto s1
+fi
+goto 2
+label s1
+text Upon entering the corridor, I discover the small figure I was looking for is leaning onto the door of the neighboring classroom.
+text @[Tomoya]
+text (What is she doing...)
+text Sunohara's already going way ahead, but I couldn't care less about that. Instead, I take a few steps toward the suspicious short girl.
+label 2
+music ~
+text @[Tomoya]
+text Hey! What are you doing?
+music BGM04A.mp3
+setvar strS[1001] = "CGFU31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 28V.aac
+text @[Fuko]
+text Wah!
+text She jumps back in a fluster.
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 28W.aac
+text @[Fuko]
+text Ah... the weird person!
+text @[Tomoya]
+text Yep, it's the weird person. But aren't you pretty weird yourself, too?
+sound 28X.aac
+text @[Fuko]
+text No, Fuko is not weird at all. If Fuko had to choose, she'd say she's just a normal, well-behaved girl.
+text @[Tomoya]
+text Yeah, stealing is totally what a normal, well-behaved girl would do.
+text @[Tomoya]
+text So what bad deeds are you plotting today?
+setvar strS[1001] = "CGFU17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 28Y.aac
+text @[Fuko]
+text Fuko doesn't ever do anything bad.
+setvar strS[1001] = "CGFU30"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU30.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 28Z.aac
+text @[Fuko]
+text Fuko's only trying to bring happiness to people.
+text @[Tomoya]
+text Haah? Just what are you planning?
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 290.aac
+text @[Fuko]
+text Well, let's say... with this overly cute...
+text She embraces the carving...
+setvar strS[1001] = "CGFU34A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+setimg CGFU34A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 291.aac
+text @[Fuko]
+text ...
+text ...and again, travels to her fantasy world.
+sound 292.aac
+text @[Fuko]
+text ...
+text @[Tomoya]
+text (Just what am I supposed to do...)
+if rtf0 != ""
+	setvar rtf1 = "SEEN1422_0_0.scr"
+	setvar rtl1 = "rtl0"
+fi
+if rtf0 == ""
+	setvar rtf0 = "SEEN1422_0_0.scr"
+	setvar rtl0 = "rtl0"
+fi
+jump SEEN1002_0_0.scr
+label rtl0
+if rtf1 == ""
+	setvar rtf0 = ""
+fi
+if rtf1 != ""
+	setvar rtf1 = ""
+fi
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 293.aac
+text @[Fuko]
+text Fuko is not spacing out!
+sound 294.aac
+text @[Fuko]
+text If you have to know, Fuko's always extremely sharp.
+text @[Tomoya]
+text Just what part of you is sharp...
+text @[Tomoya]
+text Anyway, you should be thankful it's me you're dealing with. If you were to act so defenseless in front of some weirdo, they might just go and kidnap you.
+text Fuko's pointing her finger at me sharply.
+text @[Tomoya]
+text Well, yeah, I wouldn't deny it... But not just me, you know. Other weirdos like me are gonna show up.
+text @[Tomoya]
+text You don't want that to happen, do you?
+setvar strS[1001] = "CGFU31A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU31A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 295.aac
+text @[Fuko]
+text ...
+text Right now, she must be imagining a dozen of me yelling "Heave-ho!" while carrying her away.
+text @[Tomoya]
+text (That's kinda freakish...)
+setvar strS[1001] = "CGFU17A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 296.aac
+text @[Fuko]
+text That's the worst.
+text @[Tomoya]
+text See? Although it featured me, your impression is probably right on the spot...
+text @[Tomoya]
+text But that's exactly the reason why we must not let that happen. You need to stop zoning out like that.
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 297.aac
+text @[Fuko]
+text Fuko is extremely sensitive to her surroundings, so there's nothing to worry about.
+if intF[109] == 1
+	goto s2
+fi
+goto 3
+label s2
+text Very well, next time I'll try something "extreme" to prove how much of a brick-head you are.
+goto 4
+label 3
+if intF[109] == 0
+	goto s3
+fi
+goto 4
+label s3
+text In that case, next time you go into a trance, I'll prove to you how much of a brick-head you are.
+label 4
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Carving the oath onto my heart, I turn around and walk away.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s4
+fi
+goto 5
+label s4
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+if intF[11] == 1
+	goto s5
+fi
+goto 7
+label s5
+setvar strS[1000] = "BG016Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s6
+fi
+goto 6
+label s6
+setvar strS[1000] = ""
+label 6
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text ......
+text @[Tomoya]
+text (It's still not too late. Maybe I should catch up with Furukawa....)
+text @[Tomoya]
+text (But if I have to run just to catch up with her.... isn't that like chasing after a girl's ass?)
+goto 9
+label 7
+if intF[11] == 0
+	goto s7
+fi
+goto 9
+label s7
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s8
+fi
+goto 8
+label s8
+setvar strS[1000] = ""
+label 8
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text (Sunohara's not around anymore...)
+text @[Tomoya]
+text (But I seriously don't want to run just to catch up with him now... that would only show how desperate I am for his perverted stuff...)
+label 9
+text As I keep on walking with my head occupied by such thoughts...
+music BGM10.mp3
+text *Thwack*
+text @[Tomoya]
+text Argh...
+text Someone just forcibly put something inside my shirt.
+text ...Something huge.
+text There's only one idiot who would do something like this.
+text @[Tomoya]
+text You little...!
+text She's already out of reach the moment I turn around.
+text It seems silly to chase after her now.
+text I take out the thing she stuck inside my shirt.
+text @[Tomoya]
+text (What the heck is this...)
+text A carving of... a star?
+text It's about as big as a fully opened hand.
+text @[Tomoya]
+text (It looks like a star no matter how I look at it...)
+text Is this what she's been carving?
+text If it is, does she need seven-hundred of these?
+text For what reason?
+text A hobby? Or art? Did God instruct her to do it?
+text @[Tomoya]
+text (Geez, I don't understand her at all...)
+text The star is badly balanced, not to mention the wood scales, which are virtually everywhere.
+text But I know how much effort she put into this.
+text @[Tomoya]
+text (Just what am I supposed to do with this thing?)
+text To be frank, it's burdensome.
+gsetvar intG[21] = 0
+choice Leave it somewhere|Take it home
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s9
+fi
+goto 10
+label s9
+music ~
+text I guess I'll just leave it somewhere.
+text I can't put it in my bag like this. It's just too bulky...
+goto 11
+label 10
+if intF[1089] == 1
+	goto s10
+fi
+goto 11
+label s10
+music ~
+text How do I take it back home?
+text My flat bag can't possibly hold this.
+text Guess I have to find a different bag to put it in...
+setvar intF[133] = 1
+label 11
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0

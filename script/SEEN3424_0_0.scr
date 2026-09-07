@@ -1,0 +1,70 @@
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1000] = ""
+label 1
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM10.mp3
+text *Tap* *Tap* *Tap* *Tap*
+text @[Tomoya]
+text ...
+text I am walking down the hallway by myself.
+text *Tap* *Tap* *Tap* *Tap*
+text @[Tomoya]
+text *Sigh*
+text I'm holding something wrapped in a fancy flower-patterned handkerchief.
+text *Tap* *Tap* *Tap* *Tap*
+text @[Tomoya]
+text ...
+text I stop to look behind me, and in the distance, Kyou is there.
+text She's holding her hip, and staring at me.
+text Reluctantly, I start walking again.
+text *Tap* *Tap* *Tap* *Tap*
+text @[Tomoya]
+text *Sigh*
+text I can't stop sighing.
+text The flower-patterned object in my hand... feels awfully heavy.
+text Inside, there is a lunch box.
+text Apparently Kyou made it...
+text ...I wonder if the food inside is actually edible...
+text No, that's not the problem.
+text The problem is...
+text @[Tomoya]
+text The yard, huh...?
+text I say my destination out loud and let out yet another sigh.
+text How did it end up this way...?
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = ""
+label 2
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text About ten minutes ago─
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+jump SEEN3424_1_0.scr

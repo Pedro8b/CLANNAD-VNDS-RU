@@ -1,0 +1,2532 @@
+text Just ahead is a car, and right beside it a man in overalls, wearing a helmet.
+text There's also a light pickup truck parked at the side of the road.
+text Was there an accident?
+sound Q66.aac
+text @[Man]
+text Over here. Just take a look at this.
+text The young man pointed at the hood of the car.
+text When I come up closer and take a look, I see there's a round dent right in the center of the hood.
+text @[Tomoya]
+text And?
+sound Q67.aac
+text @[Man]
+text And so, when I looked up after seeing this, I found this construction worker guy on his ladder.
+text I look up. There's a ladder placed up against a street light.
+text Maybe he was repairing the street light when it happened?
+setvar strS[1001] = "CGYS11H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q68.aac
+text @[Construction Worker]
+text I said it before and I'll say it again...
+sound Q69.aac
+text @[Construction Worker]
+text I would never make such a blunder as to drop one of my tools.
+sound Q6A.aac
+text @[Construction Worker]
+text Even if I were to do so, I wouldn't then engage in such ungraceful conduct as to try and hide it.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q6B.aac
+text @[Man]
+text Don't you think you coulda just made a mistake without knowing?
+sound Q6C.aac
+text @[Man]
+text Right? You think so too, right?
+text The man looks over to me.
+sound Q6D.aac
+text @[Man]
+text This person was doing construction work RIGHT above my car.
+sound Q6E.aac
+text @[Man]
+text He keeps insisting he didn't drop anything, but how the hell else did this dent get here?
+sound Q6F.aac
+text @[Man]
+text You tell me which of us sounds more rational.
+text @[Tomoya]
+text I dunno...
+sound Q6G.aac
+text @[Man]
+text You dunno...? What, so you don't have any common sense, either...? Man...
+text To be honest, I really don't care either way.
+text I'd never have come along with this guy if I'd known he was going to drag me into this.
+sound Q6H.aac
+text @[Man]
+text Lemme call your company, then. I'll just explain to them the situation.
+text Looks like he's got no need for me anymore.
+choice Leave|See what happens for a bit longer
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s0
+fi
+goto 1
+label s0
+text I take my leave without saying a word.
+text The two men probably didn't notice. At the very least, they didn't call out to me.
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+goto 2
+label 1
+if intF[1089] == 1
+	goto s1
+fi
+goto 2
+label s1
+label 2
+setvar strS[1001] = "CGYS10H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q6I.aac
+text @[Construction Worker]
+text I don't mind paying for your repair bill, if that is what you want.
+sound Q6J.aac
+text @[Construction Worker]
+text However... In due time, I do hope you'll look back on this, and give it a another good thought.
+setvar strS[1001] = "CGYS11H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q6K.aac
+text @[Construction Worker]
+text On whether what that electrician said back then was truly a lie or not...
+sound Q6L.aac
+text @[Construction Worker]
+text Do this in the place you feel most comfortable.
+setvar strS[1001] = "CGYS17H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS17H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q6M.aac
+text @[Construction Worker]
+text That's right. Do it with your loved one right there by your side.
+music ~
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q6N.aac
+text @[Man]
+text Huh...? Just what're you talking about...?
+music BGM16A.mp3
+setvar strS[1001] = "CGYS11H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q6O.aac
+text @[Construction Worker]
+text People hurt each other constantly in their day-to-day life.
+sound Q6P.aac
+text @[Construction Worker]
+text So it's understandable that you would be suspicious of others.
+sound Q6Q.aac
+text @[Construction Worker]
+text However, there's nothing sadder... than coming to a point where you can't believe in anything at all.
+sound Q6R.aac
+text @[Construction Worker]
+text To no longer be able to believe anyone... That would be the same as losing the ability to feel other people's love.
+sound Q6S.aac
+text @[Construction Worker]
+text It would be the same as becoming completely alone.
+setvar strS[1001] = "CGYS17H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS17H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q6T.aac
+text @[Construction Worker]
+text Tell me... how much can any of us do on our own?
+text The man in overalls slowly walks up to the car's owner, continuing to speak rhetorically.
+sound Q6U.aac
+text @[Construction Worker]
+text Just how far could people walk, all on their own?
+sound Q6V.aac
+text @[Construction Worker]
+text How about you...? Haven't you been going through hardships because you're all alone, too?
+sound Q6W.aac
+text @[Construction Worker]
+text Haven't you lived an utterly menial life up until now?
+sound Q6X.aac
+text @[Construction Worker]
+text Are you able to laugh sincerely?!
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q6Y.aac
+text @[Man]
+text ...Ha, haha... probably, yeah...
+text The man responds with a dry laugh.
+setvar strS[1001] = "CGYS13H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS13H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q6Z.aac
+text @[Construction Worker]
+text Hmph... I see...
+sound Q70.aac
+text @[Construction Worker]
+text So someone does love you.
+sound Q71.aac
+text @[Construction Worker]
+text Well, then...
+setvar strS[1001] = "CGYS18H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS18H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q72.aac
+text @[Construction Worker]
+text Please continue living a strong life, so that love will never fade.
+sound Q73.aac
+text @[Man]
+text O-Okay...
+text What a guy, to be able to spit out all these corny lines so grandly like that...
+text Even while wearing a helmet...
+sound Q74.aac
+text @[Construction Worker]
+text So that love may continue shining down on you... I will work.
+music ~
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text He tries to climb the ladder again.
+sound Q75.aac
+text @[Man]
+text No, wait! The phone number!
+music BGM14.mp3
+setvar strS[1001] = "CGYS16H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS16H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q76.aac
+text @[Construction Worker]
+text Hm, that's right. You wanted my office's phone number, didn't you...
+sound Q77.aac
+text @[Man]
+text Yeah, that's right!
+setvar strS[1001] = "CGYS15H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS15H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q78.aac
+text @[Construction Worker]
+text Will a business card do?
+sound Q79.aac
+text @[Man]
+text Yeah.
+text @[Tomoya]
+text Hey.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I was holding my hand over the dent on the car's hood, looking at it closely.
+text @[Tomoya]
+text It looks like it was actually a cat.
+sound Q7A.aac
+text @[Man]
+text ...
+setvar strS[1001] = "CGYS10H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q7B.aac
+text @[Construction Worker]
+text ...What was?
+text The guy in work clothes is the one that responds.
+text @[Tomoya]
+text You see this dented part? If you look at it from this angle, you can see footprints.
+text @[Tomoya]
+text Don't you think it could have just jumped down from this wall over here?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q7C.aac
+text @[Man]
+text ...
+text The two exchange glances.
+text The construction worker walks up next to me and takes a close look.
+setvar strS[1001] = "CGYS10H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q7D.aac
+text @[Construction Worker]
+text ...It's true.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q7E.aac
+text @[Man]
+text Eeh...?!
+text The young man comes up beside us, too, squinting.
+sound Q7F.aac
+text @[Man]
+text ...Ah, it really is...
+text The construction worker pats the man on the shoulder tenderly.
+setvar strS[1001] = "CGYS11H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q7G.aac
+text @[Construction Worker]
+text Well, these kinds of things happen, too.
+sound Q7H.aac
+text @[Man]
+text Haha... Yeah, sorry for the false accusation...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text The young man gets into the driver's seat and drives away quickly, as if trying to escape.
+text @[Tomoya]
+text ...
+setvar strS[1001] = "CGYS11H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q7I.aac
+text @[Construction Worker]
+text *Sigh*
+text The construction worker takes a deep breath, and takes a look at his watch.
+setvar strS[1001] = "CGYS10H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q7J.aac
+text @[Construction Worker]
+text Hm... This isn't good...
+setvar strS[1001] = "CGYS17H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS17H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q7K.aac
+text @[Construction Worker]
+text You, are you free?
+text He looks at me and asks.
+text @[Tomoya]
+text Huh? Well, yeah...
+sound Q7L.aac
+text @[Construction Worker]
+text Good. Please assist me.
+text @[Tomoya]
+text With what?
+setvar strS[1001] = "CGYS10H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q7M.aac
+text @[Construction Worker]
+text With installing one more street light on the opposite side.
+text @[Tomoya]
+text What? Why're you asking ME?
+sound Q7N.aac
+text @[Construction Worker]
+text I don't have much time left. Not to mention you're quite young, so you should be more than strong enough.
+setvar strS[1001] = "CGYS11H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q7O.aac
+text @[Construction Worker]
+text You'll get paid for it, too. That's reason enough, right?
+choice Help|Refuse
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s2
+fi
+goto 3
+label s2
+goto 4
+label 3
+if intF[1089] == 1
+	goto s3
+fi
+goto 4
+label s3
+text @[Tomoya]
+text That's not what I mean. What I mean is that you shouldn't be suddenly asking some random novice to help you.
+text @[Tomoya]
+text As if I could help you just like that.
+setvar strS[1001] = "CGYS10H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q7P.aac
+text @[Construction Worker]
+text I will take care of the difficult parts.
+text @[Tomoya]
+text Even if so... I just think it's kind of senseless.
+setvar strS[1001] = "CGYS16H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS16H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q7Q.aac
+text @[Construction Worker]
+text I see... Well, I won't force you to help me.
+text It looks like he's reasonable.
+text @[Tomoya]
+text Well, I'll be going now.
+setvar strS[1001] = "CGYS10H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q7R.aac
+text @[Construction Worker]
+text Yeah. Thank you for earlier.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text After hearing those words of gratitude, I take my leave.
+setvar intF[611] = 1
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+label 4
+text @[Tomoya]
+text Well, if it's not for free, then... all right.
+text I decide to help him.
+text @[Tomoya]
+text But it looks like you've been installing them rather than repairing them, huh?
+setvar strS[1001] = "CGYS10H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q7S.aac
+text @[Construction Worker]
+text Yeah.
+text It's a country road I'm rather familiar with.
+text And that road is now going to change. I kind of feel resistant to it.
+text @[Tomoya]
+text Do we even need street lights here...?
+text When I say this, the construction worker looks at me, puzzled.
+sound Q7T.aac
+text @[Construction Worker]
+text It would obviously be far safer to have them.
+sound Q7U.aac
+text @[Construction Worker]
+text It's pitch black in this area after dark.
+text @[Tomoya]
+text That may be true, but still.
+setvar strS[1001] = "CGYS11H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q7V.aac
+text @[Construction Worker]
+text A town is a place where people live, after all. It should be changing in ways that will make people's lives better.
+text @[Tomoya]
+text Ain't that just oppressive?
+setvar strS[1001] = "CGYS16H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS16H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q7W.aac
+text @[Construction Worker]
+text That's another odd thing to say.
+sound Q7X.aac
+text @[Construction Worker]
+text Doesn't the street itself exist primarily for people to begin with?
+text @[Tomoya]
+text Well, yeah... I just kinda...
+setvar strS[1001] = "CGYS10H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q7Y.aac
+text @[Construction Worker]
+text Have you decided against helping me, then?
+text @[Tomoya]
+text Nah, I'll help.
+text I really shouldn't care about this sort of thing, anyway.
+setvar strS[1001] = "CGYS11H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q7Z.aac
+text @[Construction Worker]
+text All right. Let's get right to it, then.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text .........
+text ......
+text ...
+bgload KURO.jpg 55
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGYS12H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS12H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q80.aac
+text @[Construction Worker]
+text Well done. You helped me a great deal.
+text ...I can't move my arms.
+text It's because I was holding up the street light the entire time.
+text And not only that, but even just standing on top of the ladder in an unstable position has all but whittled down my stamina.
+text My thighs are all swollen, and even my calves are aching.
+text It was all I could do to plunge to the ground and try to calm my breathing.
+text I used to have confidence in my stamina, but right now I felt so horrible, keeping up appearances is the last thing on my mind.
+text @[Tomoya]
+text Is this actually even a job you're supposed to do with just two people?!
+text I spit out these words while still gasping for breath.
+setvar strS[1001] = "CGYS11H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q81.aac
+text @[Construction Worker]
+text This was your first time working? In that case, I suppose it's only natural.
+sound Q82.aac
+text @[Construction Worker]
+text No matter what job you perform, this amount of work isn't out of the ordinary.
+text He'd probably been working far harder than me, yet he manages to say this with a cool expression on his face.
+text And with that, I'm finally made to realize.
+text How comfortably I'd truly been living up until now.
+text I am so fatigued right now, all the petty anxieties that I'd been fretting over in my life just look absurd to me.
+text So becoming part of society means throwing yourself into this kind of lifestyle?
+text I had imagined it before... but this went even further than all of my imaginings.
+text Not to mention the man standing before is a young man, not far from my own age.
+text For a man like that to be able to easily exclaim "This amount of work isn't out of the ordinary" was also quite a shock to me.
+setvar strS[1001] = "CGYS10H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q83.aac
+text @[Construction Worker]
+text What's wrong? You seem depressed.
+text @[Tomoya]
+text N-Nothing...
+sound Q84.aac
+text @[Construction Worker]
+text Still, you were quite useful back there.
+text He pats me on the shoulder, maybe trying to be considerate, telling me not to worry about it.
+setvar strS[1001] = "CGYS11H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q85.aac
+text @[Construction Worker]
+text It would have taken more time if I'd worked with any other new employee. I'd say your stamina is actually quite good.
+text @[Tomoya]
+text That so...
+text I don't feel better at all.
+setvar strS[1001] = "CGYS16H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS16H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q86.aac
+text @[Construction Worker]
+text *Sigh* ...So there's still two more left for today...
+text The man twists his neck, making an audible sound.
+text I can't believe it. This man is going to do this two more times?
+text Not to mention he may well have been working all morning, too.
+setvar strS[1001] = "CGYS10H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q87.aac
+text @[Construction Worker]
+text I'll come back when I'm done. I'll pay you then.
+text @[Tomoya]
+text Okay...
+bgload KURO.jpg 55
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q88.aac
+text @[Construction Worker]
+text Sorry to keep you waiting.
+text @[Tomoya]
+text No, I only just got here myself.
+sound Q89.aac
+text @[Construction Worker]
+text Here, payment for your job. And sorry, I was only able to get you half.
+setvar strS[1001] = "CGYS11H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q8A.aac
+text @[Construction Worker]
+text I was told there was no way you'd get full pay when you haven't even worked a single day.
+text The man presented me with a gray envelope.
+text On the bottom is written the company's name or something.
+text I open the envelope, my arm still burning with pain. One, two, three, f...
+text @[Tomoya]
+text Wait, is this really right?
+setvar strS[1001] = "CGYS10H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q8B.aac
+text @[Construction Worker]
+text Hm? I think it is.
+text I give the man the envelope to look at.
+sound Q8C.aac
+text @[Construction Worker]
+text That's the right amount. Is it not enough?
+text No, just the opposite. No matter how I look at it, it seems like far too much.
+text And apparently this is only half the normal amount.
+text Imagine if I'd actually gotten the full amount.
+text With this sum of money, I could actually put food on the table all by myself.
+text Though, that kind of thinking may be naive.
+text Given how quickly I get bored with things, I'm not cut out for a job like this.
+text I'm sure I'd just get tired of it and end up quitting.
+text Though I wonder what kind of place I WOULD fit in, then...
+text I shake my head.
+text I really don't want to start thinking about that.
+text I'll probably just let myself end up where the wind takes me.
+text For now, let's just enjoy the present...
+sound Q8D.aac
+text @[Construction Worker]
+text Come to think of it, I don't think I've properly introduced myself.
+sound Q8E.aac
+text @[Construction Worker]
+text I'll give you my business card.
+sound Q8F.aac
+text @[Construction Worker]
+text I'm Yoshino.
+text @[Tomoya]
+text I'm Okazaki.
+text I take his business card. On it is written the name of the electric company, along with his name, "Yusuke Yoshino."
+setvar strS[1001] = "CGYS11H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q8G.aac
+text @[Construction Worker]
+text Hey, I've gotta get going.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text The construction worker takes his tools, and starts walking to his truck that's parked on the other side.
+text He gets in, looks my way, and raises his hand in farewell before finally leaving, accompanied by the low roar of the engine.
+text @[Tomoya]
+text ...
+text I drop my gaze once more to the business card in my hand.
+text @[Tomoya]
+text (...Yusuke Yoshino.)
+text @[Tomoya]
+text (I think I've seen this name somewhere before...)
+text But where?
+text I can't quite remember.
+text @[Tomoya]
+text (I guess I'll go ask Sunohara or something...)
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s4
+fi
+goto 5
+label s4
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 60
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG046"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s5
+fi
+goto 6
+label s5
+setvar strS[1000] = ""
+label 6
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 60
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08B.mp3
+text @[Tomoya]
+text I seriously feel I've heard that guy's name somewhere before.
+text Once I'm settled down in my usual spot, I immediately start talking about the construction worker.
+setvar strS[1001] = "CGSH15B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q8H.aac
+text @[Sunohara]
+text Well, it's a pretty small town, after all. It's not that unlikely that you've met him before.
+text @[Tomoya]
+text No, what I mean is that I didn't recognize his face, just his name...
+setvar strS[1001] = "CGSH19B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH19B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q8I.aac
+text @[Sunohara]
+text Huh. What was his name, then?
+text @[Tomoya]
+text Hmm... Crap, I forgot.
+setvar strS[1001] = "CGSH18B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q8J.aac
+text @[Sunohara]
+text Try and remember. Didn't you get a business card or something?
+text @[Tomoya]
+text I did.
+sound Q8K.aac
+text @[Sunohara]
+text Go grab it.
+text @[Tomoya]
+text Why don't you go grab it?
+setvar strS[1001] = "CGSH15B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q8L.aac
+text @[Sunohara]
+text Where is it, then?
+text @[Tomoya]
+text In my pants' pocket.
+setvar strS[1001] = "CGSH23B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q8M.aac
+text @[Sunohara]
+text Just how lazy can you be?!
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text All right, fine...
+text I grab my wallet, and take out the business card that I'd put in there along with the paycheck.
+text @[Tomoya]
+text Yeah... here it is. Yoshino... Yusuke.
+setvar strS[1001] = "CGSH20B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH20B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q8N.aac
+text @[Sunohara]
+text Yoshino... Yusuke?
+text @[Tomoya]
+text Yeah. See here?
+setvar strS[1001] = "CGSH16B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Sunohara violently snatches the business card from my hands and looks at it intensely.
+sound Q8O.aac
+text @[Sunohara]
+text How'd he look?
+text @[Tomoya]
+text Huh? How he looked...? I only really remember he had a stern look to him... Well, I guess he was also kind of handsome.
+sound Q8P.aac
+text @[Sunohara]
+text Anything else?
+text @[Tomoya]
+text And... he kept saying these corny lines all grandly.
+text @[Tomoya]
+text Stuff like, "Haven't you lived an utterly menial life up until now?!" or "Are you able to laugh sincerely?!"
+setvar strS[1001] = "CGSH27B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH27B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q8Q.aac
+text @[Sunohara]
+text Gaaaaah!
+sound Q8R.aac
+text @[Sunohara]
+text That's the legendary MC. In the flesh...
+setvar strS[1001] = "CGSH16B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q8S.aac
+text @[Sunohara]
+text What, so these days he's working as an electrician in a shoddy town like this...?
+text @[Tomoya]
+text These days? Did he used to do something else?
+setvar strS[1001] = "CGSH18B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q8T.aac
+text @[Sunohara]
+text This guy used to be a professional musician. He's even released CDs!
+text @[Tomoya]
+text Seriously...?
+sound Q8U.aac
+text @[Sunohara]
+text Yeah. He really had a cult following. He was never on TV, but his albums still sold like crazy.
+sound Q8V.aac
+text @[Sunohara]
+text You probably heard about him on the radio.
+text @[Tomoya]
+text Maybe I did...
+setvar strS[1001] = "CGSH15B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q8W.aac
+text @[Sunohara]
+text I bet I've got a tape of his somewhere. You wanna hear?
+text @[Tomoya]
+text Sure...
+bgload KURO.jpg 88
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Sunohara digs out a cassette tape out from the bottom of a cardboard box.
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q8X.aac
+text @[Sunohara]
+text My little sister really loved him.
+text @[Tomoya]
+text Little sister?!
+sound Q8Y.aac
+text @[Sunohara]
+text Yeah, my little sister. Didn't I tell you I had one of those?
+text @[Tomoya]
+text No you didn't... So c'mon, why don't you tell me all about her?
+setvar intF[812] = 1
+setvar strS[1001] = "CGSH16B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q8Z.aac
+text @[Sunohara]
+text Wait, somehow I feel the topic's changed here...
+text @[Tomoya]
+text Oh, yeah... that's right.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text It's SUNOHARA'S little sister, anyway. So she's probably some kind of monster.
+text When I think of it that way, my interest fades instantly.
+setvar strS[1001] = "CGSH19B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH19B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q90.aac
+text @[Sunohara]
+text Here, just listen to this.
+text @[Tomoya]
+text Yeah.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I put the cassette into the portable tape recorder, plug in the earphones, and press the play button.
+text @[Tomoya]
+text ...
+text It's not what I expected from something Sunohara's monster-like little sister likes. It's just a normal rock song.
+text No, I actually wouldn't call it normal. It's actually rather good.
+text No, I actually wouldn't even call it rather good. It's actually pretty damn good.
+text When I try also listening to the lyrics, I almost find myself bursting into tears, despite the music itself being quite intense.
+text I wonder what it is...
+text Maybe "empathy" is the word I'm looking for.
+text I take out the earphones.
+setvar strS[1001] = "CGSH13B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q91.aac
+text @[Sunohara]
+text Pretty good, right?
+text @[Tomoya]
+text I see... So listening to this, she was finally able to gain an affinity for humans...
+setvar strS[1001] = "CGSH20B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH20B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q92.aac
+text @[Sunohara]
+text Who?
+text @[Tomoya]
+text Your little sister.
+setvar strS[1001] = "CGSH23B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q93.aac
+text @[Sunohara]
+text She's a human herself to begin with!
+text @[Tomoya]
+text Sorry 'bout that. My imagination went kind of crazy, and your little sister ended up a monster.
+setvar strS[1001] = "CGSH16B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q94.aac
+text @[Sunohara]
+text Just how crazy can your imagination go...
+setvar strS[1001] = "CGSH15B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q95.aac
+text @[Sunohara]
+text But anyway, what do you think about his music?
+text @[Tomoya]
+text Yeah, it was good.
+setvar strS[1001] = "CGSH12B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q96.aac
+text @[Sunohara]
+text Yeah. It's pretty bangin', right?
+sound Q97.aac
+text @[Sunohara]
+text My little sister really loved him, but when I tried listening to him, I found it wasn't all that bad, either.
+sound Q98.aac
+text @[Sunohara]
+text It still ain't got nothing on Bomb A Head, though.
+sound Q99.aac
+text @[Sunohara]
+text And this is actually a favorite mixtape of mine that my little sister made especially for me.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Squeak* *Squeak*
+text @[Tomoya]
+text Hm? Why's the tape making a strange sound?
+text @[Tomoya]
+text Oh, looks like it's stuck.
+setvar strS[1001] = "CGSH20B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH20B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q9A.aac
+text @[Sunohara]
+text Huh?
+text @[Tomoya]
+text Guess I'll pull it back out.
+setvar strS[1001] = "CGSH23B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q9B.aac
+text @[Sunohara]
+text NO, DOOOOOOOON'T!!
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I open the recorder, grab the tape, and give it a good pull.
+music ~
+text *Fwish fwish frisssssssssssh*
+music BGM08A.mp3
+text The ribbon flutters around like seaweed, covering the entire floor.
+setvar strS[1001] = "CGSH23B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q9C.aac
+text @[Sunohara]
+text AAAAAAAAAAAaaaaaaahh──! The mixtape my little sister made for me!!
+sound Q9D.aac
+text @[Sunohara]
+text Just what the hell do you think you're doing─?!
+text @[Tomoya]
+text Calm down, now. Isn't the guy himself right here in this town?
+setvar strS[1001] = "CGSH16B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q9E.aac
+text @[Sunohara]
+text How's that supposed to help?!
+text @[Tomoya]
+text Doesn't that give you some peace of mind?
+setvar strS[1001] = "CGSH23B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q9F.aac
+text @[Sunohara]
+text No, it doesn't!
+sound Q9G.aac
+text @[Sunohara]
+text Damn it all! I'm gonna destroy one of your treasures, too, then!
+sound Q9H.aac
+text @[Sunohara]
+text How about one of your mixtapes?! I'll take a mixtape that has the opening interviews of your favorite porn movies, and smash it into pieces!
+text @[Tomoya]
+text Now, now, just calm down. At the very least, pointless sections like that aren't going in any mixtapes I'd make.
+text @[Tomoya]
+text But seriously, I mean, we've got the person himself right in this town, so why don't you just borrow his CDs? You can just make another mixtape just like your old one.
+setvar strS[1001] = "CGSH16B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q9I.aac
+text @[Sunohara]
+text Borrow CDs from the artist himself...?
+text @[Tomoya]
+text Yeah. He should have them, right?
+sound Q9J.aac
+text @[Sunohara]
+text Well, it'd be crazy if he didn't have them, but...
+sound Q9K.aac
+text @[Sunohara]
+text But borrowing them from the artist himself just sounds like such an amazingly out-of-the-box idea... It's almost crazy...
+text @[Tomoya]
+text Yeah, but with the actual guy himself here... we could probably do even more than that.
+setvar strS[1001] = "CGSH13B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q9L.aac
+text @[Sunohara]
+text Yeah, I bet that little sister of mine'd love it if I got his autograph, too.
+text @[Tomoya]
+text Yeah, I bet. So let's go with that.
+setvar strS[1001] = "CGSH24B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q9M.aac
+text @[Sunohara]
+text ...You just totally changed the topic there, didn't you?
+text @[Tomoya]
+text Nah, of course not! I totally want to hear your little sister as she expresses her delight.
+text @[Tomoya]
+text Like, "Keh keh keeeeeeeeeeeeeh!!"
+setvar strS[1001] = "CGSH23B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q9N.aac
+text @[Sunohara]
+text Who the hell laughs like that?!
+text @[Tomoya]
+text So hey, let's go see him right now. He might still be around.
+setvar strS[1001] = "CGSH16B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q9O.aac
+text @[Sunohara]
+text Man... all right. Seriously, I'm counting on you for this.
+text We get up, and immediately move into action.
+music ~
+setvar strS[1000] = "BG034"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s6
+fi
+goto 7
+label s6
+setvar strS[1000] = ""
+label 7
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM14.mp3
+setvar strS[1001] = "CGSH20B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH20B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q9P.aac
+text @[Sunohara]
+text I actually just remembered something...
+text As we leave the dorm, Sunohara stops walking.
+text @[Tomoya]
+text Hm? What's up?
+setvar strS[1001] = "CGSH16B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q9Q.aac
+text @[Sunohara]
+text It might be bad if we start talking to him about music right now...
+text @[Tomoya]
+text Why?
+setvar strS[1001] = "CGSH15B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q9R.aac
+text @[Sunohara]
+text Well, as you saw yourself, he's no longer doing music these days...
+sound Q9S.aac
+text @[Sunohara]
+text I heard that by the end of his career, he'd pretty well run himself to ruin.
+sound Q9T.aac
+text @[Sunohara]
+text It was so bad, any fans of his that know about it wouldn't dare bring it up.
+text @[Tomoya]
+text But we aren't fans.
+setvar strS[1001] = "CGSH24B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q9U.aac
+text @[Sunohara]
+text You really don't fear anything, do you...
+text @[Tomoya]
+text In other words, I don't care, no matter how badly he takes it.
+sound Q9V.aac
+text @[Sunohara]
+text Well, you might not care, but I actually do...
+text @[Tomoya]
+text Why?
+sound Q9W.aac
+text @[Sunohara]
+text Well, I need to get his autograph...
+text @[Tomoya]
+text Oh, yeah, you've got a thing for your sister.
+setvar strS[1001] = "CGSH18B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q9X.aac
+text @[Sunohara]
+text No I don't! I just want to make her grateful to me!
+setvar strS[1001] = "CGSH13B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q9Y.aac
+text @[Sunohara]
+text It'd be useful for later, don'tcha think?
+text @[Tomoya]
+text Yeah, let's go with that.
+setvar strS[1001] = "CGSH24B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Q9Z.aac
+text @[Sunohara]
+text So yeah. Let's not ask him directly.
+text @[Tomoya]
+text Then what are you saying we should do?
+setvar strS[1001] = "CGSH13B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QA0.aac
+text @[Sunohara]
+text We'll cleverly test the waters.
+text @[Tomoya]
+text And how are we going to do that?
+sound QA1.aac
+text @[Sunohara]
+text Let's see... We could tell him we're in a band, and see how he reacts or something.
+sound QA2.aac
+text @[Sunohara]
+text After we've started up the conversation, we'll casually mention Yusuke Yoshino is one of our favorite artists.
+sound QA3.aac
+text @[Sunohara]
+text And if he doesn't still feel bad about it, he'll tell us who he is.
+setvar strS[1001] = "CGSH12B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QA4.aac
+text @[Sunohara]
+text "Actually... I am that very Yusuke Yoshino!"
+sound QA5.aac
+text @[Sunohara]
+text If that happens, I'm sure he'll give us his autograph.
+text @[Tomoya]
+text True... it would be nice if things went that well.
+setvar strS[1001] = "CGSH18B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QA6.aac
+text @[Sunohara]
+text You'd better do your part in this.
+sound QA7.aac
+text @[Sunohara]
+text We're only doing this because you went and destroyed my mixtape.
+text @[Tomoya]
+text Just what am I supposed to do, then?
+setvar strS[1001] = "CGSH15B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QA8.aac
+text @[Sunohara]
+text Just match my story, and say you're in a band with me.
+text @[Tomoya]
+text Is it okay if I just say I play the triangle?
+setvar strS[1001] = "CGSH16B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QA9.aac
+text @[Sunohara]
+text That doesn't seem like it'd fit a band...
+text @[Tomoya]
+text I guess I'll just be our maestro, then.
+sound QAA.aac
+text @[Sunohara]
+text A band's not gonna have one of those. We're not a chorus...
+text @[Tomoya]
+text Then what do you want me to do?
+setvar strS[1001] = "CGSH13B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QAB.aac
+text @[Sunohara]
+text The drums.
+text @[Tomoya]
+text I dunno how to play the drums.
+sound QAC.aac
+text @[Sunohara]
+text That doesn't matter, just pretend. All you need to do is ask leading questions and it'll work out.
+text @[Tomoya]
+text We'll be talking to a former pro, you know? He'll find out the moment he asks me.
+sound QAD.aac
+text @[Sunohara]
+text Well, we're just amateurs, so it shouldn't matter if we don't know that much.
+sound QAE.aac
+text @[Sunohara]
+text If he asks you something, you can just answer him with, "Playing the drums is quite like playing whack-a-mole, don'tcha think?"
+text @[Tomoya]
+text Would things really work out that way...?
+setvar strS[1001] = "CGSH12B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QAF.aac
+text @[Sunohara]
+text Yeah. And I'll be on the guitar!
+text @[Tomoya]
+text Isn't he on the guitar, too? Won't it be bad if you choose the same instrument as him?
+setvar strS[1001] = "CGSH13B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QAG.aac
+text @[Sunohara]
+text Quite the opposite. The conversation wouldn't get rolling if I didn't play the same instrument.
+text @[Tomoya]
+text How are you going to have a conversation about playing the guitar when you can't even play it...
+sound QAH.aac
+text @[Sunohara]
+text It'll work out, one way or another. Just you watch.
+text With regained enthusiasm, he starts walking.
+music ~
+setvar strS[1000] = "BG033"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s7
+fi
+goto 8
+label s7
+setvar strS[1000] = ""
+label 8
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM09A.mp3
+text @[Tomoya]
+text This is where I met him earlier.
+setvar strS[1001] = "CGSH15B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QAI.aac
+text @[Sunohara]
+text Hm, he's not here.
+text @[Tomoya]
+text Yeah, because he drove away in his truck.
+setvar strS[1001] = "CGSH16B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QAJ.aac
+text @[Sunohara]
+text There's no way he'd be here, then.
+text @[Tomoya]
+text Yeah...
+setvar strS[1000] = "BG031"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s8
+fi
+goto 9
+label s8
+setvar strS[1000] = ""
+label 9
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Not here either, huh...
+setvar strS[1001] = "CGSH24B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QAK.aac
+text @[Sunohara]
+text Isn't it kind of thoughtless to try and catch up with a car?
+text @[Tomoya]
+text But he said he still had some work to do, so he should still be somewhere in town.
+setvar strS[1001] = "CGSH16B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QAL.aac
+text @[Sunohara]
+text Somewhere in town... just how vague can you be...?
+sound QAM.aac
+text @[Sunohara]
+text Finding him's gonna be harder than finding Waldo.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s9
+fi
+goto 10
+label s9
+setvar strS[1000] = ""
+label 10
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text We walk around more and more.
+setvar strS[1000] = "BG035Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s10
+fi
+goto 11
+label s10
+setvar strS[1000] = ""
+label 11
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text This is the third time we've come around to the station.
+setvar strS[1001] = "CGSH15B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QAN.aac
+text @[Sunohara]
+text Guess he's really not here...
+text @[Tomoya]
+text No...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text There's a truck parked here that wasn't there before.
+text I can see a hint of someone working on the other side of it.
+text @[Tomoya]
+text He's here.
+setvar strS[1001] = "CGSH27B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH27B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QAO.aac
+text @[Sunohara]
+text Eh?! Where?!
+text @[Tomoya]
+text Let's go!
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text We approach the truck.
+sound QAP.aac
+text @[Sunohara]
+text Ah, is he the man in overalls?
+text @[Tomoya]
+text Yeah.
+setvar strS[1001] = "CGSH16B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QAQ.aac
+text @[Sunohara]
+text Crap, I'm so nervous... I'm about to piss my pants.
+music ~
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Wassup.
+text I call out to the construction worker, who'd just finished putting a package onto the truck's carrying tray.
+music BGM09B.mp3
+setvar strS[1001] = "CGYS10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QAR.aac
+text @[Yoshino]
+text ...Hm?
+setvar strS[1001] = "CGYS12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QAS.aac
+text @[Yoshino]
+text Oh, hey, thanks for before.
+text That's how he responds after seeing my face.
+setvar strS[1001] = "CGSH24B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QAT.aac
+text @[Sunohara]
+text Hi.
+text Sunohara peeks out from behind me.
+setvar strS[1001] = "CGYS10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QAU.aac
+text @[Yoshino]
+text Hm? Who's this?
+setvar strS[1001] = "CGSH24B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QAV.aac
+text @[Sunohara]
+text I'm Okazaki-kun's friend, Sunohara.
+sound QAW.aac
+text @[Yoshino]
+text What is it? Have you come to help me, too?
+setvar strS[1001] = "CGSH16B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QAX.aac
+text @[Sunohara]
+text No, my butt kind of hurts right now, so... Ow...!
+setvar strS[1001] = "CGYS10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QAY.aac
+text @[Yoshino]
+text I see... Well, I hope you get well soon.
+setvar strS[1001] = "CGSH24B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QAZ.aac
+text @[Sunohara]
+text But I am kind of curious about your work here.
+sound QB0.aac
+text @[Yoshino]
+text Hmm...?
+sound QB1.aac
+text @[Sunohara]
+text So there's a lot I'd like to ask you about. Can I?
+setvar strS[1001] = "CGYS11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QB2.aac
+text @[Yoshino]
+text Well, I've just about finished my work here. We can talk, at least until it gets dark.
+sound QB3.aac
+text @[Sunohara]
+text A'ight.
+text Somehow, he's succeeded in getting on his good side.
+bgload KURO.jpg 60
+bgload {$strS[1000]}.jpg 60
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGSH12B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QB4.aac
+text @[Sunohara]
+text We're actually going to a prep school, but we're always skipping classes, so we'll probably give up on college, anyway.
+text They sit down next to each other on the bench and start talking.
+sound QB5.aac
+text @[Yoshino]
+text Hmm.
+sound QB6.aac
+text @[Sunohara]
+text So I was looking for a job you can do with just a high school degree...
+setvar strS[1001] = "CGYS11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QB7.aac
+text @[Yoshino]
+text Well, it's true the job I'm doing won't require any academic background...
+setvar strS[1001] = "CGYS12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QB8.aac
+text @[Yoshino]
+text But you've still got a year left, don't you? Isn't it a bit too early to give up on going to university?
+text As if aiming for that very question, Sunohara leans forward.
+setvar strS[1001] = "CGSH13B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QB9.aac
+text @[Sunohara]
+text ...Right now, it isn't studying that I want to do, but music.
+sound QBA.aac
+text @[Yoshino]
+text Music?
+setvar strS[1001] = "CGSH12B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QBB.aac
+text @[Sunohara]
+text The two of us are in a band together!
+text I really wonder how he's going to react to this...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text "I heard that by the end of his career, he'd pretty well run himself to ruin."
+text If that's really true, then...
+setvar strS[1001] = "CGYS10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QBC.aac
+text @[Yoshino]
+text Huh... A band...?
+text ......
+setvar strS[1001] = "CGYS14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QBD.aac
+text @[Yoshino]
+text That's pretty nice!
+text He made a ridiculously good impression!
+setvar strS[1001] = "CGYS12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QBE.aac
+text @[Yoshino]
+text What instrument do you play?
+setvar strS[1001] = "CGSH12B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QBF.aac
+text @[Sunohara]
+text I'm on the guitar, and this guy's the drums.
+setvar strS[1001] = "CGYS12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QBG.aac
+text @[Yoshino]
+text Huh, so you were playing the drums. It must be quite hard.
+text @[Tomoya]
+text Playing the drums is quite like playing whack-a-mole, don'tcha think?
+setvar strS[1001] = "CGYS15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Yoshino]
+text ...
+text He's looking at me with a ridiculously dubious expression...
+sound QBH.aac
+text @[Yoshino]
+text Well, the act of hitting may be the same... but I don't know about them being similar...
+setvar strS[1001] = "CGYS12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QBI.aac
+text @[Yoshino]
+text So, you were on the guitar?
+setvar strS[1001] = "CGSH12B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QBJ.aac
+text @[Sunohara]
+text Yup. The guitar.
+setvar strS[1001] = "CGYS12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QBK.aac
+text @[Yoshino]
+text Can you show me your fingers?
+sound QBL.aac
+text @[Sunohara]
+text My fingers...?
+setvar strS[1001] = "CGYS11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text He grabs Sunohara's hand, and rubs his fingers with his own.
+text @[Yoshino]
+text ...
+setvar strS[1001] = "CGYS16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QBM.aac
+text @[Yoshino]
+text ...Do you really play the guitar?
+setvar strS[1001] = "CGSH24B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QBN.aac
+text @[Sunohara]
+text Huh...?
+text ...See? He's found out.
+sound QBO.aac
+text @[Sunohara]
+text I play it all the time! I'm practicing like crazy every day!
+setvar strS[1001] = "CGYS10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QBP.aac
+text @[Yoshino]
+text I see...
+sound QBQ.aac
+text @[Yoshino]
+text What kind of practice do you do?
+setvar strS[1001] = "CGSH24B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QBR.aac
+text @[Sunohara]
+text Erm... I go, "kahkakah," like this...
+text He moves his right hand up and down in a stroking motion.
+setvar strS[1001] = "CGYS10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QBS.aac
+text @[Yoshino]
+text So you're still only doing chords.
+setvar strS[1001] = "CGSH24B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QBT.aac
+text @[Sunohara]
+text C-Chords? Meaning?
+sound QBU.aac
+text @[Yoshino]
+text Meaning chords.
+sound QBV.aac
+text @[Sunohara]
+text A-Ah, chords... Yeah, chords are quite hard, aren't they?
+setvar strS[1001] = "CGYS16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QBW.aac
+text @[Yoshino]
+text And the way you're holding it right now, I suppose you're doing power chords.
+sound QBX.aac
+text @[Yoshino]
+text Well, you can't do anything if you can't at least manage that.
+setvar strS[1001] = "CGSH24B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QBY.aac
+text @[Sunohara]
+text Yeah, really. You gotta at least have your powered suit...! Haha!
+text I think you changed the vocabulary there.
+sound QBZ.aac
+text @[Sunohara]
+text Erm!
+setvar strS[1001] = "CGYS10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QC0.aac
+text @[Yoshino]
+text What is it?
+setvar strS[1001] = "CGYS12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QC1.aac
+text @[Sunohara]
+text You know quite a lot about guitars, huh, Yoshino-san? Could it be you play, too?
+text He starts approaching the crux of the matter.
+setvar strS[1001] = "CGYS11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QC2.aac
+text @[Yoshino]
+text Yeah, more or less.
+setvar strS[1001] = "CGSH25B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH25B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QC3.aac
+text @[Sunohara]
+text Then why don't you show us? I'd love to hear you play!
+setvar strS[1001] = "CGYS11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QC4.aac
+text @[Yoshino]
+text Why, you...
+sound QC5.aac
+text @[Yoshino]
+text Why don't you play something of your own before asking others to play for you?
+setvar strS[1001] = "CGSH23B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH23B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QC6.aac
+text @[Sunohara]
+text Eh?!
+setvar strS[1001] = "CGYS10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QC7.aac
+text @[Yoshino]
+text Bring your guitar tomorrow. I'll come listen.
+sound QC8.aac
+text @[Yoshino]
+text I think I can at least give you some advice.
+setvar strS[1001] = "CGSH23B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH23B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QC9.aac
+text @[Sunohara]
+text ...
+music ~
+bgload KURO.jpg 88
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Sunohara stays petrified as he sees Yusuke Yoshino drive off into the distance.
+text @[Tomoya]
+text Man, this has to be the worst possible outcome.
+text @[Tomoya]
+text I mean, you don't even own a guitar to begin with.
+setvar strS[1001] = "CGSH24B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound QCA.aac
+text @[Sunohara]
+text Ahaha... It'll work out, one way or another...
+setvar intF[610] = 1
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+jump SEEN7100_1_0.scr

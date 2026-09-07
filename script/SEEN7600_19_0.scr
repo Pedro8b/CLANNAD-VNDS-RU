@@ -1,0 +1,140 @@
+setvar intA[1000] = 0
+if intA[1000] == 0
+	goto s139
+fi
+goto 154
+label s139
+setvar intF[1217] = 1
+goto 155
+label 154
+if intA[1000] == 1
+	goto s140
+fi
+goto 155
+label s140
+setvar intF[1217] = 0
+label 155
+if 1 == 1
+	goto s141
+fi
+goto 156
+label s141
+goto 157
+label 156
+if 1 == 0
+	goto s142
+fi
+goto 157
+label s142
+label 157
+setvar strS[1000] = "SIRO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s143
+fi
+goto 158
+label s143
+setvar strS[1000] = ""
+label 158
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @*Clatter* ...
+delay 180
+sound VXX.aac
+bgload Hey, it's been a while....jpg 306
+text @Hey, it's been a while...
+setvar strS[1000] = "FGSB13B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s144
+fi
+goto 161
+label s144
+setvar strS[1000] = ""
+label 161
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 301
+setvar strS[1000] = "SIRO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s145
+fi
+goto 162
+label s145
+setvar strS[1000] = ""
+label 162
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 301
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+if intF[1217] == 1
+	goto s146
+fi
+goto 163
+label s146
+goto 164
+label 163
+if intF[1217] == 0
+	goto s147
+fi
+goto 164
+label s147
+label 164
+music ~
+delay 180
+if intG[12] == 0
+	goto s148
+fi
+goto 165
+label s148
+gsetvar intG[12] = 1
+gsetvar intG[0] + 1
+bgload SHGET01.jpg 45
+setimg SHGET26.png 119 -11
+delay 1
+bgload SHGET01.jpg
+setimg SHGET26.png 119 14
+delay 1
+bgload SHGET01.jpg
+setimg SHGET26.png 119 39
+setimg SHGET32.png 120 30
+delay 1
+bgload SHGET01.jpg
+setimg SHGET26.png 119 64
+setimg SHGET32.png 120 25
+delay 1
+bgload SHGET01.jpg
+setimg SHGET26.png 119 89
+setimg SHGET23.png 123 25
+setimg SHGET32.png 120 80
+delay 1
+bgload SHGET01.jpg
+setimg SHGET26.png 119 114
+setimg SHGET23.png 123 15
+setimg SHGET32.png 120 75
+setimg SHGET25.png 123 100
+delay 1
+bgload SHGET01.jpg
+setimg SHGET26.png 119 139
+setimg SHGET23.png 123 10
+setimg SHGET32.png 120 70
+setimg SHGET25.png 123 95
+delay 1
+bgload SIRO.jpg 30
+sound I.aac
+delay 30
+label 165
+delay 120
+cleartext
+jump main.scr

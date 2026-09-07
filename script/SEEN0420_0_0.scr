@@ -1,0 +1,630 @@
+if rtf0 != ""
+	setvar rtf1 = "SEEN0420_0_0.scr"
+	setvar rtl1 = "rtl0"
+fi
+if rtf0 == ""
+	setvar rtf0 = "SEEN0420_0_0.scr"
+	setvar rtl0 = "rtl0"
+fi
+jump SEEN6900_3_0.scr
+label rtl0
+if rtf1 == ""
+	setvar rtf0 = ""
+fi
+if rtf1 != ""
+	setvar rtf1 = ""
+fi
+setvar intF[1110] = 20
+setvar intF[1112] = 1
+setvar strS[1004] = "SDTA0420"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1004] = ""
+label 1
+bgload SCLAB00.jpg 45
+delay 60
+setimg SCLAP06.png 5 5
+setimg SCLA0420.png 159 160
+delay 120
+if 0 == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = "KURO"
+goto 4
+label 2
+if 0 == 1
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = "SIRO"
+goto 4
+label 3
+setvar strS[1000] = "KURO"
+label 4
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+if intF[9] == 1
+	goto s3
+fi
+goto 6
+label s3
+if rtf0 != ""
+	setvar rtf1 = "SEEN0420_0_0.scr"
+	setvar rtl1 = "rtl1"
+fi
+if rtf0 == ""
+	setvar rtf0 = "SEEN0420_0_0.scr"
+	setvar rtl0 = "rtl1"
+fi
+jump SEEN6420_0_0.scr
+label rtl1
+if rtf1 == ""
+	setvar rtf0 = ""
+fi
+if rtf1 != ""
+	setvar rtf1 = ""
+fi
+setvar strS[1000] = "BG001"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s4
+fi
+goto 5
+label s4
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text (So, what should I do now...)
+text If I want to just laze around and kill time, where else is there to go but Sunohara's room?
+goto 14
+label 6
+if intF[9] == 0
+	goto s5
+fi
+goto 14
+label s5
+setvar strS[1000] = "BG010"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s6
+fi
+goto 7
+label s6
+setvar strS[1000] = ""
+label 7
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM15.mp3
+text Sunday.
+text I leave the house before noon, just like I would on a school day.
+text ...Stepping over my indolent father's sleeping body on my way out.
+setvar strS[1000] = "BG008"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s7
+fi
+goto 8
+label s7
+setvar strS[1000] = ""
+label 8
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Yesterday's rain stopped overnight, and the ground is already dry.
+text The sun shines gently on my face.
+text @[Tomoya]
+text (Now then, what should I do...)
+if intF[405] == 1
+	goto s8
+fi
+goto 13
+label s8
+if rtf0 != ""
+	setvar rtf1 = "SEEN0420_0_0.scr"
+	setvar rtl1 = "rtl2"
+fi
+if rtf0 == ""
+	setvar rtf0 = "SEEN0420_0_0.scr"
+	setvar rtl0 = "rtl2"
+fi
+jump SEEN4420_0_0.scr
+label rtl2
+if rtf1 == ""
+	setvar rtf0 = ""
+fi
+if rtf1 != ""
+	setvar rtf1 = ""
+fi
+if intF[410] == 1
+	goto s9
+fi
+goto 9
+label s9
+goto 26
+goto 13
+label 9
+if intF[410] == 0
+	goto s10
+fi
+goto 13
+label s10
+if 0 == 0
+	goto s11
+fi
+goto 10
+label s11
+setvar strS[1000] = "KURO"
+goto 12
+label 10
+if 0 == 1
+	goto s12
+fi
+goto 11
+label s12
+setvar strS[1000] = "SIRO"
+goto 12
+label 11
+setvar strS[1000] = "KURO"
+label 12
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text So, where to now...?
+text I guess I'm going to end up at the same place as always...
+goto 18
+label 13
+text If I want to just laze around and kill time, where else is there to go but Sunohara's room?
+text The sun may be shining gently, but that didn't make a difference.
+label 14
+music ~
+setvar strS[1000] = "BG033"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s13
+fi
+goto 15
+label s13
+setvar strS[1000] = ""
+label 15
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM14.mp3
+text On my way to the dorms...
+sound WX.aac
+text @[Voice]
+text Hey, you over there.
+text ......
+sound WY.aac
+text @[Voice]
+text Yeah, you!
+text Is he talking to me...?
+text I turn around to find a young man calling me over.
+sound WZ.aac
+text @[Man]
+text Please, I'm asking ya. Come with me.
+choice Follow him|Ignore him
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s14
+fi
+goto 17
+label s14
+if rtf0 != ""
+	setvar rtf1 = "SEEN0420_0_0.scr"
+	setvar rtl1 = "rtl3"
+fi
+if rtf0 == ""
+	setvar rtf0 = "SEEN0420_0_0.scr"
+	setvar rtl0 = "rtl3"
+fi
+jump SEEN7100_0_0.scr
+label rtl3
+if rtf1 == ""
+	setvar rtf0 = ""
+fi
+if rtf1 != ""
+	setvar rtf1 = ""
+fi
+if intF[610] == 0
+	goto s15
+fi
+goto 16
+label s15
+goto 18
+label 16
+goto 26
+label 17
+if intF[1089] == 1
+	goto s16
+fi
+goto 26
+label s16
+text After ignoring him for a while, I hear the man click his tongue in annoyance before I feel his presence disappear.
+label 18
+setvar strS[1000] = "BG034"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s17
+fi
+goto 19
+label s17
+setvar strS[1000] = ""
+label 19
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text ......
+if intF[632] == 1
+	goto s18
+fi
+goto 20
+label s18
+if rtf0 != ""
+	setvar rtf1 = "SEEN0420_0_0.scr"
+	setvar rtl1 = "rtl4"
+fi
+if rtf0 == ""
+	setvar rtf0 = "SEEN0420_0_0.scr"
+	setvar rtl0 = "rtl4"
+fi
+jump SEEN7500_0_0.scr
+label rtl4
+if rtf1 == ""
+	setvar rtf0 = ""
+fi
+if rtf1 != ""
+	setvar rtf1 = ""
+fi
+goto 26
+label 20
+music ~
+setvar strS[1000] = "BG046"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s19
+fi
+goto 21
+label s19
+setvar strS[1000] = ""
+label 21
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08A.mp3
+text I enter Sunohara's room to find him still sleeping in his futon.
+text @[Tomoya]
+text Wake up, Sunohara. You have a visitor. I'm here.
+text All I get in reply are the snores of a guy, who when sleeping, sounds like that of a domestic truffle hog sniffing out a prized patch of mushroom-y goodness. He's sound asleep.
+text He probably just went to bed late again.
+text @[Tomoya]
+text I'm gonna play a prank on you if you don't get up!
+text ......
+text I can hear lively voices coming from the hallway.
+text It sounds like some rugby club idiots on their way to practice.
+text Sunohara's clothes are stacked in a mountain on his floor. I take some and tie sleeve to sleeve.
+text I then tie one end to Sunohara's foot.
+text After that, I take the other with me out into the hallway.
+setvar strS[1000] = "BG045"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s20
+fi
+goto 22
+label s20
+setvar strS[1000] = ""
+label 22
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text One rugby team member from next door is just leaving as I do.
+text @[Tomoya]
+text Hey.
+text I speak to him.
+sound X0.aac
+text @[Rugby Player]
+text What?
+text @[Tomoya]
+text Let's play tug of war.
+sound X1.aac
+text @[Rugby Player]
+text Tug of war?
+text @[Tomoya]
+text Yeah. You'll be up against Sunohara. He said he wanted to have a manly battle against you.
+sound X2.aac
+text @[Rugby Player]
+text A battle of strength...? He's got some pretty big balls deciding to take me on.
+sound X3.aac
+text @[Rugby Player]
+text All right, it'll be a good warm-up before practice. I accept.
+text @[Tomoya]
+text Okay, here you go.
+text I have him hold the cuff of the clothes, used in place of a rope.
+sound X4.aac
+text @[Rugby Player]
+text Okay, whenever you're ready.
+text The clothes trail off into Sunohara's room.
+text @[Tomoya]
+text Okay, Sunohara's all ready too. Here we go.
+text @[Tomoya]
+text On your mark, get set...
+text @[Tomoya]
+text Go!
+sound X5.aac
+text @[Rugby Player]
+text URRRYAAAAGH!
+text The rugby player runs down the hall like a complete maniac.
+text Trailing behind him...
+sound X6.aac
+text @[Sunohara]
+text HYAAAAAAAAGHH!!
+text ...is Sunohara, face-up and sliding across the floor, looking like a cross between shock and "I'm going to kill you" fury.
+music ~
+setvar strS[1000] = "BG046"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s21
+fi
+goto 23
+label s21
+setvar strS[1000] = ""
+label 23
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM10.mp3
+setvar strS[1001] = "CGSH23B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound X7.aac
+text @[Sunohara]
+text I nearly died there!!
+text @[Tomoya]
+text Oh stop exaggerating, drama queen.
+setvar strS[1001] = "CGSH17B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH17B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound X8.aac
+text @[Sunohara]
+text Just imagine waking up to find yourself sliding along the floor at break-neck speeds!
+sound X9.aac
+text @[Sunohara]
+text If I was an old dude, I would've had a freakin' heart attack! And I don't even have any baby aspirin!
+text @[Tomoya]
+text Well, the good news is that you're young. It did a superb job of waking you up though, didn't it?
+setvar strS[1001] = "CGSH23B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound XA.aac
+text @[Sunohara]
+text Uh, yeah, but I'd prefer to not be accosted by my alarm clock.
+setvar strS[1001] = "CGSH16B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound XB.aac
+text @[Sunohara]
+text Sheesh... and can't you at least let me sleep 'til it's dark outside?
+text @[Tomoya]
+text I'd never imagine someone with such a stellar sense of time like yours to be a student.
+setvar strS[1001] = "CGSH18B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound XC.aac
+text @[Sunohara]
+text So, why'd you wake me up this early anyway?
+text @[Tomoya]
+text No reason, really.
+setvar strS[1001] = "CGSH16B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound XD.aac
+text @[Sunohara]
+text ...
+text @[Tomoya]
+text ...
+text @[Sunohara]
+text ...
+sound XF.aac
+text @[Sunohara]
+text ...Can I go back to sleep?
+text @[Tomoya]
+text Sure, but I'll just play another prank on you.
+text @[Sunohara]
+text ...
+text @[Tomoya]
+text Actually, please do go back to sleep. I can have more fun that way.
+setvar strS[1001] = "CGSH23B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound XH.aac
+text @[Sunohara]
+text Well I'm definitely not going to now.
+text @[Tomoya]
+text Lame.
+sound XI.aac
+text @[Sunohara]
+text ...
+text @[Tomoya]
+text ...
+text @[Sunohara]
+text ...
+text @[Tomoya]
+text ...
+sound XK.aac
+text @[Sunohara]
+text Agh, my eyes hurt!!
+text @[Tomoya]
+text You should try this thing called blinking. I hear it's awesome.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Sprawled out on the floor, I start reading a book.
+text That's all there is to do in this room. Read, read, and read some more.
+if intF[810] == 1
+	goto s22
+fi
+goto 25
+label s22
+text In my hands I have open a manga I've never seen before... Wait, it's a choose-your-own-adventure book.
+text @[Tomoya]
+text (It's always such a pain jumping around to whatever page they tell you to go to...)
+choice Find some manga|Try reading the adventure book
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s23
+fi
+goto 24
+label s23
+text I toss it away and pick up a volume of manga.
+text @[Tomoya]
+text (I feel like I've read this one before... Eh, whatever.)
+goto 25
+label 24
+if intF[1089] == 1
+	goto s24
+fi
+goto 25
+label s24
+text @[Tomoya]
+text (Sunohara did stay up all night reading this thing. You never know until you try...)
+if rtf0 != ""
+	setvar rtf1 = "SEEN0420_0_0.scr"
+	setvar rtl1 = "rtl5"
+fi
+if rtf0 == ""
+	setvar rtf0 = "SEEN0420_0_0.scr"
+	setvar rtl0 = "rtl5"
+fi
+jump SEEN0555_0_0.scr
+label rtl5
+if rtf1 == ""
+	setvar rtf0 = ""
+fi
+if rtf1 != ""
+	setvar rtf1 = ""
+fi
+label 25
+text And so, it looks like even my Sunday will be spent doing a whole bunch of nothing.
+label 26
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s25
+fi
+goto 27
+label s25
+setvar strS[1000] = ""
+label 27
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+jump SEEN0421_0_0.scr

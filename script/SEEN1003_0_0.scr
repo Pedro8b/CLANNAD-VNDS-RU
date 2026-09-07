@@ -1,0 +1,1254 @@
+music ~
+text @[Tomoya]
+text Hey.
+music BGM04A.mp3
+setvar strS[1001] = "CGFU19A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1MD.aac
+text @[Fuko]
+text Hm?
+text Hearing my voice, Fuko stops and turns around.
+setvar strS[1001] = "CGFU10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1ME.aac
+text @[Fuko]
+text Ah, the weird person.
+text And as always, a star sculpture can be seen in her hands.
+text @[Tomoya]
+text You're no better than me.
+text @[Tomoya]
+text Running around the school with something like that in your hands... are you a kid?
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1MF.aac
+text @[Fuko]
+text Of course not. If you must know, Fuko is very mature for her age.
+text @[Tomoya]
+text I'm actually quite amazed you can even say something like that...
+text @[Tomoya]
+text You're like the brattiest student I've ever seen in this school.
+text She points straight at me.
+text @[Tomoya]
+text What's this... are you trying to say I'm brattier than you?
+text She nods.
+setvar strS[1001] = "CGFU30A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU30A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1MG.aac
+text @[Fuko]
+text Fuko is busy. There's no time to play around.
+text @[Tomoya]
+text A rather big mouth you've got there, I see. How is what you're doing any different from playing around?
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1MH.aac
+text @[Fuko]
+text Totally different. Fuko has desperately thought about what's best for Onee-chan...
+sound 1MI.aac
+text @[Fuko]
+text And after a lot of thinking, Fuko came up with this wonderfully adorable...
+setvar strS[1001] = "CGFU34A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+setimg CGFU34A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1MJ.aac
+text @[Fuko]
+text ...
+text @[Tomoya]
+text Hey!
+sound 1MK.aac
+text @[Fuko]
+text ...
+text I try waving my hands in front of her eyes.
+text ...No reaction whatsoever.
+text She seems to have gone off to that other world again.
+text @[Tomoya]
+text (Just what am I supposed to do...)
+if intF[106] == 1
+	goto s0
+fi
+if intF[132] == 1
+	goto s0
+fi
+goto 1
+label s0
+goto 20
+label 1
+choice Time for a prank|Just leave her here
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s1
+fi
+goto 19
+label s1
+text @What kind of prank?
+setvar intF[110] = 1
+label 2
+setvar strS[1011] = "Make her drink juice with her nose       "
+setvar strS[1012] = "Put her around somewhere                 "
+setvar strS[1013] = "Switch the person she's talking to       "
+setvar strS[1014] = "Switch the carving she's holding         "
+if intF[100] == 0
+	setvar strS[1011] + "Lv1"
+fi
+if intF[100] == 1
+	setvar strS[1011] + "Lv2"
+fi
+if intF[100] == 2
+	setvar strS[1011] + "\x1b[33;1mMaster"
+fi
+if intF[101] == 0
+	setvar strS[1012] + "Lv1"
+fi
+if intF[101] == 1
+	setvar strS[1012] + "Lv2"
+fi
+if intF[101] == 2
+	setvar strS[1012] + "\x1b[33;1mMaster"
+fi
+if intF[103] == 0
+	setvar strS[1013] + "Lv1"
+fi
+if intF[103] == 1
+	setvar strS[1013] + "Lv2"
+fi
+if intF[103] == 2
+	setvar strS[1013] + "\x1b[33;1mMaster"
+fi
+if intF[104] == 0
+	setvar strS[1014] + "Lv1"
+fi
+if intF[104] == 1
+	setvar strS[1014] + "Lv2"
+fi
+if intF[104] == 2
+	setvar strS[1014] + "\x1b[33;1mMaster"
+fi
+choice {$strS[1011]}|{$strS[1012]}|{$strS[1013]}
+setvar intF[1089] = selected
+sound 01.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s2
+fi
+goto 7
+label s2
+if intF[100] == 2
+	goto s3
+fi
+goto 3
+label s3
+text @[Tomoya]
+text @(Making her drink juice with her nose is getting old... Let's try something else...)
+goto 2
+goto 6
+label 3
+if intF[100] == 1
+	goto s4
+fi
+goto 5
+label s4
+text @[Tomoya]
+text (It's going to happen this time...)
+text I swiftly insert the top of the straw into Fuko's nose.
+text @[Tomoya]
+text (Okay... I'm gonna do it...)
+text @[Tomoya]
+text Haah!
+text I ready myself and clench my hand gripping the pack of juice.
+text *Pew*
+setvar strS[1001] = "CGFU31A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU31A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1ML.aac
+text @[Fuko]
+text Mmm-!
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She's returning to her senses. I jump back to put some distance between us and put on a calm face.
+text Let's see... how it will turn out...
+setvar strS[1001] = "CGFU17A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1MM.aac
+text @[Fuko]
+text Nose feels strange again!
+setvar strS[1001] = "CGFU31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1MN.aac
+text @[Fuko]
+text *Ppfffff* *Ppfffff*
+text She's blowing her nose like last time.
+setvar strS[1001] = "CGFU30"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU30.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1MO.aac
+text @[Fuko]
+text Mmm, it feels kind of itchy, but nothing will come out.
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1MP.aac
+text @[Fuko]
+text And for some reason, Fuko's throat is wet.
+text ...I did it... I made her drink it!
+delay 60
+sound F.aac
+text @You have mastered the "Make Fuko drink juice with her nose" skill!
+delay 312
+setvar intF[124] + 1
+if intF[124] == 1
+	goto s5
+fi
+goto 4
+label s5
+text ...Am I dumb or something?
+label 4
+setvar intF[100] = 2
+goto 6
+label 5
+if intF[100] == 0
+	goto s6
+fi
+goto 6
+label s6
+text Let's see. Not sure if it will be interesting, but why not?
+text I insert the juice pack's straw into her defenseless nose.
+text *Sschlurp*
+setvar strS[1001] = "CGFU31A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU31A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1MQ.aac
+text @[Fuko]
+text Wah...
+text I was too forceful...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Having regained her senses, Fuko jumps a step back.
+text @[Tomoya]
+text (Damn... I failed...)
+setvar strS[1001] = "CGFU17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1MR.aac
+text @[Fuko]
+text Nose... feels... strange!
+setvar strS[1001] = "CGFU31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1MS.aac
+text @[Fuko]
+text *Ppfffff* *Ppfffff*
+text She's desperately blowing her nose.
+text Well, there's no way anything would come out, though.
+setvar intF[100] = 1
+label 6
+goto 18
+label 7
+if intF[1089] == 1
+	goto s7
+fi
+goto 17
+label s7
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+if intF[101] == 0
+	goto s8
+fi
+goto 8
+label s8
+text I grab Fuko by the shoulders and pull her forward step by step.
+text I take a turn at the corner and leave the tranced-out Fuko at the end of a narrow passageway. I then innocently return to my position in the corridor to wait for her.
+bgload KURO.jpg 55
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text ...
+text @[Tomoya]
+text (It's taking some time...)
+setvar strS[1001] = "CGFU16A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGFU16A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1MT.aac
+text @[Fuko]
+text Wah!
+text With her wits once again about her, Fuko runs out of the passageway.
+setvar strS[1001] = "CGFU17A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1MU.aac
+text @[Fuko]
+text Fuko was in some strange place just now!
+sound 1MV.aac
+text @[Fuko]
+text There was a line of many weirdly-shaped toilet bowls!
+text @[Tomoya]
+text Excellent. You have learned something new. The place you just described is called the male washroom.
+sound 1MW.aac
+text @[Fuko]
+text Why was Fuko in such a place?!
+text @[Tomoya]
+text How should I know? Maybe you just wandered in there without realizing it.
+setvar strS[1001] = "CGFU30A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU30A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1MX.aac
+text @[Fuko]
+text So that's what happened... Please intervene before something like that happens again.
+text @[Tomoya]
+text Like I said, stop spacing out like that.
+setvar intF[101] = 1
+goto 16
+label 8
+if intF[101] == 1
+	if intF[502] == 0
+		goto s9
+	fi
+fi
+goto 12
+label s9
+text I grab Fuko by the shoulders and pull her forward step by step.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s10
+fi
+goto 9
+label s10
+setvar strS[1000] = ""
+label 9
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG016"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s11
+fi
+goto 10
+label s11
+setvar strS[1000] = ""
+label 10
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I knock on the door of one of the rooms on the first floor.
+text No reply. That means no one is inside.
+text After slipping inside the room, I leave Fuko sitting on the innermost chair and go back to the corridor.
+text Everything is ready. I stand in the distance and wait.
+bgload KURO.jpg 55
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text (As usual, she's taking forever...)
+text I notice a teacher descending the staircase. He heads straight to the room where I put Fuko, and enters.
+text I keep on waiting.
+text ......
+setvar strS[1001] = "CGFU16A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGFU16A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1MY.aac
+text @[Fuko]
+text Wah!
+text She's coming out.
+text @[Tomoya]
+text What's wrong, Fuko?
+setvar strS[1001] = "CGFU17A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1MZ.aac
+text @[Fuko]
+text Fuko was in some strange place again!
+sound 1N0.aac
+text @[Fuko]
+text Fuko was sitting on a really big soft chair with arm rests!
+sound 1N1.aac
+text @[Fuko]
+text It was so comfy, but suddenly there was a bearded old man standing right beside Fuko and smiling!
+sound 1N2.aac
+text @[Fuko]
+text It was really creepy!
+text @[Tomoya]
+text Excellent. You have learned something new. The person you just described is the most important individual in this school.
+setvar strS[1001] = "CGFU19A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1N3.aac
+text @[Fuko]
+text Hm?
+text @[Tomoya]
+text He's the school principal. And the place you were in is the principal's office.
+setvar strS[1001] = "CGFU17A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1N4.aac
+text @[Fuko]
+text Wah... But Fuko used this to hit his head as hard as possible...
+text Sounds like that'd hurt like hell.
+setvar strS[1001] = "CGFU30A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU30A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1N5.aac
+text @[Fuko]
+text Seriously though, why was Fuko in such a place...
+text @[Tomoya]
+text Really. Such a mystery.
+sound 1N6.aac
+text @[Fuko]
+text So mysterious.
+sound 1N7.aac
+text @[Fuko]
+text It's unsettling to think that Fuko may have some weird habit.
+text @[Tomoya]
+text Which you do.
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1N8.aac
+text @[Fuko]
+text But Fuko always pays attention to her surroundings, so that's not possible.
+text Listen to what people say, will you?
+text @[Tomoya]
+text I've never met anyone as full of openings as you.
+sound 1N9.aac
+text @[Fuko]
+text Impossible. Fuko was born with a cautious instinct.
+text @[Tomoya]
+text Is that so...
+text There's nothing more to be gained from this prank...
+delay 60
+sound F.aac
+text @You have mastered the "Put Fuko somewhere randomly" skill!
+delay 312
+setvar intF[124] + 1
+if intF[124] == 1
+	goto s12
+fi
+goto 11
+label s12
+text ...Am I dumb or something?
+label 11
+setvar intF[101] = 2
+goto 16
+label 12
+if intF[101] == 1
+	if intF[502] == 1
+		goto s13
+	fi
+fi
+goto 16
+label s13
+text I grab Fuko by the shoulders and pull her forward step by step.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s14
+fi
+goto 13
+label s14
+setvar strS[1000] = ""
+label 13
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG019"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s15
+fi
+goto 14
+label s15
+setvar strS[1000] = ""
+label 14
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Then I put her in a certain room.
+bgload KURO.jpg 55
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text ......
+text ......
+text ......
+text It's taking quite a long time...
+setvar strS[1001] = "CGFU31A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU31A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1NA.aac
+text @[Fuko]
+text Mmm!
+text She's finally coming out.
+text @[Tomoya]
+text What's wrong, Fuko?
+setvar strS[1001] = "CGFU17A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1NB.aac
+text @[Fuko]
+text Fuko was in some strange place again!
+sound 1NC.aac
+text @[Fuko]
+text There were a lot of old books everywhere!
+text @[Tomoya]
+text I see. That place is called the reference room.
+sound 1ND.aac
+text @[Fuko]
+text Suddenly a cup of coffee appeared in front of Fuko!
+sound 1NE.aac
+text @[Fuko]
+text Then there was this girl. The top of her head looked like the antenna of a demon detector. She was looking and smiling at Fuko!
+sound 1NF.aac
+text @[Fuko]
+text When Fuko told her that Fuko could only drink really sweet coffee, she put a lot of sugar into the cup.
+sound 1NG.aac
+text @[Fuko]
+text Then she kept on watching as Fuko drank the coffee.
+setvar strS[1001] = "CGFU16A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU16A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1NH.aac
+text @[Fuko]
+text Then it felt really comfy there! Nothing else seemed to matter anymore!
+sound 1NI.aac
+text @[Fuko]
+text Just a few more minutes and Fuko would have become a person without any purpose or goal in life!
+setvar strS[1001] = "CGFU17A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1NJ.aac
+text @[Fuko]
+text Haa... haa... That was so scary...
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1NK.aac
+text @[Fuko]
+text It was such a dangerous place! Too relaxing!
+text @[Tomoya]
+text My goodness, that sounds terrible.
+setvar strS[1001] = "CGFU30A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU30A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1NL.aac
+text @[Fuko]
+text Seriously though, since when did Fuko start doing things like the Kawaguchi Adventure Team?
+sound 1NM.aac
+text @[Fuko]
+text Fuko's become quite a reckless adventurer.
+text @[Tomoya]
+text Totally.
+text There's nothing more to be gained from this prank...
+delay 60
+sound F.aac
+text @You have mastered the "Put Fuko somewhere randomly" skill!
+delay 312
+setvar intF[124] + 1
+if intF[124] == 1
+	goto s16
+fi
+goto 15
+label s16
+text ...Am I dumb or something?
+label 15
+setvar intF[101] = 2
+setvar intF[131] = 1
+label 16
+goto 18
+label 17
+if intF[1089] == 2
+	goto s17
+fi
+goto 18
+label s17
+text I glance around the corridor.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text An underclassman is heading this way. I call him over and have him stand before the daydreaming Fuko.
+sound 1NN.aac
+text @[Male Student]
+text What did you want?
+text @[Tomoya]
+text When she comes to, keep telling her "I'm Okazaki. My face has changed."
+sound 1NO.aac
+text @[Male Student]
+text Huh...?  What for?
+text @[Tomoya]
+text I have to prove to her that she keeps spacing out all the time. Please do exactly as I say.
+sound 1NP.aac
+text @[Male Student]
+text Well...
+text @[Tomoya]
+text Then, if she asks why, tell her "I occasionally molt out of my skin."
+text @[Tomoya]
+text For anything else, just say "Apparently." Got it?
+sound 1NQ.aac
+text @[Male Student]
+text S-Sure...
+bgload KURO.jpg 88
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I take a few steps away to observe them from a safe distance.
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1NR.aac
+text @[Fuko]
+text Hah...
+text Fuko's back to reality.
+setvar strS[1001] = "CGFU10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1NS.aac
+text @[Fuko]
+text Hmm, what were we talking about...
+setvar strS[1001] = "CGFU19A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1NT.aac
+text @[Fuko]
+text Huh?
+text She's realized the person standing before her isn't me.
+sound 1NU.aac
+text @[Fuko]
+text Where did Okazaki-san go?
+sound 1NV.aac
+text @[Male Student]
+text I'm Okazaki. My face has changed.
+setvar strS[1001] = "CGFU17A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1NW.aac
+text @[Fuko]
+text Wha...
+sound 1NX.aac
+text @[Fuko]
+text Please wait a moment...
+sound 1NY.aac
+text @[Fuko]
+text One more time...
+sound 1NZ.aac
+text @[Fuko]
+text What happened to Okazaki-san?
+sound 1O0.aac
+text @[Male Student]
+text I'm Okazaki. My face has changed.
+setvar strS[1001] = "CGFU22A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGFU22A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1O1.aac
+text @[Fuko]
+text Wah!
+sound 1O2.aac
+text @[Fuko]
+text Okazaki-san, your face has really changed!
+sound 1O3.aac
+text @[Fuko]
+text Just what on earth could have happened to you?
+sound 1O4.aac
+text @[Male Student]
+text I occasionally molt out of my skin.
+sound 1O5.aac
+text @[Fuko]
+text W-Wait a moment!
+sound 1O6.aac
+text @[Fuko]
+text That's too shocking a confession!
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1O7.aac
+text @[Fuko]
+text Okazaki-san, do you... molt?
+sound 1O8.aac
+text @[Male Student]
+text Apparently.
+setvar strS[1001] = "CGFU22A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGFU22A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1O9.aac
+text @[Fuko]
+text How can you be so calm about it?!
+setvar strS[1001] = "CGFU17A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1OA.aac
+text @[Fuko]
+text Ahh, Fuko never knew such a person existed!
+sound 1OB.aac
+text @[Fuko]
+text Or maybe it's common and Fuko just wasn't aware of it?!
+sound 1OC.aac
+text @[Fuko]
+text So are there other people who molt like you?
+sound 1OD.aac
+text @[Male Student]
+text Apparently.
+setvar strS[1001] = "CGFU22A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGFU22A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1OE.aac
+text @[Fuko]
+text So there are!
+sound 1OF.aac
+text @[Fuko]
+text Fuko doesn't molt!
+setvar strS[1001] = "CGFU17A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1OG.aac
+text @[Fuko]
+text Or rather, Fuko wouldn't want to! It's such a gross thing to do!
+sound 1OH.aac
+text @[Fuko]
+text Haa... It is incredibly confusing! The overturn of common sense!
+sound 1OI.aac
+text @[Fuko]
+text Is this just a bad dream? Or is this real life?
+sound 1OJ.aac
+text @[Male Student]
+text Apparently.
+setvar strS[1001] = "CGFU31A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGFU31A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1OK.aac
+text @[Fuko]
+text So this is real life?!
+sound 1OL.aac
+text @[Fuko]
+text There's no way to put it into words. This shocking truth!
+text Oh, God, this is amazing.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text "That's enough," I signal the male student.
+text Then I switch place with him while Fuko's still burying her face in her hands.
+text @[Tomoya]
+text Phew...
+text @[Tomoya]
+text Hey, Fuko.
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1OM.aac
+text @[Fuko]
+text It's such a shock, but there's no choice but to accept the new Okazaki-san...
+setvar strS[1001] = "CGFU16A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGFU16A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1ON.aac
+text @[Fuko]
+text Wait, you've just molted again!
+sound 1OO.aac
+text @[Fuko]
+text Or rather, you've put your old skin back on!
+text @[Tomoya]
+text What the heck are you talking about?
+setvar strS[1001] = "CGFU17A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1OP.aac
+text @[Fuko]
+text You had a different face just now!
+sound 1OQ.aac
+text @[Fuko]
+text And you said that was because you molted out of your old skin.
+text @[Tomoya]
+text What? Where on earth would you ever find a person who molts? Humans aren't snakes, you know.
+setvar strS[1001] = "CGFU19A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1OR.aac
+text @[Fuko]
+text But...
+sound 1OS.aac
+text @[Fuko]
+text Ah...
+text @[Tomoya]
+text What's wrong?
+setvar strS[1001] = "CGFU17A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1OT.aac
+text @[Fuko]
+text No... This is somewhat relieving...
+sound 1OU.aac
+text @[Fuko]
+text So it was just a bad dream, after all...
+sound 1OV.aac
+text @[Fuko]
+text That wasn't good for the heart at all.
+text @[Tomoya]
+text That's what you get for daydreaming all the time.
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1OW.aac
+text @[Fuko]
+text Fuko doesn't daydream.
+text She hasn't learned anything at all...
+setvar intF[103] = 1
+label 18
+setvar strS[1001] = "CGFU30A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU30A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1OX.aac
+text @[Fuko]
+text Fuko's busy, and yet she has wasted time on something so meaningless.
+text @[Tomoya]
+text Are you going to hand these things out again?
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1OY.aac
+text @[Fuko]
+text Of course.
+sound 1OZ.aac
+text @[Fuko]
+text Well, then.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text With that said, she trots away.
+text I decide to return to the classroom.
+goto 23
+label 19
+if intF[1089] == 1
+	goto s18
+fi
+goto 23
+label s18
+label 20
+text This is going to take some time. Guess I'll just leave...
+text Even with that said, I don't think I can leave her standing here so defenselessly.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s19
+fi
+goto 21
+label s19
+setvar strS[1000] = ""
+label 21
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I return to the classroom to find a piece of paper. With a marker, I write something down and then go back to Fuko.
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s20
+fi
+goto 22
+label s20
+setvar strS[1000] = ""
+label 22
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGFU34A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU34A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1P0.aac
+text @[Fuko]
+text ...
+text I place the paper on her forehead and stick it on with tape.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text "Danger: do not remove. Anyone who comes into field of vision shall be attacked."
+text @[Tomoya]
+text This should do the trick.
+text @[Tomoya]
+text Geez, you could be a little grateful.
+text My work done, I turn away and walk back to the classroom.
+setvar intF[127] = 1
+label 23
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0

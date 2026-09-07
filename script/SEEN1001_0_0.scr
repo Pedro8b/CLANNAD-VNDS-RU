@@ -1,0 +1,121 @@
+choice I'm bored; I should try to make her drink juice through her nose|Keep waiting
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar intF[108] = 1
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Let's see. Not sure if it will be interesting, but why not?
+text I insert the straw sticking from my half-empty juice pack into Fuko's nose.
+text *Sschlurp*
+setvar strS[1001] = "CGFU17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1LI.aac
+text @[Fuko]
+text Wah...
+text I put too much strength into it...
+text Having regained her senses, Fuko jumps a step back.
+sound 1LJ.aac
+text @[Fuko]
+text Nose... feels... strange!
+setvar strS[1001] = "CGFU31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1LK.aac
+text @[Fuko]
+text *Ppfffff* *Ppfffff*
+text She's desperately blowing her nose.
+text Well, there's no way anything would come out, though.
+text @[Tomoya]
+text You're just imagining things. Don't worry.
+text It seems I'm free to do whatever I want when she's like that.
+text Something to look forward to next time.
+setvar intF[100] = 1
+goto 2
+label 1
+if intF[1089] == 1
+	goto s1
+fi
+goto 2
+label s1
+text ......
+text I keep on waiting.
+text @[Tomoya]
+text Hey, you!
+sound 1LL.aac
+text @[Fuko]
+text ...
+text @[Tomoya]
+text Come back here already!
+sound 1LM.aac
+text @[Fuko]
+text ...
+text @[Tomoya]
+text Ooooi!
+sound 1LN.aac
+text @[Fuko]
+text ...
+text @[Tomoya]
+text I'm going to leave you here!
+sound 1LO.aac
+text @[Fuko]
+text ...
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1LP.aac
+text @[Fuko]
+text Actually, it could be way more adorable, but that's all we have for now.
+text @[Tomoya]
+text Don't just bring back the conversation after all this time!
+setvar strS[1001] = "CGFU15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1LQ.aac
+text @[Fuko]
+text Yes?
+text Apparently, she isn't even aware that she's daydreaming.
+text That means I can do anything to her when she's like that.
+text If she's going to daydream in front of me again, I'll let her experience something she won't ever forget.
+setvar intF[102] = 1
+label 2
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0

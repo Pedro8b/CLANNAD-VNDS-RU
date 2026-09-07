@@ -1,0 +1,1179 @@
+setvar intF[1110] = 8
+setvar intF[1112] = 1
+setvar strS[1004] = "SDTA0508"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1004] = ""
+label 1
+bgload SCLAB00.jpg 45
+delay 60
+setimg SCLAP03.png 5 5
+setimg SCLA0508.png 159 160
+delay 120
+if 0 == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = "KURO"
+goto 4
+label 2
+if 0 == 1
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = "SIRO"
+goto 4
+label 3
+setvar strS[1000] = "KURO"
+label 4
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG021E"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 5
+label s3
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08B.mp3
+text The bell rings, bringing an end to fourth period.
+text Once the teacher leaves the classroom, the students begin to get out their lunch boxes or head to the cafeteria.
+text I check for my wallet, and stand up to head to the store.
+setvar strS[1001] = "CGSH11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AOR.aac
+text @[Sunohara]
+text Okazaki, you're going to the store, right? Let's go together.
+text @[Tomoya]
+text Yeah.
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s4
+fi
+goto 6
+label s4
+setvar strS[1000] = ""
+label 6
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text We leave the classroom, and head for the cafeteria.
+text But then a familiar face runs toward us.
+text @[Tomoya]
+text ...Fujibayashi?
+setvar strS[1001] = "CGRY19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AOS.aac
+text @[Ryou]
+text Ah, Okazaki-kun.
+text @[Tomoya]
+text What's up? Did you forget your wallet?
+setvar strS[1001] = "CGRY19A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY19A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AOT.aac
+text @[Ryou]
+text Haah... haah... N-No... um... you haven't gone to the store yet, have you?
+text @[Tomoya]
+text Nah, I'm heading there right now.
+setvar strS[1001] = "CGRY21A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY21A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AOU.aac
+text @[Ryou]
+text Haah... haah... t-thank goodness...
+text Having ran out of breath on her way running back here, Fujibayashi catches her breath while she smiles.
+text @[Tomoya]
+text ?
+setvar strS[1001] = "CGRY19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AOV.aac
+text @[Ryou]
+text Um... Here.
+text She says, and holds out a paper bag that I've seen before.
+text I  recognize it as the bag the store uses.
+setvar strS[1001] = "CGRY22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AOW.aac
+text @[Ryou]
+text W-Would you like to eat together?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Upon hearing that, Sunohara and I look at each other.
+text Not at all expecting this from Fujibayashi, I am honestly perplexed.
+text Moreover, due to what happened between us and Kyou yesterday, it feels a little awkward.
+setvar strS[1001] = "CGSH24"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AOX.aac
+text @[Sunohara]
+text Um... it seems I'm in the way, so guess I'll go.
+text @[Tomoya]
+text Ah...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Sunohara holds his hand up, and then quickly leaves.
+text No, rather... he runs away.
+text When Sunohara's back disappears at a corner of the hallway, I turn to Fujibayashi.
+setvar strS[1001] = "CGRY14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AOY.aac
+text @[Ryou]
+text Ah... uh... umm... was that rude...?
+text @[Tomoya]
+text Nah, don't worry about it.
+text @[Tomoya]
+text Want to go to the front yard?
+setvar strS[1001] = "CGRY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AOZ.aac
+text @[Ryou]
+text Okay.
+music ~
+setvar strS[1000] = "BG057E"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s5
+fi
+goto 7
+label s5
+setvar strS[1000] = ""
+label 7
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08A.mp3
+text In the front yard.
+text It's the most crowded place during the lunch break, second only to the cafeteria.
+text There are several groups of students enjoying lunch here.
+text Not long ago, we were eating lunch with Kyou on a plastic sheet here.
+text Before that, we never did things like this.
+text And Fujibayashi wasn't there next to me.
+text An astonishing number of things have changed in such a short period of time.
+text It makes me wonder what will happen to us from here on out...
+setvar strS[1001] = "CGRY15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AP0.aac
+text @[Ryou]
+text Um... Are you okay with here?
+text She points at a stone fence suitable for sitting and asks.
+text @[Tomoya]
+text Yeah, that sounds good.
+setvar strS[1001] = "CGRY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AP1.aac
+text @[Ryou]
+text Yes.
+text Fujibayashi sits on the stone fence, and then fishes through the contents of the paper bag as she peeks inside.
+text Then, having found what she was looking for, she hands it to me.
+setvar strS[1001] = "CGRY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AP2.aac
+text @[Ryou]
+text Here.
+text @[Tomoya]
+text A curry bread and a melon bread?
+setvar strS[1001] = "CGRY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AP3.aac
+text @[Ryou]
+text You mentioned last time that Onee-chan forced you to exchange your bread for her lunch box.
+text @[Tomoya]
+text Y-Yeah... Oh, yeah, that did happen.
+text It was two weeks ago, wasn't it?
+text That Kyou told me to come here and have lunch with Ryou.
+text She actually remembers what we talked about after all this time...?
+text @[Tomoya]
+text Hm?
+text I glance around us.
+setvar strS[1001] = "CGRY15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AP4.aac
+text @[Ryou]
+text Is something wrong?
+text @[Tomoya]
+text This is the same place as two weeks ago, right?
+setvar strS[1001] = "CGRY19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AP5.aac
+text @[Ryou]
+text Oh, you can tell?
+setvar strS[1001] = "CGRY21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AP6.aac
+text @[Ryou]
+text Actually, I secretly told my own fortune during fourth period.
+text From her pocket, Fujibayashi takes out the deck of tarot cards that I ─ no, Kyou ─ bought, and smiles.
+setvar strS[1001] = "CGRY22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AP7.aac
+text @[Ryou]
+text I tried a hexagram spread, and got the card "Judgement" in my keyword position.
+setvar strS[1001] = "CGRY21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AP8.aac
+text @[Ryou]
+text In its upright position, this card stands for reunion, absolution, restart, and new beginning.
+setvar strS[1001] = "CGRY22A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY22A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AP9.aac
+text @[Ryou]
+text Reunion and restart can be taken to mean to visit a place you have been to once more.
+sound APA.aac
+text @[Ryou]
+text And that's why... um... I thought about the place where we ate lunch together... the first time...
+text When she neared the end of her sentence, she kept glancing between me and her hands while she spoke softly.
+text @[Tomoya]
+text I see. Then that means we'll have a good future ahead of us if we do this?
+setvar strS[1001] = "CGRY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APB.aac
+text @[Ryou]
+text Y-Yes, exactly. Actually, I got an upright "Wheel of Fortune" in my final outcome position.
+sound APC.aac
+text @[Ryou]
+text It stands for destiny, chances, and new developments.
+setvar strS[1001] = "CGRY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APD.aac
+text @[Ryou]
+text Just as its name implies, it can be taken to mean that things will continue on as is indefinitely.
+sound APE.aac
+text @[Ryou]
+text Which is why I thought if things are going well now, then the future must be bright as well.
+text Fujibayashi says with a happy expression.
+text If things are going well now... huh?
+text I wonder if I can really say it's going well right now.
+text At the very least, excepting what had happened with Kyou yesterday, I suppose you can say things are going well...
+text ...The gloomy feeling that I've been carrying within me has turned so unpleasant that I am unable to accept the situation I find myself in now.
+setvar strS[1001] = "CGRY15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APF.aac
+text @[Ryou]
+text ...Okazaki-kun...?
+text @[Tomoya]
+text Eh? Yeah, what's up?
+setvar strS[1001] = "CGRY18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APG.aac
+text @[Ryou]
+text ...
+text @[Tomoya]
+text ...?
+text For a moment, it looks like Fujibayashi is thinking about something.
+text But it is really for just a moment.
+text Immediately afterward...
+setvar strS[1001] = "CGRY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APH.aac
+text @[Ryou]
+text For drinks, I have coffee milk and orange juice. Which one would you like?
+text She asks as she pulls out the juice pack from the paper bag.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Sitting on the stone fence, the two of us eat our bread.
+text Over and over again, we find ourselves drawing the attention of students who walk through the school gate or those who have finished lunch and are looking outside from their classrooms.
+setvar strS[1001] = "CGRY22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound API.aac
+text @[Ryou]
+text There's a lot of people looking at us.
+text @[Tomoya]
+text You are right.
+setvar strS[1001] = "CGRY21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APJ.aac
+text @[Ryou]
+text I wonder... how they view us...?
+text @[Tomoya]
+text View us? What do you mean...?
+setvar strS[1001] = "CGRY19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APK.aac
+text @[Ryou]
+text Do we look like we are dating to them?
+text @[Tomoya]
+text Well... if we weren't, then we wouldn't be sitting next to each other and having lunch now, would we?
+setvar strS[1001] = "CGRY21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APL.aac
+text @[Ryou]
+text That's... true. I suppose.
+text Fujibayashi smiles.
+setvar strS[1001] = "CGRY22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music ~
+sound APM.aac
+text @[Ryou]
+text But this will create some rumors, right?
+text @[Tomoya]
+text Eh...?
+music BGM08D.mp3
+text When I heard the word "rumors," my heart pounded very hard.
+setvar strS[1001] = "CGRY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APN.aac
+text @[Ryou]
+text By being together like this, others will start looking at us.
+setvar strS[1001] = "CGRY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APO.aac
+text @[Ryou]
+text Which is why even if we don't proclaim to anyone that we are going out, the word will probably spread, and we will be publically recognized as lovers before we know it.
+text With a smile...
+text She said all that with a worry-free smile.
+text When she smiles like that, I can't look directly at Fujibayashi anymore.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Feeling uncomfortable and embarrassed, I look at the campus building for no apparent reason.
+text Through the windows, I can see several students who have finished lunch merrily having a conversation.
+text Just as Fujibayashi mentioned, there are also people who are looking this way.
+text Through the windows, I catch sight of someone within the crowd who has been staring at us.
+text The person has long hair...
+text ...and a white ribbon tied in it.
+text @[Tomoya]
+text ──!
+sound APP.aac
+text @[Ryou]
+text Okazaki-kun? What's the matter?
+sound APQ.aac
+text @[Ryou]
+text Is somebody looking at us from the school building?
+text @[Tomoya]
+text N-Nah...
+setvar strS[1001] = "CGRY16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Acting as calm as I can, I look at Fujibayashi.
+text @[Tomoya]
+text I was just thinking, it does seem like everyone's looking at us...
+setvar strS[1001] = "CGRY21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APR.aac
+text @[Ryou]
+text You're right... it really does make me feel a little embarrassed.
+setvar strS[1001] = "CGRY22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text With her cheeks blushing just a little, Fujibayashi smiles, and then drinks from the box of orange juice she is holding.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text When I turn my focus back to where Kyou was in the school building, she can no longer be seen.
+text Guess she... left...
+text I take a bite out of the curry bread I am holding.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s6
+fi
+goto 8
+label s6
+setvar strS[1000] = ""
+label 8
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Even though I chew it pretty well, it's still pretty hard to swallow...
+setvar strS[1000] = "BG021H"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s7
+fi
+goto 9
+label s7
+setvar strS[1000] = ""
+label 9
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM16B.mp3
+text After the day's classes are over, the classroom goes through a storm of activity and then returns to its previous tranquility soon afterward.
+text One after another, my classmates leave the room.
+text Fujibayashi is no longer in the classroom.
+text That's because she's gone to the a meeting for the Founder's Festival and the new student council that has just been elected.
+if intF[208] == 1
+	goto s8
+fi
+goto 10
+label s8
+text ...That reminds me. Tomoyo was elected as the new student council president.
+text I suppose she succeeded in reaching her goal.
+text As I thought, she's meant for a different path than I am...
+label 10
+text I guess I should be waiting for Fujibayashi to come back and go home together... but right now...
+text I deeply let out a sigh, grab my bag, and leave the classroom.
+setvar strS[1000] = "BG015Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s9
+fi
+goto 11
+label s9
+setvar strS[1000] = ""
+label 11
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text ...
+text Already walking heavily, I come to a complete halt.
+text I stare in front of me.
+text And at the end of my vision...
+text ...there is a single person who, like me, has stopped walking and is staring at me.
+text @[Tomoya]
+text ...Yo...
+setvar strS[1001] = "CGKY10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APS.aac
+text @[Kyou]
+text ...Hey.
+text We trade awkward greetings with each other.
+text @[Tomoya]
+text ...Isn't there a meeting?
+setvar strS[1001] = "CGKY17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APT.aac
+text @[Kyou]
+text ...It's a pain, I'm ditching.
+text @[Tomoya]
+text You're an amazing class president. You know that?
+sound APU.aac
+text @[Kyou]
+text ...You aren't getting anything for praising me...
+text Though the flow of our conversation is fluid as always, our tones are not nearly as lively.
+text So that our eyes don't meet, the two of us awkwardly face anything but each other.
+setvar strS[1001] = "CGKY18A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY18A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APV.aac
+text @[Kyou]
+text Are you waiting for her... here?
+text She asks hesitantly.
+text @[Tomoya]
+text ...For who?
+setvar strS[1001] = "CGKY10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APW.aac
+text @[Kyou]
+text ...Ryou.
+text @[Tomoya]
+text Nah... I'm going home first today...
+setvar strS[1001] = "CGKY22A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY22A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APX.aac
+text @[Kyou]
+text Oh...
+setvar strS[1001] = "CGKY18A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY18A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Kyou mutters, and looks at the ground.
+text Normally, she would yell "Wait for her here" or something along the lines...
+text The awkward atmosphere continues to grow thicker.
+setvar strS[1001] = "CGKY17A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY17A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APY.aac
+text @[Kyou]
+text Well, see ya...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She says, turns around, and starts to walk.
+text Looking at her back, I firmly grip my bag, and start walking in the same direction.
+setvar strS[1000] = "BG012Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s10
+fi
+goto 12
+label s10
+setvar strS[1000] = ""
+label 12
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGKY13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APZ.aac
+text @[Kyou]
+text ...Why are you following me?
+text @[Tomoya]
+text I told you I'm going home. How else am I going to get there?
+setvar strS[1001] = "CGKY18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AQ0.aac
+text @[Kyou]
+text ...
+text Kyou stays silent, and walks forward as if she's trying to run away from this situation.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text And I start walking forward as well.
+setvar strS[1000] = "BG034Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s11
+fi
+goto 13
+label s11
+setvar strS[1000] = ""
+label 13
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text We walk in parallel with an awkward distance between us.
+text There has not been any conversation.
+text I can feel only the tense atmosphere that envelopes us, seemingly choking our usual banter and connecting us together.
+text I find myself being overly conscious of all this.
+text Every time Kyou's breath pauses, my heart thumps, thinking perhaps she would say something.
+text I also thought about saying something myself, but I can't think of the right words.
+text Before any words could pass through my throat, my mind has turned completely blank.
+setvar strS[1000] = "BG033Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s12
+fi
+goto 14
+label s12
+setvar strS[1000] = ""
+label 14
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Only a headache-like pulsation remains in my head.
+text This process repeats over and over...
+sound AQ1.aac
+text @[Kyou]
+text Hey...
+text @[Tomoya]
+text ...
+sound AQ2.aac
+text @[Kyou]
+text I said hey.
+text @[Tomoya]
+text Eh? Wh-What's up?
+setvar strS[1001] = "CGKY13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AQ3.aac
+text @[Kyou]
+text How long are you going to keep following me?
+text @[Tomoya]
+text What do you mean, how long?
+setvar strS[1001] = "CGKY17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AQ4.aac
+text @[Kyou]
+text ...You're supposed to go that way, no?
+text @[Tomoya]
+text Ah...
+text Before I knew it, we had arrived at the point where we part ways.
+text From here, we go in different directions to get home...
+text The two of us stop walking and fall into silence.
+text The silence continues once again.
+text And just as I thought,
+setvar strS[1001] = "CGKY18A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY18A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AQ5.aac
+text @[Kyou]
+text ─You know...
+text Kyou starts talking.
+sound AQ6.aac
+text @[Kyou]
+text About yesterday...
+text Deep inside my throat, something hot thumps.
+setvar strS[1001] = "CGKY17A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY17A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AQ7.aac
+text @[Kyou]
+text ...
+setvar strS[1001] = "CGKY11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AQ8.aac
+text @[Kyou]
+text Don't take what Youhei said seriously, okay?
+text @[Tomoya]
+text ...
+sound AQ9.aac
+text @[Kyou]
+text It's not like I... think anything of you...
+sound AQA.aac
+text @[Kyou]
+text ...And I don't see you in any special light.
+sound AQB.aac
+text @[Kyou]
+text It's just that I want to see things go well between you and Ryou...
+sound AQC.aac
+text @[Kyou]
+text Other than that, there's nothing, okay...?
+text Why...
+setvar strS[1001] = "CGKY21A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY21A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AQD.aac
+text @[Kyou]
+text Even that thing with Youhei yesterday. I just thought that would be the best way to put the rumors to rest...
+sound AQE.aac
+text @[Kyou]
+text And I do regret it, since... ahh... I guess I did something kind of mean to Youhei.
+text Why does she...
+setvar strS[1001] = "CGKY11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AQF.aac
+text @[Kyou]
+text And so, I don't want you to think too much about it.
+sound AQG.aac
+text @[Kyou]
+text If you do, then you'll get Ryou worrying too.
+sound AQH.aac
+text @[Kyou]
+text More like, that'd be cruel to Ryou too.
+text Why does Kyou...
+setvar strS[1001] = "CGKY12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AQI.aac
+text @[Kyou]
+text Look, being her boyfriend, you have to think only about her, no?
+sound AQJ.aac
+text @[Kyou]
+text Making your girlfriend worry is the worst, don't you think?
+text ...always smile... at moments like these...?
+sound AQK.aac
+text @[Kyou]
+text You shouldn't mind me one bit, okay?
+sound AQL.aac
+text @[Kyou]
+text Yep, you can't. You absolutely can't.
+text It looks so fragile, as if it would fall apart the moment I touch it.
+text It's an admirable... yet painful...
+setvar strS[1001] = "CGKY11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AQM.aac
+text @[Kyou]
+text 'Cause I... don't think anything of you, okay?
+text ...smile...
+text @[Tomoya]
+text ─Ugh...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I clench my fist.
+text My nails bite into my palm.
+text Without the pain, I would have been moved.
+text My heart would have been moved by this girl... fighting all by herself... before my eyes.
+text However...
+text Even though I realize it now, it may be too late.
+text Still clenching my fist, I look at Kyou.
+text Her face is a mirror image of Fujibayashi's.
+text Whether I like it or not, I am reminded of Fujibayashi.
+text And it is exactly that thought that keeps my legs stopped in that same spot.
+setvar strS[1001] = "CGKY11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AQN.aac
+text @[Kyou]
+text Well, see ya.
+text With a smile stubbornly prevailing on her face, Kyou waves at me and turns around.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Then, slowly, she walks farther and farther away from me.
+text All I could do is to stare as she leaves.
+text It feels as if something has just passed through my chest.
+text Something warm... and yet cold... and bitter...
+text @[Tomoya]
+text This... isn't good.
+text I murmur softly so no one can hear me.
+text Although the words were soft enough to dissipate in the wind, they continue to ring loud and clear within my heart.
+music ~
+if 0 == 0
+	goto s13
+fi
+goto 15
+label s13
+setvar strS[1000] = "KURO"
+goto 17
+label 15
+if 0 == 1
+	goto s14
+fi
+goto 16
+label s14
+setvar strS[1000] = "SIRO"
+goto 17
+label 16
+setvar strS[1000] = "KURO"
+label 17
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+jump SEEN3509_0_0.scr

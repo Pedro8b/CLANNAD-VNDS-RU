@@ -1,0 +1,1080 @@
+label 52
+if intF[405] == 1
+	goto s50
+fi
+goto 53
+label s50
+if rtf0 != ""
+	setvar rtf1 = "SEEN0419_0_1.scr"
+	setvar rtl1 = "rtl8"
+fi
+if rtf0 == ""
+	setvar rtf0 = "SEEN0419_0_1.scr"
+	setvar rtl0 = "rtl8"
+fi
+jump SEEN4419_0_0.scr
+label rtl8
+if rtf1 == ""
+	setvar rtf0 = ""
+fi
+if rtf1 != ""
+	setvar rtf1 = ""
+fi
+goto 62
+label 53
+if intF[405] == 0
+	goto s51
+fi
+goto 62
+label s51
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s52
+fi
+goto 54
+label s52
+setvar strS[1000] = ""
+label 54
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG034C"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s53
+fi
+goto 55
+label s53
+setvar strS[1000] = ""
+label 55
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08D.mp3
+text After leaving my stuff in my room and changing clothes, I head to the dorms before it starts to rain.
+setvar strS[1000] = "BG046C"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s54
+fi
+goto 56
+label s54
+setvar strS[1000] = ""
+label 56
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text There's no one inside the room.
+text @[Tomoya]
+text (I guess he's still busy being caught...)
+text I'm sure he'll come back sooner or later.
+text I decide to read magazines and wait for him.
+music ~
+if 0 == 0
+	goto s55
+fi
+goto 57
+label s55
+setvar strS[1000] = "KURO"
+goto 59
+label 57
+if 0 == 1
+	goto s56
+fi
+goto 58
+label s56
+setvar strS[1000] = "SIRO"
+goto 59
+label 58
+setvar strS[1000] = "KURO"
+label 59
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text ......
+setvar strS[1000] = "BG046C"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s57
+fi
+goto 60
+label s57
+setvar strS[1000] = ""
+label 60
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08A.mp3
+text The door opens with a click.
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UR.aac
+text @[Sunohara]
+text Phew...
+setvar strS[1001] = "CGSH27"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH27.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound US.aac
+text @[Sunohara]
+text Whoa! Someone's in my room!
+text @[Tomoya]
+text Welcome back.
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UT.aac
+text @[Sunohara]
+text Hey. You shouldn't come into someone's room without their permission.
+sound UU.aac
+text @[Sunohara]
+text You'll surprise them...
+text @[Tomoya]
+text I'll hide inside your kotatsu next time and grab your leg out of nowhere, then.
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UV.aac
+text @[Sunohara]
+text That's creepy, man!
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Sunohara closes the door and takes off his jacket.
+setvar strS[1001] = "CGSH18B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UW.aac
+text @[Sunohara]
+text Ugh, I really got chewed out this time...
+sound UX.aac
+text @[Sunohara]
+text You're next, by the way.
+setvar strS[1001] = "CGSH15B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UY.aac
+text @[Sunohara]
+text You basically live here, so they'll find you if they come by.
+text @[Tomoya]
+text Are you serious...?
+sound UZ.aac
+text @[Sunohara]
+text They're still bent on getting us into college, you know...
+text @[Tomoya]
+text You? College? Hah, no way!
+setvar strS[1001] = "CGSH23B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH23B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound V0.aac
+text @[Sunohara]
+text I'm talking about you too.
+bgload KURO.jpg 55
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGSH20B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH20B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound V1.aac
+text @[Sunohara]
+text Aah... I guess it really is raining now.
+text Sunohara looks up at the sky through his window.
+setvar strS[1001] = "CGSH18B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound V2.aac
+text @[Sunohara]
+text Now we can't go anywhere.
+sound V3.aac
+text @[Sunohara]
+text Great, alone with another guy in my room all day.
+text @[Tomoya]
+text If you don't like it, then leave.
+setvar strS[1001] = "CGSH23B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound V4.aac
+text @[Sunohara]
+text This is my room!
+text @[Tomoya]
+text Well, it's better than being alone, isn't it?
+setvar strS[1001] = "CGSH16B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound V5.aac
+text @[Sunohara]
+text I guess...
+if intF[302] == 1
+	goto s58
+fi
+goto 61
+label s58
+text @[Tomoya]
+text Right? That's why the two of us should play a crazy game. We'll run totally naked through the rain!
+text @[Tomoya]
+text When you lose in rock-paper-scissors, you have to strip and run through the rain. You'll be infamous!
+setvar strS[1001] = "CGSH27B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH27B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound V6.aac
+text @[Sunohara]
+text When I lose...? What about when you lose?!
+text @[Tomoya]
+text All right, here goes!
+sound V7.aac
+text @[Sunohara]
+text What?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Rock, paper, scissors, shoot!
+setvar strS[1001] = "CGSH25B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH25B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound V8.aac
+text @[Sunohara]
+text All right, I win!
+text @[Tomoya]
+text Dammit.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Okay, once more! Rock, paper, scissors, shoot!
+setvar strS[1001] = "CGSH25B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH25B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound V9.aac
+text @[Sunohara]
+text Yeah! Two in a row!
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Hurry up and lose, I want you out there running! Rock, paper, scissors, shoot!
+setvar strS[1001] = "CGSH27B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH27B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VA.aac
+text @[Sunohara]
+text Agh, I finally lost!
+text @[Tomoya]
+text Okay, now get going.
+setvar strS[1001] = "CGSH26B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH26B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VB.aac
+text @[Sunohara]
+text Agh... It'll be so embarrassing... Everyone will think I'm a freak...
+setvar strS[1001] = "CGSH23B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VC.aac
+text @[Sunohara]
+text Wait, of course I'm not going to go!!
+sound VD.aac
+text @[Sunohara]
+text What's supposed to be fun about this game? It's practically bullying!
+text @[Tomoya]
+text I think it's a lot of fun.
+sound VE.aac
+text @[Sunohara]
+text Yeah, maybe for you!
+goto 62
+label 61
+if intF[302] == 0
+	goto s59
+fi
+goto 62
+label s59
+text @[Tomoya]
+text Right? That's why the two of us should play a crazy game. We'll run totally naked through the rain!
+text @[Tomoya]
+text When you lose in rock-paper-scissors, you have to strip and run through the rain. You'll be infamous!
+setvar strS[1001] = "CGSH27B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH27B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VF.aac
+text @[Sunohara]
+text When I lose...? What about when you lose?!
+text @[Tomoya]
+text All right, here goes!
+sound VG.aac
+text @[Sunohara]
+text What?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Rock, paper, scissors, shoot!
+setvar strS[1001] = "CGSH25B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH25B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VH.aac
+text @[Sunohara]
+text All right, I win!
+text @[Tomoya]
+text Dammit.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Okay, once more! Rock, paper, scissors, shoot!
+setvar strS[1001] = "CGSH25B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH25B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VI.aac
+text @[Sunohara]
+text Yeah! Two in a row!
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Hurry up and lose, I want you out there running! Rock, paper, scissors, shoot!
+setvar strS[1001] = "CGSH25B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH25B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VJ.aac
+text @[Sunohara]
+text Look at that! Three in a row!
+setvar strS[1001] = "CGSH23B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VK.aac
+text @[Sunohara]
+text ─Hey, wait! Does this game just keep going until I lose?
+text @[Tomoya]
+text That's right.
+sound VL.aac
+text @[Sunohara]
+text That's not a game, that's bullying!
+label 62
+if intF[632] == 1
+	goto s60
+fi
+goto 68
+label s60
+music ~
+if 0 == 0
+	goto s61
+fi
+goto 63
+label s61
+setvar strS[1000] = "KURO"
+goto 65
+label 63
+if 0 == 1
+	goto s62
+fi
+goto 64
+label s62
+setvar strS[1000] = "SIRO"
+goto 65
+label 64
+setvar strS[1000] = "KURO"
+label 65
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text The rain continues to fall through the night.
+setvar strS[1000] = "BG046N"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s63
+fi
+goto 66
+label s63
+setvar strS[1000] = ""
+label 66
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Knock* *Knock*
+sound VM.aac
+text @[Sunohara]
+text Hm? Who's there?
+text Sunohara asks the question through the door in reply to the knocking.
+music BGM15.mp3
+setvar strS[1001] = "CGMS10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VN.aac
+text @[Misae]
+text It's me.
+text I can see Misae-san's face through the crack of the half-opened door.
+setvar strS[1001] = "CGSH12B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VO.aac
+text @[Sunohara]
+text What is it? Did you make me a cake?
+setvar strS[1001] = "CGMS19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VP.aac
+text @[Misae]
+text Why would I make you a cake...?
+setvar strS[1001] = "CGSH18B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VQ.aac
+text @[Sunohara]
+text Seriously? Aw, and I got my hopes up...
+setvar strS[1001] = "CGMS20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VR.aac
+text @[Misae]
+text When did I ever say or do anything that would get your hopes up?
+setvar strS[1001] = "CGSH13B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VS.aac
+text @[Sunohara]
+text You're the kind of person who makes people think you might do something nice for them even when you don't say anything, Misae-san.
+setvar strS[1001] = "CGMS19H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS19H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VT.aac
+text @[Misae]
+text That would really weigh on my conscience...
+sound VU.aac
+text @[Sunohara]
+text Well, it'll be fine as long as you make me a cake by next time.
+setvar strS[1001] = "CGMS13H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS13H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VV.aac
+text @[Misae]
+text *Sigh* ...Okay, okay.
+setvar strS[1001] = "CGSH10B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH10B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VW.aac
+text @[Sunohara]
+text So, what is it?
+setvar strS[1001] = "CGMS10H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS10H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VX.aac
+text @[Misae]
+text I was wondering if you had an umbrella, Okazaki.
+text Misae-san looks at me as she asks the question.
+text @[Tomoya]
+text Huh? Me?
+sound VY.aac
+text @[Misae]
+text Yeah. It's pouring right now. Do you have an umbrella?
+text @[Tomoya]
+text I don't, but I'll just grab one on my way out.
+setvar strS[1001] = "CGMS20H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS20H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VZ.aac
+text @[Misae]
+text Whose are you going to grab...?
+text @[Tomoya]
+text There's a bunch of them near the shoebox, right?
+sound W0.aac
+text @[Misae]
+text Those all belong to somebody, you know.
+text @[Tomoya]
+text It'll be fine. Whoever is missing an umbrella will just stay quiet and take someone else's instead.
+sound W1.aac
+text @[Misae]
+text I'd rather you not set off a vicious cycle like that.
+setvar strS[1001] = "CGMS19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound W2.aac
+text @[Misae]
+text Here. Use this one.
+text She has a folding umbrella in her hand.
+text She tosses it in the air to me. Unable to refuse her, I'm forced to take it
+setvar strS[1001] = "CGMS15H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS15H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound W3.aac
+text @[Misae]
+text If you'll wear them, I have rain boots too.
+text @[Tomoya]
+text I'm not wearing galoshes at this age.
+sound W4.aac
+text @[Misae]
+text Your shoes are going to be soaked by the time you get home, you know.
+text @[Tomoya]
+text That's fine.
+sound W5.aac
+text @[Misae]
+text Oh. Okay.
+sound W6.aac
+text @[Misae]
+text Well, just don't catch a cold.
+text @[Tomoya]
+text Sure thing.
+setvar strS[1001] = "CGMS10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound W7.aac
+text @[Misae]
+text That's all. See ya.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She raises a hand and closes the door.
+setvar strS[1001] = "CGSH12B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound W8.aac
+text @[Sunohara]
+text It wouldn't be bad to catch a cold and have Misae-san play nurse for you, though.
+text @[Tomoya]
+text Don't say things like that. I could actually see her doing it.
+setvar strS[1001] = "CGSH13B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound W9.aac
+text @[Sunohara]
+text What's the matter with that?
+sound WA.aac
+text @[Sunohara]
+text She'd do things like press her forehead to yours to take your temperature.
+setvar strS[1001] = "CGSH12B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound WB.aac
+text @[Sunohara]
+text You could even take the opportunity to mess around and sneak a kiss. She couldn't get mad at a sick man, right?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I look at the umbrella I just got from her. It's a scarlet women's umbrella. It must be Misae-san's.
+text @[Tomoya]
+text (I would've preferred a cheap plastic one. I'd feel less nervous about using it...)
+text But at the same time, I'd feel awkward about turning down Misae-san's kindness.
+text Despite the constant trouble the students in the dorm cause her, she's still able to be considerate. Even to someone like me.
+music ~
+text *Bang* *Bang*
+text More knocking. This time it sounds violent.
+text The door opens before either of us get a chance to respond.
+music BGM09A.mp3
+sound WC.aac
+text @[Rugby club]
+text Hey!
+text The rugby team is there, looking into the room.
+setvar strS[1001] = "CGSH23B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound WD.aac
+text @[Sunohara]
+text Eeeek!! I-Is there a problem?!
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound WE.aac
+text @[Rugby club]
+text Okazaki.
+text They're all looking my way.
+text @[Tomoya]
+text Huh? Me?
+sound WF.aac
+text @[Rugby club]
+text Get out here for a second. We need to talk.
+setvar strS[1001] = "CGSH27B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH27B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound WG.aac
+text @[Sunohara]
+text Huh? What's wrong? Did you do something? This doesn't seem good.
+text Sunohara whispers to me.
+setvar strS[1001] = "CGSH16B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound WH.aac
+text @[Sunohara]
+text If they seem like they're about to attack, bow down until your forehead is against the floor and apologize. That's what I always do.
+text @[Tomoya]
+text Do you have any pride at all...?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound WI.aac
+text @[Rugby club]
+text C'mon, hurry up.
+text @[Tomoya]
+text Yeah, I'm coming. Don't rush me.
+text I stand up and leave the room.
+setvar strS[1000] = "BG045N"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s64
+fi
+goto 67
+label s64
+setvar strS[1000] = ""
+label 67
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound WJ.aac
+text @[Rugby club]
+text Okazaki, what the hell.
+sound WK.aac
+text @[Rugby club]
+text What have you been teaching Misae-san?
+text @[Tomoya]
+text Teaching?
+sound WL.aac
+text @[Rugby club]
+text You taught her some weird moves, didn't you?
+text @[Tomoya]
+text Oh, the Giant Swing?
+sound WM.aac
+text @[Rugby club]
+text That's not the only one.
+sound WN.aac
+text @[Rugby club]
+text We saw you talking to Misae-san just now too.
+sound WO.aac
+text @[Rugby club]
+text If you don't stop screwing around, we can make it so that you'll never be able to come back here, you know.
+text @[Tomoya]
+text There wouldn't be a problem in the first place if you didn't cause Misae-san trouble, right?
+text @[Tomoya]
+text Just follow the rules.
+sound WP.aac
+text @[Rugby club]
+text I don't want to hear that from the likes of you. Can't even get to school on time.
+text @[Tomoya]
+text That might be true, but it has nothing to do with this. I had to help Misae-san out. She was really at the end of her rope with you guys.
+sound WQ.aac
+text @[Rugby club]
+text What's with this guy? You trying to act like the only good guy around?
+sound WR.aac
+text @[Rugby club]
+text You'd better not be trying to make any moves on Misae-san.
+text @[Tomoya]
+text I'm not, but... Wait, what?
+text @[Tomoya]
+text Are you guys interested in Misae-san?
+sound WS.aac
+text @[Rugby club]
+text What?
+text They all look at each other.
+text After a second, they all try to pretend that everything's normal, with stiff smiles on their faces.
+text ...Agh, these guys really are just like elementary school boys.
+text So they were causing Misae-san trouble because they wanted her to pay attention to them.
+sound WT.aac
+text @[Rugby club]
+text Anyway...
+sound WU.aac
+text @[Rugby club]
+text You don't live in this dorm, so stay away from Misae-san from now on.
+text @[Tomoya]
+text ...
+sound WV.aac
+text @[Rugby club]
+text Well?! What's your reply?!
+text @[Tomoya]
+text Yeah, I get it.
+text There's no way for me to take on this many guys and win. I reply the way they want me to.
+sound WW.aac
+text @[Rugby club]
+text Okay. As long as you understand.
+text They all return to their rooms.
+text @[Tomoya]
+text (The one I really feel bad for is Misae-san. Having to spend every day surrounded by guys like that...?)
+goto 72
+label 68
+if intF[632] == 0
+	goto s65
+fi
+goto 72
+label s65
+music ~
+if 0 == 0
+	goto s66
+fi
+goto 69
+label s66
+setvar strS[1000] = "KURO"
+goto 71
+label 69
+if 0 == 1
+	goto s67
+fi
+goto 70
+label s67
+setvar strS[1000] = "SIRO"
+goto 71
+label 70
+setvar strS[1000] = "KURO"
+label 71
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text The rain kept falling through the night.
+label 72
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s68
+fi
+goto 73
+label s68
+setvar strS[1000] = ""
+label 73
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+jump SEEN0420_0_0.scr

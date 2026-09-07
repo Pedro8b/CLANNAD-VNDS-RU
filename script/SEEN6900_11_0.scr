@@ -1,0 +1,112 @@
+setvar intF[1112] = 0
+bgload SFWEC02.jpg 60
+delay 8
+setimg SFWEC30.png 148 172
+delay 287
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s58
+fi
+goto 60
+label s58
+setvar strS[1000] = ""
+label 60
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG315"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s59
+fi
+goto 61
+label s59
+setvar strS[1000] = ""
+label 61
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM26B.mp3
+text Her footsteps come to a stop.
+text She squats above the snow for a long while.
+text I brush off the snow that piles up on top of her face.
+text When I do, I see her smiling.
+text She reaches out and begins to paddle through the snow, as if to pull her body up.
+text But she stays in place.
+text I crawl under her stomach.
+text I muster my strength.
+text It's enough to make her body slide upward.
+text ..."Thank you."
+text I hear her voice.
+text My body creaks.
+text How many more steps until we get there?
+text Are we only a step away now?
+text Or are we stuck counting endlessly?
+text If we are... then it's hopeless.
+text I'm stricken by despair.
+text ......
+if intG[21] == 1
+	goto s60
+fi
+goto 62
+label s60
+text Suddenly, my body is lifted off the ground.
+text Not only that, something is below me.
+text They're little... animals.
+text So they were here too...
+text Each of them is... so pitifully weak.
+text But when all of them combine their strength... they're able to push me forward...
+text ......
+text Eventually, I'm able to walk again on my own.
+text The animals... are already out of sight.
+text We've moved forward without even pausing to look behind us.
+text They've left us with nothing but their courage...
+goto 63
+label 62
+if intG[21] == 0
+	goto s61
+fi
+goto 63
+label s61
+text No... I can't think like that.
+text One more step. I need to move forward believing that each step is going to be the one that gets us there.
+text And if that step isn't the one, we just need to take another.
+text If not that one, then another.
+text One step at a time...
+text We seem to crawl as we move forward.
+label 63
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s62
+fi
+goto 64
+label s62
+setvar strS[1000] = ""
+label 64
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar intF[1112] = 1
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+jump SEEN6900_12_0.scr

@@ -1,0 +1,341 @@
+label 52
+if 0 == 1
+	goto s46
+fi
+goto 53
+label s46
+setvar strS[1000] = "SIRO"
+goto 54
+label 53
+setvar strS[1000] = "KURO"
+label 54
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text We spend Founder's Festival, our equivalent to a school festival, together as well.
+text But...
+text It's the last day that I spend at school with {$lnmC}.
+setvar strS[1000] = "BG006N1"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s47
+fi
+goto 55
+label s47
+setvar strS[1000] = ""
+label 55
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Is she okay, Sanae-san?
+setvar strS[1001] = "CGSN10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JX8.aac
+text @[Sanae]
+text She will be fine. Please calm down.
+text @[Tomoya]
+text I'm sorry... I must have made her run around too much.
+text @[Tomoya]
+text I got so excited... so I took her all over the place, and then...
+if intF[136] == 0
+	goto s48
+fi
+goto 56
+label s48
+setvar strS[1001] = "CGSN11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JX9.aac
+text @[Sanae]
+text You don't need to apologize. She went along with you because she wanted to, right?
+text @[Tomoya]
+text But... that'd be even more reason I should've been looking after her.
+sound JXA.aac
+text @[Sanae]
+text You shouldn't blame yourself so much.
+text @[Tomoya]
+text ...
+goto 57
+label 56
+if intF[136] == 1
+	goto s49
+fi
+goto 57
+label s49
+sound JXB.aac
+text @[Sanae]
+text You don't need to apologize. Isn't she your girlfriend?
+text @[Tomoya]
+text You... knew about that?
+setvar strS[1001] = "CGSN11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JXC.aac
+text @[Sanae]
+text Isn't it obvious? She's my daughter after all.
+text @[Tomoya]
+text I'm a good-for-nothing boyfriend.
+sound JXD.aac
+text @[Sanae]
+text That's not true.
+label 57
+setvar strS[1001] = "CGSN10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JXE.aac
+text @[Sanae]
+text Okazaki-san.
+text @[Tomoya]
+text Okay.
+sound JXF.aac
+text @[Sanae]
+text Can I call you Tomoya-san?
+text @[Tomoya]
+text Please do.
+sound JXG.aac
+text @[Sanae]
+text Then, Tomoya-san.
+text @[Tomoya]
+text Okay.
+sound JXH.aac
+text @[Sanae]
+text Nagisa has always been a physically weak child... but please be by her side as long as possible. That's all I wish for.
+text @[Tomoya]
+text I should be the one saying that. I still don't understand how she can like someone like me...
+setvar strS[1001] = "CGSN11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JXI.aac
+text @[Sanae]
+text Nonsense. Stop doubting yourself. Plus, you have my full support.
+text @[Tomoya]
+text I'm glad to hear that.
+setvar strS[1001] = "CGSN10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JXJ.aac
+text @[Sanae]
+text You must be tired too, Tomoya-san. Please just leave Nagisa to me and go home for the day.
+text @[Tomoya]
+text I feel ashamed. All I did was play all day.
+sound JXK.aac
+text @[Sanae]
+text Don't say that.
+text @[Tomoya]
+text Well, if you insist, then thank you.
+setvar strS[1001] = "CGSN11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JXL.aac
+text @[Sanae]
+text Okay!
+text As for {$lnmC}...
+if 0 == 0
+	goto s50
+fi
+goto 58
+label s50
+setvar strS[1000] = "KURO"
+goto 60
+label 58
+if 0 == 1
+	goto s51
+fi
+goto 59
+label s51
+setvar strS[1000] = "SIRO"
+goto 60
+label 59
+setvar strS[1000] = "KURO"
+label 60
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text The day after Founder's Festival, she's bedridden with a fever.
+setvar strS[1000] = "BG003"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s52
+fi
+goto 61
+label s52
+setvar strS[1000] = ""
+label 61
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text {$lnmC}...
+text I enter the room; it's hot with {$lnmC}'s fever.
+setvar strS[1001] = "CGNG34E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG34E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[0] = lnmE
+if strS[0] > "Okazaki-san"
+	setvar intA[1000] = 1
+fi
+if strS[0] < "Okazaki-san"
+	setvar intA[1000] = -1
+fi
+if strS[0] == "Okazaki-san"
+	setvar intA[1000] = 0
+fi
+if strS[0] > "Tomoya-kun"
+	setvar intA[1001] = 1
+fi
+if strS[0] < "Tomoya-kun"
+	setvar intA[1001] = -1
+fi
+if strS[0] == "Tomoya-kun"
+	setvar intA[1001] = 0
+fi
+if intA[1000] == 0
+	goto s53
+fi
+goto 62
+label s53
+sound JXM.aac
+goto 63
+label 62
+sound JXN.aac
+label 63
+text @[{$lnmA}]
+text Tomoya-kun...
+text As she lies in bed, {$lnmC} turns her face to look at me.
+sound JXO.aac
+text @[{$lnmA}]
+text ...I was the one who couldn't keep going.
+text @[Tomoya]
+text Huh? What're you talking about?
+sound JXP.aac
+text @[{$lnmA}]
+text Talking while we go to school.
+text @[Tomoya]
+text There's nothing we can do about that. It's not like it's your fault.
+sound JXQ.aac
+text @[{$lnmA}]
+text That's not true... It's my fault for having such a weak body...
+text @[Tomoya]
+text I just told you, that isn't true.
+sound JXR.aac
+text @[{$lnmA}]
+text ...
+sound JXS.aac
+text @[{$lnmA}]
+text Okay... I'm sorry.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text {$lnmC} is acting more timid than usual. Maybe it's because of her illness..
+text Ever since that day we met at the bottom of the hill...
+text She's been trying so hard.
+text ...Even though she couldn't reform the drama club in the end.
+text Or could it be that at some point...
+text ...the two of us ran from the rest of the world into the comforting weakness of thinking that the only thing that mattered was being together?
+text I don't want that to be the case.
+text I'm sure we looked reality in the eye when we worked as hard as we did.
+text And that's not going to change from here on, either.
+text ......
+text I didn't see it happen, but {$lnmC}'s eyes are now closed, and she's sleeping.
+text @[Tomoya]
+text (She's so defenseless...)
+text I put my hand to cheek and feel her warmth.
+text I'm sure there are many more troubled times ahead of us.
+text For both her and me.
+text That's how I feel things will go.
+text That's why we should consider this a short little break, that's all.
+text I let go of her hand and stand up.
+text I leave the room so as not to wake her.
+if intF[29] == 1
+	goto s54
+fi
+goto 64
+label s54
+jump SEEN7300_0_0.scr
+label 64
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s55
+fi
+goto 65
+label s55
+setvar strS[1000] = ""
+label 65
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+delay 120
+cleartext
+jump main.scr

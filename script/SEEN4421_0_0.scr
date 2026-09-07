@@ -1,0 +1,1067 @@
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1000] = ""
+label 1
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = ""
+label 2
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM14.mp3
+text Third period is over.
+text Because the teacher likes to tell stupid stories, most of the break is already used up.
+if intF[2] == 0
+	goto s2
+fi
+goto 3
+label s2
+text I stop random students in the hallway and ask for the name and class of someone who recently returned to school.
+sound BY0.aac
+text @[Male Student]
+text Oh, she's in our class. You mean Furukawa, right?
+text Second person I ask has what I want.
+sound BY1.aac
+text @[Male Student]
+text She's in Class B.
+text After hearing that, I head to my objective.
+goto 4
+label 3
+if intF[2] == 1
+	goto s3
+fi
+goto 4
+label s3
+text I head over to Class 3-B in a hurry.
+label 4
+setvar strS[1000] = "BG021B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s4
+fi
+goto 5
+label s4
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 59
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I nonchalantly look through the open door.
+text I find Furukawa right away.
+text Isolated from various cliques, she's sitting alone at her desk.
+text @[Tomoya]
+text Furukawa... Furukawa!
+text I whisper to her.
+text She notices right away and starts glancing around the room.
+text @[Tomoya]
+text Over here.
+sound BY2.aac
+text @[Furukawa]
+text Oh...
+text I wave to her and she walks over to me.
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s5
+fi
+goto 6
+label s5
+setvar strS[1000] = ""
+label 6
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 59
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+if intF[3] == 0
+	if intF[2] == 0
+		goto s6
+	fi
+fi
+goto 8
+label s6
+setvar strS[1001] = "CGNG10Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BY3.aac
+text @[Furukawa]
+text This is a surprise. How did you know my name?
+text @[Tomoya]
+text I asked one of your classmates.
+sound BY4.aac
+text @[Furukawa]
+text Oh. I want to know your name, too.
+text @[Tomoya]
+text My name?
+sound BY5.aac
+text @[Furukawa]
+text Yes.
+text @[Tomoya]
+text Okazaki.
+setvar strS[1001] = "CGNG23Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BY6.aac
+text @[Furukawa]
+text Okazaki-san.
+text @[Tomoya]
+text Yeah.
+setvar strS[1001] = "CGNG10Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+if intF[408] == 1
+	goto s7
+fi
+goto 7
+label s7
+goto 13
+label 7
+sound BY7.aac
+text @[Furukawa]
+text Okazaki-san, did you want something?
+text @[Tomoya]
+text What's happening with your drama club?
+setvar strS[1001] = "CGNG32"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BY8.aac
+text @[Furukawa]
+text Oh, about that... the drama club doesn't exist anymore...
+text @[Tomoya]
+text Yeah. I know about that.
+text @[Tomoya]
+text So, are you going to give up on it?
+sound BY9.aac
+text @[Furukawa]
+text Oh, no... I'm going to keep practicing alone.
+text @[Tomoya]
+text In the club room?
+sound BYA.aac
+text @[Furukawa]
+text Yes... I already took the initiative to clean it up...
+text @[Tomoya]
+text All right. In that case, wait at the club room after school.
+goto 14
+label 8
+if intF[3] == 0
+	if intF[2] == 1
+		goto s8
+	fi
+fi
+goto 12
+label s8
+setvar strS[1001] = "CGNG23Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+if intF[408] == 1
+	goto s9
+fi
+goto 9
+label s9
+goto 13
+label 9
+sound BYB.aac
+text @[Furukawa]
+text What is it, Okazaki-san?
+text @[Tomoya]
+text What's happening with your drama club?
+setvar strS[1001] = "CGNG32"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+if intF[5] == 1
+	goto s10
+fi
+goto 10
+label s10
+sound BYC.aac
+text @[Furukawa]
+text Oh, about that... just as I thought, there isn't a drama club anymore...
+goto 11
+label 10
+if intF[5] == 0
+	goto s11
+fi
+goto 11
+label s11
+sound BYD.aac
+text @[Furukawa]
+text Oh, about that... the drama club doesn't exist anymore...
+text @[Tomoya]
+text Yeah. I know about that.
+label 11
+text @[Tomoya]
+text So, are you going to give up on it?
+sound BYE.aac
+text @[Furukawa]
+text Oh, no... I'm going to keep practicing alone.
+text @[Tomoya]
+text In the club room?
+sound BYF.aac
+text @[Furukawa]
+text Yes... I already took the initiative to clean it up...
+text @[Tomoya]
+text All right. In that case, wait at the club room after school.
+goto 14
+label 12
+if intF[3] == 1
+	goto s12
+fi
+goto 14
+label s12
+setvar strS[1001] = "CGNG23Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+label 13
+sound BYG.aac
+text @[Furukawa]
+text What is it, Okazaki-san?
+text @[Tomoya]
+text Hey, Furukawa...
+text @[Tomoya]
+text Are you free after school today?
+setvar strS[1001] = "CGNG10Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BYH.aac
+text @[Furukawa]
+text I have practice, but what's up?
+text @[Tomoya]
+text It's about the drama club...
+label 14
+setvar strS[1001] = "CGNG13Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG13Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BYI.aac
+text @[Furukawa]
+text What?
+text Just then, the bell rings.
+text One after another, the students in the hallway go back into their classrooms.
+text People are looking at us because we're just standing here.
+text @[Tomoya]
+text Anyway, I need to talk to you after school, so wait in the club room.
+text @[Tomoya]
+text I'll explain then. See you.
+sound BYJ.aac
+text @[Furukawa]
+text Okay...
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s13
+fi
+goto 15
+label s13
+setvar strS[1000] = ""
+label 15
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 59
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I leave the confused Furukawa behind and walk away from Class B.
+text @[Tomoya]
+text Now then...
+text It's a pain in the ass to get out of class once it starts, so I decide to skip fourth period entirely.
+text I stay in the hallway and walk to the restroom.
+text I enter a stall and wait until the sounds of the teachers' slippers fade.
+text I return to the hallway to find it empty.
+text All I can sense is tension seeping out of the classrooms onto the linoleum floor.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s14
+fi
+goto 16
+label s14
+setvar strS[1000] = ""
+label 16
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text The cafeteria isn't open for business yet, so I duck inside to pass the time.
+text Waiting around with nothing to do just makes me hungry.
+text I regret not buying some bread this morning, but it's too late for that.
+text Is Kotomi in the library already?
+text I wonder what kind of bread she'd like.
+text I should try getting a sweet bun that I normally wouldn't buy.
+setvar strS[1000] = "BG025B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s15
+fi
+goto 17
+label s15
+setvar strS[1000] = ""
+label 17
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 60
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text My head snaps up in surprise when I hear a noise.
+text I make eye contact with the old woman lining up the bread.
+text @[Tomoya]
+text Hey, lady. I'd like a bun.
+sound BYK.aac
+text @[Grandma]
+text Oh my. It's still a bit too early.
+text She says that teasingly, with a huge smile.
+sound BYL.aac
+text @[Grandma]
+text You're a growing boy. Buy any that you like.
+text Thanks to the head start I got by skipping class, I can buy as many of the popular chocolate bar buns and fried cutlet sandwiches as I want.
+text After paying, I head to the vending machine to buy some green tea.
+text With my catch of the day in a paper bag, I head to the library.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s16
+fi
+goto 18
+label s16
+setvar strS[1000] = ""
+label 18
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG027"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s17
+fi
+goto 19
+label s17
+setvar strS[1000] = ""
+label 19
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM05A.mp3
+setvar strS[1001] = "CGKT14A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT14A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BYM.aac
+text @[Kotomi]
+text Hello, Tomoya-kun.
+text I'm greeted as soon as I enter the library, as if she had been waiting for me.
+text @[Tomoya]
+text Yeah, nice weather today, huh? Wait...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text When I see what's on the table, I groan.
+text It isn't the usual small container, but a large lunch box used for picnics.
+text @[Tomoya]
+text ...How many people is that for?
+setvar strS[1001] = "CGKT14A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT14A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BYN.aac
+text @[Kotomi]
+text Two. Kotomi-chan and Tomoya-kun.
+text @[Tomoya]
+text Look...
+text @[Tomoya]
+text I thought we were going to do halfsies with your lunch box and my bread.
+sound BYO.aac
+text @[Kotomi]
+text Yeah. We'll do halfsies.
+text She happily repeats what I said.
+text @[Tomoya]
+text If you made enough for two, then we're now eating for three.
+setvar strS[1001] = "CGKT11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BYP.aac
+text @[Kotomi]
+text ?
+text She really doesn't get it.
+setvar strS[1001] = "CGKT12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BYQ.aac
+text @[Kotomi]
+text Oh, right...
+sound BYR.aac
+text @[Kotomi]
+text Tomoya-kun, you're smart.
+text @[Tomoya]
+text I don't know how to react when I hear that from you.
+sound BYS.aac
+text @[Kotomi]
+text ??
+text @[Tomoya]
+text Whatever. I'm hungry, so let's eat.
+text I pull a chair over and sit down.
+sound BYT.aac
+text @[Kotomi]
+text Yeah. Let's eat.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Kotomi sits next to me.
+text She opens her lunch box.
+text A salmon fillet, fried chicken, fried shrimp, chicken saute, hamburger steak, omelet, cherry tomatoes, fries...
+text The array of side dishes fills the box to the brim.
+text @[Tomoya]
+text Isn't there enough for four here?
+setvar strS[1001] = "CGKT12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BYU.aac
+text @[Kotomi]
+text Just eat a lot and it'll be okay.
+text She says that as if it were nothing.
+text @[Tomoya]
+text Well, I'll give it a shot...
+text @[Tomoya]
+text Don't get mad if I don't finish.
+sound BYV.aac
+text @[Kotomi]
+text Okay. Here are your chopsticks, Tomoya-kun.
+sound BYW.aac
+text @[Kotomi]
+text And these are mine.
+setvar strS[1001] = "CGKT12B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BYX.aac
+text @[Kotomi]
+text Put your palms together to say thanks.
+text She says it properly with her hands pressed together like she's the student on lunch duty in grade school.
+text Oh a whim, I follow suit.
+sound BYY.aac
+text @[Kotomi]
+text Let us eat.
+text @[Tomoya]
+text Let's eat.
+sound BYZ.aac
+text @[Kotomi]
+text Now, eat up.
+setvar strS[1001] = "CGKT14A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT14A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I grab the chopsticks and wonder where to start.
+text I go for the fried chicken first and put it in my mouth.
+text I savor it.
+setvar strS[1001] = "CGKT11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BZ0.aac
+text @[Kotomi]
+text Good?
+text @[Tomoya]
+text Yeah, it's good.
+setvar strS[1001] = "CGKT15A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT15A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text The moment I answer, she beams.
+text This is embarrassing.
+text @[Tomoya]
+text Is there anything you're picky about? I'm talking about food, by the way.
+sound BZ1.aac
+text @[Kotomi]
+text No, I'm not picky. I'll eat anything.
+text @[Tomoya]
+text Then feel free to take any that you want.
+text I bring out the buns I bought.
+setvar strS[1001] = "CGKT11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BZ2.aac
+text @[Kotomi]
+text ...?
+text @[Tomoya]
+text What's the matter? Never seen these before?
+sound BZ3.aac
+text @[Kotomi]
+text ??
+text *Crinkle*
+text She grabs the closest bun and tears the wrapping off.
+text She peers closely at it.
+text @[Tomoya]
+text That's a cream-filled brioche. These are a chocolate bar bun, a fried cutlet sandwich, and a teriyaki chicken egg sandwich.
+sound BZ4.aac
+text @[Kotomi]
+text ...
+text She turns it upside down and looks inside.
+text @[Tomoya]
+text You won't see anything but cream.
+text She ignores me and takes the sandwich in her hand.
+text I decide to let her do what she wants.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I go for a piece of stewed pumpkin in the corner of the lunch box.
+text This one is pretty good too.
+text @[Tomoya]
+text Did you stew this yourself?
+text @[Tomoya]
+text ...Hey, what are you doing?
+setvar strS[1001] = "CGKT11B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BZ5.aac
+text @[Kotomi]
+text ?
+text @[Tomoya]
+text Stop taking the sandwich apart to see what's inside.
+sound BZ6.aac
+text @[Kotomi]
+text ...
+setvar strS[1001] = "CGKT11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Crinkle* *Crinkle*
+text @[Tomoya]
+text Stop putting it neatly back together and stuffing it back in the wrapper.
+sound BZ7.aac
+text @[Kotomi]
+text ...
+text @[Tomoya]
+text Don't look so confused.
+sound BZ8.aac
+text @[Kotomi]
+text Then what should I do...?
+text @[Tomoya]
+text Just eat it.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She nods.
+text She chomps down on it and starts chewing.
+text *Gulp*
+text @[Tomoya]
+text Good?
+setvar strS[1001] = "CGKT11B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BZ9.aac
+text @[Kotomi]
+text Yeah.
+sound BZA.aac
+text @[Kotomi]
+text It's very good...
+text She glances at the part she bit into and answers me with a little confusion in her voice.
+text @[Tomoya]
+text It's a regular bun from the school store.
+setvar strS[1001] = "CGKT10B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT10B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BZB.aac
+text @[Kotomi]
+text I usually eat what I make for lunch...
+text @[Tomoya]
+text You make lunch for yourself all the time?
+sound BZC.aac
+text @[Kotomi]
+text Yeah.
+text @[Tomoya]
+text That's nice.
+sound BZD.aac
+text @[Kotomi]
+text Yes...
+text Kotomi is still staring at the sandwich.
+text With steady hands, she rips it exactly in half.
+setvar strS[1001] = "CGKT12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BZE.aac
+text @[Kotomi]
+text Here you go, Tomoya-kun.
+sound BZF.aac
+text @[Kotomi]
+text Halfsies.
+text @[Tomoya]
+text There's another piece you haven't eaten yet. I'll take that one...
+sound BZG.aac
+text @[Kotomi]
+text Halfsies.
+text @[Tomoya]
+text Hey, I was just...
+sound BZH.aac
+text @[Kotomi]
+text Halfsies.
+text @[Tomoya]
+text ...
+setvar strS[1001] = "CGKT20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BZI.aac
+text @[Kotomi]
+text Halfsies.
+text She's adamant about it.
+text @[Tomoya]
+text Well, I guess it's all the same...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I accept the half and toss it in my mouth.
+text It's tasty, but not enough to move me to tears.
+setvar strS[1001] = "CGKT15A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT15A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BZJ.aac
+text @[Kotomi]
+text I feel really happy for some reason.
+text Her bangs flutter as she smiles.
+text I start chipping away at the pile of food in the lunch box.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+bgload KURO.jpg 55
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Phew...
+text As I finish eating, lunchtime begins for the school.
+text @[Tomoya]
+text *Burp*
+text I wash it all down with some green tea and take a break.
+setvar strS[1001] = "CGKT12B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BZK.aac
+text @[Kotomi]
+text Thank you for the food.
+text She puts her palms together and bows slightly.
+text @[Tomoya]
+text It was good. Thanks.
+setvar strS[1001] = "CGKT12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BZL.aac
+text @[Kotomi]
+text Tomoya-kun, your bread was good, too.
+text @[Tomoya]
+text Glad to hear it.
+text In front of me is the empty lunch box.
+sound BZM.aac
+text @[Kotomi]
+text All finished. I feel so happy.
+sound BZN.aac
+text @[Kotomi]
+text Tomoya-kun and Kotomi-chan, doing halfsies.
+text @[Tomoya]
+text I ate most of your lunch.
+sound BZO.aac
+text @[Kotomi]
+text But we did halfsies.
+text @[Tomoya]
+text Can you make less next time? I had a hard time finishing everything.
+sound BZP.aac
+text @[Kotomi]
+text Okay.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She closes the lid of the lunch box and wraps it in a cloth.
+text @[Tomoya]
+text What are you going to do now?
+setvar strS[1001] = "CGKT11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BZQ.aac
+text @[Kotomi]
+text ??
+text @[Tomoya]
+text I mean, what do you do and where do you go after eating every day?
+setvar strS[1001] = "CGKT12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BZR.aac
+text @[Kotomi]
+text I return to class and wait for break time to end.
+text I thought as much.
+text She can't eat lunch or sit on the floor to read when other students are here.
+sound BZS.aac
+text @[Kotomi]
+text Once afternoon classes start, I come back here to read.
+text @[Tomoya]
+text What about after school?
+sound BZT.aac
+text @[Kotomi]
+text Sometimes I come back here after hours...
+sound BZU.aac
+text @[Kotomi]
+text But most of the time I just go home.
+sound BZV.aac
+text @[Kotomi]
+text I go to the prefectural library or a bookstore sometimes.
+text @[Tomoya]
+text In other words, you don't come here during normal hours.
+text She nods.
+setvar strS[1001] = "CGKT15A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT15A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BZW.aac
+text @[Kotomi]
+text This place doesn't belong to me.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She stands up as she says that and starts organizing the books scattered on the floor.
+text It's almost time for lunchtime library hours.
+text She must be planning on gathering her things and leaving.
+text She appears to be doing whatever she pleases, but she never leaves the boundaries she set for herself.
+text I think that's part of who she is.
+text @[Tomoya]
+text Are you free after school today?
+setvar strS[1001] = "CGKT11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BZX.aac
+text @[Kotomi]
+text ??
+text @[Tomoya]
+text Is there anything that you have to do?
+sound BZY.aac
+text @[Kotomi]
+text No...
+text @[Tomoya]
+text In that case, can you come with me after school for a bit?
+sound BZZ.aac
+text @[Kotomi]
+text ???
+text @[Tomoya]
+text There's someone I want you to meet.
+text Her hands stop and she turns to give me a blank stare.
+sound C00.aac
+text @[Kotomi]
+text Um...
+sound C01.aac
+text @[Kotomi]
+text Is this person...
+text She looks around nervously.
+setvar strS[1001] = "CGKT20B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT20B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound C02.aac
+text @[Kotomi]
+text ...a bully?
+text @[Tomoya]
+text ...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I think we have a long road ahead of us.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s18
+fi
+goto 20
+label s18
+setvar strS[1000] = ""
+label 20
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 55
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+jump SEEN4421_1_0.scr

@@ -1,0 +1,3978 @@
+setvar intF[1110] = 4
+setvar intF[1112] = 1
+setvar strS[1004] = "SDTA0504"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1004] = ""
+label 1
+bgload SCLAB00.jpg 45
+delay 60
+setimg SCLAP06.png 5 5
+setimg SCLA0504.png 159 160
+delay 120
+if intF[412] == 1
+	goto s1
+fi
+goto 2
+label s1
+jump SEEN4904_0_0.scr
+goto 3
+label 2
+if intF[413] == 1
+	goto s2
+fi
+goto 3
+label s2
+jump SEEN4904_2_0.scr
+label 3
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 4
+label s3
+setvar strS[1000] = ""
+label 4
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 55
+setvar strS[1000] = "BG009"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s4
+fi
+goto 5
+label s4
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 301
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM15.mp3
+text I wake up disoriented.
+text Seems like I was having a dream.
+text Was it really just a dream...?
+text The details are fuzzy.
+text Something was burning.
+text I tried to put out the fire.
+text No matter how hard I tried, I couldn't put it out.
+text That's the kind of dream it was.
+text With my mind still jumbled up, I try to clear my head of the lingering traces of the dream.
+text My eyes focus on my surroundings.
+text The usual room. The usual ceiling.
+text I try to think through the haze clouding my blood-deprived brain.
+text My name is Tomoya Okazaki. Today is May 4th and I'm meeting up with Kotomi at 10:00 am.
+text I glance at the clock by my bed.
+music ~
+text My face goes pale.
+text 10:15.
+text @[Tomoya]
+text I overslept...
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s5
+fi
+goto 6
+label s5
+setvar strS[1000] = ""
+label 6
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 0
+setvar strS[1000] = "BG033"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s6
+fi
+goto 7
+label s6
+setvar strS[1000] = ""
+label 7
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM14.mp3
+text @[Tomoya]
+text *Huff* *Huff* *Huff*
+text By the time I approach the meeting spot, I'm drenched in sweat.
+text I'm forty minutes late.
+text But Kotomi is waiting for me.
+setvar strS[1001] = "CGKT15C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT15C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DB0.aac
+text @[Kotomi]
+text Oh.
+text She's standing in a sunny spot with her head down, but her face lights up when she sees me.
+setvar strS[1001] = "CGKT13C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT13C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DB1.aac
+text @[Kotomi]
+text Hello, Tomoya-kun.
+text @[Tomoya]
+text Yeah...
+text I try to catch my breath.
+text @[Tomoya]
+text Sorry I'm late.
+sound DB2.aac
+text @[Kotomi]
+text It's okay.
+setvar strS[1001] = "CGKT17C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT17C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DB3.aac
+text @[Kotomi]
+text I only got here one hour and ten minutes ago.
+text @[Tomoya]
+text I can't tell if that's a joke, sarcasm, or a mindless comment.
+setvar strS[1001] = "CGKT11C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DB4.aac
+text @[Kotomi]
+text ??
+text Looks like it's mindless.
+text If she got here an hour and ten minutes ago, that means she's been waiting since 9:30.
+text @[Tomoya]
+text I'm really sorry.
+setvar strS[1001] = "CGKT12C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DB5.aac
+text @[Kotomi]
+text It's okay. I'm just glad you came.
+text The way Kotomi daintily smiles makes her seem more mature than usual.
+text @[Tomoya]
+text This is the first time I've seen you in regular clothes.
+text She's wearing a black dress with a low neckline.
+text I expected her to wear something more childish or plain, so this is really surprising.
+setvar strS[1001] = "CGKT10C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT10C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DB6.aac
+text @[Kotomi]
+text ...?
+text @[Tomoya]
+text Nothing. You just look... a little different today.
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT10C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DB7.aac
+text @[Kotomi]
+text Is it strange?
+text @[Tomoya]
+text No, it looks good on you.
+text @[Tomoya]
+text You look a lot more mature than usual.
+sound DB8.aac
+text @[Kotomi]
+text Um...
+setvar strS[1001] = "CGKT15C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT15C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DB9.aac
+text @[Kotomi]
+text Tomoya-kun, do you prefer more childish looks?
+text @[Tomoya]
+text Well...
+text @[Tomoya]
+text Childish or mature, it doesn't matter to me as long as it's you.
+setvar strS[1001] = "CGKT11C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DBA.aac
+text @[Kotomi]
+text ??
+text She thinks about it.
+setvar strS[1001] = "CGKT19C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT19C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DBB.aac
+text @[Kotomi]
+text ...
+text She silently blushes.
+text @[Tomoya]
+text I'll carry your stuff.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I take her cloth bag containing the lunch boxes.
+text It seems kind of large for two people, but it's lighter than it looks.
+text @[Tomoya]
+text Sandwiches?
+setvar strS[1001] = "CGKT15D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT15D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DBC.aac
+text @[Kotomi]
+text Yes. Sandwiches.
+sound DBD.aac
+text @[Kotomi]
+text It's the first time I've made them, so I'm worried about how they turned out.
+text @[Tomoya]
+text You can't really mess up a sandwich.
+sound DBE.aac
+text @[Kotomi]
+text And...
+sound DBF.aac
+text @[Kotomi]
+text I've been in the sun, so I'm worried that the food may have gone bad.
+text @[Tomoya]
+text You stood right here without moving?
+text She could have moved into the shade.
+sound DBG.aac
+text @[Kotomi]
+text You said we'd meet "right here on Sunday, the day after tomorrow, at 10 am."
+sound DBH.aac
+text @[Kotomi]
+text I came thirty minutes early, but I'm at the exact spot.
+text She states it matter-of-factly.
+text @[Tomoya]
+text I get it. I pointed here and said we'd be meeting here, huh?
+text The familiar feeling I get from being with Kotomi starts to overtake me.
+text It's the feeling of a few drops of guilt dispersing through the air of a child's room.
+text But that isn't Kotomi's fault. All she did was wait for me.
+text @[Tomoya]
+text Let's make up for my lateness and just have fun.
+setvar strS[1001] = "CGKT17C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT17C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DBI.aac
+text @[Kotomi]
+text Yes. I'm looking forward to it very, very much.
+text Kotomi smiles innocently as if she's relieved.
+text I suddenly realize that we haven't even decided what to do today.
+text @[Tomoya]
+text Is there anywhere you want to go?
+setvar strS[1001] = "CGKT12C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DBJ.aac
+text @[Kotomi]
+text Um...
+sound DBK.aac
+text @[Kotomi]
+text I know a very wonderful place.
+sound DBL.aac
+text @[Kotomi]
+text I'm sure you'd like it too, Tomoya-kun.
+text She must have already decided because her eyes glitter as she says that.
+text @[Tomoya]
+text I don't mind if it's somewhere you want to go.
+text @[Tomoya]
+text Is it far? The bus station is up ahead, but we'll need to go into town if we have to take a train.
+sound DBM.aac
+text @[Kotomi]
+text No, it's a short walk from here.
+text @[Tomoya]
+text Oh? There's a place like that in the neighborhood? I didn't know that...
+sound DBN.aac
+text @[Kotomi]
+text No, that's not it.
+sound DBO.aac
+text @[Kotomi]
+text It's somewhere you're familiar with, Tomoya-kun.
+text @[Tomoya]
+text Is it?
+text I think about it again.
+text There isn't a large park or amusement park nearby.
+text So why is Kotomi so sure that I've seen it?
+text @[Tomoya]
+text Sorry. I don't know where it is.
+text A vague sense of worry creeps over me, as if I'm feeling echoes of my dream.
+sound DBP.aac
+text @[Kotomi]
+text Um...
+text Still confused, Kotomi puts her lips close to my ear.
+sound DBQ.aac
+text @[Kotomi]
+text It's the school library.
+music ~
+setvar strS[1001] = "CGKY14D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY14D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08A.mp3
+sound DBR.aac
+text @[Kyou]
+text Why the hell would you go there?!
+setvar strS[1001] = "CGKY20C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY20C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DBS.aac
+text @[Kyou]
+text Don't you understand? This is your first date!
+sound DBT.aac
+text @[Kyou]
+text You got excited, dressed up, and even made lunch!
+sound DBU.aac
+text @[Kyou]
+text So why would you go to school?
+sound DBV.aac
+text @[Kyou]
+text Even if God allows it, I won't!
+text @[Tomoya]
+text ...
+sound DBW.aac
+text @[Kotomi]
+text ...
+setvar strS[1001] = "CGKY16C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY16C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DBX.aac
+text @[Kyou]
+text Whoops...
+text @[Tomoya]
+text What are you doing here?
+setvar strS[1001] = "CGKY21C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY21C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DBY.aac
+text @[Kyou]
+text Huh? Um... you know...
+sound DBZ.aac
+text @[Kyou]
+text I'm just an ordinary passerby. Don't mind me. Heart mark.
+text @[Tomoya]
+text Don't give me a heart mark! You were planning on following us today, weren't you?!
+setvar strS[1001] = "CGKY16D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY16D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DC0.aac
+text @[Kyou]
+text Ugh. Her statement was so dumb that I couldn't help but point it out.
+text She must also be excited. She seems strangely high-strung.
+text @[Tomoya]
+text Geez...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She must really have nothing to do if she's coming here in the morning right smack in the middle of the long weekend.
+text Wait, hold on...
+text Something's strange.
+text How did she know where and when we were meeting?
+text @[Tomoya]
+text Kotomi, did you...
+setvar strS[1001] = "CGKT20D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT20D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DC1.aac
+text @[Kotomi]
+text ?!?!
+text She's even more confused than I am.
+text It doesn't seem like she babbled about it in her excitement.
+text That leaves only one possibility.
+setvar strS[1001] = "CGKY15C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY15C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Kyou, you followed us last Friday and eavesdropped on us.
+setvar strS[1001] = "CGKY24E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY24E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DC2.aac
+text @[Kyou]
+text Me? I would never do something as unladylike as that.
+text @[Tomoya]
+text Actually, you're the ONLY one who would do that.
+sound DC3.aac
+text @[Kyou]
+text You're as naive as always.
+setvar strS[1001] = "CGKY12C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DC4.aac
+text @[Kyou]
+text Ryou! Club Prez! Get out here!
+setvar strS[1001] = "CGRY14D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY14D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DC5.aac
+text @[Ryou]
+text Ugh... I told you we shouldn't do this...
+setvar strS[1001] = "CGNG10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DC6.aac
+text @[Furukawa]
+text Um... hello, Okazaki-san. We're having such nice weather today.
+text The usual members come out from behind a corner.
+text Facepalm.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Please explain how this happened...
+setvar strS[1001] = "CGKY12C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DC7.aac
+text @[Kyou]
+text It's divine retribution. Yeah.
+text @[Tomoya]
+text ...
+setvar strS[1001] = "CGKT12C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DC8.aac
+text @[Kotomi]
+text Oh, Nagisa-chan. Hello.
+setvar strS[1001] = "CGNG23A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DC9.aac
+text @[Furukawa]
+text Kotomi-chan, hello.
+setvar strS[1001] = "CGKT12C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DCA.aac
+text @[Kotomi]
+text Ryou-chan, too. Hello.
+setvar strS[1001] = "CGRY21E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY21E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DCB.aac
+text @[Ryou]
+text Kotomi-chan, hello.
+sound DCC.aac
+text @[Ryou]
+text Um... sorry for bothering you two...
+text They make their usual heartwarming exchanges.
+setvar strS[1001] = "CGKT11C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DCD.aac
+text @[Kotomi]
+text Is that your lunch?
+setvar strS[1001] = "CGNG25AZ"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG25AZ.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DCE.aac
+text @[Furukawa]
+text Yes. Ryou-chan, Kyou-chan, and I woke up early to make it together.
+setvar strS[1001] = "CGRY11D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY11D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DCF.aac
+text @[Ryou]
+text Tomorrow is a Children's Day, so I wanted to make rice dumplings.
+sound DCG.aac
+text @[Kotomi]
+text I've never made them before.
+sound DCH.aac
+text @[Kotomi]
+text Are rice dumplings hard to make?
+sound DCI.aac
+text @[Ryou]
+text You have to prepare the ingredients the day before, but Onee-chan did that for me.
+text @[Tomoya]
+text ...Meaning you prepared the ingredients yesterday and got up early this morning just to interfere with our date.
+setvar strS[1001] = "CGKT17C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT17C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DCJ.aac
+text @[Kotomi]
+text I want to try making them.
+text And my partner over here is getting won over by her funny-man friends.
+text At this rate, our date is going to turn into a comedy sketch.
+choice Get rid of the others|Just keep things the way they are
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s7
+fi
+goto 14
+label s7
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Hey, hold up.
+text I pull Kotomi to one side as she's having this easy-going conversation.
+text @[Tomoya]
+text We decided in the beginning that it'd just be the two of us today.
+text @[Tomoya]
+text Don't interfere. Please.
+text @[Tomoya]
+text Right, Kotomi?
+setvar strS[1001] = "CGKT11C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DCK.aac
+text @[Kotomi]
+text ???
+text @[Tomoya]
+text ...
+text Do you really want to go on a date with me?
+sound DCL.aac
+text @[Kotomi]
+text ...?
+setvar strS[1001] = "CGKT33D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT33D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DCM.aac
+text @[Kotomi]
+text Oh...
+text Her face turns bright red.
+text @[Tomoya]
+text Your reaction is fatally slow!
+setvar strS[1001] = "CGKY33D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY33D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DCN.aac
+text @[Kyou]
+text Uh-huh...
+text Kyou grins at us when she sees how naive we're acting.
+sound DCO.aac
+text @[Kyou]
+text I totally understand. You want to do this and that to Kotomi when you're alone.
+text @[Tomoya]
+text What do you mean by "this and that"?
+setvar strS[1001] = "CGKY33E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY33E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DCP.aac
+text @[Kyou]
+text Oh, I can't say that on the air. It's censored.
+sound DCQ.aac
+text @[Kyou]
+text Right, Kotomi?
+setvar strS[1001] = "CGKT11C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DCR.aac
+text @[Kotomi]
+text ???
+sound DCS.aac
+text @[Kotomi]
+text ...?
+setvar strS[1001] = "CGKT33D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT33D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DCT.aac
+text @[Kotomi]
+text Oh...
+text Her face turns bright red.
+setvar strS[1001] = "CGKY17C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY17C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DCU.aac
+text @[Kyou]
+text Setting aside her extremely slow reaction time...
+text After making a "setting this aside" gesture, Kyou turns back to me.
+setvar strS[1001] = "CGKY26C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY26C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DCV.aac
+text @[Kyou]
+text Do you really think you have the right to say anything, Mr. Late-to-the-Meetup?
+text @[Tomoya]
+text Ugh...
+text I don't have a response to that.
+setvar strS[1001] = "CGKY17C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY17C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DCW.aac
+text @[Kyou]
+text I know. Why don't we let Kotomi decide?
+text Kyou pulls Kotomi against her and snuggles her from behind.
+setvar strS[1001] = "CGKY12C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DCX.aac
+text @[Kyou]
+text Well, Kotomi? Would you rather have a date with just the two of you or with everyone?
+text @[Tomoya]
+text If you're positioning yourself to fondle her breasts at any time, I consider that a threat.
+setvar strS[1001] = "CGKY13C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY13C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DCY.aac
+text @[Kyou]
+text You shut up.
+setvar strS[1001] = "CGKT20D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT20D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DCZ.aac
+text @[Kotomi]
+text Um...
+sound DD0.aac
+text @[Kotomi]
+text ...
+text Kotomi is torn.
+setvar strS[1001] = "CGKT15D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT15D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DD1.aac
+text @[Kotomi]
+text They both sound like fun.
+text @[Tomoya]
+text ...
+choice Force your way into a date with just Kotomi|Just keep things the way they are
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s8
+fi
+goto 12
+label s8
+text It's time for drastic measures.
+setvar strS[1001] = "CGKY10C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY10C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Kyou.
+text I turn to face her head-on.
+sound DD2.aac
+text @[Kyou]
+text Wh-What...?
+text Kyou flinches, but I move in and whisper into her ear.
+text I say the magic words.
+text @[Tomoya]
+text Let us go and I'll treat you to something.
+sound DD3.aac
+text @[Kyou]
+text ...
+setvar strS[1001] = "CGKY30C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY30C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DD4.aac
+text @[Kyou]
+text Something like what?
+text @[Tomoya]
+text Fruit milk.
+sound DD5.aac
+text @[Kyou]
+text For how many months?
+text @[Tomoya]
+text How about a few days?
+sound DD6.aac
+text @[Kyou]
+text A hundred days.
+text I curse at her in my mind, but I don't want this deal to fall through.
+text @[Tomoya]
+text How about ten days?
+sound DD7.aac
+text @[Kyou]
+text Thirty days.
+text @[Tomoya]
+text Fifteen days.
+sound DD8.aac
+text @[Kyou]
+text Twenty days.
+text @[Tomoya]
+text Deal.
+text Our confidential negotiations have concluded.
+setvar strS[1001] = "CGKY17C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY17C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DD9.aac
+text @[Kyou]
+text *Cough*
+text Kyou fakes a cough and stands up straight.
+setvar strS[1001] = "CGKY12C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DDA.aac
+text @[Kyou]
+text I guess we shouldn't get in the way of two lovebirds.
+sound DDB.aac
+text @[Kyou]
+text Well, we'll be going our separate ways here. Good luck.
+text While Kyou makes that upstanding statement with a straight face, Fujibayashi and Furukawa sigh with relief.
+setvar strS[1001] = "CGKT11C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Kotomi is the only one confused by the sudden turn of events.
+text @[Tomoya]
+text Well, that's that, Kotomi.
+text @[Tomoya]
+text I'll take you to a really fun place that only I know about.
+text I take her hand as I say that.
+text @[Tomoya]
+text Let's run to the station!
+setvar strS[1001] = "CGKT30C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT30C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DDC.aac
+text @[Kotomi]
+text ?!?!
+setvar strS[1000] = "SIRO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s9
+fi
+goto 8
+label s9
+setvar strS[1000] = ""
+label 8
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 0
+text We run down the street hand-in-hand.
+text Even Kyou didn't expect this.
+sound DDD.aac
+text @[Kyou]
+text What are you doing?! After them! Hurry!
+sound DDE.aac
+text @[Ryou]
+text Huh? But...
+sound DDF.aac
+text @[Furukawa]
+text Didn't you just say you wouldn't interfere?
+sound DDG.aac
+text @[Kyou]
+text I was lying!
+sound DDH.aac
+text @[Ryou & Nagisa]
+text ...
+text I hear that conversation in the distance.
+text Everything is happening exactly as I expected.
+text We duck out of sight behind a corner before they can catch up.
+sound DDI.aac
+text @[Kyou]
+text We'll be done for if they get on the train! Hurry!
+text The three of them run past without noticing us.
+setvar strS[1000] = "BG033"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s10
+fi
+goto 9
+label s10
+setvar strS[1000] = ""
+label 9
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Looks like we're good.
+setvar strS[1001] = "CGKT11D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DDJ.aac
+text @[Kotomi]
+text ...?
+text @[Tomoya]
+text Let's go, Kotomi.
+sound DDK.aac
+text @[Kotomi]
+text Um... but the train station isn't this way.
+text @[Tomoya]
+text You wanted to go to the library, didn't you?
+text @[Tomoya]
+text I like being at the library when you're there.
+setvar strS[1001] = "CGKT10C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT10C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She looks back at me, confused.
+text It feels like her expression darkens for an instant.
+text @[Tomoya]
+text You don't look too happy.
+setvar strS[1001] = "CGKT12C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DDL.aac
+text @[Kotomi]
+text That's not true.
+sound DDM.aac
+text @[Kotomi]
+text I also wanted to spend time together with you today.
+text She says that with her usual reserved smile.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s11
+fi
+goto 10
+label s11
+setvar strS[1000] = ""
+label 10
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG027"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s12
+fi
+goto 11
+label s12
+setvar strS[1000] = ""
+label 11
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM15.mp3
+text We enter the library and experience the familiar fragrances.
+text We were just here on Friday, but it feels like we left it behind long ago.
+text Kotomi mops the floor and sheds her socks.
+text Naturally, she takes out her usual cushion.
+text @[Tomoya]
+text You really love the library, don't you?
+setvar strS[1001] = "CGKT12C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DDN.aac
+text @[Kotomi]
+text Yes. I love it.
+sound DDO.aac
+text @[Kotomi]
+text I feel so happy being surrounded by books again today.
+text She says that with the same smile as always.
+text @[Tomoya]
+text And you're going to start reading right now?
+setvar strS[1001] = "CGKT17C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT17C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DDP.aac
+text @[Kotomi]
+text Yes.
+text She smiles from ear to ear.
+text @[Tomoya]
+text Then I'll watch you as you read.
+sound DDQ.aac
+text @[Kotomi]
+text Okay.
+setvar strS[1001] = "CGKT15C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT15C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DDR.aac
+text @[Kotomi]
+text I feel happy when you watch me, Tomoya-kun...
+text She laughs a little.
+text I feel guilt deep inside my heart.
+text Right when I'm about to say something, my stomach growls.
+sound DDS.aac
+text @[Kotomi]
+text Tomoya-kun, are you hungry?
+text @[Tomoya]
+text Yeah. We got some totally unnecessary exercise this morning.
+sound DDT.aac
+text @[Kotomi]
+text Then let's have lunch.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Kotomi starts preparing.
+text I sit down and wait for the lunch table to be ready.
+jump SEEN4904_4_0.scr
+goto 13
+label 12
+if intF[1089] == 1
+	goto s13
+fi
+goto 13
+label s13
+text @[Tomoya]
+text All right. I'm fine with it this way.
+label 13
+goto 15
+label 14
+if intF[1089] == 1
+	goto s14
+fi
+goto 15
+label s14
+text @[Tomoya]
+text Well, I guess we can go together.
+label 15
+text I mumble that in a self-deprecating way.
+text The mission failed the moment these guys sniffed us out.
+text The only good thing is that Kotomi seems really happy to see them.
+setvar strS[1001] = "CGKY24E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY24E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DDU.aac
+text @[Kyou]
+text You finally know your place.
+sound DDV.aac
+text @[Kyou]
+text It's still too soon for you two to go on a date together.
+text Kyou is smug in victory.
+setvar strS[1001] = "CGKY12C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DDW.aac
+text @[Kyou]
+text Oh yeah, I'll teach you everything about going on a date.
+setvar strS[1001] = "CGKY24C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY24C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DDX.aac
+text @[Kyou]
+text Got it, Kotomi? Say no and I'll fondle you everywhere~
+setvar strS[1001] = "CGKT23D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT23D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DDY.aac
+text @[Kotomi]
+text ​~~~~~~?!
+text *Shake* *Shake* *Shake* *Shake*
+text My date is shaking her head furiously.
+text @[Tomoya]
+text Hold on! Not only are you getting in the way of our date, but you're starting to boss us around too?!
+setvar strS[1001] = "CGKY25C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY25C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DDZ.aac
+text @[Kyou]
+text Oh, you can go home now. I'll take it from here.
+text @[Tomoya]
+text This woman is horrible! Arrrgh!
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text .........
+text ......
+text ...
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s15
+fi
+goto 16
+label s15
+setvar strS[1000] = ""
+label 16
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG035"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s16
+fi
+goto 17
+label s16
+setvar strS[1000] = ""
+label 17
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM09B.mp3
+setvar strS[1001] = "CGKY25C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY25C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DE0.aac
+text @[Kyou]
+text It's pretty crowded...
+text We came to the usual bustling shopping arcade.
+sound DE1.aac
+text @[Kyou]
+text You look grumpy.
+text @[Tomoya]
+text I was just here yesterday wandering around on my own.
+sound DE2.aac
+text @[Kyou]
+text And how is that my problem?
+setvar strS[1001] = "CGKY12C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DE3.aac
+text @[Kyou]
+text Right, Kotomi?
+setvar strS[1001] = "CGKT22C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT22C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DE4.aac
+text @[Kotomi]
+text ...
+text Kotomi looks exhausted from the usual crowd and Kyou's excited state.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Next to her are Fujibayashi and Furukawa who have resolved to just go with the flow.
+text @[Tomoya]
+text Hey, isn't there a better place we can go...?
+setvar strS[1001] = "CGKY15C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY15C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DE5.aac
+text @[Kyou]
+text I don't mind going to an amusement park or a movie theater, but can you pay for five people?
+text @[Tomoya]
+text Why do I have to pay for you all?!
+setvar strS[1001] = "CGKY17C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY17C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DE6.aac
+text @[Kyou]
+text I'm being considerate to you, so shut up.
+text @[Tomoya]
+text And I'm telling you that the parts you're being considerate about don't make any sense!
+setvar strS[1001] = "CGKY11C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DE7.aac
+text @[Kyou]
+text Say, isn't everyone hungry?
+text @[Tomoya]
+text Don't ignore me!
+setvar strS[1001] = "CGNG12AZ"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG12AZ.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DE8.aac
+text @[Furukawa]
+text I don't think there are many places where we can eat our lunch boxes...
+setvar strS[1001] = "CGRY14D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY14D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DE9.aac
+text @[Ryou]
+text O-Onee-chan, maybe we should go somewhere else...
+setvar strS[1001] = "CGKY15C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY15C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DEA.aac
+text @[Kyou]
+text Hey, look. There's a spot over there.
+text She points at the open terrace of a hamburger shop reserved for weekends and holidays.
+setvar strS[1001] = "CGRY15D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY15D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DEB.aac
+text @[Ryou]
+text But...
+setvar strS[1001] = "CGKY12C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DEC.aac
+text @[Kyou]
+text It's fine. Just go and sit down.
+text After saying that, Kyou goes inside the hamburger shop.
+bgload KURO.jpg 55
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DED.aac
+text @[Kyou]
+text Sorry for the wait.
+text Three minutes later, Kyou returns with a tray.
+text She quickly places five coffee cups in front of everyone.
+sound DEE.aac
+text @[Kyou]
+text I ordered hot coffees for everyone. You don't mind treating everyone, right?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Kyou sits down while saying that.
+text @[Tomoya]
+text So we're just taking a break...
+text I sip the coffee. Hot coffee on an empty stomach is harsh...
+setvar strS[1001] = "CGKY12C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DEF.aac
+text @[Kyou]
+text Let's eat.
+text @[Tomoya]
+text Hey!
+text Kyou starts setting up the rice dumplings and sandwiches on the table.
+setvar strS[1001] = "CGKY15C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY15C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DEG.aac
+text @[Kyou]
+text What's wrong?
+sound DEH.aac
+text @[Kyou]
+text I don't see a sign that says "no outside food or drink."
+text @[Tomoya]
+text Of course they wouldn't put up a sign like that.
+setvar strS[1001] = "CGKY12C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DEI.aac
+text @[Kyou]
+text Being sneaky about it would just attract more attention.
+text She lowers her voice for the other members who are not-so-subtly uncomfortable at the situation.
+setvar strS[1001] = "CGKY30C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY30C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DEJ.aac
+text @[Kyou]
+text Listen. This is their new menu.
+sound DEK.aac
+text @[Kyou]
+text The shop specially made these homemade rice dumplings and homemade sandwiches.
+text @[Tomoya]
+text I think you're mistaking "homemade" for something else.
+setvar strS[1001] = "CGRY14E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY14E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DEL.aac
+text @[Ryou]
+text O-Onee-chan... Onee-chan... behind you...
+sound DEM.aac
+text @[Kyou]
+text Shut your trap!
+sound DEN.aac
+text @[Ryou]
+text But... um... look...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Store Employee]
+text ...
+text An employee who has come to take the trays away is looking at us with a twitchy smile.
+sound DEO.aac
+text @[Store Employee]
+text Um... Ma'am?
+setvar strS[1001] = "CGKY12C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DEP.aac
+text @[Kyou]
+text Yes?
+text Kyou answers her briskly.
+text @[Store Employee]
+text ...
+sound DEQ.aac
+text @[Kyou]
+text ...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text The employee turns around as if nothing happened and goes back to work.
+text She must be telling herself that she didn't see anything.
+setvar strS[1001] = "CGKY11C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DER.aac
+text @[Kyou]
+text See? Justice prevails.
+text @[Tomoya]
+text She probably thinks you're a weird psycho.
+setvar strS[1001] = "CGKY15C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY15C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DES.aac
+text @[Kyou]
+text Oh yeah, I almost forgot.
+text She holds out her palm to me.
+setvar strS[1001] = "CGKY12C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DET.aac
+text @[Kyou]
+text That'll be 945 yen for the five coffees.
+text What a wonderful saleswoman's smile.
+bgload KURO.jpg 55
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text We're eating handmade rice dumplings and sandwiches on a burger shop's table.
+text The situation leaves a lot to be desired, but everything tastes great.
+text I'm self-conscious at first, but feel a lot better once I start ignoring the surrounding people.
+text We finish eating and I see that Kotomi's starting to get used to this.
+text She's having her usual fun conversation with Furukawa and the others.
+text As I finish my coffee, I think to myself that maybe it's better this way.
+setvar strS[1001] = "CGKY11C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DEU.aac
+text @[Kyou]
+text Phew. That was a good meal.
+sound DEV.aac
+text @[Kyou]
+text But we gotta have something sweet to top it off.
+sound DEW.aac
+text @[Kyou]
+text I'm gonna make another order.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text After saying that selfish statement, the dessert-eating monster goes back into the shop.
+setvar strS[1001] = "CGNG12AZ"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG12AZ.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DEX.aac
+text @[Furukawa]
+text Um, what are we going to do now?
+text Furukawa asks timidly.
+setvar strS[1001] = "CGRY22D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY22D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DEY.aac
+text @[Ryou]
+text I think we should go our separate ways this afternoon.
+text Fujibayashi secretly agrees now that her sister is away.
+text @[Tomoya]
+text Don't worry about it. This is fun in its own way.
+text @[Tomoya]
+text Right, Kotomi?
+setvar strS[1001] = "CGKT12C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DEZ.aac
+text @[Kotomi]
+text Yes.
+setvar strS[1001] = "CGKT17C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT17C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DF0.aac
+text @[Kotomi]
+text Being with everyone is fun.
+text I hate to admit it, but that's how she really feels.
+text @[Tomoya]
+text What do you want to do? Is there somewhere you want to go?
+setvar strS[1001] = "CGKT12C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DF1.aac
+text @[Kotomi]
+text Um...
+setvar strS[1001] = "CGKY12C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DF2.aac
+text @[Kyou]
+text This is the best time to ask for a present.
+text @[Tomoya]
+text That was fast.
+setvar strS[1001] = "CGKY11C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DF3.aac
+text @[Kyou]
+text They had some new stuff, so I bought it. It's your treat so it's okay, right?
+text She passes around five lemon jelly cups to everyone.
+sound DF4.aac
+text @[Kyou]
+text It was 787 yen in all. You can just give me 800 yen.
+text @[Tomoya]
+text You're rounding up?! And why is it my treat again?!
+setvar strS[1001] = "CGKY30C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY30C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DF5.aac
+text @[Kyou]
+text Listen carefully, Kotomi.
+text @[Tomoya]
+text You listen to me!
+sound DF6.aac
+text @[Kyou]
+text The price of the present your boyfriend gives you is directly proportional to his love for you. That's why you have to get him to go as expensive as possible.
+setvar strS[1001] = "CGKT11C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DF7.aac
+text @[Kotomi]
+text Oh, really...
+text @[Tomoya]
+text That's not true! Don't teach her dangerous lies!!
+setvar strS[1001] = "CGKY24E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY24E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DF8.aac
+text @[Kyou]
+text Oh, you're being shy again.
+text @[Tomoya]
+text Besides, I won't give you presents when it's not even your birthday.
+setvar strS[1001] = "CGRY11D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY11D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DF9.aac
+text @[Ryou]
+text By the way, when is your birthday, Kotomi-chan?
+setvar strS[1001] = "CGKT10C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT10C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DFA.aac
+text @[Kotomi]
+text Um...
+text She glances at me and whispers.
+setvar strS[1001] = "CGKT12C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DFB.aac
+text @[Kotomi]
+text May 13th.
+setvar strS[1001] = "CGRY11E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY11E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DFC.aac
+text @[Ryou]
+text Oh really. So since today is May 4th...
+setvar strS[1001] = "CGNG23AZ"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23AZ.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DFD.aac
+text @[Furukawa]
+text It's almost your birthday.
+text Fujibayashi and Furukawa throw me into the grave I dug for myself.
+setvar strS[1001] = "CGKY12C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DFE.aac
+text @[Kyou]
+text Then it's set. Let's look for your birthday present this afternoon!
+text @[Tomoya]
+text ...
+text @[Tomoya]
+text Oh, fine...
+text I was hoping to do this alone.
+setvar strS[1001] = "CGKY25C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY25C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DFF.aac
+text @[Kyou]
+text Did you say something?
+text @[Tomoya]
+text No, it's fine.
+setvar strS[1001] = "CGKY13C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY13C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DFG.aac
+text @[Kyou]
+text No, it's not fine. Give me 800 yen!
+text She shoves her hand in my face and I have no choice but to give her a 1,000 yen bill.
+setvar strS[1001] = "CGKY12D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DFH.aac
+text @[Kyou]
+text Thanks!
+text @[Tomoya]
+text Where's my change?
+sound DFI.aac
+text @[Kyou]
+text You don't get any!
+text @[Tomoya]
+text ...
+text She's like a countryside vending machine.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text .........
+text ......
+text ...
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s17
+fi
+goto 18
+label s17
+setvar strS[1000] = ""
+label 18
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08B.mp3
+text Furukawa and Fujibayashi seem to enjoy window shopping the most out of all of us.
+text They stop at almost every window and use Kotomi as a model for the choices on display.
+text All I can do is follow behind.
+setvar strS[1000] = "BG035"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s18
+fi
+goto 19
+label s18
+setvar strS[1000] = ""
+label 19
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGNG25A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG25A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DFJ.aac
+text @[Furukawa]
+text Okazaki-san, this outfit is cute.
+text Furukawa points at something as she says that.
+text A trendy mannequin made from planks is wearing a white dress.
+text It has ribbons and frills; a puffy, childish dress.
+text It's the exact opposite of what Kotomi is wearing right now.
+sound DFK.aac
+text @[Furukawa]
+text I think it'd look good on her.
+setvar strS[1001] = "CGRY11E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY11E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DFL.aac
+text @[Ryou]
+text The size is just right, too.
+setvar strS[1001] = "CGNG10AZ"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10AZ.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DFM.aac
+text @[Furukawa]
+text How is it?
+setvar strS[1001] = "CGRY11D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY11D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DFN.aac
+text @[Ryou]
+text What do you think?
+text @[Tomoya]
+text Don't gang up on me.
+text I really don't know what to do.
+text Kotomi looks at the dress as if it were a tropical fish in an aquarium.
+text @[Tomoya]
+text What does she think?
+setvar strS[1001] = "CGKT11C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DFO.aac
+text @[Kotomi]
+text ??
+sound DFP.aac
+text @[Kotomi]
+text Um...
+setvar strS[1001] = "CGKT21C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT21C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DFQ.aac
+text @[Kotomi]
+text I've only been to bookstores around here...
+text @[Tomoya]
+text That information doesn't matter right now.
+setvar strS[1001] = "CGRY15D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY15D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DFR.aac
+text @[Ryou]
+text Um... is it not good enough?
+text @[Tomoya]
+text That's not what I meant...
+text @[Tomoya]
+text Just looking might not be enough, you know.
+setvar strS[1001] = "CGRY11D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY11D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DFS.aac
+text @[Ryou]
+text Then why don't we go inside and try it on?
+text @[Tomoya]
+text Hold it right there.
+text That'd be embarrassing. Way too embarrassing.
+setvar strS[1001] = "CGKT31D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT31D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DFT.aac
+text @[Kotomi]
+text ...
+text The girl next to me is already blushing.
+setvar strS[1001] = "CGNG23AZ"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23AZ.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DFU.aac
+text @[Furukawa]
+text These shoes are really cute too.
+text I hear Furukawa calling out from a few stores down.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Fujibayashi and Kotomi run over to her.
+text I start to follow them, but something on the other side of the street catches my eye.
+text It's a small musical instrument store.
+text There's a shiny violin in the corner of the window.
+text I walk over and take a look at the price tag.
+text "Sale price: 140,000 yen"
+text @[Tomoya]
+text ...
+text I'll pretend I didn't see that.
+setvar strS[1001] = "CGKY24E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY24E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DFV.aac
+text @[Kyou]
+text Uh-huh. I get it.
+text Out of nowhere, Kyou is peering over my shoulder.
+text @[Tomoya]
+text What?
+setvar strS[1001] = "CGKY15C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY15C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DFW.aac
+text @[Kyou]
+text That's expensive, even though it's the same kind of thing she was playing the other day.
+text @[Tomoya]
+text Even if they look the same, this one's probably high class.
+sound DFX.aac
+text @[Kyou]
+text You just don't get it.
+text @[Tomoya]
+text What don't I get?
+sound DFY.aac
+text @[Kyou]
+text Presents aren't about the price.
+text @[Tomoya]
+text I heard the exact opposite thing come out of your mouth earlier.
+setvar strS[1001] = "CGKY11C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DFZ.aac
+text @[Kyou]
+text That's totally different.
+text She laughs suggestively for some reason.
+sound DG0.aac
+text @[Kyou]
+text Just watch. I'll show you what a real present is.
+bgload KURO.jpg 60
+bgload {$strS[1000]}.jpg 60
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Two hours later.
+text We're out front of an arcade.
+setvar strS[1001] = "CGKY13C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY13C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DG1.aac
+text @[Kyou]
+text Dammit! It's not budging!
+sound DG2.aac
+text @[Kyou]
+text Hey, Mister! This thing is stuck again! It won't work like this!
+text An arcade employee frantically runs over as he hears the sound of someone banging on the crane game.
+sound DG3.aac
+text @[Store Employee]
+text Again?
+text He opens the glass case with a key and resets the position of the stuffed animal.
+text She's aiming for a giant stuffed beagle with a white body and black ears and nose... It's over a meter tall.
+setvar strS[1001] = "CGRY18D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY18D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DG4.aac
+text @[Ryou]
+text No matter how many times I look, it's surprisingly big.
+setvar strS[1001] = "CGNG12AZ"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG12AZ.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DG5.aac
+text @[Furukawa]
+text What do you think of a stuffed animal larger than the real thing?
+text @[Tomoya]
+text Dunno...
+setvar strS[1001] = "CGKY13C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY13C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DG6.aac
+text @[Kyou]
+text @Make it so it's close to falling right off and...
+delay 187
+text yeah, that's right. That's good.
+sound DG7.aac
+text @[Store Employee]
+text There. All done.
+setvar strS[1001] = "CGKY12C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DG8.aac
+text @[Kyou]
+text Thanks!
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text After setting the stuffed animal in a super easy spot, the exasperated employee walks away.
+text An audience is gathering in front of the arcade because we've spent so much time at the machine.
+text Are they crazy?
+text It's too big to fit down the chute anyway.
+text That's not a prize. Isn't it just a decoration?
+text Kyou ignores the background chatter and makes a declaration.
+setvar strS[1001] = "CGKY12C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DG9.aac
+text @[Kyou]
+text This is my 34th challenge!
+text @[Tomoya]
+text It's faster to just ask them to sell it to you.
+setvar strS[1001] = "CGKY14C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY14C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DGA.aac
+text @[Kyou]
+text What are you saying?! It wouldn't be a present from the heart that way!
+text @[Tomoya]
+text What you're doing is pretty close to cheating anyway!
+sound DGB.aac
+text @[Kyou]
+text No more excuses! Put the money in!
+text @[Tomoya]
+text Yeah, yeah.
+text *Plink* *Plink*
+text Two of my few remaining 100 yen coins are ruthlessly snatched from my hand.
+sound DGC.aac
+text @[Kyou]
+text Let's go, Club Prez!
+setvar strS[1001] = "CGNG17A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG17A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DGD.aac
+text @[Furukawa]
+text Okaaay!
+text Furukawa lets out a weird shout as she places her fingers on the two buttons.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text The crane moves.
+text *Vreen*
+text *Vreeeeeeeeeen*
+text *Vreeeeeen*
+text *Slip*
+setvar strS[1001] = "CGNG31A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG31A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DGE.aac
+text @[Furukawa]
+text Sorry. I wasn't even close.
+text Furukawa loses in six seconds.
+text That's a rate of 100 yen per three seconds.
+text It makes me want to cry.
+setvar strS[1001] = "CGKY14D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY14D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DGF.aac
+text @[Kyou]
+text Ryou, you're next! Get it right!
+setvar strS[1001] = "CGRY18D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY18D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DGG.aac
+text @[Ryou]
+text I-I'll try!
+setvar strS[1001] = "CGKY14D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY14D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DGH.aac
+text @[Kyou]
+text Hurry up and put the money in!
+text @[Tomoya]
+text Blah. In for a penny...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Plink* *Plink*
+text *Vreen*
+text *Vreeeeeeeeeen*
+text *Vreeeeeen*
+text *Tug*
+sound DGI.aac
+text @[Everyone]
+text Whoa!
+text The crane catches onto the loop of the product tag.
+text The stuffed animal slowly moves to the prize chute.
+text *Plop*
+sound DGJ.aac
+text @[Everyone]
+text Oh...
+text The crane shakes a little and drops the stuffed animal off to the side.
+setvar strS[1001] = "CGRY18E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY18E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DGK.aac
+text @[Ryou]
+text Awwww... that was so close...
+setvar strS[1001] = "CGKT22D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT22D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DGL.aac
+text @[Kotomi]
+text That was very close.
+setvar strS[1001] = "CGNG31A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG31A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DGM.aac
+text @[Furukawa]
+text Big Dango Family...
+setvar strS[1001] = "CGKY14C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY14C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DGN.aac
+text @[Kyou]
+text Hey! Don't go for that puny local craze!
+sound DGO.aac
+text @[Kyou]
+text Our goal is to get the globally strategic dog from that comic strip named after a legume!
+setvar strS[1001] = "CGRY13D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY13D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DGP.aac
+text @[Ryou]
+text But...
+setvar strS[1001] = "CGNG16AZ"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16AZ.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DGQ.aac
+text @[Furukawa]
+text The Big Dango Family isn't just a local craze...
+setvar strS[1001] = "CGKY13C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY13C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DGR.aac
+text @[Kyou]
+text Whatever! Next!
+text @[Tomoya]
+text Sorry to interrupt while you're having fun, Kyou...
+sound DGS.aac
+text @[Kyou]
+text What?
+text @[Tomoya]
+text I'm out of money, so that was the last one.
+sound DGT.aac
+text @[Kyou]
+text Get more change!
+text @[Tomoya]
+text I don't have any more bills or coins.
+setvar strS[1001] = "CGKY26C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY26C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DGU.aac
+text @[Kyou]
+text ...
+text @[Tomoya]
+text Why are you looking at me like that?
+setvar strS[1001] = "CGKY23C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY23C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DGV.aac
+text @[Kyou]
+text You're a horrible breadwinner.
+text @[Tomoya]
+text Maybe you shouldn't have kept extorting me!
+setvar strS[1001] = "CGKY17C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY17C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DGW.aac
+text @[Kyou]
+text This calls for desperate measures.
+text She takes out her own wallet and rustles around.
+setvar strS[1001] = "CGKY30C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY30C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DGX.aac
+text @[Kyou]
+text My last two 100 yen coins.
+text @[Tomoya]
+text Wait, wait, wait. When I gave you that 1,000 yen bill for the 800 yen tab, I thought you said you didn't have any change.
+sound DGY.aac
+text @[Kyou]
+text That was totally different.
+text @[Tomoya]
+text ...
+text Logic apparently doesn't mean much here.
+sound DGZ.aac
+text @[Kyou]
+text You're the last challenger, Kotomi. Get it!
+setvar strS[1001] = "CGKT11C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DH0.aac
+text @[Kotomi]
+text ???
+text Question marks pop out of Kotomi as she's suddenly nominated.
+text Speaking of which, Kotomi hasn't even tried this once.
+text Kyou herself firmly asserted that it wouldn't be a present anymore if the recipient did this.
+text However, I get the feeling that the only one who can get us out of this situation is Kotomi.
+setvar strS[1001] = "CGKT10C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT10C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text The person in question looks like she's really anticipating the challenge.
+text @[Tomoya]
+text Do you want to give it a shot?
+text Kotomi doesn't answer. She's just staring at the crane game.
+sound DH1.aac
+text @[Kotomi]
+text This requires an elaborate calculation of the center of gravity.
+sound DH2.aac
+text @[Kotomi]
+text Because the target's internal density is inconsistent, the calculation becomes more complex.
+sound DH3.aac
+text @[Kotomi]
+text The natural descent location to aim for will change depending on the load weight of the crane's arm, too.
+sound DH4.aac
+text @[Kotomi]
+text I also have to take into account the delay of the crane stopping after releasing the button.
+sound DH5.aac
+text @[Kotomi]
+text Parallax from the controller location must also be considered.
+text @[Tomoya]
+text I don't think you need to do all that.
+sound DH6.aac
+text @[Kotomi]
+text I'll try to calculate what I have to do to win...
+sound DH7.aac
+text @[Kotomi]
+text ...
+sound DH8.aac
+text @[Kotomi]
+text ......
+sound DH9.aac
+text @[Kotomi]
+text .........
+setvar strS[1001] = "CGKT14C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT14C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DHA.aac
+text @[Kotomi]
+text I've got it.
+text Her confident statement gets the audience murmuring.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Plink* *Plink*
+text Kyou's two 100 yen coins are inserted into the undefeatable machine.
+setvar strS[1001] = "CGKY14D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY14D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DHB.aac
+text @[Kyou]
+text Go for it, Kotomi!
+setvar strS[1001] = "CGRY12D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY12D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DHC.aac
+text @[Ryou]
+text Kotomi-chan, you can do it!
+setvar strS[1001] = "CGNG17AY"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG17AY.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DHD.aac
+text @[Furukawa]
+text Good luck!
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text The crane moves, carrying the hopes and dreams of everyone with it.
+text *Vreeeeeen*
+setvar strS[1001] = "CGKT14C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT14C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DHE.aac
+text @[Kotomi]
+text I have to stop it right here on the x-axis.
+text *Vreeeeeeeeeeeeen*
+sound DHF.aac
+text @[Kotomi]
+text And right here on the y-axis.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text After selecting the drop location, the crane automatically descends.
+text *Vreeeeeen*
+text *Slip*
+sound DHG.aac
+text @[Everyone]
+text ...
+setvar strS[1001] = "CGKT17C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT17C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DHH.aac
+text @[Kotomi]
+text It's very, very hard.
+text The high point of the date has ended.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s19
+fi
+goto 20
+label s19
+setvar strS[1000] = ""
+label 20
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text .........
+text ......
+text ...
+setvar strS[1000] = "BG035Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s20
+fi
+goto 21
+label s20
+setvar strS[1000] = ""
+label 21
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM15.mp3
+text The wind has died down quite a bit.
+text The orange sunshine paints the familiar town a different color.
+text We find a small bench, and Kotomi and the others race to sit on it.
+text The bench is practically overflowing. The girls are still enjoying the afterglow of today's events, their hair fluttering from side to side.
+setvar strS[1001] = "CGNG10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DHI.aac
+text @[Furukawa]
+text I think there's enough room for you if we bunch up some more, Okazaki-san.
+text @[Tomoya]
+text No, I'm fine.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I answer with a wry smile and simply lean against a utility pole.
+text I can feel the heat of the whole day radiating from my shirt. All of a sudden, I realize how exhausted I am.
+text Kotomi is still excited from the day's events.
+text Next to her, Furukawa and Fujibayashi are whispering to each other.
+setvar strS[1001] = "CGNG10AZ"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10AZ.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DHJ.aac
+text @[Furukawa]
+text Um, Okazaki-san, would you like some ice cream?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I look where Furukawa is pointing. An ice cream truck is by the side of the road.
+text There aren't many customers around, so maybe it's past the ice cream rush hour.
+text @[Tomoya]
+text Sure, but I don't have any more money.
+setvar strS[1001] = "CGRY11E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY11E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DHK.aac
+text @[Ryou]
+text Nagisa-chan and I will treat you because of all the trouble we caused.
+text Fujibayashi joins in the conversation.
+text These two were trying to avoid giving us any trouble the whole day.
+text @[Tomoya]
+text Then sure, if you don't mind.
+setvar strS[1001] = "CGNG23A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DHL.aac
+text @[Furukawa]
+text Okay. Kotomi-chan, do you like ice cream?
+setvar strS[1001] = "CGKT17C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT17C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DHM.aac
+text @[Kotomi]
+text Yes. I love it.
+setvar strS[1001] = "CGRY11D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY11D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DHN.aac
+text @[Ryou]
+text Then we'll go buy some.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text They stand up and run off.
+setvar strS[1001] = "CGKY13D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY13D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DHO.aac
+text @[Kyou]
+text ...That dog was glued in there.
+text Kyou is still mulling over what happened at the arcade.
+text @[Tomoya]
+text The arcade guy moved it multiple times at your request. Did I imagine that?
+sound DHP.aac
+text @[Kyou]
+text I'm just saying, I hate that we put so much effort into it and still couldn't get it. Don't you feel the same way?
+text @[Tomoya]
+text It does hurt, considering how much we spent with nothing to show for it.
+text @[Tomoya]
+text What about you?
+text I look down at Kotomi's hair decoration as I ask her.
+setvar strS[1001] = "CGKT12C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DHQ.aac
+text @[Kotomi]
+text It's the first time I've played the crane game.
+sound DHR.aac
+text @[Kotomi]
+text It's much, much harder than I expected.
+setvar strS[1001] = "CGKY24D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY24D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DHS.aac
+text @[Kyou]
+text Now do you understand that your knowledge and calculations don't matter in the real world?
+setvar strS[1001] = "CGKT15C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT15C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DHT.aac
+text @[Kotomi]
+text Yes.
+text She happily agrees for some reason.
+sound DHU.aac
+text @[Kotomi]
+text I have to practice much, much more.
+text @[Tomoya]
+text And who's going to pay for it?
+setvar strS[1001] = "CGKY24C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY24C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DHV.aac
+text @[Kyou]
+text Not me.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Arms overflowing with soft serves, Furukawa and Fujibayashi return.
+text They're walking as if they might trip at any moment, but they manage to make it back safely.
+setvar strS[1001] = "CGNG23A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DHW.aac
+text @[Furukawa]
+text Thank you for waiting. Here you go, Kotomi-chan.
+setvar strS[1001] = "CGKT17D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT17D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DHX.aac
+text @[Kotomi]
+text Nagisa-chan, thank you.
+setvar strS[1001] = "CGRY14D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY14D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DHY.aac
+text @[Ryou]
+text I wanted to buy different flavors, but they only had vanilla soft serve left...
+text @[Tomoya]
+text No, it's fine. Thanks.
+setvar strS[1001] = "CGKY14C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY14C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DHZ.aac
+text @[Kyou]
+text Time out!
+text @[Tomoya]
+text What's with you all of a sudden?
+setvar strS[1001] = "CGKY13D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY13D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DI0.aac
+text @[Kyou]
+text That one's a little bigger.
+text @[Tomoya]
+text Whatever...
+text I trade mine with Kyou's.
+setvar strS[1001] = "CGRY11E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY11E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DI1.aac
+text @[Ryou]
+text Wow... It's so cold and delicious...
+setvar strS[1001] = "CGNG23AZ"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23AZ.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DI2.aac
+text @[Furukawa]
+text The texture is a little rough, but the flavor is really strong.
+setvar strS[1001] = "CGKY11E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DI3.aac
+text @[Kyou]
+text It's not bad for coming from an ice cream truck.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text They all express their thoughts as they eat.
+text As for Kotomi... she's staring at me for some reason.
+setvar strS[1001] = "CGKT12D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DI4.aac
+text @[Kotomi]
+text Halfsies.
+text She holds out her half-eaten soft serve to me.
+text @[Tomoya]
+text It's okay. I have my own.
+setvar strS[1001] = "CGKT11D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DI5.aac
+text @[Kotomi]
+text Halfsies?
+text @[Tomoya]
+text You know, doing halfsies with this is really bad in a lot of ways...
+setvar strS[1001] = "CGKT20D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT20D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DI6.aac
+text @[Kotomi]
+text Halfsies...
+text @[Tomoya]
+text ...
+text Left with no choice, I quickly take a lick of the cone she's holding out.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DI7.aac
+text @[Nagisa & Ryou & Kyou]
+text ...
+text Everyone witnesses it.
+text @[Tomoya]
+text Oh, fine. Say whatever you want.
+setvar strS[1001] = "CGNG14AZ"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG14AZ.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DI8.aac
+text @[Furukawa]
+text Oh...
+text Furukawa suddenly looks up at the sky.
+text I follow suit.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG084H"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s21
+fi
+goto 22
+label s21
+setvar strS[1000] = ""
+label 22
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 98
+text There's a contrail.
+text A vast gradation shifting from blue to azure to indigo, something that no one could recreate on a canvas.
+text Puffs of clouds tinted red by the sunset are layered and floating in silence.
+text As if to cut it all in half, a golden belt stretches across it.
+sound DI9.aac
+text @[Ryou]
+text A contrail...
+sound DIA.aac
+text @[Kyou]
+text That's rare.
+text Kyou is looking up, her left hand cupping her face.
+text Furukawa and Fujibayashi stare at the large arc drawn grandly in the sky.
+sound DIB.aac
+text @[Furukawa]
+text It's beautiful...
+sound DIC.aac
+text @[Ryou]
+text Yeah...
+text They resemble twin sunflowers so much that I have to hold back my laughter.
+text @[Tomoya]
+text Hey, Kotomi...
+text I return my gaze to Kotomi to talk to her.
+setvar strS[1000] = "BG035Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s22
+fi
+goto 23
+label s22
+setvar strS[1000] = ""
+label 23
+setvar strS[1001] = "CGKT31C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+setimg CGKT31C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text But Kotomi is the only one not looking at the sky.
+text She's staring at her half-eaten ice cream.
+text @[Tomoya]
+text Kotomi?
+text @[Tomoya]
+text The contrail is beautiful. See?
+sound DID.aac
+text @[Kotomi]
+text ...
+text No answer.
+text A sharp pain stabs at my chest.
+text @[Tomoya]
+text Um... what do you want for your birthday?
+text Still no answer.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I reword the question and ask again.
+text I can see my reflection in Kotomi's dilating pupils.
+setvar strS[1001] = "CGKT15D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT15D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DIE.aac
+text @[Kotomi]
+text I'm sure I'll be happy with anything as long as it's from you, Tomoya-kun.
+text As twilight draws near, her childish hair decoration quivers.
+text @[Tomoya]
+text But if you had to choose, what would you want the most?
+setvar strS[1001] = "CGKT12D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DIF.aac
+text @[Kotomi]
+text I'm kind of scared to get what I really want.
+text She turns her head and gives me the usual smile.
+text Then she takes a bite of the cone.
+setvar strS[1001] = "CGKY25C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY25C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DIG.aac
+text @[Kyou]
+text Something doesn't seem right. Are you feeling okay?
+text The keen-eyed Kyou asks right away.
+sound DIH.aac
+text @[Kotomi]
+text I'm fine.
+sound DII.aac
+text @[Kyou]
+text I keep telling you not to keep things bottled up.
+sound DIJ.aac
+text @[Kotomi]
+text Um...
+sound DIK.aac
+text @[Kotomi]
+text I might be a little tired right now.
+setvar strS[1001] = "CGKY17D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY17D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DIL.aac
+text @[Kyou]
+text I don't blame you. Lots of stuff happened today.
+text @[Tomoya]
+text It sure did, but hearing it from you ticks me off.
+setvar strS[1001] = "CGKY11C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DIM.aac
+text @[Kyou]
+text Let's call it a day.
+sound DIN.aac
+text @[Kyou]
+text Ryou, Club Prez...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DIO.aac
+text @[Ryou & Nagisa]
+text ...
+text They're still looking at the contrail.
+sound DIP.aac
+text @[Kyou]
+text Hey! Your ice cream is melting!
+setvar strS[1001] = "CGNG15AZ"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG15AZ.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DIQ.aac
+text @[Furukawa]
+text Huh?! Oh! Oh...
+setvar strS[1001] = "CGRY14E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY14E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DIR.aac
+text @[Ryou]
+text Oh no... I think I got some on my clothes...
+setvar strS[1001] = "CGKY20C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY20C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DIS.aac
+text @[Kyou]
+text Oh, geez. What am I gonna do with you? Come on, there's a water fountain over there.
+text While taking care of the careless duo, she turns to me.
+setvar strS[1001] = "CGKY11C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DIT.aac
+text @[Kyou]
+text We're going home from here. You guys go on, okay?
+text @[Tomoya]
+text Are you sure? We'll walk with you all a bit more.
+sound DIU.aac
+text @[Kyou]
+text You just need to go with Kotomi.
+text She says that matter-of-factly, deciding to be considerate in the end.
+sound DIV.aac
+text @[Kyou]
+text Well Kotomi, see you at school the day after tomorrow.
+setvar strS[1001] = "CGKT12C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DIW.aac
+text @[Kotomi]
+text Yes. Kyou-chan, see you the day after tomorrow.
+setvar strS[1001] = "CGNG10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DIX.aac
+text @[Furukawa]
+text Kotomi-chan, Okazaki-san, see you the day after tomorrow.
+setvar strS[1001] = "CGKT12C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DIY.aac
+text @[Kotomi]
+text Nagisa-chan, see you the day after tomorrow.
+sound DIZ.aac
+text @[Kotomi]
+text Ryou-chan, see you the day after tomorrow.
+setvar strS[1001] = "CGRY22D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY22D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DJ0.aac
+text @[Ryou]
+text Um... Kotomi-chan, I'm so sorry for today.
+sound DJ1.aac
+text @[Kotomi]
+text No, it was really fun playing with everyone.
+setvar strS[1001] = "CGKY12C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DJ2.aac
+text @[Kyou]
+text Yeah, yeah. This concludes the fun date!
+text Kyou barks out the order and the five of us split into two groups.
+text @[Tomoya]
+text Kyou...
+setvar strS[1001] = "CGKY11D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DJ3.aac
+text @[Kyou]
+text Yeah?
+text @[Tomoya]
+text Don't follow us this time.
+setvar strS[1001] = "CGKY24D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY24D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DJ4.aac
+text @[Kyou]
+text Of course not. Bye~
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She walks away, waving at us without turning around.
+sound DJ5.aac
+text @[Kyou]
+text And why are you still eating? It's all melted, so throw it away!
+sound DJ6.aac
+text @[Ryou]
+text But I don't want to waste food...
+sound DJ7.aac
+text @[Furukawa]
+text Yes, and the bottom part is still crunchy...
+text They soon vanish into the crowd of people.
+text @[Tomoya]
+text ...
+setvar strS[1001] = "CGKT12D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DJ8.aac
+text @[Kotomi]
+text ...
+text @[Tomoya]
+text Phew...
+text I'm tired.
+text @[Tomoya]
+text Now then, shall we go?
+setvar strS[1001] = "CGKT16C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT16C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DJ9.aac
+text @[Kotomi]
+text Yes.
+text Holding the lightened cloth bag, Kotomi nods.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s23
+fi
+goto 24
+label s23
+setvar strS[1000] = ""
+label 24
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG033Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s24
+fi
+goto 25
+label s24
+setvar strS[1000] = ""
+label 25
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08D.mp3
+text We arrive at the usual place without talking much.
+text It's almost nighttime.
+text The light has faded and the darkness grows moment by moment.
+text Her mature black dress seems to blend into the background.
+text We stand there together, neither able to speak nor part ways.
+text As the bustle of the town fades, it's replaced with an empty silence conveyed by the distant autumn.
+text @[Tomoya]
+text Uhh...
+text @[Tomoya]
+text Did you have fun today?
+setvar strS[1001] = "CGKT16C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT16C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DJA.aac
+text @[Kotomi]
+text It was very, very fun.
+text A bright smile pierces the twilight.
+sound DJB.aac
+text @[Kotomi]
+text But...
+text @[Tomoya]
+text But?
+sound DJC.aac
+text @[Kotomi]
+text No, it's nothing...
+text @[Tomoya]
+text All right.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text We go silent again. The conversation doesn't lead anywhere.
+text I'm sure we're both tired due to having so much fun.
+setvar strS[1001] = "CGKT31C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT31C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Using my peripheral vision, I steal a glance at Kotomi.
+text She looks cold because of the exposed skin near her shoulders.
+text @[Tomoya]
+text Hey...
+setvar strS[1001] = "CGKT30C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT30C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DJD.aac
+text @[Kotomi]
+text Um...
+text We speak at almost the same moment.
+setvar strS[1001] = "CGKT31C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT31C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DJE.aac
+text @[Kotomi]
+text Um... go ahead, Tomoya-kun.
+text @[Tomoya]
+text Okay...
+text @[Tomoya]
+text If you'd like...
+text It's embarrassing, so I make it quick.
+text @[Tomoya]
+text Do you want to go somewhere tomorrow? Just the two of us, for real this time.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text As usual, Kotomi tilts her head to the side, looking slightly confused.
+text Then she turns to me again.
+setvar strS[1001] = "CGKT13C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT13C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DJF.aac
+text @[Kotomi]
+text I was just about to ask the same thing.
+text @[Tomoya]
+text Then tomorrow... the same time and place as today?
+sound DJG.aac
+text @[Kotomi]
+text Yes. 10:00 am, right here.
+text @[Tomoya]
+text Oh, and "right here" means "anywhere around this intersection." Wherever it's most comfortable.
+sound DJH.aac
+text @[Kotomi]
+text ?
+text @[Tomoya]
+text Well, I just have to make sure I'm not late.
+setvar strS[1001] = "CGKT16C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT16C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DJI.aac
+text @[Kotomi]
+text Um... to tell you the truth...
+sound DJJ.aac
+text @[Kotomi]
+text I was really, really worried this morning.
+sound DJK.aac
+text @[Kotomi]
+text I thought that if I was even a little off from this location, you wouldn't come...
+text I remember that I was forty minutes late.
+text I'm not Kyou, but making a woman wait is definitely the worst.
+text @[Tomoya]
+text Thank you for waiting for me.
+text I place my right hand on Kotomi's head.
+text @[Tomoya]
+text I'll make sure I'm not late tomorrow, so don't worry.
+text I brush her hair with my hand.
+sound DJL.aac
+text @[Kotomi]
+text Yes.
+sound DJM.aac
+text @[Kotomi]
+text I'll be waiting.
+text After a second's hesitation, she gives a relieved smile.
+sound DJN.aac
+text @[Kotomi]
+text I'll be waiting...
+text She repeats it quietly.
+text A wind blows down the street as if bringing new darkness to us.
+text It's the signal for us to part ways.
+setvar strS[1001] = "CGKT13C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT13C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound DJO.aac
+text @[Kotomi]
+text Tomoya-kun, see you tomorrow.
+text @[Tomoya]
+text Yeah. See you tomorrow.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I watch the familiar sight as she walks off alone.
+text She's slouching slightly, but she's walking surprisingly fast...
+text Silver stars are already shining in the western sky.
+text @[Tomoya]
+text The first stars of the evening, huh?
+text Kotomi probably won't notice them all the way home.
+text I don't know why I'm thinking about this.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s25
+fi
+goto 26
+label s25
+setvar strS[1000] = ""
+label 26
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+delay 60
+jump SEEN4505_0_0.scr

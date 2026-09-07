@@ -1,0 +1,61 @@
+setvar strS[1000] = "BG244BM"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s19
+fi
+goto 19
+label s19
+setvar strS[1000] = ""
+label 19
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Hey...
+text @[Tomoya]
+text Would you say that the town is one big family?
+sound PS9.aac
+text @[Nagisa]
+text Yes. The town, the people... We're all family.
+text @[Tomoya]
+text Oh...
+sound PSA.aac
+text @[Nagisa]
+text A Big Dango Family.
+text Oh... I see.
+text That's how it was.
+text Could she have known that since we first met...?
+text No, I'm sure she's known it for longer.
+text That's why she can't hate anyone.
+text She works hard for everyone's sake.
+text Because they're her family.
+sound PSB.aac
+text @[Nagisa]
+text Tomoya-kun, it's about time you started liking the Big Dango Family too.
+text @[Tomoya]
+text I already love them, Nagisa.
+sound PSC.aac
+text @[Nagisa]
+text Really?
+text @[Tomoya]
+text Yeah.
+sound PSD.aac
+text @[Nagisa]
+text Then let's sing the song for Shio-chan's sake.
+text @[Tomoya]
+text Seriously...?
+sound PSE.aac
+text @[Nagisa]
+text Yes.
+sound PSF.aac
+text @[Nagisa]
+text Dango...! Dango...!
+text Nagisa begins to sing alone.
+text I can't help but laugh.
+text Then, I join her mid-song.
+jump SEEN6803_3_0.scr

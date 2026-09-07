@@ -1,0 +1,273 @@
+label 52
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Even after classes are over, Sunohara doesn't show.
+goto 56
+label 53
+if intF[502] == 1
+	goto s52
+fi
+goto 56
+label s52
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s53
+fi
+goto 54
+label s53
+setvar strS[1000] = ""
+label 54
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG021H"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s54
+fi
+goto 55
+label s54
+setvar strS[1000] = ""
+label 55
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08B.mp3
+text I return to the classroom, but Sunohara is still MIA.
+text @[Tomoya]
+text (He can go have fun on his own...)
+label 56
+goto 62
+goto 58
+label 57
+if intF[1089] == 1
+	goto s55
+fi
+goto 58
+label s55
+text It's probably best if I'm actually in class, even if I just sleep through it.
+label 58
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s56
+fi
+goto 59
+label s56
+setvar strS[1000] = ""
+label 59
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 60
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG021A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s57
+fi
+goto 60
+label s57
+setvar strS[1000] = ""
+label 60
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 60
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08B.mp3
+text ......
+setvar strS[1000] = "BG021H"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s58
+fi
+goto 61
+label s58
+setvar strS[1000] = ""
+label 61
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Even after classes are over, that idiot still doesn't show his face.
+text It's nothing out of the ordinary for him though, so I won't dwell on it much.
+label 62
+if intF[3] == 1
+	goto s59
+fi
+goto 67
+label s59
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s60
+fi
+goto 63
+label s60
+setvar strS[1000] = ""
+label 63
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I head to the drama club room by myself.
+if intF[210] == 1
+	goto s61
+fi
+goto 64
+label s61
+if rtf0 != ""
+	setvar rtf1 = "SEEN0418_0_1.scr"
+	setvar rtl1 = "rtl8"
+fi
+if rtf0 == ""
+	setvar rtf0 = "SEEN0418_0_1.scr"
+	setvar rtl0 = "rtl8"
+fi
+jump SEEN2418_1_0.scr
+label rtl8
+if rtf1 == ""
+	setvar rtf0 = ""
+fi
+if rtf1 != ""
+	setvar rtf1 = ""
+fi
+label 64
+if rtf0 != ""
+	setvar rtf1 = "SEEN0418_0_1.scr"
+	setvar rtl1 = "rtl9"
+fi
+if rtf0 == ""
+	setvar rtf0 = "SEEN0418_0_1.scr"
+	setvar rtl0 = "rtl9"
+fi
+jump SEEN6418_1_0.scr
+label rtl9
+if rtf1 == ""
+	setvar rtf0 = ""
+fi
+if rtf1 != ""
+	setvar rtf1 = ""
+fi
+if intF[9] == 1
+	goto s62
+fi
+goto 65
+label s62
+jump SEEN0418_1_0.scr 84
+goto 66
+label 65
+if intF[9] == 0
+	goto s63
+fi
+goto 66
+label s63
+goto 69
+label 66
+goto 69
+label 67
+if intF[3] == 0
+	goto s64
+fi
+goto 69
+label s64
+text I leave the classroom alone.
+if intF[210] == 1
+	goto s65
+fi
+goto 69
+label s65
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s66
+fi
+goto 68
+label s66
+setvar strS[1000] = ""
+label 68
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+if rtf0 != ""
+	setvar rtf1 = "SEEN0418_0_1.scr"
+	setvar rtl1 = "rtl10"
+fi
+if rtf0 == ""
+	setvar rtf0 = "SEEN0418_0_1.scr"
+	setvar rtl0 = "rtl10"
+fi
+jump SEEN2418_1_0.scr
+label rtl10
+if rtf1 == ""
+	setvar rtf0 = ""
+fi
+if rtf1 != ""
+	setvar rtf1 = ""
+fi
+label 69
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s67
+fi
+goto 70
+label s67
+setvar strS[1000] = ""
+label 70
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 60
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Nighttime comes.
+if intF[630] == 1
+	if intF[631] == 1
+		goto s68
+	fi
+fi
+jump SEEN0418_1_0.scr 77
+label s68
+jump SEEN0418_1_0.scr

@@ -1,0 +1,56 @@
+bgload KURO.jpg 55
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text The sandwiches are really good.
+text Kotomi doesn't take them apart like she usually does, and she keeps giving me more to eat.
+setvar strS[1001] = "CGKT12C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EIF.aac
+text @[Kotomi]
+text Halfsies.
+text @[Tomoya]
+text You don't call it halfsies when I'm the only one eating.
+sound EIG.aac
+text @[Kotomi]
+text I want you to eat a lot today, Tomoya-kun.
+setvar strS[1001] = "CGKT15C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT15C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EIH.aac
+text @[Kotomi]
+text That's why it's halfsies.
+text She smiles modestly.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I guess Kotomi doesn't really have an appetite right now.
+bgload KURO.jpg 55
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+jump SEEN4904_5_0.scr

@@ -1,0 +1,258 @@
+music BGM02B.mp3
+setvar strS[1000] = "SIRO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1000] = ""
+label 1
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I'm surrounded by dazzling light.
+text My eyes simply aren't used to the bright lights after being in darkness for so long.
+text They soon adjust to the fluorescence, and I'm able to make figures out in the background.
+text I know where I am.
+setvar strS[1000] = "FGNG16"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = ""
+label 2
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 98
+text The bottom of the hill to school.
+text She's there again.
+text She stares at the school gates up above us.
+text I hesitate to call her name.
+text But I don't know why...
+text What could she be thinking? She occasionally looks down at the ground and sighs.
+text A long while passes.
+text She... turns around to face away from the school gates.
+setvar strS[1000] = "SIRO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = ""
+label 3
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She looks in my direction.
+text And she begins to walk.
+text She passes by me, a man she doesn't know.
+text ...I need to say something to her.
+text But...
+text Maybe it would've been better if I hadn't...
+text If she had never met me at all...
+text Wouldn't it have been better if the two of us continued on our own separate paths?
+text But...
+text I...
+if intG[43] == 1
+	goto s3
+fi
+goto 6
+label s3
+choice Call out|Say nothing
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s4
+fi
+goto 4
+label s4
+goto 6
+label 4
+if intF[1089] == 1
+	goto s5
+fi
+goto 6
+label s5
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s6
+fi
+goto 5
+label s6
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 301
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+jump SEEN6802_0_0.scr
+label 6
+text ...Nagisa!
+text I scream her name.
+text I'm right here!
+sound PQX.aac
+text ...
+text Nagisa turns around once more.
+text She looks at my face.
+setvar strS[1000] = "FGNG17B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s7
+fi
+goto 7
+label s7
+setvar strS[1000] = ""
+label 7
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 98
+sound PQY.aac
+text ...I'm glad.
+sound PQZ.aac
+text You called my name.
+text Really...?
+sound PR0.aac
+text I was wondering if... you were thinking it would have been better...
+sound PR1.aac
+text ...if we had never met...
+sound PR2.aac
+text I was so worried...
+text ...
+sound PR3.aac
+text But I'm glad I was able to meet you.
+sound PR4.aac
+text It made me so happy.
+text Really...?
+sound PR5.aac
+text So, please...
+setvar strS[1000] = "FGNG17A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s8
+fi
+goto 8
+label s8
+setvar strS[1000] = ""
+label 8
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 55
+sound PR6.aac
+text Don't ever let your heart waver again.
+sound PR7.aac
+text No matter what life has in store for you from now on...
+sound PR8.aac
+text Please don't ever regret having met me.
+text ...
+setvar strS[1000] = "FGNG17D"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s9
+fi
+goto 9
+label s9
+setvar strS[1000] = ""
+label 9
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 55
+sound PR9.aac
+text Is that too much to ask...?
+text ...
+text No...
+text I understand... I won't regret it...
+text I'll live my life proud of the fact... that I met you.
+setvar strS[1000] = "FGNG17A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s10
+fi
+goto 10
+label s10
+setvar strS[1000] = ""
+label 10
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 55
+sound PRA.aac
+text Is that so...?
+sound PRB.aac
+text Thank you very much.
+text She smiles at me sweetly.
+text Shall we go, then?
+sound PRC.aac
+text Yes.
+text We ascend the hill.
+sound PRD.aac
+text I want you to start liking the Big Dango Family too, Tomoya-kun.
+text Yeah. I'll think about it.
+sound PRE.aac
+text Okay!
+text I look up at the other side of the hill... and find a world enveloped in light.
+sound PRF.aac
+text Ehehe...
+text Nagisa's smile...
+setvar strS[1000] = "SIRO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s11
+fi
+goto 11
+label s11
+setvar strS[1000] = ""
+label 11
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 98
+text Her big, smiling face... is disappearing.
+text The light is so incredibly bright...
+text Wait...
+text Don't go...
+text ...Nagisa!
+text An even brighter light...
+music ~
+text is in my hands.
+text As if it's trying to surround me.
+text It's warm.
+text I hear a voice, and then I feel as if she pulls her hand away from mine.
+text @By now, the light... has covered my entire body.
+delay 180
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s12
+fi
+goto 12
+label s12
+setvar strS[1000] = ""
+label 12
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 301
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+jump SEEN6803_1_0.scr

@@ -1,0 +1,48 @@
+delay 120
+music BGM17A.mp3
+setvar strS[1000] = "BG043A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s180
+fi
+goto 202
+label s180
+setvar strS[1000] = ""
+label 202
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text .........
+text Through the curtains, the morning light is flowing into the room.
+text @[Tomoya]
+text (Oh... I guess I fell asleep in here last night...)
+text My head feels heavy...
+text Right next to me is Misae-san, her head leaning onto my shoulder.
+sound UQH.aac
+text @[Misae]
+text ...Mm...
+text Her mouth trembles slightly.
+sound UQI.aac
+text @[Misae]
+text ...Shima-kun...
+sound UQJ.aac
+text @[Misae]
+text ...Why'd you go away...
+text When I hear her sleep talking, I remember.
+text I remember the true name of the cat that's sleeping in my arms.
+text @[Tomoya]
+text So, you used to have a proper name, didn't you...
+text @[Tomoya]
+text Say... you were the one who showed me that dream just now, weren't you...?
+text @[Tomoya]
+text You must have wanted me to tell her... didn't you...?
+text @[Tomoya]
+text Tell this woman who'll continue waiting for you forever...
+text @[Tomoya]
+text That you'll always be there, right next to her... forever...
+jump SEEN7500_5_0.scr

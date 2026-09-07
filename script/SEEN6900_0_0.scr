@@ -1,0 +1,98 @@
+setvar strS[1000] = "SIRO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1000] = ""
+label 1
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM26A.mp3
+text The world is covered in white...
+text ...
+text Snow...
+setvar strS[1000] = "BG300"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = ""
+label 2
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Yes, it's snow.
+setimg SPSCJOB00.png 11 7
+delay 109
+setimg SPSCNM00.png 19 18
+delay 215
+bgload {$strS[1000]}.jpg 98
+setimg SPSCNM00.png 19 18
+delay 79
+bgload {$strS[1000]}.jpg 98
+text Even now, it continues to fall, coating me in its paleness.
+text Ah...
+text What could I be doing here...?
+text Better yet, how long have I been here...?
+text ......
+text My hand is buried in snow.
+text It's holding on to something.
+setimg SPSCJOB01.png 159 102
+delay 109
+setimg SPSCNM01.png 167 114
+delay 215
+bgload {$strS[1000]}.jpg 98
+setimg SPSCNM01.png 167 114
+delay 79
+bgload {$strS[1000]}.jpg 98
+text I pull it out.
+text It's a pure-white hand.
+text A girl's hand.
+text Oh, yeah, that's right...
+text I wasn't alone.
+text I wipe away the snow on her face.
+text Her profile, sleeping peacefully, appears before me.
+text Yes...
+text This girl and I... had always been together.
+text Here in this world.
+text This... empty, sorrowful world.
+music ~
+delay 60
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = ""
+label 3
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+delay 120
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+jump SEEN6900_1_0.scr

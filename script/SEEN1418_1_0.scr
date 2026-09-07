@@ -1,0 +1,465 @@
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = ""
+label 3
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG020"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 4
+label s3
+setvar strS[1000] = ""
+label 4
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+if intF[2] == 1
+	goto s4
+fi
+goto 5
+label s4
+text The theater club's room is right in front of me, but my attention crawls to the side.
+goto 6
+label 5
+if intF[2] == 0
+	goto s5
+fi
+goto 6
+label s5
+text There are several empty classrooms in this area, but in this particular one...
+text @[Tomoya]
+text (Yes, this particular classroom...)
+label 6
+text I peek inside through the glass panel on the door.
+text @[Tomoya]
+text (There she is...)
+text Unsurprisingly, a girl is sitting inside working diligently on her carving.
+text She seems to be a lot more attentive to her work than the first time I saw her.
+text @[Tomoya]
+text (I guess she won't get hurt now that she's used to it... probably...)
+choice Leave|I'll watch her just a bit more
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s6
+fi
+goto 7
+label s6
+text @[Tomoya]
+text (She's probably fine on her own now...)
+text I turn away and leave the building.
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+goto 10
+label 7
+if intF[1089] == 1
+	goto s7
+fi
+goto 10
+label s7
+text I decide to keep on watching for a while.
+music ~
+text @[Tomoya]
+text (Hmm...?)
+text Her body, which was moving slightly, suddenly comes to a stop.
+music BGM04A.mp3
+text ...And she is putting one of her fingers in her mouth.
+text @[Tomoya]
+text Ah, did she just...
+text She starts looking around restlessly.
+text And somehow, through the glass panel, she detects my watching eyes.
+sound 26U.aac
+text @[Female Student]
+text ...!
+text Before her usual "Wah..." even reaches my ear, she's already jumped up and run away.
+text @[Tomoya]
+text (Idiot, rushing like that only makes your wound worse.)
+text I quickly enter the classroom.
+setvar strS[1000] = "BG023"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s8
+fi
+goto 8
+label s8
+setvar strS[1000] = ""
+label 8
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text In the corner, the girl is squatting down facing the wall with her head resting on her knees.
+text @[Tomoya]
+text Hey, show me your hand.
+setvar strS[1001] = "CGFU31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Female Student]
+text ...
+text Not a word from her.
+text @[Tomoya]
+text (Is she trying to hide from me...?)
+text @[Tomoya]
+text Just so you know, I can totally see you.
+setvar strS[1001] = "CGFU17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 26V.aac
+text @[Female Student]
+text Eh...?
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Cautiously, she turns her head around and points a finger at herself.
+text @[Tomoya]
+text Yes, you.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Bam*
+text She gets up and runs away again.
+text This time toward the outside of the classroom.
+text @[Tomoya]
+text (This idiot! Stop running around with an injury like that!)
+text I start chasing after her.
+setvar strS[1000] = "BG020"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s9
+fi
+goto 9
+label s9
+setvar strS[1000] = ""
+label 9
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text (Where did she go?)
+text From the end of the corridor, I can see a teacher walking this way.
+sound 26W.aac
+text @[Teacher]
+text Is that Okazaki? What are you doing there?
+text He asks after recognizing me.
+text @[Tomoya]
+text Yes, just looking for someone. A teacher asked me to.
+sound 26X.aac
+text @[Teacher]
+text In the middle of a class? I can double-check that with your teacher later, you know.
+text @[Tomoya]
+text Of course, feel free to since it's the truth.
+text He gives a suspicious look, then just walks past me.
+text And something small-ish is following behind him.
+text @[Tomoya]
+text Like I said, you are way too obvious.
+text I grab her arm.
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Right after I do, she turns her head to me and puts a finger to her lips to shush me.
+text @[Tomoya]
+text ...
+text It might not be a bad idea to listen to her now and be silent for a while.
+setvar strS[1001] = "CGFU30"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU30.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Female Student]
+text ...
+text @[Tomoya]
+text ...
+text @[Female Student]
+text ...
+text @[Tomoya]
+text ...
+text ...Finally, the teacher makes a turn at the corner and vanishes from our view.
+sound 26Y.aac
+text @[Female Student]
+text Phew...
+text A sigh of relief.
+text @[Tomoya]
+text That went well. Now, let's go to the infirmary.
+setvar strS[1001] = "CGFU19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 26Z.aac
+text @[Female Student]
+text Huh?
+setvar strS[1001] = "CGFU22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGFU22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 270.aac
+text @[Female Student]
+text Uwaaaaaaaaa!
+text @[Tomoya]
+text Just who are you trying to hide from...
+setvar strS[1001] = "CGFU17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 271.aac
+text @[Female Student]
+text ...
+text @[Tomoya]
+text Listen, your hand must be hurting, right? Come with me to the infirmary.
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 272.aac
+text @[Female Student]
+text There's no injury.
+text @[Tomoya]
+text Stop lying. Show me your hand. The blood must be oozing out right now.
+sound 273.aac
+text @[Female Student]
+text It has been licked properly.
+text @[Tomoya]
+text Did that stop the bleeding?
+sound 274.aac
+text @[Female Student]
+text It did.
+text @[Tomoya]
+text Really? Show me your hand.
+sound 275.aac
+text @[Female Student]
+text Here.
+text She raises her index finger in front of my eyes.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text The blood seeps through the cut, making a narrow red line as a drop falls down.
+setvar strS[1001] = "CGFU17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 276.aac
+text @[Female Student]
+text Wah...
+text Quickly, she puts the finger back in her mouth and starts sucking it.
+setvar strS[1001] = "CGFU30"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU30.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 277.aac
+text @[Female Student]
+text Here.
+text Like a magician, she proudly shows me her finger again.
+text The blood has indeed stopped, but....
+text @[Tomoya]
+text Do it again, but faster and with more spirit. Maybe yell "Yay!" as you do it.
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 278.aac
+text @[Female Student]
+text Yay!
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Pew!
+text The blood spouts out.
+text @[Tomoya]
+text Wow, very nicely executed.
+setvar strS[1001] = "CGFU17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 279.aac
+text @[Female Student]
+text Wah...
+text She's sucking her finger again.
+text @[Tomoya]
+text Isn't that cut pretty deep?
+setvar strS[1001] = "CGFU32"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU32.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 27A.aac
+text @[Female Student]
+text Whether it's deep or not...
+sound 27B.aac
+text @[Female Student]
+text Is none of your business!
+text Like a little kid, she spills the words out with the finger still inside her mouth.
+text @[Tomoya]
+text ...
+text @[Tomoya]
+text ...I guess so.
+sound 27C.aac
+text @[Female Student]
+text That's what Fuko wants to do.
+sound 27D.aac
+text @[Female Student]
+text So leave her alone.
+text @[Tomoya]
+text Is Fuko your name?
+sound 27E.aac
+text @[Fuko]
+text Yes... it's Fuko Ibuki.
+sound 27F.aac
+text @[Fuko]
+text Does it sound weird?
+text @[Tomoya]
+text Not really, I just thought it may have been your name but wasn't sure.
+setvar strS[1001] = "CGFU30"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU30.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 27G.aac
+text @[Fuko]
+text Is that so.
+sound 27H.aac
+text @[Fuko]
+text Well, then.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She turns the other way and starts walking away.
+text @[Tomoya]
+text Go to the infirmary, you hear me?
+text I say that just to make sure.
+text @[Tomoya]
+text (Guess I was being too meddlesome...)
+text @[Tomoya]
+text (But I can't exactly just stand and watch as she puts herself in danger like that, can I...?)
+setvar intF[128] = 1
+label 10
+music ~
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0

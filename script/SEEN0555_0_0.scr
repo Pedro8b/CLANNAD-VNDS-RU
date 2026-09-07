@@ -1,0 +1,487 @@
+if 0 == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1000] = "KURO"
+goto 3
+label 1
+if 0 == 1
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = "SIRO"
+goto 3
+label 2
+setvar strS[1000] = "KURO"
+label 3
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+label 4
+music ~
+text @Gamebook "Welcome to the Heartbeat☆Academy"
+setvar intA[1000] = 2300
+setvar intA[1001] = 23
+if 50 <= 0
+	goto s2
+fi
+goto 5
+label s2
+setvar intA[1001] + 1
+label 5
+text ※ This book contains violence and grotesque depictions.
+music BGM09A.mp3
+text @You, the protagonist, are a high school student aiming to woo the heart of the school's idol, Yukino-san.
+text Now, let's heartbeat!
+text I am waiting in front of the school gate. The school's idol, Yukino-san has walked up to the gate.
+choice Confess|Watch her walk away
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s3
+fi
+goto 6
+label s3
+music ~
+text @"Yukino-san, I like you!"
+text @"I hate you, though!"
+text You got rejected! GAMEOVER
+sound B.aac
+goto 27
+goto 7
+label 6
+if intF[1089] == 1
+	goto s4
+fi
+goto 7
+label s4
+label 7
+text It's lunch break now. Yukino-san is having lunch at the cafeteria.
+choice Confess|Keep watching
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s5
+fi
+goto 8
+label s5
+music ~
+text @"Yukino-san, I like you!"
+text @"But you're so lame!"
+text You got rejected! GAMEOVER
+sound B.aac
+delay 90
+goto 27
+goto 9
+label 8
+if intF[1089] == 1
+	goto s6
+fi
+goto 9
+label s6
+label 9
+text It's after school now. Oh, Yukino-san is leaving now.
+choice Confess|Watch her walk away
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s7
+fi
+goto 10
+label s7
+goto 11
+label 10
+if intF[1089] == 1
+	goto s8
+fi
+goto 11
+label s8
+music ~
+text Ten years have passed. Having lost your job to corporate downsizing, you are now homeless.
+music BGM16A.mp3
+text @By chance, Yukino-san walks by in front of you.
+text "Yuki..." You try to call out to her, but stop halfway through.
+text @What have I been doing up until now?
+text Heh... this is so pathetic.
+music ~
+text @Yukino... be happy...
+text @I watch her walking farther and farther away.
+text GAMEOVER
+sound B.aac
+delay 90
+goto 27
+label 11
+music ~
+text @"Yukino-san! I've always liked you!"
+text Boldly, you confessed!
+text @Nom!
+sound H.aac
+text @Me: "Arghhh!"
+text Yukino-san bites onto you!
+choice Shake her off|Hug her
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s9
+fi
+goto 12
+label s9
+goto 13
+label 12
+if intF[1089] == 1
+	goto s10
+fi
+goto 13
+label s10
+text @Omnomnom... "Aaaaggghhh!!"
+text @Just like that, you were eaten!
+text GAMEOVER
+sound B.aac
+delay 90
+goto 27
+label 13
+music BGM28.mp3
+text Urgh! You forcefully shake her off.
+text Yukino-san falls to the ground, and... *bang bang bang*! Bullets blast through her body!
+sound 4.aac
+delay 12
+sound 4.aac
+delay 12
+sound 4.aac
+text @"That was close. That girl's a zombie, y'know."
+text @A man with a gun appears.
+text "The name's Steve."
+text The school's turned into a zombie nest. Let's blow this joint.
+choice Go with Steve|Go by yourself
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s11
+fi
+goto 14
+label s11
+goto 15
+label 14
+if intF[1089] == 1
+	goto s12
+fi
+goto 15
+label s12
+music ~
+text @A strong zombie popped up and killed you!
+text GAMEOVER
+sound B.aac
+delay 90
+goto 27
+label 15
+music ~
+text STEVE HAS JOINED YOUR PARTY!
+sound V.aac
+delay 90
+music BGM28.mp3
+text The two of you walk down the hallway.
+text *Smash* The window suddenly shatters, and a dog appears!
+choice Leave it to Steve|Fight on your own
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s13
+fi
+goto 16
+label s13
+music ~
+text @Munch!
+text @"Arrgggghhh!"
+text Steve has run out of energy...
+text @Right after that, a strong zombie showed up and killed you!
+text GAMEOVER
+sound B.aac
+delay 90
+goto 27
+goto 17
+label 16
+if intF[1089] == 1
+	goto s14
+fi
+goto 17
+label s14
+label 17
+text "Haha, stop it!" Yelp yelp!
+text You part ways with the dog after playing with it for a little bit.
+text You enter a room, and a huge snake suddenly attacks you!
+text @Munch!
+text @"Ow."
+text Steve's on the verge of dying from its venom!
+text You leave the room to look for antivenom.
+text Before you is a big shelf.
+choice Open it|Ignore it
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s15
+fi
+goto 18
+label s15
+goto 21
+label 18
+if intF[1089] == 1
+	goto s16
+fi
+goto 21
+label s16
+text You have reached a three-way fork.
+choice Go straight|Go left|Go right
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s17
+fi
+goto 19
+label s17
+music ~
+text @Some mossy thing popped up, and it killed you.
+text GAMEOVER
+sound B.aac
+delay 90
+goto 27
+goto 21
+label 19
+if intF[1089] == 1
+	goto s18
+fi
+goto 20
+label s18
+text You have reached the heliport.
+music ~
+text @*Chakk chakk chakk* ...You are rescued by a helicopter.
+text @"Good bye, Jennifer."
+text THE END
+sound V.aac
+delay 90
+goto 27
+goto 21
+label 20
+if intF[1089] == 2
+	goto s19
+fi
+goto 21
+label s19
+music ~
+text @Something strong popped up, countered your attempt to open a can of whoop-ass on it and you died. Too bad.
+text GAMEOVER
+sound B.aac
+delay 90
+goto 27
+label 21
+music ~
+text @A zombie is hiding inside!
+sound 0E.aac
+delay 120
+text ~
+text @"Here, take this."
+text You receive a vial of antivenom.
+sound 06.aac
+delay 90
+text You take it, and return to Steve.
+text Steve manages to escape death.
+sound V.aac
+delay 90
+music BGM15.mp3
+text @"You're my hero..."
+text Steve asks to be hugged.
+choice Hug him|Shake him off
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s20
+fi
+goto 22
+label s20
+music ~
+text @"Promise me you'll never go anywhere."
+text @"Yeah..."
+text GAMEOVER
+sound B.aac
+delay 90
+goto 27
+goto 23
+label 22
+if intF[1089] == 1
+	goto s21
+fi
+goto 23
+label s21
+label 23
+music ~
+text Urgh! You forcefully shake him off.
+music BGM28.mp3
+text Steve falls to the ground, and... *bang bang bang* Bullets blast through his body!
+sound 4.aac
+delay 12
+sound 4.aac
+delay 12
+sound 4.aac
+text @"That was a close one. That guy's a zombie."
+text @A woman holding a gun appears.
+text "My name's Rose."
+text "Let's join up."
+choice Go with her|Shake her off
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s22
+fi
+goto 24
+label s22
+music ~
+text ROSE HAS JOINED YOUR PARTY!
+sound V.aac
+delay 90
+text @"Phew... That was amazing."
+text @Then, you greet the rising sun together the next morning.
+text GAMEOVER"
+sound B.aac
+delay 90
+goto 27
+goto 25
+label 24
+if intF[1089] == 1
+	goto s23
+fi
+goto 25
+label s23
+label 25
+music ~
+text Urgh! You shake her off.
+music BGM28.mp3
+text Rose falls to the ground, and... *bang bang bang* Bullets blast through her body!
+sound 4.aac
+delay 12
+sound 4.aac
+delay 12
+sound 4.aac
+text @"'Twas certainly was a close call."
+text @A ninja with a gun appears.
+text "This humble servant's name be Yaiba. I shall accompany you."
+music ~
+text @YAIBA HAS JOINED YOUR PARTY!
+sound V.aac
+delay 90
+setvar strS[1000] = "BG046"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s24
+fi
+goto 26
+label s24
+setvar strS[1000] = ""
+label 26
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text To hell with this!
+text I close the book.
+music BGM08B.mp3
+setvar strS[1001] = "CGSH19B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH19B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1IV.aac
+text @[Sunohara]
+text Hm? What's wrong?
+text @[Tomoya]
+text Dude, you stayed up all night reading this...?
+setvar strS[1001] = "CGSH12B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1IW.aac
+text @[Sunohara]
+text Oh, that? Fun, isn't it? It's so nerve-racking and breathtaking!
+sound 1IX.aac
+text @[Sunohara]
+text Rose is Yukino-san? Who could've seen it coming?
+text @[Tomoya]
+text That character got killed off in an instant by some gun-wielding ninja, ya know...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+label 27
+choice Retry|Give up
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s25
+fi
+goto 28
+label s25
+goto 4
+goto 30
+label 28
+if intF[1089] == 1
+	goto s26
+fi
+goto 30
+label s26
+setvar strS[1000] = "BG046"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s27
+fi
+goto 29
+label s27
+setvar strS[1000] = ""
+label 29
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text (I'll look for another book...)
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+label 30

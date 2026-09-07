@@ -1,0 +1,807 @@
+text Across the hallway, a number of students are making a high-pitched racket.
+text @[Tomoya]
+text Man, shut up already...
+music ~
+text I try to walk past them, when...
+text Someone grabs my arm.
+music BGM09A.mp3
+setvar strS[1001] = "CGTM13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5M7.aac
+text @[Tomoyo]
+text Hey, can you help me out here?
+text It's Tomoyo.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Two students are grabbing her other arm.
+sound 5M8.aac
+text @[Female Student]
+text Come on, join the judo club!
+sound 5M9.aac
+text @[Male Student]
+text As the captain of the men's judo club, I'd also like to ask you to join.
+text She's being enticed into the judo club again. Moreover, they've increased in numbers.
+setvar strS[1001] = "CGTM14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5MA.aac
+text @[Tomoyo]
+text These guys are really persistent.
+choice Help her|Shake off her hand
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s10
+fi
+goto 11
+label s10
+goto 12
+label 11
+if intF[1089] == 1
+	goto s11
+fi
+goto 12
+label s11
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I shake my arm with all my might to try to get her to let go.
+setvar strS[1001] = "CGTM11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text ...But she doesn't budge. Tomoyo is still clinging onto my arm.
+text *SHAKE*
+text ...*SHAKE*
+text ......*SHAKE*
+sound 5MB.aac
+text @[Tomoyo]
+text What're you doing?
+text @[Tomoya]
+text Trying to shake myself free.
+sound 5MC.aac
+text @[Tomoyo]
+text Ah, is that so...
+setvar strS[1001] = "CGTM15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5MD.aac
+text @[Tomoyo]
+text So that means, what, you won't help me?
+text @[Tomoya]
+text Yeah. You shouldn't rely on others. You can handle this yourself one way or another...
+sound 5ME.aac
+text @[Tomoyo]
+text These are the captains of the men's and women's judo clubs, you know.
+text @[Tomoya]
+text In that case, you will be just fine.
+text @[Tomoya]
+text So... let me go, okay?
+setvar strS[1001] = "CGTM30"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM30.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5MF.aac
+text @[Tomoyo]
+text I think you are misunderstanding me here.
+text No, it's just that you just don't have any self-awareness.
+text Of course I don't actually say this out loud.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5MG.aac
+text @[Female Captain]
+text It's fine if you just visit us first for a bit, just to see how you'd like it!
+text When I step back, they immediately resume their coercions.
+sound 5MH.aac
+text @[Male Captain]
+text Just try it for one day. That's all we're asking for!
+setvar strS[1001] = "CGTM31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5MI.aac
+text @[Tomoyo]
+text You're telling the truth, right...?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text And just like that, they take her away.
+text I wonder if she's going to be in the judo club starting tomorrow...
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+label 12
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text You guys need to shut up already.
+text @[Male Student]
+text ...
+text The guy looks me in the face.
+text I stand there, glaring steadily at him.
+text The moment he gives in and averts his gaze...
+sound 5MJ.aac
+text @[Male Student]
+text Sakagami-san, let's head somewhere else.
+text He tries to grab Tomoyo and leave.
+text @[Tomoya]
+text Let's go, Tomoyo.
+text I call out to her from behind.
+text He stops.
+text @[Tomoya]
+text Let's go, Tomoyo.
+text I slowly repeat it once more.
+setvar strS[1001] = "CGTM19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5MK.aac
+text @[Tomoyo]
+text Ah...
+setvar strS[1001] = "CGTM20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5ML.aac
+text @[Tomoyo]
+text All right.
+text Tomoyo nods and...
+text the male student's hand that had been holding on to her falls down faintly.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I turn my back on them and start walking.
+text Tomoyo quickly runs up to me and follows.
+setvar strS[1001] = "CGTM10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5MM.aac
+text @[Tomoyo]
+text Nicely done!
+sound 5MN.aac
+text @[Tomoyo]
+text When you need to get something done, you get it done.
+sound 5MO.aac
+text @[Tomoyo]
+text You were talking to the captain of the judo club, you know?
+text @[Tomoya]
+text Even so, I'm still his upperclassman.
+sound 5MP.aac
+text @[Tomoyo]
+text Oh, yeah, I forgot.
+text @[Tomoya]
+text I'm your upperclassman too, by the way.
+setvar strS[1001] = "CGTM21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5MQ.aac
+text @[Tomoyo]
+text Yeah, I guess so.
+text She's not acting reserved at all.
+text @[Tomoya]
+text Though... you'd better clear up this misunderstanding later.
+setvar strS[1001] = "CGTM11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5MR.aac
+text @[Tomoyo]
+text Hm? The misunderstanding about what?
+text @[Tomoya]
+text You should probably have a rough idea of how those people misinterpreted our relationship.
+sound 5MS.aac
+text @[Tomoyo]
+text You say this NOW?
+sound 5MT.aac
+text @[Tomoyo]
+text Don't we always see each other during break, too?
+text @[Tomoya]
+text Sunohara is with us during break.
+text @[Tomoya]
+text Right now it's just the two of us, and even worse, it looks like we're about to go out somewhere.
+setvar strS[1001] = "CGTM20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5MU.aac
+text @[Tomoyo]
+text Ah, I see.
+sound 5MV.aac
+text @[Tomoyo]
+text So what you're trying to say is that it looks right now as if we're dating, right?
+text ...You're really slow, aren't you.
+setvar strS[1001] = "CGTM11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5MW.aac
+text @[Tomoyo]
+text Does that bother you?
+text @[Tomoya]
+text Huh? Me?
+sound 5MX.aac
+text @[Tomoyo]
+text Yeah.
+text @[Tomoya]
+text I'm not really dating anyone right now, so it doesn't really matter. But like I said before, isn't your situation different?
+setvar strS[1001] = "CGTM21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5MY.aac
+text @[Tomoyo]
+text Actually, I'm not seeing anyone, either.
+text @[Tomoya]
+text No, what I mean is, aren't you aiming to join the student council?
+setvar strS[1001] = "CGTM11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5MZ.aac
+text @[Tomoyo]
+text Yeah.
+text @[Tomoya]
+text In that case, you wouldn't want to have strange rumors circulating around you right now, right?
+sound 5N0.aac
+text @[Tomoyo]
+text Why would such rumors even matter?
+text @[Tomoya]
+text I see. Well, if that's what you think, you go do whatever you want.
+setvar strS[1001] = "CGTM15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5N1.aac
+text @[Tomoyo]
+text Why do you say that so coldly?
+sound 5N2.aac
+text @[Tomoyo]
+text It really does bother you, doesn't it?
+setvar strS[1001] = "CGTM34"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM34.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5N3.aac
+text @[Tomoyo]
+text If that's the case, I'll go back and tell them it's not like that.
+text She stops walking and turns around.
+text @[Tomoya]
+text I'm telling you, it doesn't matter to me!
+text @[Tomoya]
+text Even if rumors spread, they'll go away soon enough, anyway.
+setvar strS[1001] = "CGTM15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5N4.aac
+text @[Tomoyo]
+text ...You really think so?
+text She asks, turning only her head.
+text @[Tomoya]
+text I really do.
+setvar strS[1001] = "CGTM10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5N5.aac
+text @[Tomoyo]
+text I see.
+text Finally satisfied, she turns back toward me.
+sound 5N6.aac
+text @[Tomoyo]
+text I think so too. If you keep worrying about every tiny little thing, you'll only wear yourself out.
+setvar strS[1001] = "CGTM21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5N7.aac
+text @[Tomoyo]
+text We get along quite well.
+text @[Tomoya]
+text (Do we...?)
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text We start walking again.
+if intF[3] == 1
+	goto s12
+fi
+goto 13
+label s12
+text @[Tomoya]
+text So, how far do you plan on following me?
+setvar strS[1001] = "CGTM11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5N8.aac
+text @[Tomoyo]
+text You're going home, right?
+text @[Tomoya]
+text I still have some business somewhere.
+sound 5N9.aac
+text @[Tomoyo]
+text Oh, really? Here I thought you were about to head home.
+sound 5NA.aac
+text @[Tomoyo]
+text What's your business?
+text @[Tomoya]
+text I don't really need to tell you, do I?
+setvar strS[1001] = "CGTM10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5NB.aac
+text @[Tomoyo]
+text Yeah, that's true. You don't have to.
+sound 5NC.aac
+text @[Tomoyo]
+text It's just...
+sound 5ND.aac
+text @[Tomoyo]
+text Those guys from before might appear again the moment you're gone, is all.
+sound 5NE.aac
+text @[Tomoyo]
+text I just figured we could walk home together.
+sound 5NF.aac
+text @[Tomoyo]
+text Please protect me while looking incredibly cool, just like before.
+text @[Tomoya]
+text Yeah, that doesn't sound too... Wait a second.
+text @[Tomoya]
+text Wouldn't that mean I'd have to be near you all the time from now on?
+setvar strS[1001] = "CGTM13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5NG.aac
+text @[Tomoyo]
+text Don't you always come visit me every day during lunchtime, anyway? It'll be the same thing.
+text @[Tomoya]
+text That was something Sunohara decided all on his own. And I don't know when he's going to stop doing it.
+setvar strS[1001] = "CGTM11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5NH.aac
+text @[Tomoyo]
+text Ah... So that's how it was?
+sound 5NI.aac
+text @[Tomoyo]
+text I'll try to shake them off by myself, then.
+text @[Tomoya]
+text Though, I do think that guy's been enough of a pain for you already.
+sound 5NJ.aac
+text @[Tomoyo]
+text You mean that idiot?
+text @[Tomoya]
+text Yeah.
+text It would be pretty hypocritical of me if I just idly stood by while Sunohara tries to put the moves on her, while saying I'm worried that rumors about us would sabotage Tomoyo's chance of joining the student council.
+text @[Tomoya]
+text I guess it's about time for me to make him stop.
+setvar strS[1001] = "CGTM18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5NK.aac
+text @[Tomoyo]
+text You...
+sound 5NL.aac
+text @[Tomoyo]
+text You really were just tagging along the entire time, weren't you?
+text She says, dumbfounded.
+sound 5NM.aac
+text @[Tomoyo]
+text You're really not as bad a person as you claim to be, are you?
+text @[Tomoya]
+text What I said about myself was just what people see me as.
+setvar strS[1001] = "CGTM11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5NN.aac
+text @[Tomoyo]
+text I see.
+sound 5NO.aac
+text @[Tomoyo]
+text So you're not a bad guy, after all.
+text @[Tomoya]
+text That being said, that doesn't necessarily mean I'm a good guy, either.
+setvar strS[1001] = "CGTM20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5NP.aac
+text @[Tomoyo]
+text Yeah, I guess so.
+sound 5NQ.aac
+text @[Tomoyo]
+text Well, then, I'm heading home.
+text @[Tomoya]
+text Is it all right if we don't walk home together?
+sound 5NR.aac
+text @[Tomoyo]
+text Yes, don't worry. I'll just run home.
+text @[Tomoya]
+text Okay, well, see you later. Do your best.
+sound 5NS.aac
+text @[Tomoyo]
+text Yes. Thanks for today.
+text @[Tomoya]
+text Yeah.
+goto 16
+label 13
+if intF[3] == 0
+	goto s13
+fi
+goto 16
+label s13
+setvar strS[1000] = "BG014"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s14
+fi
+goto 14
+label s14
+setvar strS[1000] = ""
+label 14
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text So, how far do you plan on following me?
+setvar strS[1001] = "CGTM11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5NT.aac
+text @[Tomoyo]
+text You're going home, right?
+text @[Tomoya]
+text Yeah.
+sound 5NU.aac
+text @[Tomoyo]
+text Me too. You wouldn't mind if we walked together on the way back?
+sound 5NV.aac
+text @[Tomoyo]
+text Those guys from before might appear again the moment you're gone, after all.
+text @[Tomoya]
+text Right...
+setvar strS[1001] = "CGTM20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5NW.aac
+text @[Tomoyo]
+text Please protect me while looking incredibly cool, just like before.
+text @[Tomoya]
+text Yeah, that doesn't sound too... Wait a second.
+text @[Tomoya]
+text Wouldn't that mean I'd have to be near you all the time from now on?
+setvar strS[1001] = "CGTM13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5NX.aac
+text @[Tomoyo]
+text Don't you always come visit me every day during lunchtime, anyway? It'll be the same thing.
+text @[Tomoya]
+text That was something Sunohara decided all on his own. And I don't know when he's going to stop doing it.
+setvar strS[1001] = "CGTM11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5NY.aac
+text @[Tomoyo]
+text Ah... So that's how it was?
+sound 5NZ.aac
+text @[Tomoyo]
+text I'll try to shake them off by myself, then.
+text @[Tomoya]
+text Though, I do think that guy's been enough of a pain for you already.
+sound 5O0.aac
+text @[Tomoyo]
+text You mean that idiot?
+text @[Tomoya]
+text Yeah.
+text It would be pretty hypocritical of me if I just idly stood by while Sunohara tries to put the moves on her, while saying I'm worried that rumors about us would sabotage Tomoyo's chance of joining the student council.
+text @[Tomoya]
+text I guess it's about time for me to make him stop.
+setvar strS[1001] = "CGTM18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5O1.aac
+text @[Tomoyo]
+text You...
+sound 5O2.aac
+text @[Tomoyo]
+text You really were just tagging along the entire time, weren't you?
+text She says, dumbfounded.
+sound 5O3.aac
+text @[Tomoyo]
+text You're really not as bad a person as you claim to be, are you?
+text @[Tomoya]
+text What I said about myself was just what people see me as.
+setvar strS[1001] = "CGTM11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5O4.aac
+text @[Tomoyo]
+text I see.
+sound 5O5.aac
+text @[Tomoyo]
+text So you're not a bad guy, after all.
+text @[Tomoya]
+text That being said, that doesn't necessarily mean I'm a good guy, either.
+setvar strS[1001] = "CGTM10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5O6.aac
+text @[Tomoyo]
+text Yeah, I guess so.
+setvar strS[1000] = "BG011"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s15
+fi
+goto 15
+label s15
+setvar strS[1000] = ""
+label 15
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGTM10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5O7.aac
+text @[Tomoyo]
+text I'll be going that way.
+text @[Tomoya]
+text Ah, all right. Well, then...
+sound 5O8.aac
+text @[Tomoyo]
+text Yes. Thanks for today.
+text @[Tomoya]
+text Yeah.
+label 16
+setvar intF[209] = 1
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0

@@ -1,0 +1,1558 @@
+setvar strS[1000] = "BG033A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1000] = ""
+label 1
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM14.mp3
+text The warm spring sunlight shines down on me.
+text A refreshing breeze blows past.
+text I have plenty of leeway to make it to school on time.
+text @[Tomoya]
+text If I keep walking at this pace, there's no way I'll be late.
+text It's not that I believe Fujibayashi's fortune from yesterday.
+text However, just to be safe, I am walking to school earlier than usual.
+text But then again, to other students this might already count as being a bit late.
+text There aren't that many people wearing school uniforms along this road anymore.
+text In any case, it's still early enough for me to get to school on time.
+text Now according to Fujibayashi's fortune, there should be an old lady having trouble crossing the street.
+text And I'll be late if I were to help her...
+text @[Tomoya]
+text To begin with, there isn't an old lady at the crosswal─
+text I glance just beyond the white lines, painted like a ladder on the asphalt.
+text @[Tomoya]
+text ...I don't like this...
+text Where I am looking, there's an old lady holding onto a utility pole with her hip stooped.
+text She keeps glancing left and right.
+text No matter how I look at it, something is wrong.
+text All the other students feign ignorance and simply walk past her.
+text And... our eyes meet.
+text @[Tomoya]
+text ...
+text @[Old Lady]
+text ...
+text Perhaps it's just me, but it feels like she's staring at me.
+text It almost feels like she's silently saying, "You can't even lend a helping hand when others are in trouble?"
+text If I give in to those eyes, will Fujibayashi's fortune come true?
+choice Talk to the old lady|Just keep walking
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s1
+fi
+goto 2
+label s1
+text @[Tomoya]
+text *Sigh*
+text I would really love to pretend I didn't see her, but I can't just leave her be when she's looking at me like that.
+text I guess I am more of a busybody than I thought.
+text I let out a sigh and walk to the crosswalk.
+text @[Tomoya]
+text Hey, ma'a─
+sound 8EZ.aac
+text @[Old Lady]
+text Yaaaahh!
+text She suddenly screams at me.
+text @[Tomoya]
+text You're trying to cross the street, aren't...
+sound 8F0.aac
+text @[Old Lady]
+text Yaaaahh!
+text She keeps yelling at me as she steps backward.
+text @[Tomoya]
+text Like I was saying, are you...
+sound 8F1.aac
+text @[Old Lady]
+text Yaaaahh!
+text @[Tomoya]
+text ...
+sound 8F2.aac
+text @[Old Lady]
+text Yaaaahh!
+text @[Tomoya]
+text Say something that makes sense!
+sound 8F3.aac
+text @[Old Lady]
+text Eek! What a scary kid... picking on the elderly.
+text Fine, you old hag...
+sound 8F4.aac
+text @[Female Student]
+text Hey, look! That guy's mugging that old lady!
+sound 8F5.aac
+text @[Female Student]
+text Oh, it's that third-year delinquent.
+sound 8F6.aac
+text @[Male Student]
+text Yeah, you're right. He does look like a bad person.
+sound 8F7.aac
+text @[Male Student]
+text Somebody call for help! He's going to beat the old lady to death!
+text @[Tomoya]
+text ...
+text Well, that's strange. For once I am trying to do something nice, and everyone here is vilifying me for it.
+text As my attention shifts to the rubberneckers, the old lady suddenly moves.
+text She takes a step back, straightens her bent back, and quickly reaches for the ground.
+text Right where her foot was...
+text There's something shining... a 500 yen coin?
+text In the blink of an eye she snatches it off the ground and runs off at a speed that would put younger people to shame.
+text @[Tomoya]
+text ...Hey...?
+text Don't tell me... She was looking around because she was waiting to pick up the 500 yen coin?
+text And did she yell at me so that I wouldn't take her 500 yen...?
+sound 8F8.aac
+text @[Female Student]
+text Oh thank goodness. She managed to get away.
+sound 8F9.aac
+text @[Female Student]
+text I really thought she was going to be beaten to death!
+sound 8FA.aac
+text @[Male Student]
+text Hah, that guy's surprisingly slow.
+sound 8FB.aac
+text @[Male Student]
+text I guess he's not that tough after all.
+text @[Tomoya]
+text What the hell are you staring at, huh?!
+sound 8FC.aac
+text @[Female Student]
+text Aahh! He's coming this way!
+sound 8FD.aac
+text @[Male Student]
+text Crap! Run!
+text The onlookers scramble away like baby spiders.
+text Geez... what's with this morning?
+text I'll be thanked and get some money for my trouble?
+text Fujibayashi's fortune was a sham!
+text Hell, I'm an idiot for believing it for even a second!
+goto 3
+label 2
+text @[Tomoya]
+text ...
+text Nah... I'll just walk past her.
+text I'd rather not be late like Fujibayashi said, all for some old hag that I don't know.
+text To make it sound cool, I'm standing up against fate.
+text I'll defy the future that her fortune foretold.
+text I look away as I walk past the lady.
+text I can feel her eyesight pricking my skin.
+text Well granny, if you want to blame someone, blame my class president.
+text You have lived for a long time and so you should know the transience of life very well.
+text In any case, I walk past her without incident.
+sound 8FE.aac
+text @[Female Student]
+text Excuse me ma'am, are you trying to cross the street?
+text @[Tomoya]
+text ...
+text Right after I walk past the old lady, a female student talks to her.
+text It makes me feel a little guilty.
+sound 8FF.aac
+text @[Old Lady]
+text Yaaaahh!
+sound 8FG.aac
+text @[Female Student]
+text Aah?! What's going on? Was I mistaken?!
+sound 8FH.aac
+text @[Old Lady]
+text Yaaaahh!
+text For some reason the lady starts threatening the girl.
+text @[Tomoya]
+text ...Thank goodness I didn't talk to her.
+text At any rate, Fujibayashi's fortune turned out to be wrong... I guess.
+label 3
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s2
+fi
+goto 4
+label s2
+setvar strS[1000] = ""
+label 4
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 60
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG021"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 5
+label s3
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08C.mp3
+text It's been a while since I've attended homeroom.
+text I say "attended," but all I really did was sit there in the classroom. I don't remember a thing the teacher said.
+text The bell rings and ends homeroom. The homeroom teacher walks out of the room.
+setvar strS[1000] = "BG021B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s4
+fi
+goto 6
+label s4
+setvar strS[1000] = ""
+label 6
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text It's now the short recess before first period.
+text Rather than preparing for the lesson, I space out.
+sound 8FI.aac
+text @[Voice]
+text Um... umm...
+text @[Tomoya]
+text Hm?
+setvar strS[1001] = "CGRY19A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY19A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8FJ.aac
+text @[Ryou]
+text ...Ah...
+text Fujibayashi looks at me with her timid-looking eyes.
+setvar strS[1001] = "CGRY22A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY22A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8FK.aac
+text @[Ryou]
+text Um... You're not late today.
+text @[Tomoya]
+text ...Yeah... Your fortune was off.
+setvar strS[1001] = "CGRY21A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY21A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8FL.aac
+text @[Ryou]
+text Y-Yes... Thank goodness.
+text @[Tomoya]
+text Thank goodness? Shouldn't you be disappointed?
+setvar strS[1001] = "CGRY14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8FM.aac
+text @[Ryou]
+text Th-That's not true.
+text @[Tomoya]
+text But your fortune was off.
+setvar strS[1001] = "CGRY22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8FN.aac
+text @[Ryou]
+text I think... it's good if certain fortunes don't come true.
+text @[Tomoya]
+text Huh, is that so...?
+setvar strS[1001] = "CGRY21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8FO.aac
+text @[Ryou]
+text Th-That's because I think it's a good thing you came to school on time.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Having said so, Fujibayashi pulls her deck of cards out of her pocket again.
+text *Shuffle* *Shuffle* *Shuffle* *Shuffle*
+text @[Tomoya]
+text ...
+text Looks like she's telling my fortune once again.
+text *Shuffle* *Shuffle* *Shuffle* *Shuff─*
+setvar strS[1001] = "CGRY15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8FP.aac
+text @[Ryou]
+text Ah...
+text *Clatter*
+text And they fall all over the floor again.
+setvar strS[1001] = "CGRY18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text However, unlike yesterday she does not immediately pick up the cards. She stares at them on the floor.
+setvar strS[1001] = "CGRY17A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY17A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8FQ.aac
+text @[Ryou]
+text ...
+text @[Tomoya]
+text ...
+setvar strS[1001] = "CGRY18A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY18A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8FR.aac
+text @[Ryou]
+text Okazaki-kun... something good will happen to you tomorrow.
+text @[Tomoya]
+text ...What?
+setvar strS[1001] = "CGRY18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8FS.aac
+text @[Ryou]
+text You'll also... have a lovely encounter.
+text @[Tomoya]
+text Hold on, you're telling me that just by looking at the cards on the floor?
+setvar strS[1001] = "CGRY15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8FT.aac
+text @[Ryou]
+text Um... Yes.
+text @[Tomoya]
+text I didn't even get to pick any cards this time.
+setvar strS[1001] = "CGRY19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8FU.aac
+text @[Ryou]
+text That's how this fortune works, I think.
+text @[Tomoya]
+text What do you mean, "you think"?
+text @[Tomoya]
+text Besides, didn't you go, "Ah," when you dropped the cards?
+setvar strS[1001] = "CGRY21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8FV.aac
+text @[Ryou]
+text That was... um... a secret chant.
+text Yeah right. Some secret chant that was.
+text @[Tomoya]
+text Well fine. So? What is my fortune?
+setvar strS[1001] = "CGRY18A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY18A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8FW.aac
+text @[Ryou]
+text ...Um, you'll have an intense impact.
+text @[Tomoya]
+text ...The hell is that...?
+sound 8FX.aac
+text @[Ryou]
+text It'll refresh both your body and spirit, and get you through the day safely.
+text @[Tomoya]
+text ...I don't get it...
+setvar strS[1001] = "CGRY21A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY21A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8FY.aac
+text @[Ryou]
+text I-It's fortune telling after all...
+text @[Tomoya]
+text ...A maiden's intuition again...?
+setvar strS[1001] = "CGRY19A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY19A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8FZ.aac
+text @[Ryou]
+text Um, that's right.
+text @[Tomoya]
+text So what's that lovely encounter about?
+setvar strS[1001] = "CGRY18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8G0.aac
+text @[Ryou]
+text Um... Yes... Er... that card there...
+text Fujibayashi points at a single card.
+text It's the queen of spades.
+setvar strS[1001] = "CGRY18A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY18A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8G1.aac
+text @[Ryou]
+text You'll meet a really gentle girl.
+text @[Tomoya]
+text ...Gentle?
+setvar strS[1001] = "CGRY15A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY15A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8G2.aac
+text @[Ryou]
+text Um... Yes, she's gentle.
+text @[Tomoya]
+text ...
+setvar strS[1001] = "CGRY19A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY19A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8G3.aac
+text @[Ryou]
+text Ah... Um, spade represents a sword. In other words, she's someone who'll protect you, like a knight.
+sound 8G4.aac
+text @[Ryou]
+text That's why... I'm sure she'll be a gentle person.
+text ...A sword... If I had to choose, I'd say that means aggressive. Wouldn't that make her a dangerous person instead?
+text @[Tomoya]
+text Will today's fortune come true?
+setvar strS[1001] = "CGRY21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8G5.aac
+text @[Ryou]
+text I-It's fortune telling after all...
+text That sure is a vague response.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s5
+fi
+goto 7
+label s5
+setvar strS[1000] = ""
+label 7
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG021B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s6
+fi
+goto 8
+label s6
+setvar strS[1000] = ""
+label 8
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text ...I'm tired...
+text It's been a long time since I've attended first period.
+text And just like homeroom, I don't remember a single thing that was said.
+text On top of that, I feel terrible as everything is putting me to sleep.
+text Should I sleep through second period... or should I just leave the classroom and ditch...?
+music ~
+sound 8G6.aac
+text @[Female Student]
+text Whoa! Why are you here?!
+text Just as I was zoning out, I hear a familiar voice from above my head.
+text This voice is...
+music BGM03A.mp3
+setvar strS[1001] = "CGKY25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8G7.aac
+text @[Female Student]
+text This sure doesn't happen often. It's still morning!
+text @[Tomoya]
+text ...Kyou...?
+text I see a familiar face.
+text It's Ryou Fujibayashi's twin sister... Kyou Fujibayashi.
+text Even though I'm branded as a delinquent, she's one of the few students who doesn't mind talking to me.
+text She's part of another class...
+text @[Tomoya]
+text Why are you here?
+setvar strS[1001] = "CGKY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8G8.aac
+text @[Kyou]
+text Hm? Because of this.
+text She shows me what seems to be a lunch box, wrapped in a napkin with a floral pattern.
+text @[Tomoya]
+text ...You giving me that?
+setvar strS[1001] = "CGKY26"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY26.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8G9.aac
+text @[Kyou]
+text You're really an idiot, aren't you? Why would I give you a lunch box?
+text That's true.
+text I would find it perplexing if she suddenly gave me one for no reason.
+text Rather, it would make me wonder if she had poisoned it.
+setvar strS[1001] = "CGKY13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8GA.aac
+text @[Kyou]
+text You're thinking something rude, aren't you?
+text @[Tomoya]
+text It's just your imagination.
+setvar strS[1001] = "CGRY15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8GB.aac
+text @[Ryou]
+text O-Onee-chan...? What's the matter?
+setvar strS[1001] = "CGKY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8GC.aac
+text @[Kyou]
+text Hey, Ryou. Here!
+text As Fujibayashi walks toward us, Kyou swings the lunch box she's holding in her hand..
+setvar strS[1001] = "CGRY14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8GD.aac
+text @[Ryou]
+text Ah... my lunch...
+setvar strS[1001] = "CGKY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8GE.aac
+text @[Kyou]
+text Yep. You left it on the table.
+setvar strS[1001] = "CGRY21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8GF.aac
+text @[Ryou]
+text Thanks for bringing it.
+setvar strS[1001] = "CGKY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8GG.aac
+text @[Kyou]
+text Don't mention it.
+text @[Tomoya]
+text ...Why are you handing it to her now of all times?
+setvar strS[1001] = "CGKY15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8GH.aac
+text @[Kyou]
+text Hm? What of it?
+text @[Tomoya]
+text Like, the two of you live together. Why are you handing her the lunch box now?
+text @[Tomoya]
+text Don't you two come to school together?
+setvar strS[1001] = "CGRY21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8GI.aac
+text @[Ryou]
+text O-Onee-chan... slept in a little today.
+text @[Tomoya]
+text Wake her up.
+setvar strS[1001] = "CGRY14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8GJ.aac
+text @[Ryou]
+text Ah, um, well... I-I kept trying until I had to go...
+setvar strS[1001] = "CGKY21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8GK.aac
+text @[Kyou]
+text Ahahaha! I'm not bragging, but I'm terrible at waking up on time!
+text @[Tomoya]
+text Does she throw a fit?
+setvar strS[1001] = "CGRY18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8GL.aac
+text @[Ryou]
+text She's quiet, doesn't move, and keeps her eyes half closed...
+text That's creepy...
+text @[Tomoya]
+text ...Huh? But you weren't late now, were you?
+setvar strS[1001] = "CGRY19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8GM.aac
+text @[Ryou]
+text Eh? Oh, yes, when I run short of time, I take the bus.
+text @[Tomoya]
+text Oh, so you two took different buses?
+setvar strS[1001] = "CGKY17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8GN.aac
+text @[Kyou]
+text I hate buses.
+text @[Tomoya]
+text So only you were late, huh?
+setvar strS[1001] = "CGKY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8GO.aac
+text @[Kyou]
+text No way. I made it on time!
+text @[Tomoya]
+text ...
+choice Try pressing for details|Don't worry about it
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s7
+fi
+goto 9
+label s7
+text @[Tomoya]
+text Did you run?
+setvar strS[1001] = "CGKY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8GP.aac
+text @[Kyou]
+text Mm... Well, something like that.
+setvar strS[1001] = "CGKY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8GQ.aac
+text @[Kyou]
+text I was going pretty fast for just a little bit.
+text Fast...?
+setvar strS[1001] = "CGRY15A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY15A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8GR.aac
+text @[Ryou]
+text Onee-chan, were you using that again?
+setvar strS[1001] = "CGKY20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8GS.aac
+text @[Kyou]
+text Wa... Ryou! That's a secret!
+setvar strS[1001] = "CGRY14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8GT.aac
+text @[Ryou]
+text Eh? Ah, okay.
+setvar strS[1001] = "CGRY18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8GU.aac
+text @[Ryou]
+text I think you shouldn't do that so often, though.
+sound 8GV.aac
+text @[Ryou]
+text You just hit someone yesterday...
+text Hit... someone...?
+setvar strS[1001] = "CGKY16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8GW.aac
+text @[Kyou]
+text Th-That's even more of a secret!
+text ...It kind of feels like she just inadvertently said something pretty scary...
+text @[Tomoya]
+text ...Are you... hiding something?
+setvar strS[1001] = "CGKY20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8GX.aac
+text @[Kyou]
+text N-Not really... it's bad taste to pry into a girl's secrets.
+setvar intF[301] = 1
+label 9
+if intF[1089] == 1
+	goto s8
+fi
+goto 10
+label s8
+text @[Tomoya]
+text I bet you changed your attendance record.
+setvar strS[1001] = "CGKY15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8GY.aac
+text @[Kyou]
+text Oh yeah, that reminds me. You did that during our second year, didn't you?
+text @[Tomoya]
+text I am surprised nobody ever found out.
+setvar strS[1001] = "CGKY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8GZ.aac
+text @[Kyou]
+text Well, that's because I changed it back after you did it.
+text @[Tomoya]
+text Eh? Really?
+setvar strS[1001] = "CGKY24"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY24.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8H0.aac
+text @[Kyou]
+text Of course!
+text @[Tomoya]
+text It's your fault that my attendance was in such bad shape, then!
+setvar strS[1001] = "CGKY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8H1.aac
+text @[Kyou]
+text Ahahaha, what're you saying? You think you could move on to your third year by cheating like that?
+text @[Tomoya]
+text Thanks to you, Sunohara had to take tutoring classes.
+setvar strS[1001] = "CGKY25B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY25B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8H2.aac
+text @[Kyou]
+text Oh yeah, there were a couple times I marked him absent even though he was there.
+text @[Tomoya]
+text ...
+text This girl sure does some crazy things.
+label 10
+setvar strS[1001] = "CGKY15A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY15A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8H3.aac
+text @[Kyou]
+text In any case, what about you?
+text @[Tomoya]
+text What do you mean?
+sound 8H4.aac
+text @[Kyou]
+text Why are you here?
+text That's awfully rude...
+setvar strS[1001] = "CGKY18A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY18A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8H5.aac
+text @[Kyou]
+text Oh, was that too ambiguous?
+setvar strS[1001] = "CGKY15A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY15A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8H6.aac
+text @[Kyou]
+text Why are you here in this classroom so early?
+text @[Tomoya]
+text I got here on time. What else?
+setvar strS[1001] = "CGKY25A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY25A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8H7.aac
+text @[Kyou]
+text ...
+text ...She froze...
+text @[Kyou]
+text ...
+setvar strS[1001] = "CGKY26A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY26A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8H9.aac
+text @[Kyou]
+text ...You're kidding?
+text @[Tomoya]
+text Is it that rare for me to be here on time?
+setvar strS[1001] = "CGKY26B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY26B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8HA.aac
+text @[Kyou]
+text It's not rare, it's just I would say I have a better chance of seeing a UFO.
+text @[Tomoya]
+text Oh...?
+text Guess my presence transcends even supernatural phenomena.
+setvar strS[1001] = "CGKY15A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY15A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8HB.aac
+text @[Kyou]
+text Oh, could it be that you stayed here after class yesterday?
+setvar strS[1001] = "CGRY15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8HC.aac
+text @[Ryou]
+text D-Did you really...?
+text @[Tomoya]
+text Like the hell I did!
+setvar strS[1001] = "CGKY12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8HD.aac
+text @[Kyou]
+text Then you must be an imposter.
+setvar strS[1001] = "CGRY14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8HE.aac
+text @[Ryou]
+text Eh...? You aren't Okazaki-kun...?
+text Where's the real one, then?
+text @[Tomoya]
+text *Sigh*
+setvar strS[1000] = "BG080"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s9
+fi
+goto 11
+label s9
+setvar strS[1000] = ""
+label 11
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I let out a sigh, and glance at the sky.
+text @[Tomoya]
+text I fought my fate today.
+setvar strS[1000] = "BG021B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s10
+fi
+goto 12
+label s10
+setvar strS[1000] = ""
+label 12
+setvar strS[1001] = "CGKY18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8HF.aac
+text @[Kyou]
+text ...
+setvar strS[1001] = "CGKY17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Kyou looks a little worried, and places her hand on my forehead.
+text @[Tomoya]
+text I don't have a fever.
+setvar strS[1001] = "CGKY31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8HG.aac
+text @[Kyou]
+text ...
+text @[Tomoya]
+text Don't give me that pitying look...
+setvar strS[1001] = "CGKY33"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY33.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8HH.aac
+text @[Kyou]
+text ...
+text @[Tomoya]
+text Don't mock me!
+setvar strS[1001] = "CGKY13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8HI.aac
+text @[Kyou]
+text What should I do, then?
+text @[Tomoya]
+text Wouldn't you normally ask, "What fate?"
+setvar strS[1001] = "CGRY15A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY15A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8HJ.aac
+text @[Ryou]
+text Um... could it be... the fortune I told you?
+text @[Tomoya]
+text Yeah, that's right.
+setvar strS[1001] = "CGKY15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8HK.aac
+text @[Kyou]
+text ...Did Ryou tell your fortune?
+text @[Tomoya]
+text Yeah.
+setvar strS[1001] = "CGKY33"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY33.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text After my response, Kyou looks at me with a weird expression on her face.
+text @[Tomoya]
+text What's with that look?
+sound 8HL.aac
+text @[Kyou]
+text Nothing...
+setvar strS[1001] = "CGRY15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8HM.aac
+text @[Ryou]
+text Oh, I told him another one this morning...
+setvar strS[1001] = "CGKY10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8HN.aac
+text @[Kyou]
+text What was it?
+setvar strS[1001] = "CGRY15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8HO.aac
+text @[Ryou]
+text Um...
+setvar strS[1001] = "CGRY16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8HP.aac
+text @[Ryou]
+text ...
+setvar strS[1001] = "CGRY18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8HQ.aac
+text @[Ryou]
+text ...
+setvar strS[1001] = "CGRY17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8HR.aac
+text @[Ryou]
+text ...
+setvar strS[1001] = "CGRY18A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY18A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8HS.aac
+text @[Ryou]
+text ...Huh?
+text @[Tomoya]
+text Geez, Kyou... your sister is such a birdbrain...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Wham*
+text @[Tomoya]
+text Ouch!
+setvar strS[1001] = "CGKY13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8HT.aac
+text @[Kyou]
+text Come again?
+text @[Tomoya]
+text Didn't you hit me because you heard me?!
+setvar strS[1001] = "CGRY15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8HU.aac
+text @[Ryou]
+text Oh, I remember now.
+setvar strS[1001] = "CGRY21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8HV.aac
+text @[Ryou]
+text A gentle girl will have an intense impact on him.
+sound 8HW.aac
+text @[Ryou]
+text And both his body and mind will be refreshed.
+text @[Tomoya]
+text Yup, that's it.
+setvar strS[1001] = "CGKY33"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY33.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8HX.aac
+text @[Kyou]
+text ...
+text @[Tomoya]
+text Again, why are you looking at me like that?
+text As she takes a breath, Kyou shakes her head, and lays her hand on my shoulder.
+setvar strS[1001] = "CGKY17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She then nods.
+text Her eyes conceal a hint of pity.
+setvar strS[1001] = "CGKY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8HY.aac
+text @[Kyou]
+text Well, hang in there.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She says, and then leaves the classroom.
+text @[Tomoya]
+text ...What's that supposed to mean?
+setvar strS[1001] = "CGRY16A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY16A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8HZ.aac
+text @[Ryou]
+text ...I wonder.
+text Fujibayashi and I were left to puzzle over this mystery during the short time before the next bell.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music ~
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0

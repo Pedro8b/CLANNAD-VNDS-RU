@@ -1,0 +1,692 @@
+music ~
+text @[Tomoya]
+text ...Hm?
+text Something came into my view that hadn't been there a few moments ago.
+music BGM10B.mp3
+text I don't know if they only just came up the hill, but two motorcycles have stopped near the school gates.
+text Even from here, I can see that the riders are young men, both without helmets.
+text One of them waves his hand, signaling to the other.
+text The two motorcycles start running wild on the school grounds, their engines roaring loudly.
+text I vaguely remember something similar happening at the end of last year.
+text The culprits that time had been students from the nearby industrial high school.
+text Are they really that pissed off that we're the best school in town?
+setvar strS[1001] = "CGSH10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 56X.aac
+text @[Sunohara]
+text Oh, what's this?
+text Sunohara's body suddenly fills up my field of vision.
+text @[Tomoya]
+text You bastard! Don't sit on my desk!
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 56Y.aac
+text @[Sunohara]
+text Come on man, it's fine. Whoa, awesome! Those bikes are LOUD!
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Drawn in by the racket, the other guys have also started to gather by the window to see what's going on.
+text There's just nothing more depressing than this.
+choice Escape|Watch how things turn out
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s0
+fi
+goto 2
+label s0
+text I get up from my seat.
+setvar strS[1001] = "CGSH20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 56Z.aac
+text @[Sunohara]
+text Okazaki, are you planning on going down there?
+text @[Tomoya]
+text No way. It's just hot in here, so I'm going out into the hallway for a bit.
+setvar strS[1001] = "CGSH19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 570.aac
+text @[Sunohara]
+text What? But the show's just getting started...
+music ~
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s1
+fi
+goto 1
+label s1
+setvar strS[1000] = ""
+label 1
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I wait in the hallway for the whole situation to cool down.
+text The spectators in the classroom suddenly burst out in excitement.
+text Then, shortly after, the entire classroom fills up with shrill cheers.
+text If I were in there right now, I'd probably have hit someone (probably Sunohara) out of sheer irritation.
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+goto 3
+label 2
+if intF[1089] == 1
+	goto s2
+fi
+goto 3
+label s2
+label 3
+text I wonder how the teachers are planning to deal with this situation.
+text So I decide to stay put and see how this whole ordeal turns out.
+text Suddenly, the spectators in another classroom get incredibly rowdy.
+setvar strS[1001] = "CGSH20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 571.aac
+text @[Sunohara]
+text What now...?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text One student leans out of the window and excitedly points down toward the ground.
+text I look down.
+music ~
+text There, I see the figure of a lone student, calmly walking up to the two guys running wild on their motorcycles.
+music BGM11.mp3
+text Long hair, and with a slender body... It was a girl.
+text People are now even starting to cry out in shrill cheers.
+setvar strS[1001] = "CGSH25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 572.aac
+text @[Sunohara]
+text Woooo!!
+text Wait, that was you?
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 573.aac
+text @[Sunohara]
+text Maybe she's planning on giving 'em a scolding.
+text @[Tomoya]
+text No way... This ain't fooling around, you know...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Just what are the teachers doing...? Not a single one has even so much as shown their face.
+sound 574.aac
+text @[Sunohara]
+text Ooh, it's starting!
+text The motorcycles come to a standstill right in front of the girl.
+text Both parties face each other. It looks like they're talking about something, although I can't make out exactly what.
+sound 575.aac
+text @[Voice]
+text Tomoyo-san, kick their asses!
+text There's cheering coming from the classroom below.
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 576.aac
+text @[Sunohara]
+text "Kick their asses"? What, her?
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 577.aac
+text @[Sunohara]
+text Ahahah, more like she's the one who's gonna get her ass kicked.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Just for a moment, I felt as if the girl smiled.
+text As if she were thinking, "This'll be interesting."
+music ~
+text As for what happened afterward, it was over in the blink of an eye.
+music BGM09B.mp3
+text And before I realize it, the girl is already on her way back, accompanied by grand cheering.
+text Dragging along the delinquents, one with each arm.
+text @[Tomoya]
+text Ah...
+setvar strS[1001] = "CGSH24"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 578.aac
+text @[Sunohara]
+text ...
+text For a short while, we're both at a loss for words.
+sound 579.aac
+text @[Sunohara]
+text Ahahah... What?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+choice I'm interested in this|I'm not interested in this
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s3
+fi
+goto 4
+label s3
+goto 5
+label 4
+if intF[1089] == 1
+	goto s4
+fi
+goto 5
+label s4
+text I don't know who this girl is, but I'd rather not be considered among the likes of all these groupies of hers...
+text I remain firmly seated at my desk.
+text Sunohara gets off my table and heads straight for the corridor.
+text @[Tomoya]
+text Where're you going?
+setvar strS[1001] = "CGSH24"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 57A.aac
+text @[Sunohara]
+text I'm just gonna go take a look for a bit...
+text He leaves the classroom with a faint half-smile on his lips.
+bgload KURO.jpg 55
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text And just as lunch break ends, he comes back.
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 57B.aac
+text @[Sunohara]
+text Hahaha!
+text His half smile has transformed into a grin filled with confidence.
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 57C.aac
+text @[Sunohara]
+text Just hear this, Okazaki!
+text @[Tomoya]
+text I don't really want to though.
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 57D.aac
+text @[Sunohara]
+text Hahahah, that sure was a hell of a farce.
+text He starts talking anyway.
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 57E.aac
+text @[Sunohara]
+text Her opponents were planted. In other words, it was totally staged.
+sound 57F.aac
+text @[Sunohara]
+text Apparently she only just transferred in this spring. It must have been because she had such horribly bad luck with boys at her old school.
+setvar strS[1001] = "CGSH14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 57G.aac
+text @[Sunohara]
+text To stoop so low as to use such filthy tricks to get popular in this school...
+sound 57H.aac
+text @[Sunohara]
+text ...If she were a man, I'd go and teach her a lesson.
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 57I.aac
+text @[Sunohara]
+text Well, she's a girl, so I'll let her off the hook for now.
+sound 57J.aac
+text @[Sunohara]
+text But if it starts to look like she's getting a bit too much attention, I'm not going to just leave her be, either.
+text Seriously, I don't care what you do...
+setvar intF[200] = 1
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+label 5
+text This is the perfect way to kill time.
+text I get up from my seat and leave the classroom.
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s5
+fi
+goto 6
+label s5
+setvar strS[1000] = ""
+label 6
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGSH27"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH27.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 57K.aac
+text @[Sunohara]
+text I'm coming too! Wait up!
+text Sunohara runs after me.
+setvar strS[1001] = "CGSH14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 57L.aac
+text @[Sunohara]
+text I'm telling you, that was definitely strange.
+sound 57M.aac
+text @[Sunohara]
+text It's just impossible.
+text @[Tomoya]
+text Well, let's go check with our own two eyes.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s6
+fi
+goto 7
+label s6
+setvar strS[1000] = ""
+label 7
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG016"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s7
+fi
+goto 8
+label s7
+setvar strS[1000] = ""
+label 8
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text We get to the hallway in front of the staff room.
+text Spectators have gathered there too.
+text I don't recognize any of their faces, so they're probably all underclassmen.
+music ~
+text The only third-year students down here are Sunohara and myself.
+sound 57N.aac
+text @[Teacher]
+text Well...?
+music BGM06.mp3
+setvar strS[1001] = "CGTM18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 57O.aac
+text @[Female Student]
+text It was in self-defense.
+sound 57P.aac
+text @[Female Student]
+text Isn't that right, you two?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 57Q.aac
+text @[Punks]
+text Y-Yes!! We started it!
+sound 57R.aac
+text @[Punks]
+text It's not Tomoyo-san's fault!
+sound 57S.aac
+text @[Teacher]
+text Tomoyo-san? You know her name, so... are you two acquainted with her?
+setvar strS[1001] = "CGTM18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 57T.aac
+text @[Female Student]
+text No. They just asked me my name earlier, so I gave it to them.
+sound 57U.aac
+text @[Female Student]
+text Isn't that right, you two?
+text Her eyes glimmer.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 57V.aac
+text @[Punks]
+text E-Eeeek...!
+sound 57W.aac
+text @[Punks]
+text Yes, that's right!
+sound 57X.aac
+text @[Teacher]
+text Really now...
+sound 57Y.aac
+text @[Teacher]
+text Well, it looks like these two also regret what they've done, so I'll let you off without punishment this time...
+sound 57Z.aac
+text @[Teacher]
+text ...But please, refrain from such dangerous behavior ever again. Just let us teachers deal with these things.
+setvar strS[1001] = "CGTM18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 580.aac
+text @[Female Student]
+text Yes, I'll do so from now on.
+sound 581.aac
+text @[Female Student]
+text Well, then, please excuse me.
+sound 582.aac
+text @[Teacher]
+text All right.
+setvar strS[1001] = "CGTM13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 583.aac
+text @[Female Student]
+text And... as for you two...
+text There's that glimmer again.
+sound 584.aac
+text @[Punks]
+text Eeeeeeek!
+sound 585.aac
+text @[Female Student]
+text ...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Hey, you.
+text I grab hold of one of the spectators.
+text @[Tomoya]
+text Who is that?
+sound 586.aac
+text @[Male Student]
+text Huh? You don't mean Tomoyo-san, do you?
+text He answered as if to say, "What, you've seriously never heard of her?"
+sound 587.aac
+text @[Male Student]
+text Tomoyo Sakagami. She's a second-year student who transferred in this spring.
+text @[Tomoya]
+text Does she always do this kind of stuff?
+sound 588.aac
+text @[Male Student]
+text Just occasionally.
+sound 589.aac
+text @[Male Student]
+text Even though the teachers were so scared that they just hid away inside the staff room, SHE came out and faced those punks alone.
+sound 58A.aac
+text @[Male Student]
+text She's so cool!
+text @[Tomoya]
+text If she took even one wrong step, she'd be just an idiot.
+sound 58B.aac
+text @[Male Student]
+text If she were an idiot, she wouldn't have been accepted into this school!
+text @[Tomoya]
+text That's not my point though...
+setvar strS[1001] = "CGTM11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 58C.aac
+text @[Tomoyo]
+text What are you guys doing... How am I supposed to get through like this?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Pushing her way through the spectators, the girl makes her exit.
+text I fix my gaze upon her back as she leaves.
+text Someone this strange was going to this school?
+text I never knew.
+text Well, I hadn't really been coming to school since the spring, so I guess it's natural that I don't know her.
+text With their heroine gone, the spectators also start to leave in groups of twos and threes.
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 58D.aac
+text @[Sunohara]
+text I'm telling you, it's definitely strange.
+sound 58E.aac
+text @[Sunohara]
+text It's impossible.
+text @[Tomoya]
+text I'm leaving without you～
+setvar strS[1001] = "CGSH27"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH27.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 58F.aac
+text @[Sunohara]
+text Hey, wait up!
+text And thus, we also left.
+setvar intF[201] = 1
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0

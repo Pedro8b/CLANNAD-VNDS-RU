@@ -1,0 +1,2471 @@
+setvar intF[1110] = 27
+setvar intF[1112] = 1
+setvar strS[1004] = "SDTA0427"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1004] = ""
+label 1
+bgload SCLAB00.jpg 45
+delay 60
+setimg SCLAP06.png 5 5
+setimg SCLA0427.png 159 160
+delay 120
+if 0 == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = "KURO"
+goto 4
+label 2
+if 0 == 1
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = "SIRO"
+goto 4
+label 3
+setvar strS[1000] = "KURO"
+label 4
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG007"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 5
+label s3
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08C.mp3
+text @[Tomoya]
+text Morning!
+text ......
+text ...No one is around.
+text The loaves of bread are neatly arranged on the trays.
+text That means the store is still open.
+text @[Tomoya]
+text (But how come no one is looking after it...)
+text @[Tomoya]
+text I'm coming inside!
+setvar strS[1000] = "BG006"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s4
+fi
+goto 6
+label s4
+setvar strS[1000] = ""
+label 6
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I go into the corridor.
+text There are noises coming from the right-hand room.
+text I open the door.
+setvar strS[1000] = "BG002"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s5
+fi
+goto 7
+label s5
+setvar strS[1000] = ""
+label 7
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGAK12E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK12E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2OY.aac
+text @[Akio]
+text Wha...
+setvar strS[1001] = "CGAK15E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK15E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2OZ.aac
+text @[Akio]
+text WHAT THE HELL IS THIS!!!
+sound 2P0.aac
+text @[Akio]
+text MY FINGER IS BLEEDING!!!!
+setvar strS[1001] = "CGSN20E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN20E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2P1.aac
+text @[Sanae]
+text Akio-san, stop making such a ruckus over a tiny cut.
+setvar strS[1001] = "CGNG32A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2P2.aac
+text @[{$lnmA}]
+text This knife is kinda rusted.
+setvar strS[1001] = "CGAK13E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK13E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2P3.aac
+text @[Akio]
+text Because it's really old.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text ...Everyone is carving.
+setvar strS[1001] = "CGNG10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[0] = lnmE
+if strS[0] > "Okazaki-san"
+	setvar intA[1000] = 1
+fi
+if strS[0] < "Okazaki-san"
+	setvar intA[1000] = -1
+fi
+if strS[0] == "Okazaki-san"
+	setvar intA[1000] = 0
+fi
+if strS[0] > "Tomoya-kun"
+	setvar intA[1001] = 1
+fi
+if strS[0] < "Tomoya-kun"
+	setvar intA[1001] = -1
+fi
+if strS[0] == "Tomoya-kun"
+	setvar intA[1001] = 0
+fi
+if intA[1000] == 0
+	goto s6
+fi
+goto 8
+label s6
+sound 2P4.aac
+goto 9
+label 8
+sound 2P5.aac
+label 9
+text @[{$lnmA}]
+text Ah, it's Okazaki-kun.
+text @[Tomoya]
+text Hi...
+setvar strS[1001] = "CGNG25A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG25A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[0] = lnmE
+if strS[0] > "Okazaki-san"
+	setvar intA[1000] = 1
+fi
+if strS[0] < "Okazaki-san"
+	setvar intA[1000] = -1
+fi
+if strS[0] == "Okazaki-san"
+	setvar intA[1000] = 0
+fi
+if strS[0] > "Tomoya-kun"
+	setvar intA[1001] = 1
+fi
+if strS[0] < "Tomoya-kun"
+	setvar intA[1001] = -1
+fi
+if strS[0] == "Tomoya-kun"
+	setvar intA[1001] = 0
+fi
+if intA[1000] == 0
+	goto s7
+fi
+goto 10
+label s7
+sound 2P6.aac
+goto 11
+label 10
+sound 2P7.aac
+label 11
+text @[{$lnmA}]
+text Do you want to try with us?
+text @[Tomoya]
+text Sure...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Old man, what are you doing here? What about the store?
+setvar strS[1001] = "CGAK13E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK13E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2P8.aac
+text @[Akio]
+text My bad. Can you cover for me?
+text @[Tomoya]
+text Cover what?
+sound 2P9.aac
+text @[Akio]
+text Minding the store.
+text @[Tomoya]
+text Don't drop that kind of responsibility on your daughter's friend!
+setvar strS[1001] = "CGAK19E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK19E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2PA.aac
+text @[Akio]
+text What's the worst that could happen? I'm too engrossed in this now!
+text @[Tomoya]
+text Just how old are you...
+text My head is starting to ache...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2PB.aac
+text @[Voice]
+text Excuse me.
+text A voice comes from the front of the store.
+text @[Tomoya]
+text Did you hear that? There's a customer.
+setvar strS[1001] = "CGAK24E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK24E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2PC.aac
+text @[Akio]
+text I'm counting on you.
+text @[Tomoya]
+text Don't count on me!
+setvar strS[1001] = "CGSN21E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN21E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2PD.aac
+text @[Sanae]
+text Akio-san!
+text Sanae-san has finally decided to intervene.
+text The old man's going to have a taste of her wrath.
+sound 2PE.aac
+text @[Sanae]
+text You can still carve while looking after the store!
+text @[Tomoya]
+text That sounds kind of wrong, Ma'am.
+setvar strS[1001] = "CGSN20E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN20E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2PF.aac
+text @[Sanae]
+text What are you waiting for? Come on.
+setvar strS[1001] = "CGAK14E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK14E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2PG.aac
+text @[Akio]
+text Tsk...
+text The old man puts the knife down and stands up unwillingly.
+setvar strS[1001] = "CGAK13E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK13E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2PH.aac
+text @[Akio]
+text If Sanae loves me that much, I guess it can't be helped...
+text No one's said anything like that.
+setvar strS[1001] = "CGAK12E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK12E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2PI.aac
+text @[Akio]
+text All right, time to work.
+text @[Tomoya]
+text Yep, just get to work already.
+setvar strS[1001] = "CGAK15E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGAK15E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2PJ.aac
+text @[Akio]
+text WHAT DID YOU JUST SAY?!
+sound 2PK.aac
+text @[Akio]
+text DO YOU THINK YOU CAN ORDER ME AROUND?!
+text @[Tomoya]
+text No, but the customer waiting out there can.
+setvar strS[1001] = "CGAK19E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK19E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2PL.aac
+text @[Akio]
+text ...
+setvar strS[1001] = "CGAK24E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK24E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2PM.aac
+text @[Akio]
+text Well... It depends on the customer.
+text Just what kind of customer are you talking about?!
+setvar strS[1001] = "CGAK14E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK14E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2PN.aac
+text @[Akio]
+text Fine, I'll pretend you said something slick and let it slide this time.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text The old man tucks up his sleeves and leaves the room.
+setvar strS[1001] = "CGSN10E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN10E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2PO.aac
+text @[Sanae]
+text Well, then, Okazaki-san, please don't mind us.
+text @[Tomoya]
+text I won't...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text With that said, Sanae-san follows her husband outside.
+setvar strS[1001] = "CGNG10AZ"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10AZ.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2PP.aac
+text @[{$lnmA}]
+text Right, I'll bring the drinks.
+text {$lnmA} stands up.
+text @[Tomoya]
+text Nah, it's fine.
+sound 2PQ.aac
+text @[{$lnmA}]
+text Actually, I'm sort of thirsty now. And I think Fu-chan wants something to drink as well.
+text @[Tomoya]
+text Is that so...
+setvar strS[1001] = "CGNG23A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2PR.aac
+text @[{$lnmA}]
+text Yes.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Even {$lnmA} has left the room.
+music ~
+text ......
+text ...A newfound silence is covering the whole room, like the calm after a storm.
+text *Skritch* ... *Skritch* ...
+music BGM15.mp3
+text Only the sounds of Fuko working on her carving can be heard.
+text @[Tomoya]
+text Say, Fuko.
+text @[Tomoya]
+text What do you think about this family? Unbelievably silly, isn't it?
+setvar strS[1001] = "CGFU19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2PS.aac
+text @[Fuko]
+text What?
+text Even I myself don't understand what I just said.
+text @[Tomoya]
+text In other words, it's really fun here, isn't it?
+setvar strS[1001] = "CGFU12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She nods.
+sound 2PT.aac
+text @[Fuko]
+text ...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text The sound of the knife shaving the wood comes to a halt.
+text Fuko is holding a freshly-made wooden star in her hands.
+text She puts it on the ground, next to four other finished carvings.
+text @[Tomoya]
+text You've done that many since last night?
+setvar strS[1001] = "CGFU12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2PU.aac
+text @[Fuko]
+text Yes, without resting.
+setvar strS[1001] = "CGFU21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2PV.aac
+text @[Fuko]
+text That one just now is really well done.
+text @[Tomoya]
+text Heh...
+text She seems to have improved somewhat. The carvings are much better shaped than the one she gave me.
+text @[Tomoya]
+text Arranging them on the floor like that makes it look like a night sky.
+setvar strS[1001] = "CGFU19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2PW.aac
+text @[Fuko]
+text Eh? Why is that?
+text @[Tomoya]
+text Well, they are stars, aren't they?
+setvar strS[1001] = "CGFU10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2PX.aac
+text @[Fuko]
+text No, they are starfish.
+music ~
+text @[Tomoya]
+text ...
+text @[Tomoya]
+text ...But I'm talking about these things?
+sound 2PY.aac
+text @[Fuko]
+text Yes, they are starfish.
+text @[Tomoya]
+text ...
+music BGM04A.mp3
+text @[Tomoya]
+text Don't tell me...
+text @[Tomoya]
+text You've been carving starfish all this time?!
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2PZ.aac
+text @[Fuko]
+text It's so obvious. There has never been a star.
+sound 2Q0.aac
+text @[Fuko]
+text Why does Fuko have to waste time carving stars?
+sound 2Q1.aac
+text @[Fuko]
+text You are not making any sense.
+text @[Tomoya]
+text It's the starfish part that doesn't make any sense!
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text (That means she's been giving starfish to people as presents?!)
+text @[Tomoya]
+text (Who would want to receive a starfish sculpture...?)
+text I pick up one of the carvings and look at it.
+text @[Tomoya]
+text (A star would be kind of acceptable...)
+text @[Tomoya]
+text (But starfish? What kind of idiot would think starfish are cute?...)
+setvar strS[1001] = "CGFU34"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU34.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2Q2.aac
+text @[Fuko]
+text ...
+text @[Tomoya]
+text (It can't be real... Normally, there's no way anyone could go into a trance thinking about starfish...)
+text @[Tomoya]
+text (Rather, I wonder what's in her mind right now.)
+text @[Tomoya]
+text (Is she eating starfish in there? Do they even taste any good?)
+text To test my theory, I push one leg of the starfish I'm holding into her mouth.
+text @[Tomoya]
+text (Eat it... Eat it...)
+text It doesn't go in smoothly.
+text I force it a bit more, pushing up her upper lip.
+text *slide*
+text The starfish's leg slides up...
+text *BAM*
+text ...and hits her nasal bone.
+setvar strS[1001] = "CGFU31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGFU31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2Q3.aac
+text @[Fuko]
+text Mmmmm.
+text The pain must have pulled Fuko back to reality. She curls up on herself, groaning.
+text It does look pretty painful.
+setvar strS[1001] = "CGFU17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2Q4.aac
+text @[Fuko]
+text Why did you do that?!
+text She glares at me with her tearful eyes.
+text @[Tomoya]
+text My bad, my bad.
+text @[Tomoya]
+text I thought you would eat it.
+setvar strS[1001] = "CGFU33A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU33A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2Q5.aac
+text @[Fuko]
+text Are you insane?! How could anyone eat such a cute thing?
+text She snatches back the starfish and embraces it. So it's not the taste that matters, but the appearance.
+sound 2Q6.aac
+text @[Fuko]
+text Please give back the one you got before.
+sound 2Q7.aac
+text @[Fuko]
+text There's no way it could ever be happy in your care.
+if intF[133] == 0
+	goto s8
+fi
+goto 12
+label s8
+text Even if I want to give it back, I don't know where it is...
+goto 13
+label 12
+if intF[133] == 1
+	goto s9
+fi
+goto 13
+label s9
+text Even if I want to give it back, it's no longer in my possession...
+label 13
+choice Tell her the truth|Don't tell her the truth
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s10
+fi
+goto 16
+label s10
+text @[Tomoya]
+text Sorry...
+setvar strS[1001] = "CGFU19A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2Q8.aac
+text @[Fuko]
+text What?
+if intF[133] == 0
+	goto s11
+fi
+goto 14
+label s11
+text @[Tomoya]
+text I put it on top of the shoe cupboard, but...
+text @[Tomoya]
+text Somehow it just vanished.
+goto 15
+label 14
+if intF[133] == 1
+	goto s12
+fi
+goto 15
+label s12
+text @[Tomoya]
+text I didn't need it, so I gave it to someone else...
+label 15
+sound 2Q9.aac
+text @[Fuko]
+text What are you talking about?
+text @[Tomoya]
+text The starfish you gave me.
+setvar strS[1001] = "CGFU22A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU22A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Fuko]
+text ...
+text Fuko freezes in shock.
+text @[Tomoya]
+text That's why, you see... give me another one, will you?
+setvar strS[1001] = "CGFU33A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU33A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2QA.aac
+text @[Fuko]
+text How dare you ask for another?!
+text @[Tomoya]
+text Come on, don't blow a fuse on me.
+sound 2QB.aac
+text @[Fuko]
+text Let it blow!
+text @[Tomoya]
+text Now, now, try to calm down.
+sound 2QC.aac
+text @[Fuko]
+text It's unbelievable!
+text It seems I've angered her quite badly.
+goto 19
+label 16
+if intF[1089] == 1
+	goto s13
+fi
+goto 19
+label s13
+text @[Tomoya]
+text ...
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2QD.aac
+text @[Fuko]
+text Give it back.
+text @[Tomoya]
+text ...
+sound 2QE.aac
+text @[Fuko]
+text Why are you not saying anything?
+text @[Tomoya]
+text What cup size are you?
+setvar strS[1001] = "CGFU17A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2QF.aac
+text @[Fuko]
+text You're clearly trying to change the topic!
+setvar strS[1001] = "CGFU33A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU33A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2QG.aac
+text @[Fuko]
+text And there's even malice in your question!
+text @[Tomoya]
+text No, not really...
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2QH.aac
+text @[Fuko]
+text What did you do to the starfish?
+sound 2QI.aac
+text @[Fuko]
+text Did you throw it away?
+setvar strS[1001] = "CGFU31A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU31A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2QJ.aac
+text @[Fuko]
+text Just how heartless can you be!
+text @[Tomoya]
+text No, that's not it. I didn't throw it away.
+text It will only get worse if I don't tell her the truth.
+if intF[133] == 0
+	goto s14
+fi
+goto 17
+label s14
+text @[Tomoya]
+text I put it on top of the shoe cupboard, but...
+text @[Tomoya]
+text It sort of vanished.
+goto 18
+label 17
+if intF[133] == 1
+	goto s15
+fi
+goto 18
+label s15
+text @[Tomoya]
+text I gave it to someone else...
+label 18
+setvar strS[1001] = "CGFU17A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2QK.aac
+text @[Fuko]
+text What...
+text @[Tomoya]
+text That's why, you see... give me another one, will you?
+setvar strS[1001] = "CGFU33A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU33A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2QL.aac
+text @[Fuko]
+text How dare you ask for another?!
+text @[Tomoya]
+text Come on, don't blow a fuse on me.
+sound 2QM.aac
+text @[Fuko]
+text Let it blow!
+text @[Tomoya]
+text Now, now, try to calm down.
+sound 2QN.aac
+text @[Fuko]
+text It's unbelievable!
+text It seems I've angered her quite badly.
+label 19
+choice Slowly pinch her nose|Just stay still
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s16
+fi
+goto 20
+label s16
+text I slowly stretch out my hand to pinch Fuko's nose.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *pinch*
+setvar strS[1001] = "CGFU31A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU31A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2QO.aac
+text @[Fuko]
+text Mmm...!
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She pushes me aside and runs away.
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2QP.aac
+text @[Fuko]
+text What are you trying to do?
+text @[Tomoya]
+text I thought your anger would soften if I pinched your nose.
+setvar strS[1001] = "CGFU33A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU33A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2QQ.aac
+text @[Fuko]
+text As if that would happen!
+setvar intF[105] = 1
+goto 21
+label 20
+if intF[1089] == 1
+	goto s17
+fi
+goto 21
+label s17
+text I shouldn't do anything else that might rub her the wrong way.
+label 21
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2QR.aac
+text @[Fuko]
+text Enough. Fuko will return to carving!
+sound 2QS.aac
+text @[Fuko]
+text So stop being a bother!
+text @[Tomoya]
+text Fine, I'll stop.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Fuko takes a wooden cube out of her cloth bag and starts working on it right away.
+text *skritch* *skritch*
+text ......
+setvar strS[1001] = "CGNG23A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2QT.aac
+text @[{$lnmA}]
+text I have brought the drinks.
+text {$lnmA} is back with a tray in her hands.
+setvar strS[1001] = "CGNG10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[0] = lnmE
+if strS[0] > "Okazaki-san"
+	setvar intA[1000] = 1
+fi
+if strS[0] < "Okazaki-san"
+	setvar intA[1000] = -1
+fi
+if strS[0] == "Okazaki-san"
+	setvar intA[1000] = 0
+fi
+if strS[0] > "Tomoya-kun"
+	setvar intA[1001] = 1
+fi
+if strS[0] < "Tomoya-kun"
+	setvar intA[1001] = -1
+fi
+if strS[0] == "Tomoya-kun"
+	setvar intA[1001] = 0
+fi
+if intA[1000] == 0
+	goto s18
+fi
+goto 22
+label s18
+sound 2QU.aac
+goto 23
+label 22
+sound 2QV.aac
+label 23
+text @[{$lnmA}]
+text Here you go, {$lnmE}.
+text @[Tomoya]
+text Gracias.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text The glass I took has some orange-colored liquid in it.
+setvar strS[1001] = "CGNG10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2QW.aac
+text @[{$lnmA}]
+text It's fruit juice. Tasty and very healthy.
+text @[Tomoya]
+text Just how old are you...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I still give it a try regardless.
+text ...It's good.
+setvar strS[1001] = "CGNG10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2QX.aac
+text @[{$lnmA}]
+text Ah...
+text {$lnmA}'s eyes are drawn into the wooden starfish on the floor.
+sound 2QY.aac
+text @[{$lnmA}]
+text They are so cute.
+text @[Tomoya]
+text (She must be thinking that they're stars...)
+setvar strS[1001] = "CGNG25A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG25A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2QZ.aac
+text @[{$lnmA}]
+text Are they starfish?
+text *pfff*
+text Struck by Nagisa's statement, I cough out the juice.
+setvar strS[1001] = "CGNG12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[0] = lnmE
+if strS[0] > "Okazaki-san"
+	setvar intA[1000] = 1
+fi
+if strS[0] < "Okazaki-san"
+	setvar intA[1000] = -1
+fi
+if strS[0] == "Okazaki-san"
+	setvar intA[1000] = 0
+fi
+if strS[0] > "Tomoya-kun"
+	setvar intA[1001] = 1
+fi
+if strS[0] < "Tomoya-kun"
+	setvar intA[1001] = -1
+fi
+if strS[0] == "Tomoya-kun"
+	setvar intA[1001] = 0
+fi
+if intA[1000] == 0
+	goto s19
+fi
+goto 24
+label s19
+sound 2R0.aac
+goto 25
+label 24
+sound 2R1.aac
+label 25
+text @[{$lnmA}]
+text {$lnmE}, please don't get excited while you're drinking.
+text @[Tomoya]
+text You... How did you know that they're starfish?
+text @[Tomoya]
+text More than that, how could starfish look cute to you?
+setvar strS[1001] = "CGNG17A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG17A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2R2.aac
+text @[{$lnmA}]
+text They're cute. Since, after all, they look like stars.
+text @[Tomoya]
+text So anything that looks like a star is considered cute to you...?
+setvar strS[1001] = "CGNG23A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2R3.aac
+text @[{$lnmA}]
+text Of course, they are cute.
+text Fine, I give up...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music ~
+text However, our conversation doesn't make it to Fuko's ears.
+music BGM15.mp3
+setvar strS[1001] = "CGFU11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Fuko]
+text ...
+text She's totally immersed in carving.
+setvar strS[1001] = "CGNG10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2R4.aac
+text @[{$lnmA}]
+text Fu-chan, let's take a break.
+sound 2R5.aac
+text @[{$lnmA}]
+text Here's your fruit juice. It's very cool and tasty.
+text She takes a quick glance at me when she says that.
+setvar strS[1001] = "CGFU19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Fuko]
+text ...
+text Fuko's eyes move between the glass in {$lnmA}'s hand and her knife.
+text @[Tomoya]
+text You know, taking a five minute break won't hurt anyone.
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2R6.aac
+text @[Fuko]
+text No...
+sound 2R7.aac
+text @[Fuko]
+text There are still many more to be carved.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text With that said, the knife in her hand starts moving again.
+text @[Tomoya]
+text Don't tell me... Has she been working like this since yesterday?
+setvar strS[1001] = "CGNG12AZ"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG12AZ.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2R8.aac
+text @[{$lnmA}]
+text Yes...
+sound 2R9.aac
+text @[{$lnmA}]
+text Fu-chan is working very hard on her carving.
+sound 2RA.aac
+text @[{$lnmA}]
+text That's why we're all helping, in the hope that she'll rest, even just for a little.
+sound 2RB.aac
+text @[{$lnmA}]
+text But it seems that our help doesn't mean anything.
+text @[Tomoya]
+text Why is that?
+sound 2RC.aac
+text @[{$lnmA}]
+text Fu-chan said she wanted to ask with the presents she makes herself...
+text @[Tomoya]
+text Well, I don't think it's wrong to think like that...
+setvar strS[1001] = "CGNG34A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG34A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2RD.aac
+text @[{$lnmA}]
+text But I can't bear looking at her having to try so hard that she doesn't even have time for a glass of juice.
+text @[Tomoya]
+text It's not like she has to do it. It's something she decided on her own...
+text @[Tomoya]
+text She wants to celebrate her sister's wedding...
+sound 2RE.aac
+text @[{$lnmA}]
+text Even so...
+text @[Tomoya]
+text It's not our place to keep her from doing it...
+sound 2RF.aac
+text @[{$lnmA}]
+text Yes...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Skritch* ... *Skritch* ...
+text @[Fuko]
+text ...
+text For a while, we just keep on watching Fuko working in silence.
+text The melting ice makes a sound in the glass.
+setvar strS[1001] = "CGNG32A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2RG.aac
+text @[{$lnmA}]
+text I wonder... is it enough if she can say "Congratulations"...
+text {$lnmA} speaks out softly, as if murmuring to herself.
+text @[Tomoya]
+text Huh?
+sound 2RH.aac
+text @[{$lnmA}]
+text Isn't it enough if she can say that to her sister in person...?
+setvar strS[1001] = "CGNG18AZ"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG18AZ.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[0] = lnmE
+if strS[0] > "Okazaki-san"
+	setvar intA[1000] = 1
+fi
+if strS[0] < "Okazaki-san"
+	setvar intA[1000] = -1
+fi
+if strS[0] == "Okazaki-san"
+	setvar intA[1000] = 0
+fi
+if strS[0] > "Tomoya-kun"
+	setvar intA[1001] = 1
+fi
+if strS[0] < "Tomoya-kun"
+	setvar intA[1001] = -1
+fi
+if strS[0] == "Tomoya-kun"
+	setvar intA[1001] = 0
+fi
+if intA[1000] == 0
+	goto s20
+fi
+goto 26
+label s20
+sound 2RI.aac
+goto 27
+label 26
+sound 2RJ.aac
+label 27
+text @[{$lnmA}]
+text What do you think, {$lnmE}?
+text Still holding the tray at chest-level, {$lnmA} looks at me.
+setvar strS[1001] = "CGNG16AZ"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16AZ.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2RK.aac
+text @[{$lnmA}]
+text Am I being selfish saying that...?
+sound 2RL.aac
+text @[{$lnmA}]
+text You see... Ibuki-sensei will be going to the hospital today, too...
+sound 2RM.aac
+text @[{$lnmA}]
+text If they can meet each other... both of their wishes will come true.
+sound 2RN.aac
+text @[{$lnmA}]
+text Ibuki-sensei will be able to talk to Fu-chan...
+sound 2RO.aac
+text @[{$lnmA}]
+text ...and Fu-chan will be able to congratulate her sister.
+choice I guess so...|No...
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s21
+fi
+goto 28
+label s21
+text @[Tomoya]
+text I guess so...
+setvar strS[1001] = "CGNG18AZ"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG18AZ.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2RP.aac
+text @[{$lnmA}]
+text I want to let them see each other.
+text @[Tomoya]
+text ...
+text @[Tomoya]
+text Should we go and set up the meeting... through the two of us?
+sound 2RQ.aac
+text @[{$lnmA}]
+text I wonder if she would come along... Fu-chan.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Hey, Fuko.
+setvar strS[1001] = "CGFU30"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU30.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Fuko]
+text ...
+text I can feel {$lnmA}'s back softly touching me as she comes to sit down next to me.
+sound 2RR.aac
+text @[{$lnmA}]
+text Fu-chan.
+text @[Fuko]
+text ...
+setvar strS[1001] = "CGFU19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2RS.aac
+text @[Fuko]
+text ...Yes? Did you call?
+sound 2RT.aac
+text @[{$lnmA}]
+text Yes, I have something to ask you.
+sound 2RU.aac
+text @[Fuko]
+text What is it?
+sound 2RV.aac
+text @[{$lnmA}]
+text Let's go see Ibuki-sensei.
+setvar strS[1001] = "CGFU32"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU32.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Fuko]
+text ...
+sound 2RW.aac
+text @[Fuko]
+text No... Fuko doesn't want to go.
+text @[Tomoya]
+text But if you see her and tell her what you want to tell her...
+text @[Tomoya]
+text Isn't that the ultimate goal of what you're doing?
+text @[Tomoya]
+text Isn't it fine as long as you can tell her...
+text @[Tomoya]
+text "Congratulations," isn't it?
+text @[Tomoya]
+text Isn't that all you want to do?
+text @[Fuko]
+text ...
+sound 2RX.aac
+text @[Fuko]
+text Will Fuko's voice reach her...?
+sound 2RY.aac
+text @[Fuko]
+text Will it reach Onee-chan?
+text Her eyes never move up from the floor as she says that.
+text @[Tomoya]
+text Your voice certainly has reached us.
+text @[Tomoya]
+text That's why we are here, by your side.
+text @[Tomoya]
+text Am I wrong...?
+sound 2RZ.aac
+text @[Fuko]
+text But...
+sound 2S0.aac
+text @[Fuko]
+text That's the reason...
+sound 2S1.aac
+text @[Fuko]
+text It won't reach her...
+text @[Tomoya]
+text What do you want to say?
+sound 2S2.aac
+text @[Fuko]
+text Because Fuko cannot meet her...
+sound 2S3.aac
+text @[Fuko]
+text Fuko cannot make the words reach her...
+sound 2S4.aac
+text @[Fuko]
+text Fuko cannot say "congratulations" to her...
+sound 2S5.aac
+text @[Fuko]
+text That's why Fuko is here...
+text @[Tomoya]
+text ...
+text I wonder if what she's saying is true...
+text Do things absolutely have to be that way...?
+text @[Tomoya]
+text If that's the case, how about we tell her that in your place? No good?
+setvar strS[1001] = "CGFU30"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU30.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2S6.aac
+text @[Fuko]
+text That's like cheating. It won't work.
+text @[Tomoya]
+text It's not cheating.
+sound 2S7.aac
+text @[Fuko]
+text It is because Fuko won't be there.
+text @[Tomoya]
+text But you will, won't you?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Not a single word comes back from her.
+text *Skritch* ... *Skritch* ...
+text Fuko is moving the knife in silence again.
+sound 2S8.aac
+text @[{$lnmA}]
+text Fu-chan...
+goto 31
+label 28
+if intF[1089] == 1
+	goto s22
+fi
+goto 31
+label s22
+text @[Tomoya]
+text No...
+text I deny it vaguely.
+setvar strS[1001] = "CGNG16A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2S9.aac
+text @[{$lnmA}]
+text What...
+setvar strS[0] = lnmE
+if strS[0] > "Okazaki-san"
+	setvar intA[1000] = 1
+fi
+if strS[0] < "Okazaki-san"
+	setvar intA[1000] = -1
+fi
+if strS[0] == "Okazaki-san"
+	setvar intA[1000] = 0
+fi
+if strS[0] > "Tomoya-kun"
+	setvar intA[1001] = 1
+fi
+if strS[0] < "Tomoya-kun"
+	setvar intA[1001] = -1
+fi
+if strS[0] == "Tomoya-kun"
+	setvar intA[1001] = 0
+fi
+if intA[1000] == 0
+	goto s23
+fi
+goto 29
+label s23
+sound 2SA.aac
+goto 30
+label 29
+sound 2SB.aac
+label 30
+text @[{$lnmA}]
+text Are you against it, {$lnmE}?
+text @[Tomoya]
+text I don't think we should tell her what to do just based on our feelings.
+text @[Tomoya]
+text If she herself doesn't want to... there must be reasons.
+setvar strS[1001] = "CGNG18A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG18A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2SC.aac
+text @[{$lnmA}]
+text Even if there are reasons why she's doing it.
+sound 2SD.aac
+text @[{$lnmA}]
+text Even if there are, I still think we should do it.
+sound 2SE.aac
+text @[{$lnmA}]
+text I believe it's something we must do no matter what.
+text @[Tomoya]
+text Well... It's not like I don't understand what you want to say.
+text @[Tomoya]
+text Then why don't you try asking her?
+sound 2SF.aac
+text @[{$lnmA}]
+text ...
+text After a moment of hesitation...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2SG.aac
+text @[{$lnmA}]
+text Yes.
+text Still sitting, {$lnmA} turns to Fuko.
+sound 2SH.aac
+text @[{$lnmA}]
+text Fu-chan.
+setvar strS[1001] = "CGFU30"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU30.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Fuko]
+text ...
+setvar strS[1001] = "CGFU19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2SI.aac
+text @[Fuko]
+text ...Yes? Did you call?
+text Hearing {$lnmA}'s voice, Fuko turns to face us.
+sound 2SJ.aac
+text @[{$lnmA}]
+text Yes, I have something to ask you.
+sound 2SK.aac
+text @[{$lnmA}]
+text Let's go see Ibuki-sensei.
+setvar strS[1001] = "CGFU32"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU32.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Fuko]
+text ...
+sound 2SL.aac
+text @[Fuko]
+text No... Fuko doesn't want to go.
+sound 2SM.aac
+text @[{$lnmA}]
+text Can you tell me why?
+text @[Fuko]
+text ...
+setvar strS[1001] = "CGNG16A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2SN.aac
+text @[{$lnmA}]
+text If the two of you could meet and talk to each other...
+sound 2SO.aac
+text @[{$lnmA}]
+text With just that, both your sister's dream and yours will come true.
+sound 2SP.aac
+text @[{$lnmA}]
+text You can tell her what you've been wanting to...
+setvar strS[1001] = "CGNG16AZ"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16AZ.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2SQ.aac
+text @[{$lnmA}]
+text "Congratulations," isn't it?
+setvar strS[1001] = "CGFU32"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU32.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Fuko]
+text ...
+sound 2SR.aac
+text @[Fuko]
+text Will Fuko's voice reach her...?
+sound 2SS.aac
+text @[Fuko]
+text Will it reach Onee-chan?
+text Her eyes never move up from the floor as she says that.
+setvar strS[1001] = "CGNG17AZ"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG17AZ.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2ST.aac
+text @[{$lnmA}]
+text Your voice certainly has reached us.
+sound 2SU.aac
+text @[{$lnmA}]
+text That's why we are here by your side like this.
+sound 2SV.aac
+text @[{$lnmA}]
+text Am I wrong?
+setvar strS[1001] = "CGFU32"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU32.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2SW.aac
+text @[Fuko]
+text But...
+sound 2SX.aac
+text @[Fuko]
+text That's the reason...
+sound 2SY.aac
+text @[Fuko]
+text It won't reach her...
+text @[Tomoya]
+text ...
+sound 2SZ.aac
+text @[Fuko]
+text Because Fuko cannot meet her...
+sound 2T0.aac
+text @[Fuko]
+text Fuko cannot make the words reach her...
+sound 2T1.aac
+text @[Fuko]
+text Fuko cannot say "congratulations" to her...
+sound 2T2.aac
+text @[Fuko]
+text That's why Fuko is here...
+text @[Tomoya]
+text ...
+text I wonder if what she's saying is true...
+text Do things absolutely have to be that way...?
+sound 2T3.aac
+text @[{$lnmA}]
+text If that's really the case, maybe we can tell her the truth by ourselves. Would you let us?
+setvar strS[1001] = "CGFU30"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU30.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2T4.aac
+text @[Fuko]
+text That's like cheating. It won't work.
+sound 2T5.aac
+text @[{$lnmA}]
+text It's not cheating.
+sound 2T6.aac
+text @[Fuko]
+text It is because Fuko won't be there.
+setvar strS[1001] = "CGNG18A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG18A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2T7.aac
+text @[{$lnmA}]
+text ...
+text Fuko's words have silenced {$lnmA}.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Skritch* ... *Skritch* ...
+text Fuko is moving the knife in silence again.
+sound 2T8.aac
+text @[{$lnmA}]
+text Fu-chan...
+label 31
+text We don't understand anything.
+text Just what her existence really means...
+text Maybe someday... she will suddenly disappear from our sight...
+text If that's the case...
+text The thought flashes by, leaving behind a trail of sadness in me.
+music ~
+sound 2T9.aac
+text @[Voice]
+text Wah.
+text A voice from behind.
+music BGM08C.mp3
+text Sanae-san has returned.
+setvar strS[1001] = "CGSN11HE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN11HE.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2TA.aac
+text @[Sanae]
+text They look so pretty lined up like this.
+text @[Tomoya]
+text (There you go again. She must still be thinking that they're stars...)
+text @[Tomoya]
+text (Ignorance can be such a bliss...)
+setvar strS[1001] = "CGSN12HE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN12HE.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2TB.aac
+text @[Sanae]
+text They must be starfish!
+text @[Tomoya]
+text Pfff!!
+setvar strS[1001] = "CGSN10HE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN10HE.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2TC.aac
+text @[Sanae]
+text Okazaki-san, please don't get too excited when drinking like that.
+text @[Tomoya]
+text (She got me. That's the power of blood, all right... They're without a doubt mother and daughter...)
+setvar strS[1001] = "CGFU12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2TD.aac
+text @[Fuko]
+text You still haven't received one yet, Sanae-san.
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2TE.aac
+text @[Fuko]
+text Please have it.
+text Fuko holds out one of her starfish in front of Sanae-san.
+setvar strS[1001] = "CGSN10E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN10E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2TF.aac
+text @[Sanae]
+text Are you giving it to me?
+text Fuko nods.
+setvar strS[1001] = "CGSN12HE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN12HE.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2TG.aac
+text @[Sanae]
+text I'm really happy right now.
+sound 2TH.aac
+text @[Sanae]
+text I'll make sure you have a wonderful dinner in return.
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2TI.aac
+text @[Fuko]
+text There's one thing!
+sound 2TJ.aac
+text @[Sanae]
+text What?
+sound 2TK.aac
+text @[Fuko]
+text Fuko's sister is getting married.
+sound 2TL.aac
+text @[Sanae]
+text That's very happy news.
+sound 2TM.aac
+text @[Fuko]
+text Could you please go and congratulate her?
+sound 2TN.aac
+text @[Sanae]
+text Of course I will!
+sound 2TO.aac
+text @[Fuko]
+text Including coming to the wedding.
+setvar strS[1001] = "CGSN11E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN11E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2TP.aac
+text @[Sanae]
+text I will!
+sound 2TQ.aac
+text @[Fuko]
+text Thank you very much.
+setvar strS[1001] = "CGSN10HE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN10HE.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2TR.aac
+text @[Sanae]
+text No, I'm glad you invited even a complete stranger like me.
+sound 2TS.aac
+text @[Sanae]
+text I didn't know you had a sister, Fuko-chan.
+sound 2TT.aac
+text @[Fuko]
+text Yes.
+setvar strS[1001] = "CGSN11E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN11E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2TU.aac
+text @[Sanae]
+text What kind of person is she?
+text ...I have a bad feeling about what's about to happen.
+text But I can't bring myself to cut in the pleasant conversation they're having.
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2TV.aac
+text @[Fuko]
+text She's quite a beauty.
+sound 2TW.aac
+text @[Sanae]
+text Is she?
+sound 2TX.aac
+text @[Fuko]
+text She also has short hair.
+text ...The descriptions are getting a bit too detailed.
+text If she accidentally lets out the art teacher bit...
+sound 2TY.aac
+text @[Fuko]
+text She used to teach art...
+text My internal alarm is ringing hard.
+setvar strS[1001] = "CGFU30"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU30.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2TZ.aac
+text @[Fuko]
+text ...to Fuko at home because her art grades were not so good.
+text *fwump*
+text My face is kissing the floor.
+text @[Tomoya]
+text We're not talking about your grades here!
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2U0.aac
+text @[Fuko]
+text Please don't cut in.
+sound 2U1.aac
+text @[Fuko]
+text Even though Fuko's art grades are not so good...
+sound 2U2.aac
+text @[Fuko]
+text Onee-chan is...
+text It's going to happen for real this time!
+setvar strS[1001] = "CGFU21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2U3.aac
+text @[Fuko]
+text ...very good at cooking.
+text *fwump*
+text @[Tomoya]
+text That has nothing to do with your art grades!
+setvar strS[1001] = "CGSN12HE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN12HE.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2U4.aac
+text @[Sanae]
+text You siblings sure are unusual!
+text @[Tomoya]
+text Not at all. They're perfectly ordinary people.
+text Fine. I'll keep my mouth shut...
+setvar strS[1001] = "CGSN10E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN10E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2U5.aac
+text @[Sanae]
+text So what's your sister's name?
+setvar strS[1001] = "CGFU10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2U6.aac
+text @[Fuko]
+text Her name is Ko...
+text Fuko almost dropped the bomb but halted for some reason.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Apparently, {$lnmA} has made her way behind Sanae-san and is signaling Fuko to stop.
+text @[Tomoya]
+text (Nice one, {$lnmA}.)
+setvar strS[1001] = "CGSN14E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN14E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2U7.aac
+text @[Sanae]
+text Is something wrong?
+setvar strS[1001] = "CGFU30"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU30.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Fuko frantically looks around the room. She must be looking for a fake name to use.
+text @[Tomoya]
+text (Don't tell me she's going to use the first name she sees again...)
+text Her eyes stop at the newspaper stand.
+text There, the front page of one paper has the headline "Dietwoman Taguchi Makiko's replacement."
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text (I guess "Makiko" would work...)
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2U8.aac
+text @[Fuko]
+text Her name is Taguchi.
+text @[Tomoya]
+text WHY THE FAMILY NAME─?!
+setvar strS[1001] = "CGSN12HE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN12HE.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2U9.aac
+text @[Sanae]
+text So your sister's name is Isogai Taguchi?
+text @[Tomoya]
+text Don't you find it strange?!
+setvar strS[1001] = "CGFU32"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU32.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2UA.aac
+text @[Fuko]
+text Mmm. Sorry, it was a different name...
+sound 2UB.aac
+text @[Sanae]
+text A different name?
+setvar strS[1001] = "CGFU12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2UC.aac
+text @[Fuko]
+text Yes, actually, her name is...
+sound 2UD.aac
+text @[Fuko]
+text Kimiko.
+sound 2UE.aac
+text @[Sanae]
+text So it's Kimiko-san.
+sound 2UF.aac
+text @[Fuko]
+text Yes.
+text That's another way to read the characters for "Kouko."
+setvar strS[1001] = "CGSN11HE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN11HE.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2UG.aac
+text @[Sanae]
+text I would love to meet her. Please introduce us to each other next time.
+setvar strS[1001] = "CGFU12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 2UH.aac
+text @[Fuko]
+text Yes.
+text @[Tomoya]
+text But since your sister is going on a trip with the family, it will take some time. Right, Fuko?
+text ...Fuko nods.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text With my final insurance, the conversation thankfully somehow comes to an end.
+text It doesn't take long before Fuko returns to her work.
+text We all spend the whole day together. I hope that serves as a reminder to Fuko that she's not alone.
+text I would be satisfied if that's enough to keep her focused on her carving without any worry.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s24
+fi
+goto 32
+label s24
+setvar strS[1000] = ""
+label 32
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+jump SEEN1428_0_0.scr
