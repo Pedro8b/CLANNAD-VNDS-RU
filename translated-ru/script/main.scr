@@ -1,0 +1,163 @@
+setvar a ~
+setvar rtf0 = ""
+setvar rtf1 = ""
+if intG[1007] < 1
+	if intG[1] == 1
+		gsetvar intG[1007] = 1
+	fi
+	if intG[2] == 1
+		gsetvar intG[1007] = 1
+	fi
+	if intG[3] == 1
+		gsetvar intG[1007] = 1
+	fi
+	if intG[4] == 1
+		gsetvar intG[1007] = 1
+	fi
+	if intG[5] == 1
+		gsetvar intG[1007] = 1
+	fi
+	if intG[6] == 1
+		gsetvar intG[1007] = 1
+	fi
+	if intG[9] == 1
+		gsetvar intG[1007] = 1
+	fi
+	if intG[12] == 1
+		gsetvar intG[1007] = 1
+	fi
+	if intG[13] == 1
+		gsetvar intG[1007] = 1
+	fi
+	if intG[15] == 1
+		gsetvar intG[1007] = 1
+	fi
+fi
+if intG[1007] < 2
+	if intG[1] == 1
+		if intG[2] == 1
+			if intG[3] == 1
+				if intG[4] == 1
+					if intG[5] == 1
+						if intG[6] == 1
+							if intG[9] == 1
+								if intG[12] == 1
+									if intG[13] == 1
+										if intG[15] == 1
+											if intG[30] == 1
+												if intG[31] == 1
+													gsetvar intG[1007] = 2
+												fi
+											fi
+										fi
+									fi
+								fi
+							fi
+						fi
+					fi
+				fi
+			fi
+		fi
+	fi
+fi
+if intG[1007] < 3
+	if intG[45] == 1
+		gsetvar intG[1007] = 3
+	fi
+fi
+bgload KURO.jpg 0
+bgload STT_WAR00.jpg 59
+delay 243
+bgload KURO.jpg 60
+delay 95
+bgload SIRO.jpg 78
+setimg STT_LOGO01.png 56 72
+delay 171
+bgload SIRO.jpg 90
+delay 233
+music BGM30.mp3
+if intG[0] >= 13
+	if intG[43] == 0
+		if intG[45] == 0
+			sound 0C.aac -1
+		fi
+	fi
+fi
+if intG[1007] != 3
+	if intG[0] < 1
+		bgload STT_BG00.jpg 143
+	fi
+	if intG[0] == 1
+		bgload STT_BG00_1L.jpg 143
+	fi
+	if intG[0] == 2
+		bgload STT_BG00_2L.jpg 143
+	fi
+	if intG[0] == 3
+		bgload STT_BG00_3L.jpg 143
+	fi
+	if intG[0] == 4
+		bgload STT_BG00_4L.jpg 143
+	fi
+	if intG[0] == 5
+		bgload STT_BG00_5L.jpg 143
+	fi
+	if intG[0] == 6
+		bgload STT_BG00_6L.jpg 143
+	fi
+	if intG[0] == 7
+		bgload STT_BG00_7L.jpg 143
+	fi
+	if intG[0] == 8
+		bgload STT_BG00_8L.jpg 143
+	fi
+	if intG[0] == 9
+		bgload STT_BG00_9L.jpg 143
+	fi
+	if intG[0] == 10
+		bgload STT_BG00_10L.jpg 143
+	fi
+	if intG[0] == 11
+		bgload STT_BG00_11L.jpg 143
+	fi
+	if intG[0] == 12
+		bgload STT_BG00_12L.jpg 143
+	fi
+	if intG[0] >= 13
+		bgload STT_BG00_13L.jpg 143
+	fi
+fi
+if intG[1007] == 3
+	bgload STT_BG10.jpg 143
+fi
+setimg STT_LB00.png 156 18
+setimg STT_LB10.png 175 41
+setimg STT_LB30.png 3 186
+text @CLANNAD
+text @VNDS порт: poudink
+text @Оформление: Boinciel и Unyu
+text Вдохновлено незавершённым портом VNDS, созданным Boinciel, Sokudo и Unyu
+if intG[1007] >= 2
+	choice НОВАЯ ИГРА|AFTER STORY
+	if selected == 2
+		sound 0B.aac
+		music ~
+		bgload SIRO.jpg 89
+		delay 190
+		cleartext
+		jump SEEN6800_0_0.scr
+	fi
+	sound 0B.aac
+	music ~
+	bgload SIRO.jpg 89
+	delay 190
+	cleartext
+	jump SEEN0414_0_0.scr
+fi
+choice НОВАЯ ИГРА
+sound 0B.aac
+music ~
+bgload SIRO.jpg 89
+delay 190
+cleartext
+jump SEEN0414_0_0.scr
