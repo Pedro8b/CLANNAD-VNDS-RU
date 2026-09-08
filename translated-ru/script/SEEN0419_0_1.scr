@@ -63,7 +63,7 @@ if intF[1113] == 1
 	fi
 fi
 music BGM08D.mp3
-text After leaving my stuff in my room and changing clothes, I head to the dorms before it starts to rain.
+text После того, как я положил свои вещи в комнату и переоделся, я иду в общежитие, прежде чем начнётся дождь.
 setvar strS[1000] = "BG046C"
 setvar intA[1000] = 1
 if intA[1000] == 0
@@ -81,11 +81,11 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text С тех пор, как я проснулся сегодня, небо было пасмурным.
-text Прогноз погоды говорит, что дождь начнется в послеобеденное время.
-text (I guess he's still busy being caught...)
-text I'm sure he'll come back sooner or later.
-text I decide to read magazines and wait for him.
+text В комнате никого нет.
+text @[Томоя]
+text (Думаю, он всё ещё занят...)
+text Я уверен, что он вернётся скоро.
+text Я решаю почитать журналы и ждать его.
 music ~
 if 0 == 0
 	goto s55
@@ -118,7 +118,7 @@ goto 60
 label s57
 setvar strS[1000] = ""
 label 60
-text Я не вижу Сунохару.
+setvar strS[1001] = "NONE"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 88
 if intF[1113] == 1
@@ -127,9 +127,9 @@ if intF[1113] == 1
 	fi
 fi
 music BGM08A.mp3
-text The door opens with a click.
+text Дверь открывается с щелчком.
 setvar strS[1001] = "CGSH16"
-text Он действительно думает взять выходной...?
+setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
 setimg CGSH16.png
 if intF[1113] == 1
@@ -137,23 +137,23 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text Я не знаю, что с ним случилось после вчерашнего вечера, но, может быть, он опять блуждает đâu-то.
-text @[Sunohara]
-text Phew...
+sound UR.aac
+text @[Сунохара]
+text Уфф...
 setvar strS[1001] = "CGSH27"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 0
 setimg CGSH27.png
 if intF[1113] == 1
 	if strS[1000] < "C"
-text Он, скорее всего, опоздает, как всегда.
+		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
 sound US.aac
-text @[Sunohara]
-text Whoa! Someone's in my room!
-text @[Tomoya]
-text Welcome back.
+text @[Сунохара]
+text Вау! Кто-то в моей комнате!
+text @[Томоя]
+text Добро пожаловать обратно.
 setvar strS[1001] = "CGSH16"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -164,13 +164,13 @@ if intF[1113] == 1
 	fi
 fi
 sound UT.aac
-text @[Sunohara]
-text ......
+text @[Сунохара]
+text Эй, не следует входить в комнату человека без его разрешения.
 sound UU.aac
-text @[Sunohara]
-text You'll surprise them...
-text @[Tomoya]
-text I'll hide inside your kotatsu next time and grab your leg out of nowhere, then.
+text @[Сунохара]
+text Ты его удивишь...
+text @[Томоя]
+text В следующий раз я спрячусь внутри твоего котatsu и схвачу твою ногу из ниоткуда.
 setvar strS[1001] = "CGSH23"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -181,8 +181,8 @@ if intF[1113] == 1
 	fi
 fi
 sound UV.aac
-text @[Sunohara]
-text That's creepy, man!
+text @[Сунохара]
+text Это жутко, чувак!
 setvar strS[1001] = "NONE"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -191,7 +191,7 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text Sunohara closes the door and takes off his jacket.
+text Сунохара закрывает дверь и снимает куртку.
 setvar strS[1001] = "CGSH18B"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -202,13 +202,13 @@ if intF[1113] == 1
 	fi
 fi
 sound UW.aac
-text @[Sunohara]
-text Ugh, I really got chewed out this time...
+text @[Сунохара]
+text Фу, меня действительно хорошо отругали на этот раз...
 sound UX.aac
-text @[Sunohara]
-text You're next, by the way.
+text @[Сунохара]
+text А ты следующий, кстати.
 setvar strS[1001] = "CGSH15B"
-text Сунохара появляется с кровавыми глазами, как только закончился первый урок.
+setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
 setimg CGSH15B.png
 if intF[1113] == 1
@@ -217,47 +217,47 @@ if intF[1113] == 1
 	fi
 fi
 sound UY.aac
-text @[Sunohara]
-text You basically live here, so they'll find you if they come by.
 text @[Сунохара]
-text Привет, доброе утро.
+text Ты практически живёшь здесь, поэтому они найдут тебя, если придут.
+text @[Томоя]
+text Серьезно...?
 sound UZ.aac
-text @[Sunohara]
-text They're still bent on getting us into college, you know...
-text @[Tomoya]
-text You? College? Hah, no way!
+text @[Сунохара]
+text Они все еще намерены отправить нас в колледж, знаешь...
+text @[Томоя]
+text Ты? Колледж? Ха, ни за что!
 setvar strS[1001] = "CGSH23B"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
 setimg CGSH23B.png
 if intF[1113] == 1
-text @[Томоя]
-text Чувак, ты выглядишь очень уставшим.
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
 sound V0.aac
-text @[Sunohara]
-text I'm talking about you too.
+text @[Сунохара]
+text Я говорю и о тебе.
 bgload KURO.jpg 55
 bgload {$strS[1000]}.jpg 55
 if intF[1113] == 1
 	if strS[1000] < "C"
 		setimg {$strS[1004]}.png -7 -7
-text @[Сунохара]
-text Да, я был без сна всю ночь, читая игровые книги!
+	fi
+fi
 setvar strS[1001] = "CGSH20B"
-text @[Сунохара]
-text Ну, это доказывает, что я не трус. Да!
-text Это был полусухой attempt сыграть храбрость.
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH20B.png
 if intF[1113] == 1
 	if strS[1000] < "C"
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
 sound V1.aac
-text @[Sunohara]
-text @[Томоя]
-text Ты плакал всю ночь?
+text @[Сунохара]
+text Ах... Думаю, теперь действительно идет дождь.
+text Сунохара смотрит в окно на небо.
 setvar strS[1001] = "CGSH18B"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -269,12 +269,12 @@ if intF[1113] == 1
 fi
 sound V2.aac
 text @[Сунохара]
-text Нет, я не плакал!
-text Сунохара отвечает, теря глаза.
-text @[Sunohara]
-text Great, alone with another guy in my room all day.
-text @[Tomoya]
-text If you don't like it, then leave.
+text Теперь нам некуда идти.
+sound V3.aac
+text @[Сунохара]
+text Отлично, один на один с парнем в своей комнате целый день.
+text @[Томоя]
+text Если тебе не нравится, то уходи.
 setvar strS[1001] = "CGSH23B"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 0
@@ -282,52 +282,52 @@ setimg CGSH23B.png
 if intF[1113] == 1
 	if strS[1000] < "C"
 		setimg {$strS[1004]}.png -7 -7
-text @[Сунохара]
-text Тебе не весело от субботы, однако?
+	fi
+fi
 sound V4.aac
-text @[Sunohara]
-text This is my room!
-text @[Tomoya]
-text Well, it's better than being alone, isn't it?
+text @[Сунохара]
+text Это моя комната!
+text @[Томоя]
+text Ну, лучше, чем быть одиноким, не так ли?
 setvar strS[1001] = "CGSH16B"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
-text @[Сунохара]
-text Тебе не весело от субботы?
+setimg CGSH16B.png
+if intF[1113] == 1
 	if strS[1000] < "C"
-text @[Томоя]
-text Да, весело.
+		setimg {$strS[1004]}.png -7 -7
+	fi
 fi
+sound V5.aac
 text @[Сунохара]
-text Я имею в виду, что школа заканчивается после всего трех часов!
-text @[Томоя]
-text Четыре часа для большинства из нас.
+text Думаю...
+if intF[302] == 1
 	goto s58
 fi
 goto 61
 label s58
-text @[Tomoya]
-text Right? That's why the two of us should play a crazy game. We'll run totally naked through the rain!
-text @[Tomoya]
-text When you lose in rock-paper-scissors, you have to strip and run through the rain. You'll be infamous!
+text @[Томоя]
+text Верно? Поэтому мы с тобой должны сыграть в сумасшедшую игру. Мы побежим совершенно голые под дождем!
+text @[Томоя]
+text Когда ты проиграешь в камень-ножницы-бумагу, тебе придется раздеться и побежать под дождем. Ты станешь знаменитым!
 setvar strS[1001] = "CGSH27B"
 setvar intF[1113] = intF[1112]
-text @[Сунохара]
-text Давайте после занятий сделаем что-нибудь. Получим немного удовольствия.
+bgload {$strS[1000]}.jpg 30
+setimg CGSH27B.png
 if intF[1113] == 1
 	if strS[1000] < "C"
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
 sound V6.aac
-text @[Sunohara]
-text When I lose...? What about when you lose?!
-text @[Tomoya]
-text All right, here goes!
 text @[Сунохара]
-text А как насчёт того, чтобы заигрывать с девушками из другой школы в качестве изменения?
+text Когда я проиграю...? А что насчет того, когда ты проиграешь?!
 text @[Томоя]
-text Знаешь, сегодня днём пойдёт дождь.
+text Хорошо, поехали!
+sound V7.aac
+text @[Сунохара]
+text Что?
+setvar strS[1001] = "NONE"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
 if intF[1113] == 1
@@ -335,32 +335,32 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text @[Tomoya]
-text Rock, paper, scissors, shoot!
+text @[Томоя]
+text Камень, ножницы, бумага, выстрел!
 setvar strS[1001] = "CGSH25B"
-text @[Сунохара]
-text Что? Серьёзно?
-text @[Томоя]
-text Ты шёл сюда с закрытыми глазами?
-text @[Томоя]
-text Посмотри, как абсурдно облачно снаружи.
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH25B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
 sound V8.aac
-text @[Sunohara]
-text All right, I win!
-text @[Tomoya]
-text Dammit.
+text @[Сунохара]
+text Хорошо, я выиграл!
+text @[Томоя]
+text Черт возьми.
 setvar strS[1001] = "NONE"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
-text @[Сунохара]
-text Но... мой горячий уикенд, субботний вечер в лихорадке...
-text @[Томоя]
-text Ты слишком многословен.
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
 fi
-text @[Tomoya]
-text Okay, once more! Rock, paper, scissors, shoot!
+text @[Томоя]
+text Ладно, еще раз! Камень, ножницы, бумага, выстрел!
 setvar strS[1001] = "CGSH25B"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -371,8 +371,8 @@ if intF[1113] == 1
 	fi
 fi
 sound V9.aac
-text @[Sunohara]
-text Yeah! Two in a row!
+text @[Сунохара]
+text Да! Два раза подряд!
 setvar strS[1001] = "NONE"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -381,8 +381,8 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text @[Tomoya]
-text Hurry up and lose, I want you out there running! Rock, paper, scissors, shoot!
+text @[Томоя]
+text Поторопись проиграть, мне нужно, чтобы ты побежал! Камень, ножницы, бумага, выстрел!
 setvar strS[1001] = "CGSH27B"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -393,10 +393,10 @@ if intF[1113] == 1
 	fi
 fi
 sound VA.aac
-text @[Sunohara]
-text Agh, I finally lost!
-text @[Tomoya]
-text Okay, now get going.
+text @[Сунохара]
+text Ах, наконец-то я проиграл!
+text @[Томоя]
+text Хорошо, теперь иди.
 setvar strS[1001] = "CGSH26B"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -407,11 +407,11 @@ if intF[1113] == 1
 	fi
 fi
 sound VB.aac
-text @[Sunohara]
-text Agh... It'll be so embarrassing... Everyone will think I'm a freak...
+text @[Сунохара]
+text Ах... Это будет так стыдно... Все подумают, что я фрик...
 setvar strS[1001] = "CGSH23B"
 setvar intF[1113] = intF[1112]
-text Я возвращаюсь в класс за своей сумкой. Сунохара сидит там один, ожидая меня.
+bgload {$strS[1000]}.jpg 0
 setimg CGSH23B.png
 if intF[1113] == 1
 	if strS[1000] < "C"
@@ -419,16 +419,16 @@ if intF[1113] == 1
 	fi
 fi
 sound VC.aac
-text @[Sunohara]
-text Wait, of course I'm not going to go!!
+text @[Сунохара]
+text Подожди, конечно, я не пойду!!
 sound VD.aac
 text @[Сунохара]
-text Наконец-то, Оказаки. Ты вернулся.
+text Что тут такого веселого? Это практически буллинг!
 text @[Томоя]
-text О, ты вернулся к жизни. Впечатляюще!
+text Мне кажется, это очень весело.
 sound VE.aac
 text @[Сунохара]
-text «Вернулся к жизни»? Я даже не был поцарапан.
+text Да, может быть, для тебя!
 goto 62
 label 61
 if intF[302] == 0
@@ -436,37 +436,37 @@ if intF[302] == 0
 fi
 goto 62
 label s59
-text @[Tomoya]
-text Right? That's why the two of us should play a crazy game. We'll run totally naked through the rain!
-text @[Tomoya]
-text @[Сунохара]
-text Я. Ушёл. От. Каждого!
 text @[Томоя]
-text Когда ты так небрежно говоришь об этом, я почти чувствую, что верю тебе... Что мне делать...?
+text Верно? Вот почему мы с тобой должны поиграть в сумасшедшую игру. Мы побежим совершенно голые под дождем!
 text @[Томоя]
-text Пожалуйста.
-	if strS[1000] < "C"
-text @[Сунохара]
-text Пожалуйста.
-text @[Томоя]
-text Ладно. Ты все уклонился. Это было потрясающе.
-text @[Sunohara]
-text When I lose...? What about when you lose?!
-text @[Tomoya]
-text All right, here goes!
-sound VG.aac
-text @[Sunohara]
-text What?
-setvar strS[1001] = "NONE"
+text Когда ты проигрываешь в камень-ножницы-бумагу, ты должен раздеться и побежать под дождем. Ты станешь знаменитым!
+setvar strS[1001] = "CGSH27B"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
-text @[Сунохара]
-text Да, я думаю, да.
+setimg CGSH27B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text @[Tomoya]
-text Rock, paper, scissors, shoot!
+sound VF.aac
+text @[Сунохара]
+text Когда я проиграю...? А что, когда ты проиграешь?
+text @[Томоя]
+text Хорошо, поехали!
+sound VG.aac
+text @[Сунохара]
+text Что?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Томоя]
+text Камень, ножницы, бумага, بج!
 setvar strS[1001] = "CGSH25B"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -478,9 +478,9 @@ if intF[1113] == 1
 fi
 sound VH.aac
 text @[Сунохара]
-text Итак, что теперь? Готов уйти отсюда?
+text Хорошо, я выиграл!
 text @[Томоя]
-text Как я тебе только что сказал, скоро начнется дождь.
+text Черт!
 setvar strS[1001] = "NONE"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -489,8 +489,8 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text @[Tomoya]
-text Okay, once more! Rock, paper, scissors, shoot!
+text @[Томоя]
+text Хорошо, еще раз! Камень, ножницы, бумага, бросаем!
 setvar strS[1001] = "CGSH25B"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -498,58 +498,58 @@ setimg CGSH25B.png
 if intF[1113] == 1
 	if strS[1000] < "C"
 		setimg {$strS[1004]}.png -7 -7
-text @[Сунохара]
-text Ладно, давайте пойдем и сделаем что-нибудь.
+	fi
+fi
 sound VI.aac
 text @[Сунохара]
-text Что если мы попробуем познакомиться с девочками из другой школы?
-text @[Томоя]
-text Скоро начнется дождь.
+text Да! Два в ряд!
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
 if intF[1113] == 1
 	if strS[1000] < "C"
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text @[Tomoya]
-text Hurry up and lose, I want you out there running! Rock, paper, scissors, shoot!
+text @[Томоя]
+text Поторопись проиграть, я хочу видеть, как ты бежишь! Камень, ножницы, бумага, бросаем!
 setvar strS[1001] = "CGSH25B"
 setvar intF[1113] = intF[1112]
-text @[Сунохара]
-text Что? Серьезно?
-text @[Томоя]
-text Посмотри, как глупо облака снаружи.
+bgload {$strS[1000]}.jpg 30
+setimg CGSH25B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
 sound VJ.aac
-text @[Sunohara]
-text Look at that! Three in a row!
+text @[Сунохара]
+text Посмотрите на это! Три в ряд!
 setvar strS[1001] = "CGSH23B"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 0
 setimg CGSH23B.png
-text @[Сунохара]
-text Но... мой горячий уикенд, субботний вечер...
-text @[Томоя]
-text Ты повторяешься.
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
 fi
 sound VK.aac
-text @[Sunohara]
-text ─Hey, wait! Does this game just keep going until I lose?
-text @[Tomoya]
-text That's right.
+text @[Сунохара]
+text —Эй, подожди! Эта игра просто продолжается до тех пор, пока я не проиграю?
+text @[Томоя]
+text Да.
 sound VL.aac
-text @[Sunohara]
-text That's not a game, that's bullying!
+text @[Сунохара]
+text Это не игра, это буллинг!
 label 62
-text @[Учитель]
-text Эй, Сунохара.
-text Это голос нашего классного руководителя.
+if intF[632] == 1
+	goto s60
+fi
 goto 68
-text @[Учитель]
-text Сегодня день. Ты наконец пойдешь со мной в учительскую.
-text Он пробирается через парты в нашу сторону.
+label s60
+music ~
+if 0 == 0
 	goto s61
 fi
 goto 63
@@ -560,22 +560,22 @@ label 63
 if 0 == 1
 	goto s62
 fi
-text @[Сунохара]
-text Ох, чёрт!
-text @[Томоя]
-text Просто让我 разобраться с этим. Ты прыгай в окно и убегай.
+goto 64
+label s62
+setvar strS[1000] = "SIRO"
+goto 65
 label 64
 setvar strS[1000] = "KURO"
 label 65
 setvar strS[1001] = ""
 setvar intF[1113] = 0
 bgload {$strS[1000]}.jpg 30
-text The rain continues to fall through the night.
+text Дождь продолжает идти всю ночь.
 setvar strS[1000] = "BG046N"
 setvar intA[1000] = 1
 if intA[1000] == 0
-text @[Сунохара]
-text Хорошо!
+	goto s63
+fi
 goto 66
 label s63
 setvar strS[1000] = ""
@@ -586,13 +586,13 @@ bgload {$strS[1000]}.jpg 30
 if intF[1113] == 1
 	if strS[1000] < "C"
 		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Стук* *Стук*
+sound VM.aac
 text @[Сунохара]
-text Подожди, я умру, если сделаю это!
-text @[Томоя]
-text Ладно, тогда я задержу время, так что ты иди купи мне хлеб с дыней и сок!
-text @[Sunohara]
-text Hm? Who's there?
-text Sunohara asks the question through the door in reply to the knocking.
+text Хм? Кто там?
+text Сунохара задает вопрос через дверь в ответ на стук.
 music BGM15.mp3
 setvar strS[1001] = "CGMS10"
 setvar intF[1113] = intF[1112]
@@ -600,49 +600,49 @@ bgload {$strS[1000]}.jpg 30
 setimg CGMS10.png
 if intF[1113] == 1
 	if strS[1000] < "C"
-text @[Сунохара]
-text Хорошо!
+		setimg {$strS[1004]}.png -7 -7
+	fi
 fi
 sound VN.aac
-text @[Misae]
-text It's me.
-text I can see Misae-san's face through the crack of the half-opened door.
+text @[Мисаэ]
+text Это я.
+text Я вижу лицо Мисаэ-сан через щель полуприоткрытой двери.
 setvar strS[1001] = "CGSH12B"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
 setimg CGSH12B.png
 if intF[1113] == 1
-text @[Сунохара]
-text Подожди, ты просто хочешь, чтобы я был твоим посыльным?
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
 	fi
-text @[Учитель]
-text Ах-ах!
-text @[Sunohara]
-text What is it? Did you make me a cake?
+fi
+sound VO.aac
+text @[Сунохара]
+text Что такое? Ты мне сделала торт?
 setvar strS[1001] = "CGMS19"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
 setimg CGMS19.png
 if intF[1113] == 1
 	if strS[1000] < "C"
-text Наш учитель хватает Сунохару за плечо.
+		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
 sound VP.aac
-text @[Misae]
-text Why would I make you a cake...?
+text @[Мисаэ]
+text Почему бы мне сделать тебе торт...?
 setvar strS[1001] = "CGSH18B"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
 setimg CGSH18B.png
 if intF[1113] == 1
-text @[Сунохара]
-text Ах, он поймал меня, пока я был отвлечён, играя по этому глупому сценарию твоему!
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
 	fi
-text @[Учитель]
-text Вы двое действительно хорошие друзья, не так ли? В этом случае, почему бы вам обоим не пойти со...
-text @[Sunohara]
-text Seriously? Aw, and I got my hopes up...
+fi
+sound VQ.aac
+text @[Сунохара]
+text Серьезно? О, и я так надеялся...
 setvar strS[1001] = "CGMS20"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -653,20 +653,20 @@ if intF[1113] == 1
 	fi
 fi
 sound VR.aac
-text @[Misae]
-text When did I ever say or do anything that would get your hopes up?
+text @[Мисаэ]
+text Когда я тебе сказала или сделала что-то, что бы дало тебе надежду?
 setvar strS[1001] = "CGSH13B"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
-text @[Томоя]
-text Я иду домой...
-text Я уже в коридоре.
-text Когда я ухожу, я слышу, как Сунохара кричит: «Ты меня бросаешь?!»
+setimg CGSH13B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
 sound VS.aac
-text @[Sunohara]
-text You're the kind of person who makes people think you might do something nice for them even when you don't say anything, Misae-san.
+text @[Сунохара]
+text Ты такой человек, который заставляет людей думать, что ты можешь сделать что-то приятное для них, даже когда не говоришь ничего, Мисаэ-сан.
 setvar strS[1001] = "CGMS19H"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -677,11 +677,11 @@ if intF[1113] == 1
 	fi
 fi
 sound VT.aac
-text @[Misae]
-text That would really weigh on my conscience...
+text @[Мисаэ]
+text Это действительно бы давило на мою совесть...
 sound VU.aac
-text @[Sunohara]
-text Well, it'll be fine as long as you make me a cake by next time.
+text @[Сунохара]
+text Ну, все будет в порядке, пока ты мне сделаешь торт в следующий раз.
 setvar strS[1001] = "CGMS13H"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -692,8 +692,8 @@ if intF[1113] == 1
 	fi
 fi
 sound VV.aac
-text @[Misae]
-text *Sigh* ...Okay, okay.
+text @[Мисаэ]
+text *Вздох* ...Ладно, ладно.
 setvar strS[1001] = "CGSH10B"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -704,8 +704,8 @@ if intF[1113] == 1
 	fi
 fi
 sound VW.aac
-text @[Sunohara]
-text So, what is it?
+text @[Сунохара]
+text Итак, что такое?
 setvar strS[1001] = "CGMS10H"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -716,16 +716,16 @@ if intF[1113] == 1
 	fi
 fi
 sound VX.aac
-text @[Misae]
-text I was wondering if you had an umbrella, Okazaki.
-text Misae-san looks at me as she asks the question.
-text Хорошо... у меня нет планов этим днём, и Сунохара не со мной.
-text Что мне делать...
-sound VY.aac
-text @[Misae]
-text Да. Сейчас льет как из ведра. У тебя есть зонт?
+text @[Мисаэ]
+text Я хотела узнать, есть ли у тебя зонтик, Оказаки.
+text Мисаэ-сан смотрит на меня, когда задает вопрос.
 text @[Томоя]
-text У меня нет, но я просто возьму один по пути.
+text Хм? Я?
+sound VY.aac
+text @[Мисаэ]
+text Да. Сейчас льёт как из ведра. У тебя есть зонтик?
+text @[Томоя]
+text У меня нет, но я могу взять один по пути.
 setvar strS[1001] = "CGMS20H"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -737,17 +737,17 @@ if intF[1113] == 1
 fi
 sound VZ.aac
 text @[Мисаэ]
-text Чей ты собираешься взять...?
+text Чей же ты будешь брать...?
 text @[Томоя]
-text Рядом с обувной коробкой есть куча зонтов, верно?
+text Рядом с обувной коробкой лежит куча зонтиков, верно?
 sound W0.aac
 text @[Мисаэ]
-text Все эти зонты принадлежат кому-то, знаешь.
+text Все эти зонтики принадлежат кому-то, знаешь ли.
 text @[Томоя]
-text Все будет в порядке. Кто-то, у кого нет зонта, просто промолчит и возьмет зонт у кого-то другого.
+text Это не имеет значения. Кто-то, у кого нет зонтика, просто молча возьмёт чужой.
 sound W1.aac
 text @[Мисаэ]
-text Я бы предпочла, чтобы ты не запустил такой вредный цикл.
+text Я бы предпочла, чтобы ты не запускал такой порочный круг.
 setvar strS[1001] = "CGMS19"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -759,10 +759,10 @@ if intF[1113] == 1
 fi
 sound W2.aac
 text @[Мисаэ]
-text Вот. Возьми этот.
-text У нее в руке есть складной зонт.
-text Она бросает его в воздух мне. Не в силах отказаться от нее, я вынужден взять его
-text В старом школьном здании находятся специализированные классы, библиотека и пустые классы, используемые в качестве комнат для клубов гуманитарного профиля. Вот и всё.
+text Вот, возьми этот.
+text У неё в руке складной зонтик.
+text Она бросает его мне. Не в силах отказаться, я вынужден взять его
+setvar strS[1001] = "CGMS15H"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
 setimg CGMS15H.png
@@ -775,20 +775,20 @@ sound W3.aac
 text @[Мисаэ]
 text Если ты наденешь их, у меня также есть резиновые сапоги.
 text @[Томоя]
-text Я не ношу галоши в этом возрасте.
+text Я не ношу галоши в моём возрасте.
 sound W4.aac
 text @[Мисаэ]
-text Твои туфли будут промокшими к тому времени, как ты доберешься домой, знаешь.
+text Твои туфли будут промокшими к тому времени, как ты доберёшься домой, знаешь ли.
 text @[Томоя]
-text Мне все равно.
+text Это нормально.
 sound W5.aac
 text @[Мисаэ]
-text О. Ладно.
+text О. Хорошо.
 sound W6.aac
 text @[Мисаэ]
 text Ну, просто не заболей.
 text @[Томоя]
-text Хорошо.
+text Конечно.
 setvar strS[1001] = "CGMS10"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -821,9 +821,9 @@ if intF[1113] == 1
 fi
 sound W8.aac
 text @[Сунохара]
-text Не было бы плохо заболеть и чтобы Мисаэ-сан позаботилась о тебе, хотя.
+text Не было бы плохо заболеть и иметь Мисаэ-сан в качестве медсестры, хотя.
 text @[Томоя]
-text Не говори таких вещей. Я мог бы действительно увидеть, как она это делает.
+text Не говорите таких вещей. Я мог бы действительно увидеть, как она это делает.
 setvar strS[1001] = "CGSH13B"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -835,10 +835,10 @@ if intF[1113] == 1
 fi
 sound W9.aac
 text @[Сунохара]
-text В чём проблема?
+text В чём проблема с этим?
 sound WA.aac
 text @[Сунохара]
-text Она бы делала вещи, такие как прижимала бы лоб к твоему, чтобы измерить температуру.
+text Она сделала бы вещи, такие как прижимала бы лоб к вашему, чтобы измерить температуру.
 setvar strS[1001] = "CGSH12B"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -850,9 +850,9 @@ if intF[1113] == 1
 fi
 sound WB.aac
 text @[Сунохара]
-text Ты даже мог бы воспользоваться возможностью и поиграть, и偷ить поцелуй. Она не могла бы рассердиться на больного человека, верно?
+text Вы даже могли бы воспользоваться возможностью и пофлиртовать, украв поцелуй. Она не могла бы рассердиться на больного человека, верно?
 setvar strS[1001] = "NONE"
-text Я добрался до старого школьного здания, но... что теперь?
+setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
 if intF[1113] == 1
 	if strS[1000] < "C"
@@ -863,30 +863,30 @@ text Я смотрю на зонтик, который я только что п
 text @[Томоя]
 text (Мне бы предпочел дешёвый пластиковый. Я бы чувствовал себя менее нервно, используя его...)
 text Но в то же время я бы чувствовал себя неловко, отказываясь от доброты Мисаэ-сан.
-text Несмотря на постоянные проблемы, которые студенты в общежитии ей создают, она всё ещё способна быть внимательной. Даже к кому-то seperti я.
-text Думаю, пойду в библиотеку.
+text Несмотря на постоянные проблемы, которые студенты в общежитии причиняют ей, она всё ещё может быть внимательной. Даже к кому-то như я.
+music ~
 text *Бах* *Бах*
 text Ещё больше стука. На этот раз он звучит жестоко.
-text Дверь открывается, прежде чем мы успеем отреагировать.
-text Когда я достигаю двери библиотеки, я чувствую, что что-то в ней отличается от того, как оно бывает во время занятий.
-text На самом деле, я думаю, что это первый раз, когда я видел табличку у входа с надписью «Открыто».
-text @[Регби-клуб]
+text Дверь открывается, прежде чем мы оба успеем отреагировать.
+music BGM09A.mp3
+sound WC.aac
+text @[Регбийный клуб]
 text Эй!
-text Команда по регби там, глядя в комнату.
-text (Большинство из них, скорее всего, не считают библиотеку местом для чтения книг.)
-text Я удобно игнорирую свои собственные недостатки, когда думаю об этом.
+text Регбийная команда там, глядя в комнату.
+setvar strS[1001] = "CGSH23B"
+setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 0
 setimg CGSH23B.png
 if intF[1113] == 1
 	if strS[1000] < "C"
 		setimg {$strS[1004]}.png -7 -7
-text Естественно, внутри нет девушки, сидящей на полу и еющей обед.
+	fi
 fi
-text И, конечно, я был бы еще более не на месте, чем она, если бы вошел внутрь.
+sound WD.aac
 text @[Сунохара]
 text Ииии!! Е-Есть проблема?!!
-text @[Томоя]
-text (Думаю, пойду домой...)
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
 if intF[1113] == 1
 	if strS[1000] < "C"
@@ -894,7 +894,7 @@ if intF[1113] == 1
 	fi
 fi
 sound WE.aac
-text @[Регби-клуб]
+text @[Регбийный клуб]
 text Оказаки.
 text Все смотрят в мою сторону.
 text @[Томоя]
@@ -913,7 +913,7 @@ if intF[1113] == 1
 fi
 sound WG.aac
 text @[Сунохара]
-text Хм? Что случилось? Ты что-то сделал? Это не похоже на что-то хорошее.
+text Хм? Что случилось? Ты сделал что-то? Это не похоже на что-то хорошее.
 text Сунохара шепчет мне.
 setvar strS[1001] = "CGSH16B"
 setvar intF[1113] = intF[1112]
@@ -926,13 +926,13 @@ if intF[1113] == 1
 fi
 sound WH.aac
 text @[Сунохара]
-text Если они кажутся готовыми напасть, наклоняйся до тех пор, пока лоб не коснется пола, и извиняйся. Это то, что я всегда делаю.
+text Если они кажутся готовыми напасть, кланяйся до тех пор, пока лоб не коснется пола, и извиняйся. Это то, что я всегда делаю.
 text @[Томоя]
-text У тебя совсем нет гордости...?
+text У тебя есть хоть какая-то гордость...?
 setvar strS[1001] = "NONE"
 setvar intF[1113] = intF[1112]
-text Но есть еще один человек, о котором я задумываюсь...
-text Я заглядываю в класс рядом.
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
 	if strS[1000] < "C"
 		setimg {$strS[1004]}.png -7 -7
 	fi
@@ -944,13 +944,13 @@ text @[Томоя]
 text Да, я иду. Не торопи меня.
 text Я встаю и выхожу из комнаты.
 setvar strS[1000] = "BG045N"
-text Как всегда, она там.
-text @[Томоя]
-text (Как ее зовут снова? Фуко?)
-text Она увлечена вырезанием деревянного блока.
-text @[Томоя]
-text ...
-text @[Томоя]
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s64
+fi
+goto 67
+label s64
+setvar strS[1000] = ""
 label 67
 setvar strS[1001] = "NONE"
 setvar intF[1113] = intF[1112]
@@ -970,64 +970,64 @@ text @[Томоя]
 text Учил?
 sound WL.aac
 text @[Регбийный клуб]
-text Ты учил ее каким-то странным приемам, да?
+text Ты учил ее каким-то странным движениям, не так ли?
 text @[Томоя]
 text О, Гигантский Свинг?
 sound WM.aac
 text @[Регбийный клуб]
-text Это не единственный.
+text Это не единственное.
 sound WN.aac
 text @[Регбийный клуб]
 text Мы видели, как ты разговаривал с Мисаэ-сан прямо сейчас тоже.
 sound WO.aac
 text @[Регбийный клуб]
-text Если ты не прекратишь шутить, мы можем сделать так, чтобы ты никогда не смог вернуться сюда, знаешь ли.
+text Если ты не перестанешь баловаться, мы можем сделать так, чтобы ты никогда не смог вернуться сюда, ты знаешь.
 text @[Томоя]
 text Проблемы не было бы с самого начала, если бы вы не причинили Мисаэ-сан неприятностей, верно?
 text @[Томоя]
 text Просто следуй правилам.
 sound WP.aac
 text @[Регбийный клуб]
-text Я не хочу слышать это от такого, как ты. Не можешь даже вовремя прийти в школу.
+text Не хочу слышать это от таких, как ты. Не можешь даже вовремя прийти в школу.
 text @[Томоя]
-text Это может быть правдой, но это не имеет отношения к этому. Мне пришлось помочь Мисаэ-сан. Она была действительно на пределе своих сил с вами.
+text Это может быть правдой, но это не имеет отношения к этому. Мне пришлось помочь Мисаэ-сан. Она была действительно на пределе своих сил с вами парнями.
 sound WQ.aac
 text @[Регбийный клуб]
-text Что с этим парнем? Ты пытаешься выдавать себя за единственного хорошего парня вокруг?
+text Что с этим парнем? Ты пытаешься выдать себя за единственного хорошего парня вокруг?
 sound WR.aac
 text @[Регбийный клуб]
 text Ты лучше не пытайся делать какие-либо шаги в сторону Мисаэ-сан.
 text @[Томоя]
-text Я не делаю, но... Подожди, что?
+text Я не делаю этого, но... Подожди, что?
 text @[Томоя]
 text Вас интересует Мисаэ-сан?
 sound WS.aac
 text @[Регбийный клуб]
 text Что?
-text Все они смотрят друг на друга.
+text Они все смотрят друг на друга.
 text Через секунду они все пытаются притвориться, что всё нормально, с натянутыми улыбками на лицах.
-text ...Ах, эти парни действительно похожи на элементарных школьников.
+text ...Ах, эти парни действительно похожи на мальчиков из начальной школы.
 text Итак, они причиняли Мисаэ-сан неприятности, потому что хотели, чтобы она обратила на них внимание.
 sound WT.aac
 text @[Регбийный клуб]
 text В любом случае...
 sound WU.aac
 text @[Регбийный клуб]
-text Ты не живёшь в этом общежитии, поэтому держись подальше от Мисаэ-сан с этого момента.
+text Ты не живёшь в этом общежитии, поэтому оставь Мисаэ-сан в покое с этого момента.
 text @[Томоя]
 text ...
 sound WV.aac
 text @[Регбийный клуб]
 text Ну?! Какой твой ответ?
 text @[Томоя]
-text Да, понятно.
-text Мне не выиграть у стольких парней. Я отвечаю так, как они хотят.
+text Да, я понял.
+text Мне нет шансов победить такую компанию. Я отвечаю так, как они хотят.
 sound WW.aac
 text @[Регбийный клуб]
-text Хорошо.只要 ты понял.
+text Ладно. Только бы ты понял.
 text Все возвращаются в свои комнаты.
 text @[Томоя]
-text (Того, за кого я действительно жалею, - это Мисаэ-сан. Ей приходится проводить каждый день, окружённую такими парнями...?)
+text (Жалко мне одну Мисаэ-сан. Ей приходится каждый день окружать таких парней...?)
 goto 72
 label 68
 if intF[632] == 0
