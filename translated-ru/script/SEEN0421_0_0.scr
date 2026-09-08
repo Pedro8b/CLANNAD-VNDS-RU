@@ -1,0 +1,1093 @@
+setvar intF[1110] = 21
+setvar intF[1112] = 1
+setvar strS[1004] = "SDTA0421"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1004] = ""
+label 1
+bgload SCLAB00.jpg 45
+delay 60
+setimg SCLAP07.png 5 5
+setimg SCLA0421.png 159 160
+delay 120
+if 0 == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = "KURO"
+goto 4
+label 2
+if 0 == 1
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = "SIRO"
+goto 4
+label 3
+setvar strS[1000] = "KURO"
+label 4
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+if intF[9] == 1
+	goto s3
+fi
+goto 6
+label s3
+if rtf0 != ""
+	setvar rtf1 = "SEEN0421_0_0.scr"
+	setvar rtl1 = "rtl0"
+fi
+if rtf0 == ""
+	setvar rtf0 = "SEEN0421_0_0.scr"
+	setvar rtl0 = "rtl0"
+fi
+jump SEEN6421_0_0.scr
+label rtl0
+if rtf1 == ""
+	setvar rtf0 = ""
+fi
+if rtf1 != ""
+	setvar rtf1 = ""
+fi
+music ~
+setvar strS[1000] = "BG021B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s4
+fi
+goto 5
+label s4
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text ......
+goto 10
+label 6
+setvar strS[1000] = "BG009"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s5
+fi
+goto 7
+label s5
+setvar strS[1000] = ""
+label 7
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+text @[Томоя]
+text (Итак, что мне делать теперь...)
+text Если я хочу просто лежать и тратить время, где же еще можно пойти, кроме комнаты Сунохары?
+	fi
+fi
+music BGM01.mp3
+text Monday...
+text I suddenly feel lethargic.
+text It's the start to another week of having to sit through one tedious class after the next.
+text @[Tomoya]
+text (Maybe I'd feel more motivated if I just dropped out and started working...)
+text I don't know. Would I really...?
+text No, I really don't see that happening.
+text I feel like mindlessly sitting through lectures would probably be easier overall.
+text Working every day just to put food on the table...?
+text Once I got myself stuck in that cycle, I would never be able to walk away from it, no matter how pathetic I felt.
+text Just the thought makes me cringe a little.
+text @[Tomoya]
+text (But even so, I only have a year left...)
+text I look at the clock. It's still early. I'll have plenty of time to make first bell.
+text @[Tomoya]
+text (Of course, I'm not sure I really want to make it there in time. I'd have to put up with classes the entire day, then...)
+choice Wake up like a good student|Be late
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 1
+	goto s6
+text Воскресенье.
+text Я покидаю дом до полудня, как и в обычный школьный день.
+text ...Переступая через спящее тело моего ленивого отца на выходе.
+text @[Tomoya]
+text (I'll take this one last year easy...)
+text I laze around for another hour.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s7
+fi
+goto 8
+label s7
+setvar strS[1000] = ""
+label 8
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+text Дождь昨шего дня прекратился за ночь, и земля уже сухая.
+text Солнце светит на моё лицо.
+text @[Томоя]
+text (Теперь же, что мне делать...)
+	setvar rtf1 = "SEEN0421_0_0.scr"
+	setvar rtl1 = "rtl1"
+fi
+if rtf0 == ""
+	setvar rtf0 = "SEEN0421_0_0.scr"
+	setvar rtl0 = "rtl1"
+fi
+jump SEEN3421_0_0.scr
+label rtl1
+if rtf1 == ""
+	setvar rtf0 = ""
+fi
+if rtf1 != ""
+	setvar rtf1 = ""
+fi
+goto 10
+label 9
+if intF[1089] == 0
+	goto s8
+fi
+goto 10
+label s8
+text Ah, this is so pointless.
+text But while part of me feels that way, all the misanthropic thoughts I've had this morning have made me wide awake.
+text Curling up on the futon and losing myself to rumination will just make me feel even more depressed.
+text @[Tomoya]
+text (Guess I'll go...)
+text I lift my body out of bed, as if to shake off the heavy, forlorn feeling that's fallen over me.
+if intF[208] == 1
+	goto s9
+fi
+goto 10
+label s9
+if rtf0 != ""
+	setvar rtf1 = "SEEN0421_0_0.scr"
+	setvar rtl1 = "rtl2"
+fi
+if rtf0 == ""
+	setvar rtf0 = "SEEN0421_0_0.scr"
+	setvar rtl0 = "rtl2"
+fi
+jump SEEN2421_0_0.scr
+label rtl2
+if rtf1 == ""
+	setvar rtf0 = ""
+fi
+if rtf1 != ""
+	setvar rtf1 = ""
+fi
+label 10
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s10
+text Итак, куда теперь...?
+text Думаю, я в конце концов окажусь в том же месте, что и всегда...
+label s10
+setvar strS[1000] = ""
+text Если я хочу просто лежать и тратить время, где же еще можно пойти, кроме комнаты Сунохары?
+text Солнце может светить мягко, но это не делает разницы.
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG021A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s11
+fi
+goto 12
+label s11
+setvar strS[1000] = ""
+label 12
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+text По пути в общежитие...
+		setimg {$strS[1004]}.png -7 -7
+text @[Голос]
+text Эй, ты там.
+text ......
+if intF[9] == 1
+text @[Голос]
+text Да, ты!
+text Он обращается ко мне...?
+text Я поворачиваюсь и вижу молодого человека, зовущего меня.
+setvar strS[1000] = "BG021B"
+text @[Мужчина]
+text Пожалуйста, я прошу тебя. Иди со мной.
+	goto s13
+fi
+goto 13
+label s13
+setvar strS[1000] = ""
+label 13
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08D.mp3
+if intF[10] == 0
+	goto s14
+fi
+goto 14
+label s14
+text That reminds me...
+text There's no one next to me.
+text He must've gone back to the dorm or off to gallivant around.
+text Either way, looks like he's gonna play hooky.
+goto 15
+label 14
+if intF[10] == 1
+	goto s15
+fi
+goto 15
+label s15
+text That reminds me...
+text There's no one next to me.
+text I guess I was alone when I returned to the classroom.
+text He's probably off wandering around somewhere again.
+label 15
+goto 19
+label 16
+if intF[410] == 1
+text После того, как я игнорирую его некоторое время, я слышу, как мужчина щелкает языком от раздражения, прежде чем чувствую, что его присутствие исчезает.
+fi
+goto 17
+label s16
+if rtf0 != ""
+	setvar rtf1 = "SEEN0421_0_0.scr"
+	setvar rtl1 = "rtl3"
+fi
+if rtf0 == ""
+	setvar rtf0 = "SEEN0421_0_0.scr"
+	setvar rtl0 = "rtl3"
+fi
+jump SEEN4421_0_0.scr
+label rtl3
+if rtf1 == ""
+	setvar rtf0 = ""
+fi
+if rtf1 != ""
+	setvar rtf1 = ""
+text ......
+goto 33
+label 17
+setvar strS[1000] = "BG021B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s17
+fi
+goto 18
+label s17
+setvar strS[1000] = ""
+label 18
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08D.mp3
+text Third period's ended, and Sunohara still isn't around.
+label 19
+text @[Tomoya]
+text (This is so mind-numbing...)
+text I can't let off any stress without Sunohara around.
+text I leave the classroom for a refresher.
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s18
+fi
+goto 20
+label s18
+setvar strS[1000] = ""
+label 20
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+text Я вхожу в комнату Сунохары и нахожу его всё ещё спящим в его футоне.
+text @[Томоя]
+text Проснись, Сунохара. У тебя посетитель. Я пришёл.
+text В ответ я получаю только храпы парня, который, когда спит, звучит как домашний трюфельный кабан, вынюхивающий ценный участок грибной доброты. Он спит крепко.
+text Он, наверное, снова лег спать поздно.
+text @[Томоя]
+text Я с тобой шутку сыграю, если ты не встанешь!
+text ......
+text Я слышу живые голоса, доносящиеся из коридора.
+text Похоже, это какие-то идиоты из регбийного клуба, направляющиеся на тренировку.
+text Одежда Сунохары лежит кучей на его полу. Я беру часть и связываю рукав с рукавом.
+text Затем я связываю один конец с ногой Сунохары.
+text После этого я беру другой конец и выхожу с ним в коридор.
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text The cafeteria is deserted.
+text I purchase an 80 yen paper juice box from the vending machine and head back to class while sipping it.
+text Of course, food and drink are banned in the halls, but the worst a teacher would do is chew me out.
+if intF[128] == 1
+	goto s20
+fi
+goto 23
+label s20
+if rtf0 != ""
+	setvar rtf1 = "SEEN0421_0_0.scr"
+text Один из регбистов из соседней комнаты только что выходит, когда и я делаю это.
+text @[Томоя]
+text Привет.
+text Я обращаюсь к нему.
+	setvar rtl0 = "rtl4"
+text @[Игрок в регби]
+text Что такое?
+text @[Томоя]
+text Давайте поиграем в перетягивание каната.
+	setvar rtf0 = ""
+text @[Игрок в регби]
+text Перетягивание каната?
+text @[Томоя]
+text Да. Ты будешь противостоять Сунохаре. Он сказал, что хочет иметь мужественную битву против тебя.
+music ~
+text @[Игрок в регби]
+text Битва сил...? У него большие шары, что он решил меня бросить вызов.
+if intA[1000] == 0
+text @[Игрок в регби]
+text Хорошо, это будет хорошая разминка перед тренировкой. Я принимаю.
+text @[Томоя]
+text Хорошо, вот тебе.
+text Я даю ему держать манжету одежды, используемую вместо веревки.
+label 22
+text @[Игрок в регби]
+text Хорошо, когда ты будешь готов.
+text Одеяла тают в комнату Сунохары.
+text @[Томоя]
+text Ладно, Сунохара тоже готов. Поехали.
+text @[Томоя]
+text На старт, внимание...
+text @[Томоя]
+text Старт!
+goto 25
+text @[Игрок в регби]
+text УРРРЫЯААГХ!
+text Игрок в регби бежит по коридору как полный псих.
+text Следом за ним...
+goto 25
+text @[Сунохара]
+text ХЬЯАААААГХ!!
+text ...идет Сунохара, лежащий на полу лицом вверх и скользящий по полу, выглядящий как смесь от шока и «я тебя убью» фурора.
+if intA[1000] == 0
+	goto s23
+fi
+goto 24
+label s23
+setvar strS[1000] = ""
+label 24
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I empty my drink just as I arrive, tossing it into the trash before returning to my seat.
+label 25
+if intF[9] == 1
+	goto s24
+fi
+goto 28
+label s24
+music BGM08B.mp3
+if intF[10] == 0
+	goto s25
+fi
+goto 26
+label s25
+setvar strS[1001] = "CGSH16"
+text @[Сунохара]
+text Я чуть не умер там!!
+text @[Томоя]
+text Остановись, не драматизируй, королева драмы.
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound XL.aac
+text @[Sunohara]
+text *Yawn*
+text Sunohara's back too. He's yawning as if he doesn't have a care in the world.
+text @[Tomoya]
+text Were you sleeping somewhere?
+text @[Сунохара]
+text Представь, что ты просыпаешься и обнаруживаешь, что скользишь по полу на бешеной скорости!
+bgload {$strS[1000]}.jpg 30
+text @[Сунохара]
+text Если бы я был стариком, у меня бы был бы фиговый сердечный приступ! А у меня даже нет детской аспирина!
+text @[Томоя]
+text Ну, хорошая новость в том, что ты молод. Это хорошо тебя разбудило, хотя, правда?
+	fi
+fi
+sound XM.aac
+text @[Sunohara]
+text Eh, guess so.
+sound XN.aac
+text @[Sunohara]
+text So...
+goto 27
+label 26
+text @[Сунохара]
+text Эх, да, но я бы предпочел, чтобы меня не атаковал мой будильник.
+fi
+goto 27
+label s26
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+text @[Сунохара]
+text Черт... и не можешь ли ты让我 спать до темноты снаружи?
+text @[Томоя]
+text Я бы никогда не подумал, что кто-то с таким блестящим чувством времени, как у тебя, может быть студентом.
+text ...
+text Sunohara had returned.
+text @[Tomoya]
+text Were you off crying somewhere?
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+text @[Сунохара]
+text Так, почему ты меня разбудил так рано?
+text @[Томоя]
+text Никакой особой причины, честно говоря.
+text @[Sunohara]
+text 'Course not!
+text Sunohara rubs his eyes.
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+text @[Сунохара]
+text ...
+text @[Томоя]
+text ...
+text @[Сунохара]
+text ...
+setvar intF[1113] = intF[1112]
+text @[Сунохара]
+text ...Могу ли я вернуться спать?
+text @[Томоя]
+text Конечно, но я просто сыграю с тобой еще одну шутку.
+text @[Сунохара]
+text ...
+text @[Томоя]
+text На самом деле, пожалуйста, иди спать. Так мне будет больше веселья.
+text @[Sunohara]
+text So...
+label 27
+goto 38
+label 28
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s27
+text @[Сунохара]
+text Ну, теперь я точно не пойду.
+text @[Томоя]
+text Скучно.
+label 29
+text @[Сунохара]
+text ...
+text @[Томоя]
+text ...
+text @[Сунохара]
+text ...
+text @[Томоя]
+text ...
+setvar strS[1000] = "BG021A"
+text @[Сунохара]
+text Ох, глаза болят!!
+text @[Томоя]
+text Тебе следует попробовать это дело, называемое морганием. Я слышал, что это потрясающе.
+goto 30
+label s28
+setvar strS[1000] = ""
+label 30
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+text Лежа на полу, я начинаю читать книгу.
+text В этой комнате больше ничего не делать. Читать, читать и ещё больше читать.
+	fi
+fi
+music BGM08C.mp3
+text ......
+setvar strS[1000] = "BG021E"
+text В моих руках у меня открыт манга, которую я никогда раньше не видел... Подожди, это книга-игра.
+text @[Томоя]
+text (Всегда так раздражает прыгать туда, куда они тебе говорят...)
+fi
+goto 31
+label s29
+setvar strS[1000] = ""
+label 31
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+text Я отбрасываю её и беру том манги.
+text @[Томоя]
+text (Мне кажется, я уже читал это раньше... Ладно, всё равно.)
+fi
+text It's lunch break, but Sunohara still hasn't shown up.
+text @[Tomoya]
+text (He's pulling this again...?)
+if intF[405] == 1
+	if intF[410] == 0
+		goto s30
+text @[Томоя]
+text (Сунохара провёл всю ночь, читая это. Никогда не знаешь, пока не попробуешь...)
+goto 32
+label s30
+text I'd promised Kotomi that we'd start eating lunch together starting this week, but...
+text I'd rather not have anything more to do with her.
+text @[Tomoya]
+text (She did say that I might not come again, anyway...)
+label 32
+if intF[212] == 1
+	goto s31
+fi
+goto 33
+label s31
+if rtf0 != ""
+	setvar rtf1 = "SEEN0421_0_0.scr"
+	setvar rtl1 = "rtl5"
+fi
+if rtf0 == ""
+text Итак, кажется, что даже в воскресенье я проведу время, делая кучу ничего не делая.
+	setvar rtl0 = "rtl5"
+fi
+jump SEEN2421_1_0.scr
+label rtl5
+if rtf1 == ""
+	setvar rtf0 = ""
+fi
+if rtf1 != ""
+	setvar rtf1 = ""
+fi
+goto 33
+label 33
+music ~
+setvar strS[1000] = "BG021A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s32
+fi
+goto 34
+label s32
+setvar strS[1000] = ""
+label 34
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08B.mp3
+text ......
+setvar strS[1000] = "BG021B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s33
+fi
+goto 35
+label s33
+setvar strS[1000] = ""
+label 35
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+if intF[213] == 0
+	goto s34
+fi
+goto 37
+label s34
+text Just as fifth period concludes...
+setvar strS[1001] = "CGSH25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound XS.aac
+text @[Sunohara]
+text What's up!
+text ...Sunohara finally makes an appearance.
+text @[Tomoya]
+text You're awfully energetic.
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound XT.aac
+text @[Sunohara]
+text 'Cause I've been sleeping all day, son!
+sound XU.aac
+text @[Sunohara]
+text So, what's sixth period?
+text @[Tomoya]
+text Can't you tell by looking?
+setvar strS[1001] = "CGSH20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound XV.aac
+text @[Sunohara]
+text Huh?
+text There are no girls to be seen in class any longer. It's turned into a boy's locker room.
+setvar strS[1000] = "BG030"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s35
+fi
+goto 36
+label s35
+setvar strS[1000] = ""
+label 36
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Sixth period is P.E. It looks like we're scheduled to play soccer today.
+text It's not so much a class though, as much as it's a study break. We're just supposed to play a little match as a breather, really.
+text You can ignore the ball and chat with friends outright and the teacher still won't say anything.
+text Third-year P.E. classes are pretty meaningless like that; they're just filler at this stage.
+sound XW.aac
+text @[Sunohara]
+text Aaaaall right, hat trick!!
+text The only enthusiastic voice to be heard is the one belonging to the former member of the soccer team.
+goto 40
+label 37
+if intF[213] == 1
+	goto s36
+fi
+goto 40
+label s36
+setvar strS[1001] = "CGSH18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound XX.aac
+text @[Sunohara]
+text *Yawn* ...I feel so lethargic this morning after being forced to wake up.
+text @[Tomoya]
+text It's not morning. It's the afternoon.
+setvar strS[1001] = "CGSH15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+label 38
+sound XY.aac
+text @[Sunohara]
+text ...What's sixth period, again?
+text @[Tomoya]
+text Can't you tell by looking?
+setvar strS[1001] = "CGSH20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound XZ.aac
+text @[Sunohara]
+text Huh?
+text There are no girls to be seen in class any longer. It's turned into a boy's locker room.
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Y0.aac
+text @[Sunohara]
+text P.E.? Ugh, I don't wanna have to move classrooms...
+sound Y1.aac
+text @[Student A]
+text What're we playing today?
+sound Y2.aac
+text @[Student B]
+text Soccer, apparently.
+sound Y3.aac
+text @[Student A]
+text Really? Ugh...
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Y4.aac
+text @[Sunohara]
+text Oh, what was that...? I think I'm suddenly starting to feel motivated!
+text @[Tomoya]
+text It's your one chance to show off as a former member of the soccer team, after all.
+sound Y5.aac
+text @[Sunohara]
+text Hah. I'll show you the kind of level players like me operate on.
+setvar strS[1000] = "BG030"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s37
+fi
+goto 39
+label s37
+setvar strS[1000] = ""
+label 39
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text P.E. isn't so much a class as much as it's a study break. We're just supposed to play a little match as a breather.
+text You can ignore the ball and chat with friends outright and the teacher still won't say anything.
+text Third-year P.E. classes are pretty meaningless like that; they're just filler at this stage.
+sound Y6.aac
+text @[Sunohara]
+text Aaaaall right, hat trick!!
+text The only energetic voice to be heard is the one belonging to the idiot who's given up on going to college.
+label 40
+if intF[213] == 0
+	goto s38
+fi
+jump SEEN0421_0_1.scr 62
+label s38
+setvar strS[1000] = "BG021H"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s39
+fi
+goto 41
+label s39
+setvar strS[1000] = ""
+label 41
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+if intF[610] == 1
+	if intF[11] == 0
+		goto s40
+	fi
+fi
+goto 42
+label s40
+jump SEEN0421_0_1.scr 64
+label 42
+setvar strS[1001] = "CGSH25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Y7.aac
+text @[Sunohara]
+text Let's get going.
+text @[Tomoya]
+text You must be having such a wonderful time as a high school student.
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound Y8.aac
+text @[Sunohara]
+text Hm?
+text @[Tomoya]
+text You'll never be able to relive these days, so be sure to get your fill of 'em.
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+if intF[610] == 0
+	goto s41
+fi
+goto 43
+label s41
+sound Y9.aac
+text @[Sunohara]
+text Of course. And that's another reason why we should get outta here and have some fun!
+goto 44
+label 43
+if intF[610] == 1
+	goto s42
+fi
+goto 44
+label s42
+sound YA.aac
+text @[Sunohara]
+text Of course.
+sound YB.aac
+text @[Sunohara]
+text Okay, this is where today really starts to get serious...
+label 44
+if intF[11] == 1
+	goto s43
+fi
+if intF[410] == 1
+	goto s43
+fi
+goto 48
+label s43
+text @[Tomoya]
+text Yep. Good luck and go have fun.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I take my bag with me as I exit the classroom.
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s44
+fi
+goto 45
+label s44
+setvar strS[1000] = ""
+label 45
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YC.aac
+text @[Sunohara]
+text Huh? You're not coming with me?!
+text @[Tomoya]
+text Что-то глупое произошло, и мне нужно это решить.
+text Я оставляю свой ответ на их усмотрение, чтобы они сделали с ним, что хотят, и иду по коридору один.
+if intF[11] == 1
+	goto s45
+fi
+goto 46
+label s45
+if rtf0 != ""
+	setvar rtf1 = "SEEN0421_0_0.scr"
+	setvar rtl1 = "rtl6"
+fi
+if rtf0 == ""
+	setvar rtf0 = "SEEN0421_0_0.scr"
+	setvar rtl0 = "rtl6"
+fi
+jump SEEN6421_1_0.scr
+label rtl6
+if rtf1 == ""
+	setvar rtf0 = ""
+fi
+if rtf1 != ""
+	setvar rtf1 = ""
+fi
+goto 47
+label 46
+if intF[410] == 1
+	goto s46
+fi
+goto 47
+label s46
+if rtf0 != ""
+	setvar rtf1 = "SEEN0421_0_0.scr"
+	setvar rtl1 = "rtl7"
+fi
+if rtf0 == ""
+	setvar rtf0 = "SEEN0421_0_0.scr"
+	setvar rtl0 = "rtl7"
+fi
+jump SEEN4421_1_0.scr
+label rtl7
+if rtf1 == ""
+	setvar rtf0 = ""
+fi
+if rtf1 != ""
+	setvar rtf1 = ""
+fi
+label 47
+jump SEEN0421_0_1.scr 61
+label 48
+if intF[11] == 0
+	if intF[410] == 0
+		goto s47
+	fi
+fi
+jump SEEN0421_0_1.scr 61
+label s47
+label 49
+text @[Томоя]
+text Я тебе говорю, я банкрот.
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YD.aac
+text @[Сунохара]
+text Если мы пойдём в аркаду у станции, мы обязательно найдём кого-то из знакомых.
+text @[Томоя]
+text Ты снова это делаешь...?
+text @[Томоя]
+text Мы будем в порядке, пока рядом нет rugby команды.
+if intF[500] == 1
+	if intF[501] == 1
+		goto s48
+	fi
+fi
+goto 50
+label s48
+if rtf0 != ""
+	setvar rtf1 = "SEEN0421_0_0.scr"
+	setvar rtl1 = "rtl8"
+fi
+if rtf0 == ""
+	setvar rtf0 = "SEEN0421_0_0.scr"
+	setvar rtl0 = "rtl8"
+fi
+jump SEEN5421_0_0.scr
+label rtl8
+if rtf1 == ""
+	setvar rtf0 = ""
+fi
+if rtf1 != ""
+	setvar rtf1 = ""
+fi
+label 50
+music ~
+if 0 == 0
+	goto s49
+fi
+goto 51
+label s49
+setvar strS[1000] = "KURO"
+jump SEEN0421_0_1.scr 53
+label 51
+if 0 == 1
+	goto s50
+fi
+jump SEEN0421_0_1.scr 52
+label s50
+setvar strS[1000] = "SIRO"
+jump SEEN0421_0_1.scr 53
+jump SEEN0421_0_1.scr
