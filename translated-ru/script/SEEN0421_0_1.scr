@@ -1,0 +1,465 @@
+label 52
+setvar strS[1000] = "KURO"
+label 53
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text В итоге я просто таскаюсь за ними.
+text Я просто стою旁＿__е, мои глаза впитывают сцену, пока Сохара играет в игры (я не хочу играть на чужие деньги).
+if intF[635] == 0
+	goto s51
+fi
+goto 54
+label s51
+text Тем не менее, это имеет какое-то значение на некотором уровне. Делать это по крайней мере помогло убить время, которое в противном случае было бы скучным.
+goto 61
+label 54
+if intF[635] == 1
+	goto s52
+fi
+goto 61
+label s52
+text Когда я стою там, я думаю о том, чтобы вернуться в комнату Мисаэ-сан ночью.
+if intF[500] == 1
+	if intF[501] == 1
+		goto s53
+	fi
+fi
+goto 57
+label s53
+text @[Томоя]
+text (Хм. Миядзава днем и Мисаэ-сан ночью...)
+text @[Томоя]
+text (...Это почти кажется так, будто я иду прямо из одной женской комнаты в другую...)
+choice Don't go|Persist and go to Misae-san's room
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s54
+fi
+goto 55
+label s54
+text Да. Я проведу сегодня вечер с Сохарой, как всегда...
+goto 56
+label 55
+if intF[1089] == 1
+	goto s55
+fi
+goto 56
+label s55
+text Да. Я пойду в комнату Мисаэ-сан.
+jump SEEN7500_1_0.scr
+label 56
+goto 61
+label 57
+if intF[500] == 0
+	goto s56
+fi
+if intF[501] == 0
+	goto s56
+fi
+goto 61
+label s56
+if intF[213] == 1
+	goto s57
+fi
+goto 60
+label s57
+text @[Томоя]
+text (Хм. Провести день с Томоё и вечер с Мисаэ-сан...)
+text @[Томоя]
+text (...Это почти кажется так, будто я иду прямо из одной женщины к другой...)
+choice Don't go|Persist and go to Misae-san's room
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s58
+fi
+goto 58
+label s58
+text Да. Я проведу сегодня вечер с Сохарой, как всегда...
+goto 59
+label 58
+if intF[1089] == 1
+	goto s59
+fi
+goto 59
+label s59
+text Да. Я пойду в комнату Мисаэ-сан.
+jump SEEN7500_1_0.scr
+label 59
+goto 61
+label 60
+if intF[213] == 0
+	goto s60
+fi
+goto 61
+label s60
+text Это, скорее всего, намного интереснее, чем провести вечер с Сохарой.
+jump SEEN7500_1_0.scr
+label 61
+goto 68
+label 62
+if intF[213] == 1
+	goto s61
+fi
+goto 68
+label s61
+setvar strS[1000] = "BG021H"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s62
+fi
+goto 63
+label s62
+setvar strS[1000] = ""
+label 63
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGSH25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YE.aac
+text @[Сохара]
+text Хе, должно быть, я немного过暑делся там.
+sound YF.aac
+text @[Сохара]
+text Шесть очков в одном матче? Это не делает ли меня по сути Джей-лигером?
+text @[Томоя]
+text Да, ты гений. Ты более чем Джей-лигер, ты Джей-Бифер.
+setvar strS[1001] = "CGSH10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YG.aac
+text @[Сохара]
+text Что это такое? Это звучит очень круто.
+text @[Томоя]
+text Я думал, что это звучит более аппетитно, чем круто.
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YH.aac
+text @[Сохара]
+text В любом случае, я отдаю этому только половину того, что у меня есть.
+text @[Томоя]
+text Я слышал, как ты хрипел во всё горло во второй половине.
+sound YI.aac
+text @[Сунохара]
+text Ну, уже давно я не занимался физкультурой.
+if intF[610] == 1
+	goto s63
+fi
+goto 67
+label s63
+label 64
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YJ.aac
+text @[Сунохара]
+text Ладно, теперь всё начинает становиться действительно серьёзным...
+text @[Томоя]
+text Серьёзным?
+setvar strS[1001] = "CGSH18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YK.aac
+text @[Сунохара]
+text ...Ты забыл о нашем разговоре вчера?
+sound YL.aac
+text @[Сунохара]
+text Юсукэ Ёсิโน сказал, что послушает, как я играю на гитаре, помнишь?
+text @[Томоя]
+text О, да, правильно...
+text @[Томоя]
+text Но у тебя нет гитары.
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YM.aac
+text @[Сунохара]
+text Не проблема. Я уже нашёл человека, у которого можно одолжить.
+text Я сомневаюсь, что это друг... Бедный парень.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s64
+fi
+goto 65
+label s64
+setvar strS[1000] = ""
+label 65
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 60
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG046"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s65
+fi
+goto 66
+label s65
+setvar strS[1000] = ""
+label 66
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 60
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08A.mp3
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YN.aac
+text @[Сунохара]
+text Хе, посмотри, как я выглядю круто.
+text Сунохара возвращается с электрогитарой через плечо.
+text У него даже есть мини-усилитель, прикреплённый к ремню, чтобы люди могли слышать его, даже если он на улице.
+text @[Томоя]
+text Но даже если ты появись с гитарой... будет очевидно, что ты не умеешь играть.
+sound YO.aac
+text @[Сунохара]
+text Вот где ты ошибаешься... Парень, который владеет этой гитарой, показал мне один трюк.
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YP.aac
+text @[Сунохара]
+text Он сказал, что даже такой любитель, как я, может справиться.
+text @[Томоя]
+text Хм, действительно? Покажи, тогда.
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YQ.aac
+text @[Сунохара]
+text Конечно. Только секунда...
+text Сунохара переключает переключатель и проверяет звук на усилителе.
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YR.aac
+text @[Сунохара]
+text Начинаю...
+text @[Томоя]
+text Угу.
+setvar strS[1001] = "CGSH17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YS.aac
+text @[Сунохара]
+text Секретная техника... Гитарный Скрэтч!!
+text Сунохара прижимает медиатор к струнам гитары, затем проводит им вверх к грифу.
+text *КРРРРРР*
+setvar strS[1001] = "CGSH25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YT.aac
+text @[Сунохара]
+text Что ты думаешь? Я играю как настоящий гитарист, правда?
+text @[Томоя]
+text Ну, немного, но... я бы не назвал это игрой на гитаре.
+text @[Томоя]
+text Кроме того, это произносится как "скрэтч", а не "скирэтч".
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YU.aac
+text @[Сунохара]
+text Ха... я всё спланировал. Как только я сделаю этот ход, ты должен сказать следующее:
+text @[Томоя]
+text Что? Почему я?
+setvar strS[1001] = "CGSH10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YV.aac
+text @[Сунохара]
+text "...Вау, Сунохара. Ты такой же хорош, как я ожидал. Но тебе следует остановиться сейчас. Сохрани остальное для своих фанатов."
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YW.aac
+text @[Сунохара]
+text Понял?
+sound YX.aac
+text @[Сунохара]
+text Что ты думаешь? Это полностью сделает меня похожим на человека, который действительно хорош, но не играет для маленьких аудиторий, потому что это было бы расточительно. Правда?
+text @[Томоя]
+text Было бы хорошо, если бы это сработало.
+text Сработает ли этот план на самом деле...?
+setvar strS[1001] = "CGSH18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YY.aac
+text @[Сунохара]
+text Давай, пойдём.
+text С этими словами, Сунохара потянул меня за руку.
+if rtf0 != ""
+	setvar rtf1 = "SEEN0421_0_1.scr"
+	setvar rtl1 = "rtl9"
+fi
+if rtf0 == ""
+	setvar rtf0 = "SEEN0421_0_1.scr"
+	setvar rtl0 = "rtl9"
+fi
+jump SEEN7100_1_0.scr
+label rtl9
+if rtf1 == ""
+	setvar rtf0 = ""
+fi
+if rtf1 != ""
+	setvar rtf1 = ""
+fi
+goto 68
+label 67
+if intF[610] == 0
+	goto s66
+fi
+goto 68
+label s66
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound YZ.aac
+text @[Сунохара]
+text Давай уйдём и повеселимся где-нибудь.
+jump SEEN0421_0_0.scr 49
+label 68
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s67
+fi
+goto 69
+label s67
+setvar strS[1000] = ""
+label 69
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+jump SEEN0422_0_0.scr
