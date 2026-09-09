@@ -1,0 +1,1360 @@
+label 52
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Just try buying some once. Who knows, you might end up feeling happy you're alive for the first time in your life!
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0F3.aac
+text @[Sunohara]
+text Does my life look that pathetic to you?
+label 53
+if intF[504] == 1
+	if intF[505] == 0
+		goto s50
+	fi
+fi
+goto 54
+label s50
+jump SEEN5424_0_0.scr
+goto 55
+label 54
+if intF[504] == 0
+	goto s51
+fi
+if intF[505] == 1
+	goto s51
+fi
+goto 55
+label s51
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text I spend another lunch break harassing and needling Sunohara. He's such an easy target.
+label 55
+music ~
+if 0 == 0
+	goto s52
+fi
+goto 56
+label s52
+setvar strS[1000] = "KURO"
+goto 58
+label 56
+if 0 == 1
+	goto s53
+fi
+goto 57
+label s53
+setvar strS[1000] = "SIRO"
+goto 58
+label 57
+setvar strS[1000] = "KURO"
+label 58
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG021A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s54
+fi
+goto 59
+label s54
+setvar strS[1000] = ""
+label 59
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08B.mp3
+text ......
+if intF[819] == 1
+	goto s55
+fi
+goto 63
+label s55
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s56
+fi
+goto 60
+label s56
+setvar strS[1000] = ""
+label 60
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s57
+fi
+goto 61
+label s57
+setvar strS[1000] = ""
+label 61
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text The break after fifth period saves me from my academic hell.
+text I leave the classroom to go buy some juice again.
+text On my way back...
+text Once more, something small dashes past me.
+choice Call out to it|Do nothing
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s58
+fi
+goto 62
+label s58
+setvar intF[126] + 1
+if rtf0 != ""
+	setvar rtf1 = "SEEN0424_0_1.scr"
+	setvar rtl1 = "rtl5"
+fi
+if rtf0 == ""
+	setvar rtf0 = "SEEN0424_0_1.scr"
+	setvar rtl0 = "rtl5"
+fi
+jump SEEN1004_0_0.scr
+label rtl5
+if rtf1 == ""
+	setvar rtf0 = ""
+fi
+if rtf1 != ""
+	setvar rtf1 = ""
+fi
+goto 63
+label 62
+if intF[1089] == 1
+	goto s59
+fi
+goto 63
+label s59
+text @[Tomoya]
+text (She sure puts a lot of work into something so pointless...)
+text I watch her as she walks away.
+music ~
+label 63
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s60
+fi
+goto 64
+label s60
+setvar strS[1000] = ""
+label 64
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG021H"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s61
+fi
+goto 65
+label s61
+setvar strS[1000] = ""
+label 65
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08B.mp3
+text Classes conclude for the day.
+setvar strS[1001] = "CGSH14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0F4.aac
+text @[Sunohara]
+text Okazaki... go to my room and wait there.
+text Sunohara hops out of his seat, faces forward, and gives me the command like some sort of drill sergeant.
+text @[Tomoya]
+text What's with you all of a sudden?
+sound 0F5.aac
+text @[Sunohara]
+text Just go there and wait.
+text @[Tomoya]
+text What about you?
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0F6.aac
+text @[Sunohara]
+text I'll come back once I get a certain something.
+text @[Tomoya]
+text "A certain something"...?
+sound 0F7.aac
+text @[Sunohara]
+text See you...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Sunohara leaves the classroom without so much as even answering my question.
+if 0 == 0
+	goto s62
+fi
+goto 66
+label s62
+setvar strS[1000] = "KURO"
+goto 68
+label 66
+if 0 == 1
+	goto s63
+fi
+goto 67
+label s63
+setvar strS[1000] = "SIRO"
+goto 68
+label 67
+setvar strS[1000] = "KURO"
+label 68
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG046Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s64
+fi
+goto 69
+label s64
+setvar strS[1000] = ""
+label 69
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я остаюсь в его комнате, ожидая его возвращения.
+text Кто знает, когда это исчезло, но телевизор исчез.
+text Он, вероятно, уже вернул его. Я почти уверен, что он был не слишком доволен тем, как это развлечение проявлялось.
+text @[Томоя]
+text (Я хотел увидеть эти комедийные видео...)
+text Наконец Сунохара появился.
+setvar strS[1001] = "CGSH15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0F8.aac
+text @[Сунохара]
+text Извини, что заставил тебя ждать...
+text @[Томоя]
+text Не звучи так серьёзно, когда говоришь.
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0F9.aac
+text @[Сунохара]
+text Хм... Ты станешь таким же, как и сейчас, как только поймёшь, что произошло...
+text @[Томоя]
+text И что именно произошло?
+music ~
+setvar strS[1001] = "CGSH18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0FA.aac
+text @[Сунохара]
+text Возьми это.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Сунохара достает из сумки, висевшей под его рукой, пистолет и небольшой коробчатый датчик.
+text Он кладёт их на стол.
+text @[Томоя]
+text Объясни.
+music BGM10B.mp3
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0FB.aac
+text @[Сунохара]
+text *Вздыхает*
+sound 0FC.aac
+text @[Сунохара]
+text В последнее время мы разрабатывали план за планом, чтобы занять себя чем‑то осмысленным, но каждый из них завершился неудачей.
+text @[Томоя]
+text Ты, может быть, но я нет.
+sound 0FD.aac
+text @[Сунохара]
+text Итак, сегодня утром я прогуливался по торговому центру, пытаясь придумать новый способ убить время.
+text @[Томоя]
+text Если ты бодрствуешь, тебе стоит прийти в школу.
+sound 0FE.aac
+text @[Sunohara]
+text Именно тогда я столкнулась с этим парнем перед магазином игрушек.
+sound 0FF.aac
+text @[Sunohara]
+text Посмотри на это. Парень вдруг остановил меня и сказал:
+setvar strS[1001] = "CGSH18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0FG.aac
+text @[Sunohara]
+text "Если тебе скучно, то хочешь тоже сыграть?"
+setvar strS[1001] = "CGSH15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0FH.aac
+text @[Sunohara]
+text Тогда я подумала: "Чёрт возьми?" Но прежде чем я успела что‑то сказать, он передал мне это...
+setvar strS[1001] = "CGSH18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0FI.aac
+text @[Sunohara]
+text ...Red Thunder Zolion.
+sound 0FJ.aac
+text @[Sunohara]
+text Чтобы играть, ты крепишь эти датчики к себе и сражаешься с другими, стреляя в них.
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0FK.aac
+text @[Sunohara]
+text Говоря о божественном спасении! После того, как он дал мне оружие и прочее, я последовала за всем, что он сказал, без раздумий.
+sound 0FL.aac
+text @[Sunohara]
+text Конечно, я включила тебя в свой список того, кто будет играть.
+text @[Tomoya]
+text С какого момента я говорил, что ты можешь говорить за меня?
+sound 0FM.aac
+text @[Sunohara]
+text Вот почему я получила юниты для нас обоих.
+text @[Tomoya]
+text Понятно...
+label 70
+setvar strS[1001] = "CGSH18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0FN.aac
+text @[Sunohara]
+text Однако... тот, кто проигрывает в этой игре, получает какое‑то наказание.
+text @[Tomoya]
+text Что?
+sound 0FO.aac
+text @[Sunohara]
+text Да, по‑видимому, проигравший должен выполнять любые приказы победителя в течение целой недели.
+sound 0FP.aac
+text @[Sunohara]
+text Независимо от того, что это.
+sound 0FQ.aac
+text @[Sunohara]
+text Вот правила…
+if intF[218] == 0
+	goto s65
+fi
+goto 71
+label s65
+text @[Tomoya]
+text Понятно… и вот почему ты так серьёзно ведёшь себя?
+goto 72
+label 71
+if intF[218] == 1
+	goto s66
+fi
+goto 72
+label s66
+text @[Tomoya]
+text …И вот почему твой голос сейчас такой напряжённый?
+label 72
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0FR.aac
+text @[Sunohara]
+text Да… это будет серьёзный поединок.
+sound 0FS.aac
+text @[Sunohara]
+text Хех, знаешь… мне нравится ощущение, как будто…
+sound 0FT.aac
+text @[Sunohara]
+text Вот о чём они говорят, когда упоминают дрожь от восторга.
+sound 0FU.aac
+text @[Sunohara]
+text Быстрее. Положи этот датчик в карман груди школьной формы и возьми оружие…
+sound 0FV.aac
+text @[Sunohara]
+text В тот момент, как ты это сделаешь, ты и я станем врагами…
+text @[Tomoya]
+text То есть, пока я в школьной форме, я как будто говорю, что готов к бою?
+sound 0FW.aac
+text @[Sunohara]
+text Да, точно…
+text @[Tomoya]
+text Есть кое-что, о чём я хочу спросить сначала.
+sound 0FX.aac
+text @[Sunohara]
+text Что…?
+text @[Tomoya]
+text Есть ли ещё игроки…?
+if intF[208] == 1
+	if intF[214] == 0
+		if intF[218] == 0
+			goto s67
+		fi
+	fi
+fi
+goto 73
+label s67
+setvar strS[1001] = "CGSH18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0FY.aac
+text @[Sunohara]
+text Да. Ещё двое.
+sound 0FZ.aac
+text @[Sunohara]
+text Ты их обоих знаешь…
+sound 0G0.aac
+text @[Sunohara]
+text @One of them...
+delay 88
+text is Tomoyo Sakagami.
+text @[Tomoya]
+text Wait. Why her again?
+setvar strS[1001] = "CGSH15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0G1.aac
+text @[Sunohara]
+text I asked her, and she agreed...
+sound 0G2.aac
+text @[Sunohara]
+text I was surprised too, but... it seems like her goal is to force us to stop being late for school...
+text @[Tomoya]
+text That's quite admirable...
+setvar strS[1001] = "CGSH18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0G3.aac
+text @[Sunohara]
+text And the other competitor is Kyou Fujibayashi...
+sound 0G4.aac
+text @[Sunohara]
+text Once I explained the rules, she also agreed to play...
+setvar strS[1001] = "CGSH15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0G5.aac
+text @[Sunohara]
+text It seems like she really does want to drive us to ruin...
+text @[Tomoya]
+text There's no telling what she'll force us to do.
+setvar strS[1001] = "CGSH24"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0G6.aac
+text @[Sunohara]
+text Heh... We just have to win, that's all...
+text @[Tomoya]
+text So basically, I win if I can defeat four people in total, including the guy who introduced you to this game?
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0G7.aac
+text @[Sunohara]
+text Exactly...
+setvar intF[839] = 1
+goto 74
+label 73
+if intF[208] == 0
+	goto s68
+fi
+if intF[214] == 1
+	goto s68
+fi
+if intF[218] == 1
+	goto s68
+fi
+goto 74
+label s68
+setvar strS[1001] = "CGSH18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0G8.aac
+text @[Sunohara]
+text Yes. One more.
+sound 0G9.aac
+text @[Sunohara]
+text @It's someone you know...
+delay 130
+text Kyou Fujibayashi.
+setvar strS[1001] = "CGSH15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0GA.aac
+text @[Сунохара]
+text Как только я объяснил правила, она согласилась играть…
+sound 0GB.aac
+text @[Сунохара]
+text Похоже, она действительно хочет довести нас до гибели…
+text @[Томи]
+text Нельзя предугадать, к чему она нас заставит.
+setvar strS[1001] = "CGSH24"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0GC.aac
+text @[Сунохара]
+text Хех… Нам просто надо победить, вот и всё…
+text @[Томи]
+text То есть, я побеждаю, если сумею победить трёх человек в сумме, включая того, кто представил тебе эту игру?
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0GD.aac
+text @[Сунохара]
+text Точно…
+label 74
+music ~
+sound 0GE.aac
+text @[Сунохара]
+text Ну… начнём.
+choice Play|Don't play
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s69
+fi
+goto 75
+label s69
+goto 80
+label 75
+if intF[1089] == 1
+	goto s70
+fi
+goto 80
+label s70
+text @[Томи]
+text Я откажусь.
+music BGM08A.mp3
+setvar strS[1001] = "CGSH27"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH27.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0GF.aac
+text @[Сунохара]
+text …Что?
+text @[Томи]
+text Я сказал, что не собираюсь играть.
+sound 0GG.aac
+text @[Сунохара]
+text Почему нет?
+text @[Томи]
+text Нельзя предугадать, к чему меня заставит, если победит кто-то другой.
+sound 0GH.aac
+text @[Сунохара]
+text Но если ты победишь, ты сможешь приказывать всем остальным делать всё, что захочешь!
+if intF[839] == 1
+	goto s71
+fi
+goto 76
+label s71
+sound 0GI.aac
+text @[Сунохара]
+text Томойо и Кё!
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0GJ.aac
+text @[Сунохара]
+text Ты можешь заставить их делать немного этого и немного того, понимаешь? Всё одновременно!
+goto 77
+label 76
+if intF[839] == 0
+	goto s72
+fi
+goto 77
+label s72
+sound 0GK.aac
+text @[Сунохара]
+text Кё!
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0GL.aac
+text @[Сунохара]
+text Ты можешь заставить её сделать немного этого, а потом и того, понимаешь...?
+label 77
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0GM.aac
+text @[Сунохара]
+text О, черт, я уже возбуждён, только думая об этом!
+text @[Томоя]
+text Сделай это, пока меня не будет.
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0GN.aac
+text @[Сунохара]
+text О, всё равно. Это просто значит, что у меня теперь один меньше враг.
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0GO.aac
+text @[Сунохара]
+text Хе. Ну, я ухожу.
+music ~
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Сунохара покидает комнату с порочным, смущённым взглядом.
+text ......
+text Где‑то вдалеке я слышу жужжание сигнала тревоги.
+text ......
+setvar strS[1001] = "CGSH26"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH26.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08A.mp3
+sound 0GP.aac
+text @[Сунохара]
+text ...Кто‑то меня поймал.
+text @[Томоя]
+text Вот о чём я думал.
+if intF[839] == 1
+	goto s73
+fi
+goto 78
+label s73
+text Никак ты не сможешь сразиться с обоими и победить.
+label 78
+sound 0GQ.aac
+text @[Сунохара]
+text Аг... Что мне придётся делать в качестве наказания...?
+text Он выглядит жалким.
+if intF[320] == 3
+	goto s74
+fi
+goto 79
+label s74
+if rtf0 != ""
+	setvar rtf1 = "SEEN0424_0_1.scr"
+	setvar rtl1 = "rtl6"
+fi
+if rtf0 == ""
+	setvar rtf0 = "SEEN0424_0_1.scr"
+	setvar rtl0 = "rtl6"
+fi
+jump SEEN7600_3_0.scr
+label rtl6
+if rtf1 == ""
+	setvar rtf0 = ""
+fi
+if rtf1 != ""
+	setvar rtf1 = ""
+fi
+label 79
+goto 89
+label 80
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Томоя]
+text *Вздох*
+text Я положил датчик в карман на груди.
+text И пока я это делаю...
+music BGM11.mp3
+text ...Сунохара держит пистолет, направленный на мою грудь.
+text @[Томоя]
+text ...Что?
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0GR.aac
+text @[Sunohara]
+text @Извини, но это...
+delay 181
+text За конец для тебя.
+text @[Tomoya]
+text Ты такой трус, ты знаешь?
+text @[Tomoya]
+text И это не «За», а «Те».
+sound 0GS.aac
+text @[Sunohara]
+text Хмф... Конец оправдывает средства...
+if intF[839] == 1
+	goto s75
+fi
+goto 81
+label s75
+text @[Tomoya]
+text Тебе тоже нужно меня победить? Я думал, что тебе нужно только убедиться, что Томойо и Кё не победят.
+sound 0GT.aac
+text @[Sunohara]
+text Нет, я собираюсь победить...
+sound 0GU.aac
+text @[Sunohara]
+text То есть, я могу приказать Томойо и Кё делать всё, что захочу...!
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0GV.aac
+text @[Sunohara]
+text Пусть они делают немного этого, немного того... понимаешь? Всё одновременно тоже!
+goto 82
+label 81
+if intF[839] == 0
+	goto s76
+fi
+goto 82
+label s76
+text @[Tomoya]
+text Тебе тоже нужно меня победить? Я думал, что тебе нужно только убедиться, что Кё не победит.
+sound 0GW.aac
+text @[Sunohara]
+text Нет, я собираюсь победить...
+sound 0GX.aac
+text @[Sunohara]
+text То есть, я могу приказать Кё делать всё, что захочу...!
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0GY.aac
+text @[Sunohara]
+text Пусть она делает немного этого, немного того, понимаешь...?
+label 82
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0GZ.aac
+text @[Sunohara]
+text О, чувак, я взволнован, только думая об этом!
+text @[Tomoya]
+text Сделай это.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я пробираюсь сквозь объятия Сунохара, пока он занят попытками удержать носовое кровотечение и схватить пистолет, стоящий на столе.
+text @[Томоя]
+text Игра окончена.
+text Я прижимаю клюшку пистолета к его груди.
+setvar strS[1001] = "CGSH27"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH27.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0H0.aac
+text @[Сунохара]
+text …Чё?
+text Я нажимаю на спуск.
+bgload SIRO.jpg 0
+delay 1
+bgload {$strS[1000]}.jpg 4
+setimg CGSH27.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *БВЕЕЕЕЕЕЕЕП*
+text Звук тревоги раздаётся. Он громкий, чтобы разорвать барабан уха.
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0H1.aac
+text @[Сунохара]
+text Нвааааааааааа!!!
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Сунохара падает на пол, лицом вниз, от шока из‑за поражения.
+text @[Томоя]
+text Это уже один поражённый...
+text Я складываю плазменный пистолет в задний карман.
+setvar strS[1001] = "CGSH26"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH26.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0H2.aac
+text @[Сунохара]
+text Оказаки...
+text Сунохара поднимает голову к мне с плачущими глазами.
+text @[Томоя]
+text Что ты хочешь?
+sound 0H3.aac
+text @[Сунохара]
+text Когда ты победишь… дай мне знать…
+text @[Томоя]
+text Ладно.
+sound 0H4.aac
+text @[Сунохара]
+text Я знал, что мы друзья, Оказаки!
+if intF[839] == 1
+	goto s77
+fi
+goto 83
+label s77
+text @[Томоя]
+text Я заставлю двух остальных обидеться на тебя и избить тебя.
+setvar strS[1001] = "CGSH25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0H5.aac
+text @[Сунохара]
+text Ура!
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0H6.aac
+text @[Сунохара]
+text Подожди, я не мазохист!
+text @[Томоя]
+text Ты, похоже, такой парень, которому нравится, когда его двое девушек избивают, так что это будет.
+goto 84
+label 83
+if intF[839] == 0
+	goto s78
+fi
+goto 84
+label s78
+text @[Томоя]
+text Я подберу Кёу, чтобы она избила тебя.
+setvar strS[1001] = "CGSH25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0H7.aac
+text @[Сунохара]
+text Ура!
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0H8.aac
+text @[Сунохара]
+text Подожди, я не мазохист!
+text @[Томоя]
+text Ты, кажется, такой парень, которому нравится, когда его одна девушка избивает, так что так и будет.
+label 84
+sound 0H9.aac
+text @[Сунохара]
+text Гааах! Пожалуйста, не побеждай! Проиграй, проиграй!!
+text @[Томоя]
+text Ты можешь молиться как хочешь.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Ладно, тогда...
+text Даже если я собираюсь здесь остаться, я бы хотел переодеться...
+text @[Томоя]
+text Сунохара. Приди со мной, если хочешь, чтобы всё сложилось в твою пользу.
+setvar strS[1001] = "CGSH27"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH27.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0HA.aac
+text @[Сунохара]
+text Подожди, правда?! Хорошо!
+music ~
+setvar strS[1000] = "BG045Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s79
+fi
+goto 85
+label s79
+setvar strS[1000] = ""
+label 85
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM29.mp3
+text ......
+text Я не чувствую здесь никого другого...
+text ...кажется, никто бы не пришёл до такой степени в это место.
+text @[Томоя]
+text Ты ходи первой, Сунохара.
+text Я указываю путь своим пистолетом.
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0HB.aac
+text @[Сунохара]
+text Я чувствую себя как будто в заложниках или что‑то в этом роде...
+text @[Томоя]
+text Тебе хочется награды, да?
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0HC.aac
+text @[Сунохара]
+text Да, хочу! Да!
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Бам*
+sound 0HD.aac
+text @[Сунохара]
+text ...А?
+text Дверь в комнату, расположенную прямо рядом со мной, резко распахнулась с громким ударом.
+text @[Томоя]
+text Никак. Она могла скрываться там...?
+text Тень появляется у моих ног!
+text @[Томоя]
+text Ниже меня?!
+bgload SIRO.jpg 0
+delay 1
+bgload {$strS[1000]}.jpg 4
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *БВЕЕЕЕЕЕЕЕП*
+text Она поймала меня... Подожди, нет...
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0HE.aac
+text @[Сунохара]
+text Я опять была убита...
+text Звонок тревоги исходит от датчика Сунохары прямо передо мной.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Тень уже исчезла.
+text Если бы я не привёл Сунохару, то, скорее всего, удар бы попал именно на меня...
+text Поскольку мой датчик находится в кармане груди, он реагирует только на атаки, приходящие прямо спереди.
+text Мои противники обязательно учтут это, пытаясь устроить засаду.
+text @[Томоя]
+text Эй, Сунохара...
+text @[Томоя]
+text Мы запутались с довольно страшными врагами...
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0HF.aac
+text @[Сунохара]
+text Хех... Так и дальше, и всё, пока они не догонят тебя...
+text @[Томоя]
+text Ты не хотела, чтобы всё закончилось счастливо?
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 0HG.aac
+text @[Сунохара]
+text Я за тебя болею, Оказаки!
+music ~
+if 0 == 0
+	goto s80
+fi
+goto 86
+label s80
+setvar strS[1000] = "KURO"
+goto 88
+label 86
+if 0 == 1
+	goto s81
+fi
+goto 87
+label s81
+setvar strS[1000] = "SIRO"
+goto 88
+label 87
+setvar strS[1000] = "KURO"
+label 88
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text После этого я отвезу Сунохару домой. Я успею переодеться и продержусь до конца дня.
+text Значит, завтра будет так же напряжённо, как и сегодня...
+text Ужас, который я ощущаю, выходит за пределы всякой логики...
+setvar intF[838] = 1
+label 89
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s82
+fi
+goto 90
+label s82
+setvar strS[1000] = ""
+label 90
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+jump SEEN0425_0_0.scr
