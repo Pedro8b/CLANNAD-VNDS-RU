@@ -1,0 +1,441 @@
+text текст *Тук*
+text текст *Тук* ... *Т-Т-Тук*
+text текст @[Томоя]
+text текст Хм...?
+text текст Кто-то стучит мне по спине.
+text текст *Тук* *Тук*
+text текст От подмышки до пояса.
+text текст *Тук* ... *Т-Т-Тук*
+text текст @[Томоя]
+text текст Что ты хочешь?!
+music ~
+sound 25Z.aac
+text текст @[Войс]
+text текст Вах...
+text текст Я оборачиваюсь как раз вовремя, успевая увидеть убегающую девушку.
+music BGM04A.mp3
+text текст Я узнаю эту фигуру. Должно быть, это девушка‑резчик по дереву, с которой я встретился вчера.
+text текст @[Томоя]
+text текст Она что, какая‑то извращенка...
+bgload KURO.jpg 88
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text текст *Тук*
+text текст @[Томоя]
+text текст (Снова...)
+text текст *Тук* ... *Т-Т-Тук*
+text текст Я решаю остановиться и посмотреть, что будет.
+text текст *Тук* *Т-Т-Тук* *Т-Т-Тук*
+text текст Не упуская возможности, она продолжает трогать везде.
+text текст Проходящая студентка не может сдержать смех, глядя на нас.
+text текст *Тук*
+text текст @[Томоя]
+text текст (Это моя паховая область...)
+text текст *Тук*
+text текст Она снова там стучит.
+text текст @[Томоя]
+text text (Так ты так сильно интересуешься тем местом...)
+text text *Сжать*
+text text @[Томоя]
+text text Не хвата́й!
+sound 260.aac
+text text @[Голос]
+text text Вах...
+text text Ошарашенная моим голосом, она теряет равновесие и падает на попу.
+text text Теперь она встала, слегка постукивая по юбке, чтобы стряхнуть пыль.
+text text Поймать её теперь будет проще простого...
+choice Gotta catch 'er|Let her go
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s0
+fi
+goto 1
+label s0
+text text После всего этого она снова отворачивается от меня, намереваясь снова убежать.
+text text @[Томоя]
+text text Слишком медленно!
+text text Схватил её руку.
+setvar strS[1001] = "CGFU17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 261.aac
+text text @[Студентка]
+text text Вах...
+text text @[Томоя]
+text text Есть какое‑то дело со мной?
+text text @[Томоя]
+text text Или ты наконец‑то осознала гендерные различия в своём возрасте?
+sound 262.aac
+text text @[Студентка]
+text text @Ищу...
+delay 67
+text text нож...
+text text @[Томоя]
+text text Нож?
+text text @[Томоя]
+text text Ах да, то...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text text Я совсем забыл об этом, но всё ещё не отдал нож, который взял у неё.
+text text Значит, она обыскивала моё тело в поисках его?
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 263.aac
+text text @[Студентка]
+text text Верни его.
+goto 2
+label 1
+if intF[1089] == 1
+	goto s1
+fi
+goto 2
+label s1
+text text Когда я оборачиваюсь, она уже убегает.
+text text Я решаю немного подождать и наблюдаю, как она поворачивает, чтобы спрятаться за угол. Затем она высовывает часть лица из‑под стены, чтобы подглядеть за мной.
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text text …Извини, но ты слишком очевидна.
+text text @[Томоя]
+text text (Что же она делает со мной, таким как я...)
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text text Я небрежно засовываю руки в карманы куртки.
+text text @[Томоя]
+text text (Ах...)
+text text То, что внутри, напоминает мне о происшествии вчера.
+text text @[Томоя]
+text text (Так вот, что она искала...)
+text text Я хватаю его и вытаскиваю.
+text text …Нож.
+text text *Щелк* *Щелк* *Щелк*
+text text Звуки приближающихся шагов отрывают меня от мыслей. Я поднимаю голову как раз вовремя, чтобы увидеть, как девушка отчаянно бросается ко мне.
+text text Наши взгляды встречаются.
+setvar strS[1001] = "CGFU17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 264.aac
+text text @[Студентка]
+text text Ах...
+setvar strS[1001] = "CGFU30"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU30.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 265.aac
+text text @[Студентка]
+text text *Свист*
+text text Ладно, она врезается в окно. Конец игры.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text text @[Томоя]
+text text Ты пытаешься отобрать у меня нож?
+setvar strS[1001] = "CGFU30"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU30.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 266.aac
+text text @[Студентка]
+text text Hyuu─ hyorooroo─
+text text @[Томоя]
+text text Держись. Ты слышишь меня?
+sound 267.aac
+text text @[Студентка]
+text text ...
+text text Полное отсутствие внимания.
+text text Я поднимаю её нос пальцами, заставляя его выглядеть как свиная морда.
+setvar strS[1001] = "CGFU31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 268.aac
+text text @[Фемейл Студент]
+text text Эмм...
+sound 269.aac
+text text @[Фемейл Студент]
+text text Эммм...
+text text Она не в силах сопротивляться, и её голова откидывается назад.
+setvar strS[1001] = "CGFU17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 26A.aac
+text text @[Фемейл Студент]
+text text Хаа... Пожалуйста, перестань с этим!
+text text Она отдергивает мою руку, наконец показывая мне свои глаза.
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 26B.aac
+text text @[Фемейл Студент]
+text text Ты пытаешься заставить нос Фуко навсегда указывать в небо?
+text text @[Томоя]
+text text Я сделал это, потому что ты игнорировала меня.
+sound 26C.aac
+text text @[Фемейл Студент]
+text text Это не правда. Фуко только сейчас заметила тебя.
+text text @[Томоя]
+text text Прекрати врать. Ты бросилась на меня, пытаясь вернуть тот нож.
+setvar strS[1001] = "CGFU19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 26D.aac
+text text @[Фемейл Студент]
+text text Нож?
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 26E.aac
+text text @[Фемейл Студент]
+text text Верно, нож. На самом деле он принадлежит Фуко.
+text text Ты плохо играешь.
+sound 26F.aac
+text text @[Фемейл Студент]
+text text Верни его.
+label 2
+text text @[Томоя]
+text text А как насчёт твоей руки?
+sound 26G.aac
+text text @[Фемейл Студент]
+text text Больше не болит. Полностью зажило.
+text text @[Томоя]
+text text Но на ней всё ещё повязка.
+sound 26H.aac
+text @[Фимейл Студент]
+text Это просто предосторожность.
+text @[Томоя]
+text Тогда пожми мне руку.
+text *Хват*
+setvar strS[1001] = "CGFU17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 26I.aac
+text @[Фимейл Студент]
+text Хм...
+text Она пытается выдержать это.
+text @[Томоя]
+text Дальше — пятерка.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Хлопок*
+setvar strS[1001] = "CGFU17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 26J.aac
+text @[Фимейл Студент]
+text Хм...
+text Она всё ещё пытается выдержать это.
+text @[Томоя]
+text Хорошо, тренировка по боксу.
+sound 26K.aac
+text @[Фимейл Студент]
+text А?
+text @[Томоя]
+text Ты будешь тренером. Просто стой вот так.
+text Я заставляю её поднять руки перед грудью.
+text @[Томоя]
+text Я буду бить твои руки, говоря «Джеб, джеб, прямой!», а ты отвечай «Раз, два, раз‑два», понял?
+sound 26L.aac
+text @[Фимейл Студент]
+text О-ладно...
+text @[Томоя]
+text Ты готова?
+setvar strS[1001] = "CGFU31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 26M.aac
+text @[Фимейл Студент]
+text Конечно...
+text Она закрывает глаза.
+text text @[Томоя]
+text text Какой тренер закрывает глаза? Сейчас открой глаза и готовься!
+setvar strS[1001] = "CGFU23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 26N.aac
+text text @[Женская Студентка]
+text text Ладно...
+text text Её скептическое лицо теперь украшено круглыми открытыми глазами, создавая довольно зрелищный вид.
+text text @[Томоя]
+text text Поехали...
+sound 26O.aac
+text text @[Женская Студентка]
+text text Конечно...
+text text @[Томоя]
+text text Я ударю с полной мощностью. Готов к этому?
+sound 26P.aac
+text text @[Женская Студентка]
+text text Конечно...
+text text @[Томоя]
+text text Пах, пах, прямой!
+text text Я немного подожгу, повышая голос.
+setvar strS[1001] = "CGFU31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 26Q.aac
+text text @[Женская Студентка]
+text text Один, два, один-два!
+text text *Бап*
+text text Очень медленно я ввожу нож в её руку.
+sound 26R.aac
+text text @[Женская Студентка]
+text text Один, два, один-два!
+text text Она всё ещё продолжает это.
+text text @[Томоя]
+text text Смотри, я вернул тебе нож.
+setvar strS[1001] = "CGFU19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 26S.aac
+text text @[Женская Студентка]
+text text Хм?
+text text @[Томоя]
+text text Если ты травмируешься, я вернусь и заберу его снова. Понятно? Просто будь осторожна, чтобы не пережить всё это снова.
+sound 26T.aac
+text text @[Женская Студентка]
+text text Ах, конечно.
+text text @[Томоя]
+text text Пока, тогда.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text text Я прощаюсь, не глядя ей в лицо, и начинаю уходить.
+music ~
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+jump SEEN1418_1_0.scr
