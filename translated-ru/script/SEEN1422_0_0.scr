@@ -1,0 +1,385 @@
+if intF[11] == 1
+	goto s0
+fi
+goto 1
+label s0
+text @[Томоя]
+text Иди вперед.
+setvar strS[1001] = "CGNG13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 28U.aac
+text @[Фурукава]
+text Почему...? Мы не можем пойти домой вместе?
+text @[Томоя]
+text Ну, я что-то забыл.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Оставив Фурукава позади, я бегу за силуэтом.
+bgload KURO.jpg 88
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+goto 2
+label 1
+if intF[11] == 0
+	goto s1
+fi
+goto 2
+label s1
+text Войдя в коридор, я замечаю, что маленькая фигура, которую я искал, опирается на дверь соседнего класса.
+text @[Томоя]
+text (Что она делает...)
+text Сунохара уже далеко впереди, но мне всё равно. Вместо этого я делаю несколько шагов к подозрительной маленькой девушке.
+label 2
+music ~
+text @[Томоя]
+text Эй! Что ты делаешь?
+music BGM04A.mp3
+setvar strS[1001] = "CGFU31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 28V.aac
+text @[Фуко]
+text Вах!
+text Она отскакивает в растерянности.
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 28W.aac
+text @[Фуко]
+text А... странный человек!
+text @[Томоя]
+text Да, это странный человек. Но разве ты не тоже довольно странная?
+sound 28X.aac
+text @[Фуко]
+text Нет, Фуко вовсе не странная. Если бы Фуко должна была выбрать, она бы сказала, что просто обычная, порядочная девочка.
+text @[Томоя]
+text Да, красть — это полностью то, что делает обычная, порядочная девочка.
+text @[Томоя]
+text Итак, какие плохие дела ты сегодня планируешь?
+setvar strS[1001] = "CGFU17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 28Y.aac
+text @[Фуко]
+text Фуко никогда ничего плохого не делает.
+setvar strS[1001] = "CGFU30"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU30.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 28Z.aac
+text @[Фуко]
+text Фуко просто пытается принести счастье людям.
+text text @[Томоя]
+text text Ха? Что ты вообще планируешь?
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 290.aac
+text text @[Фуко]
+text text Ну, скажем... с этой чрезмерно милой...
+text text Она обнимает резьбу...
+setvar strS[1001] = "CGFU34A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+setimg CGFU34A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 291.aac
+text text @[Фуко]
+text text ...
+text text ...и снова отправляется в свой фантастический мир.
+sound 292.aac
+text text @[Фуко]
+text text ...
+text text @[Томоя]
+text text (Что же от меня ожидается...)
+if rtf0 != ""
+	setvar rtf1 = "SEEN1422_0_0.scr"
+	setvar rtl1 = "rtl0"
+fi
+if rtf0 == ""
+	setvar rtf0 = "SEEN1422_0_0.scr"
+	setvar rtl0 = "rtl0"
+fi
+jump SEEN1002_0_0.scr
+label rtl0
+if rtf1 == ""
+	setvar rtf0 = ""
+fi
+if rtf1 != ""
+	setvar rtf1 = ""
+fi
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 293.aac
+text text @[Фуко]
+text text Фуко не в облаках!
+sound 294.aac
+text text @[Фуко]
+text text Если тебе нужно знать, Фуко всегда предельно остра.
+text text @[Томоя]
+text text Какая именно часть тебя острая...
+text text @[Томоя]
+text text В любом случае, тебе следует быть благодарной, что имеешь дело со мной. Если бы ты вела себя так беззащитно перед каким‑нибудь странным типом, они могли бы просто похитить тебя.
+text text Фуко резко указывает пальцем на меня.
+text text @[Томоя]
+text text Ну да, я бы не стал отрекаться... Но не только я, знаешь ли. Появятся и другие такие же странные типы.
+text text @[Томоя]
+text text Ты ведь не хочешь, чтобы так случилось, правда?
+setvar strS[1001] = "CGFU31A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU31A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 295.aac
+text text @[Фуко]
+text text ...
+text text Прямо сейчас она, наверное, представляет себе дюжину меня, вопящих «Эй, поднимай!», пока я уношу её.
+text text @[Томоя]
+text text (Это довольно странно...)
+setvar strS[1001] = "CGFU17A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 296.aac
+text text @[Фуко]
+text text Это самое худшее.
+text text @[Томоя]
+text text Видишь? Хотя там меня было, твое впечатление, скорее всего, абсолютно верно...
+text text @[Томоя]
+text text Но именно поэтому нам нельзя допустить этого. Тебе надо перестать так отвлекаться.
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 297.aac
+text text @[Фуко]
+text text Фуко крайне чувствительна к окружающей среде, так что ничего страшного.
+if intF[109] == 1
+	goto s2
+fi
+goto 3
+label s2
+text text Хорошо, в следующий раз я попробую что‑то «экстремальное», чтобы доказать, насколько ты тупик.
+goto 4
+label 3
+if intF[109] == 0
+	goto s3
+fi
+goto 4
+label s3
+text text В таком случае, в следующий раз, когда ты войдёшь в трансовое состояние, я покажу тебе, насколько ты тупик.
+label 4
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text text Выцарапав клятву на своём сердце, я оборачиваюсь и уезжаю.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s4
+fi
+goto 5
+label s4
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+if intF[11] == 1
+	goto s5
+fi
+goto 7
+label s5
+setvar strS[1000] = "BG016Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s6
+fi
+goto 6
+label s6
+setvar strS[1000] = ""
+label 6
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text text ......
+text text @[Томоя]
+text text (Пока не слишком поздно. Может, стоит догнать Фурукава....)
+text text @[Томоя]
+text text (Но если мне придётся бежать только, чтобы догнать её... разве это не как преследовать девушку за её зад?)
+goto 9
+label 7
+if intF[11] == 0
+	goto s7
+fi
+goto 9
+label s7
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s8
+fi
+goto 8
+label s8
+setvar strS[1000] = ""
+label 8
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text text @[Томоя]
+text text (Сунохара уже не рядом...)
+text text @[Томоя]
+text text (Но я действительно не хочу бегать только ради того, чтобы догнать его сейчас... это только покажет, как отчаянно я желаю его извращений...)
+label 9
+text text Я продолжал идти, погружённый в эти мысли...
+music BGM10.mp3
+text text *Твяк*
+text text @[Томоя]
+text text Арг...
+text text Кто‑то просто насильно вставил что‑то в мою рубашку.
+text text ...Что‑то огромное.
+text text Это только идиот мог бы сделать что‑то подобное.
+text text @[Томоя]
+text text Ты, маленький...!
+text text Она уже вне досягаемости в момент, когда я оборачиваюсь.
+text text Кажется глупо сейчас пытаться догнать её.
+text text Я вынимаю то, что она впрятала в мою рубашку.
+text text @[Томоя]
+text text (Что за черт это...)
+text text Резьба... звезды?
+text text Это примерно такой же размер, как полностью разжатая рука.
+text text @[Томоя]
+text text (Выглядит как звезда, как бы я ни смотрел...)
+text text Это то, что она вырезала?
+text text Если да, то ей нужно семьсот таких?
+text text Зачем?
+text text Хобби? Или искусство? Бог ли велел ей это делать?
+text text @[Томоя]
+text text (Блин, я совсем не понимаю её...)
+text text Звезда плохо сбалансирована, не говоря уже о деревянных чешуйках, которые почти повсюду.
+text text Но я знаю, сколько усилий она вложила.
+text text @[Томоя]
+text text (С чем мне вообще делать с этим?)
+text text Честно говоря, это обременительно.
+gsetvar intG[21] = 0
+choice Leave it somewhere|Take it home
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s9
+fi
+goto 10
+label s9
+music ~
+text text Думаю, просто оставлю его где-нибудь.
+text text Я не могу положить его в сумку так. Он слишком громоздкий...
+goto 11
+label 10
+if intF[1089] == 1
+	goto s10
+fi
+goto 11
+label s10
+music ~
+text text Как мне отвезти это домой?
+text text Моя плоская сумка точно не вмещает это.
+text text Похоже, надо найти другую сумку, чтобы положить туда...
+setvar intF[133] = 1
+label 11
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
