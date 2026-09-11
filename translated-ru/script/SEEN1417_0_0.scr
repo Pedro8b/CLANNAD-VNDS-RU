@@ -1,0 +1,687 @@
+if intF[3] == 1
+	goto s0
+fi
+goto 1
+label s0
+text Заглядываю внутрь.
+text Похоже, никого нет рядом....
+text Я открываю дверь.
+label 1
+setvar strS[1000] = "BG023"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = ""
+label 2
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я думал, что в комнате будет пусто, но у окна сидит молодая студентка.
+music ~
+setvar strS[1000] = "FGFU01A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = ""
+label 3
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 98
+music BGM15.mp3
+text Падающий солнечный свет мешает рассмотреть её лицо, виден лишь силуэт.
+text Она вырезает кусок дерева ножом.
+text *Скритч* ... *Скритч*
+text Её сосредоточенность, кажется, полностью стирает меня из её восприятия.
+text В её упорной работе есть что-то неотразимо милое.
+text Некоторое время я просто стою и наблюдаю.
+setvar strS[1000] = "FGFU01B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 4
+label s3
+setvar strS[1000] = ""
+label 4
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound 256.aac
+text @[Фемэйл Студент]
+text А!
+text Она останавливает руки, наконец заметив моё присутствие.
+text @[Фемэйл Студент]
+text ...
+text Её глаза встречаются с моими; она замирает.
+text @[Фемэйл Студент]
+text ...
+text @[Томоя]
+text Что случилось?
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s4
+fi
+goto 5
+label s4
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG023"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s5
+fi
+goto 6
+label s5
+setvar strS[1000] = ""
+label 6
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM04A.mp3
+sound 257.aac
+text @[Фемэйл Студент]
+text Вах...
+text Вдруг она подпрыгивает и бросается к углу комнаты.
+text Она напоминает мне кошку, пойманную за попыткой украсть еду.
+text Только кошка, скорее всего, не держала бы нож в лапах всё время.
+text @[Томоя]
+text (Заметка себе: Не удивляй девушку ножом. Ты можешь быть ранен.)
+text @[Фемэйл Студент]
+text ...
+text Оставаясь на месте, она осторожно наблюдает за каждым моим движением, как можно более неподвижно.
+text text Мне кажется забавным думать, пытается ли она скрыться, стоя совершенно неподвижно. И даже лучше: она в углу комнаты, фактически самое заметное место во всём помещении.
+text text @[Томоя]
+text text (Ну, тогда, что мне теперь делать...)
+choice Just leave|Try talking to her
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 1
+	goto s6
+fi
+goto 12
+label s6
+if intF[2] == 0
+	goto s7
+fi
+goto 7
+label s7
+text text Я вспомнил.
+text text Пустые классы в этом здании используют культурные клубы.
+label 7
+text text @[Томоя]
+text text Скажи, это комната арт‑клуба?
+text text @[Фемеле Студент]
+text text ...
+text text @[Томоя]
+text text Эм... Эй, я говорю с тобой.
+setvar strS[1001] = "CGFU19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text text Она неохотно указывает пальцем на себя и наклоняет голову в сторону.
+text text @[Томоя]
+text text Да, ты. Как будто здесь кто‑то ещё есть.
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text text Она поднимает указательный палец. Может, она хочет, чтобы я повторил вопрос?
+text text @[Томоя]
+text text Это комната арт‑клуба?
+setvar strS[1001] = "CGFU10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text text Всё ещё стоя плотно в углу, она нервно качает головой.
+text text @[Томоя]
+text text Ах да, если бы это был клуб, здесь бы были другие участники.
+text text @[Томоя]
+text text Так что, ты просто пропускаешь слишком много уроков искусства и в итоге получаешь кучу домашки? Что-то в этом роде?
+text text Она снова качает головой.
+text text @[Томоя]
+text text Значит, это просто хобби?
+text text Она снова качает головой.
+text text @[Томоя]
+text text Так что же ты, черт возьми, здесь делаешь?
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 258.aac
+text text @[Фемеле Студент]
+text text Ты имеешь в виду это?
+text Она показывает мне деревянный блок, над которым работала, держит его перед грудью.
+text @[Томоя]
+text Да, именно это.
+sound 259.aac
+text @[Фемеле Студент]
+text Это... любимая... вещь...
+setvar strS[1001] = "CGFU34A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+setimg CGFU34A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Фемеле Студент]
+text ...
+text Внезапно на её лице появляется эйфорическое выражение.
+text Будто она погрузилась в мечтание, представляя что‑то действительно великолепное.
+text @[Фемеле Студент]
+text ...
+text @[Томоя]
+text (Она так полна возможностей...)
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Сделав несколько шагов, я быстро сокращаю расстояние между нами...
+text ...и беру нож из её руки.
+setvar strS[1001] = "CGFU17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25A.aac
+text @[Фемеле Студент]
+text Ах!
+text @[Томоя]
+text Не бойся, я верну его.
+text @[Томоя]
+text Разве не немного опасно пользоваться таким ножом?
+text Теперь, когда я ближе, я вижу повязку, покрывающую одну из её рук.
+text @[Фемеле Студент]
+text ...
+text По её интенсивному взгляду я понимаю, что она хочет вернуть нож.
+text @[Томоя]
+text Знаешь, тебе стоит перестать пользоваться этим предметом.
+setvar strS[1001] = "CGFU19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25B.aac
+text @[Фемеле Студент]
+text ...Что?
+text @[Томоя]
+text Твоя рука. Я вижу, она в беспорядке. Стоит ли резьба по дереву того, чтобы так себя ранить?
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25C.aac
+text text @[Фемеле Студент]
+text Это личное... Это тебя не касается!
+sound 25D.aac
+text text @[Фемеле Студент]
+text Верни её.
+text text @[Томоя]
+text Разве твоя рука не болит?
+sound 25E.aac
+text text @[Фемеле Студент]
+text Нет.
+text text @[Томоя]
+text Лжец.
+sound 25F.aac
+text text @[Фемеле Студент]
+text Это... просто предосторожность.
+text text @[Томоя]
+text Тогда пожалуй, пожми мне руку!
+sound 25G.aac
+text text @[Фемеле Студент]
+text Ладно.
+text Я приложил немного силы к захвату.
+setvar strS[1001] = "CGFU31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25H.aac
+text text @[Фемеле Студент]
+text Эх...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text В мгновение ока она оттолкнула меня, и расстояние между нами вернулось к тому, что было до того, как я взял нож.
+text Она теперь присела в противоположном углу.
+text text @[Томоя]
+text (Похоже, это действительно больно…)
+text Проходит несколько мгновений…
+setvar strS[1001] = "CGFU17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25I.aac
+text text @[Фемеле Студент]
+text Это не болело.
+text На грани слёз, она снова встала передо мной.
+sound 25J.aac
+text text @[Фемеле Студент]
+text Верни её.
+text текст @[Томоя]
+text текст Можно ли снова пожать руки?
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25K.aac
+text текст @[Фемеле Студент]
+text текст Нет.
+text текст @[Томоя]
+text текст Почему?
+sound 25L.aac
+text текст @[Фемеле Студент]
+text текст Мы уже пожали руки один раз, так что этого достаточно. Пожатие руки — не то, что делают более одного раза за один раз.
+text текст @[Томоя]
+text текст Хорошо, это логично.
+text текст @[Томоя]
+text текст В таком случае, как насчёт пятёрки?
+setvar strS[1001] = "CGFU19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25M.aac
+text текст @[Фемеле Студент]
+text текст Пятёрка?
+text текст @[Томоя]
+text текст Знаешь, как в спорте — когда игрок набирает очко или что‑то в этом роде, его товарищ поднимает руку и они хлопают её в воздухе.
+sound 25N.aac
+text текст @[Фемеле Студент]
+text текст Мы не набрали ни одного очка.
+text текст @[Томоя]
+text текст Хорошо, тогда будем делать вид, что мы набрали.
+text текст @[Томоя]
+text текст Ладно, поехали.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text текст Я неуклюже принимаю позу броска со свободного броска и бросаю мяч в воздухе к воображаемой корзине.
+text текст @[Томоя]
+text текст И... всё хорошо!
+text текст @[Томоя]
+text текст Давай, подними руку.
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25O.aac
+text текст @[Фемеле Студент]
+text текст Хорошо.
+text текст *Хлопок*
+text text Это не совсем хлопок, а скорее прямой удар, в самом деле.
+setvar strS[1001] = "CGFU31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25P.aac
+text text @[Женский Студент]
+text text Ух...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text text Опять она отталкивает меня и бежит в противоположный угол.
+text text @[Томоя]
+text text (Это должно было причинить боль больше, чем рукопожатие... Мы буквально ударяли друг друга по руке...)
+text text Прошло несколько мгновений...
+setvar strS[1001] = "CGFU17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25Q.aac
+text text @[Женский Студент]
+text text Это не причинило боли.
+text text Она стояла передо мной с слезами на лице.
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25R.aac
+text text @[Женский Студент]
+text text Верни это.
+text text @[Томоя]
+text text В отличие от рукопожатия, мы можем хлопнуть друг друга сколько угодно раз.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text text @[Томоя]
+text text И... это внутри!
+text text @[Томоя]
+text text Теперь подними руку.
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25S.aac
+text text @[Женский Студент]
+text text Ладно.
+text text *Хлоп!*
+setvar strS[1001] = "CGFU31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25T.aac
+text text @[Женский Студент]
+text text Ух...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text text Она снова это делает.
+text text @[Томоя]
+text text Вот почему я тебе говорил, перестань резать, пока твоя рука полностью не заживет.
+text text Я положил нож в карман.
+setvar strS[1001] = "CGFU17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25U.aac
+text text @[Женский Студент]
+text text Верни это.
+text text Она просто не сдастся.
+if intF[3] == 1
+	goto s8
+fi
+goto 8
+label s8
+text текст @[Томоя]
+text текст Что, если кто-то пытается спокойно наслаждаться своими клубными занятиями поблизости? Если что‑то случится с тобой здесь, ты понимаешь, сколько проблем это может вызвать у них?
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25V.aac
+text текст @[Женский Студент]
+text текст Здесь не должно быть никого вокруг.
+text текст @[Томоя]
+text текст Приближается сезон клубов. Люди начнут использовать комнаты здесь.
+text текст @[Томоя]
+text текст Вот почему тебе стоит быть терпеливой, пока твоя травма заживет.
+text текст @[Томоя]
+text текст Кроме того, ты не сможешь сделать достойную резьбу, если рука в таком состоянии, верно?
+goto 9
+label 8
+if intF[3] == 0
+	goto s9
+fi
+goto 9
+label s9
+text текст @[Томоя]
+text текст Будь терпеливой, пока твоя рука не заживет.
+text текст @[Томоя]
+text текст Ты не можешь ничего хорошего сделать с такой травмой, верно?
+label 9
+text текст @[Томоя]
+text текст Я не знаю, почему ты так сильно себя напрягаешь, но было бы лучше, если конечный продукт будет в идеальном состоянии, верно?
+setvar strS[1001] = "CGFU32"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU32.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25W.aac
+text текст @[Женский Студент]
+text текст Но…
+sound 25X.aac
+text текст @[Женский Студент]
+text текст У нас недостаточно времени, чтобы дождаться заживления.
+text текст @[Томоя]
+text текст Учитель, который дал тебе это задание, должен быть настоящим тираном.
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 25Y.aac
+text текст @[Женский Студент]
+text текст Нет, это личный проект.
+text текст @[Томоя]
+text текст Тогда проблем нет. Просто отдохни руку немного.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text текст С этими словами я покидаю класс.
+music ~
+setvar strS[1000] = "BG020"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s10
+fi
+goto 10
+label s10
+setvar strS[1000] = ""
+label 10
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM14.mp3
+text текст Из коридора я оглядываюсь в класс. Она всё ещё стоит, безысходно смотрит на своё незавершённое произведение искусства.
+text текст Её слёзы почти готовы вырваться.
+text текст @[Томоя]
+text (Может, это было немного слишком жестко...?)
+text @[Томоя]
+text (Только идиот попробовал бы резать такой рукой...)
+text @[Томоя]
+text (Тебе стоит лучше заботиться о своём теле...)
+text Переработка травмы может привести к постоянному повреждению, о котором ты пожалеешь всю оставшуюся жизнь.
+text Я понимаю это лучше всех.
+text @[Томоя]
+text Тск...
+if intF[3] == 1
+	goto s11
+fi
+goto 11
+label s11
+text Повернув плечо, я смотрю в окно.
+text Естественно, мой взгляд постепенно опускается вниз... И вот она.
+label 11
+setvar intF[130] = 1
+goto 14
+label 12
+if intF[1089] == 0
+	goto s12
+fi
+goto 14
+label s12
+text Она выглядит испуганной, так что, может, лучше оставить её в покое.
+text @[Томоя]
+text Извини, что испугал. Сейчас уйду.
+text Оставив эти слова, я выхожу из класса.
+music ~
+setvar strS[1000] = "BG020"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s13
+fi
+goto 13
+label s13
+setvar strS[1000] = ""
+label 13
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+if intF[3] == 1
+	goto s14
+fi
+goto 14
+label s14
+music BGM14.mp3
+text А теперь что мне делать...
+text Я смотрю в окно.
+text Естественно, мой взгляд постепенно опускается вниз... И вот она.
+label 14
+setvar intF[129] = 1
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
