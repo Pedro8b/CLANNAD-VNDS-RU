@@ -1,0 +1,316 @@
+if 0 == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1000] = "KURO"
+goto 3
+label 1
+if 0 == 1
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = "SIRO"
+goto 3
+label 2
+setvar strS[1000] = "KURO"
+label 3
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar intF[1112] = 0
+if intF[314] == 0
+	goto s2
+fi
+goto 5
+label s2
+setvar strS[1000] = "BG010"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 4
+label s3
+setvar strS[1000] = ""
+label 4
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+goto 7
+label 5
+if intF[314] == 1
+	goto s4
+fi
+goto 7
+label s4
+setvar strS[1000] = "BG010Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s5
+fi
+goto 6
+label s5
+setvar strS[1000] = ""
+label 6
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+label 7
+music BGM01.mp3
+if intF[512] == 1
+	goto s6
+fi
+goto 8
+label s6
+text В конце концов я возвращаюсь в свой дом.
+text Как всегда, здесь никого нет.
+goto 9
+label 8
+if intF[512] == 0
+	goto s7
+fi
+goto 9
+label s7
+text Я иду по коридору и захожу внутрь. Как всегда, здесь никого нет.
+label 9
+text В этом пустынном доме.
+text Этот дом, лишённый какой‑либо теплоты.
+text Этот неуютный дом... принадлежащий другому человеку.
+text Я впадаю в депрессию.
+text Я стараюсь не думать об этом.
+text У меня нет того, что называют родителями.
+text У меня нет семьи и ничего другого.
+text И я буду жить, учитывая это.
+if 0 == 0
+	goto s8
+fi
+goto 10
+label s8
+setvar strS[1000] = "KURO"
+goto 12
+label 10
+if 0 == 1
+	goto s9
+fi
+goto 11
+label s9
+setvar strS[1000] = "SIRO"
+goto 12
+label 11
+setvar strS[1000] = "KURO"
+label 12
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+if intF[314] == 0
+	goto s10
+fi
+goto 14
+label s10
+setvar strS[1000] = "BG009"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s11
+fi
+goto 13
+label s11
+setvar strS[1000] = ""
+label 13
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+goto 16
+label 14
+if intF[314] == 1
+	goto s12
+fi
+goto 16
+label s12
+setvar strS[1000] = "BG009Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s13
+fi
+goto 15
+label s13
+setvar strS[1000] = ""
+label 15
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+label 16
+text Но в таком случае, мне интересно…
+text Останусь ли я без семьи и во взрослом возрасте?
+text Интересно, каким человеком я тогда буду.
+text ......
+text Ах, просто представлять это раздражает.
+text Я не хочу брать на себя какую‑либо ответственность.
+text Хочу продолжать жить беззаботно, как сейчас.
+text Мне бы не помешало, даже если бы я провёл всю жизнь в одиночестве.
+if intF[512] == 1
+	goto s14
+fi
+if intF[513] == 1
+	goto s14
+fi
+goto 17
+label s14
+text Внезапно в памяти появляется лицо Юкине.
+text Однако вскоре оно исчезает.
+goto 19
+label 17
+if intF[307] == 1
+	goto s15
+fi
+goto 18
+label s15
+text Внезапно в памяти появляется лицо Фуджибаяши.
+text Однако вскоре оно исчезает.
+text Хотя Кё всё делал, чтобы собрать нас вместе…
+label 18
+if intF[321] == 1
+	goto s16
+fi
+goto 19
+label s16
+text Есть и такие отношения, как у Фуджибаяши и Каппэй... Они были так близки, но в конце концов отдалились…
+text Полагаю…
+text ...Возможно, было правильно, что они разошлись…
+label 19
+text @[Томоя]
+text (Стать такой семьёй было бы ужасно…)
+if intF[512] == 0
+	if intF[513] == 0
+		goto s17
+	fi
+fi
+goto 20
+label s17
+text Возможно, я устал. Пока я переодеваюсь, меня охватывает усталость.
+goto 21
+label 20
+if intF[512] == 1
+	goto s18
+fi
+if intF[513] == 1
+	goto s18
+fi
+goto 21
+label s18
+text Maybe I'm tired. Fatigue suddenly strikes me.
+label 21
+text I just flop myself onto the bed.
+text @[Tomoya]
+text I wish everything could be different when I wake up next...
+text But I know.
+text Nothing new will ever happen. Nothing will ever change.
+music ~
+text And neither will the place I'm moving toward.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s19
+fi
+goto 22
+label s19
+setvar strS[1000] = ""
+label 22
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "SIRO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s20
+fi
+goto 23
+label s20
+setvar strS[1000] = ""
+label 23
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM26A.mp3
+text The world is covered in white...
+text ...
+text Snow...
+setvar strS[1000] = "BG300"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s21
+fi
+goto 24
+label s21
+setvar strS[1000] = ""
+label 24
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Yes, it's snow.
+text Even now, it continues to fall, coating me in white.
+text The hand I am holding is pure white.
+text I wasn't alone.
+text I wipe away the snow on her face.
+text Her profile, sleeping peacefully, appears before me.
+text Yes...
+text This girl and I... were always together.
+text Here in this world.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s22
+fi
+goto 25
+label s22
+setvar strS[1000] = ""
+label 25
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music ~
+text This empty, sorrowful world.
+delay 120
+delay 120
+cleartext
+jump main.scr
