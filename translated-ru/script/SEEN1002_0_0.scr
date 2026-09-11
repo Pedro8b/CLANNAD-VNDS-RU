@@ -1,0 +1,705 @@
+choice Time for a prank|Keep waiting
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s0
+fi
+goto 16
+label s0
+text text @What kind of prank?
+setvar strS[1011] = "Make her drink juice with her nose       "
+setvar strS[1012] = "Put her around somewhere                 "
+setvar strS[1013] = "Switch the person she's talking to       "
+setvar strS[1014] = "Switch the carving she's holding         "
+if intF[100] == 0
+	setvar strS[1011] + "Lv1"
+fi
+if intF[100] == 1
+	setvar strS[1011] + "Lv2"
+fi
+if intF[100] == 2
+	setvar strS[1011] + "\x1b[33;1mMaster"
+fi
+if intF[101] == 0
+	setvar strS[1012] + "Lv1"
+fi
+if intF[101] == 1
+	setvar strS[1012] + "Lv2"
+fi
+if intF[101] == 2
+	setvar strS[1012] + "\x1b[33;1mMaster"
+fi
+if intF[103] == 0
+	setvar strS[1013] + "Lv1"
+fi
+if intF[103] == 1
+	setvar strS[1013] + "Lv2"
+fi
+if intF[103] == 2
+	setvar strS[1013] + "\x1b[33;1mMaster"
+fi
+if intF[104] == 0
+	setvar strS[1014] + "Lv1"
+fi
+if intF[104] == 1
+	setvar strS[1014] + "Lv2"
+fi
+if intF[104] == 2
+	setvar strS[1014] + "\x1b[33;1mMaster"
+fi
+choice {$strS[1011]}|{$strS[1012]}
+setvar intF[1089] = selected
+sound 01.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s1
+fi
+goto 14
+label s1
+if intF[100] == 1
+	goto s2
+fi
+goto 7
+label s2
+text text @[Томоя]
+text text (Да, я действительно провалился вчера... Нужно заставить её выпить это сегодня.)
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 1
+label s3
+setvar strS[1000] = ""
+label 1
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text text Я мчусь к автомату в школьной столовой, чтобы купить сок и вернуться.
+if intF[11] == 1
+	goto s4
+fi
+goto 3
+label s4
+setvar strS[1000] = "BG017Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s5
+fi
+goto 2
+label s5
+setvar strS[1000] = ""
+label 2
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+goto 5
+label 3
+if intF[11] == 0
+	goto s6
+fi
+goto 5
+label s6
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s7
+fi
+goto 4
+label s7
+setvar strS[1000] = ""
+label 4
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+label 5
+setvar strS[1001] = "CGFU34A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU34A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text text Фуко всё ещё блуждает в своём мире снов.
+text text Я вставляю верхнюю часть трубочки ей в нос.
+text text @[Томоя]
+text text (Ладно... Я собираюсь это сделать...)
+text text @[Томоя]
+text text Ха!
+text text Я готовлюсь и сжимаю руку, которой держу пакетик с соком.
+text text *Pew*
+setvar strS[1001] = "CGFU31A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU31A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1LR.aac
+text text @[Фуко]
+text text Ммм─!
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text text Она приходит в себя. Я отскакиваю назад, чтобы создать дистанцию, и принимаю спокойное выражение.
+text text Посмотрим... как всё получится...
+setvar strS[1001] = "CGFU17A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1LS.aac
+text text @[Фуко]
+text text Нос снова ощущается странно!
+setvar strS[1001] = "CGFU31A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU31A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1LT.aac
+text text @[Фуко]
+text text *Ppfffff* *Ppfffff*
+text text Она сморкает нос, как в прошлый раз.
+setvar strS[1001] = "CGFU30A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU30A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1LU.aac
+text text @[Фуко]
+text text Ммм, как будто чешется, но ничего не выходит.
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1LV.aac
+text text @[Фуко]
+text text И почему-то горло Фуко влажное.
+text text ...Я сделал это... Я заставил её выпить!
+delay 60
+sound F.aac
+text text @You have mastered the "Make Fuko drink juice with her nose" skill!
+delay 312
+setvar intF[124] + 1
+if intF[124] == 1
+	goto s8
+fi
+goto 6
+label s8
+text text ...Я что, глупый или что-то в этом роде?
+label 6
+text text @[Томоя]
+text text Знаешь, тебе стоит перестать так рассеянно смотреть в никуда.
+setvar intF[100] = 2
+goto 13
+label 7
+if intF[100] == 0
+	goto s9
+fi
+goto 13
+label s9
+text text Посмотрим. Не уверен, будет ли интересно, но почему бы и нет?
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s10
+fi
+goto 8
+label s10
+setvar strS[1000] = ""
+label 8
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text text Я бросаюсь к торговому автомату в школьной столовой, покупаю сок и возвращаюсь.
+if intF[11] == 1
+	goto s11
+fi
+goto 10
+label s11
+setvar strS[1000] = "BG017Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s12
+fi
+goto 9
+label s12
+setvar strS[1000] = ""
+label 9
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+goto 12
+label 10
+if intF[11] == 0
+	goto s13
+fi
+goto 12
+label s13
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s14
+fi
+goto 11
+label s14
+setvar strS[1000] = ""
+label 11
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+label 12
+setvar strS[1001] = "CGFU34A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU34A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text text Фуко всё ещё блуждает в своей стране снов.
+text text Я вставляю трубочку из пакетика с соком в её беззащитный нос.
+text text *Sschlurp*
+setvar strS[1001] = "CGFU17A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1LW.aac
+text text @[Фуко]
+text text Вах...
+text text Я приложил к нему слишком большую силу...
+text text Овладев вновь чувствами, Фуко отскакивает на шаг назад.
+text text @[Томоя]
+text text (Чёрт... Я провалился...)
+sound 1LX.aac
+text text @[Фуко]
+text text Нос... ощущается... странно...!
+setvar strS[1001] = "CGFU31A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU31A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1LY.aac
+text text @[Фуко]
+text text *Ppfffff* *Ppfffff*
+text text Она отчаянно сморкает нос.
+text text Ну, всё равно ничего не выйдет.
+text text @[Томоя]
+text text Знаешь, тебе стоит перестать так рассеиваться.
+setvar intF[100] = 1
+label 13
+goto 15
+label 14
+if intF[1089] == 1
+	goto s15
+fi
+goto 15
+label s15
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text text Я хватаю Фуко за плечи и тяну её вперёд шаг за шагом.
+text text Я поворачиваю за угол и оставляю в трансе Фуко в конце узкого коридора. Затем невинно возвращаюсь на своё место в коридоре, чтобы ждать её.
+bgload KURO.jpg 55
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text text @[Томоя]
+text text ...
+text text @[Томоя]
+text text (Это занимает некоторое время...)
+setvar strS[1001] = "CGFU16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGFU16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1LZ.aac
+text text @[Фуко]
+text text Вах!
+text text Очутившись снова в здравом уме, Фуко выбегает из коридора.
+setvar strS[1001] = "CGFU17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1M0.aac
+text text @[Фуко]
+text text Фуко только что была в каком-то странном месте!
+sound 1M1.aac
+text @[Фуко]
+text Была колонка из странно-образных унитазов!
+text @[Томоя]
+text Отлично. Ты что-то новое узнал. Это место, которое ты только что описал, называется мужской туалет.
+sound 1M2.aac
+text @[Фуко]
+text Почему Фуко оказалась в таком месте?!
+text @[Томоя]
+text Как я мог знать? Может, ты просто забрела туда, не осознав.
+setvar strS[1001] = "CGFU30"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU30.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1M3.aac
+text @[Фуко]
+text Так вот как это случилось... Пожалуйста, вмешайся, чтобы такое не повторилось.
+text @[Томоя]
+text Как насчет того, чтобы ты перестала отвлекаться?
+setvar intF[101] = 1
+label 15
+setvar intF[109] = 1
+goto 29
+label 16
+if intF[1089] == 1
+	goto s16
+fi
+goto 29
+label s16
+if intF[102] == 0
+	goto s17
+fi
+goto 17
+label s17
+text ......
+text Я продолжаю ждать.
+text @[Томоя]
+text Эй, ты!
+sound 1M4.aac
+text @[Фуко]
+text ...
+text @[Томоя]
+text Вернись сюда уже!
+sound 1M5.aac
+text @[Фуко]
+text ...
+text @[Томоя]
+text Оооой!
+sound 1M6.aac
+text @[Фуко]
+text ...
+text @[Томоя]
+text Я собираюсь оставить тебя здесь!
+sound 1M7.aac
+text @[Фуко]
+text ...
+setvar strS[1001] = "CGFU21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1M8.aac
+text text @[Фуко]
+text text ...Это вовсе не хвастовство, но идея просто гениальная.
+text text @[Томоя]
+text text Не возобновляй разговор после столького времени!
+setvar strS[1001] = "CGFU19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1M9.aac
+text text @[Фуко]
+text text Да?
+text text @[Томоя]
+text text Можешь перестать так без предупреждения отваливаться?!
+setvar intF[102] = 1
+goto 28
+label 17
+if intF[102] == 1
+	goto s18
+fi
+goto 28
+label s18
+text text Я продолжаю ждать.
+text text ......
+text text ...Это занимает слишком много времени.
+text text Я не могу удержаться от того, чтобы разыгрывать её.
+text text Оставив Фуко позади, я ухожу по коридору.
+bgload KURO.jpg 88
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text text Я поднимаюсь по лестнице на третий этаж и останавливаюсь у окна. Глядя наружу, я впервые по‑настоящему ощущаю эмоциональную связь с пейзажем.
+text text @[Томоя]
+text text Ах, эти птицы летят так свободно в небе. Интересно, не зажимаются ли их крылья в полёте...
+text text ......
+text text Я спускаюсь по лестнице.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s19
+fi
+goto 18
+label s19
+setvar strS[1000] = ""
+label 18
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+if intF[11] == 1
+	goto s20
+fi
+goto 20
+label s20
+setvar strS[1000] = "BG025BY"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s21
+fi
+goto 19
+label s21
+setvar strS[1000] = ""
+label 19
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+goto 22
+label 20
+if intF[11] == 0
+	goto s22
+fi
+goto 22
+label s22
+setvar strS[1000] = "BG025A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s23
+fi
+goto 21
+label s23
+setvar strS[1000] = ""
+label 21
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+label 22
+text text Я неторопливо выбираю нужный напиток в торговом автомате и вкладываю монетки, чтобы купить его.
+text text Мне кажется, что я наконец‑то могу по‑настоящему эмоционально связаться с этим напитком.
+text text @[Томоя]
+text text Ах, один процент фруктового сока. Интересно, добавляют его в напитки просто потому, что он есть...
+text text ......
+text text Я бросаю пустой бумажный пакет в мусорное ведро и выхожу из школьной столовой.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s24
+fi
+goto 23
+label s24
+setvar strS[1000] = ""
+label 23
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text text Я возвращаюсь к Фуко.
+if intF[11] == 1
+	goto s25
+fi
+goto 25
+label s25
+setvar strS[1000] = "BG017Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s26
+fi
+goto 24
+label s26
+setvar strS[1000] = ""
+label 24
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+goto 27
+label 25
+if intF[11] == 0
+	goto s27
+fi
+goto 27
+label s27
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s28
+fi
+goto 26
+label s28
+setvar strS[1000] = ""
+label 26
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+label 27
+setvar strS[1001] = "CGFU34"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU34.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1MA.aac
+text text @[Фуко]
+text text ...
+text text @[Томоя]
+text text УОХХХХХХХХХХХ─!
+text text @[Томоя]
+text text Прекрати уже!!
+text text @[Томоя]
+text text Или ты хочешь, чтобы я разыграл тебя?!
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1MB.aac
+text text @[Фуко]
+text text Ха!
+text text Она наконец‑то снова сообразила.
+sound 1MC.aac
+text text @[Фуко]
+text text Почему ты так взволнован? Пожалуйста, успокойся.
+text text @[Томоя]
+text text Я уже более чем достаточно расслабился, пока ты был в тумане!
+text text @[Томоя]
+text text Но даже после всего этого времени ты всё ещё в шоке! Я не могу сдержать свою ярость!
+setvar intF[102] = 2
+label 28
+setvar intF[106] = 1
+label 29
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
