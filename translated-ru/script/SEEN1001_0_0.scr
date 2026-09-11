@@ -1,0 +1,121 @@
+choice I'm bored; I should try to make her drink juice through her nose|Keep waiting
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar intF[108] = 1
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text text Давай посмотрим. Не уверен, будет ли интересно, но почему бы и нет?
+text text Я вставляю соломинку из полупустой упаковки сока в ноздрю Фуко.
+text text *Sschlurp*
+setvar strS[1001] = "CGFU17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1LI.aac
+text text @[Фуко]
+text text Вах...
+text text Я приложил к ней слишком большую силу...
+text text Восстановив сознание, Фуко отшагивает назад.
+sound 1LJ.aac
+text text @[Фуко]
+text text Нос... чувствует... странно!
+setvar strS[1001] = "CGFU31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1LK.aac
+text text @[Фуко]
+text text *Ppfffff* *Ppfffff*
+text text Она отчаянно сморкает нос.
+text text Ну, однако ничего не выйдет.
+text text @[Томоя]
+text text Ты просто воображаешь. Не волнуйся.
+text text Похоже, я могу делать всё, что захочу, когда она в таком состоянии.
+text text Что-то, чего можно ждать в следующий раз.
+setvar intF[100] = 1
+goto 2
+label 1
+if intF[1089] == 1
+	goto s1
+fi
+goto 2
+label s1
+text text .....
+text text Я продолжаю ждать.
+text text @[Томоя]
+text text Эй, ты!
+sound 1LL.aac
+text text @[Фуко]
+text text ...
+text text @[Томоя]
+text text Вернись уже сюда!
+sound 1LM.aac
+text text @[Фуко]
+text text ...
+text text @[Томоя]
+text text Оооой!
+sound 1LN.aac
+text text @[Фуко]
+text ...
+text @[Томоя]
+text Я оставлю тебя здесь!
+sound 1LO.aac
+text @[Фуко]
+text ...
+setvar strS[1001] = "CGFU20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1LP.aac
+text @[Фуко]
+text На самом деле, это могло бы быть намного милее, но пока это всё, что у нас есть.
+text @[Томоя]
+text Не просто возобновляй разговор после столького времени!
+setvar strS[1001] = "CGFU15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 1LQ.aac
+text @[Фуко]
+text Да?
+text По‑видимому, она даже не осознаёт, что мечтает.
+text Это значит, что я могу сделать с ней всё, что захочу, когда она в таком состоянии.
+text Если она снова будет мечтать передо мной, я заставлю её пережить то, чего она никогда не забудет.
+setvar intF[102] = 1
+label 2
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
