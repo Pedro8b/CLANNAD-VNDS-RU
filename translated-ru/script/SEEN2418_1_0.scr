@@ -1,1 +1,807 @@
-��$
+text По коридору несколько студентов издают пронзительный шум.
+text @[Томоя]
+text Чувак, уже заткнись...
+music ~
+text Я пытаюсь пройти мимо них, когда...
+text Кто‑то хватает меня за руку.
+music BGM09A.mp3
+setvar strS[1001] = "CGTM13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5M7.aac
+text @[Томойо]
+text Эй, можешь мне здесь помочь?
+text Это Томойо.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Два студента хватают её другую руку.
+sound 5M8.aac
+text @[Студентка]
+text Давай, вступай в дзюдо‑клуб!
+sound 5M9.aac
+text @[Студент]
+text Я, как капитан мужского дзюдо‑клуба, тоже хочу пригласить тебя присоединиться.
+text Её снова уговаривают вступить в дзюдо‑клуб. К тому же их стало больше.
+setvar strS[1001] = "CGTM14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5MA.aac
+text @[Томойо]
+text Эти парни действительно настойчивы.
+choice Help her|Shake off her hand
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s10
+fi
+goto 11
+label s10
+goto 12
+label 11
+if intF[1089] == 1
+	goto s11
+fi
+goto 12
+label s11
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я изо всех сил трясу своей рукой, пытаясь заставить её отпустить.
+setvar strS[1001] = "CGTM11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text ...Но она не отходит. Томойо всё ещё держится за мою руку.
+text *Тряска*
+text ...*Тряска*
+text ......*Тряска*
+sound 5MB.aac
+text @[Томойо]
+text Что ты делаешь?
+text @[Томоя]
+text Пытаюсь избавиться от захвата.
+sound 5MC.aac
+text @[Томойо]
+text А, так оно значит...
+setvar strS[1001] = "CGTM15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5MD.aac
+text @[Томойо]
+text То есть, что, ты не поможешь мне?
+text @[Томоя]
+text Да. Тебе не стоит полагаться на других. Ты справишься с этим сам, как бы то ни было...
+sound 5ME.aac
+text @[Tomoyo]
+text Это капитаны мужского и женского дзюдо-клубов, понимаешь?
+text @[Tomoya]
+text Тогда тебе всё будет в порядке.
+text @[Tomoya]
+text Так… дай мне уйти, ладно?
+setvar strS[1001] = "CGTM30"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM30.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5MF.aac
+text @[Tomoyo]
+text Я думаю, ты меня неправильно понимаешь.
+text Нет, просто у тебя нет самосознания.
+text Конечно, я не произношу это вслух.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5MG.aac
+text @[Female Captain]
+text Ничего страшного, если сначала просто заглянешь к нам на минутку, чтобы увидеть, как тебе это понравится!
+text Когда я отступаю, они сразу же возобновляют своё принуждение.
+sound 5MH.aac
+text @[Male Captain]
+text Просто попробуй на один день. Это всё, чего мы просим!
+setvar strS[1001] = "CGTM31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5MI.aac
+text @[Tomoyo]
+text Ты говоришь правду, верно…?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text И вот так они её забирают.
+text Интересно, начнёт ли она участвовать в дзюдо-клубе уже завтра…
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+label 12
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Tomoya]
+text Вам уже надо замолчать.
+text @[Male Student]
+text ...
+text Парень смотрит мне в лицо.
+text Я стою и пристально смотрю на него.
+text В момент, когда он сдаётся и отворачивает взгляд…
+sound 5MJ.aac
+text @[Male Student]
+text Сакагами-сан, давай поедем куда-нибудь.
+text Он пытается схватить Томою и уйти.
+text @[Томоя]
+text Пойдём, Томойо.
+text Я зову её сзади.
+text Он останавливается.
+text @[Томоя]
+text Пойдём, Томойо.
+text Я медленно повторяю это ещё раз.
+setvar strS[1001] = "CGTM19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5MK.aac
+text @[Томойо]
+text Ах...
+setvar strS[1001] = "CGTM20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5ML.aac
+text @[Томойо]
+text Хорошо.
+text Томойо кивает и...
+text Рука мальчика‑студента, которая держалась за неё, слабо опускается.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я поворачиваюсь к ним спиной и начинаю идти.
+text Томойо быстро подбегает ко мне и следует за мной.
+setvar strS[1001] = "CGTM10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5MM.aac
+text @[Томойо]
+text Молодец!
+sound 5MN.aac
+text @[Томойо]
+text Когда нужно что‑то сделать, ты это делаешь.
+sound 5MO.aac
+text @[Томойо]
+text Ты же разговаривала с капитаном дзюдо‑клуба, знаешь?
+text @[Томоя]
+text Тем не менее, я всё ещё его старшеклассник.
+sound 5MP.aac
+text @[Томойо]
+text О, да, я забыла.
+text @[Томоя]
+text Кстати, я тоже твой старшеклассник.
+setvar strS[1001] = "CGTM21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5MQ.aac
+text @[Томойо]
+text Да, наверное.
+text Она вовсе не ведёт себя сдержанно.
+text @[Томоя]
+text Хотя... тебе лучше разъяснить это недоразумение позже.
+setvar strS[1001] = "CGTM11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5MR.aac
+text @[Томойо]
+text Хм? Что за недоразумение?
+text @[Томоя]
+text Тебе, вероятно, стоит хотя бы примерно понять, как эти люди неверно интерпретировали наши отношения.
+sound 5MS.aac
+text @[Томойо]
+text Ты говоришь об этом прямо сейчас?
+sound 5MT.aac
+text @[Томойо]
+text Разве мы не всегда видим друг друга во время перерыва?
+text @[Томоя]
+text Сунохара с нами во время перерыва.
+text @[Томоя]
+text Сейчас нас двое, и хуже того, кажется, что мы собираемся куда-нибудь пойти.
+setvar strS[1001] = "CGTM20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5MU.aac
+text @[Томойо]
+text А, понял.
+sound 5MV.aac
+text @[Томойо]
+text То есть ты пытаешься сказать, что сейчас выглядит так, будто мы встречаемся, верно?
+text ...Ты действительно медленный, не так ли?
+setvar strS[1001] = "CGTM11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5MW.aac
+text @[Томойо]
+text Тебе это беспокоит?
+text @[Томоя]
+text Э? Я?
+sound 5MX.aac
+text @[Томойо]
+text Да.
+text @[Томоя]
+text Я сейчас не встречаюсь с кем-либо, так что это не так важно. Но, как я уже говорил, разве твоя ситуация не отличается?
+setvar strS[1001] = "CGTM21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5MY.aac
+text @[Томойо]
+text На самом деле, я тоже никого не встречаюсь.
+text @[Томоя]
+text Нет, я имею в виду, ты же собираешься вступить в студенческий совет?
+setvar strS[1001] = "CGTM11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5MZ.aac
+text @[Томойо]
+text Да.
+text @[Томоя]
+text В таком случае тебе бы не хотелось, чтобы сейчас вокруг тебя ходили странные слухи, так?
+sound 5N0.aac
+text @[Томойо]
+text Зачем такие слухи вообще важны?
+text @[Томоя]
+text Понимаю. Ну, если ты так считаешь, делай, что хочешь.
+setvar strS[1001] = "CGTM15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5N1.aac
+text @[Томойо]
+text Почему ты говоришь так холодно?
+sound 5N2.aac
+text @[Томойо]
+text Тебя это действительно беспокоит, не так ли?
+setvar strS[1001] = "CGTM34"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM34.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5N3.aac
+text @[Томойо]
+text В таком случае я вернусь и скажу им, что всё не так.
+text Она останавливается и разворачивается.
+text @[Томоя]
+text Говорю тебе, меня это не волнует!
+text @[Томоя]
+text Даже если слухи разойдутся, они всё равно скоро исчезнут.
+setvar strS[1001] = "CGTM15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5N4.aac
+text @[Томойо]
+text ...Ты действительно так считаешь?
+text Она спрашивает, лишь повернув голову.
+text @[Томоя]
+text Я действительно так считаю.
+setvar strS[1001] = "CGTM10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5N5.aac
+text @[Томойо]
+text Понятно.
+text Наконец удовлетворённая, она снова оборачивается ко мне.
+sound 5N6.aac
+text @[Томойо]
+text Я тоже так думаю. Если ты будешь постоянно беспокоиться о каждой мелочи, то только измотаешь себя.
+setvar strS[1001] = "CGTM21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5N7.aac
+text @[Tomoyo]
+text Мы довольно хорошо ладим.
+text @[Tomoya]
+text (Мы...?)
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Мы снова начинаем идти.
+if intF[3] == 1
+	goto s12
+fi
+goto 13
+label s12
+text @[Tomoya]
+text Итак, насколько далеко ты планируешь следовать за мной?
+setvar strS[1001] = "CGTM11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5N8.aac
+text @[Tomoyo]
+text Ты собираешься домой, верно?
+text @[Tomoya]
+text У меня всё ещё есть дела где‑то.
+sound 5N9.aac
+text @[Tomoyo]
+text О, правда? Я думала, ты собираешься домой.
+sound 5NA.aac
+text @[Tomoyo]
+text В чём твои дела?
+text @[Tomoya]
+text Мне действительно не нужно тебе это говорить, правда?
+setvar strS[1001] = "CGTM10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5NB.aac
+text @[Tomoyo]
+text Да, это правда. Тебе не нужно.
+sound 5NC.aac
+text @[Tomoyo]
+text Это просто...
+sound 5ND.aac
+text @[Tomoyo]
+text Те ребята из прошлого могут снова появиться, как только ты уйдёшь, всё.
+sound 5NE.aac
+text @[Tomoyo]
+text Я просто подумала, что мы могли бы идти домой вместе.
+sound 5NF.aac
+text @[Tomoyo]
+text Пожалуйста, защищай меня, выглядя невероятно круто, как раньше.
+text @[Tomoya]
+text Да, это не звучит слишком... Подождите секунду.
+text @[Tomoya]
+text Разве это не значит, что мне придётся постоянно быть рядом с тобой отныне?
+setvar strS[1001] = "CGTM13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5NG.aac
+text @[Томойо]
+text Разве ты не приходишь ко мне каждый день на обед? Это будет то же самое.
+text @[Томоя]
+text Это было решением самого Сунохары. И я не знаю, когда он перестанет это делать.
+setvar strS[1001] = "CGTM11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5NH.aac
+text @[Томойо]
+text А… Так вот как было?
+sound 5NI.aac
+text @[Томойо]
+text Тогда я попробую избавиться от них сама.
+text @[Томоя]
+text Хотя, я считаю, что тот парень уже достаточно доставил тебе проблем.
+sound 5NJ.aac
+text @[Томойо]
+text Ты имеешь в виду того идиота?
+text @[Томоя]
+text Да.
+text Было бы довольно лицемерно с моей стороны просто бездействовать, пока Сунохара пытается ухаживать за ней, одновременно говоря, что меня беспокоит, что слухи о нас могут сорвать шанс Томойо попасть в студенческий совет.
+text @[Томоя]
+text Похоже, пришло время заставить его остановиться.
+setvar strS[1001] = "CGTM18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5NK.aac
+text @[Томойо]
+text Ты…
+sound 5NL.aac
+text @[Томойо]
+text Ты ведь всё время просто следовал за мной, не так ли?
+text Она говорит, ошарашенно.
+sound 5NM.aac
+text @[Томойо]
+text Ты действительно не так уж плохой человек, как себя представляешь, верно?
+text @[Томоя]
+text То, что я говорил о себе, — лишь то, как меня видят другие.
+setvar strS[1001] = "CGTM11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5NN.aac
+text @[Томойо]
+text Понятно.
+sound 5NO.aac
+text @[Томойо]
+text Итак, ты, в конце концов, не плохой человек.
+text @[Томоя]
+text Однако это не обязательно значит, что я тоже хороший человек.
+setvar strS[1001] = "CGTM20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5NP.aac
+text @[Томойо]
+text Да, думаю так.
+sound 5NQ.aac
+text @[Томойо]
+text Тогда я отправляюсь домой.
+text @[Томоя]
+text Можно ли нам не идти домой вместе?
+sound 5NR.aac
+text @[Томойо]
+text Да, не волнуйся. Я просто побежу домой.
+text @[Томоя]
+text Ладно, увидимся позже. Делай всё возможное.
+sound 5NS.aac
+text @[Томойо]
+text Да. Спасибо за сегодня.
+text @[Томоя]
+text Да.
+goto 16
+label 13
+if intF[3] == 0
+	goto s13
+fi
+goto 16
+label s13
+setvar strS[1000] = "BG014"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s14
+fi
+goto 14
+label s14
+setvar strS[1000] = ""
+label 14
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Томоя]
+text Итак, как далеко ты собираешься следовать за мной?
+setvar strS[1001] = "CGTM11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5NT.aac
+text @[Томойо]
+text Ты идёшь домой, верно?
+text @[Томоя]
+text Да.
+sound 5NU.aac
+text @[Томойо]
+text Мне тоже. Тебе не будет сложно, если мы пойдем вместе обратно?
+sound 5NV.aac
+text @[Томойо]
+text Те ребята, которые были раньше, могут снова появиться, как только ты уйдёшь, в конце концов.
+text @[Томоя]
+text Верно...
+setvar strS[1001] = "CGTM20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5NW.aac
+text @[Томойо]
+text Пожалуйста, защищай меня, выглядя невероятно круто, как раньше.
+text @[Томоя]
+text Да, это звучит не совсем... Подожди секунду.
+text @[Томоя]
+text Разве это не значит, что мне придется постоянно находиться рядом с тобой с этого момента?
+setvar strS[1001] = "CGTM13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5NX.aac
+text @[Томиё]
+text Разве ты не приходишь ко мне каждый день за обедом? Это будет то же самое.
+text @[Томоя]
+text Это было решение Сунохары, сделанное им полностью самостоятельно. И я не знаю, когда он прекратит это делать.
+setvar strS[1001] = "CGTM11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5NY.aac
+text @[Томиё]
+text А... Так было?
+sound 5NZ.aac
+text @[Томиё]
+text Тогда я попробую избавиться от них сама.
+text @[Томоя]
+text Но, я считаю, что этот парень уже доставил тебе достаточно хлопот.
+sound 5O0.aac
+text @[Томиё]
+text Ты имеешь в виду того идиота?
+text @[Томоя]
+text Да.
+text Было бы довольно лицемерно с моей стороны просто стоять в стороне, пока Сунохара пытается заставить её, при этом говоря, что меня беспокоит, как слухи о нас могут подорвать шансы Томойо вступить в школьный совет.
+text @[Томоя]
+text Полагаю, пришло время заставить его прекратить.
+setvar strS[1001] = "CGTM18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5O1.aac
+text @[Томиё]
+text Ты...
+sound 5O2.aac
+text @[Томиё]
+text Ты действительно всё время просто следовал за мной, не так ли?
+text Она говорит, озадаченная.
+sound 5O3.aac
+text @[Томиё]
+text Ты действительно не такой плохой человек, как ты себя представляешь, правда?
+text @[Томоя]
+text То, что я говорил о себе, всего лишь отражает то, как меня воспринимают.
+setvar strS[1001] = "CGTM11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5O4.aac
+text @[Томойо]
+text Понимаю.
+sound 5O5.aac
+text @[Томойо]
+text Так что ты, в итоге, не плохой.
+text @[Томоя]
+text Тем не менее, это не обязательно означает, что я тоже хороший.
+setvar strS[1001] = "CGTM10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5O6.aac
+text @[Томойо]
+text Да, думаю, так.
+setvar strS[1000] = "BG011"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s15
+fi
+goto 15
+label s15
+setvar strS[1000] = ""
+label 15
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGTM10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5O7.aac
+text @[Томойо]
+text Я пойду туда.
+text @[Томоя]
+text Ах, хорошо. Ну тогда...
+sound 5O8.aac
+text @[Томойо]
+text Да. Спасибо за сегодня.
+text @[Томоя]
+text Да.
+label 16
+setvar intF[209] = 1
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
