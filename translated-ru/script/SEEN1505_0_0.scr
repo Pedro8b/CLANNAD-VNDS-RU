@@ -1,1 +1,638 @@
-��$
+setvar intF[1110] = 5
+setvar intF[1112] = 1
+setvar strS[1004] = "SDTA0505"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1004] = ""
+label 1
+bgload SCLAB00.jpg 45
+delay 60
+setimg SCLAP07.png 5 5
+setimg SCLA0505.png 159 160
+delay 120
+if 0 == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = "KURO"
+goto 4
+label 2
+if 0 == 1
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = "SIRO"
+goto 4
+label 3
+setvar strS[1000] = "KURO"
+label 4
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG007"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 5
+label s3
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08C.mp3
+text Когда я зашел, заметил, что Санаэ-сан обслуживает магазин в одиночку.
+text @[Томоя]
+text Привет, Санаэ-сан.
+setvar strS[1001] = "CGSN10E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN10E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 49R.aac
+text @[Санаэ]
+text Добрый день, Оказаки-сан.
+setvar strS[1001] = "CGSN11HE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN11HE.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 49S.aac
+text @[Санаэ]
+text Посмотри на это, пожалуйста.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Санаэ-сан показала мне деревянную морскую звезду, которую держит в руках.
+text Но, в отличие от предыдущих, её конечности длинные и тонкие — гораздо ближе к настоящей морской звезде.
+text Она улучшилась... но реализм делает резьбу довольно странной.
+text @[Томоя]
+text Ты взяла это у Фуко...?
+setvar strS[1001] = "CGSN11HE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN11HE.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 49T.aac
+text @[Санаэ]
+text Нет. Я, Санаэ, сделала это.
+music ~
+text @[Томоя]
+text Э? Не верь мне...
+text Внутри меня поднимается предчувствие.
+setvar strS[1001] = "CGSN12HE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN12HE.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM10.mp3
+sound 49U.aac
+text @[Санаэ]
+text Да. Конечно. Это сделано из хлеба.
+text @[Томоя]
+text Гуах...
+setvar strS[1001] = "CGSN14E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN14E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 49V.aac
+text @[Санаэ]
+text Что ты имеешь в виду под «Гуах»?
+text @[Томоя]
+text Это значит «вполне» на маасайском языке.
+setvar strS[1001] = "CGSN10E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN10E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 49W.aac
+text @[Санаэ]
+text То есть мой хлеб — просто «вполне». Всё ещё есть долгий путь.
+text @[Томоя]
+text Нет, может, тебе не стоит…
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Отвлекаясь от Санаэ-сан, то, что сразу же привлекло моё внимание, заставило меня замолчать на середине предложения.
+text То, что я вижу, —...
+text @[Томоя]
+text В...
+text Много морских звёзд.
+text Разглядывая магазин, я понимаю, что весь хлеб здесь теперь имеет форму морских звёзд.
+text @[Томоя]
+text Гуааа...
+setvar strS[1001] = "CGSN10E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN10E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 49X.aac
+text @[Санаэ]
+text Что ты имеешь в виду под «Гуааа…»? Ты пытаешься сказать «Невероятно качественный хлеб! Как замечательно!»?
+text @[Томоя]
+text Нет, я имел в виду «Куииит…»
+setvar strS[1001] = "CGSN11E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN11E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 49Y.aac
+text @[Санаэ]
+text То есть ты считаешь, что мне надо потрудиться немного сильнее?
+text @[Томоя]
+text Нет, я просто растягивал слово...
+setvar strS[1001] = "CGSN10HE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN10HE.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 49Z.aac
+text @[Санаэ]
+text Пожалуйста, посмотри.
+sound 4A0.aac
+text @[Санаэ]
+text Я попытался превратить как можно больше видов хлеба в морские звёзды. Бобовый хлеб, хлеб с джемом, даже сливочный хлеб.
+text @[Томоя]
+text Ты серьёзно...?
+setvar strS[1001] = "CGSN11HE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN11HE.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 4A1.aac
+text @[Санаэ]
+text Конечно!
+text @[Томоя]
+text (Что ты сделала...? Звёзды Фуку всё ещё можно спутать со звёздами... но эти слишком реалистичны...)
+text @[Томоя]
+text И… где старик?
+text Я нервно задаю свой вопрос.
+setvar strS[1001] = "CGSN15E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN15E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 4A2.aac
+text @[Санаэ]
+text Акио-сан ушёл из магазина сразу после того, как хлеб испекся.
+sound 4A3.aac
+text @[Санаэ]
+text Какими же были его последние слова...?
+setvar strS[1001] = "CGSN21E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN21E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 4A4.aac
+text @[Санаэ]
+text Санаэ, ты самая очаровательная женщина в мире...
+sound 4A5.aac
+text @[Санаэ]
+text @Но...
+delay 75
+text твой хлеб — самый худший─!
+setvar strS[1001] = "CGSN10HE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSN10HE.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 4A6.aac
+text @[Санаэ]
+text ...или так он сказал.
+text @[Томоя]
+text Вот как.
+text Только в этом деле я чувствую к нему сочувствие.
+sound 4A7.aac
+text @[Санаэ]
+text Я плакала до самого недавнего момента. Но когда я поняла, что теперь должна справляться сама, я восстановилась и вернулась к работе.
+setvar strS[1001] = "CGSN11HE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN11HE.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 4A8.aac
+text @[Санаэ]
+text Вот такова история. Хотите попробовать, Оказаки-сан?
+text @[Томоя]
+text Нет, спасибо.
+music ~
+setvar strS[1001] = "CGSN18E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN18E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM16A.mp3
+sound 4A9.aac
+text @[Санаэ]
+text Акио-сан... так что всё равно это невозможно для меня...
+text Она медленно падает на пол, плача.
+text @[Томоя]
+text Удивительно, как быстро ты пришёл в себя.
+music ~
+setvar strS[1001] = "CGSN10E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN10E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08C.mp3
+sound 4AA.aac
+text @[Санаэ]
+text Сейчас мне нужно идти искать Акио-сан.
+text @[Томоя]
+text Понимаю...
+setvar strS[1001] = "CGSN11E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN11E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 4AB.aac
+text @[Санаэ]
+text Оказаки-сан, пожалуйста, наслаждайтесь пребыванием.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Санаэ-сан выходит из магазина.
+text @[Tomoya]
+text (Who is going to take care of the store, then...)
+text I give the bread around the store another look.
+music ~
+text @[Tomoya]
+text (Nah, that won't be necessary...)
+setvar strS[1001] = "CGFU19A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM04A.mp3
+sound 4AC.aac
+text @[Fuko]
+text Ah... Okazaki-san.
+text Fuko's sticking her head through the door to the living room.
+text @[Tomoya]
+text Yo.
+sound 4AD.aac
+text @[Fuko]
+text Where is Sanae-san?
+text @[Tomoya]
+text She just went out to find the old man.
+setvar strS[1001] = "CGFU10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 4AE.aac
+text @[Fuko]
+text Is that so...
+text @[Tomoya]
+text What's wrong?
+sound 4AF.aac
+text @[Fuko]
+text There was a phone call just now.
+text @[Tomoya]
+text Did you take it?
+sound 4AG.aac
+text @[Fuko]
+text Yes.
+text @[Tomoya]
+text What did they say?
+setvar strS[1001] = "CGFU19A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 4AH.aac
+text @[Fuko]
+text A man breathed "Haa, haa.." really roughly.
+text @[Tomoya]
+text And?
+sound 4AI.aac
+text @[Фуко]
+text Потом он всё время повторял: «Я тебя люблю, я тебя люблю…»
+text @[Томоя]
+text Это просто розыгрыш. Этот парень, должно быть, извращенец.
+sound 4AJ.aac
+text @[Фуко]
+text Он ещё сказал: «Но, серьёзно, перестаньте уже с хлебом из морских звёзд». 
+text Это старик!
+sound 4AK.aac
+text @[Фуко]
+text Потом, когда Фуко сказала «Это Фуко», он закричал и повесил трубку.
+text Естественно, учитывая, что он только что признался в любви подруге своей дочери…
+setvar strS[1001] = "CGFU10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 4AL.aac
+text @[Фуко]
+text Так что… Фуко просто хотела спросить у Санаэ‑сан, что значит «хлеб из морских звёзд». 
+text @[Томоя]
+text Ты ищешь вот это.
+setvar strS[1001] = "CGFU15A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU15A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 4AM.aac
+text @[Фуко]
+text Т… Точно ли такое существует?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Она спускается на первый этаж.
+text Затем…
+setvar strS[1001] = "CGFU34A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU34A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 4AN.aac
+text @[Фуко]
+text ...
+text Вуаля… она снова споткнулась.
+text @[Томоя]
+text Фуко~, возвращайся сюда~
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 4AO.aac
+text @[Фуко]
+text Ха!
+text Она возвращается на мгновение…
+setvar strS[1001] = "CGFU34A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+setimg CGFU34A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Фуко]
+text ...
+text …И снова исчезает.
+text Окружённая морскими звёздами.
+music ~
+text @[Томоя]
+text (Э-это должно быть...)
+text ...Барьер, чтобы запечатать Фуко!
+text Каждый раз, когда она возвращается в реальность, морские звёздочки, заполняющие её зрение, возвращают её в мир снов.
+text Из‑за этого Фуко не может сама выбраться из этого барьера.
+text Если старик и Санэ‑сан никогда не вернутся...
+text ...Фуко навечно будет запечатана там.
+if 0 == 0
+	goto s4
+fi
+goto 6
+label s4
+setvar strS[1000] = "KURO"
+goto 8
+label 6
+if 0 == 1
+	goto s5
+fi
+goto 7
+label s5
+setvar strS[1000] = "SIRO"
+goto 8
+label 7
+setvar strS[1000] = "KURO"
+label 8
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+music BGM28.mp3
+setvar intF[1112] = 0
+text И пройдёт сотни лет...
+setvar strS[1000] = "FGFU10"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s6
+fi
+goto 9
+label s6
+setvar strS[1000] = ""
+label 9
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 98
+text Когда полу‑человеческая раса станет достаточно сильной, чтобы завоевать человечество...
+text Путешественник направляется к пекарне Фурукава, лежащей в руинах.
+sound 4AP.aac
+text @[Трэвелер]
+text О, повелитель морских звёздочек в легендах...
+sound 4AQ.aac
+text @[Трэвелер]
+text Пожалуйста, одари человечество своей силой...
+text ...В тот момент, когда барьер будет разрушен, перед человечеством появится существо. Это бог или демон?
+text "Фуко — Последний покоритель морских звёздочек"
+music ~
+setvar intF[1112] = 1
+setvar strS[1000] = "BG007"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s7
+fi
+goto 10
+label s7
+setvar strS[1000] = ""
+label 10
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08A.mp3
+text @[Томоя]
+text Это точно не продастся!
+text Меня утомляет моя собственная способность планировать.
+text Не говоря уже о том, что её единственная атака — ударить голову морской звёздочкой.
+text @[Томоя]
+text (Даже обычный человек сильнее её...)
+text Я отбрасываю свои глупые фантазии и мчусь к Фуко, чтобы разрушить барьер, запирающий её.
+text @[Томоя]
+text Йо.
+setvar strS[1001] = "CGFU19A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 4AR.aac
+text @[Фуко]
+text Кажется, Фуко находилась в длительном сне...
+text @[Томоя]
+text Будьте благодарны сэру Оказаки Доброму.
+sound 4AS.aac
+text @[Фуко]
+text А?
+text @[Томоя]
+text Благодаря мне, тебе удалось остаться в настоящем.
+setvar strS[1001] = "CGFU30A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU30A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 4AT.aac
+text @[Фуко]
+text О чём ты вообще говоришь?
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s8
+fi
+goto 11
+label s8
+setvar strS[1000] = ""
+label 11
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+jump SEEN1506_0_0.scr
