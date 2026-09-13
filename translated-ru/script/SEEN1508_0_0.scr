@@ -1,1 +1,256 @@
-��$
+setvar intF[1110] = 8
+setvar intF[1112] = 0
+setvar strS[1004] = "SDTA0508"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1004] = ""
+label 1
+bgload SCLAB00.jpg 45
+delay 60
+setimg SCLAP03.png 5 5
+setimg SCLA0508.png 159 160
+delay 120
+if 0 == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = "KURO"
+goto 4
+label 2
+if 0 == 1
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = "SIRO"
+goto 4
+label 3
+setvar strS[1000] = "KURO"
+label 4
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG033A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 5
+label s3
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM15.mp3
+setvar strS[1001] = "CGNG10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[0] = lnmE
+if strS[0] > "Okazaki-san"
+	setvar intA[1000] = 1
+fi
+if strS[0] < "Okazaki-san"
+	setvar intA[1000] = -1
+fi
+if strS[0] == "Okazaki-san"
+	setvar intA[1000] = 0
+fi
+if strS[0] > "Tomoya-kun"
+	setvar intA[1001] = 1
+fi
+if strS[0] < "Tomoya-kun"
+	setvar intA[1001] = -1
+fi
+if strS[0] == "Tomoya-kun"
+	setvar intA[1001] = 0
+fi
+if intA[1000] == 0
+	goto s4
+fi
+goto 6
+label s4
+sound 4EK.aac
+goto 7
+label 6
+sound 4EL.aac
+label 7
+text @[{$lnmA}]
+text Доброе утро, {$lnmE}.
+text @[Томоя]
+text Да, доброе утро.
+setvar strS[1001] = "CGNG17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[0] = lnmE
+if strS[0] > "Okazaki-san"
+	setvar intA[1000] = 1
+fi
+if strS[0] < "Okazaki-san"
+	setvar intA[1000] = -1
+fi
+if strS[0] == "Okazaki-san"
+	setvar intA[1000] = 0
+fi
+if strS[0] > "Tomoya-kun"
+	setvar intA[1001] = 1
+fi
+if strS[0] < "Tomoya-kun"
+	setvar intA[1001] = -1
+fi
+if strS[0] == "Tomoya-kun"
+	setvar intA[1001] = 0
+fi
+if intA[1000] == 0
+	goto s5
+fi
+goto 8
+label s5
+sound 4EM.aac
+goto 9
+label 8
+sound 4EN.aac
+label 9
+text @[{$lnmA}]
+text Послушай, {$lnmE}.
+text Она подносит рот к моему уху, чтобы Фуко не могла это услышать.
+setvar strS[1001] = "CGNG10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 4EO.aac
+text @[{$lnmA}]
+text Она позвонила мне. Ибуки‑сенсэй.
+sound 4EP.aac
+text @[{$lnmA}]
+text Она придёт на Фестиваль Основателей. Она хочет, чтобы мы ждали её у главных ворот в три часа.
+text @[Томоя]
+text Понятно... Приятно слышать.
+setvar strS[1001] = "CGNG23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 4EQ.aac
+text @[{$lnmA}]
+text Да!
+text С этим... всё готово.
+if 0 == 0
+	goto s6
+fi
+goto 10
+label s6
+setvar strS[1000] = "KURO"
+goto 12
+label 10
+if 0 == 1
+	goto s7
+fi
+goto 11
+label s7
+setvar strS[1000] = "SIRO"
+goto 12
+label 11
+setvar strS[1000] = "KURO"
+label 12
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG017"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s8
+fi
+goto 13
+label s8
+setvar strS[1000] = ""
+label 13
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Фуко не расслабляется даже за короткий период до фестиваля.
+text Тем не менее, всё больше людей каждый день её игнорируют.
+text И каждый раз она стоит беспомощно, обнимая свою морскую звёздочку...
+setvar strS[1001] = "CGFU40"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU40.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text ...глядя на спину безответного ученика, который всё дальше уходит.
+sound 4ER.aac
+text @[{$lnmA}]
+text Фу‑чан, я уверен, в следующий раз всё получится.
+text Если бы не {$lnmA}, я не знаю, хватило бы у меня сил оставаться.
+text Я не могу достаточно благодарить её за то, что она здесь и продолжает поддерживать Фуко.
+text ......
+text Если Фуко сможет встретиться с Ко́ко‑сан и сказать ей «Поздравляю»...
+text Возможно, нам не придётся дальше это терпеть.
+text Фуко вынуждена так сильно стараться лишь потому, что считает, что её голос не дойдёт до сестры.
+text Если мы сможем снять эту тяжесть с её плеч, возможно, она откроется другим вещам, и нам тоже.
+text Тогда, может быть, даже у неё будет счастливый школьный опыт.
+text @[Томоя]
+text (Это должно произойти.)
+text @[Томоя]
+text (Дни, когда ты будешь работать, преодолевая физические и эмоциональные страдания, должны закончиться в день фестиваля.)
+text @[Томоя]
+text (Сделаем так, Фуко.)
+text Я шепчу, пока мои глаза следят за спиной Фуко, когда она бежит к другому ученику.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s9
+fi
+goto 14
+label s9
+setvar strS[1000] = ""
+label 14
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+jump SEEN1511_0_0.scr
