@@ -1,1 +1,394 @@
-��$
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1000] = ""
+label 1
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG012"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = ""
+label 2
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM17A.mp3
+text Среди учеников, идущих в школу, одна выделяется, остановившись на месте.
+text Это Томойо.
+text Она пристально смотрит вверх на вишнёвое дерево.
+text Я подхожу к ней и пытаюсь сделать то же самое.
+text Из‑за дождя все вишневые цветы опали. На дереве больше не осталось розовых лепестков.
+text Я оборачиваюсь к Томойо.
+text Как будто она забыла о времени, её глаза фиксируются на вишнёвом дереве.
+text @[Томоя]
+text (Ты же знаешь, что опоздаешь…)
+if intF[211] == 0
+	goto s2
+fi
+goto 3
+label s2
+goto 5
+label 3
+choice Say something|Ignore her
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s3
+fi
+goto 4
+label s3
+goto 6
+label 4
+if intF[1089] == 1
+	goto s4
+fi
+goto 6
+label s4
+label 5
+text Ну… Мне всё равно, если кто‑то ещё опоздает на урок.
+text Я один поднимаюсь на холм.
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+label 6
+text @[Томоя]
+text Для чего ты стоишь? Не знаешь, что опоздаешь?
+text После того как я крикнул ей, я начинаю задумываться, насколько странно то, что я делаю.
+text Зачем я вообще разговариваю с таким человеком?
+setvar strS[1001] = "CGTM11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5PY.aac
+text @[Томойо]
+text Ах…
+sound 5PZ.aac
+text @[Томойо]
+text Который сейчас час?
+text @[Томоя]
+text Колокол вот‑вот прозвонит.
+sound 5Q0.aac
+text @[Томойо]
+text Понятно. Это довольно плохо.
+setvar strS[1001] = "CGTM10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5Q1.aac
+text @[Томойо]
+text Я благодарна, что ты позвал меня.
+sound 5Q2.aac
+text @[Томойо]
+text Спасибо.
+text Она всё ещё искренне благодарит кого‑то даже за такую мелочь. Какая открытая душой девочка.
+text @[Томоя]
+text ...
+text @[Томоя]
+text Ну же, иди.
+setvar strS[1001] = "CGTM19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5Q3.aac
+text @[Томойо]
+text Ты тоже придёшь?
+text @[Томоя]
+text Иди вперёд.
+sound 5Q4.aac
+text @[Томойо]
+text Ты не пойдёшь со мной? Ты же опоздаешь.
+text @[Томоя]
+text Мне всё равно.
+sound 5Q5.aac
+text @[Томойо]
+text Почему?
+text @[Томоя]
+text Хм, ну... На самом деле я довольно стеснительный.
+text @[Томоя]
+text Поэтому я просто хочу подняться на холм в одиночку.
+setvar strS[1001] = "CGTM20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5Q6.aac
+text @[Томойо]
+text Вот как...
+sound 5Q7.aac
+text @[Томойо]
+text Это меня как‑то радует.
+sound 5Q8.aac
+text @[Томойо]
+text Знать, что тебе стыдно быть со мной, хотя это, впрочем, я.
+setvar strS[1001] = "CGTM13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5Q9.aac
+text @[Томойо]
+text Однако...
+text Звонок прозвенел.
+music ~
+setvar strS[1001] = "CGTM18H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM18H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5QA.aac
+text @[Томойо]
+text Я не позволю никому опоздать, пока я наблюдаю.
+text @[Томоя]
+text Э…?
+text Она схватила меня за руку.
+music BGM06.mp3
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text И так она тянет меня за собой.
+text @[Томоя]
+text Эй, подожди!
+setvar strS[1001] = "CGTM18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5QB.aac
+text @[Томойо]
+text Беги! Если не хочешь, чтобы тебя потянули!
+text @[Томоя]
+text Серьёзно?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Мы начинаем бежать по холму.
+setvar strS[1000] = "BG015"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s5
+fi
+goto 7
+label s5
+setvar strS[1000] = ""
+label 7
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGTM16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5QC.aac
+text @[Томойо]
+text Удастся ли нам?
+text @[Томоя]
+text Тебе удастся, если будешь продолжать бегать, пока не дойдёшь.
+text @[Томоя]
+text Но я устал. Я иду пешком.
+setvar strS[1001] = "CGTM13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5QD.aac
+text @[Томойо]
+text Ты такая обуза...
+text Снова она хватает меня за руку.
+setvar strS[1001] = "CGTM16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5QE.aac
+text @[Томойо]
+text Пойдем!
+text @[Томоя]
+text Серьёзно...?!
+setvar strS[1001] = "CGTM18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5QF.aac
+text @[Томойо]
+text Где твой класс?
+text @[Томоя]
+text Не знаю!
+sound 5QG.aac
+text @[Томойо]
+text Как ты не знаешь?!
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s6
+fi
+goto 8
+label s6
+setvar strS[1000] = ""
+label 8
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG021"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s7
+fi
+goto 9
+label s7
+setvar strS[1000] = ""
+label 9
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM14.mp3
+text ...я в итоге успел вовремя.
+setvar strS[1001] = "CGTM16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5QH.aac
+text @[Томойо]
+text Похоже, твой учитель всё ещё не пришёл, так что всё вроде бы в порядке.
+text It's taking everything I have just catching my breath, so I can't manage to say anything back to her.
+setvar strS[1001] = "CGTM21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 5QI.aac
+text @[Tomoyo]
+text See you later.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Tomoyo smiles in satisfaction, and gallantly runs away.
+sound 5QJ.aac
+text @[Boy]
+text Huh? Okazaki, it's pretty unusual to see you here this early in the morning.
+text @[Tomoya]
+text Ah...
+text Just around when morning homeroom is about to start, my eyes find themselves looking down at my palms.
+text @[Tomoya]
+text (Come to think of it, I just walked to school while holding hands with a girl...)
+text But...
+text Mysteriously, it didn't feel strange at all.
+text @[Tomoya]
+text (Although she'd probably feel depressed again if I actually told her that...)
+setvar intF[212] = 1
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+jump SEEN2421_1_0.scr
