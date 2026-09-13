@@ -1,1 +1,222 @@
-��$
+setvar intF[1110] = 12
+setvar intF[1112] = 0
+setvar strS[1004] = "SDTA0512"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1004] = ""
+label 1
+bgload SCLAB00.jpg 45
+delay 60
+setimg SCLAP07.png 5 5
+setimg SCLA0512.png 159 160
+delay 120
+if 0 == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = "KURO"
+goto 4
+label 2
+if 0 == 1
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = "SIRO"
+goto 4
+label 3
+setvar strS[1000] = "KURO"
+label 4
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text На следующем вечере меня позвонил Комура.
+setvar strS[1000] = "BG010N1"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 5
+label s3
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08D.mp3
+sound 4OY.aac
+text @[Комура]
+text Это Томоя-кун?
+text @[Томоя]
+text Да.
+sound 4OZ.aac
+text @[Комура]
+text Скажи Коуко-сан, что она может провести свадьбу на кампусе.
+text @[Томоя]
+text И ты сумел их убедить?
+sound 4P0.aac
+text @[Комура]
+text Хм...
+sound 4P1.aac
+text @[Комура]
+text Но только в воскресенье этого месяца...
+text @[Томоя]
+text Gracias.
+text *click*
+text Я положил трубку, не дожидаясь ответа, и быстро набрал номер Коуко-сан.
+text В прошлый раз я попросил её контактные данные.
+sound 4P2.aac
+text @[Voice]
+text Привет.
+text @[Томоя]
+text Коуко-сан? Это я, Окадзак.
+sound 4P3.aac
+text @[Коуко]
+text О, добрый вечер, Окадзак-сан.
+text Она всегда уделяет время вежливым приветствиям.
+text @[Томоя]
+text У меня есть еще одна просьба.
+sound 4P4.aac
+text @[Коуко]
+text Конечно. Что это?
+text @[Томоя]
+text Пожалуйста, проведите свою свадьбу... в школе.
+sound 4P5.aac
+text @[Коуко]
+text Прости, что ты имеешь в виду?
+text @[Томоя]
+text Место проведения церемонии. Пожалуйста, проведите её на территории кампуса.
+sound 4P6.aac
+text @[Коуко]
+text То есть... я имею в виду, могу ли я действительно это сделать?
+text @[Томоя]
+text Я только что получил одобрение от руководства. И, к тому же, кто бы смог сказать «нет» свадьбе Коуко‑сан?
+sound 4P7.aac
+text @[Коуко]
+text Ха‑ха... Интересно.
+text @[Томоя]
+text Значит, тебе это подходит, верно? Пожалуйста, скажи, что всё в порядке.
+sound 4P8.aac
+text @[Коуко]
+text Должна сказать... я была бы более чем благодарна.
+sound 4P9.aac
+text @[Коуко]
+text Если все согласны, я очень хочу провести свою свадьбу там.
+text @[Томоя]
+text Я уже сказал, что никто тебе не скажет «нет».
+sound 4PA.aac
+text @[Коуко]
+text В таком случае... позвольте мне принять предложение.
+text @[Томоя]
+text Подойдёт ли тебе следующее воскресенье?
+sound 4PB.aac
+text @[Коуко]
+text Ну...
+text И после мгновения колебания...
+sound 4PC.aac
+text @[Коуко]
+text Да. Я понимаю.
+text Я облегчён её ответом.
+text Я так рад, что всё идёт хорошо. Действительно.
+sound 4PD.aac
+text @[Коуко]
+text Оказаки-сан.
+text @[Томоя]
+text Да?
+sound 4PE.aac
+text @[Коуко]
+text Можешь назвать имена людей, которые помогли мне получить эту возможность?
+text @[Томоя]
+text Хм?
+sound 4PF.aac
+text @[Коуко]
+text Я хочу сказать спасибо.
+text @[Томоя]
+text Понятно...
+text Коуко-сан, это просто как ты.
+text @[Томоя]
+text Это Комура.
+sound 4PG.aac
+text @[Коуко]
+text Можешь рассказать мне больше о Комуре-сан?
+text @[Томоя]
+text Это учитель, Комура-сансэй.
+text Похоже, было плохим решением упоминать его имя, Коуко-сан.
+sound 4PH.aac
+text @[Коуко]
+text Ты имеешь в виду того Комура-сансэй?!
+text Неожиданно, ей не кажется странным мой чрезмерный вежливый тон к старому учителю. Вместо этого она просто отвечает мне голосом, наполненным радостью.
+text @[Томоя]
+text Ты близка с ним?
+sound 4PI.aac
+text @[Коуко]
+text Очень... Комура-сансэй — учитель, которого я всегда больше всего уважаю.
+sound 4PJ.aac
+text @[Коуко]
+text Благодаря ему я, как привилегированный ребенок, как‑то смог позаботиться о целом классе.
+sound 4PK.aac
+text @[Коуко]
+text Он научил меня, как управлять классом.
+text @[Tomoya]
+text Ты серьёзно?
+sound 4PL.aac
+text @[Kouko]
+text Несмотря на внешность, Комура-сэнсей на самом деле очень строг.
+text Мы даже говорим о том же Комуре...
+sound 4PM.aac
+text @[Kouko]
+text А... Можно ли мне уйти?
+text @[Tomoya]
+text А, извини. Я слишком много отнимаю у тебя времени.
+sound 4PN.aac
+text @[Kouko]
+text Конечно, нет. Я хочу поговорить с тобой гораздо больше.
+sound 4PO.aac
+text @[Kouko]
+text Но это не мой дом, так что...
+text @[Tomoya]
+text Да, понимаю. Извини.
+sound 4PP.aac
+text @[Kouko]
+text У меня давно не было таких хороших новостей. Большое спасибо, что позвонил сегодня.
+text @[Tomoya]
+text Ничего страшного...
+sound 4PQ.aac
+text @[Kouko]
+text Ну, спокойной ночи.
+text @[Tomoya]
+text Да, спокойной ночи.
+text Я положил трубку.
+text Да... Это будет лучшая свадьба всех времен.
+text Внутри меня растёт уверенность.
+text Это то, ради чего она отдала всё остальное...
+text Никак её огромный труд не будет напрасным.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s4
+fi
+goto 6
+label s4
+setvar strS[1000] = ""
+label 6
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+jump SEEN1513_0_0.scr
