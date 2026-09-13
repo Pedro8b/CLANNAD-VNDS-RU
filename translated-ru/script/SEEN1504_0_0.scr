@@ -1,1 +1,775 @@
-��$
+setvar intF[1110] = 4
+setvar intF[1112] = 1
+setvar strS[1004] = "SDTA0504"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1004] = ""
+label 1
+bgload SCLAB00.jpg 45
+delay 60
+setimg SCLAP06.png 5 5
+setimg SCLA0504.png 159 160
+delay 120
+if 0 == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = "KURO"
+goto 4
+label 2
+if 0 == 1
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = "SIRO"
+goto 4
+label 3
+setvar strS[1000] = "KURO"
+label 4
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG033"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 5
+label s3
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM14.mp3
+text Осталось всего два дня до конца каникул. Сегодня я решил сделать небольшое отклонение, прежде чем идти к дому {$lnmA}.
+text Если она будет там, мы сможем немного поболтать и…
+text …а главное — найти способ намекнуть ей, что Фуко училась вместе с нами.
+if 0 == 0
+	goto s4
+fi
+goto 6
+label s4
+setvar strS[1000] = "KURO"
+goto 8
+label 6
+if 0 == 1
+	goto s5
+fi
+goto 7
+label s5
+setvar strS[1000] = "SIRO"
+goto 8
+label 7
+setvar strS[1000] = "KURO"
+label 8
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG042"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s6
+fi
+goto 9
+label s6
+setvar strS[1000] = ""
+label 9
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text ......
+text …Вот она.
+text Сегодня она тоже поливает клумбу.
+text @[Томоя]
+text Коуко-сан.
+setvar strS[1001] = "CGKO10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 480.aac
+text @[Коуко]
+text Да?
+setvar strS[1001] = "CGKO12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 481.aac
+text @[Коуко]
+text Ах, Оказаки-сан, добрый день.
+text @[Томоя]
+text Добрый день.
+if intF[136] == 0
+	goto s7
+fi
+goto 10
+label s7
+text @[Томоя]
+text На самом деле… я…
+setvar strS[1001] = "CGKO10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 482.aac
+text @[Коуко]
+text Да?
+text Она всё время смотрит на меня.
+text Как мне ей об этом сказать?
+text Как сейчас выразить свои чувства?
+setvar strS[1001] = "CGKO11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 483.aac
+text @[Коуко]
+text Похоже, с тобой случилось что‑то хорошее.
+text @[Томоя]
+text Что…?
+sound 484.aac
+text @[Коуко]
+text Ты сегодня выглядишь очень живо.
+text @[Томоя]
+text Ты заметил?
+sound 485.aac
+text @[Коуко]
+text Да, конечно.
+setvar strS[1001] = "CGKO20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 486.aac
+text @[Коуко]
+text Если она сможет стать счастливой...
+sound 487.aac
+text @[Коуко]
+text Я тоже буду... очень счастлива.
+text Интересно, достигло ли это уже до неё...
+setvar strS[1001] = "CGKO14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 488.aac
+text @[Коуко]
+text Вот почему, пожалуйста...
+setvar strS[1001] = "CGKO12H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO12H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 489.aac
+text @[Коуко]
+text Пожалуйста, береги Нагиса-чан.
+text *Тхунк* Я внезапно теряю всю силу в ногах.
+text @[Томоя]
+text Ты ошибся!
+setvar strS[1001] = "CGKO13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 48A.aac
+text @[Коуко]
+text Правда? Ты не начал встречаться с Нагисой-чан?
+text @[Томоя]
+text Ты полностью ошибся.
+setvar strS[1001] = "CGKO11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 48B.aac
+text @[Коуко]
+text Мне так жаль, я поспешила с выводами.
+setvar strS[1001] = "CGKO10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 48C.aac
+text @[Коуко]
+text Если это не так, что случилось?
+text Её глаза полны ожидания.
+text Я хочу сразу всё ей рассказать.
+text Но это означало бы предательство Фуку.
+text @[Томоя]
+text ...
+text @[Томоя]
+text Хм... Так сложно сказать...
+text Как же я могу объяснить ей это...
+goto 11
+label 10
+if intF[136] == 1
+	goto s8
+fi
+goto 11
+label s8
+setvar strS[1001] = "CGKO10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 48D.aac
+text @[Коуко]
+text Успел ли ты примириться с Нагисой-чан?
+text @[Tomoya]
+text Да, идеально.
+setvar strS[1001] = "CGKO11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 48E.aac
+text @[Kouko]
+text И так? Я рада, что ты справился.
+text @[Tomoya]
+text Да.
+text @[Tomoya]
+text На самом деле... Я...
+setvar strS[1001] = "CGKO10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 48F.aac
+text @[Kouko]
+text Да?
+text Она постоянно смотрит на меня.
+text Как мне сказать ей об этом?
+text Как я могу сейчас выразить свои чувства?
+sound 48G.aac
+text @[Kouko]
+text Тебе, кажется, случилось что-то хорошее.
+text @[Tomoya]
+text Что...?
+sound 48H.aac
+text @[Kouko]
+text Ты сегодня кажешься очень живым.
+sound 48I.aac
+text @[Kouko]
+text Это о Нагисе-чан?
+text @[Tomoya]
+text Нет, не об этом.
+text @[Tomoya]
+text Как бы я это выразил...
+label 11
+setvar strS[1001] = "CGKO11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 48J.aac
+text @[Kouko]
+text Если это слишком трудно сказать, не стоит заставлять себя.
+sound 48K.aac
+text @[Kouko]
+text Ты можешь почувствовать счастье, просто находясь рядом с счастливым человеком.
+sound 48L.aac
+text @[Коуко]
+text Я чувствую себя намного лучше, просто потому что ты принес с собой столько радости.
+sound 48M.aac
+text @[Коуко]
+text Огромное тебе спасибо.
+text Я не знала, что есть вещи, которые можно передать даже без слов.
+text @[Томоя]
+text Если так, пожалуйста, позволь мне остаться ещё немного.
+setvar strS[1001] = "CGKO10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 48N.aac
+text @[Коуко]
+text Оставайся столько, сколько захочешь.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Коуко-сан возвращается к поливу цветов.
+text Тогда...
+music ~
+sound 48O.aac
+text @[Коуко]
+text Становится немного скучно, не правда ли? Давай поговорим о чём‑нибудь.
+text Она останавливает руки и поворачивается ко мне.
+setvar strS[1001] = "CGKO10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 48P.aac
+text @[Коуко]
+text Это про мою младшую сестрёнку Фуко.
+sound 48Q.aac
+text @[Коуко]
+text Которой ты так доброжелательно заботился.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s9
+fi
+goto 12
+label s9
+setvar strS[1000] = ""
+label 12
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG002"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s10
+fi
+goto 13
+label s10
+setvar strS[1000] = ""
+label 13
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM01.mp3
+text Как всегда, Фуко посвящает себя резьбе морских звёзд.
+text Стоя рядом, {$lnmA} и я можем лишь наблюдать за ней.
+text Тогда я вспоминаю...
+text ...что мне сказала Коуко-сан.
+if 0 == 0
+	goto s11
+fi
+goto 14
+label s11
+setvar strS[1000] = "KURO"
+goto 16
+label 14
+if 0 == 1
+	goto s12
+fi
+goto 15
+label s12
+setvar strS[1000] = "SIRO"
+goto 16
+label 15
+setvar strS[1000] = "KURO"
+label 16
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG042"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s13
+fi
+goto 17
+label s13
+setvar strS[1000] = ""
+label 17
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGKO10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 48R.aac
+text @[Коуко]
+text Она всегда была со мной.
+sound 48S.aac
+text @[Коуко]
+text Она могла быть собой передо мной.
+setvar strS[1001] = "CGKO13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 48T.aac
+text @[Коуко]
+text Но мне потребовалось так долго понять, что так не было, когда она была на улице...
+sound 48U.aac
+text @[Коуко]
+text Я не знала.
+setvar strS[1001] = "CGKO14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 48V.aac
+text @[Коуко]
+text Я не знала, что ей так трудно заводить друзей.
+setvar strS[1001] = "CGKO13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 48W.aac
+text @[Коуко]
+text Это был год, когда я стала учителем. Во время летних каникул мы поехали на пляж с несколькими нашими родственниками.
+sound 48X.aac
+text @[Коуко]
+text Там была девочка примерно того же возраста, что и Фу‑тян.
+sound 48Y.aac
+text @[Коуко]
+text Но она всё время пыталась прятаться за мной.
+sound 48Z.aac
+text @[Коуко]
+text Даже когда родственники пытались поговорить с ней, она не могла правильно их поприветствовать...
+sound 490.aac
+text @[Коуко]
+text Тогда я впервые поняла...
+sound 491.aac
+text @[Коуко]
+text Что Фу‑тян не будет пытаться сблизиться с кем‑либо.
+setvar strS[1001] = "CGKO14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 492.aac
+text @[Коуко]
+text Даже когда люди просто называли её по имени, она пугалась и убегала...
+sound 493.aac
+text @[Коуко]
+text Такой ребёнок она и есть.
+setvar strS[1001] = "CGKO18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 494.aac
+text @[Коуко]
+text Когда все играли в море, Фу‑тян просто оставалась на пляже.
+sound 495.aac
+text @[Коуко]
+text Она играла там с морскими звёздами.
+sound 496.aac
+text @[Коуко]
+text Совсем одна.
+sound 497.aac
+text @[Коуко]
+text Она оставалась такой же, когда окончила среднюю школу.
+setvar strS[1001] = "CGKO13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 498.aac
+text @[Коуко]
+text Я думала, что так дальше будет плохо для неё...
+sound 499.aac
+text @[Коуко]
+text Поэтому во время весенних каникул я оставила её одну.
+sound 49A.aac
+text @[Коуко]
+text Это было действительно тяжело.
+sound 49B.aac
+text @[Коуко]
+text Впервые мы не провели отпуск вместе...
+setvar strS[1001] = "CGKO14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 49C.aac
+text @[Коуко]
+text Как бы я ни волновалась... я пыталась не встречаться с ней...
+sound 49D.aac
+text @[Коуко]
+text Я продолжала притворяться занятой.
+setvar strS[1001] = "CGKO18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 49E.aac
+text @[Коуко]
+text Фу‑тян... она, должно быть, была так одинока.
+sound 49F.aac
+text @[Коуко]
+text Раньше мы всегда ходили куда‑то вместе...
+sound 49G.aac
+text @[Коуко]
+text Но... я думала, что одиночество подстегнет её завести друзей в новой школе...
+setvar strS[1001] = "CGKO13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 49H.aac
+text @[Коуко]
+text И тогда, утром церемонии поступления...
+sound 49I.aac
+text @[Коуко]
+text Она сказала мне...
+sound 49J.aac
+text @[Коуко]
+text Что она постарается завести как можно больше друзей...
+sound 49K.aac
+text @[Коуко]
+text Я думаю, она поняла, что я этого от неё хочу.
+sound 49L.aac
+text @[Коуко]
+text ...
+sound 49M.aac
+text @[Коуко]
+text Это было очень бодрящее утро.
+sound 49N.aac
+text @[Коуко]
+text Это действительно приятное утро.
+setvar strS[1001] = "CGKO14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKO14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 49O.aac
+text @[Коуко]
+text И всё же, она была так одинока, до самого момента, когда...
+if 0 == 0
+	goto s14
+fi
+goto 18
+label s14
+setvar strS[1000] = "KURO"
+goto 20
+label 18
+if 0 == 1
+	goto s15
+fi
+goto 19
+label s15
+setvar strS[1000] = "SIRO"
+goto 20
+label 19
+setvar strS[1000] = "KURO"
+label 20
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text В тот день, по пути домой, произошёл несчастный случай.
+text Коуко-сан в итоге вела себя холодно по отношению к Фуко до последнего их разговора.
+text И для Фуко, и для Коуко-сан её холодное отношение в тот момент застыло во времени.
+if intF[140] == 0
+	goto s16
+fi
+goto 21
+label s16
+text Я не могу...
+text Я даже не могу представить, насколько это должно было быть больно для неё за последние два года.
+text Тогда...
+text Это ещё не закончилось.
+label 21
+music ~
+setvar strS[1000] = "BG002"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s17
+fi
+goto 22
+label s17
+setvar strS[1000] = ""
+label 22
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Томоя]
+text Фуко.
+text Имя просто выскальзывает у меня изо рта без видимой причины.
+music BGM08D.mp3
+setvar strS[1001] = "CGFU19A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU19A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 49P.aac
+text @[Фуко]
+text Да?
+text Её руки перестают двигаться, и она поворачивается ко мне.
+text Я хочу ей показать.
+text Я хочу, чтобы Коуко-сан знала, что её младшая сестра больше не убегает, когда с ней разговаривают, что Фуко теперь умеет отвечать.
+setvar strS[1001] = "CGFU20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGFU20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 49Q.aac
+text @[Фуко]
+text Не звони, если тебе нечего сказать. Это очень грубо.
+text ...Но её рот всё так же резок, как всегда.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s18
+fi
+goto 23
+label s18
+setvar strS[1000] = ""
+label 23
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+jump SEEN1505_0_0.scr
