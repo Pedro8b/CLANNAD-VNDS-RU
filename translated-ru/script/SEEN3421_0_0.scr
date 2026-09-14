@@ -1,1 +1,1024 @@
-��$
+setvar strS[1000] = "BG033"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1000] = ""
+label 1
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Это тот же самый путь к школе.
+text Солнце, как обычно, светит на меня. Никого в той же форме не видно...
+text Это очень знакомая сцена.
+text Интересно, сколько ещё раз мне удастся увидеть это.
+text А что же я буду делать через год?
+text @[Томоя]
+text Хм...
+music ~
+text *Врум* *Врум*
+text Что‑то приближается ко мне сзади.
+choice Jump right|Stay still and brace for impact|Jump left
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s1
+fi
+goto 2
+label s1
+text @[Томоя]
+text Ха!
+text Я уклоняюсь от давления, подбирающегося сзади.
+text Свиш...
+text Знакомая девочка с длинными волосами пролетает мимо того места, где я стоял.
+sound 8SH.aac
+text Возможно, это лишь воображение, но, кажется, я услышал «цк», когда она прошла мимо...
+if rtf0 != ""
+	setvar rtf1 = "SEEN3421_0_0.scr"
+	setvar rtl1 = "rtl0"
+fi
+if rtf0 == ""
+	setvar rtf0 = "SEEN3421_0_0.scr"
+	setvar rtl0 = "rtl0"
+fi
+jump SEEN7600_0_0.scr
+label rtl0
+if rtf1 == ""
+	setvar rtf0 = ""
+fi
+if rtf1 != ""
+	setvar rtf1 = ""
+fi
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+label 2
+if intF[1089] == 1
+	goto s2
+fi
+goto 4
+label s2
+bgload SIRO.jpg 0
+setvar intA[1000] = 4600
+setvar intA[1001] = 46
+if 50 <= 0
+	goto s3
+fi
+goto 3
+label s3
+setvar intA[1001] + 1
+label 3
+text *Бах*
+text @[Томоя]
+text Ааах!!
+text Едва я успел подготовиться, как мой пояс получил огненный удар.
+text Я взмываю в воздух, кручусь в воздухе и падаю лицом вперёд.
+label 4
+if intF[1089] == 2
+	goto s4
+fi
+goto 6
+label s4
+text @[Томоя]
+text Хаах!
+bgload SIRO.jpg 0
+setvar intA[1000] = 4600
+setvar intA[1001] = 46
+if 50 <= 0
+	goto s5
+fi
+goto 5
+label s5
+setvar intA[1001] + 1
+label 5
+text *Бах*
+text @[Томоя]
+text Ааах!!
+text Я хотел увернуться, но из‑за своей неосторожности мой пояс получил ожог.
+text Я взмываю в воздух, кручусь в воздухе и падаю лицом вперёд.
+label 6
+setvar strS[1000] = "FGKY01C"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s6
+fi
+goto 7
+label s6
+setvar strS[1000] = ""
+label 7
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+music BGM11.mp3
+sound 8SI.aac
+text @[Кё]
+text Ой‑ой, Томоя. Прости!
+sound 8SJ.aac
+text @[Кё]
+text Thanks for Saturday, though.
+sound 8SK.aac
+text @[Kyou]
+text Botan came home at night.
+sound 8SL.aac
+text @[Kyou]
+text So could you explain what exactly you walked to my home, and how you did it?
+text @[Tomoya]
+text ...
+sound 8SM.aac
+text @[Kyou]
+text He was soaked through by the rain.
+sound 8SN.aac
+text @[Kyou]
+text Hey, Tomoya?
+text @[Tomoya]
+text ...
+setvar strS[1000] = "FGKY01B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s7
+fi
+goto 8
+label s7
+setvar strS[1000] = ""
+label 8
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+music ~
+sound 8SO.aac
+text @[Kyou]
+text Um, Tomoya...?
+text @[Tomoya]
+text ...
+sound 8SP.aac
+text @[Kyou]
+text Tomoya-kun?
+text @[Tomoya]
+text ...
+setvar strS[1000] = "FGKY01C"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s8
+fi
+goto 9
+label s8
+setvar strS[1000] = ""
+label 9
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound 8SQ.aac
+text @[Kyou]
+text ...
+setvar strS[1000] = "BG033"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s9
+fi
+goto 10
+label s9
+setvar strS[1000] = ""
+label 10
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Vr... Vrroom*
+text @[Tomoya]
+text Hey, you're leaving me behind?
+music BGM10.mp3
+setvar strS[1000] = "FGKY01A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s10
+fi
+goto 11
+label s10
+setvar strS[1000] = ""
+label 11
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound 8SR.aac
+text @[Kyou]
+text Oh, you're fine?
+text @[Tomoya]
+text That hurt so much my mind went completely blank!
+if intF[301] == 0
+	goto s11
+fi
+goto 12
+label s11
+text @[Томоя]
+text Кстати, чем ты катаешься?!
+sound 8SS.aac
+text @[Кё]
+text Чувак, не видишь? Это велосипед! Велосипед!
+sound 8ST.aac
+text @[Кё]
+text Это тоже новый! Разве ты не думаешь, что он выглядит круто?!
+text @[Томоя]
+text Это не то, о чём я имел в виду! Я спрашиваю, почему ты катаешься на этом в школу!
+sound 8SU.aac
+text @[Кё]
+text Аха, так как опаздываю, решил, что могу повеселиться.
+text @[Томоя]
+text Веселье...? Подожди... не говори...
+text @[Томоя]
+text Ты меня ударил этой штукой прямо сейчас, не так ли?!
+sound 8SV.aac
+text @[Кё]
+text Ну, Томоя, ты крепкий парень.
+text @[Томоя]
+text Это действительно сильно больно было, понимаешь?
+sound 8SW.aac
+text @[Кё]
+text Ну, конечно. Я ехал примерно сорок километров в час.
+sound 8SX.aac
+text @[Кё]
+text Честно, я там немного нервничал.
+text @[Томоя]
+text И всё равно ты собирался просто оставить меня позади...?
+sound 8SY.aac
+text @[Кё]
+text Ахахаха...
+text @[Томоя]
+text Побег после удара — серьёзное преступление, понимаешь!
+goto 13
+label 12
+sound 8SZ.aac
+text @[Кё]
+text Ну, конечно. Я ехал примерно сорок километров в час.
+text @[Томоя]
+text Не валяй мне эту чушь!
+sound 8T0.aac
+text @[Кёу]
+text Но ты же не просыпался!
+text @[Томоя]
+text Ты считаешь нормальным оставить кого‑то лежать там, если ты сбил их и они не встают?!
+text @[Томоя]
+text Сбивание и уклонение — серьёзное преступление, знаешь ли!
+label 13
+setvar strS[1000] = "FGKY01B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s12
+fi
+goto 14
+label s12
+setvar strS[1000] = ""
+label 14
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound 8T1.aac
+text @[Кёу]
+text Не говори, будто я виновата здесь. Ты заставляешь меня звучать как преступницу.
+text Она даже не понимает, насколько она неразумна...
+sound 8T2.aac
+text @[Кёу]
+text Итак... о Ботан...
+text @[Томоя]
+text Ну, я не смог сдержаться... Он был слишком быстрым.
+sound 8T3.aac
+text @[Кёу]
+text Тогда будь честен!
+text @[Томоя]
+text Чёрт...
+sound 8T4.aac
+text @[Кёу]
+text Если бы с Ботан что‑то случилось, ты бы не ушёл с этим просто так.
+sound 8T5.aac
+text @[Кёу]
+text Я буду снисходительна к тебе, потому что не пригласила тебя на обед. Считай, что всё уравновешено.
+text @[Томоя]
+text Ну, спасибо...
+text Я отряхиваю грязь со своей формы, спотыкаясь, поднимаюсь на ноги.
+setvar strS[1000] = "FGKY01A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s13
+fi
+goto 15
+label s13
+setvar strS[1000] = ""
+label 15
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound 8T6.aac
+text @[Кёу]
+text О, посмотри на тебя. Ты встал! Похоже, ты в порядке!
+text @[Томоя]
+text Конечно нет!
+sound 8T7.aac
+text @[Kyou]
+text Думаю, я ударил тебя в пояс. Всё в порядке?
+text @[Tomoya]
+text …Ты думаешь?
+text Моё лицо дрожит от боли; я держу пояс, слегка нахлёстыв вперёд, а мои лодыжки дрожат, когда я прилагаю к ним усилие.
+sound 8T8.aac
+text @[Kyou]
+text Ахахаха, посмотри, как твои ноги дрожат, как оленьёнок!
+text @[Tomoya]
+text Ты считаешь, что это смешно?!
+sound 8T9.aac
+text @[Kyou]
+text Ну, похоже, ты почти в порядке.
+text @[Tomoya]
+text Твои глаза полны шариков?
+setvar strS[1000] = "FGKY01B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s14
+fi
+goto 16
+label s14
+setvar strS[1000] = ""
+label 16
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound 8TA.aac
+text @[Kyou]
+text Вау, это грубо. Оба моих глаза 1,5.
+text Она отвечает мрачным взглядом.
+text Уверен, однажды она действительно совершит преступление...
+text @[Tomoya]
+text О-Оууу...
+sound 8TB.aac
+text @[Kyou]
+setvar intA[1000] = 2300
+setvar intA[1001] = 23
+if 50 <= 0
+	goto s15
+fi
+goto 17
+label s15
+setvar intA[1001] + 1
+label 17
+text …Не считаешь, что люди удивительно сильны...?
+text @[Tomoya]
+text Не произноси ничего страшного...
+sound 8TC.aac
+text @[Kyou]
+text Я просто разговариваю сам с собой! Не подглядывай!
+text @[Tomoya]
+text Это ещё более жутко! Оу...
+text У меня бедро издаёт звук, когда я кричу.
+text Похоже, удар был довольно серьёзным.
+setvar strS[1000] = "FGKY01C"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s16
+fi
+goto 18
+label s16
+setvar strS[1000] = ""
+label 18
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound 8TD.aac
+text @[Kyou]
+text Ааа... блин, ты такой ленивый.
+text @[Tomoya]
+text В качестве нападающего, ты не вправе это говорить.
+sound 8TE.aac
+text @[Kyou]
+text Ладно тогда.
+setvar strS[1000] = "BG033"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s17
+fi
+goto 19
+label s17
+setvar strS[1000] = ""
+label 19
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Click*
+text @[Tomoya]
+text Хм?
+text Кю выключила двигатель.
+text Она спрыгнула с мотоцикла и положила шлем под сиденье.
+text *Thud*
+text @[Tomoya]
+text Что ты делаешь?
+setvar strS[1001] = "CGKY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8TF.aac
+text @[Kyou]
+text Я не могу просто оставить тебя здесь, поэтому пойду с тобой.
+text @[Tomoya]
+text Ты можешь просто оставить меня на спине.
+setvar strS[1001] = "CGKY25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8TG.aac
+text @[Kyou]
+text Мне не хочется. Это не хорошо для шин.
+text @[Tomoya]
+text Твое извинение, похоже, не выглядит искренним.
+setvar strS[1001] = "CGKY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8TH.aac
+text @[Kyou]
+text Я уже говорила, что пойду с тобой. Будь рада!
+text @[Tomoya]
+text По какому логическому принципу я должен быть рад?
+setvar strS[1001] = "CGKY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8TI.aac
+text @[Kyou]
+text Тебе не будет одиноко.
+text @[Tomoya]
+text Я никогда не чувствовал себя одиноким, идя в одиночку.
+setvar strS[1001] = "CGKY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8TJ.aac
+text @[Kyou]
+text Ладно, пошли.
+text @[Томоя]
+text Послушай меня!
+setvar strS[1001] = "CGKY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8TK.aac
+text @[Кёу]
+text Хватит жаловаться! Я хочу успеть в школу до начала третьего урока!
+text @[Томоя]
+text ...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Похоже, ничего, что я скажу, не изменит ситуацию.
+text Неохотно я начинаю идти, всё ещё держась за бедро.
+setvar strS[1001] = "CGKY15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8TL.aac
+text @[Кёу]
+text Болит?
+text @[Томоя]
+text Да. Болит.
+setvar strS[1001] = "CGKY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8TM.aac
+text @[Кёу]
+text Держись.
+text @[Томоя]
+text Разве ты обычно не говоришь «прости»?
+setvar strS[1001] = "CGKY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8TN.aac
+text @[Кёу]
+text Я ведь уже сказал «прости». Если я буду постоянно извиняться, это лишь размоет искренность.
+text @[Томоя]
+text ...Ты имеешь в виду, что ты был искренен, когда впервые сказал «прости»?
+setvar strS[1001] = "CGKY15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8TO.aac
+text @[Кёу]
+text А? Почему?
+text @[Томоя]
+text Нет, ничего. Пустяки...
+music ~
+bgload KURO.jpg 88
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08A.mp3
+text Солнце, как обычно, висит высоко в небе.
+text Вокруг никого нет в такой же форме, как у меня.
+text Это та же дорога, которую я хорошо знаю...
+text ...но я иду в очень необычных обстоятельствах.
+text Болит бедро.
+text Рядом со мной Кёу едет на велосипеде.
+text Во всяком случае, это максимально отходит от моей обычной рутины.
+text @[Томоя]
+text Кстати, ты тоже часто опаздываешь, не так ли?
+setvar strS[1001] = "CGKY23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8TP.aac
+text @[Кёу]
+text Когда я учусь или повторяю материал, я обычно засыпаю поздно.
+text @[Томоя]
+text Если ты пытаешься рассказать шутку, хотя бы сделай её смешной.
+setvar strS[1001] = "CGKY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8TQ.aac
+text @[Кёу]
+text Ага-ха-ха. Я привяжу твою ногу к своему велосипеду и буду тащить тебя за ним.
+text @[Томоя]
+text Да, учёба важна. Точно.
+setvar strS[1001] = "CGKY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8TR.aac
+text @[Кёу]
+text Я не могу всё время полагаться только на Рёу, знаешь.
+text @[Томоя]
+text ...Вы двое – близнецы. Не можете ли вы понять, что думает друг о друге?
+setvar strS[1001] = "CGKY15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8TS.aac
+text @[Кёу]
+text Что ты имеешь в виду?
+text @[Томоя]
+text Не может ли твоя сестра послать тебе сообщение, например: «Ответ на эту задачу – А», с помощью телепатии?
+text @[Томоя]
+text Не находишь ли это совершенно потрясающим?
+text @[Томоя]
+text Вы оба можете каждый изучать лишь свою половину экзамена!
+setvar strS[1001] = "CGKY26"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY26.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8TT.aac
+text @[Кёу]
+text Чтение слишком большого количества манги испортило тебе мозг, не так ли?
+text @[Томоя]
+text Блин, у тебя совсем нет фантазии.
+text @[Томоя]
+text У вас двоих есть какие‑нибудь трюки, например, ощущать боль в том же месте, когда ранен другой?
+setvar strS[1001] = "CGKY18B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY18B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8TU.aac
+text @[Kyou]
+text Well...
+text Kyou's finger covers her lips as she starts to think.
+setvar strS[1001] = "CGKY17B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY17B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text She looks at the sky, and the ground, and murmurs, "Hmm."
+setvar strS[1001] = "CGKY18B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY18B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8TV.aac
+text @[Kyou]
+text I think we might have had something like that when we were kids...
+text @[Tomoya]
+text Seriously?
+setvar strS[1001] = "CGKY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8TW.aac
+text @[Kyou]
+text Well, the two of us are twins, right?
+sound 8TX.aac
+text @[Kyou]
+text When one of us sees that the other was hurt, it kind of felt like that we were hurt ourselves.
+setvar strS[1001] = "CGKY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8TY.aac
+text @[Kyou]
+text And just from seeing it, we'd start to feel it.
+text @[Tomoya]
+text What...? That sounds boring.
+setvar strS[1001] = "CGKY25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8TZ.aac
+text @[Kyou]
+text Oh, speaking of being late, I'm surprised you managed to get to your third year.
+text @[Tomoya]
+text Huh? Why?
+setvar strS[1001] = "CGKY15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8U0.aac
+text @[Kyou]
+text After all, the number of times you attended class in the morning during our second year could easily be counted.
+sound 8U1.aac
+text @[Kyou]
+text I thought you were definitely going to have to repeat the year.
+text @[Tomoya]
+text Come on, there's no way I would repeat.
+text @[Tomoya]
+text If I had to repeat, I might as well just drop out.
+setvar strS[1001] = "CGKY26"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY26.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8U2.aac
+text @[Kyou]
+text Hmm... but don't you think that would be disgraceful?
+text @[Tomoya]
+text ...Are you picking a fight?
+setvar strS[1001] = "CGKY25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8U3.aac
+text @[Kyou]
+text Nope, I didn't mean it like that.
+sound 8U4.aac
+text @[Kyou]
+text But don't you think it's a shame to give up on something you've started, no matter what it is?
+sound 8U5.aac
+text @[Kyou]
+text It kind of feels like you lost to yourself, no?
+text @[Tomoya]
+text ...
+setvar strS[1001] = "CGKY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8U6.aac
+text @[Kyou]
+text If I put it that way, that makes you quite a fine chap now, doesn't it?
+text @[Tomoya]
+text What's with the weird turn of phrase...?
+sound 8U7.aac
+text @[Kyou]
+text Well, you can't really call someone who's still always late a fine person, can you?
+text @[Tomoya]
+text I don't want to hear that from a class president who's also late.
+setvar strS[1001] = "CGKY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8U8.aac
+text @[Kyou]
+text It's fine for me. I'm doing everything that I have to do.
+text Can you really say you're doing everything you need to do when, as a student, you're missing class?
+text First of all, don't you need to be there to lead the morning greeting?
+setvar strS[1001] = "CGKY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8U9.aac
+text @[Kyou]
+text Hm? What?
+text @[Tomoya]
+text Nah... Nothing.
+text I bet pointing out the irony isn't going to do me much good here.
+music ~
+if 0 == 0
+	goto s18
+fi
+goto 20
+label s18
+setvar strS[1000] = "KURO"
+goto 22
+label 20
+if 0 == 1
+	goto s19
+fi
+goto 21
+label s19
+setvar strS[1000] = "SIRO"
+goto 22
+label 21
+setvar strS[1000] = "KURO"
+label 22
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text .........
+text ......
+text ...
+music BGM14.mp3
+setvar strS[1000] = "BG012"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s20
+fi
+goto 23
+label s20
+setvar strS[1000] = ""
+label 23
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text В любом случае мы добрались до низа склона, к воротам школы.
+text Возможно, потому что Кё шла рядом со мной, путь казался намного короче обычного.
+text Вероятно, потому что мы разговаривали по пути сюда.
+setvar strS[1001] = "CGKY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8UA.aac
+text @[Кё]
+text Ладно, мне нужно сделать небольшую обводку, так что иди дальше сам.
+text @[Томоя]
+text Сделать небольшую обводку? У тебя есть на это время?
+setvar strS[1001] = "CGKY15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8UB.aac
+text @[Кё]
+text Я не могу просто принести велосипед к воротам.
+sound 8UC.aac
+text @[Кё]
+text Я прячу его рядом.
+text @[Томоя]
+text Это выглядит как ненужная работа.
+setvar strS[1001] = "CGKY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8UD.aac
+text @[Кё]
+text Это не лишняя работа.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Кё произносит это и отходит с велосипедом.
+setvar strS[1001] = "CGKY15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8UE.aac
+text @[Кё]
+text О да, Томоя.
+text @[Томоя]
+text Хм?
+sound 8UF.aac
+text @[Кё]
+text Твое бедро в порядке теперь?
+text @[Томоя]
+text Ну, теперь чувствую себя намного лучше, чем раньше.
+setvar strS[1001] = "CGKY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8UG.aac
+text @[Кё]
+text Понятно. Это хорошо.
+setvar strS[1001] = "CGKY18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8UH.aac
+text @[Кё]
+text ...
+text @[Томоя]
+text Что случилось?
+setvar strS[1001] = "CGKY21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 8UI.aac
+text @[Кёю]
+text Эм, ну... извини.
+text Кёю закрывает один глаз и держит руку вертикально перед лицом, как часть извинения.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Затем она быстро отходит, толкая свой велосипед.
+text Я наблюдаю, как она уходит, и вздыхаю.
+music ~
+setvar intF[304] = 1
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
