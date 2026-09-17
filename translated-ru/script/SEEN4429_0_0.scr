@@ -1,1 +1,501 @@
-��$
+setvar intF[1110] = 29
+setvar intF[1112] = 1
+setvar strS[1004] = "SDTA0429"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1004] = ""
+label 1
+bgload SCLAB00.jpg 45
+delay 60
+setimg SCLAP01.png 5 5
+setimg SCLA0429.png 159 160
+delay 120
+setvar strS[1000] = "BG009M"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = ""
+label 2
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я сегодня утром просыпаюсь поздно.
+text Я всё ещё думаю о сне, который видел.
+text Затем я снова засыпаю.
+text Это величайшая роскошь в моей жизни.
+setvar strS[1000] = "SIRO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = ""
+label 3
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text .........
+text ......
+text ...
+setvar strS[1000] = "BG009"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 4
+label s3
+setvar strS[1000] = ""
+label 4
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM15.mp3
+text Послеобеденное время.
+text Я заканчиваю есть и думаю, что делать.
+text Вчера было напряжённо, поэтому сегодня хочу немного расслабиться.
+text Вспоминая, я не могу не улыбнуться иронично.
+text Я не ожидал, что когда-нибудь подумаю о «расслаблении дома».
+text @[Томоя]
+text (Интересно, чем они занимаются...?)
+text Я начинаю думать о людях, которые собираются в комнате драматического кружка.
+text Сегодня на улице приятно.
+text Может быть, будет приятно прогуляться, вместо того чтобы убегать от чего-то, ради перемены.
+choice Stay at home|Go outside
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s4
+fi
+goto 7
+label s4
+text @[Томоя]
+text (Выходить наружу — больно...)
+text К тому же я всё равно вижу их слишком часто.
+setvar strS[1000] = "BG009M"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s5
+fi
+goto 5
+label s5
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я закрываю шторы и готовлюсь поспать третий раз.
+text .........
+text ......
+text ...
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s6
+fi
+goto 6
+label s6
+setvar strS[1000] = ""
+label 6
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я провёл весь день спя.
+text Мне стоит попытаться усерднее работать завтра...
+music ~
+goto 22
+label 7
+if intF[1089] == 1
+	goto s7
+fi
+goto 22
+label s7
+text Я решаю выйти наружу.
+text Я встаю с кровати и одеваюсь.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s8
+fi
+goto 8
+label s8
+setvar strS[1000] = ""
+label 8
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG035"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s9
+fi
+goto 9
+label s9
+setvar strS[1000] = ""
+label 9
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я провожу этот праздник, оглядываясь по городу.
+text Кроме того, что в городе больше людей, чем обычно, ничего особенного не меняется.
+text Я блуждаю без цели, не ищу ничего конкретного.
+text Сложно добраться сюда, но я всегда делаю одно и то же.
+text Бродя без какой‑либо цели, внезапно меня охватывает нервозность.
+text Пойти к Сунохаре слишком хлопотно...
+text @[Tomoya]
+text Я просто пойду в школу...
+text Мурлыкая это, я ухмыляюсь себе.
+text Не ожидал бы услышать это от человека, который всегда опаздывает и пропускает занятия.
+text Тем не менее, ноги ведут меня туда, куда я не особо хочу идти.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s10
+fi
+goto 10
+label s10
+setvar strS[1000] = ""
+label 10
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG015"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s11
+fi
+goto 11
+label s11
+setvar strS[1000] = ""
+label 11
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Школа неожиданно переполнена для выходного дня.
+text Студенты, болтающие, кажутся более веселыми, чем в будние дни. Вероятно, потому что они более расслаблены.
+setvar strS[1000] = "BG057"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s12
+fi
+goto 12
+label s12
+setvar strS[1000] = ""
+label 12
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Входя на переднее поле, я прохожу мимо участников клубов, бегущих по кругу.
+text Я слышу крики с других полей, звучащие как соревнование между футбольной и бейсбольной командами.
+text @[Tomoya]
+text Всё это усилие в выходной день...
+text Только несколько мгновений назад я бы обиделся на них.
+text Поскольку здесь присутствуют участники клубов, школьное здание тоже должно быть открыто.
+text Я направляюсь к шкафчикам для обуви.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s13
+fi
+goto 13
+label s13
+setvar strS[1000] = ""
+label 13
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG016"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s14
+fi
+goto 14
+label s14
+setvar strS[1000] = ""
+label 14
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Внутри здания, как и ожидалось, пусто.
+text Возможно, в коридоре с клубными комнатами ситуация другая.
+text Подсознательно я направляюсь к комнате драматического клуба, но останавливаюсь.
+text Где‑то за окном слышны всевозможные звуки.
+text Звучит как настройка концертного оркестра. Какаофония от медных инструментов.
+text Эти звуки смешиваются с криками с поля.
+text Из спортзала слышатся удары бамбуковых мечей друг о друга и тяжелые звуки отскакивающих мячей.
+text Один странный звук переплетается среди всех остальных.
+text Это звучит как пила, режущая дерево.
+text Я внимательно слушаюсь, пытаясь определить источник звука.
+text @[Tomoya]
+text Это...?
+text Я снова начинаю идти.
+setvar strS[1000] = "BG020"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s15
+fi
+goto 15
+label s15
+setvar strS[1000] = ""
+label 15
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Поднявшись по лестнице старого здания, моя догадка подтверждается.
+text *Screech* *Screech* *Screech* *Screech* *Screech*
+text Вперед слышен шум, напоминающий резак.
+text Это значит... звук исходит из библиотеки.
+text В библиотеке только один человек мог бы пользоваться резаком... то есть, скрипкой.
+text Как обычно, вывеска гласит «Закрыто».
+text И как обычно, скользящая дверь слегка приоткрыта.
+text Увидев это, я чувствую небольшое облегчение.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s16
+fi
+goto 16
+label s16
+setvar strS[1000] = ""
+label 16
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music ~
+text Я заглядываю сквозь щель.
+setvar strS[1000] = "BG027"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s17
+fi
+goto 17
+label s17
+setvar strS[1000] = ""
+label 17
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM05A.mp3
+text Котоми там.
+text Как обычно, она в форме, стоя босиком перед полкой с экспонатами.
+text Единственное отличие – она держит скрипку вместо книги.
+setvar strS[1001] = "CGKT32E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT32E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Scree* *Scree* *Scree* *Scree* *Scree* *Scree* *Scree*
+text Она играет короткую мелодию, раз за разом.
+text Наверное, репетиционные мелодии всегда такие.
+text Звук всё так же ужасен, но, кажется, она играет более осторожно, чем вчера.
+text *Creeeee* *Creeeee* *Creeeee* *Creeeee*
+text Она играет ту же мелодию в иной тональности.
+text Я не слишком много об этом знаю, но так, вероятно, практикуются новички.
+setvar strS[1001] = "CGKT30E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT30E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound CSX.aac
+text @[Kotomi]
+text Фух...
+text Она вытирает пот со лба, подбородок остаётся на подставке скрипки.
+sound CSY.aac
+text @[Kotomi]
+text Неплохо, но недостаточно.
+sound CSZ.aac
+text @[Kotomi]
+text Мне нужно удивить всех...
+text Затем она ставит смычок обратно на струны.
+setvar strS[1001] = "CGKT32E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT32E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Scree* *Scree* *Scree* *Scree* *Scree* *Scree* *Scree*
+text @[Tomoya]
+text (Мне лучше не беспокоить её...)
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Как только я собираюсь отойти от двери, она прекращает играть.
+sound CT0.aac
+text @[Котоми]
+text Кто там?
+text Я отчаянно прижимаюсь к стене.
+text После нескольких секунд молчания я снова слышу шум.
+text *Scree* *Scree* *Scree* *Scree* *Scree* *Scree* *Scree*
+text Её концентрация, должно быть, ослабевает, так как её игра кажется немного неуклюжей.
+setvar strS[1000] = "BG020"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s18
+fi
+goto 18
+label s18
+setvar strS[1000] = ""
+label 18
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я тихо отступаю от библиотеки.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s19
+fi
+goto 19
+label s19
+setvar strS[1000] = ""
+label 19
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG012"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s20
+fi
+goto 20
+label s20
+setvar strS[1000] = ""
+label 20
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08D.mp3
+text Я спускаюсь по склону в одиночестве.
+text До недавнего времени деревья были полны персиковых лепестков.
+text Я поднимаю взгляд и вижу зеленый туннель, который ужасен для глаз.
+text За ним открывается неизменное голубое небо позднего дня.
+text @[Томоя]
+text (У меня не было ничего...)
+text Внезапно приходит к мне осознание.
+text У меня не было ничего, что могло бы меня мотивировать, и я не мог найти ничего нового...
+text После того, как мой отец стал таким, я не хотел ходить вблизи дома...
+text Всё казалось просто огромной проблемой.
+text "Я единственный, кто особенный. Остальной мир скучен."
+text Мне казалось, что принятие этого отношения избавляет меня.
+text Но теперь...
+text Теперь у меня есть цель.
+text Я хочу услышать, как Котоми играет на скрипке.
+text @[Томоя]
+text Это не плохая цель...
+text Я шепчу это вслух, не обращаясь к никому в частности.
+setvar intF[416] + 1
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s21
+fi
+goto 21
+label s21
+setvar strS[1000] = ""
+label 21
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+label 22
+music ~
+jump SEEN4430_0_0.scr
