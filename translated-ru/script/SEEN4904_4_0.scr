@@ -1,1 +1,56 @@
-��$
+bgload KURO.jpg 55
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Бутерброды действительно вкусные.
+text Котоми не разламывает их, как обычно, и продолжает давать мне ещё.
+setvar strS[1001] = "CGKT12C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EIF.aac
+text @[Kotomi]
+text Половинки.
+text @[Tomoya]
+text Ты не называешь это половинками, когда я единственный, кто ест.
+sound EIG.aac
+text @[Kotomi]
+text Я хочу, чтобы ты сегодня много ел, Томоя-кун.
+setvar strS[1001] = "CGKT15C"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT15C.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EIH.aac
+text @[Kotomi]
+text Именно поэтому это половинки.
+text Она улыбается скромно.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Полагаю, у Котоми сейчас не так много аппетита.
+bgload KURO.jpg 55
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+jump SEEN4904_5_0.scr
