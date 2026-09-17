@@ -1,1 +1,744 @@
-��$
+setvar intF[1110] = 9
+setvar intF[1112] = 1
+setvar strS[1004] = "SDTA0509"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1004] = ""
+label 1
+bgload SCLAB00.jpg 45
+delay 60
+setimg SCLAP04.png 5 5
+setimg SCLA0509.png 159 160
+delay 120
+setvar strS[1000] = "BG017"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = ""
+label 2
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Утро.
+text Котомі не пришла в школу.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = ""
+label 3
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 55
+setvar strS[1000] = "BG021A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 4
+label s3
+setvar strS[1000] = ""
+label 4
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08D.mp3
+text Занятия в классе заканчиваются, и уроки начинаются.
+text Я не понимаю ни один из предметов, но всё равно присутствую на каждом из них.
+text Если я собираюсь ждать Котомі, я не могу пропускать эти занятия. Я так себе говорю.
+text Формулы и названия эпох звучат для меня как бессмыслица.
+text Ветер иногда проникает сквозь приоткрытое окно.
+text Я смотрю на мерцающие лучи света, танцующие на моём столе.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s4
+fi
+goto 5
+label s4
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 55
+setvar strS[1000] = "BG020"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s5
+fi
+goto 6
+label s5
+setvar strS[1000] = ""
+label 6
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я направляюсь в библиотеку сразу после окончания утренних занятий.
+text Возможно, лишь возможно... Котомі может быть там.
+text Она может ждать меня, оставив половину своего обеда.
+text Так я себе говорю.
+text Я медленно подхожу, чтобы открыть привычную раздвижную дверь.
+text Она заперта.
+text Воздух пустого коридора кажется мне чуждым.
+text Как долго я уже стою здесь?
+sound E2S.aac
+text @[Воис]
+text Эм...
+text Девушка, которой я никогда не видел, стоит рядом со мной.
+text На её левой руке надпись «Library Committee». 
+sound E2T.aac
+text @[Лайбрери Стафф]
+text Вы хотите зайти?
+text @[Томоя]
+text Нет...
+text Я отстраняюсь, чтобы она могла открыть замок и дверь.
+setvar strS[1000] = "BG027"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s6
+fi
+goto 7
+label s6
+setvar strS[1000] = ""
+label 7
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+delay 60
+text Аромат книг и пыли уносится холодным ветром.
+delay 60
+sound VYN.aac
+text «Я почётный помощник библиотеки.»
+sound VYO.aac
+text «Томоя-кун, тебе нравятся книги?»
+sound VYP.aac
+text «Я так счастлив снова быть окружён книгами.»
+text Эхо её слов, кажется, затихает среди книг.
+setvar strS[1000] = "SIRO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s7
+fi
+goto 8
+label s7
+setvar strS[1000] = ""
+label 8
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 55
+text Библиотека вскоре наполняется студентами, пришедшими сюда учиться и поболтать.
+text Звуки переворачиваемых страниц тетрадей, щелчка карандашей, шепотом смеющихся...
+text Никто здесь не читает книги.
+text Я поворачиваюсь и уезжаю.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s8
+fi
+goto 9
+label s8
+setvar strS[1000] = ""
+label 9
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG022"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s9
+fi
+goto 10
+label s9
+setvar strS[1000] = ""
+label 10
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text После уроков я хожу в зал драматического кружка.
+text Я открываю дверь так, как обычно, но нахожу зал пустым.
+text Я беру стул и жду.
+text Остальные должны скоро здесь быть.
+text Кё, Фудзибаяши, Фурукава и… Котоми.
+text Вот почему я жду.
+text Каждый раз, когда я слышу звук из коридора, я частично открываю глаза и смотрю к раздвижной двери.
+text Никто не появляется.
+text Кажется, всё это иллюзия.
+text Мы все вращались вокруг неё.
+text Только два дня назад.
+text Кё выдвигала невозможные требования. Фудзибаяши была доброй и сдержанной. Фурукава была серьёзной до излишества и старалась изо всех сил во всём.
+text Котоми становилась всё более жизнерадостной. Она сияла так ярко в моих глазах.
+text Мне нравилось находиться в этом кругу друзей.
+text Но теперь всё кажется чем‑то, что случилось давно.
+text Котоми всё ещё находится в том темном доме.
+text Она отчаянно цепляется за прошлое, к которому она привязана.
+text Она убегает от счастья, которое наконец нашла.
+text Она убегает от своей новой жизни, от друзей и от меня.
+text Котоми пытается оставить всё позади.
+text Мне нужно найти слова, чтобы объяснить.
+text Мне нужно найти точные слова, которые соединят Котоми с её будущим.
+text Как я могу ей это сказать?
+text Что я могу сказать?
+text Я сижу здесь, пока ум ещё облачен в туман, и жду.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s10
+fi
+goto 11
+label s10
+setvar strS[1000] = ""
+label 11
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG022Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s11
+fi
+goto 12
+label s11
+setvar strS[1000] = ""
+label 12
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text К тому моменту, как я это осознаю, солнце уже зашло.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s12
+fi
+goto 13
+label s12
+setvar strS[1000] = ""
+label 13
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я встаю, чтобы покинуть комнату драматического клуба.
+music ~
+delay 120
+text И...
+setvar strS[1000] = "BG050Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s13
+fi
+goto 14
+label s13
+setvar strS[1000] = ""
+label 14
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM01.mp3
+text Когда я приезжаю к дому Котоми, уже вечер.
+text Погасший желтый свет пронизывает крышу, стены и подоконники.
+text Я нажимаю звонок.
+text Два раза, три раза, четыре раза...
+text Ничего не происходит.
+text Я начинаю сомневаться, работает ли звонок вообще.
+text Я оглядываюсь, но не вижу света из ни одного окна.
+text Но я знаю.
+text Котоми внутри, сжимает дыхание, как раненый бездомный кот.
+text Эта дверь не открывается снаружи.
+text Это не вина никого.
+text Котоми просто держит свое обещание.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s14
+fi
+goto 15
+label s14
+setvar strS[1000] = ""
+label 15
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 55
+setvar strS[1000] = "BG051A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s15
+fi
+goto 16
+label s15
+setvar strS[1000] = ""
+label 16
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я следую по тропинке, чтобы попасть в сад.
+text Хор насекомых звучит, как ночь.
+text Сад детства Котоми.
+text Любые оставшиеся следы счастливых дней из прошлого полностью исчезли.
+text Без слов и средств вернуть их, я стою там в заросшей траве.
+text Растения выросли хаотично из-за пренебрежения. Их названия давно забыты.
+text Они тихо окружают меня, как будто ругают нарушителя.
+text Я прикасаюсь к стеклянной двери, ведущей в гостиную.
+text Она открылась вчера, но сегодня не двигается.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s16
+fi
+goto 17
+label s16
+setvar strS[1000] = ""
+label 17
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG050Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s17
+fi
+goto 18
+label s17
+setvar strS[1000] = ""
+label 18
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+delay 60
+text Я возвращаюсь к двери и нажимаю звонок в последний раз.
+text Всё ещё нет ответа.
+text Я вздыхаю и собираюсь уйти, но потом...
+sound E2U.aac
+text @[Войс]
+text Окадзакі-сан.
+text Я слышу чью‑то голос.
+setvar strS[1001] = "CGNG18Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG18Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я оборачиваюсь и вижу Фурукава, стоящего там.
+text Её коричнево‑русые волосы развеваются в вечернем ветре.
+sound E2V.aac
+text @[Фурукава]
+text Это дом Котоми‑чан, не так ли...?
+text Она смиренно поднимает взгляд на второй этаж.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Учитывая состояние дома, Фурукава, должно быть, понимает это...
+text Это дом, который уже более десяти лет чужд тёплым звукам счастливого дома и ароматам ужина.
+text Он слишком велик, чтобы один человек мог жить в нём в одиночку.
+setvar strS[1001] = "CGNG18Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG18Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound E2W.aac
+text @[Фурукава]
+text Как была Котоми‑чан?
+text Фурукава спрашивает меня.
+text @[Томоя]
+text Ну...
+text @[Томоя]
+text Я так и не успел с ней поговорить.
+text Воцаряется неловкое молчание, пока мы оба немного не говорим.
+text @[Томоя]
+text ...Как ты нашёл это место?
+setvar strS[1001] = "CGNG32"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound E2X.aac
+text @[Фурукава]
+text Я спросил учителя Котоми‑чан, и она мне сказала.
+sound E2Y.aac
+text @[Фурукава]
+text Но я немного заблудился по пути сюда.
+text @[Томоя]
+text Да, его действительно трудно найти.
+sound E2Z.aac
+text @[Фурукава]
+text Да, но я справился.
+text Наш разговор снова заходит в тупик.
+text @[Томоя]
+text Она, наверное, ещё не успокоилась, чтобы собрать себя с мыслями.
+setvar strS[1001] = "CGNG31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound E30.aac
+text @[Фурукава]
+text Да, я чувствую то же самое.
+setvar strS[1001] = "CGNG16Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound E31.aac
+text @[Фурукава]
+text Я не знаю подробностей, но думаю, что Kotomi-chan сейчас сильно переживает.
+sound E32.aac
+text @[Фурукава]
+text Если ей больно, я не могу оставить её одну.
+text @[Томоя]
+text Понятно...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я смотрю на дорогу сквозь калитку.
+text Дети, которые выглядят так, будто только что пошли в начальную школу, играют по пути домой.
+text @[Томоя]
+text И что же случилось с клубом? Он не собирался вчера и сегодня.
+setvar strS[1001] = "CGNG18Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG18Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound E33.aac
+text @[Фурукава]
+text Я решила немного отдохнуть.
+sound E34.aac
+text @[Фурукава]
+text Сейчас у нас есть гораздо более важные дела.
+sound E35.aac
+text @[Фурукава]
+text Я обсудила это с Kyou-chan и Ryou-chan вчера.
+sound E36.aac
+text @[Фурукава]
+text Мы обсудили, что можем сделать для Kotomi-chan.
+text @[Томоя]
+text И что ты решила?
+setvar strS[1001] = "CGNG32"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound E37.aac
+text @[Фурукава]
+text Это секрет.
+text Это звучит как что‑то, что сказал бы Kyou.
+text Если подумать, Kyou, вероятно, главный планировщик и сказал Фурукаве хранить это в секрете.
+text @[Томоя]
+text Тогда хотя бы дай мне подсказку.
+setvar strS[1001] = "CGNG30"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG30.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound E38.aac
+text @[Фурукава]
+text Подсказка?
+text @[Томоя]
+text Да, простую.
+sound E39.aac
+text @[Furukawa]
+text Um...
+sound E3A.aac
+text @[Furukawa]
+text Birthday...
+text @[Tomoya]
+text I get it.
+text So they're probably getting together to give Kotomi some kind of present.
+text It's something they would think about.
+setvar strS[1001] = "CGNG12Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG12Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound E3B.aac
+text @[Furukawa]
+text Um... was the hint too easy?
+text She asks that in such an earnest way that I can't help but laugh.
+text No matter how complicated the situation, the simplest way forward might be to think about what you can actually do.
+text Furukawa and the rest decided to do something for Kotomi.
+text There has to be something only I can do for her.
+text @[Tomoya]
+text Kotomi's birthday is on the 13th, right?
+setvar strS[1001] = "CGNG30"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG30.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound E3C.aac
+text @[Furukawa]
+text Yes. That's what Kotomi-chan said the other day.
+text @[Tomoya]
+text Today is Friday the 9th, so that's Saturday, Sunday, Monday... There's only three days left.
+text Is there enough time? I have no idea.
+text But just thinking about it won't solve anything.
+text @[Tomoya]
+text Can you tell Kyou and Fujibayashi something for me?
+text @[Tomoya]
+text I'm gonna skip school tomorrow and Monday, but don't worry about me.
+setvar strS[1001] = "CGNG13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound E3D.aac
+text @[Furukawa]
+text Tomorrow and Monday?
+text @[Tomoya]
+text Yeah. I'll need the next three days.
+sound E3E.aac
+text @[Фурукава]
+text Эм, Фестиваль Основателя будет в эти выходные, церемония — в воскресенье. Понедельник будет выходным, чтобы отметить его.
+text @[Томоя]
+text Фестиваль Основателя?
+text Теперь, когда она упомянула, в это время года всегда что‑то подобное происходит.
+setvar strS[1001] = "CGNG10Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound E3F.aac
+text @[Фурукава]
+text Да. Культурные клубы будут проводить презентации в тот день.
+sound E3G.aac
+text @[Фурукава]
+text Драматический клуб всё ещё не считается клубом, поэтому мы не могли участвовать.
+text @[Томоя]
+text Ох...
+text Для старшеклассников это последние школьные мероприятия, которые они смогут пережить в старшей школе.
+text Должно быть, это важное время для Фурукавы.
+text И всё же Фурукава бы вмиг отдала его ради своего друга.
+text @[Томоя]
+text Спасибо, что пришёл сюда.
+sound E3H.aac
+text @[Фурукава]
+text Я просто рада видеть, что ты в порядке, Оказаки‑сан.
+text @[Томоя]
+text Да. Прости, что заставлял тебя волноваться за меня.
+setvar strS[1001] = "CGNG17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound E3I.aac
+text @[Фурукава]
+text Оказаки‑сан.
+text Она снова произносит моё имя серьёзным тоном.
+text @[Томоя]
+text ...Да?
+sound E3J.aac
+text @[Фурукава]
+text Пожалуйста, приведи Котоми‑чан обратно в школу.
+sound E3K.aac
+text @[Фурукава]
+text Я думаю, ты единственный в мире, кто может это сделать.
+text @[Томоя]
+text Ты преувеличиваешь.
+setvar strS[1001] = "CGNG16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound E3L.aac
+text @[Фурукава]
+text Это не преувеличение.
+setvar strS[1001] = "CGNG10Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound E3M.aac
+text @[Фурукава]
+text Котомичан действительно тебя любит, Оказаки-сан.
+text Фурукава заглядывает в меня.
+text Это не стыдно. Просто кажется странным.
+text Это как лунный свет, пробивающийся сквозь снежное небо. Он тихий и успокаивающий, но также немного печальный...
+text @[Томоя]
+text Я постараюсь.
+text Я отвечаю ей.
+sound E3N.aac
+text @[Фурукава]
+text Ладно.
+text Фурукава кивает.
+sound E3O.aac
+text @[Фурукава]
+text Ну, я сейчас ухожу.
+text @[Томоя]
+text Береги себя.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Как будто тянет свою длинную тень за обувью, Фурукава направляется домой.
+text @[Томоя]
+text Фух...
+text Я снова совсем один.
+text Темнота опускается. Я смотрю на неё, пока земля её впитывает.
+text Наверное, есть только одна вещь, которую я могу сделать.
+text Однако, потому что всё это время я забыл о Котомии, возможно, у меня нет права это делать.
+text Это просто...
+text Просто слишком грустно видеть, как сад так запущен.
+delay 60
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s18
+fi
+goto 19
+label s18
+setvar strS[1000] = ""
+label 19
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+jump SEEN4510_0_0.scr
