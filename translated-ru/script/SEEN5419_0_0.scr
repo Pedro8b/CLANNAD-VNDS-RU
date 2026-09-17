@@ -1,1 +1,282 @@
-��$
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1000] = ""
+label 1
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG019C"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = ""
+label 2
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Спускаясь на первый этаж, я встаю перед дверью справочной комнаты и украдкой заглядываю внутрь.
+text Девушка‑студентка сидит на стуле и читает книгу.
+text Она быстро замечает моё присутствие. Поднимает голову, смотрит на меня и с улыбкой произносит «Добро пожаловать».
+text @[Томоя]
+text ...
+text Похоже, она не вернётся к своей книге. Беспомощно я захожу внутрь.
+setvar strS[1000] = "BG028C"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = ""
+label 3
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGYK10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EL6.aac
+text @[Миязава]
+text Я сделаю кофе.
+text Как только она заканчивает говорить, она встаёт и идёт к кофеварке.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Похоже, я потерял место для сна, но, по крайней мере, получил кафе вместо него.
+setvar strS[1001] = "CGYK12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EL7.aac
+text @[Миязава]
+text Вот, пожалуйста.
+text @[Томоя]
+text Спасибо.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Как только она видит, что я пью кофе, Миязава наконец‑то снова берёт свою книгу.
+text Интересно, какую книгу она читает...
+text Почему бы и нет? Это место — словно кладовая книг, к которым обычные студенты никогда не прикасаются.
+text Такие вещи, как абсурдно сложные технические книги... Она сейчас читает что‑то в этом роде?
+setvar strS[1001] = "CGYK11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EL8.aac
+text @[Миязава]
+text *Giggle*
+text Не представляю, как техническая книга может вызвать такой смех у кого‑либо.
+if intF[404] == 1
+	goto s3
+fi
+goto 4
+label s3
+text Она напоминает мне ту девушку, с которой я встретился в библиотеке.
+text Интересно, может ли быть книжным червём так сильно изменять человека...
+text Ну, она из тех, кто остаётся в таком месте в одиночку. Меня бы не удивило, если бы у неё было полностью нестандартное восприятие мира.
+goto 5
+label 4
+if intF[404] == 0
+	goto s4
+fi
+goto 5
+label s4
+text Она из тех, кто остаётся в таком месте. Её восприятие, должно быть, полностью отходит от нормы.
+label 5
+text Когда эта мысль всплывает в моём сознании, я вдруг ощущаю невидимый барьер между нами.
+text Таких людей, как она, можно встретить повсюду в этой школе.
+text Между ними и такими, как Суногара и я, которые читают только мангу и журналы, есть фундаментальная разница.
+sound EL9.aac
+text @[Миязава]
+text @*Giggle* ...
+delay 84
+text Это действительно забавно, эта манга.
+text @[Tomoya]
+text *Spfffff*
+text Не могу удержаться от того, чтобы слить кофе.
+setvar strS[1001] = "CGYK16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound ELA.aac
+text @[Miyazawa]
+text Что-то не так?
+text @[Tomoya]
+text Итак... ты читала мангу?
+setvar strS[1001] = "CGYK10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound ELB.aac
+text @[Miyazawa]
+text Да. Это просто старый комикс, хотя.
+text @[Tomoya]
+text Почему бы что-то вроде этого было здесь...
+sound ELC.aac
+text @[Miyazawa]
+text Манга и журналы, конфискованные у студентов, тоже хранятся здесь.
+text @[Tomoya]
+text О, теперь понимаю...
+setvar strS[1001] = "CGYK11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound ELD.aac
+text @[Miyazawa]
+text Да.
+setvar strS[1001] = "CGYK10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound ELE.aac
+text @[Miyazawa]
+text А, пожалуйста, возьми это.
+text Она протягивает мне пакет салфеток.
+text Я вынимаю несколько листов, чтобы очистить рот и стол.
+setvar strS[1001] = "CGYK12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound ELF.aac
+text @[Miyazawa]
+text Хочешь прочитать? Я полностью рекомендую.
+text Чтение манги здесь только повысило бы её статус как кафе.
+text @[Tomoya]
+text Ни... я уже почти каждый день читаю мангу и журналы в другом месте.
+setvar strS[1001] = "CGYK10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound ELG.aac
+text @[Miyazawa]
+text Понятно.
+text Я смотрю в окно. Тяжёлые облака намекают на неизбежный дождь.
+text @[Томоя]
+text Скоро будет дождь. Думаю, тебе стоит уйти домой пораньше.
+sound ELH.aac
+text @[Миязава]
+text Да, именно так я и думаю сегодня.
+text @[Томоя]
+text Ну, мне пора. Спасибо за кофе.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text С этими словами я встаю со стула.
+setvar strS[1001] = "CGYK12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound ELI.aac
+text @[Миязава]
+text Конечно, заходи в любое время.
+text @[Томоя]
+text Да.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Правда, здесь я нахожу столько покоя, это… как бы опасно.
+text Как только ты привыкаешь, возникает какая‑то волшебная сила, которая удерживает тебя здесь.
+text Не только о кофе. Мне кажется, в ней есть то, что позволяет тебе быть по-настоящему собой.
+text @[Томоя]
+text (Хм, может, я просто… легко становлюсь одиноким.)
+text Эта мысль остаётся, пока я иду наружу, оставляя комнату с образцами позади.
+setvar intF[503] = 1
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
