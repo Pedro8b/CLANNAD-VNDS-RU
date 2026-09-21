@@ -95,23 +95,23 @@ if intF[1113] == 1
 	fi
 fi
 music BGM01.mp3
-text Monday...
-text I suddenly feel lethargic.
-text It's the start to another week of having to sit through one tedious class after the next.
+text Понедельник...
+text Меня внезапно охватывает апатия.
+text Начинается очередная неделя, когда придётся высиживать один нудный урок за другим.
 text @[Томоя]
-text (Maybe I'd feel more motivated if I just dropped out and started working...)
-text I don't know. Would I really...?
-text No, I really don't see that happening.
-text I feel like mindlessly sitting through lectures would probably be easier overall.
-text Working every day just to put food on the table...?
-text Once I got myself stuck in that cycle, I would never be able to walk away from it, no matter how pathetic I felt.
-text Just the thought makes me cringe a little.
+text (Может, у меня было бы больше мотивации, если бы я просто бросил школу и пошёл работать...)
+text Не знаю. А правда ли...?
+text Нет, я правда не представляю, чтобы так вышло.
+text Мне кажется, бездумно высиживать лекции в целом было бы проще.
+text Работать каждый день просто ради куска хлеба...?
+text Застряв в этом круговороте, я бы уже никогда не смог из него вырваться, каким бы жалким себя ни чувствовал.
+text От одной этой мысли меня слегка передёргивает.
 text @[Томоя]
-text (But even so, I only have a year left...)
-text I look at the clock. It's still early. I'll have plenty of time to make first bell.
+text (Но всё же мне осталось учиться всего год...)
+text Я смотрю на часы. Ещё рано. У меня полно времени, чтобы успеть к первому звонку.
 text @[Томоя]
-text (Of course, I'm not sure I really want to make it there in time. I'd have to put up with classes the entire day, then...)
-choice Wake up like a good student|Be late
+text (Конечно, не уверен, что действительно хочу успеть вовремя. Тогда придётся терпеть уроки весь день...)
+choice Встать, как примерный ученик|Опоздать
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -121,8 +121,8 @@ fi
 goto 9
 label s6
 text @[Томоя]
-text (I'll take this one last year easy...)
-text I laze around for another hour.
+text (В этот последний год можно и полениться...)
+text Я валяюсь без дела ещё час.
 setvar strS[1000] = "KURO"
 setvar intA[1000] = 1
 if intA[1000] == 0
@@ -163,12 +163,12 @@ if intF[1089] == 0
 fi
 goto 10
 label s8
-text Ah, this is so pointless.
-text But while part of me feels that way, all the misanthropic thoughts I've had this morning have made me wide awake.
-text Curling up on the futon and losing myself to rumination will just make me feel even more depressed.
+text Ах, это так бессмысленно.
+text Но пока часть меня так считает, все эти мизантропические мысли, посетившие меня этим утром, окончательно прогнали сон.
+text Свернуться на футоне и утонуть в раздумьях — от этого станет только тоскливее.
 text @[Томоя]
-text (Guess I'll go...)
-text I lift my body out of bed, as if to shake off the heavy, forlorn feeling that's fallen over me.
+text (Ладно, пойду, наверное...)
+text Я поднимаюсь с постели, будто стряхивая с себя навалившееся тяжёлое, тоскливое чувство.
 if intF[208] == 1
 	goto s9
 fi
@@ -255,10 +255,10 @@ if intF[10] == 0
 fi
 goto 14
 label s14
-text That reminds me...
-text There's no one next to me.
-text He must've gone back to the dorm or off to gallivant around.
-text Either way, looks like he's gonna play hooky.
+text Кстати, вспомнил...
+text Рядом со мной никого нет.
+text Наверное, он вернулся в общежитие или пошёл где-то шататься.
+text В любом случае, похоже, он опять прогуливает.
 goto 15
 label 14
 if intF[10] == 1
@@ -266,10 +266,10 @@ if intF[10] == 1
 fi
 goto 15
 label s15
-text That reminds me...
-text There's no one next to me.
-text I guess I was alone when I returned to the classroom.
-text He's probably off wandering around somewhere again.
+text Кстати, вспомнил...
+text Рядом со мной никого нет.
+text Похоже, я вернулся в класс один.
+text Наверное, он снова где-то бродит.
 label 15
 goto 19
 label 16
@@ -314,12 +314,12 @@ if intF[1113] == 1
 	fi
 fi
 music BGM08D.mp3
-text Third period's ended, and Sunohara still isn't around.
+text Третий урок закончился, а Сунохары всё ещё нет.
 label 19
 text @[Томоя]
-text (This is so mind-numbing...)
-text I can't let off any stress without Sunohara around.
-text I leave the classroom for a refresher.
+text (Это так отупляюще...)
+text Без Сунохары мне даже стресс сбросить не с кем.
+text Я выхожу из класса, чтобы немного взбодриться.
 setvar strS[1000] = "BG018"
 setvar intA[1000] = 1
 if intA[1000] == 0
@@ -338,7 +338,7 @@ if intF[1113] == 1
 	fi
 fi
 text @[Томоя]
-text (Guess I'll go grab a drink...)
+text (Пожалуй, схожу за напитком...)
 setvar strS[1000] = "BG025B"
 setvar intA[1000] = 1
 if intA[1000] == 0
@@ -356,9 +356,9 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text The cafeteria is deserted.
-text I purchase an 80 yen paper juice box from the vending machine and head back to class while sipping it.
-text Of course, food and drink are banned in the halls, but the worst a teacher would do is chew me out.
+text В столовой пусто.
+text Я покупаю в автомате пакетик сока за 80 йен и потягиваю его по пути обратно в класс.
+text Конечно, есть и пить в коридорах запрещено, но самое худшее, что мне грозит от учителя — это нагоняй.
 if intF[128] == 1
 	goto s20
 fi
@@ -398,7 +398,7 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text I head back to class.
+text Я возвращаюсь в класс.
 goto 25
 label 23
 if intF[128] == 0
@@ -423,7 +423,7 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text I empty my drink just as I arrive, tossing it into the trash before returning to my seat.
+text Как раз к моменту прихода я допиваю сок и, выбросив пакетик в мусорку, возвращаюсь на своё место.
 label 25
 if intF[9] == 1
 	goto s24
@@ -447,10 +447,10 @@ if intF[1113] == 1
 fi
 sound XL.aac
 text @[Сунохара]
-text *Yawn*
-text Sunohara's back too. He's yawning as if he doesn't have a care in the world.
+text *Зевок*
+text Сунохара тоже вернулся. Зевает так, будто у него нет никаких забот.
 text @[Томоя]
-text Were you sleeping somewhere?
+text Ты где-то спал?
 setvar strS[1001] = "CGSH15"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -462,10 +462,10 @@ if intF[1113] == 1
 fi
 sound XM.aac
 text @[Сунохара]
-text Eh, guess so.
+text Ну, вроде того.
 sound XN.aac
 text @[Сунохара]
-text So...
+text Короче...
 goto 27
 label 26
 if intF[10] == 1
@@ -485,9 +485,9 @@ fi
 sound XO.aac
 text @[Сунохара]
 text ...
-text Sunohara had returned.
+text Сунохара вернулся.
 text @[Томоя]
-text Were you off crying somewhere?
+text Ты где-то ревел?
 setvar strS[1001] = "CGSH23"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -499,8 +499,8 @@ if intF[1113] == 1
 fi
 sound XP.aac
 text @[Сунохара]
-text 'Course not!
-text Sunohara rubs his eyes.
+text Конечно нет!
+text Сунохара трёт глаза.
 setvar strS[1001] = "CGSH16"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -512,7 +512,7 @@ if intF[1113] == 1
 fi
 sound XQ.aac
 text @[Сунохара]
-text My eyes are red because I was sleeping.
+text У меня глаза красные, потому что я спал.
 setvar strS[1001] = "CGSH15"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -524,7 +524,7 @@ if intF[1113] == 1
 fi
 sound XR.aac
 text @[Сунохара]
-text So...
+text Короче...
 label 27
 goto 38
 label 28
@@ -582,9 +582,9 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text It's lunch break, but Sunohara still hasn't shown up.
+text Уже обеденный перерыв, а Сунохары всё ещё нет.
 text @[Томоя]
-text (He's pulling this again...?)
+text (Опять он за своё...?)
 if intF[405] == 1
 	if intF[410] == 0
 		goto s30
@@ -592,10 +592,10 @@ if intF[405] == 1
 fi
 goto 32
 label s30
-text I'd promised Kotomi that we'd start eating lunch together starting this week, but...
-text I'd rather not have anything more to do with her.
+text Я обещал Котоми, что с этой недели мы начнём обедать вместе, но...
+text Мне бы не хотелось иметь с ней больше никаких дел.
 text @[Томоя]
-text (She did say that I might not come again, anyway...)
+text (Хотя она и сказала, что я, возможно, больше не приду...)
 label 32
 if intF[212] == 1
 	goto s31
@@ -662,7 +662,7 @@ if intF[213] == 0
 fi
 goto 37
 label s34
-text Just as fifth period concludes...
+text Как раз когда заканчивается пятый урок...
 setvar strS[1001] = "CGSH25"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -674,10 +674,10 @@ if intF[1113] == 1
 fi
 sound XS.aac
 text @[Сунохара]
-text What's up!
-text ...Sunohara finally makes an appearance.
+text Как жизнь!
+text ...Сунохара наконец-то появляется.
 text @[Томоя]
-text You're awfully energetic.
+text Ты что-то очень бодрый.
 setvar strS[1001] = "CGSH12"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -689,12 +689,12 @@ if intF[1113] == 1
 fi
 sound XT.aac
 text @[Сунохара]
-text 'Cause I've been sleeping all day, son!
+text Да я ж весь день дрых, дружище!
 sound XU.aac
 text @[Сунохара]
-text So, what's sixth period?
+text Так, а что у нас шестым уроком?
 text @[Томоя]
-text Can't you tell by looking?
+text Сам не видишь, что ли?
 setvar strS[1001] = "CGSH20"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -706,8 +706,8 @@ if intF[1113] == 1
 fi
 sound XV.aac
 text @[Сунохара]
-text Huh?
-text There are no girls to be seen in class any longer. It's turned into a boy's locker room.
+text А?
+text В классе больше не видно ни одной девочки. Он превратился в мужскую раздевалку.
 setvar strS[1000] = "BG030"
 setvar intA[1000] = 1
 if intA[1000] == 0
@@ -725,14 +725,14 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text Sixth period is P.E. It looks like we're scheduled to play soccer today.
-text It's not so much a class though, as much as it's a study break. We're just supposed to play a little match as a breather, really.
-text You can ignore the ball and chat with friends outright and the teacher still won't say anything.
-text Third-year P.E. classes are pretty meaningless like that; they're just filler at this stage.
+text Шестой урок — физкультура. Похоже, сегодня по расписанию футбол.
+text Хотя это скорее не урок, а перемена для отдыха. По сути, нам просто нужно немного погонять мяч, чтобы передохнуть.
+text Можно вообще игнорировать мяч и болтать с друзьями — учитель всё равно ничего не скажет.
+text Физкультура у выпускников на этом этапе довольно бессмысленна — это просто способ занять время.
 sound XW.aac
 text @[Сунохара]
-text Aaaaall right, hat trick!!
-text The only enthusiastic voice to be heard is the one belonging to the former member of the soccer team.
+text Ну всё, хет-трик!!
+text Единственный воодушевлённый голос принадлежит бывшему игроку футбольной команды.
 goto 40
 label 37
 if intF[213] == 1
@@ -751,9 +751,9 @@ if intF[1113] == 1
 fi
 sound XX.aac
 text @[Сунохара]
-text *Yawn* ...I feel so lethargic this morning after being forced to wake up.
+text *Зевок* ...Меня так разморило с утра после того, как пришлось проснуться.
 text @[Томоя]
-text It's not morning. It's the afternoon.
+text Сейчас не утро. Уже день.
 setvar strS[1001] = "CGSH15"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -766,9 +766,9 @@ fi
 label 38
 sound XY.aac
 text @[Сунохара]
-text ...What's sixth period, again?
+text ...Что там снова шестым уроком?
 text @[Томоя]
-text Can't you tell by looking?
+text Сам не видишь, что ли?
 setvar strS[1001] = "CGSH20"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -780,8 +780,8 @@ if intF[1113] == 1
 fi
 sound XZ.aac
 text @[Сунохара]
-text Huh?
-text There are no girls to be seen in class any longer. It's turned into a boy's locker room.
+text А?
+text В классе больше не видно ни одной девочки. Он превратился в мужскую раздевалку.
 setvar strS[1001] = "CGSH16"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -793,16 +793,16 @@ if intF[1113] == 1
 fi
 sound Y0.aac
 text @[Сунохара]
-text P.E.? Ugh, I don't wanna have to move classrooms...
+text Физра? Уф, не хочу тащиться в другой кабинет...
 sound Y1.aac
 text @[Ученик А]
-text What're we playing today?
+text Во что сегодня играем?
 sound Y2.aac
 text @[Ученик Б]
-text Soccer, apparently.
+text Вроде в футбол.
 sound Y3.aac
 text @[Ученик А]
-text Really? Ugh...
+text Правда? Фу...
 setvar strS[1001] = "CGSH13"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -814,12 +814,12 @@ if intF[1113] == 1
 fi
 sound Y4.aac
 text @[Сунохара]
-text Oh, what was that...? I think I'm suddenly starting to feel motivated!
+text О, а это ещё что...? Кажется, у меня внезапно появилась мотивация!
 text @[Томоя]
-text It's your one chance to show off as a former member of the soccer team, after all.
+text Всё-таки это твой единственный шанс блеснуть как бывшему футболисту.
 sound Y5.aac
 text @[Сунохара]
-text Hah. I'll show you the kind of level players like me operate on.
+text Ха. Я покажу тебе, на каком уровне играют такие, как я.
 setvar strS[1000] = "BG030"
 setvar intA[1000] = 1
 if intA[1000] == 0
@@ -837,13 +837,13 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text P.E. isn't so much a class as much as it's a study break. We're just supposed to play a little match as a breather.
-text You can ignore the ball and chat with friends outright and the teacher still won't say anything.
-text Third-year P.E. classes are pretty meaningless like that; they're just filler at this stage.
+text Физкультура — это скорее не урок, а перемена для отдыха. По сути, нам просто нужно немного погонять мяч.
+text Можно вообще игнорировать мяч и болтать с друзьями — учитель всё равно ничего не скажет.
+text Физкультура у выпускников на этом этапе довольно бессмысленна — это просто способ занять время.
 sound Y6.aac
 text @[Сунохара]
-text Aaaaall right, hat trick!!
-text The only energetic voice to be heard is the one belonging to the idiot who's given up on going to college.
+text Ну всё, хет-трик!!
+text Единственный бодрый голос принадлежит идиоту, который уже махнул рукой на поступление в институт.
 label 40
 if intF[213] == 0
 	goto s38
@@ -887,9 +887,9 @@ if intF[1113] == 1
 fi
 sound Y7.aac
 text @[Сунохара]
-text Let's get going.
+text Пойдём уже.
 text @[Томоя]
-text You must be having such a wonderful time as a high school student.
+text У тебя, наверное, замечательная жизнь старшеклассника.
 setvar strS[1001] = "CGSH12"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -901,9 +901,9 @@ if intF[1113] == 1
 fi
 sound Y8.aac
 text @[Сунохара]
-text Hm?
+text Хм?
 text @[Томоя]
-text You'll never be able to relive these days, so be sure to get your fill of 'em.
+text Эти дни уже никогда не повторятся, так что не упусти момент насладиться ими сполна.
 setvar strS[1001] = "CGSH13"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -920,7 +920,7 @@ goto 43
 label s41
 sound Y9.aac
 text @[Сунохара]
-text Of course. And that's another reason why we should get outta here and have some fun!
+text Конечно. Вот ещё одна причина, почему нам нужно убраться отсюда и повеселиться!
 goto 44
 label 43
 if intF[610] == 1
@@ -930,10 +930,10 @@ goto 44
 label s42
 sound YA.aac
 text @[Сунохара]
-text Of course.
+text Конечно.
 sound YB.aac
 text @[Сунохара]
-text Okay, this is where today really starts to get serious...
+text Так, вот теперь всё начинается по-настоящему серьёзно...
 label 44
 if intF[11] == 1
 	goto s43
@@ -944,7 +944,7 @@ fi
 goto 48
 label s43
 text @[Томоя]
-text Yep. Good luck and go have fun.
+text Ага. Удачи, повеселитесь там.
 setvar strS[1001] = "NONE"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -953,7 +953,7 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text I take my bag with me as I exit the classroom.
+text Я забираю сумку и выхожу из класса.
 setvar strS[1000] = "BG018"
 setvar intA[1000] = 1
 if intA[1000] == 0
@@ -973,10 +973,10 @@ if intF[1113] == 1
 fi
 sound YC.aac
 text @[Сунохара]
-text Huh? You're not coming with me?!
+text А? Ты со мной не идёшь?!
 text @[Томоя]
-text Something stupid came up that I have to deal with.
-text I leave my answer hanging there for 'em to do whatever he wants with before heading down the hallway on my own.
+text Тут одно дурацкое дело подвернулось, надо разобраться.
+text Я оставляю свой ответ висеть в воздухе, пусть понимает как хочет, и в одиночестве иду по коридору.
 if intF[11] == 1
 	goto s45
 fi
@@ -1033,7 +1033,7 @@ jump SEEN0421_0_1.scr 61
 label s47
 label 49
 text @[Томоя]
-text I'm telling you, I'm broke.
+text Говорю тебе, я на мели.
 setvar strS[1001] = "CGSH12"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -1045,11 +1045,11 @@ if intF[1113] == 1
 fi
 sound YD.aac
 text @[Сунохара]
-text We'll find someone we know if we go to the arcade in front of the station.
+text Если сходим в игровые автоматы у станции, наверняка найдём кого-нибудь знакомого.
 text @[Томоя]
-text You're doing this again...?
+text Опять ты за своё...?
 text @[Томоя]
-text We'll be golden so long as the rugby team isn't around.
+text Всё будет отлично, пока рядом нет регбистов.
 if intF[500] == 1
 	if intF[501] == 1
 		goto s48
