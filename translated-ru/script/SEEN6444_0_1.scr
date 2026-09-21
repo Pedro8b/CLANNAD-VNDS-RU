@@ -1,1 +1,341 @@
-��$
+label 52
+if 0 == 1
+	goto s46
+fi
+goto 53
+label s46
+setvar strS[1000] = "SIRO"
+goto 54
+label 53
+setvar strS[1000] = "KURO"
+label 54
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text Мы тоже вместе отмечаем Фестиваль Основателя, наш аналог школьного фестиваля.
+text Но…
+text Это последний день, который я провожу в школе с {$lnmC}.
+setvar strS[1000] = "BG006N1"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s47
+fi
+goto 55
+label s47
+setvar strS[1000] = ""
+label 55
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Томоя]
+text Она в порядке, Санаэ‑сан?
+setvar strS[1001] = "CGSN10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JX8.aac
+text @[Санаэ]
+text Она будет в порядке. Пожалуйста, успокойся.
+text @[Томоя]
+text Прости… Я, наверное, заставил её слишком много бегать.
+text @[Томоя]
+text Я так возбудился… поэтому вёз её повсюду, а потом…
+if intF[136] == 0
+	goto s48
+fi
+goto 56
+label s48
+setvar strS[1001] = "CGSN11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JX9.aac
+text @[Санаэ]
+text Тебе не нужно извиняться. Она пошла с тобой, потому что хотела, верно?
+text @[Томоя]
+text Но… это ещё больше причин, почему я должен был за ней присматривать.
+sound JXA.aac
+text @[Санаэ]
+text Тебе не стоит так сильно себя винить.
+text @[Томоя]
+text ...
+goto 57
+label 56
+if intF[136] == 1
+	goto s49
+fi
+goto 57
+label s49
+sound JXB.aac
+text @[Санаэ]
+text Тебе не нужно извиняться. Разве она не твоя девушка?
+text @[Томоя]
+text Ты… знал об этом?
+setvar strS[1001] = "CGSN11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JXC.aac
+text @[Санаэ]
+text Разве это не очевидно? Она ведь моя дочь.
+text @[Томоя]
+text Я никчёмный парень.
+sound JXD.aac
+text @[Санаэ]
+text Это не так.
+label 57
+setvar strS[1001] = "CGSN10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JXE.aac
+text @[Санаэ]
+text Оказаки-сан.
+text @[Томоя]
+text Хорошо.
+sound JXF.aac
+text @[Санаэ]
+text Можно ли называть тебя Томоя-сан?
+text @[Томоя]
+text Пожалуйста.
+sound JXG.aac
+text @[Санаэ]
+text Тогда, Томоя-сан.
+text @[Томоя]
+text Хорошо.
+sound JXH.aac
+text @[Санаэ]
+text Нагиса всегда была физически слабым ребёнком... но, пожалуйста, будь рядом с ней как можно дольше. Это всё, чего я желаю.
+text @[Томоя]
+text Это я должен говорить так. Я всё ещё не понимаю, как она может полюбить такого, как я...
+setvar strS[1001] = "CGSN11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JXI.aac
+text @[Санаэ]
+text Бред. Перестань сомневаться в себе. К тому же у тебя моя полная поддержка.
+text @[Томоя]
+text Рад это слышать.
+setvar strS[1001] = "CGSN10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JXJ.aac
+text @[Санаэ]
+text Ты тоже, наверное, устал, Томоя-сан. Пожалуйста, оставь Нагису со мной и иди домой на сегодня.
+text @[Томоя]
+text Мне стыдно. Я всё время только играл.
+sound JXK.aac
+text @[Санаэ]
+text Не говори так.
+text @[Томоя]
+text Ладно, если ты настаёшь, то спасибо.
+setvar strS[1001] = "CGSN11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound JXL.aac
+text @[Санаэ]
+text Ладно!
+text Что касается {$lnmC}...
+if 0 == 0
+	goto s50
+fi
+goto 58
+label s50
+setvar strS[1000] = "KURO"
+goto 60
+label 58
+if 0 == 1
+	goto s51
+fi
+goto 59
+label s51
+setvar strS[1000] = "SIRO"
+goto 60
+label 59
+setvar strS[1000] = "KURO"
+label 60
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text На следующий день после Праздника Основателя она лежит в постели с температурой.
+setvar strS[1000] = "BG003"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s52
+fi
+goto 61
+label s52
+setvar strS[1000] = ""
+label 61
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Томоя]
+text {$lnmC}...
+text Я вхожу в комнату; в ней жарко от лихорадки {$lnmC}.
+setvar strS[1001] = "CGNG34E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG34E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[0] = lnmE
+if strS[0] > "Okazaki-san"
+	setvar intA[1000] = 1
+fi
+if strS[0] < "Okazaki-san"
+	setvar intA[1000] = -1
+fi
+if strS[0] == "Okazaki-san"
+	setvar intA[1000] = 0
+fi
+if strS[0] > "Tomoya-kun"
+	setvar intA[1001] = 1
+fi
+if strS[0] < "Tomoya-kun"
+	setvar intA[1001] = -1
+fi
+if strS[0] == "Tomoya-kun"
+	setvar intA[1001] = 0
+fi
+if intA[1000] == 0
+	goto s53
+fi
+goto 62
+label s53
+sound JXM.aac
+goto 63
+label 62
+sound JXN.aac
+label 63
+text @[{$lnmA}]
+text Томоя-кун...
+text Пока она лежит в постели, {$lnmC} поворачивает лицо к мне.
+sound JXO.aac
+text @[{$lnmA}]
+text ...Я была той, кто не могла продолжать.
+text @[Томоя]
+text А? О чём ты?
+sound JXP.aac
+text @[{$lnmA}]
+text Говорим, пока идём в школу.
+text @[Томоя]
+text Мы ничего не можем с этим сделать. Это же не твоя вина.
+sound JXQ.aac
+text @[{$lnmA}]
+text Это не так... Это моя вина за то, что у меня такое слабое тело...
+text @[Томоя]
+text Я же говорил тебе, это не правда.
+sound JXR.aac
+text @[{$lnmA}]
+text ...
+sound JXS.aac
+text @[{$lnmA}]
+text Ладно... Прости.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text {$lnmC} ведёт себя более застенчиво, чем обычно. Может, из‑за её болезни..
+text С того дня, когда мы встретились у подножия холма...
+text Она так упорно старалась.
+text ...Хотя в конце концов ей не удалось реформировать драмклуб.
+text Или, может быть, в какой‑то момент...
+text ...мы с тобой убежали от остального мира в утешающую слабость мысли, что единственное, что имеет значение, — быть вместе?
+text Я не хочу, чтобы так было.
+text Я уверен, что мы посмотрели реальность в лицо, когда работали так усердно, как тогда.
+text И это не изменится с этого момента тоже.
+text ......
+text Я не видел, как это произошло, но глаза {$lnmC} теперь закрыты, и она спит.
+text @[Томоя]
+text (Она так беззащитна...)
+text Я прикасаюсь рукой к её щеке и ощущаю её тепло.
+text Я уверен, что впереди нас ждёт ещё много тяжёлых времен.
+text Как для неё, так и для меня.
+text Так я чувствую, что всё будет дальше.
+text Вот почему мы должны считать это коротким небольшим перерывом, и всё.
+text Я отпускаю её руку и встаю.
+text Я выхожу из комнаты, чтобы не разбудить её.
+if intF[29] == 1
+	goto s54
+fi
+goto 64
+label s54
+jump SEEN7300_0_0.scr
+label 64
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s55
+fi
+goto 65
+label s55
+setvar strS[1000] = ""
+label 65
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+delay 120
+cleartext
+jump main.scr
