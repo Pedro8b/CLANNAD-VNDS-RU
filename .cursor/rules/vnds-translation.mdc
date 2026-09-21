@@ -1,0 +1,11 @@
+---
+description: VNDS CLANNAD RU — не ломать код скриптов, вести listing.json
+alwaysApply: true
+---
+
+При любой работе с `script/` или `translated-ru/`:
+
+1. Сначала прочитай skill `vnds-ru-translate` и гоняй `python tools/vnds_pipeline.py`.
+2. Кодовые строки `.scr` не менять. Можно менять только текст `text`/`choice` и имена `@[Говорящий]` по `translated-ru/speakers.json`.
+3. В `listing.json` не ставить `translated` у пустых файлов. В листинг как `approved` попадает файл только после проверки структуры и языка.
+4. Один файл за проход: next → перевод или правки → check → approved / qa_failed.
