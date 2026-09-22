@@ -214,10 +214,10 @@ text @[Томоя]
 text @(Ну, надо что-то сделать, чтобы предупредить её...)
 label 2
 setvar intF[112] = 1
-setvar strS[1011] = "Make her drink juice with her nose       "
-setvar strS[1012] = "Put her around somewhere                 "
-setvar strS[1013] = "Switch the person she's talking to       "
-setvar strS[1014] = "Switch the carving she's holding         "
+setvar strS[1011] = "Заставить её пить сок через нос            "
+setvar strS[1012] = "Переставить её куда-нибудь                "
+setvar strS[1013] = "Подменить человека, с которым она говорит  "
+setvar strS[1014] = "Подменить поделку, которую она держит      "
 if intF[100] == 0
 	setvar strS[1011] + "Lv1"
 fi
@@ -225,7 +225,7 @@ if intF[100] == 1
 	setvar strS[1011] + "Lv2"
 fi
 if intF[100] == 2
-	setvar strS[1011] + "\x1b[33;1mMaster"
+	setvar strS[1011] + "\x1b[33;1mМастер"
 fi
 if intF[101] == 0
 	setvar strS[1012] + "Lv1"
@@ -234,7 +234,7 @@ if intF[101] == 1
 	setvar strS[1012] + "Lv2"
 fi
 if intF[101] == 2
-	setvar strS[1012] + "\x1b[33;1mMaster"
+	setvar strS[1012] + "\x1b[33;1mМастер"
 fi
 if intF[103] == 0
 	setvar strS[1013] + "Lv1"
@@ -243,7 +243,7 @@ if intF[103] == 1
 	setvar strS[1013] + "Lv2"
 fi
 if intF[103] == 2
-	setvar strS[1013] + "\x1b[33;1mMaster"
+	setvar strS[1013] + "\x1b[33;1mМастер"
 fi
 if intF[104] == 0
 	setvar strS[1014] + "Lv1"
@@ -252,7 +252,7 @@ if intF[104] == 1
 	setvar strS[1014] + "Lv2"
 fi
 if intF[104] == 2
-	setvar strS[1014] + "\x1b[33;1mMaster"
+	setvar strS[1014] + "\x1b[33;1mМастер"
 fi
 choice {$strS[1011]}|{$strS[1012]}|{$strS[1013]}|{$strS[1014]}
 setvar intF[1089] = selected
@@ -474,7 +474,7 @@ fi
 text Фуко всё ещё блуждает в своём сне.
 label 11
 text Я вставляю трубочку из пакета с соком в её беззащитный нос.
-text *Sschlurp*
+text *Шлюрп*
 setvar strS[1001] = "CGFU31A"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -522,7 +522,7 @@ if intF[1113] == 1
 fi
 sound 1WM.aac
 text @[Фуко]
-text *Ppfffff* *Ppfffff*
+text *Пффф* *Пффф*
 text Она отчаянно вытирает нос.
 text Но, видимо, ничего не выйдет.
 setvar intF[100] = 1
@@ -912,10 +912,10 @@ text @[Фуко]
 text Потом появилась девушка. Верх её головы напоминал антенну детектора демонов. Она смотрела и улыбалась Фуко!
 sound 1X9.aac
 text @[Фуко]
-text When Fuko told her Fuko could only drink really sweet coffee, she put a lot of sugar into the cup.
+text Когда Фуко сказала ей, что может пить только очень сладкий кофе, та насыпала в чашку много сахара.
 sound 1XA.aac
 text @[Фуко]
-text Then she kept on watching as Fuko drank the coffee.
+text Потом она продолжала наблюдать, как Фуко пьёт кофе.
 setvar strS[1001] = "CGFU16A"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -927,10 +927,10 @@ if intF[1113] == 1
 fi
 sound 1XB.aac
 text @[Фуко]
-text Then it felt really comfy there! Nothing else seemed to matter anymore!
+text А потом там стало так уютно! Больше ничего, казалось, не имело значения!
 sound 1XC.aac
 text @[Фуко]
-text Just a few more minutes and Fuko would have become a person without any purpose or goal in life!
+text Ещё несколько минут — и Фуко стала бы человеком без цели и смысла в жизни!
 setvar strS[1001] = "CGFU17A"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -942,7 +942,7 @@ if intF[1113] == 1
 fi
 sound 1XD.aac
 text @[Фуко]
-text Haa... haa... That was so scary...
+text Ха... ха... Это было так страшно...
 setvar strS[1001] = "CGFU20A"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -954,9 +954,9 @@ if intF[1113] == 1
 fi
 sound 1XE.aac
 text @[Фуко]
-text It was such a dangerous place! Too relaxing!
+text Это было такое опасное место! Слишком расслабляющее!
 text @[Томоя]
-text My goodness, that sounds terrible.
+text Боже мой, звучит ужасно.
 setvar strS[1001] = "CGFU30A"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -968,16 +968,16 @@ if intF[1113] == 1
 fi
 sound 1XF.aac
 text @[Фуко]
-text Seriously though, since when did Fuko start doing things like the Kawaguchi Adventure Team?
+text Но если серьёзно, с каких пор Фуко начала вести себя как команда искателей приключений Кавагути?
 sound 1XG.aac
 text @[Фуко]
-text Fuko's become quite a reckless adventurer.
+text Фуко стала настоящей отчаянной искательницей приключений.
 text @[Томоя]
-text Totally.
-text There's nothing more to be achieved from this prank...
+text Точно.
+text Больше из этой шутки ничего не выжать...
 delay 60
 sound F.aac
-text @You have mastered the "Put Fuko somewhere randomly" skill!
+text @Вы освоили навык «Поместить Фуко в случайное место»!
 delay 312
 setvar intF[124] + 1
 if intF[124] == 1
@@ -985,7 +985,7 @@ if intF[124] == 1
 fi
 goto 21
 label s21
-text ...Am I dumb or something?
+text ...Я что, дурак что ли?
 label 21
 setvar intF[101] = 2
 setvar intF[131] = 1
@@ -997,7 +997,7 @@ fi
 goto 23
 label s22
 text @[Томоя]
-text @(This is overdone already... Let's try something else...)
+text @(Это уже перебор... Попробуем что-то другое...)
 goto 2
 label 23
 goto 36
@@ -1012,7 +1012,7 @@ if intF[103] == 0
 fi
 goto 25
 label s24
-text I glance around the corridor.
+text Я оглядываю коридор.
 setvar strS[1001] = "NONE"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -1021,12 +1021,12 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text An underclassman is heading this way. I call him over and have him stand before the daydreaming Fuko.
+text В мою сторону идёт младшекурсник. Я подзываю его и ставлю перед витающей в облаках Фуко.
 sound 1RG.aac
 text @[Ученик]
-text What did you want?
+text Что вы хотели?
 text @[Томоя]
-text When she's come to, keep telling her "I'm Okazaki. My face has changed".
+text Когда она придёт в себя, повторяй ей: «Я Окадзаки. У меня изменилось лицо».
 sound 1RH.aac
 text @[Ученик]
 text Что...? Зачем?
@@ -2197,10 +2197,10 @@ if intF[1113] == 1
 	fi
 fi
 sound 20G.aac
-setvar strS[1017] = "Fuko"
-setvar strS[1020] = "Wha... Uwaaaa-!"
-setvar strS[1018] = "Female Student"
-setvar strS[1021] = "Kyaaaaaaa-!"
+setvar strS[1017] = "Фуко"
+setvar strS[1020] = "Чё... Уваааа-!"
+setvar strS[1018] = "Ученица"
+setvar strS[1021] = "Кяяяяяя-!"
 text @[Фуко Ученица]
 text Чё... Уваааа-!
 text Кяяяяяя-!

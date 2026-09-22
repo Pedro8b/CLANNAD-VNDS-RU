@@ -50,7 +50,7 @@ text Не заметив меня, она заходит в книжный ма�
 if intF[403] == 1
 	goto 27
 fi
-choice Follow her into the bookstore|Leave her alone
+choice Зайти за ней в книжный магазин|Оставить её в покое
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -307,7 +307,7 @@ label 11
 setvar strS[1001] = ""
 setvar intF[1113] = 0
 bgload {$strS[1000]}.jpg 0
-text *Snip* *Snip*
+text *Чик* *Чик*
 text @[Томоя]
 text Прекрати резать!
 setvar strS[1000] = "FGKT02B"
@@ -521,7 +521,7 @@ text @[Томоя]
 text А до этого?
 sound BTB.aac
 text @[Котоми]
-text @Another...
+text @Ещё один...
 delay 24
 text @[Томоя]
 text Ладно, я понял.
@@ -835,7 +835,7 @@ text В её сумке не только книги, которые я толь
 text Возможно, ей будет тяжело нести всё это, держась за зонт.
 text У меня нет зонта, но я не против намокнуть.
 text Что мне делать?
-choice Part ways here|Offer to walk her home
+choice Расстаться здесь|Предложить проводить её домой
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1

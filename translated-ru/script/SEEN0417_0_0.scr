@@ -971,7 +971,7 @@ if intF[1113] == 1
 fi
 sound MR.aac
 text @[Сунохара]
-text Okay, I'm off.
+text Ладно, я пошёл.
 goto 41
 label 40
 if intF[205] == 0
@@ -992,7 +992,7 @@ sound MS.aac
 text @[Сунохара]
 text Давай, пойдём.
 label 41
-choice Follow him|Do nothing
+choice Пойти за ним|Ничего не делать
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -1034,7 +1034,7 @@ if intF[1113] == 1
 fi
 sound MT.aac
 text @[Сунохара]
-text Oh, so you're coming with me?
+text О, так ты идёшь со мной?
 setvar strS[1001] = "CGSH12"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30

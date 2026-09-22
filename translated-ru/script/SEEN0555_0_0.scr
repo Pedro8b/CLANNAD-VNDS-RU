@@ -36,7 +36,7 @@ music BGM09A.mp3
 text @Ю, главный герой, являешься старшеклассником, стремящимся завоевать сердце идола школы, Юкино-сан.
 text А теперь — почувствуем биение сердца!
 text Я жду у школьных ворот. Идол школы, Юкино-сан, подошла к воротам.
-choice Confess|Watch her walk away
+choice Признаться|Смотреть, как она уходит
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -60,7 +60,7 @@ goto 7
 label s4
 label 7
 text Сейчас обеденный перерыв. Юкино-сан обедает в столовой.
-choice Confess|Keep watching
+choice Признаться|Продолжать смотреть
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -85,7 +85,7 @@ goto 9
 label s6
 label 9
 text Сейчас после занятий. О, Юкино-сан уже уходит.
-choice Confess|Watch her walk away
+choice Признаться|Смотреть, как она уходит
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -111,7 +111,7 @@ text Хех... это так жалко.
 music ~
 text @Юкино... будь счастлива...
 text @Я наблюдаю, как она уходит всё дальше и дальше.
-text GAMEOVER
+text ИГРА ОКОНЧЕНА
 sound B.aac
 delay 90
 goto 27
@@ -123,7 +123,7 @@ text @Ном!
 sound H.aac
 text @Ми: "Ааааа!"
 text Юкино-сан укусила тебя!
-choice Shake her off|Hug her
+choice Оттолкнуть её|Обнять её
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -141,7 +141,7 @@ goto 13
 label s10
 text @Омномном... "Аааагггх!!"
 text @В один момент тебя съели!
-text GAMEOVER
+text ИГРА ОКОНЧЕНА
 sound B.aac
 delay 90
 goto 27
@@ -158,7 +158,7 @@ text @\"То было близко. Эта девочка — зомби, пон
 text @Мужчина с оружием появляется.
 text \"Меня зовут Стив.\"
 text Школа превратилась в гнездо зомби. Давай взорвём это место.
-choice Go with Steve|Go by yourself
+choice Пойти со Стивом|Пойти самому
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -176,7 +176,7 @@ goto 15
 label s12
 music ~
 text @\"Сильный зомби появился и убил тебя.\"
-text GAMEOVER
+text ИГРА ОКОНЧЕНА
 sound B.aac
 delay 90
 goto 27
@@ -188,7 +188,7 @@ delay 90
 music BGM28.mp3
 text Вы двое идёте коридором.
 text *Бум* Окно вдруг разбивается, и появляется собака!
-choice Leave it to Steve|Fight on your own
+choice Оставить это Стиву|Сражаться самому
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -202,7 +202,7 @@ text @Манч!
 text @\"Арррррр!\"
 text Стив исчерпал энергию...
 text @\"Сразу после этого сильный зомби появился и убил тебя.\"
-text GAMEOVER
+text ИГРА ОКОНЧЕНА
 sound B.aac
 delay 90
 goto 27
@@ -222,7 +222,7 @@ text @\"Ой.\"
 text Стив на грани смерти от яда!
 text Вы выходите из комнаты, чтобы искать антидот.
 text Перед вами большая полка.
-choice Open it|Ignore it
+choice Открыть|Проигнорировать
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -239,7 +239,7 @@ fi
 goto 21
 label s16
 text Вы достигли развилки на трёх путях.
-choice Go straight|Go left|Go right
+choice Идти прямо|Пойти налево|Пойти направо
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -250,7 +250,7 @@ goto 19
 label s17
 music ~
 text @\"Появилась мохнатая штука, и она убила тебя.\"
-text GAMEOVER
+text ИГРА ОКОНЧЕНА
 sound B.aac
 delay 90
 goto 27
@@ -265,7 +265,7 @@ text Вы достигли вертолётной площадки.
 music ~
 text @*Чакк чакк чакк* ...Вас спасает вертолёт.
 text @\"Прощай, Дженнифер.\"
-text THE END
+text КОНЕЦ
 sound V.aac
 delay 90
 goto 27
@@ -299,7 +299,7 @@ delay 90
 music BGM15.mp3
 text @"Ты мой герой..."
 text Стив просит, чтобы его обняли.
-choice Hug him|Shake him off
+choice Обнять его|Оттолкнуть его
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -336,7 +336,7 @@ text @"Это было опасно. Тот парень — зомби."
 text @Появляется женщина с пистолетом.
 text "Меня зовут Роуз."
 text "Давай объединимся."
-choice Go with her|Shake her off
+choice Пойти с ней|Оттолкнуть её
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -444,7 +444,7 @@ if rtf1 != ""
 fi
 jump $rtf0 $rtl0
 label 27
-choice Retry|Give up
+choice Повторить|Сдаться
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1

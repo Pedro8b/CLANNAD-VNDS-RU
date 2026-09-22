@@ -47,7 +47,7 @@ if intF[1113] == 1
 fi
 text Привлечённые шумом, остальные ребята тоже стали собираться у окна, чтобы посмотреть, что происходит.
 text Больше ничего не может быть более удручающим, чем это.
-choice Escape|Watch how things turn out
+choice Сбежать|Посмотреть, чем всё обернётся
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -225,12 +225,12 @@ if intF[1113] == 1
 	fi
 fi
 text На мгновение я почувствовал, будто девушка улыбнулась.
-text As if she were thinking, "This'll be interesting."
+text Словно она подумала: «Это будет интересно».
 music ~
-text As for what happened afterward, it was over in the blink of an eye.
+text Что до того, что произошло дальше — всё закончилось в мгновение ока.
 music BGM09B.mp3
-text And before I realize it, the girl is already on her way back, accompanied by grand cheering.
-text Dragging along the delinquents, one with each arm.
+text И не успел я опомниться, как девушка уже возвращалась обратно под громкие овации.
+text Волоча за собой хулиганов, по одному на каждой руке.
 text @[Томоя]
 text Ah...
 setvar strS[1001] = "CGSH24"
@@ -245,10 +245,10 @@ fi
 sound 578.aac
 text @[Сунохара]
 text ...
-text For a short while, we're both at a loss for words.
+text Какое-то время мы оба не можем найти слов.
 sound 579.aac
 text @[Сунохара]
-text Ahahah... What?
+text Ахахах... Что?
 setvar strS[1001] = "NONE"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -257,7 +257,7 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-choice I'm interested in this|I'm not interested in this
+choice Мне это интересно|Мне это не интересно
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -273,11 +273,11 @@ if intF[1089] == 1
 fi
 goto 5
 label s4
-text I don't know who this girl is, but I'd rather not be considered among the likes of all these groupies of hers...
-text I remain firmly seated at my desk.
-text Sunohara gets off my table and heads straight for the corridor.
+text Я понятия не имею, кто эта девушка, но не хочу, чтобы меня считали одной из её поклонниц...
+text Я остаюсь твёрдо сидеть за партой.
+text Сунохара слезает с моего стола и направляется прямиком в коридор.
 text @[Томоя]
-text Where're you going?
+text Куда ты собрался?
 setvar strS[1001] = "CGSH24"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -289,8 +289,8 @@ if intF[1113] == 1
 fi
 sound 57A.aac
 text @[Сунохара]
-text I'm just gonna go take a look for a bit...
-text He leaves the classroom with a faint half-smile on his lips.
+text Просто схожу взглянуть немного...
+text Он выходит из класса с лёгкой полуулыбкой на губах.
 bgload KURO.jpg 55
 bgload {$strS[1000]}.jpg 55
 if intF[1113] == 1
@@ -298,7 +298,7 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text And just as lunch break ends, he comes back.
+text И как раз к концу обеденного перерыва он возвращается.
 setvar strS[1001] = "CGSH12"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -310,8 +310,8 @@ if intF[1113] == 1
 fi
 sound 57B.aac
 text @[Сунохара]
-text Hahaha!
-text His half smile has transformed into a grin filled with confidence.
+text Хахаха!
+text Его полуулыбка превратилась в ухмылку, полную уверенности.
 setvar strS[1001] = "CGSH13"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -323,9 +323,9 @@ if intF[1113] == 1
 fi
 sound 57C.aac
 text @[Сунохара]
-text Just hear this, Okazaki!
+text Ты только послушай, Окадзаки!
 text @[Томоя]
-text I don't really want to though.
+text А я вот не особо хочу.
 setvar strS[1001] = "CGSH12"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -337,8 +337,8 @@ if intF[1113] == 1
 fi
 sound 57D.aac
 text @[Сунохара]
-text Hahahah, that sure was a hell of a farce.
-text He starts talking anyway.
+text Хахахах, вот это был тот ещё цирк.
+text Он всё равно начинает рассказывать.
 setvar strS[1001] = "CGSH13"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -541,7 +541,7 @@ if intF[1113] == 1
 fi
 sound 57V.aac
 text @[Хулиганы]
-text E-Eeeek...!
+text У-Уааа...!
 sound 57W.aac
 text @[Хулиганы]
 text Да, так и есть!

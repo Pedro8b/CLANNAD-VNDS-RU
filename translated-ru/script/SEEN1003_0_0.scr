@@ -113,7 +113,7 @@ goto 1
 label s0
 goto 20
 label 1
-choice Time for a prank|Just leave her here
+choice Пора подшутить|Просто оставить её здесь
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -125,10 +125,10 @@ label s1
 text @Какой розыгрыш?
 setvar intF[110] = 1
 label 2
-setvar strS[1011] = "Make her drink juice with her nose       "
-setvar strS[1012] = "Put her around somewhere                 "
-setvar strS[1013] = "Switch the person she's talking to       "
-setvar strS[1014] = "Switch the carving she's holding         "
+setvar strS[1011] = "Заставить её пить сок через нос            "
+setvar strS[1012] = "Переставить её куда-нибудь                "
+setvar strS[1013] = "Подменить человека, с которым она говорит  "
+setvar strS[1014] = "Подменить поделку, которую она держит      "
 if intF[100] == 0
 	setvar strS[1011] + "Lv1"
 fi
@@ -136,7 +136,7 @@ if intF[100] == 1
 	setvar strS[1011] + "Lv2"
 fi
 if intF[100] == 2
-	setvar strS[1011] + "\x1b[33;1mMaster"
+	setvar strS[1011] + "\x1b[33;1mМастер"
 fi
 if intF[101] == 0
 	setvar strS[1012] + "Lv1"
@@ -145,7 +145,7 @@ if intF[101] == 1
 	setvar strS[1012] + "Lv2"
 fi
 if intF[101] == 2
-	setvar strS[1012] + "\x1b[33;1mMaster"
+	setvar strS[1012] + "\x1b[33;1mМастер"
 fi
 if intF[103] == 0
 	setvar strS[1013] + "Lv1"
@@ -154,7 +154,7 @@ if intF[103] == 1
 	setvar strS[1013] + "Lv2"
 fi
 if intF[103] == 2
-	setvar strS[1013] + "\x1b[33;1mMaster"
+	setvar strS[1013] + "\x1b[33;1mМастер"
 fi
 if intF[104] == 0
 	setvar strS[1014] + "Lv1"
@@ -163,7 +163,7 @@ if intF[104] == 1
 	setvar strS[1014] + "Lv2"
 fi
 if intF[104] == 2
-	setvar strS[1014] + "\x1b[33;1mMaster"
+	setvar strS[1014] + "\x1b[33;1mМастер"
 fi
 choice {$strS[1011]}|{$strS[1012]}|{$strS[1013]}
 setvar intF[1089] = selected

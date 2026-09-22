@@ -1,4 +1,4 @@
-choice Time for a prank|Keep waiting
+choice Пора подшутить|Продолжать ждать
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -7,11 +7,11 @@ if intF[1089] == 0
 fi
 goto 16
 label s0
-text @What kind of prank?
-setvar strS[1011] = "Make her drink juice with her nose       "
-setvar strS[1012] = "Put her around somewhere                 "
-setvar strS[1013] = "Switch the person she's talking to       "
-setvar strS[1014] = "Switch the carving she's holding         "
+text @Что за шутка?
+setvar strS[1011] = "Заставить её пить сок через нос            "
+setvar strS[1012] = "Переставить её куда-нибудь                "
+setvar strS[1013] = "Подменить человека, с которым она говорит  "
+setvar strS[1014] = "Подменить поделку, которую она держит      "
 if intF[100] == 0
 	setvar strS[1011] + "Lv1"
 fi
@@ -19,7 +19,7 @@ if intF[100] == 1
 	setvar strS[1011] + "Lv2"
 fi
 if intF[100] == 2
-	setvar strS[1011] + "\x1b[33;1mMaster"
+	setvar strS[1011] + "\x1b[33;1mМастер"
 fi
 if intF[101] == 0
 	setvar strS[1012] + "Lv1"
@@ -28,7 +28,7 @@ if intF[101] == 1
 	setvar strS[1012] + "Lv2"
 fi
 if intF[101] == 2
-	setvar strS[1012] + "\x1b[33;1mMaster"
+	setvar strS[1012] + "\x1b[33;1mМастер"
 fi
 if intF[103] == 0
 	setvar strS[1013] + "Lv1"
@@ -37,7 +37,7 @@ if intF[103] == 1
 	setvar strS[1013] + "Lv2"
 fi
 if intF[103] == 2
-	setvar strS[1013] + "\x1b[33;1mMaster"
+	setvar strS[1013] + "\x1b[33;1mМастер"
 fi
 if intF[104] == 0
 	setvar strS[1014] + "Lv1"
@@ -46,7 +46,7 @@ if intF[104] == 1
 	setvar strS[1014] + "Lv2"
 fi
 if intF[104] == 2
-	setvar strS[1014] + "\x1b[33;1mMaster"
+	setvar strS[1014] + "\x1b[33;1mМастер"
 fi
 choice {$strS[1011]}|{$strS[1012]}
 setvar intF[1089] = selected
@@ -145,7 +145,7 @@ text (Ладно... Я собираюсь это сделать...)
 text @[Томоя]
 text Ха!
 text Я готовлюсь и сжимаю руку, которой держу пакетик с соком.
-text *Pew*
+text *Пшш*
 setvar strS[1001] = "CGFU31A"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -191,7 +191,7 @@ if intF[1113] == 1
 fi
 sound 1LT.aac
 text @[Фуко]
-text *Ppfffff* *Ppfffff*
+text *Пффф* *Пффф*
 text Она сморкает нос, как в прошлый раз.
 setvar strS[1001] = "CGFU30A"
 setvar intF[1113] = intF[1112]
@@ -220,7 +220,7 @@ text И почему-то горло Фуко влажное.
 text ...Я сделал это... Я заставил её выпить!
 delay 60
 sound F.aac
-text @You have mastered the "Make Fuko drink juice with her nose" skill!
+text @Вы освоили навык «Заставить Фуко пить сок через нос»!
 delay 312
 setvar intF[124] + 1
 if intF[124] == 1
@@ -317,7 +317,7 @@ if intF[1113] == 1
 fi
 text Фуко всё ещё блуждает в своей стране снов.
 text Я вставляю трубочку из пакетика с соком в её беззащитный нос.
-text *Sschlurp*
+text *Шлюрп*
 setvar strS[1001] = "CGFU17A"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -348,7 +348,7 @@ if intF[1113] == 1
 fi
 sound 1LY.aac
 text @[Фуко]
-text *Ppfffff* *Ppfffff*
+text *Пффф* *Пффф*
 text Она отчаянно сморкает нос.
 text Ну, всё равно ничего не выйдет.
 text @[Томоя]

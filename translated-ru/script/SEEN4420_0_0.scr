@@ -280,7 +280,7 @@ sound BV6.aac
 text @[Котоми]
 text Что мне делать...?
 text @[Томоя]
-text *Sigh*
+text *Вздох*
 text Увидев её в панике, всё, что я могу, — вздохнуть.
 text @[Томоя]
 text Во‑первых, мы ещё не поменяли форму, так что ты можешь расслабиться.
@@ -560,7 +560,7 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text *Step* *Step* *Step*
+text *Шаг* *Шаг* *Шаг*
 text Она проскальзывает мимо меня и входит внутрь.
 text @[Томоя]
 text ...И она не слушается.
@@ -642,7 +642,7 @@ text Она бросается к стойке библиотекаря.
 text Она достаёт швабру и начинает убирать.
 text Я сажусь на соседнее кресло и кладу ключ и сумку на стол.
 text Я снова смотрю на бирку ключа.
-text "Котомі"
+text "Котоми"
 text Письмо крупными, округлыми буквами, будто написано ребёнком.
 text Я поворачиваю голову и смотрю в окно.
 text Солнечное небо заставляет вчерашний дождь казаться иллюзией.
@@ -709,7 +709,7 @@ text Когда я обрету сознание, понимаю, что она 
 text На полу лучи солнца мерцают, как кольцо огня.
 text Почему?
 text Мне кажется, мне не здесь быть.
-choice Leave the library|Ask if it's all right to stay
+choice Уйти из библиотеки|Спросить, можно ли остаться
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -948,7 +948,7 @@ text Что теперь?
 sound BWO.aac
 text @[Котоми]
 text Томоя‑кун, ты бы хотел почитать?
-choice Read|Don't read
+choice Почитать|Не читать
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -1242,15 +1242,15 @@ text Найдя раздел с романами, я беру тот, у кот�
 text Я смотрю на заднюю обложку и читаю аннотацию.
 text Это военный роман, написанный зарубежным фантастом.
 text Этого должно быть достаточно.
-text I return to the reading table and see that she's completely immersed in her own book.
-text Feeling relieved at the sight, I open the cover of my book.
+text Я возвращаюсь за читальный стол и вижу, что она полностью погружена в свою книгу.
+text Успокоенный этим зрелищем, я открываю обложку своей книги.
 text @[Томоя]
 text ...
-text I'm bored within three minutes.
-text The writing is too philosophical and uptight. The words are also archaic.
-text Not many people would enjoy reading something like this.
-text Let's find one about murders or disasters, something flashier.
-text While thinking that, I let out a huge yawn.
+text Мне становится скучно уже через три минуты.
+text Текст слишком философский и напыщенный. К тому же слова какие-то устаревшие.
+text Едва ли многим понравится читать что-то подобное.
+text Поищу что-нибудь про убийства или катастрофы, что-нибудь позаковыристей.
+text С этой мыслью я широко зеваю.
 setvar intF[416] + 1
 label 12
 if intF[1089] == 1
@@ -1259,12 +1259,12 @@ fi
 goto 13
 label s12
 text @[Томоя]
-text I don't read.
-text I give her a straightforward answer before she says anything.
+text Я не читаю.
+text Я даю ей прямой ответ, прежде чем она успевает что-то сказать.
 sound BXM.aac
 text @[Котоми]
-text Is that so?
-text She says it with a little disappointment in her voice.
+text Вот как?
+text Она говорит это с лёгким разочарованием в голосе.
 setvar strS[1001] = "CGKT12A"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -1276,15 +1276,15 @@ if intF[1113] == 1
 fi
 sound BXN.aac
 text @[Котоми]
-text Then I'll read your share, too.
+text Тогда я прочитаю и твою часть тоже.
 text @[Томоя]
-text Yeah, go for it...
-text A huge yawn punctuates my answer.
+text Ага, давай...
+text Мой ответ завершается огромным зевком.
 text @[Томоя]
-text I'm going to sleep for a bit.
+text Я немного посплю.
 sound BXO.aac
 text @[Котоми]
-text Okay. I'll be reading.
+text Хорошо. Я буду читать.
 setvar strS[1001] = "NONE"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -1293,8 +1293,8 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text She answers in earnest and proceeds to open her book.
-text This is the perfect division of labor.
+text Она серьёзно отвечает и принимается открывать свою книгу.
+text Это идеальное разделение труда.
 label 13
 setvar strS[1000] = "SIRO"
 setvar intA[1000] = 1
@@ -1313,10 +1313,10 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text I close my eyes.
-text I feel a soft light beat against my eyelids.
-text Sleep overtakes me right away.
-text I listen carefully...
+text Я закрываю глаза.
+text Мягкий свет бьёт по векам.
+text Сон одолевает меня почти сразу.
+text Я внимательно прислушиваюсь...
 text В точных интервалах она продолжает листать страницы.
 text Это звучит как волны, разбивающиеся о далёкий берег.
 music ~

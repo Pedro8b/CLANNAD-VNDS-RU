@@ -454,7 +454,7 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text *GA-THUNK*
+text *Бух*
 text Словарь ударяется о лицо Сунохары.
 setvar strS[1001] = "CGSH13"
 setvar intF[1113] = intF[1112]
@@ -514,7 +514,7 @@ text Я выхожу из класса, чтобы снова купить со�
 text @[Томоя]
 text (Это действительно становится привычкой…)
 text Как обычно, по дороге назад за мной следует что‑то мелкое и мчится мимо, словно чертов болид.
-choice Call out to it|Do nothing
+choice Окликнуть его|Ничего не делать
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -1095,15 +1095,15 @@ text @[Томоё]
 text Я слышал, что вы двое постоянно опаздываете.
 sound 0J2.aac
 text @[Томоё]
-text That's no good.
+text Так не пойдёт.
 text @[Томоя]
-text ...I'm not a morning person, what can I say.
+text ...Что поделать, я не жаворонок.
 sound 0J3.aac
 text @[Томоё]
-text Do your best to wake up early for just one day. If you do that, you'll be able to go to sleep early that day too.
+text Постарайся хоть один день встать пораньше. Если сделаешь так, в тот же день сможешь и лечь спать раньше.
 sound 0J4.aac
 text @[Томоё]
-text Then you'll also be able to wake up early the next day.
+text А значит, и на следующий день сможешь проснуться рано.
 setvar strS[1001] = "CGTM22"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -1115,9 +1115,9 @@ if intF[1113] == 1
 fi
 sound 0J5.aac
 text @[Томоё]
-text You need to get yourself in that kind of routine. It's good for your health too.
+text Тебе нужно выработать такой режим. Это и для здоровья полезно.
 text @[Томоя]
-text That "just one day" is the hard part, though.
+text Но это самое «хоть один день» и есть самое сложное.
 setvar strS[1001] = "CGTM13"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -1129,11 +1129,11 @@ if intF[1113] == 1
 fi
 sound 0J6.aac
 text @[Томоё]
-text I see... Then I guess it can't be helped...
+text Понятно... Тогда, полагаю, ничего не поделаешь...
 sound 0J7.aac
 text @[Томоё]
-text I wanted to do this while respecting your autonomy, but...
-text By the time I realize what's going on, she already has her gun out.
+text Я хотела сделать это, уважая твою самостоятельность, но...
+text К тому моменту, как я понимаю, что происходит, у неё в руках уже пистолет.
 setvar strS[1001] = "CGSH17"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 0
@@ -1145,7 +1145,7 @@ if intF[1113] == 1
 fi
 sound 0J8.aac
 text @[Сунохара]
-text Fire while you're in my embrace!!
+text Стреляй, пока он в моих объятиях!!
 setvar strS[1001] = "NONE"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 0
@@ -1156,7 +1156,7 @@ if intF[1113] == 1
 fi
 sound 0J9.aac
 text @[Томоё]
-text Get out of the way.
+text Уйди с дороги.
 delay 24
 bgload {$strS[1000]}.jpg 0
 if intF[1113] == 1
@@ -1166,7 +1166,7 @@ if intF[1113] == 1
 fi
 setimg CGSH30.png
 sound 6.aac
-text @Bam!
+text @Бам!
 delay 0
 bgload {$strS[1000]}.jpg 0
 if intF[1113] == 1
@@ -1181,9 +1181,9 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text Sunohara's body goes flying in the air.
-text The moment he smacks against the ground will be my signal.
-text I draw my gun and ready it.
+text Тело Сунохары взлетает в воздух.
+text Момент, когда он рухнет на землю, будет моим сигналом.
+text Я достаю пистолет и готовлю его.
 bgload {$strS[1000]}.jpg 0
 if intF[1113] == 1
 	if strS[1000] < "C"
@@ -1198,9 +1198,9 @@ if intF[1113] == 1
 fi
 delay 12
 sound 6.aac
-text *BAM*
-text A cloud of dust rises from the ground. Just as it does...
-choice Pull the trigger|Warn her
+text *БАМ*
+text От земли поднимается облако пыли. И именно в этот момент...
+choice Нажать на курок|Предупредить её
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -1209,7 +1209,7 @@ if intF[1089] == 0
 fi
 goto 37
 label s30
-text I pull the trigger.
+text Я нажимаю на курок.
 bgload SIRO.jpg 0
 delay 1
 bgload {$strS[1000]}.jpg 4
@@ -1218,8 +1218,8 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text But... the beam doesn't reach Tomoyo.
-text *Whoosh*
+text Но... луч не долетает до Томойо.
+text *Вжух*
 text В пыли раздаётся треск. Из облака пыли внезапно появляется ствол оружия.
 text Я едва различаю лицо Томоё.
 setvar strS[1001] = "CGTM18"
@@ -1256,7 +1256,7 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text *BEEEEEEP!*
+text *БИИИИИП!*
 text Из кармана доносится сигнал тревоги.
 setvar strS[1001] = "CGSH23"
 setvar intF[1113] = intF[1112]
@@ -1286,7 +1286,7 @@ if intF[1113] == 1
 fi
 setimg CGSH30.png
 sound 6.aac
-text @Bam!
+text @Бам!
 delay 0
 bgload {$strS[1000]}.jpg 0
 if intF[1113] == 1
@@ -1330,7 +1330,7 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text *BEEEEEEP!*
+text *БИИИИИП!*
 text Ещё один сигнал.
 setvar strS[1001] = "CGTM19"
 setvar intF[1113] = intF[1112]
@@ -1436,7 +1436,7 @@ if intF[1113] == 1
 	fi
 fi
 text Я бросаюсь за Сунохарой и вхожу в дверь.
-text *BEEEEEEEP*
+text *БИИИИИИП*
 text Это звук ещё одной тревоги.
 setvar strS[1000] = "BG016"
 setvar intA[1000] = 1
@@ -2167,7 +2167,7 @@ text @[Рё]
 text А... вавав... Оказаки‑кун, сп‑спасите меня, пожалуйста!
 text @[Томоя]
 text Ух...
-choice All's fair in love and war|Stop him because you feel bad
+choice На войне все средства хороши|Остановить его, потому что жаль
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -2192,7 +2192,7 @@ text @[Рё]
 text Фваааах!!
 sound 0KW.aac
 text @[Сунохара]
-text @Two...!
+text @Два...!
 delay 118
 text Один...!
 setvar strS[1001] = "CGRY14"
@@ -2226,7 +2226,7 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text *BEEEEEEP*
+text *БИИИИИП*
 text @[Томоя]
 text Что?!
 text Внезапно из моего груди раздался сигнал тревоги.
@@ -2252,7 +2252,7 @@ if intF[1113] == 1
 fi
 text Сунохара тоже оглядывается.
 text Но Кё нигде не видно.
-text *Ga-chik*
+text *Гачик*
 text @[Томоя]
 text Га-чик...?
 setvar strS[1001] = "CGKY12"
@@ -2473,7 +2473,7 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text *BEEEEEEP*
+text *БИИИИИП*
 setvar strS[1001] = "CGKY18"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30

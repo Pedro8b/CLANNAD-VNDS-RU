@@ -1,9 +1,9 @@
 label 4
 setvar intF[113] = 1
-setvar strS[1011] = "Make her drink juice with her nose       "
-setvar strS[1012] = "Put her around somewhere                 "
-setvar strS[1013] = "Switch the person she's talking to       "
-setvar strS[1014] = "Switch the carving she's holding         "
+setvar strS[1011] = "Заставить её пить сок через нос            "
+setvar strS[1012] = "Переставить её куда-нибудь                "
+setvar strS[1013] = "Подменить человека, с которым она говорит  "
+setvar strS[1014] = "Подменить поделку, которую она держит      "
 if intF[100] == 0
 	setvar strS[1011] + "Lv1"
 fi
@@ -11,7 +11,7 @@ if intF[100] == 1
 	setvar strS[1011] + "Lv2"
 fi
 if intF[100] == 2
-	setvar strS[1011] + "\x1b[33;1mMaster"
+	setvar strS[1011] + "\x1b[33;1mМастер"
 fi
 if intF[101] == 0
 	setvar strS[1012] + "Lv1"
@@ -20,7 +20,7 @@ if intF[101] == 1
 	setvar strS[1012] + "Lv2"
 fi
 if intF[101] == 2
-	setvar strS[1012] + "\x1b[33;1mMaster"
+	setvar strS[1012] + "\x1b[33;1mМастер"
 fi
 if intF[103] == 0
 	setvar strS[1013] + "Lv1"
@@ -29,7 +29,7 @@ if intF[103] == 1
 	setvar strS[1013] + "Lv2"
 fi
 if intF[103] == 2
-	setvar strS[1013] + "\x1b[33;1mMaster"
+	setvar strS[1013] + "\x1b[33;1mМастер"
 fi
 if intF[104] == 0
 	setvar strS[1014] + "Lv1"
@@ -38,9 +38,9 @@ if intF[104] == 1
 	setvar strS[1014] + "Lv2"
 fi
 if intF[104] == 2
-	setvar strS[1014] + "\x1b[33;1mMaster"
+	setvar strS[1014] + "\x1b[33;1mМастер"
 fi
-choice {$strS[1011]}|{$strS[1012]}|{$strS[1013]}|{$strS[1014]}|Just leave it
+choice {$strS[1011]}|{$strS[1012]}|{$strS[1013]}|{$strS[1014]}|Просто оставить
 setvar intF[1089] = selected
 sound 01.aac
 setvar intF[1089] - 1
@@ -132,7 +132,7 @@ text (Ладно... Я собираюсь это сделать...)
 text @[Томоя]
 text Хаа!
 text Я готовлюсь и сжимаю рукой упаковку с соком.
-text *Pew*
+text *Пшш*
 setvar strS[1001] = "CGFU31"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -168,7 +168,7 @@ if intF[1113] == 1
 fi
 sound 20Y.aac
 text @[Фуко]
-text *Ppfffff* *Ppfffff*
+text *Пффф* *Пффф*
 setvar strS[1001] = "CGFU30"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -327,7 +327,7 @@ text Вернувшись, я сразу же вставляю соломинк�
 sound 215.aac
 text @[{$lnmA}]
 text Эм... Что ты делаешь...
-text *Sschlurp*
+text *Шлюрп*
 setvar strS[1001] = "CGFU31"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -375,7 +375,7 @@ if intF[1113] == 1
 fi
 sound 218.aac
 text @[Фуко]
-text *Ppfffff* *Ppfffff*
+text *Пффф* *Пффф*
 setvar strS[1001] = "CGNG16"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -1014,7 +1014,7 @@ if intF[1113] == 1
 fi
 sound 22B.aac
 text @[Фуко]
-text Haa...haa... That was so scary...
+text Ха...ха... Это было так страшно...
 setvar strS[1001] = "CGFU20"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -1026,9 +1026,9 @@ if intF[1113] == 1
 fi
 sound 22C.aac
 text @[Фуко]
-text It was such a dangerous place! Too relaxing!
+text Это было такое опасное место! Слишком расслабляющее!
 text @[Томоя]
-text My goodness, that sounds terrible.
+text Боже мой, звучит ужасно.
 setvar strS[1001] = "CGFU30"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -1040,15 +1040,15 @@ if intF[1113] == 1
 fi
 sound 22D.aac
 text @[Фуко]
-text Seriously though, since when did Fuko start doing things like the Kawaguchi Adventure Team?
+text Но если серьёзно, с каких пор Фуко начала вести себя как команда искателей приключений Кавагути?
 sound 22E.aac
 text @[Фуко]
-text Fuko's become quite a reckless adventurer.
+text Фуко стала настоящей отчаянной искательницей приключений.
 text @[Томоя]
-text Totally.
+text Точно.
 delay 60
 sound F.aac
-text @You have mastered the "Put Fuko somewhere randomly" skill!
+text @Вы освоили навык «Поместить Фуко в случайное место»!
 delay 312
 setvar intF[124] + 1
 setvar intF[101] = 2
@@ -1081,7 +1081,7 @@ if intF[1113] == 1
 fi
 sound 22F.aac
 text @[{$lnmA}]
-text Did something happen?
+text Что-то случилось?
 setvar strS[1001] = "CGFU20"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -1093,7 +1093,7 @@ if intF[1113] == 1
 fi
 sound 22G.aac
 text @[Фуко]
-text Fuko was adventuring in some really dangerous place!
+text Фуко была в приключении в очень опасном месте!
 setvar strS[1001] = "CGNG10Z"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -1105,10 +1105,10 @@ if intF[1113] == 1
 fi
 sound 22H.aac
 text @[{$lnmA}]
-text I see. You two seem to be even closer than I expected.
+text Понятно. Вы двое, похоже, даже ближе, чем я ожидала.
 text @[Томоя]
-text You got that right.
-text I reply half-assedly just to assure her.
+text Вот именно.
+text Я отвечаю кое-как, лишь бы её успокоить.
 setvar intF[118] = 1
 goto 28
 label 27
@@ -1118,7 +1118,7 @@ fi
 goto 28
 label s24
 text @[Томоя]
-text @(This is overdone already... Let's try something else...)
+text @(Это уже перебор... Попробуем что-то другое...)
 goto 4
 label 28
 goto 38
@@ -1133,8 +1133,8 @@ if intF[116] == 0
 fi
 goto 30
 label s26
-text I would need {$lnmA}'s help to do this. Too much bother...
-text @Let's try something else.
+text Мне бы понадобилась помощь {$lnmA}, чтобы это сделать. Слишком много возни...
+text @Попробуем что-то другое.
 setvar intF[116] = 1
 goto 31
 label 30
@@ -1143,7 +1143,7 @@ if intF[116] == 1
 fi
 goto 31
 label s27
-text @I already said it's impossible!
+text @Я уже сказал, что это невозможно!
 label 31
 goto 4
 goto 38
@@ -1158,7 +1158,7 @@ if intF[117] == 0
 fi
 goto 33
 label s29
-text @It's not possible since she doesn't have the carving in her hands.
+text @Это невозможно, ведь у неё нет резьбы в руках.
 setvar intF[117] = 1
 goto 34
 label 33
@@ -1167,7 +1167,7 @@ if intF[117] == 1
 fi
 goto 34
 label s30
-text @I already said she's not holding anything!
+text @Я уже сказал, что у неё ничего нет в руках!
 label 34
 goto 4
 goto 38

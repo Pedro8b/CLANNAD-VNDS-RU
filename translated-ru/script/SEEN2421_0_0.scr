@@ -50,7 +50,7 @@ goto 3
 label s2
 goto 5
 label 3
-choice Say something|Ignore her
+choice Сказать что-то|Проигнорировать её
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -352,7 +352,7 @@ fi
 sound 5QH.aac
 text @[Томоё]
 text Похоже, твой учитель всё ещё не пришёл, так что всё вроде бы в порядке.
-text It's taking everything I have just catching my breath, so I can't manage to say anything back to her.
+text Мне сейчас просто отдышаться — уже задача, так что ответить ей я не в силах.
 setvar strS[1001] = "CGTM21"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -364,7 +364,7 @@ if intF[1113] == 1
 fi
 sound 5QI.aac
 text @[Томоё]
-text See you later.
+text Увидимся.
 setvar strS[1001] = "NONE"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -373,19 +373,19 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text Tomoyo smiles in satisfaction, and gallantly runs away.
+text Томоё довольно улыбается и лихо убегает прочь.
 sound 5QJ.aac
 text @[Мальчик]
-text Huh? Okazaki, it's pretty unusual to see you here this early in the morning.
+text А? Оказаки, странно видеть тебя здесь так рано утром.
 text @[Томоя]
 text Ah...
-text Just around when morning homeroom is about to start, my eyes find themselves looking down at my palms.
+text Примерно тогда, когда вот-вот должна начаться утренняя классная, я вдруг замечаю, что смотрю на свои ладони.
 text @[Томоя]
-text (Come to think of it, I just walked to school while holding hands with a girl...)
-text But...
-text Mysteriously, it didn't feel strange at all.
+text (Если подумать, я только что шёл в школу, держась за руку с девушкой...)
+text Но...
+text Как ни странно, это вовсе не показалось мне странным.
 text @[Томоя]
-text (Although she'd probably feel depressed again if I actually told her that...)
+text (Хотя, если бы я на самом деле сказал ей это, она наверняка снова бы приуныла...)
 setvar intF[212] = 1
 if rtf1 != ""
 	jump $rtf1 $rtl1

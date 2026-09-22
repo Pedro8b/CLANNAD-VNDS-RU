@@ -859,7 +859,7 @@ text "Дежурство: Нагиса Фурукава"
 text ......
 text Я заканчиваю рисовать и жду еще немного, но она все еще нигде не видно.
 text Может быть, что-то случилось? Я начинаю немного волноваться.
-choice Go look for her|Keep waiting
+choice Пойти поискать её|Продолжать ждать
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -891,7 +891,7 @@ text @[Томоя]
 text (Не говори мне, что она случайно пошла в соседний класс или что-то в этом роде...)
 text @[Томоя]
 text (Ах, я могу представить, что она сделала бы это тоже...)
-choice Look in the class next door|Check somewhere else
+choice Посмотреть в соседнем классе|Поискать где-то ещё
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -1049,7 +1049,7 @@ if intF[1113] == 1
 	fi
 fi
 text ...Теперь я один. Итак, что мне делать?
-choice Waste time inside school|Waste time outside school
+choice Провести время в школе|Провести время вне школы
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -1087,7 +1087,7 @@ text Я заглядываю в ближайшую дверь.
 text ...Никого нет.
 text Но это место кажется тихим и уютным.
 text Как только я так думаю, я действительно начинаю чувствовать сонливость...
-choice Sleep|Waste time outside school
+choice Поспать|Провести время вне школы
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -1098,7 +1098,7 @@ goto 138
 label s144
 text У меня нет денег, чтобы развлекаться, во всяком случае...
 text Я решаю вздремнуть.
-text *Thunk*
+text *Бух*
 if rtf0 != ""
 	setvar rtf1 = "SEEN0417_0_2.scr"
 	setvar rtl1 = "rtl15"
@@ -1239,7 +1239,7 @@ if intF[1113] == 1
 	fi
 fi
 text Она начинает возвращаться обратно, потягивая за волосами.
-choice Talk to her|Watch as she leaves
+choice Поговорить с ней|Смотреть, как она уходит
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
