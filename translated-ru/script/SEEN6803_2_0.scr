@@ -1,0 +1,61 @@
+setvar strS[1000] = "BG244BM"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s19
+fi
+goto 19
+label s19
+setvar strS[1000] = ""
+label 19
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Томоя]
+text Слушай...
+text @[Томоя]
+text Ты бы сказала, что этот город — одна большая семья?
+sound PS9.aac
+text @[Нагиса]
+text Да. Город, люди... мы все — семья.
+text @[Томоя]
+text О...
+sound PSA.aac
+text @[Нагиса]
+text Большая семья Данго.
+text А... понятно.
+text Вот оно как было.
+text Может, она знала это с самой нашей первой встречи...?
+text Нет, уверен, она знала это ещё дольше.
+text Вот почему она не может никого ненавидеть.
+text Она старается ради всех.
+text Потому что они — её семья.
+sound PSB.aac
+text @[Нагиса]
+text Томоя-кун, тебе уже пора полюбить и Большую семью Данго.
+text @[Томоя]
+text Я уже люблю их, Нагиса.
+sound PSC.aac
+text @[Нагиса]
+text Правда?
+text @[Томоя]
+text Да.
+sound PSD.aac
+text @[Нагиса]
+text Тогда давай споём песню ради Сио-тян.
+text @[Томоя]
+text Серьёзно...?
+sound PSE.aac
+text @[Нагиса]
+text Да.
+sound PSF.aac
+text @[Нагиса]
+text Данго...! Данго...!
+text Нагиса начинает петь одна.
+text Я не могу удержаться от смеха.
+text А потом подключаюсь к ней посреди песни.
+jump SEEN6803_3_0.scr

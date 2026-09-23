@@ -1,0 +1,491 @@
+text И вот, в следующее мгновение...
+setvar strS[1000] = "BG080"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1000] = ""
+label 1
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar intA[1000] = 4600
+setvar intA[1001] = 46
+if 50 <= 0
+	goto s1
+fi
+goto 2
+label s1
+setvar intA[1001] + 1
+label 2
+text *Бам*
+text Человек, идущий впереди меня... взлетает в воздух.
+setvar strS[1000] = "BG033"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = ""
+label 3
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM11.mp3
+text @[Томоя]
+text Да вы издеваетесь?!
+text Кё сбила кого-то на своём байке!
+sound UQK.aac
+text @[Кё]
+text Извини! Извинись за меня, ладно?!
+text @[Томоя]
+text Что? Ты совсем с ума сошла?!
+text *Врум* *Врррум* ...
+text Звук её выхлопной трубы удаляется всё дальше и дальше.
+text Она и правда уехала...
+text Человек, которого она сбила... лежит на земле... не шевелясь ни на дюйм.
+text С опаской я подхожу ближе.
+text @[Томоя]
+text ...Эй, ты ещё жив?
+text ..........
+text ......
+text ...
+text Лежащий на земле человек не отвечает.
+text Это плохо...
+text Когда знакомый совершает преступление, лучше ли убедить её сдаться самой...
+text Или лучше просто промолчать, раз других свидетелей нет...?
+text Не... наверное, лучше всего просто сделать вид, что ничего не было, и уйти...
+choice Уйти|Попробовать растормошить человека
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s3
+fi
+goto 4
+label s3
+text Вот же морока. Я в этом не участвую.
+text Всё равно никто этого не видел.
+text А даже если и видел, виновник тут не я.
+sound UQL.aac
+text @[Дети]
+text Мама, там кто-то лежит на земле!
+sound UQM.aac
+text @[Мать]
+text О, и правда. Интересно, знает ли вон тот ученик, кто это?
+text Чёрт... теперь появились свидетели.
+label 4
+if intF[1089] == 1
+	goto s4
+fi
+goto 5
+label s4
+text *Тряс*
+text Ага, пожалуй, можно и дальше заставлять Кё угощать меня обедом, шантажируя её этим...
+text Эй, нет!!
+label 5
+text @[Томоя]
+text Эй, ты. Ты в порядке? Ответь мне!
+text Я опускаюсь на колени и легонько трясу неподвижную жертву за плечо.
+text Довольно хрупкое телосложение.
+text Может, это девушка...?
+text @[Томоя]
+text Эй?
+text *Вздрог* ...
+text О, оно шевельнулось?
+text @[Томоя]
+text Эй, ты в порядке?
+text Я пробую растормошить ещё раз, и...
+music ~
+setvar strS[1001] = "CGKP14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGKP14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Хлоп*!
+music BGM08A.mp3
+sound UQN.aac
+text @[??]
+text Вваааааааа!
+text @[Томоя]
+text Ого...!
+sound UQO.aac
+text @[??]
+text Ч-что происходит?! Что это сейчас было?!
+text @[Томоя]
+text Т-ты жив...?
+sound UQP.aac
+text @[??]
+text Такое чувство, будто меня вдруг бабахнуло, потом закрутило, потом раздался визг, а потом всё почернело...
+text @[Томоя]
+text Э... тебя сбил мотоцикл.
+setvar strS[1001] = "CGKP17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UQQ.aac
+text @[??]
+text ...Мотоциклом?
+text Жертва озадаченно наклоняет голову набок.
+text Это девушка...? Парень...? Груди вроде не видно, но атмосфера и настроение, которые излучает этот человек, довольно странные...
+setvar strS[1001] = "CGKP18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UQR.aac
+text @[??]
+text ...
+setvar strS[1001] = "CGKP12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UQS.aac
+text @[??]
+text О, опять?
+text Говорит жертва, хлопая в ладоши, будто что-то вспомнив.
+text @[Томоя]
+text Погоди... «Опять»?!
+setvar strS[1001] = "CGKP11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UQT.aac
+text @[??]
+text Такое ведь время от времени случается, разве нет?
+sound UQU.aac
+text @[??]
+text С машиной было бы проблематично, но с мотоциклом я справлюсь.
+text @[Томоя]
+text ...Ты справишься... с этим...?
+text ...Тебя же в воздух подбросило, между прочим...?
+text @[Томоя]
+text Ты... нормально себя чувствуешь?
+setvar strS[1001] = "CGKP10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UQV.aac
+text @[??]
+text А? Да вроде ничего необычного не чувствую.
+text @[Томоя]
+text Понятно... ну и хорошо тогда...
+setvar strS[1001] = "CGKP18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UQW.aac
+text @[??]
+text Кстати, который час?
+text @[Томоя]
+text М? Уже позже десяти.
+setvar strS[1001] = "CGKP14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UQX.aac
+text @[??]
+text Ого! Это плохо! Я опоздаю на собеседование по подработке!
+music ~
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Томоя]
+text А! Эй!
+text Не успел я договорить, как жертва внезапно умчалась прочь.
+text И довольно быстро при этом.
+music BGM14.mp3
+text @[Томоя]
+text ...Интересно, будет ли этот человек в порядке...
+text То ли из-за удачного угла столкновения, то ли этот человек просто очень крепкий...?
+text В любом случае, похоже, Кё в этот раз обошлось без превращения в преступницу.
+text И всё же...
+text @[Томоя]
+text ...Ну и бойкий же человек...
+text Я вздыхаю из-за человека, чьего имени я даже не знаю и который скрылся за углом.
+text @[Томоя]
+text М...?
+text Внезапно, опустив взгляд на землю, я замечаю белый конверт.
+text @[Томоя]
+text Это того человека...?
+text Я оглядываюсь по сторонам, но никого уже не вижу.
+text В любом случае, я поднимаю его.
+text В углу конверта красными буквами написано «Резюме».
+text ...Точно. Тот человек говорил, что идёт на собеседование.
+text Но если так, разве не проблема, что у них этого нет?
+text @[Томоя]
+text ...
+text И всё же, я понятия не имею, где их искать, так что вернуть я это не смогу...
+text А раз так, мне будет неловко просто бросить чьё-то резюме здесь.
+choice Найти адрес и вернуть|Порвать
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s5
+fi
+goto 6
+label s5
+text Как-то это неправильно, но и оставить его просто так я не могу.
+text Достаю резюме из конверта.
+text Почерк на удивление ужасный...
+text @[Томоя]
+text Э-э...
+text Имя... пусто...
+text Возраст... тоже пусто...
+text Адрес... тоже не заполнен...
+text Номер телефона... снова пусто...
+text Образование...
+text Опыт работы...
+text ......
+text Здесь вообще ничего не написано...
+text Наверное, ещё не успели заполнить...
+text ...Хотя, вот справа...
+text Любимый предмет... Обед...
+text Нелюбимый предмет... Классный час...
+text Мотивация... Хочу денег...
+text Увлечения... Не то, о чём можно рассказать людям...
+text Текущее состояние здоровья... Подам в суд, если это домогательство...
+text Сильные стороны... Считаю, что парни должны стремиться быть мужчинами...
+text @[Томоя]
+text ...
+text Да что вообще должно значить это самопредставление?
+text И всё же... почерк просто ужасен...
+text Буквы выглядят такими скрюченными, будто кучка червяков.
+text В любом случае, без хоть чего-то похожего на адрес, я не смогу это вернуть.
+text Не имея выбора, складываю резюме и кидаю его в сумку.
+setvar intF[320] = 1
+label 6
+if intF[1089] == 1
+	goto s6
+fi
+goto 7
+label s6
+text *Рвётся* ... *Рвётся* ...
+text Начиная с угла, я рву лист бумаги на мелкие клочки.
+text Затем выбрасываю обрывки бумаги в придорожную канаву.
+text @[Томоя]
+text Так... пожалуй, пора идти.
+label 7
+music ~
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s7
+fi
+goto 8
+label s7
+setvar strS[1000] = ""
+label 8
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08B.mp3
+text Как раз когда я добираюсь до школы, звенит звонок об окончании второго урока.
+setvar strS[1001] = "CGKY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UQY.aac
+text @[Кё]
+text А, Томоя! Ну как там тот, кого я сбила?
+text @[Томоя]
+text Ну и наглость же спрашивать меня об этом...
+setvar strS[1001] = "CGKY15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UQZ.aac
+text @[Кё]
+text А? Без травм же, да?
+text @[Томоя]
+text Без травм, но что бы ты стала делать, если бы были?
+setvar strS[1001] = "CGKY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UR0.aac
+text @[Кё]
+text А, всё нормально! Ощущение от столкновения было каким-то другим!
+text @[Томоя]
+text Ощущение?
+setvar strS[1001] = "CGKY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UR1.aac
+text @[Кё]
+text Ага. Как бы это сказать? Знаешь то тяжёлое ощущение, когда врезаешься в плоть и кости? Вот его совсем не было!
+sound UR2.aac
+text @[Кё]
+text Может, этот человек что-то сделал, чтобы смягчить удар. Может, эксперт в этом деле или что-то такое.
+text По-моему, ты сама тоже не совсем обычная, раз знаешь, каково это — врезаться в чью-то плоть и кости на байке...
+text @[Томоя]
+text Даже если и так, разве не большая моральная проблема то, что ты вот так сбежала?
+setvar strS[1001] = "CGKY10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UR3.aac
+text @[Кё]
+text Ну, если бы тебя там не было, я бы остановилась.
+sound UR4.aac
+text @[Кё]
+setvar intA[1000] = 2300
+setvar intA[1001] = 23
+if 50 <= 0
+	goto s8
+fi
+goto 9
+label s8
+setvar intA[1001] + 1
+label 9
+text Да я вообще-то и ехала прямо к тебе...
+text ...Довольно тревожное заявление...
+text ......
+text Неужели она узнала о том, что случилось с Ботаном в субботу...?
+setvar strS[1001] = "CGKY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UR5.aac
+text @[Кё]
+text Ну, в итоге же ничего не случилось, да? Значит, всё в порядке!
+text Говорит Кё, смеясь, и бросает мне что-то.
+text @[Томоя]
+text Что это?
+setvar strS[1001] = "CGKY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UR6.aac
+text @[Кё]
+text Фруктовое молоко. Считай это моей благодарностью, в общем-то. Выпей его, проведя десять минут в благодарных чувствах.
+text @[Томоя]
+text Ты мне говоришь чувствовать благодарность за твою же «благодарность»?
+text @[Томоя]
+text И вообще, если благодаришь, не говори «в общем-то».
+setvar strS[1001] = "CGKY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound UR7.aac
+text @[Кё]
+text Дать тебе пакетик сока — это и есть моя благодарность. А раз я выбрала вкусный, тебе стоит быть благодарным, разве нет?
+text С улыбкой на лице она объясняет свою абсурдную логику.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я тяжело вздыхаю и всё же поднимаю руку в знак благодарности.
+music ~
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+jump SEEN7600_1_0.scr

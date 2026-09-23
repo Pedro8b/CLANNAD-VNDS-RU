@@ -1,1 +1,695 @@
-��$
+setvar intF[1110] = 1
+setvar intF[1112] = 1
+setvar strS[1004] = "SDTA0501"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1004] = ""
+label 1
+bgload SCLAB00.jpg 45
+delay 60
+setimg SCLAP03.png 5 5
+setimg SCLA0501.png 159 160
+delay 120
+if 0 == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = "KURO"
+goto 4
+label 2
+if 0 == 1
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = "SIRO"
+goto 4
+label 3
+setvar strS[1000] = "KURO"
+label 4
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG021B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 5
+label s3
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08C.mp3
+text На перемене, когда я уже собираюсь опустить голову на парту...
+setvar strS[1001] = "CGRY19B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY19B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9VU.aac
+text @[Рё]
+text Эм... Оказаки-кун...
+text @[Томоя]
+text Хм...?
+text Подходит Фудзибаяси...
+text Выглядит она ужасно взволнованной.
+text В руках она держит несколько карт.
+text Похоже, они уже перетасованы — она держит их веером рубашкой ко мне.
+text @[Томоя]
+text ...Эм... хочешь, чтобы я вытащил несколько карт?
+setvar strS[1001] = "CGRY22B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY22B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9VV.aac
+text @[Рё]
+text ~~~...
+text Она слегка кивает.
+text Интересно, что это за гадание такое...
+text Её глаза пристально смотрят на меня.
+text @[Томоя]
+text Сколько?
+setvar strS[1001] = "CGRY21B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY21B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9VW.aac
+text @[Рё]
+text А... эм... э-э... думаю, хватит двух.
+text Думаешь...? Похоже, это гадание, как всегда, расплывчатое.
+text В любом случае, я вытаскиваю две карты.
+text Ну... давай посмотрим на карты...
+setvar strS[1001] = "CGRY22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9VX.aac
+text @[Рё]
+text Эм... сегодня на обед тебе достанется что-то очень вкусное, Оказаки-кун.
+text @[Томоя]
+text А? Погоди... я же ещё не показал тебе карты...
+setvar strS[1001] = "CGRY21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9VY.aac
+text @[Рё]
+text Нет, всё в порядке. Это гадание так работает.
+text Так работает, значит...?
+text Чёрт, по-моему, это больше похоже на пророчество.
+text @[Томоя]
+text Кстати, я вытащил джокера и четвёрку треф.
+text @[Томоя]
+text Звучит не очень-то удачно, да?
+setvar strS[1001] = "CGRY19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9VZ.aac
+text @[Рё]
+text А? Э-это совсем не так.
+sound 9W0.aac
+text @[Рё]
+text В Дайфуго джокер — самая сильная карта.
+text @[Томоя]
+text Да ладно... сила карты в игре ведь никак не связана с гаданием, разве нет...?
+setvar strS[1001] = "CGRY21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9W1.aac
+text @[Рё]
+text А... э... эм... в-всё в порядке. Это же гадание.
+text Утверждает она, будто подбадривая саму себя.
+text В любом случае, если её гадание предсказало мне что-то вкусное на обед... звучит это невероятно подозрительно.
+setvar strS[1001] = "CGRY22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9W2.aac
+text @[Рё]
+text И-и ещё... насчёт сегодняшнего обеда...
+sound 9W3.aac
+text @[Рё]
+text Эм... ну... как бы это сказать...?
+text @[Томоя]
+text Ага, снова хочешь пообедать вместе?
+setvar strS[1001] = "CGRY19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9W4.aac
+text @[Рё]
+text А... э... ну... я буду ждать на том же месте, что и вчера.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Фудзибаяси преувеличенно кивает и быстро отворачивается, будто пытаясь сбежать.
+text @[Томоя]
+text Фудзибаяси.
+setvar strS[1001] = "CGRY20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9W5.aac
+text @[Рё]
+text А...? А, да...?
+text @[Томоя]
+text Твои карты.
+text Говорю я, глядя на джокера и четвёрку треф в своей руке.
+setvar strS[1001] = "CGRY14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9W6.aac
+text @[Рё]
+text Авава... и-извини.
+text Она семенит обратно, её туфли постукивают по полу.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Затем она забирает карты и снова убегает на своё место.
+text @[Томоя]
+text ...Похоже, моя девушка ужасно стеснительная...
+text Глядя на стеснительную Фудзибаяси, я тихонько усмехаюсь.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s4
+fi
+goto 6
+label s4
+setvar strS[1000] = ""
+label 6
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG021E"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s5
+fi
+goto 7
+label s5
+setvar strS[1000] = ""
+label 7
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM09A.mp3
+text Звенит звонок, заканчивая урок перед обедом.
+text Одноклассники расходятся в разные стороны, чтобы пообедать.
+text @[Томоя]
+text Итак...
+text Я встаю со своего места и смотрю в сторону Фудзибаяси.
+text @[Томоя]
+text ...А...?
+text Её там уже нет.
+text Неужели она уже ушла во двор перед школой?
+setvar strS[1001] = "CGSH10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9W7.aac
+text @[Сунохара]
+text Оказаки, пойдём в магазин.
+text @[Томоя]
+text Ага, но сначала мне нужно в туалет.
+setvar strS[1001] = "CGSH25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9W8.aac
+text @[Сунохара]
+text Отлично! Я тоже лучше пожую, если сначала избавлюсь от груза.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s6
+fi
+goto 8
+label s6
+setvar strS[1000] = ""
+label 8
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Дребезг* *Дребезг*
+text @[Томоя]
+text Так.
+text Я пристраиваю швабру так, чтобы она заблокировала ручку двери кабинки.
+text Вдобавок пишу ручкой на двери слова «Любовное гнёздышко».
+text @[Томоя]
+text (Я выпущу тебя прямо перед концом обеда, ладно?)
+text Мысленно клянусь себе в этом и выхожу из туалета.
+setvar strS[1000] = "BG057E"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s7
+fi
+goto 9
+label s7
+setvar strS[1000] = ""
+label 9
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Весеннее небо голубое и ясное, проясняет разум.
+text Ветерок пробегает по пышной зелени вокруг, а заодно и по моим волосам.
+text В такую прекрасную погоду, уверен, всё, что бы я ни съел, покажется вкусным.
+text Кё уже доказала прошлыми обедами, что её бэнто вполне на уровне.
+text Дойдя до места, вижу расстеленную на земле клеёнку.
+setvar strS[1000] = "FGKY04D"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s8
+fi
+goto 10
+label s8
+setvar strS[1000] = ""
+label 10
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text Кё и Фудзибаяси уже сидят на ней, ожидая моего прихода.
+sound 9W9.aac
+text @[Кё]
+text Чего так долго? Рё уже сто лет как здесь!
+text @[Томоя]
+text Заскочил в туалет.
+sound 9WA.aac
+text @[Кё]
+text Делай это на уроке!
+text Не часто такое услышишь от старосты класса...
+setvar strS[1000] = "BG057E"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s9
+fi
+goto 11
+label s9
+setvar strS[1000] = ""
+label 11
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGBT11"
+sound 9WB.aac
+text @[Ботан]
+text Пухи! Пухи!
+text @[Томоя]
+text Хм? Ботан? А он тут зачем?
+setvar strS[1001] = "CGKY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9WC.aac
+text @[Кё]
+text А, ну да. Он снова сюда пришёл.
+text @[Томоя]
+text ...Понятно. Похоже, обед будет весьма роскошным.
+setvar strS[1001] = "CGKY15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9WD.aac
+text @[Кё]
+text А?
+setvar strS[1001] = "CGBT10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGBT10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9WE.aac
+text @[Ботан]
+text Пухи?
+text @[Томоя]
+text Так, а где котелок? Мисо уже есть?
+setvar strS[1001] = "CGBT12"
+sound 9WF.aac
+text @[Ботан]
+text Пухи-и!
+setvar strS[1001] = "CGKY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9WG.aac
+text @[Кё]
+text Томоя, ты не против, если я тебя придушу так, что ты и пикнуть не сможешь?
+text @[Томоя]
+text Не... Я просто пошутил. Извини.
+text Её улыбка жутковато-пугающая.
+setvar strS[1001] = "CGRY19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 9WH.aac
+text @[Рё]
+text Эм... п-присаживайся, пожалуйста.
+text @[Томоя]
+text Ага.
+text Я снимаю обувь и ступаю на клеёнку. Затем сажусь рядом с Фудзибаяси.
+setvar strS[1000] = "FGKY04B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s10
+fi
+goto 12
+label s10
+setvar strS[1000] = ""
+label 12
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound 9WI.aac
+text @[Рё]
+text Ва...!
+text Она опускает покрасневшее лицо вниз.
+sound 9WJ.aac
+text @[Кё]
+text Именно. Вот тут тебе и место сидеть. А ты, оказывается, неплохо всё понимаешь.
+sound 9WK.aac
+text @[Кё]
+text Наконец-то понял обязанности бойфренда?
+text @[Томоя]
+text Даже если бы я сел в другом месте, ты бы всё равно меня сюда притащила, разве нет?
+sound 9WL.aac
+text @[Кё]
+text Конечно!
+text С бесстрашной улыбкой на лице она выпячивает грудь и говорит это как само собой разумеющееся.
+text Пока я снова усаживаюсь по-турецки, Ботан запрыгивает мне на колени.
+sound 9WM.aac
+text @[Ботан]
+text Пухи♪
+sound 9WN.aac
+text @[Кё]
+text Похоже, ему правда нравится.
+text @[Томоя]
+text Ну, даже если я нравлюсь зверушке, счастливее я от этого не становлюсь...
+sound 9WO.aac
+text @[Кё]
+text Не переживай, девушка рядом с тобой тоже тебя любит.
+text Услышав это, я смотрю на Фудзибаяси.
+sound 9WP.aac
+text @[Рё]
+text А...
+text Наши взгляды на миг встречаются, а затем её лицо краснеет, и она опускает голову.
+sound 9WQ.aac
+text @[Кё]
+text Забудь пока про это. Смотри, сегодняшнее бэнто просто потрясающее!
+text @[Томоя]
+text Потрясающее...? Эй, у тебя появилась ещё одна коробка!
+text Если вчера в бэнто было три яруса, то теперь их четыре.
+sound 9WR.aac
+text @[Кё]
+text И тут есть кое-кто, кого стоит за это поблагодарить.
+text @[Томоя]
+text И кого же мне благодарить?
+setvar strS[1000] = "FGKY04D"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s11
+fi
+goto 13
+label s11
+setvar strS[1000] = ""
+label 13
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound 9WS.aac
+text @[Кё]
+text Кто тут есть, кроме тебя и меня?
+text Услышав это, я смотрю рядом с собой.
+text Фудзибаяси снова смотрит вниз, явно смущённая.
+text ...Неужели...
+text @[Томоя]
+text Ты это приготовила...?
+sound 9WT.aac
+text @[Рё]
+text Э... эм... ну... я-я очень старалась...
+text Говорит она, поглядывая на меня снизу вверх.
+setvar strS[1000] = "FGKY04B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s12
+fi
+goto 14
+label s12
+setvar strS[1000] = ""
+label 14
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound 9WU.aac
+text @[Кё]
+text Это первый раз, когда Рё готовит бэнто.
+sound 9WV.aac
+text @[Кё]
+text Она встала со мной вместе в пять утра.
+text @[Томоя]
+text Хех... ну ты и постаралась, да?
+sound 9WW.aac
+text @[Рё]
+text А... д-да.
+text Хоть и смущённая, она бодро кивает.
+text Кё начинает раскладывать ярусы бэнто.
+sound 9WX.aac
+text @[Ботан]
+text Пухи-пухи~
+text Учуяв аромат, разносящийся в воздухе, Ботан радостно визжит.
+sound 9WY.aac
+text @[Кё]
+text Так, приступаем! Главное блюдо сегодня — острые спринг-роллы по-сычуаньски.
+text @[Томоя]
+text Тогда начну с них.
+text Я подношу палочки к аккуратно уложенным в бэнто румяным спринг-роллам.
+setvar strS[1000] = "FGKY04E"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s13
+fi
+goto 15
+label s13
+setvar strS[1000] = ""
+label 15
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 0
+text *Хлобысь*
+text Внезапно Кё бьёт меня по руке.
+text @[Томоя]
+text Ай! Это ещё за что?
+sound 9WZ.aac
+text @[Кё]
+text Дурак. Зачем начинать с того, что приготовила я?
+text @[Томоя]
+text А?
+setvar strS[1000] = "FGKY04G"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s14
+fi
+goto 16
+label s14
+setvar strS[1000] = ""
+label 16
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound 9X0.aac
+text @[Кё]
+text Начни отсюда.
+text Её палец указывает на коробку рядом с той, где спринг-роллы.
+text Внутри коробки лежат несколько кривоватых тамагояки и какое-то подгоревшее на вид мясо.
+text @[Томоя]
+text ...Это Фудзибаяси приготовила?
+sound 9X1.aac
+text @[Рё]
+text Э... а... а-а... ну... да...
+text @[Томоя]
+text ...
+text Даже если бы я хотел быть вежливым, я не могу сказать про это ничего хорошего — выглядит просто ужасно.
+text Кё же говорила, что это её первый раз, когда она готовит бэнто.
+text Что ж, наверное, не стоит ждать многого от вкуса.
+sound 9X2.aac
+text @[Рё]
+text Эм... т-тебе не обязательно заставлять себя это есть... всё... нормально...
+sound 9X3.aac
+text @[Рё]
+text Я-я уверена, бэнто онээ-тян намного лучше... так что... эм...
+setvar strS[1000] = "FGKY04B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s15
+fi
+goto 17
+label s15
+setvar strS[1000] = ""
+label 17
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound 9X4.aac
+text @[Кё]
+text Да что ты такое говоришь? Твоё точно лучше.
+sound 9X5.aac
+text @[Кё]
+text Разве ты не добавила туда лучшую приправу на свете?
+text @[Томоя]
+text Лучшую приправу...?
+sound 9X6.aac
+text @[Кё]
+text Да ладно, это же бэнто, которое девушка приготовила для своего парня, разве нет?
+sound 9X7.aac
+text @[Кё]
+text Оно полно приправы под названием «любовь»! Блин, как же стыдно это говорить!
+text Говорит она и сама же смущается от собственных слов.
+text Ну да ладно... а она реально как старик иногда рассуждает...
+sound 9X8.aac
+text @[Рё]
+text А... эм...
+text Ну а тут у нас ещё одна смущённая девушка.
+text Ну и утомительные же близняшки.
+text Интересно, значит ли это странное чувство отчуждения от их поведения, что я тут единственный нормальный...
+text В любом случае, я отвожу взгляд от них обеих и подношу палочки к еде Фудзибаяси.
+text Тамагояки испортить не так-то просто.
+text *Хрум*
+jump SEEN3501_1_0.scr

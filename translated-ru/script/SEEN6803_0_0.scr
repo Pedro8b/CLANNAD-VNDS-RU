@@ -1,0 +1,258 @@
+music BGM02B.mp3
+setvar strS[1000] = "SIRO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1000] = ""
+label 1
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я окружён ослепительным светом.
+text Мои глаза просто отвыкли от яркого света — слишком долго я пробыл в темноте.
+text Вскоре они привыкают к свету, и я могу различить силуэты на заднем плане.
+text Я знаю, где нахожусь.
+setvar strS[1000] = "FGNG16"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = ""
+label 2
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 98
+text Подножие холма, ведущего к школе.
+text Она снова здесь.
+text Она смотрит на школьные ворота, что возвышаются над нами.
+text Я не решаюсь окликнуть её по имени.
+text Но сам не знаю почему...
+text О чём она думает? Она то и дело опускает взгляд на землю и вздыхает.
+text Проходит немало времени.
+text Она... поворачивается спиной к школьным воротам.
+setvar strS[1000] = "SIRO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = ""
+label 3
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Она смотрит в мою сторону.
+text И начинает идти.
+text Она проходит мимо меня — мимо незнакомого ей человека.
+text ...Мне нужно что-то ей сказать.
+text Но...
+text Может, было бы лучше, если бы я не...
+text Если бы она вообще никогда меня не встретила...
+text Разве не было бы лучше, если бы мы оба продолжили идти каждый своим путём?
+text Но...
+text Я...
+if intG[43] == 1
+	goto s3
+fi
+goto 6
+label s3
+choice Окликнуть|Промолчать
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s4
+fi
+goto 4
+label s4
+goto 6
+label 4
+if intF[1089] == 1
+	goto s5
+fi
+goto 6
+label s5
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s6
+fi
+goto 5
+label s6
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 301
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+jump SEEN6802_0_0.scr
+label 6
+text ...Нагиса!
+text Я выкрикиваю её имя.
+text Я здесь!
+sound PQX.aac
+text ...
+text Нагиса снова оборачивается.
+text Она смотрит мне в лицо.
+setvar strS[1000] = "FGNG17B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s7
+fi
+goto 7
+label s7
+setvar strS[1000] = ""
+label 7
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 98
+sound PQY.aac
+text ...Я рада.
+sound PQZ.aac
+text Ты позвал меня по имени.
+text Правда...?
+sound PR0.aac
+text Я всё думала... вдруг ты считаешь, что было бы лучше...
+sound PR1.aac
+text ...если бы мы никогда не встретились...
+sound PR2.aac
+text Я так волновалась...
+text ...
+sound PR3.aac
+text Но я рада, что смогла тебя встретить.
+sound PR4.aac
+text Это сделало меня такой счастливой.
+text Правда...?
+sound PR5.aac
+text Поэтому, пожалуйста...
+setvar strS[1000] = "FGNG17A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s8
+fi
+goto 8
+label s8
+setvar strS[1000] = ""
+label 8
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 55
+sound PR6.aac
+text Больше никогда не сомневайся в своём сердце.
+sound PR7.aac
+text Что бы ни приготовила тебе жизнь впредь...
+sound PR8.aac
+text Пожалуйста, никогда не жалей о том, что встретил меня.
+text ...
+setvar strS[1000] = "FGNG17D"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s9
+fi
+goto 9
+label s9
+setvar strS[1000] = ""
+label 9
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 55
+sound PR9.aac
+text Это слишком многого просить...?
+text ...
+text Нет...
+text Я понимаю... Я не пожалею об этом...
+text Я проживу свою жизнь, гордясь тем... что встретил тебя.
+setvar strS[1000] = "FGNG17A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s10
+fi
+goto 10
+label s10
+setvar strS[1000] = ""
+label 10
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 55
+sound PRA.aac
+text Вот как...?
+sound PRB.aac
+text Большое тебе спасибо.
+text Она нежно улыбается мне.
+text Ну что, пойдём?
+sound PRC.aac
+text Да.
+text Мы поднимаемся на холм.
+sound PRD.aac
+text Я хочу, чтобы тебе тоже начала нравиться Большая семья Данго, Томоя-кун.
+text Ага. Я подумаю об этом.
+sound PRE.aac
+text Хорошо!
+text Я смотрю на вершину холма... и вижу мир, окутанный светом.
+sound PRF.aac
+text Эхе-хе...
+text Улыбка Нагисы...
+setvar strS[1000] = "SIRO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s11
+fi
+goto 11
+label s11
+setvar strS[1000] = ""
+label 11
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 98
+text Её широко улыбающееся лицо... исчезает.
+text Свет настолько невероятно ярок...
+text Подожди...
+text Не уходи...
+text ...Нагиса!
+text Ещё более яркий свет...
+music ~
+text у меня в руках.
+text Будто пытается окружить меня.
+text Он тёплый.
+text Я слышу голос, а затем чувствую, будто она убирает свою руку из моей.
+text @К этому моменту свет... уже окутал всё моё тело.
+delay 180
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s12
+fi
+goto 12
+label s12
+setvar strS[1000] = ""
+label 12
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 301
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+jump SEEN6803_1_0.scr

@@ -1,1 +1,597 @@
-��$
+label 104
+if intF[21] == 1
+	goto s105
+fi
+goto 105
+label s105
+text Сунохара стучит в дверь Мисаэ-сан.
+sound J54.aac
+text @[Голос]
+text Иду-у-у.
+text Изнутри доносится голос. Вскоре дверь открывается, и на пороге появляется Мисаэ-сан.
+setvar strS[1001] = "CGMS17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Томоя]
+text Здоро́во.
+setvar strS[1001] = "CGMS15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J55.aac
+text @[Мисаэ]
+text О, это ты.
+setvar strS[1001] = "CGMS10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J56.aac
+text @[Мисаэ]
+text О, и снова с милой подружкой.
+setvar strS[1001] = "CGNG32"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J57.aac
+text @[Нагиса]
+text Здравствуйте.
+setvar strS[1001] = "CGMS11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J58.aac
+text @[Мисаэ]
+text Здравствуйте.
+setvar strS[1001] = "CGMS10H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS10H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J59.aac
+text @[Мисаэ]
+text Ну, чего хотели?
+jump SEEN6428_0_1.scr 103
+label 105
+goto 107
+label 106
+if intF[1089] == 1
+	goto s106
+fi
+goto 107
+label s106
+text Может, не будем...? Да что со мной творится...
+label 107
+goto 110
+label 108
+if intF[630] == 0
+	goto s107
+fi
+goto 110
+label s107
+text Мы быстро извиняемся за то, что оторвали её от дел, и возвращаемся в коридор.
+setvar strS[1000] = "BG019"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s108
+fi
+goto 109
+label s108
+setvar strS[1000] = ""
+label 109
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+label 110
+jump SEEN6428_0_0.scr 25
+label 111
+music ~
+if 0 == 0
+	goto s109
+fi
+goto 112
+label s109
+setvar strS[1000] = "KURO"
+goto 114
+label 112
+if 0 == 1
+	goto s110
+fi
+goto 113
+label s110
+setvar strS[1000] = "SIRO"
+goto 114
+label 113
+setvar strS[1000] = "KURO"
+label 114
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG015Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s111
+fi
+goto 115
+label s111
+setvar strS[1000] = ""
+label 115
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08B.mp3
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+if intF[826] == 0
+	goto s112
+fi
+goto 116
+label s112
+sound J5A.aac
+text @[Сунохара]
+text Но, что ж, по крайней мере можно быть спокойным — команда у нас есть.
+goto 117
+label 116
+if intF[826] == 1
+	goto s113
+fi
+goto 117
+label s113
+sound J5B.aac
+text @[Сунохара]
+text Но, что ж, по крайней мере можно быть спокойным — команда у нас, считай, есть.
+label 117
+setvar strS[1001] = "CGNG23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J5C.aac
+text @[Нагиса]
+text Я так рада, что всё получилось.
+if intF[17] == 1
+	if intF[18] == 0
+		goto s114
+	fi
+fi
+goto 118
+label s114
+jump SEEN6728_0_0.scr
+label 118
+music ~
+setvar strS[1001] = "CGSH10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J5D.aac
+text @[Сунохара]
+text Теперь мы сможем со спокойной душой целиком посвятить себя завтрашней тренировке!
+text @[Томоя]
+text ...
+setvar strS[1001] = "CGSH20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J5E.aac
+text @[Сунохара]
+text Что не так? У тебя лицо какое-то напряжённое.
+text @[Томоя]
+text ...
+music BGM10.mp3
+if intF[22] == 1
+	goto s115
+fi
+goto 121
+label s115
+setvar strS[1001] = "CGNG32"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J5F.aac
+text @[Нагиса]
+text Эм... Так завтра тренировка?
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J5G.aac
+text @[Сунохара]
+text Конечно. Завтра же день перед игрой! Не время прохлаждаться.
+sound J5H.aac
+text @[Сунохара]
+text Ты ведь согласна, Нагиса-тян?
+setvar strS[1001] = "CGNG32"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J5I.aac
+text @[Нагиса]
+text Д-да...
+setvar strS[1001] = "CGNG12Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG12Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Нагиса виновато смотрит мне в лицо.
+text @[Томоя]
+text ...
+choice Тренироваться|Придумать способ отвертеться
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s116
+fi
+goto 119
+label s116
+text @[Томоя]
+text Ну ладно...
+text @[Томоя]
+text Ведь именно это тебя обрадует, да?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Теперь мне остаётся только взяться за дело всерьёз.
+setvar strS[1001] = "CGSH25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J5J.aac
+text @[Сунохара]
+text Эй, похоже, ты настроился!
+sound J5K.aac
+text @[Сунохара]
+text Отлично, тренируемся от рассвета до заката!
+text @[Томоя]
+text Я готов!
+setvar strS[1001] = "CGSH20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J5L.aac
+text @[Сунохара]
+text Ха? Ты что, плачешь?
+text @[Томоя]
+text Это слёзы радости!
+setvar strS[1001] = "CGSH25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J5M.aac
+text @[Сунохара]
+text А, ну конечно!
+goto 120
+label 119
+if intF[1089] == 1
+	goto s117
+fi
+goto 120
+label s117
+text @[Томоя]
+text Ну ладно...
+text @[Томоя]
+text Я сделаю это.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я даю ему вялый ответ, не особо вникая.
+text Завтра что-нибудь придумаю, чтобы отвертеться от тренировки.
+setvar strS[1001] = "CGSH25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J5N.aac
+text @[Сунохара]
+text Эй, похоже, ты настроился!
+setvar intF[26] = 1
+label 120
+sound J5O.aac
+text @[Сунохара]
+text Наконец-то мы сплотились как единая команда. Спорт — это ведь здорово, да?!
+setvar strS[1001] = "CGNG16Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J5P.aac
+text @[Нагиса]
+text Томоя-кун...
+goto 124
+label 121
+if intF[22] == 0
+	goto s118
+fi
+goto 124
+label s118
+setvar strS[1001] = "CGNG10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J5Q.aac
+text @[Нагиса]
+text Так завтра тренировка?
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J5R.aac
+text @[Сунохара]
+text Конечно. Завтра же день перед игрой! Не время прохлаждаться.
+sound J5S.aac
+text @[Сунохара]
+text Ты ведь согласна, Нагиса-тян?
+setvar strS[1001] = "CGNG10Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J5T.aac
+text @[Нагиса]
+text Да!
+sound J5U.aac
+text @[Нагиса]
+text Томоя-кун, завтра тренировка. Давай постараемся.
+text @[Томоя]
+text ...
+choice Тренироваться|Придумать способ отвертеться
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s119
+fi
+goto 122
+label s119
+text @[Томоя]
+text Ну ладно...
+text @[Томоя]
+text Ведь именно это тебя обрадует, да?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Теперь мне остаётся только взяться за дело всерьёз.
+setvar strS[1001] = "CGSH25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J5V.aac
+text @[Сунохара]
+text Эй, похоже, ты настроился!
+sound J5W.aac
+text @[Сунохара]
+text Отлично, тренируемся от рассвета до заката!
+text @[Томоя]
+text Я готов!
+setvar strS[1001] = "CGSH20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J5X.aac
+text @[Сунохара]
+text Ха? Ты что, плачешь?
+text @[Томоя]
+text Это слёзы радости!
+setvar strS[1001] = "CGSH25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J5Y.aac
+text @[Сунохара]
+text А, ну конечно!
+goto 123
+label 122
+if intF[1089] == 1
+	goto s120
+fi
+goto 123
+label s120
+text @[Томоя]
+text Ну ладно...
+text @[Томоя]
+text Я сделаю это.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я даю ему вялый ответ, не особо вникая.
+text Завтра что-нибудь придумаю, чтобы отвертеться от тренировки.
+setvar strS[1001] = "CGSH25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J5Z.aac
+text @[Сунохара]
+text Эй, похоже, ты настроился!
+setvar intF[26] = 1
+label 123
+sound J60.aac
+text @[Сунохара]
+text Наконец-то мы сплотились как единая команда. Спорт — это ведь здорово, да?!
+setvar strS[1001] = "CGNG25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound J61.aac
+text @[Нагиса]
+text Да!
+label 124
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s121
+fi
+goto 125
+label s121
+setvar strS[1000] = ""
+label 125
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+jump SEEN6429_0_0.scr

@@ -1,0 +1,452 @@
+setvar intF[1110] = 7
+setvar intF[1112] = 1
+setvar strS[1004] = "SDTA0507"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1004] = ""
+label 1
+bgload SCLAB00.jpg 45
+delay 60
+setimg SCLAP02.png 5 5
+setimg SCLA0507.png 159 160
+delay 120
+if 0 == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = "KURO"
+goto 4
+label 2
+if 0 == 1
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = "SIRO"
+goto 4
+label 3
+setvar strS[1000] = "KURO"
+label 4
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG007"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 5
+label s3
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM14.mp3
+setvar strS[1001] = "CGNG10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KR6.aac
+text @[Нагиса]
+text Мы пошли.
+text @[Томоя]
+text Ага, пока.
+setvar strS[1001] = "CGSN11E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN11E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KR7.aac
+text @[Санаэ]
+text Хорошо, хорошего вам дня.
+setvar strS[1001] = "CGAK10E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK10E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KR8.aac
+text @[Акио]
+text Идите и повеселитесь как следует!
+text Мы выходим из дома, а они, как и каждый день, провожают нас.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s4
+fi
+goto 6
+label s4
+setvar strS[1000] = ""
+label 6
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG033A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s5
+fi
+goto 7
+label s5
+setvar strS[1000] = ""
+label 7
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KR9.aac
+text @[Нагиса]
+text Я кое-что придумала.
+text Нагиса заговаривает со мной, пока мы идём в школу среди других учеников.
+text @[Томоя]
+text Что придумала?
+setvar strS[1001] = "CGNG10Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KRA.aac
+text @[Нагиса]
+text Думаю, будет ещё лучше, если добавить песню.
+text @[Томоя]
+text Песню?
+sound KRB.aac
+text @[Нагиса]
+text Да. В кульминации пьесы на той записи все начали петь.
+text @[Томоя]
+text А, да. Пожалуй.
+sound KRC.aac
+text @[Нагиса]
+text Я тоже хочу что-то такое добавить.
+text @[Томоя]
+text Разве та песня на записи не работает именно потому, что её поёт весь актёрский состав вместе?
+text @[Томоя]
+text Сомневаюсь, что зрителей воодушевит, если ты споёшь что-то в одиночку.
+setvar strS[1001] = "CGNG32"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KRD.aac
+text @[Нагиса]
+text Значит, может, лучше не стоит...?
+text @[Томоя]
+text Ты вообще уверена в своём пении?
+sound KRE.aac
+text @[Нагиса]
+text Я никогда не участвовала в пьесах, но пела на уроках музыки.
+text @[Томоя]
+text Ну, там-то, конечно, все пели. Даже я пел.
+setvar strS[1001] = "CGNG31"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG31.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KRF.aac
+text @[Нагиса]
+text Именно поэтому мне бы хотелось добавить песню, если получится. У меня такое чувство, что это сильно улучшит постановку.
+text @[Томоя]
+text Понятно... Ну, делай так, как тебе хочется.
+text @[Томоя]
+text Но, по-моему, тебе не стоит так уж переживать о том, чтобы сделать постановку лучше.
+setvar strS[1001] = "CGNG13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KRG.aac
+text @[Нагиса]
+text Прости, что?
+text @[Томоя]
+text Если хочешь петь — пой. Вот всё, что я хотел сказать.
+setvar strS[1001] = "CGNG10Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KRH.aac
+text @[Нагиса]
+text Поняла. Я хочу петь, поэтому буду петь.
+text @[Томоя]
+text Ага, вот так и делай. И вложи в это всю душу. Это самое главное.
+setvar strS[1001] = "CGNG23Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KRI.aac
+text @[Нагиса]
+text Хорошо!
+if intF[31] == 1
+	if intF[826] == 1
+		goto s6
+	fi
+fi
+goto 12
+label s6
+if 0 == 0
+	goto s7
+fi
+goto 8
+label s7
+setvar strS[1000] = "KURO"
+goto 10
+label 8
+if 0 == 1
+	goto s8
+fi
+goto 9
+label s8
+setvar strS[1000] = "SIRO"
+goto 10
+label 9
+setvar strS[1000] = "KURO"
+label 10
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text Сегодня день выборов в школьный совет.
+text Когда я встречаю Нагису после классного часа, это первое, о чём она заговаривает.
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s9
+fi
+goto 11
+label s9
+setvar strS[1000] = ""
+label 11
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGNG10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KRJ.aac
+text @[Нагиса]
+text За кого ты голосовал, Томоя-кун?
+text @[Томоя]
+text Э-э... Ну...
+text @[Томоя]
+text За Томоё.
+setvar strS[1001] = "CGNG23Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KRK.aac
+text @[Нагиса]
+text Я тоже!
+sound KRL.aac
+text @[Нагиса]
+text По-моему, Сакагами-сан отлично подойдёт на должность председателя школьного совета.
+text @[Томоя]
+text Я проголосовал за неё просто потому, что это единственное знакомое имя в бюллетене.
+setvar strS[1001] = "CGNG13Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG13Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KRM.aac
+text @[Нагиса]
+text Ты разве не слышал речи всех кандидатов в спортзале?
+text @[Томоя]
+text А, мы с Сунохарой это прогуляли.
+setvar strS[1001] = "CGNG10Z"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10Z.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KRN.aac
+text @[Нагиса]
+text Сакагами-сан и там была замечательна.
+sound KRO.aac
+text @[Нагиса]
+text Может, это и грубо по отношению к другим кандидатам, но Сакагами-сан была самой крутой из всех.
+text @[Томоя]
+text Похоже, она пользуется популярностью у девчонок.
+sound KRP.aac
+text @[Нагиса]
+text Уверена, у парней тоже.
+text @[Томоя]
+text В таком случае, её победа обеспечена.
+setvar strS[1001] = "CGNG22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KRQ.aac
+text @[Нагиса]
+text Да, уверена, что её изберут.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Разговаривая, мы направляемся в кабинет клуба.
+label 12
+music ~
+if 0 == 0
+	goto s10
+fi
+goto 13
+label s10
+setvar strS[1000] = "KURO"
+goto 15
+label 13
+if 0 == 1
+	goto s11
+fi
+goto 14
+label s11
+setvar strS[1000] = "SIRO"
+goto 15
+label 14
+setvar strS[1000] = "KURO"
+label 15
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG022"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s12
+fi
+goto 16
+label s12
+setvar strS[1000] = ""
+label 16
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM15.mp3
+text Я смотрю, как Нагиса репетирует.
+text В руках она сжимает самодельный сценарий.
+text Пьеса идёт точь-в-точь так, как она мне рассказывала.
+text Девочка, оставшаяся совсем одна в мире, собирает куклу из найденного хлама.
+text Когда та оживает, девочка перестаёт грустить.
+text Всё хорошо, что хорошо кончается.
+text Если честно, эта история, пожалуй, идеально подходит под то небольшое время, что ей отвели.
+text Глядя на репетицию Нагисы, я вдруг вспоминаю то странное чувство дежавю, которое возникло у меня, когда я впервые услышал эту историю.
+text Я надеялся, что, увидев выступление Нагисы, что-то глубоко в моей памяти всплывёт, но ничего не происходит.
+text Пьеса пока не до конца завершена.
+text @[Томоя]
+text (Нет... сомневаюсь, что эта история вообще когда-нибудь будет завершена.)
+text Именно такое у меня чувство.
+text Слишком уж мало зацепок.
+text И вообще, ответ ищу только я один.
+text Нагиса, похоже, уже вполне довольна тем, что есть.
+text Если мне и стоит о чём-то беспокоиться, так это о заботе о ней.
+text И как только Фестиваль основателей пройдёт без происшествий...
+text Мы сможем начать вести себя более как настоящая пара.
+text А пока моя роль — просто сидеть здесь и смотреть на неё.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s13
+fi
+goto 17
+label s13
+setvar strS[1000] = ""
+label 17
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+jump SEEN6508_0_0.scr

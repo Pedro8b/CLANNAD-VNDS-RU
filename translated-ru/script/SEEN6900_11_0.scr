@@ -1,0 +1,112 @@
+setvar intF[1112] = 0
+bgload SFWEC02.jpg 60
+delay 8
+setimg SFWEC30.png 148 172
+delay 287
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s58
+fi
+goto 60
+label s58
+setvar strS[1000] = ""
+label 60
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG315"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s59
+fi
+goto 61
+label s59
+setvar strS[1000] = ""
+label 61
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM26B.mp3
+text Её шаги останавливаются.
+text Она подолгу сидит на корточках над снегом.
+text Я стряхиваю снег, что скопился на её лице.
+text Сделав это, я вижу, что она улыбается.
+text Она протягивает руку и начинает грести по снегу, будто пытаясь подтянуть своё тело вверх.
+text Но она остаётся на месте.
+text Я заползаю ей под живот.
+text Я собираю все свои силы.
+text Этого хватает, чтобы её тело сдвинулось вверх.
+text ...«Спасибо.»
+text Я слышу её голос.
+text Моё тело скрипит.
+text Сколько ещё шагов до цели?
+text Может, мы уже в одном шаге от неё?
+text Или нам суждено считать бесконечно?
+text Если так... то это безнадёжно.
+text Меня охватывает отчаяние.
+text ......
+if intG[21] == 1
+	goto s60
+fi
+goto 62
+label s60
+text Внезапно моё тело отрывается от земли.
+text Более того, подо мной что-то есть.
+text Это маленькие... зверьки.
+text Так они тоже были здесь...
+text Каждый из них... так жалко слаб.
+text Но когда они все вместе соединяют свои силы... им удаётся толкать меня вперёд...
+text ......
+text В конце концов я снова могу идти сам.
+text Зверьки... уже скрылись из виду.
+text Мы продвинулись вперёд, даже не остановившись, чтобы оглянуться.
+text Они не оставили нам ничего, кроме своей отваги...
+goto 63
+label 62
+if intG[21] == 0
+	goto s61
+fi
+goto 63
+label s61
+text Нет... я не могу так думать.
+text Ещё один шаг. Мне нужно идти вперёд, веря, что именно этот шаг и приведёт нас туда.
+text А если этот шаг окажется не тем, нужно будет сделать ещё один.
+text Если и не этот, то следующий.
+text Шаг за шагом...
+text Кажется, будто мы ползём, продвигаясь вперёд.
+label 63
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s62
+fi
+goto 64
+label s62
+setvar strS[1000] = ""
+label 64
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar intF[1112] = 1
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+jump SEEN6900_12_0.scr

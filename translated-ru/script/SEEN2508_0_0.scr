@@ -1,1 +1,617 @@
-��$
+setvar intF[1110] = 8
+setvar intF[1112] = 1
+setvar strS[1004] = "SDTA0508"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1004] = ""
+label 1
+bgload SCLAB00.jpg 45
+delay 60
+setimg SCLAP03.png 5 5
+setimg SCLA0508.png 159 160
+delay 120
+if 0 == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = "KURO"
+goto 4
+label 2
+if 0 == 1
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = "SIRO"
+goto 4
+label 3
+setvar strS[1000] = "KURO"
+label 4
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text Следующим утром.
+setvar strS[1000] = "BG021D"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 5
+label s3
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM18A.mp3
+text Мы с Томоё вдвоём прогуляли утренний классный час и встретились в пустом кабинете.
+text Даже Томоё, которая обычно щепетильна в таких вопросах, сейчас молчит.
+if intF[221] == 0
+	if intF[222] == 0
+		goto s4
+	fi
+fi
+goto 7
+label s4
+setvar strS[1001] = "CGTM22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7IQ.aac
+text @[Томоё]
+text Ты правда очень старался ради меня всё это время...
+sound 7IR.aac
+text @[Томоё]
+text Я хочу выразить за это благодарность.
+sound 7IS.aac
+text @[Томоё]
+text Спасибо.
+text @[Томоя]
+text Ну, если бы не я, ты бы всё равно легко прошла в совет.
+setvar strS[1001] = "CGTM32"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM32.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7IT.aac
+text @[Томоё]
+text Пожалуйста, не говори так...
+sound 7IU.aac
+text @[Томоё]
+text Потому что мне правда было хорошо с тобой.
+text @[Томоя]
+text Мне тоже было хорошо.
+sound 7IV.aac
+text @[Томоё]
+text Томоя...
+sound 7IW.aac
+text @[Томоё]
+text Я хочу и дальше быть с тобой, даже когда всё это закончится.
+sound 7IX.aac
+text @[Томоё]
+text Сегодня и завтра. Я хочу быть с тобой всегда.
+setvar strS[1001] = "CGTM31H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM31H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7IY.aac
+text @[Томоё]
+text И всё же мы дали обещание...
+sound 7IZ.aac
+text @[Томоё]
+text И ты его не нарушишь — точно так же, как я никогда не отказалась бы от места в совете.
+sound 7J0.aac
+text @[Томоё]
+text Уж это-то я понимаю.
+sound 7J1.aac
+text @[Томоё]
+text Наверное, поэтому у меня сейчас так сильно болит в груди.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7J2.aac
+text @[Томоё]
+text Это будет в последний раз. Прости меня.
+text Томоё тянется губами ближе.
+setvar strS[1000] = "FGTM03A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s5
+fi
+goto 6
+label s5
+setvar strS[1000] = ""
+label 6
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 98
+text И наши губы встречаются.
+text Без остановки — до тех пор, пока не наступит последний миг.
+music ~
+text По кабинету разносится школьное объявление.
+text Сообщают результаты выборов в ученический совет.
+text Имя нового президента совета... Томоё Сакагами.
+music BGM18B.mp3
+text @[Томоя]
+text ...
+text У меня болит в груди.
+text Наверное, именно поэтому мы так и не разомкнули объятий.
+text Ведь это был мой ответ ей.
+text Да, это мой ответ.
+sound 7J3.aac
+text @[Томоё]
+text Ты...
+text Она на миг отрывается от моих губ и произносит.
+sound 7J4.aac
+text @[Томоё]
+text Ты... вообще-то сейчас целуешь президента совета, знаешь ли...
+text @[Томоя]
+text Пожалуй, ты права...
+text Я снова прижимаюсь губами к её губам.
+sound 7J5.aac
+text @[Томоё]
+text Мм...
+text Она снова упирается ладонью мне в грудь и отрывается от моих губ.
+sound 7J6.aac
+text @[Томоё]
+text Ха-а...
+sound 7J7.aac
+text @[Томоё]
+text Томоя...
+sound 7J8.aac
+text @[Томоё]
+text Сейчас я уже президент совета...
+sound 7J9.aac
+text @[Томоё]
+text Я больше не твоя девушка...
+sound 7JA.aac
+text @[Томоё]
+text Так что, пожалуйста, прекрати вот так...
+text @[Томоя]
+text Нет.
+sound 7JB.aac
+text @[Томоё]
+text Какой же ты эгоист...
+text @[Томоя]
+text Я тоже хочу быть с тобой. Сегодня и завтра.
+sound 7JC.aac
+text @[Томоё]
+text А...?
+text @[Томоя]
+text Я хочу оставаться так вечно.
+text @[Томоя]
+text Это мой ответ тебе.
+sound 7JD.aac
+text @[Томоё]
+text Правда, Томоя...?
+text @[Томоя]
+text Ага. Не так уж плохо иметь девушкой президента совета.
+sound 7JE.aac
+text @[Томоё]
+text Вот как...
+sound 7JF.aac
+text @[Томоё]
+text Я рада...
+sound 7JG.aac
+text @[Томоё]
+text Всё это время я так переживала из-за этого...
+sound 7JH.aac
+text @[Томоё]
+text Я правда думала, что всему конец...
+sound 7JI.aac
+text @[Томоё]
+text Я рада...
+text Томоё прижимается лбом к моей груди.
+text А я мягко глажу её по волосам.
+text То, что я не мог принять, вдруг стало приемлемым.
+text Может, всё дело в той самой «семье», о которой она так часто говорит.
+text Может, Томоё для меня — что-то вроде семьи.
+text Всё это время мы были порознь.
+text И всё же в нас обоих жили совершенно одинаковые чувства.
+text Мы оба родились в холодных семьях, где не было ни капли тепла.
+text Она и правда была мне кем-то вроде давно потерянной родственницы.
+goto 17
+label 7
+if intF[221] == 1
+	goto s6
+fi
+if intF[222] == 1
+	goto s6
+fi
+goto 17
+label s6
+text Если Томоё изберут... значит, наши отношения закончатся прямо здесь и сейчас.
+text ...И именно потому, что она это понимает, она молчит.
+text Мы оба молчим и ждём, пока не настанет момент.
+text По кабинету разносится школьное объявление.
+text Сообщают результаты выборов в ученический совет.
+text Томоё поворачивает моё лицо, обращённое к динамикам, к себе...
+setvar strS[1000] = "FGTM03A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s7
+fi
+goto 8
+label s7
+setvar strS[1000] = ""
+label 8
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 98
+text И касается моих губ.
+text Зная, что если её изберут, этот поцелуй станет последним.
+text @[Томоя]
+text ...
+text Имя нового президента совета, которое объявляют... принадлежит парню.
+text @[Томоя]
+text ...
+text У меня болит в груди.
+text Наверное, именно поэтому мы так и не разомкнули объятий.
+text Томоё... не смогла осуществить своё желание.
+text Но вместо этого она обрела меня.
+text Словно убеждая себя, что этого достаточно... Томоё крепко прижалась ко мне.
+text А всё, что я мог сделать, чтобы утешить её — это просто принять её.
+if 0 == 0
+	goto s8
+fi
+goto 9
+label s8
+setvar strS[1000] = "KURO"
+goto 11
+label 9
+if 0 == 1
+	goto s9
+fi
+goto 10
+label s9
+setvar strS[1000] = "SIRO"
+goto 11
+label 10
+setvar strS[1000] = "KURO"
+label 11
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text Хотя, возможно, на самом деле всё было наоборот.
+text Может, это я стал причиной ЕЁ поражения... и вместо этого обрёл её.
+text Сама Томоё, наверное, до этого момента ни разу не знала горечи поражения.
+text Даже после начала уроков... она не отпускала меня.
+music ~
+setvar strS[1000] = "BG046"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s10
+fi
+goto 12
+label s10
+setvar strS[1000] = ""
+label 12
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08D.mp3
+setvar strS[1001] = "CGSH13B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7JJ.aac
+text @[Сунохара]
+text Ну что ж, у меня к тебе накопилась куча вопросов.
+text @[Томоя]
+text Я вроде просил тебя не спрашивать.
+sound 7JK.aac
+text @[Сунохара]
+text Не-е, как твой друг, я просто обязан спросить тебя, дружище.
+sound 7JL.aac
+text @[Сунохара]
+text Так чем это вы занимались, прогуливая уроки?
+text @[Томоя]
+text ...
+sound 7JM.aac
+text @[Сунохара]
+text Слыхал, у тебя было тайное свидание с любимой.
+text @[Томоя]
+text Ага... Всё так. Есть проблемы?
+setvar strS[1001] = "CGSH18B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7JN.aac
+text @[Сунохара]
+text Да не особо. Развивать эту тему совсем не хочется.
+setvar strS[1001] = "CGSH15B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7JO.aac
+text @[Сунохара]
+text Но разве Томоё-тян за это не влетит по-крупному?
+text Точно. В этот раз даже Томоё получила взыскание вместе со мной.
+sound 7JP.aac
+text @[Сунохара]
+text Или тебе, может, уже всё равно? Раз она всё равно проиграла выборы.
+text @[Томоя]
+text Конечно нет, чувак...
+text @[Томоя]
+text В этот раз виноват я... Вся вина на мне.
+text Мне хотелось так думать.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s11
+fi
+goto 13
+label s11
+setvar strS[1000] = ""
+label 13
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM01.mp3
+text Однако...
+text Из-за этого портился не только я, но и она.
+text Той Томоё, что я встретил когда-то... Той, чей взгляд был устремлён так далеко вперёд, что я был уверен — её ждёт блестящее будущее... больше не было.
+text Видеть, как Томоё снова и снова повторяет, что ей достаточно одного меня... было больно.
+setvar intF[1112] = 0
+setvar strS[1000] = "BG021Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s12
+fi
+goto 14
+label s12
+setvar strS[1000] = ""
+label 14
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text В том кабинете после уроков мне почему-то казалось, что она просто запирает себя в своей страсти... пытаясь найти замену всем тем светлым воспоминаниям, которые ей предстояло потерять.
+text «Я хочу прожить школьные годы вместе с тобой, до самого конца».
+text Именно этими словами я когда-то признался Томоё.
+text Интересно, о такой ли жизни я тогда мечтал...
+text Даже сейчас Томоё рядом со мной.
+text Если бы я попросил, она, наверное, осталась бы рядом со мной навсегда.
+setvar strS[1001] = "CGTM22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7JQ.aac
+text @[Томоё]
+text Томоя...
+text @[Томоя]
+text ...
+text @[Томоя]
+text ...Что?
+sound 7JR.aac
+text @[Томоё]
+text Как только придёт весна, ты закончишь школу.
+text @[Томоя]
+text Ага, наверное, да...
+sound 7JS.aac
+text @[Томоё]
+text Тебя больше не будет в этой школе.
+text @[Томоя]
+text Ну да.
+sound 7JT.aac
+text @[Томоё]
+text Вот я и думала.
+text @[Томоя]
+text О чём?
+sound 7JU.aac
+text @[Томоё]
+text Как только придёт весна, я тоже брошу школу.
+text @[Томоя]
+text ...
+sound 7JV.aac
+text @[Томоё]
+text И как только я это сделаю... я хочу жить с тобой.
+text @[Томоя]
+text ...
+sound 7JW.aac
+text @[Томоё]
+text Наверное, нам обоим придётся работать, но...
+sound 7JX.aac
+text @[Томоё]
+text Меня это вполне устроит.
+sound 7JY.aac
+text @[Томоё]
+text Потому что мне почему-то кажется, что оставаться в школе больше нет смысла...
+sound 7JZ.aac
+text @[Томоё]
+text С этого момента я хочу жить ради нас двоих.
+text @[Томоя]
+text ...
+setvar strS[1001] = "CGTM15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7K0.aac
+text @[Томоё]
+text Или ты не хочешь...?
+text @[Томоя]
+text ...
+setvar strS[1001] = "CGTM22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7K1.aac
+text @[Томоё]
+text Я обязательно буду готовить завтрак и ужин, даже если буду занята.
+sound 7K2.aac
+text @[Томоё]
+text И вложу в них море любви.
+text @[Томоя]
+text ...
+text @[Томоя]
+text Интересно...
+text @[Томоя]
+text ...будет ли это в радость.
+sound 7K3.aac
+text @[Томоё]
+text Ну что ты такое говоришь? Конечно будет.
+text @[Томоя]
+text Что ж... Тогда ладно.
+setvar strS[1001] = "CGTM21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7K4.aac
+text @[Томоё]
+text Да, я так рада.
+sound 7K5.aac
+text @[Томоё]
+text Я на самом деле очень боялась, что ты рассердишься.
+sound 7K6.aac
+text @[Томоё]
+text Я правда рада.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Мне кажется, делая так, мы забыли о чём-то очень важном.
+text Но, наверное, именно это и значит — взрослеть.
+text Такие важные вещи никогда не длятся долго.
+text Вот почему люди продолжают жить, немного надломленными, после того как теряют их.
+text Но это ничего.
+text Если взвалить на себя слишком много, только ослабнешь.
+text Ничего страшного, если не искать то, что всё равно рано или поздно потеряешь.
+text Вот почему, Томоё...
+text Никуда не уходи, хорошо?
+text Я... уже решил, что больше ничего другого искать не буду.
+text Хорошо, Томоё?
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s13
+fi
+goto 15
+label s13
+setvar strS[1000] = ""
+label 15
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+if intF[128] == 1
+	if intG[22] == 1
+		if intG[45] == 1
+			goto s14
+		fi
+	fi
+fi
+goto 16
+label s14
+gsetvar intG[22] = 0
+label 16
+delay 120
+cleartext
+jump main.scr
+label 17
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s15
+fi
+goto 18
+label s15
+setvar strS[1000] = ""
+label 18
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+jump SEEN2509_0_0.scr

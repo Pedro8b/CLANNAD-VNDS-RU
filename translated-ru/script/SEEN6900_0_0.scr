@@ -1,0 +1,98 @@
+setvar strS[1000] = "SIRO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1000] = ""
+label 1
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM26A.mp3
+text Мир окутан белизной...
+text ...
+text Снег...
+setvar strS[1000] = "BG300"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = ""
+label 2
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Да, это снег.
+setimg SPSCJOB00.png 11 7
+delay 109
+setimg SPSCNM00.png 19 18
+delay 215
+bgload {$strS[1000]}.jpg 98
+setimg SPSCNM00.png 19 18
+delay 79
+bgload {$strS[1000]}.jpg 98
+text Даже сейчас он продолжает падать, укрывая меня своей бледностью.
+text А...
+text Что я вообще здесь делаю...?
+text Вернее, сколько я уже здесь...?
+text ......
+text Моя рука погребена в снегу.
+text Она что-то держит.
+setimg SPSCJOB01.png 159 102
+delay 109
+setimg SPSCNM01.png 167 114
+delay 215
+bgload {$strS[1000]}.jpg 98
+setimg SPSCNM01.png 167 114
+delay 79
+bgload {$strS[1000]}.jpg 98
+text Я вытаскиваю её.
+text Это чисто-белая рука.
+text Рука девушки.
+text А, ну да, точно...
+text Я был не один.
+text Я стряхиваю снег с её лица.
+text Передо мной появляется её профиль, мирно спящий.
+text Да...
+text Эта девушка и я... всегда были вместе.
+text Здесь, в этом мире.
+text В этом... пустом, скорбном мире.
+music ~
+delay 60
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = ""
+label 3
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+delay 120
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+jump SEEN6900_1_0.scr

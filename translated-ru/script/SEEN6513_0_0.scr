@@ -1,0 +1,189 @@
+setvar intF[1110] = 13
+setvar intF[1112] = 0
+setvar strS[1004] = "SDTA0513"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1004] = ""
+label 1
+setvar strS[1000] = "BG006"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = ""
+label 2
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Следующим утром.
+text Температура у Нагисы за ночь так и не спала, так что ей пришлось пропустить школу.
+setvar strS[1000] = "BG003"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = ""
+label 3
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08D.mp3
+text @[Томоя]
+text Я пойду, Нагиса.
+text Я окликаю её — она всё ещё лежит в постели.
+sound L4D.aac
+text @[Нагиса]
+text Хорошо, удачного дня.
+text Она поворачивает голову и провожает меня улыбкой.
+setvar strS[1000] = "BG006"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 4
+label s3
+setvar strS[1000] = ""
+label 4
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Возвращаясь в коридор, я вижу старика — он стоит с подносом, на котором миска рисовой каши.
+setvar strS[1001] = "CGAK11T"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK11T.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound L4E.aac
+text @[Акио]
+text Вы что, молодожёны, что ли?
+text Похоже, он нас подслушивал.
+setvar strS[1001] = "CGAK14T"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK14T.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound L4F.aac
+text @[Акио]
+text Тц. Всё веселье себе забираешь. Дай и мне снова пожить как молодожёну с Санаэ, пацан!
+text @[Томоя]
+text Это невозможно.
+setvar strS[1001] = "CGAK11T"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK11T.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound L4G.aac
+text @[Акио]
+text Я знаю это, тупица. Но у нас с Санаэ огонёк всё ещё горит, так что неважно, пацан.
+text @[Томоя]
+text Тогда не говори таких вещей.
+setvar strS[1001] = "CGAK14T"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK14T.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound L4H.aac
+text @[Акио]
+text Гх... Если я и дальше буду терять время на разговоры с тобой, завтрак Нагисы остынет. Отойди с дороги, пацан.
+text @[Томоя]
+text Я бы и без твоих слов ушёл.
+setvar strS[1001] = "CGAK11T"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK11T.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound L4I.aac
+text @[Акио]
+text Погоди, у тебя глаз нет, что ли? У меня обе руки заняты, я не смогу войти, пока ты не откроешь дверь, пацан.
+text Я подумываю воспользоваться случаем и врезать ему.
+sound L4J.aac
+text @[Акио]
+text Кстати, сегодня я собираюсь поговорить с Нагисой, так что не вздумай ревновать, пацан.
+text @[Томоя]
+text О чём ты собираешься с ней говорить?
+setvar strS[1001] = "CGAK14T"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK14T.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound L4K.aac
+text @[Акио]
+text О семье. Это единственное, во что я тебя не пущу. Убью, если попробуешь влезть, пацан.
+text @[Томоя]
+text Ладно, хорошо. Пусть это будет на тебе.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Знаешь, ведь это их семья. Может, им не так уж трудно будет всё уладить между собой.
+text Эта мысль не отпускает меня, пока я выхожу на улицу, оставляя их двоих позади.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s4
+fi
+goto 5
+label s4
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+jump SEEN6514_0_0.scr
