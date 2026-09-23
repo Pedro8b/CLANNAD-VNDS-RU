@@ -1,0 +1,1679 @@
+label 468
+setvar strS[1000] = "KURO"
+label 469
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound C.aac
+sound MU6.aac
+text @[Ёсино]
+text Двигайся быстрее, у нас сегодня восемь заказов.
+text @[Томоя]
+text Хорошо.
+sound MU7.aac
+text @[Ёсино]
+text Куда мы едем сначала?
+text @[Томоя]
+text А?
+text *Тук*
+text Он легонько стукает меня кулаком по голове.
+sound MU8.aac
+text @[Ёсино]
+text ...Проверь список. Разве я тебе не говорил раньше?
+text @[Томоя]
+text Да, простите.
+text Спешно достаю карту и накладные из бардачка.
+text @[Томоя]
+text Эм, первая работа — ремонт на боковой улице. Проверить распределительную панель, заменить лампу, потом почистить. Вторая работа...
+text Ёсино-сан время от времени кивает, продолжая вести машину.
+sound ~
+setvar strS[1000] = "BG049"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s378
+fi
+goto 470
+label s378
+setvar strS[1000] = ""
+label 470
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGYS10H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MU9.aac
+text @[Ёсино]
+text Иди сделай это, Оказаки.
+text @[Томоя]
+text А?
+setvar strS[1001] = "CGYS11H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MUA.aac
+text @[Ёсино]
+text Проверка распределительной панели, замена лампы и чистка. Справишься сам, да?
+text @[Томоя]
+text Ну, да, но вы уверены, что мне можно?
+sound MUB.aac
+text @[Ёсино]
+text Да брось, столько-то ты сам осилишь, разве нет?
+text @[Томоя]
+text Д-да, справлюсь.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Как только я отвечаю, Ёсино-сан быстро забирается на столб в двух от моего.
+text Это моя первая самостоятельная работа.
+text Хотя я делал это уже много раз, я всё равно нервничаю, когда меня оставляют разбираться самому.
+text На столбе, на который забирается Ёсино-сан, стоит большой трансформатор, похожий на бочку; на таких работах мы обычно проверяем, нет ли короткого замыкания и в порядке ли предохранители.
+text @[Томоя]
+text Ты там в порядке?
+sound MUC.aac
+text @[Ёсино]
+text Всё нормально.
+text Мне отвечают тихо, и я начинаю работать сам.
+text Сперва мне нужно закрепиться понадёжнее.
+text Чтобы предотвратить несчастные случаи, на телефонных столбах убирают первые три-четыре ступеньки.
+text Начинаю с того, что прочно прикрепляю недостающие ступеньки.
+text Осторожно взбираюсь и привязываю страховочный пояс к металлическому креплению, соединяя себя со столбом.
+text Это значит, что я не упаду с него во время работы. Даже если вдруг поскользнусь, просто повисну в воздухе.
+text Если тут и есть какая-то проблема, так это то, что спускаться сложно.
+text Поэтому обычно я бы пользовался лестницей, но сегодня её использует Ёсино-сан.
+text Осторожно начинаю свою обычную работу.
+bgload KURO.jpg 55
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Томоя]
+text Готово.
+setvar strS[1001] = "CGYS10H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MUD.aac
+text @[Ёсино]
+text Хорошо. Тогда подожди секунду.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Ёсино-сан велит мне подождать, а сам забирается на тот столб, на котором я только что работал.
+text Он проверяет мою работу около трёх минут, а потом спускается, один раз кивнув.
+setvar strS[1001] = "CGYS11H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MUE.aac
+text @[Ёсино]
+text Ладно, вроде нормально.
+text @[Томоя]
+text Простите?
+sound MUF.aac
+text @[Ёсино]
+text Я сказал, что ты справился хорошо.
+text @[Томоя]
+text А?
+setvar strS[1001] = "CGYS16H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS16H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MUG.aac
+text @[Ёсино]
+text ...Мы закончили.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Ёсино-сан молча забирается обратно в наш рабочий грузовик.
+text Иду вслед за ним и запрыгиваю на пассажирское сиденье.
+if 0 == 0
+	goto s379
+fi
+goto 471
+label s379
+setvar strS[1000] = "KURO"
+goto 473
+label 471
+if 0 == 1
+	goto s380
+fi
+goto 472
+label s380
+setvar strS[1000] = "SIRO"
+goto 473
+label 472
+setvar strS[1000] = "KURO"
+label 473
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text @[Томоя]
+text ...Стойте, вы меня только что похвалили?
+sound MUH.aac
+text @[Ёсино]
+text Хм?
+text @[Томоя]
+text Ну, когда сказали, что моя работа была «нормальной».
+sound MUI.aac
+text @[Ёсино]
+text Наверное, да.
+text @[Томоя]
+text Кажется, это первый раз, когда вы меня вообще похвалили.
+text @[Томоя]
+text Значит, я становлюсь лучше?
+music ~
+sound MUJ.aac
+text @[Ёсино]
+text Конечно становишься. Ты делаешь одно и то же каждый день.
+text Мне искренне радостно.
+text Так долго я чувствовал себя здесь чужим.
+music BGM25B.mp3
+text Но теперь у меня появляется ощущение, что я могу начать называть это своим.
+text Даже в офисе все остальные парни начали со мной заговаривать.
+text Все мои покрытые грязью старшие коллеги.
+text @[Томоя]
+text (Надо же, я бы никогда не подумал, что зайду так далеко, когда сам был как они.)
+setvar intF[1112] = 0
+setvar strS[1000] = "BG080"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s381
+fi
+goto 474
+label s381
+setvar strS[1000] = ""
+label 474
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Размышляю о своём прогрессе и профессиональном росте, глядя в окно на школьников, возвращающихся домой из неизвестной мне школы.
+text Тогда у всех нас были аккуратно расставленные парты, все остальные пытались поступить в университет... Даже сейчас эти школьники всё так же усердно учатся.
+text Я один нахожусь в таком месте.
+text Но я не один.
+text У меня есть все остальные парни, которые изо дня в день возвращаются покрытые грязью и копотью, совсем как я.
+text Это место, которое я выбрал... И место, которое я только что обрёл.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s382
+fi
+goto 475
+label s382
+setvar strS[1000] = ""
+label 475
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar intF[1110] = 21
+setvar intF[1112] = 1
+setvar strS[1004] = "SDTB0521"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s383
+fi
+goto 476
+label s383
+setvar strS[1004] = ""
+label 476
+bgload SCLBB00.jpg 45
+delay 60
+setimg SCLBP04.png 5 5
+setimg SCLB0521.png 159 160
+delay 120
+if 0 == 0
+	goto s384
+fi
+goto 477
+label s384
+setvar strS[1000] = "KURO"
+goto 479
+label 477
+if 0 == 1
+	goto s385
+fi
+goto 478
+label s385
+setvar strS[1000] = "SIRO"
+goto 479
+label 478
+setvar strS[1000] = "KURO"
+label 479
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG049"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s386
+fi
+goto 480
+label s386
+setvar strS[1000] = ""
+label 480
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM14.mp3
+setvar strS[1001] = "CGYS10H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MUK.aac
+text @[Ёсино]
+text Хорошо, начинаем. Ты помнишь инструкции, которые я только что объяснил, да?
+text Быстро прокручиваю в голове работу, которую мне нужно сделать.
+text @[Томоя]
+text Справлюсь.
+setvar strS[1001] = "CGYS11H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MUL.aac
+text @[Ёсино]
+text Хорошо. И поможешь мне сегодня попозже? Мне нужно обслужить водонепроницаемый бокс.
+text @[Томоя]
+text Конечно.
+bgload KURO.jpg 88
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGYS10H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MUM.aac
+text @[Ёсино]
+text Дай мне бокорезы.
+text @[Томоя]
+text Хорошо. ...А? Вы их с собой не взяли, Ёсино-сан?
+setvar strS[1001] = "CGYS16H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS16H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MUN.aac
+text @[Ёсино]
+text Не мог, руки были заняты. В общем, дай их мне в левую руку.
+text @[Томоя]
+text Хорошо.
+setvar strS[1001] = "CGYS17H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS17H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MUO.aac
+text @[Ёсино]
+text Ещё 210 миллиметров трёхжильного кабеля VVF, и зачисти оба конца.
+text @[Томоя]
+text Сколько сантиметров? Отрежу два, если собираетесь обжимать.
+setvar strS[1001] = "CGYS11H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MUP.aac
+text @[Ёсино]
+text Если оставишь четыре сантиметра, сможешь сделать и так, и так. Запомни это на будущее.
+bgload KURO.jpg 55
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGYS15H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS15H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MUQ.aac
+text @[Ёсино]
+text @Двадцать пять...
+delay 54
+text Нет, дай мне тридцать восемь обмотки. По длине...
+text Ёсино-сан измеряет длину пучка проводов.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Томоя]
+text Защитная трубка, да? Обычная или огнестойкая?
+text «Обмоткой» мы называем защитную трубку, которой собираем провода все в одном месте.
+text Их делают из разных материалов, включая огнестойкий.
+setvar strS[1001] = "CGYS11H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MUR.aac
+text @[Ёсино]
+text Давай возьмём огнестойкую. Не хотелось бы, чтобы это загорелось.
+text @[Томоя]
+text Сантиметров двенадцать хватит?
+setvar strS[1001] = "CGYS12H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS12H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MUS.aac
+text @[Ёсино]
+text Да, хорошо. Молодец, что угадал.
+text @[Томоя]
+text Ну, это было в основном наугад.
+bgload KURO.jpg 55
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGYS17H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS17H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MUT.aac
+text @[Ёсино]
+text Обрежь чёрную втулку так, чтобы подошла под раму отверстия. Измерение оставляю на тебя.
+text @[Томоя]
+text Хорошо.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Измеряю отверстие, вырезанное в распределительной панели.
+text Если оставить свежевырезанный металлический край открытым, он начнёт ржаветь и может даже повредить электролинии, проходящие через него.
+text Втулка — это пластиковый защитный материал, которым мы закрываем край.
+text Прикладываю нож к втулке.
+text На лезвии ножа есть насечки через каждый сантиметр.
+text Это удобный способ сэкономить время, потому что неэффективно каждый раз использовать отдельный инструмент, чтобы измерять всякую мелочь.
+text Отмерив примерно нужное число сантиметров, отрезаю втулку и вставляю её в отверстие.
+text Я делал это бессчётное количество раз, и она подходит почти идеально.
+text @[Томоя]
+text Готово.
+setvar strS[1001] = "CGYS12H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS12H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MUU.aac
+text @[Ёсино]
+text Хорошо. Тогда приберись здесь. Я тоже закончил.
+text @[Томоя]
+text Понял.
+if 0 == 0
+	goto s387
+fi
+goto 481
+label s387
+setvar strS[1000] = "KURO"
+goto 483
+label 481
+if 0 == 1
+	goto s388
+fi
+goto 482
+label s388
+setvar strS[1000] = "SIRO"
+goto 483
+label 482
+setvar strS[1000] = "KURO"
+label 483
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound C.aac
+text По дороге домой на машине...
+sound MUV.aac
+text @[Ёсино]
+text Ты сегодня хорошо поработал.
+text @[Томоя]
+text Правда? Спасибо.
+sound MUW.aac
+text @[Ёсино]
+text Ну, я бы просто накричал на тебя, если бы ты не запомнил, как всё делать.
+text Отвечаю с саркастичным смешком.
+text @[Томоя]
+text Злитесь на меня сколько угодно. Мне ещё многому учиться.
+sound MUX.aac
+text @[Ёсино]
+text Продолжай болтать.
+text Ёсино-сан смотрит на меня секунду, а потом смеётся своим мужественным смехом.
+sound ~
+music ~
+if 0 == 0
+	goto s389
+fi
+goto 484
+label s389
+setvar strS[1000] = "KURO"
+goto 486
+label 484
+if 0 == 1
+	goto s390
+fi
+goto 485
+label s390
+setvar strS[1000] = "SIRO"
+goto 486
+label 485
+setvar strS[1000] = "KURO"
+label 486
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar intF[1110] = 22
+setvar intF[1112] = 1
+setvar strS[1004] = "SDTB0522"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s391
+fi
+goto 487
+label s391
+setvar strS[1004] = ""
+label 487
+bgload SCLBB00.jpg 45
+delay 60
+setimg SCLBP05.png 5 5
+setimg SCLB0522.png 159 160
+delay 120
+if 0 == 0
+	goto s392
+fi
+goto 488
+label s392
+setvar strS[1000] = "KURO"
+goto 490
+label 488
+if 0 == 1
+	goto s393
+fi
+goto 489
+label s393
+setvar strS[1000] = "SIRO"
+goto 490
+label 489
+setvar strS[1000] = "KURO"
+label 490
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG048"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s394
+fi
+goto 491
+label s394
+setvar strS[1000] = ""
+label 491
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM14.mp3
+text Начальник зовёт меня, пока я переодеваюсь.
+sound MUY.aac
+text @[Босс]
+text Извини, Оказаки-кун. Можешь подождать минутку?
+text @[Томоя]
+text Что случилось?
+sound MUZ.aac
+text @[Босс]
+text Понимаешь, возникла срочная работа, и Ёсино внезапно вызвали на другой объект, так что его сейчас нет.
+text @[Томоя]
+text А как же сегодняшние планы?
+sound MV0.aac
+text @[Босс]
+text Он сказал, что управится в два счёта, так что пока просто подожди.
+text @[Томоя]
+text Хорошо, подожду.
+text Делаю, как он говорит, и жду в офисе.
+bgload KURO.jpg 55
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text ...*Смотрю в никуда*
+text Скучно. Делать нечего.
+text Вижу, как другие занимаются офисной работой, и предлагаю помочь, как делал раньше, но мне вежливо отказывают.
+text Похоже, для меня тут нет никакой работы.
+text Ну ладно. Пожалуй, заварю пока чай.
+sound MV1.aac
+text @[Босс]
+text Оказаки-кун, на секунду?
+text @[Томоя]
+text Да, в чём дело?
+sound MV2.aac
+text @[Босс]
+text У тебя есть карта и накладные на сегодняшние объекты?
+text @[Томоя]
+text А, да. У меня они на всякий случай уже готовы.
+sound MV3.aac
+text @[Босс]
+text Ты знаешь все номера деталей?
+text Заглядываю в накладные, засунутые в карман рубашки.
+text Нет ни одного номера, который я бы не узнал.
+text Все эти работы я уже делал раньше.
+text @[Томоя]
+text Думаю, справлюсь. Все эти номера я помню.
+sound MV4.aac
+text @[Босс]
+text Тогда отправляйся на объект и начинай работу. Пришлю к тебе Ёсино, как только с ним свяжусь.
+text @[Томоя]
+text Что? Это же довольно далеко...
+text Сегодняшний объект находится чуть больше чем в десяти километрах от того места, где мы сейчас.
+sound MV5.aac
+text @[Босс]
+text Я тебя подброшу, вместе с лестницей и всеми инструментами. Сегодня тебе не должна понадобиться тяжёлая техника.
+text @[Томоя]
+text А точно нормально, если я буду работать в одиночку?
+sound MV6.aac
+text @[Босс]
+text Ёсино говорил, что ты уже почти готов. Просто не забудь связаться с нами, если что-то случится.
+text @[Томоя]
+text Хорошо.
+text Всё это так внезапно, что я не знаю, что делать.
+text Но одно чувство мне точно незнакомо — тревога, хотя мне и говорят, что придётся работать в одиночку.
+music ~
+if 0 == 0
+	goto s395
+fi
+goto 492
+label s395
+setvar strS[1000] = "KURO"
+goto 494
+label 492
+if 0 == 1
+	goto s396
+fi
+goto 493
+label s396
+setvar strS[1000] = "SIRO"
+goto 494
+label 493
+setvar strS[1000] = "KURO"
+label 494
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG049"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s397
+fi
+goto 495
+label s397
+setvar strS[1000] = ""
+label 495
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM28.mp3
+text Добравшись до объекта, вижу, что уличный фонарь уже установлен.
+text Похоже, мне нужно только сделать проводку и протестировать.
+text Достаю несколько деталей в пластиковой оплётке, а также катушку кабеля.
+text @[Томоя]
+text Эм, они выходят оттуда, а значит...
+text Проверяю каждый шаг работы, бормоча себе под нос.
+text Сам не знаю, когда это случилось, но я запомнил всё, что нужно сделать.
+text В нескольких местах застреваю, но стоит собрать детали воедино, как всё вспоминается.
+text Вещи, в которых я раньше терпел неудачи.
+text Вещи, которые у меня не получались, сколько бы я ни пытался снова и снова.
+text Вещи, которые я запомнил после того, как Ёсино-сан снова и снова меня отчитывал.
+text Теперь всё это соединилось воедино.
+text Снимаю страховочный пояс и спускаюсь со столба.
+text Осталось только проверить, работает ли свет.
+music ~
+text Обычно свет управляется автоматически через распределительный щит, но я переключаю тестовый переключатель, который сам установил.
+setvar strS[1000] = "BG049D"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s398
+fi
+goto 496
+label s398
+setvar strS[1000] = ""
+label 496
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM14.mp3
+text Несмотря на то, что день солнечный, вижу, как уличный фонарь испускает ослепительный свет.
+text @[Томоя]
+text Он включился...
+text Я счастлив. По-настоящему счастлив.
+if 0 == 0
+	goto s399
+fi
+goto 497
+label s399
+setvar strS[1000] = "KURO"
+goto 499
+label 497
+if 0 == 1
+	goto s400
+fi
+goto 498
+label s400
+setvar strS[1000] = "SIRO"
+goto 499
+label 498
+setvar strS[1000] = "KURO"
+label 499
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG049E"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s401
+fi
+goto 500
+label s401
+setvar strS[1000] = ""
+label 500
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Пока прибираюсь, вижу, как подъезжает знакомый грузовик.
+text Похоже, приехал Ёсино-сан.
+text @[Томоя]
+text Хорошая работа сегодня.
+setvar strS[1001] = "CGYS10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MV7.aac
+text @[Ёсино]
+text Хм.
+text Ёсино-сан смотрит на уличный фонарь, почти не обращая на меня внимания.
+sound MV8.aac
+text @[Ёсино]
+text Ты сделал это сам?
+text @[Томоя]
+text Да. Проходил шаг за шагом и всё вспоминал по ходу дела.
+sound MV9.aac
+text @[Ёсино]
+text Ты перепроверил работу, которую сделал на контактах?
+text @[Томоя]
+text Каждую цепь по отдельности, а потом всё в целом.
+sound MVA.aac
+text @[Ёсино]
+text Убедился, что снял всю плёнку?
+text @[Томоя]
+text Да, и ещё измерил длину всех кабелей.
+sound MVB.aac
+text @[Ёсино]
+text Прибрался?
+text @[Томоя]
+text Почти закончил.
+setvar strS[1001] = "CGYS11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MVC.aac
+text @[Ёсино]
+text Хорошо. Молодец.
+text @[Томоя]
+text С-спасибо.
+sound MVD.aac
+text @[Ёсино]
+text Забрасывай инструменты в грузовик. Отвезу тебя обратно.
+text @[Томоя]
+text Хорошо. Только сначала дайте мне прибраться.
+sound MVE.aac
+text @[Ёсино]
+text Ага...
+text Возвращаюсь к уборке.
+bgload KURO.jpg 55
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Томоя]
+text Я закончил убираться.
+setvar strS[1001] = "CGYS15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MVF.aac
+text @[Ёсино]
+text Ага...
+text Ёсино-сан всё ещё смотрит на уличный фонарь.
+text @[Томоя]
+text Что-то не так?
+sound MVG.aac
+text @[Ёсино]
+text А, ничего.
+text @[Томоя]
+text Я сделал что-то не так?
+setvar strS[1001] = "CGYS11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MVH.aac
+text @[Ёсино]
+text Он включается, значит, всё нормально. Не переживай об этом.
+text @[Томоя]
+text Понятно.
+setvar strS[1001] = "CGYS10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MVI.aac
+text @[Ёсино]
+text У тебя же завтра выходной, да?
+text @[Томоя]
+text А, да. Завтра у меня кое-что важное, что нельзя пропустить.
+sound MVJ.aac
+text @[Ёсино]
+text Школьный фестиваль, да?
+text @[Томоя]
+text Ага.
+sound MVK.aac
+text @[Ёсино]
+text Пойдёшь со своей девушкой?
+text @[Томоя]
+text Да. Хочу быть там вместе с ней.
+setvar strS[1001] = "CGYS13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MVL.aac
+text @[Ёсино]
+text Понятно. Что ж, отдохни как следует.
+text @[Томоя]
+text Хорошо, спасибо. Ценю это.
+setvar strS[1001] = "CGYS12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MVM.aac
+text @[Ёсино]
+text Может, поедем уже?
+text @[Томоя]
+text Звучит неплохо.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я в приподнятом настроении, пока мы едем обратно в офис.
+text Я уже давно не испытывал такого настоящего чувства выполненного долга.
+if 0 == 0
+	goto s402
+fi
+goto 501
+label s402
+setvar strS[1000] = "KURO"
+goto 503
+label 501
+if 0 == 1
+	goto s403
+fi
+goto 502
+label s403
+setvar strS[1000] = "SIRO"
+goto 503
+label 502
+setvar strS[1000] = "KURO"
+label 503
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+music ~
+text А завтра я проведу Фестиваль основателей вместе с Нагисой.
+text Я уверен, что это будет потрясающий день.
+if 0 == 0
+	goto s404
+fi
+goto 504
+label s404
+setvar strS[1000] = "KURO"
+goto 506
+label 504
+if 0 == 1
+	goto s405
+fi
+goto 505
+label s405
+setvar strS[1000] = "SIRO"
+goto 506
+label 505
+setvar strS[1000] = "KURO"
+label 506
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar intF[1110] = 23
+setvar intF[1112] = 1
+setvar strS[1004] = "SDTB0523"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s406
+fi
+goto 507
+label s406
+setvar strS[1004] = ""
+label 507
+bgload SCLBB00.jpg 45
+delay 60
+setimg SCLBP06.png 5 5
+setimg SCLB0523.png 159 160
+delay 120
+if 0 == 0
+	goto s407
+fi
+goto 508
+label s407
+setvar strS[1000] = "KURO"
+goto 510
+label 508
+if 0 == 1
+	goto s408
+fi
+goto 509
+label s408
+setvar strS[1000] = "SIRO"
+goto 510
+label 509
+setvar strS[1000] = "KURO"
+label 510
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG044"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s409
+fi
+goto 511
+label s409
+setvar strS[1000] = ""
+label 511
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM19.mp3
+setvar strS[1001] = "CGNG10E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MVN.aac
+text @[Нагиса]
+text Хорошо спал?
+text Нагиса спрашивает меня, пока мы завтракаем.
+text @[Томоя]
+text Это я должен у тебя это спрашивать.
+setvar strS[1001] = "CGNG32E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MVO.aac
+text @[Нагиса]
+text У меня?
+sound MVP.aac
+text @[Нагиса]
+text Я, вообще-то, отлично выспалась.
+text @[Томоя]
+text Глаза у тебя не красные?
+setvar strS[1001] = "CGNG31E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG31E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MVQ.aac
+text @[Нагиса]
+text Насколько я знаю, нет.
+text @[Томоя]
+text Хм, а я была уверена, что ты будешь слишком взволнован, чтобы уснуть.
+sound MVR.aac
+text @[Нагиса]
+text Я не такой уж ребёнок, знаешь ли.
+sound MVS.aac
+text @[Нагиса]
+text На самом деле, мне кажется, это ты могла быть слишком взволнована, чтобы уснуть, Томоя-кун.
+text @[Томоя]
+text Почему это?
+setvar strS[1001] = "CGNG32E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MVT.aac
+text @[Нагиса]
+text Эм, потому что...
+sound MVU.aac
+text @[Нагиса]
+text ...у тебя сегодня свидание.
+text @[Томоя]
+text Раз уж ты об этом заговорила, похоже, что да.
+setvar strS[1001] = "CGNG10E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MVV.aac
+text @[Нагиса]
+text Именно. Поэтому я и думаю, что ты не мог уснуть.
+text @[Томоя]
+text Почему?
+setvar strS[1001] = "CGNG31E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG31E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MVW.aac
+text @[Нагиса]
+text Потому что... у тебя свидание со мной.
+text Мне весело заставлять её повторять это снова и снова.
+setvar strS[1001] = "CGNG32E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MVX.aac
+text @[Нагиса]
+text ...Прости, что не смогла быть для тебя более симпатичной девушкой.
+text Нагиса снова принимается принижать себя.
+text @[Томоя]
+text Слушай.
+text @[Томоя]
+text Я говорю тебе это ещё со школы — не принижай себя так.
+sound MVY.aac
+text @[Нагиса]
+text А, точно...
+text @[Томоя]
+text Теперь начни сначала и спроси меня ещё раз.
+setvar strS[1001] = "CGNG31E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG31E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MVZ.aac
+text @[Нагиса]
+text Хорошо...
+sound MW0.aac
+text @[Нагиса]
+text Томоя-кун, я думаю, ты был слишком взволнован, чтобы уснуть.
+text @[Томоя]
+text Почему?
+setvar strS[1001] = "CGNG32E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MW1.aac
+text @[Нагиса]
+text Потому что у тебя сегодня свидание.
+sound MW2.aac
+text @[Нагиса]
+text С девушкой, такой же симпатичной, как я.
+setvar strS[1001] = "CGNG33E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGNG33E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MW3.aac
+text @[Нагиса]
+text Ох, не хочу говорить такое о себе.
+text От этих слов у меня поднимается настроение.
+bgload KURO.jpg 55
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGNG10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MW4.aac
+text @[Нагиса]
+text Хорошо, я пойду первой.
+text Нагиса стоит у двери.
+text @[Томоя]
+text Конечно. Встретимся через час, да?
+text Общий вход открыт с 10 утра.
+setvar strS[1001] = "CGNG23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MW5.aac
+text @[Нагиса]
+text Да. Буду тебя ждать.
+text @[Томоя]
+text До скорого.
+sound MW6.aac
+text @[Нагиса]
+text Ладно, я тоже пошёл.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Возвращаюсь в комнату, проводив Нагису.
+text Смотрю утреннее ток-шоу, чтобы скоротать время, как вдруг звонит телефон.
+text @[Томоя]
+text Да, алло? Это Оказаки.
+sound MW7.aac
+text @[Босс]
+text «Это ты, Оказаки-кун?»
+text @[Томоя]
+text А, здравствуйте.
+music ~
+sound MW8.aac
+text @[Босс]
+text «Слушай, ты не знаешь, случилось ли что-то вчера на объекте?»
+text @[Томоя]
+text Что? Я ничего особенного не заметил.
+music BGM28.mp3
+sound MW9.aac
+text @[Босс]
+text «Ну, Ёсино только что извинился за какую-то ошибку и уехал что-то исправлять».
+text У меня нет слов.
+text Быть такого не может, чтобы Ёсино-сан допустил ошибку.
+text Наверное, это из-за того, что это была моя первая самостоятельная работа.
+sound MWA.aac
+text @[Босс]
+text «Я спрашивал его снова и снова, но он просто продолжал извиняться и говорил, что это была его собственная ошибка».
+text @[Томоя]
+text Я тоже сейчас туда поеду.
+sound MWB.aac
+text @[Босс]
+text «Нет, тебе незачем ехать, Оказаки-ку─»
+text @[Томоя]
+text Извините.
+music ~
+setvar strS[1000] = "BG041"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s410
+fi
+goto 512
+label s410
+setvar strS[1000] = ""
+label 512
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM29.mp3
+text Вешаю трубку и выбегаю из дома.
+text Вчерашний объект был на полевых дорогах к северу, так что...!
+setvar strS[1000] = "BG033"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s411
+fi
+goto 513
+label s411
+setvar strS[1000] = ""
+label 513
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Срываюсь бежать.
+text Лучше бы поехать на автобусе, но, к сожалению, я не знаю, какой маршрут туда идёт.
+text Я знаю только пеший путь; к сожалению, это довольно приличное расстояние.
+text Но мне нужно ехать, несмотря ни на что.
+text Ёсино-сан знает, что мне сегодня обязательно нужно на школьный фестиваль.
+text Именно поэтому он и продолжает повторять, что это была «его ошибка».
+text Не хочу оставлять Нагису одну.
+text Но ещё сильнее не хочу оставлять Ёсино-сана разбираться с этим в одиночку.
+text До начала фестиваля ещё есть время.
+text Доеду до объекта, извинюсь, закончу работу, а потом поеду в школу.
+text Я успею. Должен успеть.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s412
+fi
+goto 514
+label s412
+setvar strS[1000] = ""
+label 514
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG049"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s413
+fi
+goto 515
+label s413
+setvar strS[1000] = ""
+label 515
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Томоя]
+text ...Д-доброе утро...
+setvar strS[1001] = "CGYS10H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MWC.aac
+text @[Ёсино]
+text Ого, у тебя вид более уставший, чем у меня.
+text Я бежал так, что ноги вот-вот сведёт судорогой, и к тому времени, как добираюсь до объекта, совсем задыхаюсь.
+text @[Томоя]
+text Простите...
+text Как только дыхание успокаивается, кланяюсь Ёсино-сану, пока тот молча работает.
+setvar strS[1001] = "CGYS11H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MWD.aac
+text @[Ёсино]
+text За что?
+text @[Томоя]
+text Вам бы не пришлось сейчас здесь этим заниматься, если бы я всё сделал как следует.
+sound MWE.aac
+text @[Ёсино]
+text Это была моя ошибка. Твоей вины тут нет.
+text @[Томоя]
+text Но...
+text @[Ёсино]
+text ...
+sound MWF.aac
+text @[Ёсино]
+text ...Ты просто отвлекаешь меня. Иди домой.
+text @[Томоя]
+text Я сам всё сделаю. Пожалуйста, дайте мне разобраться с собственным беспорядком!
+setvar strS[1001] = "CGYS17H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS17H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MWG.aac
+text @[Ёсино]
+text Нет. Иди домой.
+text @[Томоя]
+text Я вас умоляю! Дайте мне взять на себя ответственность!
+setvar strS[1001] = "CGYS16H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS16H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MWH.aac
+text @[Ёсино]
+text Не кричи.
+text @[Томоя]
+text Простите! Мне правда очень жаль!
+text Вижу ботинки Ёсино-сана в поле зрения, пока стою, склонив голову к земле.
+sound MWI.aac
+text @[Ёсино]
+text А ты и правда не умеешь слушать, да...? Я же говорю тебе идти домой.
+text @[Томоя]
+text Разве не я вчера что-то напортачил? Почему вы─
+music ~
+setvar strS[1001] = "CGYS11H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MWJ.aac
+text @[Ёсино]
+text Я не смог заметить твою оплошность, и это делает эту ошибку МОЕЙ.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Это всё, что говорит Ёсино-сан, прежде чем вернуться к работе.
+music BGM18A.mp3
+text Не в силах ничего сделать, просто стою, склонив голову.
+text Я чувствую себя таким разочарованным и жалким, что почти готов заплакать.
+setvar strS[1001] = "CGYS11H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MWK.aac
+text @[Ёсино]
+text Не нужно мне кланяться. Иди домой.
+text Ёсино-сан говорит мне это, снимая изоляцию с кабеля.
+text @[Томоя]
+text Я не могу пойти домой.
+sound MWL.aac
+text @[Ёсино]
+text ...Разве ты не ждёшь сегодняшнего дня с нетерпением?
+text @[Томоя]
+text А?
+setvar strS[1001] = "CGYS10H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MWM.aac
+text @[Ёсино]
+text Это же школьный фестиваль. Ты мне рассказывал о нём.
+text @[Томоя]
+text ...Да.
+sound MWN.aac
+text @[Ёсино]
+text Разве твоя девушка тебя не ждёт?
+text @[Томоя]
+text Ждёт.
+setvar strS[1001] = "CGYS11H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MWO.aac
+text @[Ёсино]
+text Тогда будь рядом с ней. Вот что тебе сегодня нужно делать, Оказаки.
+text @[Томоя]
+text Я говорю, что не могу поехать.
+setvar strS[1001] = "CGYS10H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS10H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MWP.aac
+text @[Ёсино]
+text В чём дело? Просто сосредоточься на том, чтобы сегодня повеселиться.
+text @[Томоя]
+text Если вы заставите меня вернуться в школу в таком состоянии, я только расстрою её.
+text @[Томоя]
+text Я... не могу ей солгать.
+text @[Томоя]
+text Так что у меня всё равно не получится честно порадоваться.
+text @[Томоя]
+text И я даже не смогу смотреть ей в глаза, если не отвечу за собственные ошибки.
+text @[Томоя]
+text Вот почему мне нужно закончить эту работу.
+setvar strS[1001] = "CGYS16H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS16H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MWQ.aac
+text @[Ёсино]
+text А ты и правда дурак, знаешь ли?
+text @[Томоя]
+text Вы правы.
+text Ёсино-сан отбрасывает чёлку в сторону.
+sound MWR.aac
+text @[Ёсино]
+text ...Принеси мне шесть метров двадцатипятимиллиметровой низковольтной изоляционной трубки. Живо.
+text @[Томоя]
+text А...?
+setvar strS[1001] = "CGYS11H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYS11H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound MWS.aac
+text @[Ёсино]
+text Живо, шевелись.
+text @[Томоя]
+text Д-да.
+if 0 == 0
+	goto s414
+fi
+goto 516
+label s414
+setvar strS[1000] = "KURO"
+goto 518
+label 516
+if 0 == 1
+	goto s415
+fi
+goto 517
+label s415
+setvar strS[1000] = "SIRO"
+goto 518
+label 517
+setvar strS[1000] = "KURO"
+label 518
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG012Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s416
+fi
+goto 519
+label s416
+setvar strS[1000] = ""
+label 519
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Закончив работу, отправляюсь в школу, даже не переодевшись из грязной рабочей одежды.
+text Солнце уже начинает садиться.
+text Интересно, она всё ещё в школе или уже вернулась в квартиру.
+text Если есть хоть какой-то шанс, что она ещё в школе, мне нужно бежать туда во весь дух.
+setvar strS[1000] = "BG015Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s417
+fi
+jump SEEN6800_0_10.scr 520
+label s417
+setvar strS[1000] = ""
+jump SEEN6800_0_10.scr

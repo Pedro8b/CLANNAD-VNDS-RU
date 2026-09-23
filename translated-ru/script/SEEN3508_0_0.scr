@@ -1,1 +1,1179 @@
-��$
+setvar intF[1110] = 8
+setvar intF[1112] = 1
+setvar strS[1004] = "SDTA0508"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1004] = ""
+label 1
+bgload SCLAB00.jpg 45
+delay 60
+setimg SCLAP03.png 5 5
+setimg SCLA0508.png 159 160
+delay 120
+if 0 == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = "KURO"
+goto 4
+label 2
+if 0 == 1
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = "SIRO"
+goto 4
+label 3
+setvar strS[1000] = "KURO"
+label 4
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG021E"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 5
+label s3
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08B.mp3
+text Звенит звонок, возвещая конец четвёртого урока.
+text Как только учитель выходит из класса, ученики начинают доставать обеды или направляются в столовую.
+text Я проверяю, на месте ли кошелёк, и встаю, чтобы пойти в магазин.
+setvar strS[1001] = "CGSH11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AOR.aac
+text @[Сунохара]
+text Оказаки, ты идёшь в магазин, да? Пошли вместе.
+text @[Томоя]
+text Ага.
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s4
+fi
+goto 6
+label s4
+setvar strS[1000] = ""
+label 6
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Мы выходим из класса и направляемся в столовую.
+text Но тут к нам подбегает знакомое лицо.
+text @[Томоя]
+text ...Фудзибаяси?
+setvar strS[1001] = "CGRY19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AOS.aac
+text @[Рё]
+text Ах, Оказаки-кун.
+text @[Томоя]
+text Что случилось? Кошелёк забыла?
+setvar strS[1001] = "CGRY19A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY19A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AOT.aac
+text @[Рё]
+text Хах... хах... Н-нет... эм... ты ведь ещё не ходил в магазин?
+text @[Томоя]
+text Не, только сейчас туда иду.
+setvar strS[1001] = "CGRY21A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY21A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AOU.aac
+text @[Рё]
+text Хах... хах... с-слава богу...
+text Совсем запыхавшись от бега обратно сюда, Фудзибаяси переводит дыхание, продолжая улыбаться.
+text @[Томоя]
+text ?
+setvar strS[1001] = "CGRY19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AOV.aac
+text @[Рё]
+text Эм... Вот.
+text Говорит она и протягивает бумажный пакет, который я уже где-то видел.
+text Узнаю в нём пакет из магазина.
+setvar strS[1001] = "CGRY22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AOW.aac
+text @[Рё]
+text Х-хочешь поесть вместе?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Услышав это, мы с Сунохарой переглядываемся.
+text Совершенно не ожидая такого от Фудзибаяси, я честно теряюсь.
+text К тому же, из-за того, что случилось между нами и Кё вчера, немного неловко.
+setvar strS[1001] = "CGSH24"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AOX.aac
+text @[Сунохара]
+text Эм... похоже, я тут лишний, так что, пожалуй, пойду.
+text @[Томоя]
+text А...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Сунохара поднимает руку и быстро уходит.
+text Точнее... он убегает.
+text Когда спина Сунохары исчезает за поворотом коридора, я поворачиваюсь к Фудзибаяси.
+setvar strS[1001] = "CGRY14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AOY.aac
+text @[Рё]
+text Ах... э... эм... это было грубо с его стороны...?
+text @[Томоя]
+text Не, не переживай.
+text @[Томоя]
+text Хочешь пойти во внутренний двор?
+setvar strS[1001] = "CGRY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AOZ.aac
+text @[Рё]
+text Хорошо.
+music ~
+setvar strS[1000] = "BG057E"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s5
+fi
+goto 7
+label s5
+setvar strS[1000] = ""
+label 7
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08A.mp3
+text Внутренний двор.
+text Это самое многолюдное место во время обеда, уступающее только столовой.
+text Здесь можно найти несколько групп студентов, наслаждающихся обедом.
+text Не так давно мы обедали здесь с Кё на клеёнке.
+text До этого мы никогда такого не делали.
+text И Фудзибаяси не было рядом со мной.
+text Удивительно, как много всего изменилось за такой короткий срок.
+text Интересно, что будет с нами дальше...
+setvar strS[1001] = "CGRY15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AP0.aac
+text @[Рё]
+text Эм... тебя устроит здесь?
+text Она указывает на каменный заборчик, подходящий для сидения, и спрашивает.
+text @[Томоя]
+text Да, звучит неплохо.
+setvar strS[1001] = "CGRY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AP1.aac
+text @[Рё]
+text Да.
+text Фудзибаяси садится на каменный заборчик, а затем роется в содержимом бумажного пакета, заглядывая внутрь.
+text Затем, найдя то, что искала, протягивает мне.
+setvar strS[1001] = "CGRY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AP2.aac
+text @[Рё]
+text Вот.
+text @[Томоя]
+text Хлеб с карри и хлеб с дыней?
+setvar strS[1001] = "CGRY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AP3.aac
+text @[Рё]
+text Ты как-то говорил, что Онээ-тян заставила тебя поменяться своим хлебом на её обед.
+text @[Томоя]
+text Д-да... Ах да, было такое.
+text Это ведь было две недели назад, да?
+text Когда Кё велела мне прийти сюда и пообедать с Рё.
+text Она правда помнит, о чём мы тогда говорили, спустя столько времени...?
+text @[Томоя]
+text Хм?
+text Я оглядываюсь по сторонам.
+setvar strS[1001] = "CGRY15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AP4.aac
+text @[Рё]
+text Что-то не так?
+text @[Томоя]
+text Это ведь то же самое место, что и две недели назад, да?
+setvar strS[1001] = "CGRY19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AP5.aac
+text @[Рё]
+text О, ты заметил?
+setvar strS[1001] = "CGRY21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AP6.aac
+text @[Рё]
+text На самом деле, я тайком погадала себе на четвёртом уроке.
+text Фудзибаяси достаёт из кармана колоду карт Таро, которую я - нет, Кё - купила, и улыбается.
+setvar strS[1001] = "CGRY22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AP7.aac
+text @[Рё]
+text Я попробовала расклад-гексаграмму и в позиции ключевого слова выпала карта "Суд".
+setvar strS[1001] = "CGRY21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AP8.aac
+text @[Рё]
+text В прямом положении эта карта означает воссоединение, отпущение, перезапуск и новое начало.
+setvar strS[1001] = "CGRY22A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY22A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AP9.aac
+text @[Рё]
+text Воссоединение и перезапуск можно истолковать как возвращение туда, где ты уже когда-то бывал.
+sound APA.aac
+text @[Рё]
+text Вот поэтому... эм... я подумала о месте, где мы обедали вместе... в первый раз...
+text Приближаясь к концу фразы, она то и дело переводила взгляд между мной и своими руками, тихо говоря.
+text @[Томоя]
+text Понятно. Значит, если мы сделаем так, у нас впереди хорошее будущее?
+setvar strS[1001] = "CGRY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APB.aac
+text @[Рё]
+text Д-да, именно. На самом деле, в позиции окончательного исхода у меня выпало прямое "Колесо Фортуны".
+sound APC.aac
+text @[Рё]
+text Оно означает судьбу, шансы и новые события.
+setvar strS[1001] = "CGRY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APD.aac
+text @[Рё]
+text Как и следует из названия, это можно истолковать как то, что всё продолжится так же и дальше.
+sound APE.aac
+text @[Рё]
+text Вот почему я подумала: если сейчас всё идёт хорошо, значит, и будущее должно быть светлым.
+text Фудзибаяси говорит со счастливым выражением лица.
+text Если сейчас всё идёт хорошо... хм?
+text Интересно, могу ли я и правда сказать, что сейчас всё хорошо.
+text По крайней мере, если не считать того, что случилось с Кё вчера, наверное, можно сказать, что дела идут неплохо...
+text ...Мрачное чувство, которое я ношу внутри, стало настолько неприятным, что я не могу принять ситуацию, в которой оказался сейчас.
+setvar strS[1001] = "CGRY15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APF.aac
+text @[Рё]
+text ...Оказаки-кун...?
+text @[Томоя]
+text А? Ага, что такое?
+setvar strS[1001] = "CGRY18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APG.aac
+text @[Рё]
+text ...
+text @[Томоя]
+text ...?
+text На мгновение кажется, что Фудзибаяси о чём-то задумалась.
+text Но это правда длится лишь мгновение.
+text Сразу после этого...
+setvar strS[1001] = "CGRY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APH.aac
+text @[Рё]
+text Из напитков у меня есть кофе с молоком и апельсиновый сок. Что тебе взять?
+text Спрашивает она, доставая пакетик сока из бумажного пакета.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Сидя на каменном заборчике, мы вдвоём едим наш хлеб.
+text Снова и снова мы привлекаем внимание студентов, проходящих через школьные ворота, или тех, кто закончил обед и смотрит наружу из окон классов.
+setvar strS[1001] = "CGRY22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound API.aac
+text @[Рё]
+text На нас смотрит много людей.
+text @[Томоя]
+text Точно.
+setvar strS[1001] = "CGRY21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APJ.aac
+text @[Рё]
+text Интересно... как они нас воспринимают...?
+text @[Томоя]
+text Воспринимают нас? В смысле...?
+setvar strS[1001] = "CGRY19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APK.aac
+text @[Рё]
+text Они думают, что мы встречаемся?
+text @[Томоя]
+text Ну... если бы это было не так, разве мы бы сейчас сидели рядом и обедали вместе?
+setvar strS[1001] = "CGRY21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APL.aac
+text @[Рё]
+text Это... правда. Наверное.
+text Фудзибаяси улыбается.
+setvar strS[1001] = "CGRY22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music ~
+sound APM.aac
+text @[Рё]
+text Но ведь так пойдут слухи, да?
+text @[Томоя]
+text А...?
+music BGM08D.mp3
+text Услышав слово "слухи", моё сердце сильно забилось.
+setvar strS[1001] = "CGRY11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APN.aac
+text @[Рё]
+text Раз мы вот так вместе, люди начнут на нас смотреть.
+setvar strS[1001] = "CGRY12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APO.aac
+text @[Рё]
+text Поэтому, даже если мы никому не объявим, что встречаемся, слух наверняка распространится, и мы, сами того не заметив, станем официально признанными влюблёнными.
+text С улыбкой...
+text Она сказала всё это с безмятежной улыбкой.
+text Когда она так улыбается, я больше не могу смотреть на Фудзибаяси прямо.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Чувствуя неловкость и смущение, я без особой причины смотрю на здание школы.
+text Через окна я вижу нескольких студентов, закончивших обед и весело болтающих.
+text Как и говорила Фудзибаяси, есть и те, кто смотрит в нашу сторону.
+text Через окна я замечаю в толпе того, кто пристально смотрит на нас.
+text У этого человека длинные волосы...
+text ...и завязанная в них белая лента.
+text @[Томоя]
+text ──!
+sound APP.aac
+text @[Рё]
+text Оказаки-кун? Что случилось?
+sound APQ.aac
+text @[Рё]
+text Кто-то смотрит на нас из здания школы?
+text @[Томоя]
+text Н-нет...
+setvar strS[1001] = "CGRY16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Стараясь выглядеть как можно спокойнее, я смотрю на Фудзибаяси.
+text @[Томоя]
+text Просто подумал, что и правда похоже, будто все на нас смотрят...
+setvar strS[1001] = "CGRY21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APR.aac
+text @[Рё]
+text Ты права... это и правда немного смущает.
+setvar strS[1001] = "CGRY22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Слегка покраснев, Фудзибаяси улыбается, а затем пьёт из коробки апельсинового сока, которую держит в руках.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Когда я снова смотрю туда, где была Кё в здании школы, её уже не видно.
+text Наверное, она... ушла...
+text Я откусываю кусочек хлеба с карри, который держу в руке.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s6
+fi
+goto 8
+label s6
+setvar strS[1000] = ""
+label 8
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Даже хорошо прожёвывая, всё равно очень тяжело проглотить...
+setvar strS[1000] = "BG021H"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s7
+fi
+goto 9
+label s7
+setvar strS[1000] = ""
+label 9
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM16B.mp3
+text После окончания дневных занятий класс охватывает буря активности, а вскоре после этого снова возвращается прежнее спокойствие.
+text Один за другим мои одноклассники покидают комнату.
+text Фудзибаяси больше нет в классе.
+text Это потому, что она ушла на собрание по Фестивалю основателя и новоизбранному студсовету.
+if intF[208] == 1
+	goto s8
+fi
+goto 10
+label s8
+text ...Точно. Томоё избрали новым президентом студсовета.
+text Похоже, ей удалось достичь своей цели.
+text Как я и думал, её путь отличается от моего...
+label 10
+text Наверное, стоит подождать, пока Фудзибаяси вернётся, и пойти домой вместе... но сейчас...
+text Я глубоко вздыхаю, беру сумку и выхожу из класса.
+setvar strS[1000] = "BG015Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s9
+fi
+goto 11
+label s9
+setvar strS[1000] = ""
+label 11
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Томоя]
+text ...
+text Уже тяжело шагая, я резко останавливаюсь.
+text Смотрю прямо перед собой.
+text И на краю моего поля зрения...
+text ...стоит человек, который, как и я, остановился и смотрит на меня.
+text @[Томоя]
+text ...Йо...
+setvar strS[1001] = "CGKY10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APS.aac
+text @[Кё]
+text ...Привет.
+text Мы обмениваемся неловкими приветствиями.
+text @[Томоя]
+text ...А разве у тебя не собрание?
+setvar strS[1001] = "CGKY17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APT.aac
+text @[Кё]
+text ...Достало, я сбежала.
+text @[Томоя]
+text Ты потрясающая президент класса. Знаешь об этом?
+sound APU.aac
+text @[Кё]
+text ...Ты ничего не получишь, хваля меня...
+text Хотя течение нашего разговора, как обычно, гладкое, наши тона совсем не такие живые.
+text Стараясь не встречаться взглядами, мы оба неловко смотрим куда угодно, только не друг на друга.
+setvar strS[1001] = "CGKY18A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY18A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APV.aac
+text @[Кё]
+text Ты ждёшь её... здесь?
+text Спрашивает она с колебанием.
+text @[Томоя]
+text ...Кого?
+setvar strS[1001] = "CGKY10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APW.aac
+text @[Кё]
+text ...Рё.
+text @[Томоя]
+text Не... Я сегодня пойду домой первым...
+setvar strS[1001] = "CGKY22A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY22A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APX.aac
+text @[Кё]
+text А...
+setvar strS[1001] = "CGKY18A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY18A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Бормочет Кё и смотрит в землю.
+text Обычно она бы крикнула "Жди её здесь" или что-то в этом роде...
+text Неловкая атмосфера продолжает сгущаться.
+setvar strS[1001] = "CGKY17A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY17A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APY.aac
+text @[Кё]
+text Ну, увидимся...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Говорит она, разворачивается и начинает идти.
+text Глядя на её спину, я крепко сжимаю сумку и начинаю идти в том же направлении.
+setvar strS[1000] = "BG012Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s10
+fi
+goto 12
+label s10
+setvar strS[1000] = ""
+label 12
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGKY13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound APZ.aac
+text @[Кё]
+text ...Почему ты идёшь за мной?
+text @[Томоя]
+text Я же сказал, что иду домой. Как ещё мне туда добраться?
+setvar strS[1001] = "CGKY18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AQ0.aac
+text @[Кё]
+text ...
+text Кё молчит и идёт вперёд, будто пытаясь сбежать от этой ситуации.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text И я тоже начинаю идти вперёд.
+setvar strS[1000] = "BG034Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s11
+fi
+goto 13
+label s11
+setvar strS[1000] = ""
+label 13
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Мы идём рядом, сохраняя неловкую дистанцию.
+text Разговора никакого не возникает.
+text Я чувствую лишь напряжённую атмосферу, окутывающую нас, будто душащую нашу обычную болтовню, но при этом связывающую нас вместе.
+text Ловлю себя на том, что слишком остро всё это ощущаю.
+text Каждый раз, когда Кё задерживает дыхание, моё сердце бьётся чаще - думаю, может, она сейчас что-то скажет.
+text Я тоже думаю о том, чтобы что-то сказать, но не могу подобрать нужных слов.
+text Прежде чем слова успевают пройти через горло, мой разум становится совершенно пустым.
+setvar strS[1000] = "BG033Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s12
+fi
+goto 14
+label s12
+setvar strS[1000] = ""
+label 14
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text В голове остаётся лишь пульсация, похожая на головную боль.
+text Этот процесс повторяется снова и снова...
+sound AQ1.aac
+text @[Кё]
+text Эй...
+text @[Томоя]
+text ...
+sound AQ2.aac
+text @[Кё]
+text Я сказала - эй.
+text @[Томоя]
+text А? Ч-что такое?
+setvar strS[1001] = "CGKY13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AQ3.aac
+text @[Кё]
+text Долго ты ещё собираешься идти за мной?
+text @[Томоя]
+text В смысле, долго?
+setvar strS[1001] = "CGKY17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AQ4.aac
+text @[Кё]
+text ...Тебе ведь туда, разве нет?
+text @[Томоя]
+text А...
+text Не успел я опомниться, как мы дошли до места, где расходимся.
+text Отсюда мы идём в разные стороны, чтобы попасть домой...
+text Мы оба останавливаемся и замолкаем.
+text Молчание продолжается снова.
+text И как я и думал,
+setvar strS[1001] = "CGKY18A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY18A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AQ5.aac
+text @[Кё]
+text ─Знаешь...
+text Кё начинает говорить.
+sound AQ6.aac
+text @[Кё]
+text Насчёт вчерашнего...
+text Глубоко в горле что-то горячо стучит.
+setvar strS[1001] = "CGKY17A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY17A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AQ7.aac
+text @[Кё]
+text ...
+setvar strS[1001] = "CGKY11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AQ8.aac
+text @[Кё]
+text Не принимай всерьёз то, что сказал Ёхэй, ладно?
+text @[Томоя]
+text ...
+sound AQ9.aac
+text @[Кё]
+text Дело не в том, что я... что-то к тебе испытываю...
+sound AQA.aac
+text @[Кё]
+text ...И я не смотрю на тебя как-то по-особенному.
+sound AQB.aac
+text @[Кё]
+text Просто я хочу, чтобы у вас с Рё всё было хорошо...
+sound AQC.aac
+text @[Кё]
+text Больше ничего, ясно...?
+text Почему...
+setvar strS[1001] = "CGKY21A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY21A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AQD.aac
+text @[Кё]
+text Даже то, что случилось с Ёхэем вчера. Я просто подумала, что это лучший способ прекратить слухи...
+sound AQE.aac
+text @[Кё]
+text И я об этом жалею, потому что... ах... кажется, я поступила с Ёхэем довольно жестоко.
+text Почему она...
+setvar strS[1001] = "CGKY11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AQF.aac
+text @[Кё]
+text И поэтому я не хочу, чтобы ты слишком много об этом думал.
+sound AQG.aac
+text @[Кё]
+text Если будешь, то заставишь и Рё волноваться тоже.
+sound AQH.aac
+text @[Кё]
+text Точнее, это было бы жестоко и по отношению к Рё.
+text Почему Кё...
+setvar strS[1001] = "CGKY12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AQI.aac
+text @[Кё]
+text Слушай, раз ты её парень, ты должен думать только о ней, разве нет?
+sound AQJ.aac
+text @[Кё]
+text Заставлять свою девушку волноваться - это худшее, что можно сделать, тебе не кажется?
+text ...всегда улыбается... в такие моменты...?
+sound AQK.aac
+text @[Кё]
+text Тебе вообще не нужно обо мне думать, ладно?
+sound AQL.aac
+text @[Кё]
+text Ага, точно нельзя. Совершенно нельзя.
+text Выглядит так хрупко, будто рассыплется, стоит мне коснуться.
+text Это восхищает... и в то же время причиняет боль...
+setvar strS[1001] = "CGKY11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AQM.aac
+text @[Кё]
+text Ведь я... ничего такого к тебе не испытываю, ясно?
+text ...улыбка...
+text @[Томоя]
+text ─Угх...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я сжимаю кулак.
+text Ногти впиваются в ладонь.
+text Если бы не боль, меня бы это тронуло.
+text Моё сердце тронула бы эта девушка... сражающаяся совсем одна... прямо у меня на глазах.
+text Однако...
+text Хотя я осознаю это только сейчас, возможно, уже слишком поздно.
+text Всё ещё сжимая кулак, я смотрю на Кё.
+text Её лицо - зеркальное отражение лица Фудзибаяси.
+text Хочу я того или нет, но это напоминает мне о Фудзибаяси.
+text И именно эта мысль держит мои ноги прикованными к месту.
+setvar strS[1001] = "CGKY11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKY11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound AQN.aac
+text @[Кё]
+text Ну, увидимся.
+text С упрямо не сходящей с лица улыбкой Кё машет мне и разворачивается.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Затем медленно уходит всё дальше и дальше от меня.
+text Всё, что я могу - это смотреть, как она уходит.
+text Такое чувство, будто что-то только что прошло сквозь мою грудь.
+text Что-то тёплое... и в то же время холодное... и горькое...
+text @[Томоя]
+text Это... нехорошо.
+text Я тихо бормочу так, чтобы никто не услышал.
+text Хотя слова были достаточно тихими, чтобы раствориться в ветре, они продолжают звучать громко и ясно у меня в сердце.
+music ~
+if 0 == 0
+	goto s13
+fi
+goto 15
+label s13
+setvar strS[1000] = "KURO"
+goto 17
+label 15
+if 0 == 1
+	goto s14
+fi
+goto 16
+label s14
+setvar strS[1000] = "SIRO"
+goto 17
+label 16
+setvar strS[1000] = "KURO"
+label 17
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+jump SEEN3509_0_0.scr

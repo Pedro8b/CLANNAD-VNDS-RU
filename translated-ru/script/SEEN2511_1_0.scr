@@ -1,1 +1,1140 @@
-��$
+text Мы с Томоё срываемся на бег.
+text Но тут кто-то внезапно хватает меня за руку.
+text @[Томоя]
+text Ну и настырные же вы!
+text Думая, что это очередной из тех парней, которых мы недавно размазали, я стряхиваю руку.
+sound 7UP.aac
+text @[Голос]
+text Это всего лишь я.
+text Сделав это, я слышу громкий голос, перекрывающий шум толпы.
+setvar strS[1001] = "CGMS15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Обернувшись, вижу стоящую там Мисаэ-сан.
+text @[Томоя]
+text Что, это всего лишь ты, Мисаэ-сан...? Тебе что-то нужно?
+sound 7UQ.aac
+text @[Мисаэ]
+text Слушай... Я снова его потеряла. Не поможешь поискать?
+text @[Томоя]
+text Твоего кота?
+setvar strS[1001] = "CGMS17H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS17H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7UR.aac
+text @[Мисаэ]
+text Да.
+sound 7US.aac
+text @[Мисаэ]
+text Сунохара вырубился в общаге, так что, похоже, ты пришёл сюда один, да?
+text Медведь, стоящий рядом со мной со скрещёнными лапами, судя по всему, не кажется ей моим спутником.
+setvar strS[1001] = "CGMS11H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS11H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7UT.aac
+text @[Мисаэ]
+text Ну пожалуйста?
+text Ну, даже если ты так говоришь...
+choice Помочь|Отказать
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s36
+fi
+goto 52
+label s36
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Томоя]
+text Ничего, если мы поможем найти кота этого человека?
+text Я шепчу на ухо медведю.
+setvar strS[1001] = "CGTM40"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM40.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Она глубоко кивает.
+text Я был уверен, что она станет упрямиться, так что такой безоговорочный ответ стал сюрпризом.
+setvar strS[1001] = "CGMS15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7UU.aac
+text @[Мисаэ]
+text О, так этот медведь твой друг?
+text @[Томоя]
+text Вроде того.
+sound 7UV.aac
+text @[Мисаэ]
+text Это ведь не Сунохара, правда?
+text @[Томоя]
+text Ну, какая, в общем-то, разница?
+text Она наверняка стала бы надо мной смеяться, узнай она, что меня сопровождает девушка, так что я скажу небольшую ложь во благо.
+text @[Томоя]
+text Так почему ты ищешь его в здании школы?
+sound 7UW.aac
+text @[Мисаэ]
+text Потому что я гналась за ним аж до самых школьных ворот.
+text @[Томоя]
+text То есть ты хочешь сказать, что он просто взял и снова от тебя убежал.
+text @[Томоя]
+text Ты не думала, что он тебя, может быть, ненавидит?
+setvar strS[1001] = "CGMS13H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS13H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7UX.aac
+text @[Мисаэ]
+text Ах... Даже не знаю...
+sound 7UY.aac
+text @[Мисаэ]
+text Не то чтобы я особо расстроилась бы, даже если бы он сейчас исчез...
+sound 7UZ.aac
+text @[Мисаэ]
+text Но мы так долго вместе, он всегда был рядом со мной в комнате...
+sound 7V0.aac
+text @[Мисаэ]
+text У него же нет никаких шансов победить, если он подерётся с другим бродячим котом. Разве не ужасно будет, если его убьют за что-то подобное?
+sound 7V1.aac
+text @[Мисаэ]
+text Зайдя так далеко, я просто чувствую, что должна о нём заботиться.
+text @[Томоя]
+text Не думаю, что он бы умер или типа того...
+text @[Томоя]
+text Ну, ладно, неважно. Пошли искать.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Как раз когда я собираюсь спросить, откуда нам начать поиски, откуда ни возьмись появляется кот, которого несут за шкирку.
+setvar strS[1001] = "CGTM40"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM40.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Медведь]
+text ...
+text Это Томоё.
+text @[Томоя]
+text Чёрт, ты довольно быстрая!
+text @[Томоя]
+text Но это не тот.
+text Кот, которого поймала Томоё, оказался просто очередным бродячим котом, каких полно везде.
+setvar strS[1001] = "CGMS15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7V2.aac
+text @[Мисаэ]
+text Это полосатый. Тот кот, которого я ищу, я имею в виду.
+setvar strS[1001] = "CGTM40"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM40.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Медведь]
+text ...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Она приседает, отпускает кота, а затем сразу же поднимается и убегает прочь.
+text Вот это неимоверно проворный медведь.
+setvar strS[1001] = "CGMS17H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS17H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7V3.aac
+text @[Мисаэ]
+text Не знаю, кто это, но помощник из неё весьма сильный.
+text Похоже, всё будет хорошо, даже если мы ничего не будем делать.
+if 0 == 0
+	goto s37
+fi
+goto 37
+label s37
+setvar strS[1000] = "KURO"
+goto 39
+label 37
+if 0 == 1
+	goto s38
+fi
+goto 38
+label s38
+setvar strS[1000] = "SIRO"
+goto 39
+label 38
+setvar strS[1000] = "KURO"
+label 39
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG020"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s39
+fi
+goto 40
+label s39
+setvar strS[1000] = ""
+label 40
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGTM40"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM40.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Медведь стоит перед классом и манит нас подойти.
+text Похоже, он в классе.
+text Мордочка медведя выглядит спокойной, как всегда, но плечи яростно вздымаются вверх-вниз.
+text @[Томоя]
+text Ты и правда выложилась по полной в поисках, да?
+setvar strS[1001] = "CGMS15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7V4.aac
+text @[Мисаэ]
+text Правда, это очень мило с твоей стороны - делать такое для совершенно незнакомого человека, как я.
+setvar strS[1001] = "CGTM40"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM40.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Медведь]
+text ...
+setvar strS[1001] = "CGMS17H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS17H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7V5.aac
+text @[Мисаэ]
+text Ах, неужели... Мы знакомы?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Медведь поворачивается корпусом к окну.
+text А затем указывает большим пальцем через плечо на класс, будто говоря: "Ну иди же уже".
+setvar strS[1001] = "CGMS15H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS15H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7V6.aac
+text @[Мисаэ]
+text Немногословный медведь, надо же...
+sound 7V7.aac
+text @[Мисаэ]
+text Хотя мне кажется, что я где-то тебя уже встречала.
+sound 7V8.aac
+text @[Мисаэ]
+text Ты ведь девушка, да?
+text @[Томоя]
+text Ну же, Мисаэ-сан. Кот убежит, если мы не поторопимся его поймать.
+text Я не знаю, что натолкнуло её на мысль, что это девушка, но пытаюсь её поторопить, чтобы она не узнала наверняка.
+music ~
+setvar strS[1001] = "CGMS17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7V9.aac
+text @[Мисаэ]
+text Ах, ты права.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Мисаэ-сан заходит в класс, и я следую за ней.
+setvar strS[1000] = "BG023"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s40
+fi
+goto 41
+label s40
+setvar strS[1000] = ""
+label 41
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08D.mp3
+text Класс пуст.
+text Издалека доносится шумный гомон с улицы. Но сама комната абсолютно тихая, будто заброшенная.
+setvar strS[1001] = "CGMS15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7VA.aac
+text @[Мисаэ]
+text ...Он здесь?
+text @[Томоя]
+text Не знаю...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Она приседает и осматривает пол.
+setvar strS[1001] = "CGMS17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7VB.aac
+text @[Томоя и Мисаэ]
+text Ах, вот он.
+text Мы оба зовём его одновременно.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Он свернулся клубком и спит в дальнем конце комнаты.
+text Лавируя между партами, мы подходим к нему.
+sound 7VC.aac
+text @[Мисаэ]
+text Ах... Интересно, зачем этот малыш вообще сюда притащился.
+text Кот, заметив Мисаэ-сан, поднимает голову.
+if intG[13] == 0
+	goto s41
+fi
+goto 42
+label s41
+sound 7VD.aac
+text @[Мисаэ]
+text Хей, хей.
+text Мисаэ-сан манит его к себе.
+text Кот пару раз перебирает лапками на её руке.
+sound 7VE.aac
+text @[Мисаэ]
+text Не балуйся, ну же, иди сюда.
+text Мисаэ-сан раскрывает объятия, но он не запрыгивает к ней на грудь.
+text Всё, что он делает - немного гоняется за кончиком её пальца.
+setvar strS[1001] = "CGMS14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7VF.aac
+text @[Мисаэ]
+text Ах, ну же, чем ты так недоволен...
+sound 7VG.aac
+text @[Мисаэ]
+text Тебе разонравилось быть со мной?
+text @[Томоя]
+text (Похоже, моя работа здесь закончена...)
+music ~
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Пока Мисаэ-сан продолжает разговаривать с котом, я выхожу из класса.
+goto 47
+label 42
+if intG[13] == 1
+	goto s42
+fi
+goto 47
+label s42
+setvar strS[1000] = "FGSB07A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s43
+fi
+goto 43
+label s43
+setvar strS[1000] = ""
+label 43
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 98
+sound 7VH.aac
+text @[Мисаэ]
+text Хей, хей.
+text Мисаэ-сан манит его к себе.
+text Кот пару раз перебирает лапками на её руке.
+sound 7VI.aac
+text @[Мисаэ]
+text Не балуйся, ну же, иди сюда.
+text Мисаэ-сан раскрывает объятия, но он не запрыгивает к ней на грудь.
+text Всё, что он делает - немного гоняется за кончиком её пальца.
+sound 7VJ.aac
+text @[Мисаэ]
+text Ах, ну же, чем ты так недоволен...
+sound 7VK.aac
+text @[Мисаэ]
+text Тебе разонравилось быть со мной?
+music ~
+text @[Томоя]
+text ...
+text В этот момент мне почудилось, будто я слышу голос кота.
+music BGM01.mp3
+text Не мяуканье, а его "мысли".
+text Странное было ощущение.
+sound 7VL.aac
+text @[Мисаэ]
+text Ах, ну же. Пойдём домой, ладно?
+text Мисаэ-сан хватает кота другой рукой за шкирку.
+text @[Томоя]
+text Слушай, Мисаэ-сан.
+text @[Томоя]
+text Почему бы тебе не поиграть с ним немного вот так?
+sound 7VM.aac
+text @[Мисаэ]
+text А? Зачем?
+text @[Томоя]
+text Ну, сам толком не знаю, но...
+text @[Томоя]
+text Мне почудилось, будто я слышал, что это весело.
+sound 7VN.aac
+text @[Мисаэ]
+text А? И кто это сказал?
+text @[Томоя]
+text Вот он.
+sound 7VO.aac
+text @[Мисаэ]
+text Не глупи, этот малыш - кот.
+text @[Томоя]
+text Конечно, я это знаю.
+text @[Томоя]
+text Но я его слышал.
+text @[Томоя]
+text Слушай... Мисаэ-сан.
+sound 7VP.aac
+text @[Мисаэ]
+text Что такое?
+text @[Томоя]
+text Ты ведь что-то обещала?
+sound 7VQ.aac
+text @[Мисаэ]
+text Обещала что? И кому?
+text @[Томоя]
+text Ну...
+text Я напряжённо думаю, отчаянно пытаясь вспомнить чувства, вложенные в те ощущения, что я только что испытал.
+text @[Томоя]
+text ...
+text Пока я молчу, шум снаружи становится громче.
+text Ах... Понятно. Сегодня же...
+text @[Томоя]
+text Фестиваль основателя.
+text Вот ответ, который приходит на ум.
+text @[Томоя]
+text Это было обещание сходить на Фестиваль основателя с кем-то.
+setvar strS[1000] = "FGSB07C"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s44
+fi
+goto 44
+label s44
+setvar strS[1000] = ""
+label 44
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 55
+sound 7VR.aac
+text @[Мисаэ]
+text А...?
+text @[Томоя]
+text И вот, будто то обещание почти исполнилось, и он по-настоящему рад...
+text @[Томоя]
+text Я услышал голос, говорящий, что ему нравится.
+text @[Томоя]
+text Что пусть это заняло много времени, но ты наконец сдержала то обещание.
+sound 7VS.aac
+text @[Мисаэ]
+text ...
+sound 7VT.aac
+text @[Мисаэ]
+text Помимо этого...
+sound 7VU.aac
+text @[Мисаэ]
+text Он сказал ещё что-нибудь...?
+text @[Томоя]
+text Да...
+text @[Томоя]
+text Я услышал его лишь на мгновение.
+text Кот продолжает перебирать лапками по Мисаэ-сан, которая сидит в оцепенении.
+text Похоже, он полностью поглощён игрой, и это всё, о чём он думает.
+text Как будто то обещание было для него всем.
+setvar strS[1000] = "FGSB07B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s45
+fi
+goto 45
+label s45
+setvar strS[1000] = ""
+label 45
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 55
+sound 7VV.aac
+text @[Мисаэ]
+text Ах... Хотя я не помню, чтобы обещала коту что-то подобное...
+sound 7VW.aac
+text @[Мисаэ]
+text Но, что ж...
+setvar strS[1000] = "FGSB07D"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s46
+fi
+goto 46
+label s46
+setvar strS[1000] = ""
+label 46
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 55
+sound 7VX.aac
+text @[Мисаэ]
+text Пожалуй, сегодня я с ним поиграю.
+sound 7VY.aac
+text @[Мисаэ]
+text @Правда...
+delay 68
+text Какая же он обуза.
+text Я оставляю Мисаэ-сан, всё ещё возящуюся с котом, в пустом классе...
+text И выхожу из комнаты.
+if intG[31] == 0
+	goto s47
+fi
+goto 47
+label s47
+gsetvar intG[31] = 1
+gsetvar intG[0] + 1
+bgload SHGET00.jpg 45
+setimg SHGET26.png 119 -11
+delay 1
+bgload SHGET00.jpg
+setimg SHGET26.png 119 14
+delay 1
+bgload SHGET00.jpg
+setimg SHGET26.png 119 39
+setimg SHGET32.png 120 30
+delay 1
+bgload SHGET00.jpg
+setimg SHGET26.png 119 64
+setimg SHGET32.png 120 25
+delay 1
+bgload SHGET00.jpg
+setimg SHGET26.png 119 89
+setimg SHGET23.png 123 25
+setimg SHGET32.png 120 80
+delay 1
+bgload SHGET00.jpg
+setimg SHGET26.png 119 114
+setimg SHGET23.png 123 15
+setimg SHGET32.png 120 75
+setimg SHGET25.png 123 100
+delay 1
+bgload SHGET00.jpg
+setimg SHGET26.png 119 139
+setimg SHGET23.png 123 10
+setimg SHGET32.png 120 70
+setimg SHGET25.png 123 95
+delay 1
+bgload SIRO.jpg 30
+sound I.aac
+delay 30
+label 47
+if 0 == 0
+	goto s48
+fi
+goto 48
+label s48
+setvar strS[1000] = "KURO"
+goto 50
+label 48
+if 0 == 1
+	goto s49
+fi
+goto 49
+label s49
+setvar strS[1000] = "SIRO"
+goto 50
+label 49
+setvar strS[1000] = "KURO"
+label 50
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG020"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s50
+fi
+goto 51
+label s50
+setvar strS[1000] = ""
+label 51
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Томоя]
+text Спасибо за помощь.
+setvar strS[1001] = "CGTM40"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM40.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я благодарю Томоё, всё ещё стоящую в коридоре.
+text @[Томоя]
+text У тебя ещё хватает времени?
+text @[Медведь]
+text ...
+text Она неуверенно кивает.
+text @[Томоя]
+text Тогда поторопимся.
+text Она кивает сильнее.
+music ~
+goto 53
+label 52
+if intF[1089] == 1
+	goto s51
+fi
+goto 53
+label s51
+text @[Томоя]
+text Даже если ты его проигнорируешь, разве он не вернётся домой рано или поздно?
+setvar strS[1001] = "CGMS15H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS15H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7VZ.aac
+text @[Мисаэ]
+text Ну, может, это и правда, но всё же...
+text @[Томоя]
+text Что ж, если он не вернётся домой сегодня, я помогу тебе поискать его завтра.
+sound 7W0.aac
+text @[Мисаэ]
+text Обещаешь?
+text @[Томоя]
+text Да, обещаю.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Наконец разобравшись с этим, я бегу по коридорам вместе с Томоё.
+label 53
+goto 55
+label 54
+if intF[634] == 0
+	goto s52
+fi
+goto 55
+label s52
+text Мы с Томоё срываемся на бег.
+label 55
+setvar strS[1000] = "BG015A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s53
+fi
+goto 56
+label s53
+setvar strS[1000] = ""
+label 56
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08C.mp3
+text Нам наконец удаётся выбраться из толпы в здании школы.
+setvar strS[1001] = "CGTM40"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM40.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Медведь]
+text ...
+text Томоё несколько раз резко дёргает меня за край рубашки.
+text @[Томоя]
+text Что случилось?
+text Она указывает на киоск прямо рядом с нами.
+text Там продают мороженое.
+text @[Томоя]
+text Хочешь мороженого?
+text Она энергично кивает.
+text @[Томоя]
+text Хочешь съесть вместе?
+text *Кивок*
+text @[Медведь]
+text ...
+text @[Томоя]
+text Это я покупаю?
+text *Кивок*
+text @[Томоя]
+text Ну и ну... Да уж, паршивая ситуация - покупать мороженое и себе, и медведю...
+text @[Медведь]
+text ...
+text @[Томоя]
+text Да, понял. Не смотри на меня такими воодушевлёнными глазами.
+text @[Томоя]
+text Здравствуйте, мне бы два мороженых, пожалуйста.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я говорю это продавщице киоска.
+sound 7W1.aac
+text @[Продавец]
+text У нас есть шоколадное, ванильное, клубничное и дынное. Какое желаете?
+text @[Томоя]
+text Спрашивает она.
+setvar strS[1001] = "CGTM40"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM40.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Медведь]
+text ...
+text @[Томоя]
+text Ванильное?
+text Она качает головой.
+text @[Томоя]
+text Шоколадное?
+text *Мотает головой* *Мотает головой*
+text @[Томоя]
+text Да скажи уже!
+text @[Медведь]
+text ...
+text Медведь подходит вплотную и обнимает меня.
+sound 7W2.aac
+text @[Медведь]
+text ...Клубничное, конечно же!
+text @[Томоя]
+text Что значит "конечно же"? Я впервые об этом слышу!
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я отстраняюсь от медведя и снова поворачиваюсь к продавщице.
+text @[Томоя]
+text Ванильное и клубничное.
+sound 7W3.aac
+text @[Продавец]
+text Итого двести иен за оба.
+text @[Томоя]
+text Довольно дорого...
+text Я протягиваю купюру за мороженое.
+text @[Томоя]
+text Держи.
+text Я отдаю одно из них Томоё.
+text @[Томоя]
+text Ну что же?..
+text @[Томоя]
+text Как ты собираешься это есть?
+text @[Медведь]
+text ...
+text @[Томоя]
+text Этот рот же не открывается, верно?
+text Выглядя обеспокоенной, она оглядывается по сторонам.
+text Затем хватает меня за руку и убегает вместе со мной.
+bgload KURO.jpg 88
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Когда мы оказываемся в тени дерева, она наконец снимает костюм.
+text Пот стекает с её лба, словно водопад.
+setvar strS[1001] = "CGTM25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7W4.aac
+text @[Томоё]
+text ...Хах... хах...
+text Она тяжело дышит.
+text @[Томоя]
+text Похоже, ты веселишься просто невероятно.
+setvar strS[1001] = "CGTM16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7W5.aac
+text @[Томоё]
+text Конечно, я веселюсь.
+sound 7W6.aac
+text @[Томоё]
+text В конце концов, это же фестиваль, в конце-то концов...
+text @[Томоя]
+text Мне вот кажется, что ты просто заставляешь себя веселиться...
+setvar strS[1001] = "CGTM18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7W7.aac
+text @[Томоё]
+text Конечно же, я не заставляю себя...!
+text @[Томоя]
+text Ну, ты выглядишь неспокойно...
+setvar strS[1001] = "CGTM33"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM33.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7W8.aac
+text @[Томоё]
+text Да... Наверное, так и есть...
+sound 7W9.aac
+text @[Томоё]
+text В смысле... Я никогда раньше не бывала на подобном, не выглядя при этом не к месту.
+text По-моему, ты и так уже выглядишь достаточно не к месту...
+music ~
+sound 7WA.aac
+text @[Томоё]
+text К тому же... В этот раз я тут не одна...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Раскрасневшееся лицо Томоё поворачивается ко мне.
+music BGM08D.mp3
+text Мне всегда нравились искренние признания Томоё.
+text Я бы сказал, что обычный человек засмущался бы настолько, что действительно постеснялся бы такое сделать.
+text Не заботясь о том, что наше мороженое тает, мы целуемся под деревом.
+setvar strS[1001] = "CGTM22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7WB.aac
+text @[Томоё]
+text Действительно жарко, не находишь?
+text @[Томоя]
+text Это тебе жарко. Мне сейчас вполне прохладно.
+sound 7WC.aac
+text @[Томоё]
+text А ты довольно спокойный, да, Томоя?
+text @[Томоя]
+text Ну, не то чтобы...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я перевожу взгляд на шумную толпу людей.
+text Среди них - один маленький ребёнок.
+text Он натыкается на ноги проходящих студентов, озираясь по сторонам, будто вот-вот упадёт.
+text @[Томоя]
+text Смотри.
+setvar strS[1001] = "CGTM22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7WD.aac
+text @[Томоё]
+text Угу.
+text Томоё тоже это замечает.
+sound 7WE.aac
+text @[Томоё]
+text Я на минутку.
+text @[Томоя]
+text Настоящий материал для президента студсовета.
+setvar strS[1001] = "CGTM16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7WF.aac
+text @[Томоё]
+text Да... Правда, какой же беспомощный ребёнок.
+text Интересно, нравятся ли ей дети.
+text Почти пользуясь случаем как удобным поводом, я выпячиваю грудь ради неё.
+text @[Томоя]
+text Я тоже пойду.
+setvar strS[1001] = "CGTM22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 7WG.aac
+text @[Томоё]
+text Нет, мороженое растает, если ты пойдёшь. Пожалуйста, подожди здесь.
+text @[Томоя]
+text Правда?
+sound 7WH.aac
+text @[Томоё]
+text Да. Я скоро вернусь.
+text Поверив её словам, я решаю подождать.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Её длинные волосы развеваются на ветру, она уверенно бежит вперёд.
+text Она приседает и заговаривает с ребёнком.
+text При этом она защищает его обеими руками, чтобы его не задели проходящие мимо студенты.
+text И ребёнок улыбается ей в ответ.
+text Полагаю, даже такой маленький ребёнок способен почувствовать, насколько воодушевляюще присутствие Томоё рядом.
+text По крайней мере, я могу гарантировать, что с ней рядом находиться в этой школе безопаснее, чем где-либо ещё.
+text Томоё обнимает ребёнка. Затем берёт его подмышками и поднимает.
+text Она начинает бежать, лавируя сквозь плотную толпу.
+text Наверное, ищет его родителей.
+music ~
+text Однако, сделав всего несколько шагов, она резко останавливается.
+text Томоё замирает на месте.
+music BGM01.mp3
+text Там, куда устремлён мой взгляд... Несколько парней-студентов таким же образом лавируют сквозь толпу и приближаются к Томоё.
+text По этому я могу примерно представить, о чём тут речь.
+text Костюм медведя лежит у моих ног.
+text Дело в том, зачем она вообще была в нём одета всё это время.
+text Даже когда Томоё подбежала к ребёнку, на ней должен был быть этот костюм.
+text Если бы это было так, её могли бы не заметить...
+text ...люди из студсовета.
+text По их разговору потом я могу примерно догадаться, о чём идёт речь, хотя и не слышу слов.
+text Она, наверное, говорит: "Я просто убедилась, что этого ребёнка отведут к родителям".
+text А в ответ студсовет, наверное, говорит: "Тогда мы проследим, чтобы это было именно так, и не больше".
+text Когда всё заканчивается, Томоё подбегает ко мне.
+text Она старается улыбнуться мне, даже когда пот заставляет её волосы прилипать ко лбу.
+text @[Томоя]
+text ...
+text Интересно, как она вообще может так улыбаться.
+text Я так и не смог этого понять.
+text Ведь она доставляла столько хлопот близким ей людям.
+text Предавая все их ожидания, и всё ради таких, как я.
+text В моей руке...
+music ~
+text мороженое продолжает таять.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s54
+fi
+goto 57
+label s54
+setvar strS[1000] = ""
+label 57
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+jump SEEN2513_0_0.scr

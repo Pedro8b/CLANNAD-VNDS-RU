@@ -1,0 +1,1911 @@
+text И вот время снова летит вперёд.
+text Вишни начинают цвести, а за ними приходят дождливые дни...
+text Когда дождь прекращается, его сменяет палящее жаркое солнце.
+text После того как жаркий, душный сезон наконец заканчивается, начинают стрекотать насекомые...
+text И всё это время...
+music ~
+setvar strS[1000] = "BG046N"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s90
+fi
+goto 96
+label s90
+setvar strS[1000] = ""
+label 96
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM10.mp3
+text Мы ни капли не изменились.
+text @[Томоя]
+text ...
+text Лёжа на полу, я читаю журнал.
+text На кровати прямо рядом со мной Сунохара тоже читает журнал.
+text @[Томоя]
+text ...Фух...
+text @[Томоя]
+text Неужели нам и правда можно продолжать так жить...
+setvar strS[1001] = "CGSH16B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VIU.aac
+text @[Сунохара]
+text ...
+text @[Томоя]
+text Все вокруг нас начинают заметно нервничать из-за экзаменов.
+text @[Томоя]
+text В последнее время, даже когда я в школе, я чувствую только какую-то изолированность...
+sound VIV.aac
+text @[Сунохара]
+text ...
+text @[Томоя]
+text Эй, ты спишь?
+sound VIW.aac
+text @[Сунохара]
+text Угх...
+text @[Томоя]
+text А?
+setvar strS[1001] = "CGSH23B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VIX.aac
+text @[Сунохара]
+setvar intA[1000] = 4600
+setvar intA[1001] = 46
+if 50 <= 0
+	goto s91
+fi
+goto 97
+label s91
+setvar intA[1001] + 1
+label 97
+text У-о-о-о-о-о-о-о-х!!
+setvar intA[1000] = 4140
+setvar intA[1001] = 41
+if 50 <= 40
+	goto s92
+fi
+goto 98
+label s92
+setvar intA[1001] + 1
+label 98
+text *Бам*!
+text Стена сотрясается.
+sound VIY.aac
+text @[Голос]
+text «Заткнитесь!»
+text @[Томоя]
+text ...?
+text Хотя обычно в такой момент Сунохара бы затрясся от страха, он продолжает читать журнал и остаётся неподвижным.
+text @[Томоя]
+text Какие статьи ты читаешь?
+sound VIZ.aac
+text @[Сунохара]
+text ...
+text @[Томоя]
+text Дай гляну.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я забираю у него журнал.
+text Это еженедельник, вышедший сегодня же... эй, это же для девчонок...
+text Хм... статья, которую читает этот парень, это...
+text @[Томоя]
+text ...Прошлые отборочные меж-школьных соревнований...?
+text Не похоже на особо интересную статью... М?
+music ~
+text @[Томоя]
+text ...Трагический спринтер-кумир...
+setvar strS[1001] = "CGSH22B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH22B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VJ0.aac
+text @[Сунохара]
+text ...
+text @[Томоя]
+text Каппэй Хиирага...?
+setvar strS[1001] = "CGSH23B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VJ1.aac
+text @[Сунохара]
+text Не называй его по имени!!
+setvar strS[1001] = "CGSH22B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH22B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VJ2.aac
+text @[Сунохара]
+text Моё сеееердце!!
+sound VJ3.aac
+text @[Сунохара]
+text У меня болит сердце!
+setvar intA[1000] = 4140
+setvar intA[1001] = 41
+if 50 <= 40
+	goto s93
+fi
+goto 99
+label s93
+setvar intA[1001] + 1
+label 99
+text *Бам*!
+text Стена снова сотрясается.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Не обращая на это внимания, я продолжаю читать.
+text ...Трагедия...? О чём это вообще...?
+music BGM28.mp3
+text «Финал школьных соревнований по лёгкой атлетике...»
+text «На сцене, где решалась судьба университетских стипендий, Каппэй Хиирага, лидировавший среди прошедших отбор, упал прямо перед финишем.»
+text «Похоже, он скрывал от всех, что у него болела нога...»
+text «...и его увезли в больницу прямо со стадиона.»
+text «Диагноз показал, что его малоберцовая кость...»
+text @[Томоя]
+text ...А...?
+text Ошарашенный, я всматриваюсь в статью...
+text В статье даже есть фотография... подтверждающая, что это тот самый Каппэй, которого я знаю.
+text @[Томоя]
+text ...Сунохара...
+setvar strS[1001] = "CGSH22B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH22B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VJ4.aac
+text @[Сунохара]
+text Угх... а я-то думал, что уже пережил это...
+sound VJ5.aac
+text @[Сунохара]
+text Видимо, я более чувствительный, чем думал... хахаха...
+text @[Томоя]
+text Не впадай в депрессию только от его имени! Читай статью!
+sound VJ6.aac
+text @[Сунохара]
+text ...Если ты не закрасишь его имя, я не смогу это читать...
+text @[Томоя]
+text Хватит! Просто читай!
+setvar strS[1001] = "CGSH26B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH26B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VJ7.aac
+text @[Сунохара]
+text Чёрт... ну ты и деспот...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Всё ещё со слезами на глазах, Сунохара снова смотрит на статью.
+setvar strS[1001] = "CGSH20B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH20B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Но тут же снова поднимает взгляд.
+text Как и ожидалось, раз уж он сам когда-то был спортсменом, он должен понимать...
+sound VJ8.aac
+text @[Сунохара]
+text Оказаки... эта статья ведь шутка... да...?
+text @[Томоя]
+text Ты видел его в последнее время...?
+sound VJ9.aac
+text @[Сунохара]
+text Не-а... не видел... я думал, он в последнее время просто занят работой...
+text @[Томоя]
+text ...
+sound VJA.aac
+text @[Сунохара]
+text ...
+music ~
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Стук* *стук* ...
+text Пока мы стоим, потеряв дар речи, кто-то стучит в дверь.
+sound VJB.aac
+text @[Мисаэ]
+text Оказаки, ты тут?
+text @[Томоя]
+text ...А? Д-да.
+text Говорю я слегка хриплым голосом.
+text Дверь открывается, и в комнату заглядывает Мисаэ-сан.
+setvar strS[1001] = "CGMS15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VJC.aac
+text @[Мисаэ]
+text М? Что случилось?
+text @[Томоя]
+text Не-а... ничего...
+sound VJD.aac
+text @[Сунохара]
+text ...
+setvar strS[1001] = "CGMS17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VJE.aac
+text @[Мисаэ]
+text Ну ладно. К тебе гостья.
+text @[Томоя]
+text ...Ко мне?
+setvar strS[1001] = "CGMS18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VJF.aac
+text @[Мисаэ]
+text Это девушка. Молодец!
+text Услышав, что это девушка, я начинаю ощущать нехорошее предчувствие.
+text Рефлекторно я снова смотрю на журнал.
+text Сунохара тоже смотрит туда же.
+setvar strS[1001] = "CGMS10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VJG.aac
+text @[Мисаэ]
+text Ладно, вот она.
+text Не обращая на нас двоих никакого внимания, она приглашает «гостью» внутрь.
+music BGM16C.mp3
+setvar strS[1001] = "CGRY25D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY25D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VJH.aac
+text @[Рё]
+text ...
+text Плохие предчувствия... всегда сбываются.
+text Фудзибаяси замечает журнал, который держит Сунохара.
+text В тот же момент моё тело начинает дрожать.
+setvar strS[1001] = "CGRY24D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY24D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VJI.aac
+text @[Рё]
+text Оказаки... -кун...
+text @[Томоя]
+text ...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VJJ.aac
+text @[Рё]
+text У... Уааааааааааааа!!
+text Как только она видит моё лицо, она бросается мне на грудь, рыдая.
+setvar strS[1001] = "CGMS15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGMS15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VJK.aac
+text @[Мисаэ]
+text У-угх...
+sound VJL.aac
+text @[Мисаэ]
+text Оказаки, отлично сработано.
+text @[Томоя]
+text ...
+text У меня... нет слов...
+text Я не хотел верить статье, которую только что прочитал...
+text ...Но...
+text Раз уж Фудзибаяси здесь, дрожащая, в моих объятиях, это почти полностью подтверждает, что всё это правда.
+text ...Слова, напечатанные в журнале...
+music ~
+if 1 == 0
+	goto s94
+fi
+goto 100
+label s94
+setvar strS[1000] = "KURO"
+goto 102
+label 100
+if 1 == 1
+	goto s95
+fi
+goto 101
+label s95
+setvar strS[1000] = "SIRO"
+goto 102
+label 101
+setvar strS[1000] = "KURO"
+label 102
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text ──«Остеосаркома»...
+text Другими словами... рак...
+if 0 == 0
+	goto s96
+fi
+goto 103
+label s96
+setvar strS[1000] = "KURO"
+goto 105
+label 103
+if 0 == 1
+	goto s97
+fi
+goto 104
+label s97
+setvar strS[1000] = "SIRO"
+goto 105
+label 104
+setvar strS[1000] = "KURO"
+label 105
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG046N"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s98
+fi
+goto 106
+label s98
+setvar strS[1000] = ""
+label 106
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08D.mp3
+text @[Томоя]
+text ...
+sound VJM.aac
+text @[Сунохара]
+text ...
+text @[Рё]
+text ...
+text Все трое, уставившись в пол, мы не произносим ни слова...
+text Нет, вернее... мы не можем произнести ни слова...
+setvar strS[1001] = "CGSH28B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH28B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VJN.aac
+text @[Сунохара]
+text ...Я... пойду заварю чаю...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Говоря это, Сунохара встаёт и выходит из комнаты.
+text Наверное, он просто не смог вынести этой атмосферы.
+text По правде говоря, мне бы тоже хотелось сбежать...
+text Но...
+setvar strS[1001] = "CGRY25D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY25D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VJO.aac
+text @[Рё]
+text ...
+text Я не могу этого сделать...
+text @[Томоя]
+text ...Фудзибаяси...
+sound VJP.aac
+text @[Рё]
+text ...
+text @[Томоя]
+text Эй, Фудзибаяси.
+setvar strS[1001] = "CGRY14D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY14D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VJQ.aac
+text @[Рё]
+text Ах... да...
+text @[Томоя]
+text ...Где... сейчас Каппэй...?
+setvar strS[1001] = "CGRY23D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY23D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Рё]
+text ...
+sound VJR.aac
+text @[Рё]
+text В больнице в соседнем городе.
+text @[Томоя]
+text ...Понятно...
+text @[Рё]
+text ...
+text @[Томоя]
+text Когда ты узнала...?
+setvar strS[1001] = "CGRY24D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY24D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VJS.aac
+text @[Рё]
+text Совсем недавно...
+sound VJT.aac
+text @[Рё]
+text Он всегда принимал какие-то лекарства... я всегда думала, что это странно...
+text Лекарства... точно, я помню, что он их пил...
+sound VJU.aac
+text @[Рё]
+text Я не знала, что это были за лекарства...
+sound VJV.aac
+text @[Рё]
+text Но... я увидела...
+setvar strS[1001] = "CGRY25D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY25D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VJW.aac
+text @[Рё]
+text Лекарство, которое принимал Каппэй-сан...
+sound VJX.aac
+text @[Рё]
+text ...это кодеин...
+text @[Томоя]
+text Кодеин...?
+sound VJY.aac
+text @[Рё]
+text ...Обезболивающее.
+text @[Томоя]
+text Если ему приходится принимать такое... значит, всё настолько серьёзно...?
+sound VJZ.aac
+text @[Рё]
+text Остеосаркому нужно начинать лечить очень быстро после постановки диагноза...
+text @[Томоя]
+text Да...
+setvar strS[1001] = "CGRY14D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY14D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VK0.aac
+text @[Рё]
+text Но... Каппэй-сан...
+sound VK1.aac
+text @[Рё]
+text ...Он...
+sound VK2.aac
+text @[Рё]
+text ...Не проходил никакого лечения или операции...
+text @[Томоя]
+text Не проходил?! Но разве раннее лечение не критически важно при этой болезни?
+setvar strS[1001] = "CGRY23D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY23D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VK3.aac
+text @[Рё]
+text ...
+setvar strS[1001] = "CGRY25D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY25D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VK4.aac
+text @[Рё]
+text Эк...~~~...
+text @[Томоя]
+text Ф-Фудзибаяси...?
+setvar strS[1001] = "CGRY24D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY24D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VK5.aac
+text @[Рё]
+text Оказаки... -кун...
+sound VK6.aac
+text @[Рё]
+text ​~~...
+text Только я подумал, что она вот-вот расплачется...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Как тело Фудзибаяси врезается в меня.
+setvar strS[1000] = "FGKY11A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s99
+fi
+goto 107
+label s99
+setvar strS[1000] = ""
+label 107
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound VK7.aac
+text @[Рё]
+text У... вах... *всхлип*
+sound VK8.aac
+text @[Рё]
+text У-у-у-у-у-а-а-а-х!
+text @[Томоя]
+text А? Ф-Фудзибаяси...? Эй...
+sound VK9.aac
+text @[Рё]
+text Прости меня... прости!
+sound VKA.aac
+text @[Рё]
+text Я знаю, что это неправильно — так полагаться на тебя, Оказаки-кун!
+sound VKB.aac
+text @[Рё]
+text Но... но я не могу справиться со всем этим в одиночку...
+sound VKC.aac
+text @[Рё]
+text Прости меня...!
+text @[Томоя]
+text ...Слушай... почему Каппэй отказался от операции...?
+sound VKD.aac
+text @[Рё]
+text Он не хотел...
+sound VKE.aac
+text @[Рё]
+text Он не может смириться... с потерей ног...
+sound VKF.aac
+text @[Рё]
+text Он говорил это... постоянно извиняясь при этом...
+text @[Томоя]
+text ...Каппэй...
+sound VKG.aac
+text @[Рё]
+text Я... не хочу, чтобы Каппэй-сан умирал.
+sound VKH.aac
+text @[Рё]
+text Даже если он потеряет ноги, я хочу, чтобы он продолжал жить.
+sound VKI.aac
+text @[Рё]
+text Если он будет жить... я уверена, впереди будет ещё много хорошего.
+sound VKJ.aac
+text @[Рё]
+text Поэтому... вот почему...
+sound VKK.aac
+text @[Рё]
+text Оказаки-кун... прошу тебя...
+sound VKL.aac
+text @[Рё]
+text Пожалуйста, убеди Каппэя-сан согласиться на операцию...
+sound VKM.aac
+text @[Рё]
+text ...Кажется, у меня самой не получается его переубедить...
+sound VKN.aac
+text @[Рё]
+text П-прошу...
+text @[Томоя]
+text Фудзибаяси...
+text Это маленькое, хрупкое тело продолжает бить по мне словами, которые режут... но правдивы...
+text Чтобы успокоить её дрожащие плечи, я кладу на них руки.
+sound VKO.aac
+text @[Рё]
+text ...*Всхлип* ... Оказаки... -кун...
+text @[Томоя]
+text В любом случае, давай сначала встретимся с ним.
+text @[Томоя]
+text Я тоже попробую его переубедить.
+sound VKP.aac
+text @[Рё]
+text Оказаки-кун...
+sound VKQ.aac
+text @[Рё]
+text Уу... *Всхлип*
+sound VKR.aac
+text @[Рё]
+text Аааааааааааааах! У-у-у-у-у-а-а-а-а-х!!
+text Кажется, мои слова смогли хоть немного её успокоить...
+text Но тут Фудзибаяси начинает рыдать ещё громче.
+text Пока я продолжаю прижимать её к своей груди, мои плечи расслабляются.
+setvar strS[1000] = "BG046N"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s100
+fi
+goto 108
+label s100
+setvar strS[1000] = ""
+label 108
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Дребезг* ...
+music ~
+setvar strS[1001] = "CGSH28B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH28B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VKS.aac
+text @[Сунохара]
+text Простите, что немного задержался...
+text @[Томоя]
+text ...
+sound VKT.aac
+text @[Рё]
+text *Всхлип* ... *Всхлип* ...
+setvar strS[1001] = "CGSH24B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH24B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VKU.aac
+text @[Сунохара]
+text У-угх... я, кажется, мешаю...?
+text Он неправильно всё понял...
+if 0 == 0
+	goto s101
+fi
+goto 109
+label s101
+setvar strS[1000] = "KURO"
+goto 111
+label 109
+if 0 == 1
+	goto s102
+fi
+goto 110
+label s102
+setvar strS[1000] = "SIRO"
+goto 111
+label 110
+setvar strS[1000] = "KURO"
+label 111
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG080"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s103
+fi
+goto 112
+label s103
+setvar strS[1000] = ""
+label 112
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text В наш следующий выходной...
+text Мы с Фудзибаяси приезжаем в больницу в соседнем городе.
+setvar strS[1000] = "BG053"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s104
+fi
+goto 113
+label s104
+setvar strS[1000] = ""
+label 113
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08D.mp3
+text *Стук* ... *Стук* ... *Стук* ... *Стук* ...
+text С нервным выражением на лице мы вдвоём идём по коридору рядом друг с другом.
+text @[Томоя]
+text ...Сунохара сказал, что не хочет ехать.
+setvar strS[1001] = "CGRY24D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY24D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VKV.aac
+text @[Рё]
+text ...Да... его нельзя заставлять...
+text @[Томоя]
+text Ну... думаю, он просто не хочет видеть Каппэя таким слабым и немощным...
+sound VKW.aac
+text @[Рё]
+text Прости меня...
+text @[Томоя]
+text Нет, я не против.
+text @[Томоя]
+text Скорее... у меня самого есть пара вещей, которые я хочу ему сказать.
+setvar strS[1001] = "CGRY11D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY11D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VKX.aac
+text @[Рё]
+text Большое тебе спасибо.
+text @[Томоя]
+text Ты приходишь навещать его каждый день?
+sound VKY.aac
+text @[Рё]
+text Да.
+text @[Томоя]
+text Понятно. Наверное, это тяжело.
+setvar strS[1001] = "CGRY18D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY18D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VKZ.aac
+text @[Рё]
+text Нет, это не так уж и много...
+sound VL0.aac
+text @[Рё]
+text В конце концов, это же Каппэю-сан... тяжелее всего...
+text @[Томоя]
+text ...Да, ты права...
+text @[Томоя]
+text Ах, пока мы будем разговаривать, ты хочешь тоже присутствовать?
+setvar strS[1001] = "CGRY24D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY24D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VL1.aac
+text @[Рё]
+text Нет... если можно, не мог бы ты поговорить с ним один...?
+sound VL2.aac
+text @[Рё]
+text Мне кажется, есть вещи, которые легче сказать только между парнями...
+text @[Томоя]
+text ...Понял.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Ну, это не то, к чему я могу её принудить.
+text После этого мы молча идём в сторону палаты Каппэя.
+text Звук наших шагов, стучащих по линолеуму, заставляет меня чувствовать, будто мы оставили что-то позади, приходя сюда.
+text По мере того как растёт число сделанных нами шагов...
+text ...растёт и моя тревога.
+setvar strS[1001] = "CGRY15D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY15D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VL3.aac
+text @[Рё]
+text Эм... Оказаки-кун.
+text @[Томоя]
+text А...?
+text В нескольких шагах позади меня Фудзибаяси останавливается.
+text Я смотрю на дверь рядом с ней.
+text Палата №307.
+text На табличке написано имя пациента.
+text «Каппэй Хиирага»...
+text Я невольно замираю, глядя на дверь.
+text И снова я думаю про себя... да... значит, он и правда болен...
+text Смогу ли я и правда его переубедить...?
+text Это тяжёлая ответственность...
+setvar strS[1001] = "CGRY14D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY14D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VL4.aac
+text @[Рё]
+text Ах...
+text Она выглядит встревоженной... нет, вернее, она и правда встревожена.
+text Она смотрит на меня; её глаза умоляюще просят о помощи.
+sound VL5.aac
+text @[Рё]
+text П-прошу тебя...
+text @[Томоя]
+text Да... я постараюсь изо всех сил.
+text Уже одни эти слова меня изматывают.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s105
+fi
+goto 114
+label s105
+setvar strS[1000] = ""
+label 114
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Стук* *Стук* ...
+sound VL6.aac
+text @[Каппэй]
+text «Да?»
+text *Дребезг* ...
+setvar strS[1000] = "BG054"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s106
+fi
+goto 115
+label s106
+setvar strS[1000] = ""
+label 115
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Томоя]
+text ...Привет.
+music BGM15.mp3
+setvar strS[1001] = "CGKP15B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP15B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VL7.aac
+text @[Каппэй]
+text А...
+text В палате Каппэй сидит на кровати и смотрит на меня.
+text В отличие от того Каппэя, которого я знаю, он выглядит более хрупким... и заметно похудел...
+sound VL8.aac
+text @[Каппэй]
+text Э... а...? Ха? Ух, а? Томоя-кун? Почему?
+text @[Томоя]
+text Давно не виделись.
+sound VL9.aac
+text @[Каппэй]
+text Ах, д-да. Давно не виделись.
+setvar strS[1001] = "CGKP10B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP10B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VLA.aac
+text @[Каппэй]
+text Вот это и правда сюрприз. Как ты узнал, где меня найти?
+text @[Томоя]
+text Мне сказала Фудзибаяси.
+setvar strS[1001] = "CGKP15B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP15B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VLB.aac
+text @[Каппэй]
+text Рё-сан?
+text @[Томоя]
+text Ага.
+sound VLC.aac
+text @[Каппэй]
+text Значит, это означает... ты знаешь всё, да...?
+text @[Томоя]
+text ...Да...
+setvar strS[1001] = "CGKP11B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP11B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VLD.aac
+text @[Каппэй]
+text Угх... ахаха... ну, это неловко получается...
+text @[Томоя]
+text Почему?
+setvar strS[1001] = "CGKP18B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP18B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VLE.aac
+text @[Каппэй]
+text А?
+text @[Томоя]
+text Почему ты не соглашаешься на операцию?
+sound VLF.aac
+text @[Каппэй]
+text Может быть... ты пришёл, чтобы меня переубедить?
+text @[Томоя]
+text Ага.
+setvar strS[1001] = "CGKP19B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP19B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VLG.aac
+text @[Каппэй]
+text Понятно...
+text Он вздыхает и смотрит в сторону двери.
+text Наверное, он заметил, что там стоит Фудзибаяси...
+setvar strS[1001] = "CGKP11B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP11B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VLH.aac
+text @[Каппэй]
+text Томоя-кун, в любом случае, присаживайся.
+sound VLI.aac
+text @[Каппэй]
+text Стоять всё время, наверное, утомительно.
+text @[Томоя]
+text ...Ага.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Как мне велено, я беру складной стул, стоящий рядом с кроватью.
+text Я трачу больше времени, чем нужно, разглядывая место, куда собираюсь сесть, и наконец сажусь.
+text Каппэй пристально на меня смотрит.
+setvar strS[1001] = "CGKP10B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP10B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VLJ.aac
+text @[Каппэй]
+text Слушай, Томоя-кун. Раз уж ты услышал об этом от Рё-сан, значит, ты, наверное, знаешь и о том, почему я не соглашаюсь на операцию, да?
+text @[Томоя]
+text Это потому, что ты не можешь смириться с потерей ног, да?
+text @[Томоя]
+text Я знаю, что и это будет очень тяжело, но разве есть что-то важнее жизни?
+sound VLK.aac
+text @[Каппэй]
+text ...
+music ~
+text Медленно и тихо он качает головой.
+setvar strS[1001] = "CGKP19B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP19B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08D.mp3
+sound VLL.aac
+text @[Каппэй]
+text Прости...
+sound VLM.aac
+text @[Каппэй]
+text Для меня это так же важно, как и жизнь.
+text @[Томоя]
+text Почему? Когда ты умрёшь, всё просто кончится, понимаешь?
+sound VLN.aac
+text @[Каппэй]
+text Эти ноги... для меня — всё.
+text @[Томоя]
+text ...Это...
+setvar strS[1001] = "CGKP18B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP18B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VLO.aac
+text @[Каппэй]
+text М?
+text @[Томоя]
+text Это как-то связано с лёгкой атлетикой...?
+setvar strS[1001] = "CGKP15B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP15B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VLP.aac
+text @[Каппэй]
+text А...
+sound VLQ.aac
+text @[Каппэй]
+text Вот это действительно сюрприз... я и не думал, что ты вообще можешь об этом знать...
+text @[Томоя]
+text ...Я просто случайно прочитал об этом в журнале...
+sound VLR.aac
+text @[Каппэй]
+text В журнале...?
+text @[Томоя]
+text Ага, там была статья про старые меж-школьные соревнования.
+text @[Томоя]
+text Тебя там называли «трагическим спринтером»...
+setvar strS[1001] = "CGKP19B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP19B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VLS.aac
+text @[Каппэй]
+text Понятно...
+sound VLT.aac
+text @[Каппэй]
+text Это... и правда пробуждает воспоминания.
+text Печально говорит он, глядя на свои колени.
+setvar strS[1001] = "CGKP11B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP11B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VLU.aac
+text @[Каппэй]
+text ...Да... наверное, будет лучше, если я тебе расскажу...
+text Он отводит взгляд от двери, бросив на меня быстрый взгляд, а затем сразу же снова отворачивается.
+music ~
+setvar strS[1001] = "CGKP19B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP19B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VLV.aac
+text @[Каппэй]
+text Томоя-кун... я...
+sound VLW.aac
+text @[Каппэй]
+text ...сирота...
+text @[Томоя]
+text А?
+text Его слова застают меня настолько врасплох, что я смотрю на Каппэя.
+text Его лицо спокойно... но в глазах мелькает намёк на одиночество.
+music BGM01.mp3
+sound VLX.aac
+text @[Каппэй]
+text По тому, что мне рассказали, меня бросили у порога приюта вскоре после рождения.
+text Затем он продолжает.
+sound VLY.aac
+text @[Каппэй]
+text Там очень много таких детей, как я.
+sound VLZ.aac
+text @[Каппэй]
+text Настолько много, что мы порой задумывались, есть ли вообще смысл в существовании таких, как мы.
+sound VM0.aac
+text @[Каппэй]
+text Но, думаю, мне всё же повезло больше, чем многим из них.
+sound VM1.aac
+text @[Каппэй]
+text Потому что меня бросили, даже не дав узнать тепла родителей... тепла семьи.
+setvar strS[1001] = "CGKP20B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP20B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VM2.aac
+text @[Каппэй]
+text Есть и такие люди...
+sound VM3.aac
+text @[Каппэй]
+text Те, с кем родители обращались жестоко, и в итоге их отдали в приют.
+sound VM4.aac
+text @[Каппэй]
+text ...Нет, на самом деле, я бы сказал, что так было чаще, чем наоборот.
+sound VM5.aac
+text @[Каппэй]
+text Мы все родились ни с чем... нам ничего не дали.
+sound VM6.aac
+text @[Каппэй]
+text Жизни, которые никогда не были благословенны...
+setvar strS[1001] = "CGKP21B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP21B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VM7.aac
+text @[Каппэй]
+text Мы были жалкими существами, которым отказали в праве жить полноценно.
+setvar strS[1001] = "CGKP20B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP20B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VM8.aac
+text @[Каппэй]
+text Однажды в наш приют приехали люди с телевидения.
+sound VM9.aac
+text @[Каппэй]
+text Это была какая-то документальная программа — из тех, где музыкант объезжает места, где живут его фанаты.
+setvar strS[1001] = "CGKP19B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP19B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VMA.aac
+text @[Каппэй]
+text Это был кто-то, кого я любил и часто слушал.
+sound VMB.aac
+text @[Каппэй]
+text Она реально пробила меня — что значит быть живым. Вот такая это была песня.
+sound VMC.aac
+text @[Каппэй]
+text Тогда мне удалось поговорить с этим музыкантом.
+setvar strS[1001] = "CGKP10B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP10B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VMD.aac
+text @[Каппэй]
+text И он сказал мне...
+sound VME.aac
+text @[Каппэй]
+text Что даже если это всего одна вещь, мне стоит найти что-то, во что я могу верить, и двигаться вперёд с этим.
+sound VMF.aac
+text @[Каппэй]
+text Для него это была музыка.
+sound VMG.aac
+text @[Каппэй]
+text Вот что он мне сказал.
+setvar strS[1001] = "CGKP11B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP11B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VMH.aac
+text @[Каппэй]
+text Он был по-настоящему убедителен.
+sound VMI.aac
+text @[Каппэй]
+text Я сам смог увидеть, какую силу даёт вера в одну-единственную вещь.
+setvar strS[1001] = "CGKP10B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP10B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VMJ.aac
+text @[Каппэй]
+text И тогда я начал думать.
+sound VMK.aac
+text @[Каппэй]
+text Во что я могу верить?
+sound VML.aac
+text @[Каппэй]
+text Чем я могу гордиться...?
+sound VMM.aac
+text @[Каппэй]
+text Что есть у меня такого, что даст мне мужество и надежду, как это случилось у того человека?
+setvar strS[1001] = "CGKP19B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP19B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VMN.aac
+text @[Каппэй]
+text И тогда меня осенило.
+text Он кладёт руку на колени.
+sound VMO.aac
+text @[Каппэй]
+text У меня есть эти ноги.
+sound VMP.aac
+text @[Каппэй]
+text Сколько себя помню, я никому не уступал в беге.
+sound VMQ.aac
+text @[Каппэй]
+text Вот почему я задумался о беге.
+sound VMR.aac
+text @[Каппэй]
+text Бежать... и бежать быстрее всех...
+sound VMS.aac
+text @[Каппэй]
+text Я бежал исключительно своими силами...
+sound VMT.aac
+text @[Каппэй]
+text И потом меня хвалило множество людей.
+sound VMU.aac
+text @[Каппэй]
+text Они признавали меня как личность.
+sound VMV.aac
+text @[Каппэй]
+text Я по-настоящему чувствовал себя живым.
+sound VMW.aac
+text @[Каппэй]
+text Это был, без сомнения, самый насыщенный период моей жизни...
+sound VMX.aac
+text @[Каппэй]
+text Я любил... бег...
+sound VMY.aac
+text @[Каппэй]
+text Раз уж у меня больше ничего не было, это было единственное, чем я мог гордиться.
+setvar strS[1001] = "CGKP20B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP20B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VMZ.aac
+text @[Каппэй]
+text Это было для меня всем.
+sound VN0.aac
+text @[Каппэй]
+text Вот почему...
+setvar strS[1001] = "CGKP21B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP21B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VN1.aac
+text @[Каппэй]
+text ...когда я узнал о своей болезни, я умер.
+text @[Томоя]
+text Умер...? Но ты же жив, разве нет?
+sound VN2.aac
+text @[Каппэй]
+text Нет... я больше не могу бегать.
+sound VN3.aac
+text @[Каппэй]
+text Я больше не знаю, что придаёт смысл моей жизни...
+text @[Томоя]
+text ...Каппэй...
+sound VN4.aac
+text @[Каппэй]
+text ...Вместо того чтобы жить, я жду смерти...
+setvar strS[1001] = "CGKP20B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP20B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VN5.aac
+text @[Каппэй]
+text Я просто хотел провести оставшееся время...
+sound VN6.aac
+text @[Каппэй]
+text ...Совсем небольшой срок, что у меня остался с этими ногами...
+sound VN7.aac
+text @[Каппэй]
+text Принимая обезболивающее, даже если я не могу бегать, я всё ещё могу ходить.
+sound VN8.aac
+text @[Каппэй]
+text Вот почему я начал путешествовать пешком из города в город.
+setvar strS[1001] = "CGKP19B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP19B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VN9.aac
+text @[Каппэй]
+text И вот я добрался до этого города и встретил тебя, Томоя-кун.
+sound VNA.aac
+text @[Каппэй]
+text И Рё-сан тоже.
+text Говорит он и смотрит на дверь.
+text @[Томоя]
+text А как же Фудзибаяси?
+setvar strS[1001] = "CGKP18B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP18B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VNB.aac
+text @[Каппэй]
+text А?
+text @[Томоя]
+text Если ты умрёшь, она не сможет снова подняться.
+sound VNC.aac
+text @[Каппэй]
+text ...
+text @[Томоя]
+text Разве жизнь ради неё не может стать тем, что будет тебя поддерживать?
+sound VND.aac
+text @[Каппэй]
+text ...
+setvar strS[1001] = "CGKP10B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP10B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VNE.aac
+text @[Каппэй]
+text ...Не может.
+sound VNF.aac
+text @[Каппэй]
+text Без ног... и завися от других...
+setvar strS[1001] = "CGKP11B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP11B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VNG.aac
+text @[Каппэй]
+text Это лишь создаст проблемы Рё-сан.
+sound VNH.aac
+text @[Каппэй]
+text Я стану для неё лишь обузой.
+text @[Томоя]
+text Это─
+setvar strS[1001] = "CGKP10B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP10B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VNI.aac
+text @[Каппэй]
+text Томоя-кун...
+setvar strS[1001] = "CGKP19B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP19B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VNJ.aac
+text @[Каппэй]
+text ...Ты сможешь оставаться рядом с человеком, которого любишь, даже зная, что это осложнит ей жизнь?
+text @[Томоя]
+text ...Каппэй...
+sound VNK.aac
+text @[Каппэй]
+text Вот тебе и ответ.
+text @[Томоя]
+text В таком случае...
+text @[Томоя]
+text Зачем ты вообще стал с ней встречаться?
+text @[Томоя]
+text Если ты знал, что это лишь причинит ей боль, зачем ты пытался проводить с ней время?
+sound VNL.aac
+text @[Каппэй]
+text ...Да... ты совершенно прав...
+sound VNM.aac
+text @[Каппэй]
+text Я... всегда просто следую своим чувствам в тот момент...
+sound VNN.aac
+text @[Каппэй]
+text Это моя дурная привычка... серьёзно...
+sound VNO.aac
+text @[Каппэй]
+text Прости.
+text @[Томоя]
+text ...
+sound VNP.aac
+text @[Каппэй]
+text Но...
+sound VNQ.aac
+text @[Каппэй]
+text Печаль... это то, что со временем можно излечить...
+sound VNR.aac
+text @[Каппэй]
+text Так было со всеми в приюте тоже...
+text Как он может говорить такие грустные вещи... с таким взглядом...?
+text С таким взглядом, будто он уже всё понял...?
+music ~
+text @[Томоя]
+text И всё же... я хочу, чтобы ты продолжал жить...
+setvar strS[1001] = "CGKP15B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP15B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VNS.aac
+text @[Каппэй]
+text ...Томоя-кун...
+music BGM18B.mp3
+text @[Томоя]
+text Разве я могу молча смотреть, как умирает мой друг?
+sound VNT.aac
+text @[Каппэй]
+text Друг...?
+text @[Томоя]
+text Именно так. Ты же первым назвал нас друзьями, разве нет?
+text @[Каппэй]
+text ...
+text @[Томоя]
+text Хотя у тебя ещё есть шанс жить...
+text @[Томоя]
+text Отказаться от этого...
+text @[Томоя]
+text Бег ведь не единственное, что у тебя есть, так?
+text @[Томоя]
+text Я...
+text @[Томоя]
+text Я не знаю тебя того, кто бегал.
+text @[Томоя]
+text Каппэй Хиирага, которого знаю я...
+text @[Томоя]
+text ...это парень, эгоистичный и делающий всё, что ему заблагорассудится, парень, который не особо ладит с людьми...
+text @[Томоя]
+text ...он рассказывает странные истории из прошлого...
+text @[Томоя]
+text ...иногда говорит как поэт...
+text @[Томоя]
+text ...иногда бросается прямо на тебя...
+text @[Томоя]
+text Мой друг... вот какой он...
+text @[Каппэй]
+text ...
+setvar strS[1001] = "CGKP19B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKP19B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VNU.aac
+text @[Каппэй]
+text ...Спасибо...
+sound VNV.aac
+text @[Каппэй]
+text Томоя-кун, спасибо...
+sound VNW.aac
+text @[Каппэй]
+text Точно... Томоя-кун знает только того Каппэя Хиирагу, каким я являюсь сейчас...
+sound VNX.aac
+text @[Каппэй]
+text Хотя ты и не знал о моём прошлом, ты всё равно пришёл со мной встретиться...
+sound VNY.aac
+text @[Каппэй]
+text ...И сказал, что я твой друг...
+sound VNZ.aac
+text @[Каппэй]
+text Я...
+sound VO0.aac
+text @[Каппэй]
+text ...правда счастлив.
+sound VO1.aac
+text @[Каппэй]
+text ...Так что...
+sound VO2.aac
+text @[Каппэй]
+text ...прости меня...
+text @[Томоя]
+text Каппэй!
+sound VO3.aac
+text @[Каппэй]
+text ...Прости...
+text @[Томоя]
+text Угх─
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s107
+fi
+goto 116
+label s107
+setvar strS[1000] = ""
+label 116
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text .........
+text ......
+text ...
+setvar strS[1000] = "BG037N"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s108
+fi
+goto 117
+label s108
+setvar strS[1000] = ""
+label 117
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM16C.mp3
+text Я сажусь на скамейку, опустив голову...
+text Фудзибаяси сидит рядом со мной, но не говорит ни слова.
+text Я... тоже не могу заставить себя заговорить...
+text В итоге я так и не смог переубедить Каппэя...
+text Мальчишка, который ничего не знает, только что объяснил мне, что значит жить...
+text Слыша всё это от него, я по-настоящему осознаю, насколько я сам слаб.
+text Как только я выхожу из палаты, Фудзибаяси начинает плакать...
+text Когда я говорю ей, что мне жаль... она качает головой и извиняется сама, в ответ.
+text Снова и снова она извиняется...
+sound VO4.aac
+text @[Рё]
+text Оказаки-кун...
+text Услышав её тихий голос, я поднимаю голову.
+setvar strS[1001] = "CGRY24D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY24D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VO5.aac
+text @[Рё]
+text Можно мне... одолжить твою грудь всего на минутку...
+text @[Томоя]
+text ...Фудзибаяси...
+setvar strS[1001] = "CGRY25D"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGRY25D.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound VO6.aac
+text @[Рё]
+text Прошу тебя...
+sound VO7.aac
+text @[Рё]
+text ...Всего на мгновение... этого хватит...
+text @[Томоя]
+text ...
+text В такой ситуации я не могу отказать.
+text Я слегка раскрываю объятия, и уже через мгновение она бросается ко мне на грудь.
+setvar strS[1000] = "FGKY11B"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s109
+fi
+goto 118
+label s109
+setvar strS[1000] = ""
+label 118
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound VO8.aac
+text @[Рё]
+text У... э... вех... ик...
+sound VO9.aac
+text @[Рё]
+text У-у-у-у-у-у-а-а-а-а-х!
+sound VOA.aac
+text @[Рё]
+text Ааааааааааанн! У-у-а-а-а-а-х!!
+text Её голос пронзает мою грудь...
+text Её слёзы такие тяжёлые...
+text Крошечные руки, которыми она сжимает мою одежду...
+text Её худые, дрожащие плечи...
+text Слёзы, стекающие по её щекам...
+text В моих объятиях всё наполнено скорбью.
+text Невольно я крепче сжимаю объятия.
+text Я крепко обнимаю дрожащее тело Фудзибаяси.
+text Потому что если я этого не сделаю... я и сам могу разрыдаться...
+text По крайней мере... пока я здесь, чтобы её успокоить, я не могу плакать...
+text ...Я не должен плакать...
+text Мои глаза дрожат...
+text Чтобы сдержать слёзы... я поднимаю взгляд вверх.
+if intF[610] == 1
+	goto s110
+fi
+jump SEEN7600_15_0.scr 120
+label s110
+jump SEEN7600_15_0.scr

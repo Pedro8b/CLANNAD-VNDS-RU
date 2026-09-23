@@ -25,7 +25,7 @@ text Хм...
 music ~
 text *Врум* *Врум*
 text Что‑то приближается ко мне сзади.
-choice Jump right|Stay still and brace for impact|Jump left
+choice Прыгнуть вправо|Оставаться на месте и приготовиться к удару|Прыгнуть влево
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -124,21 +124,21 @@ text @[Кё]
 text Ой‑ой, Томоя. Прости!
 sound 8SJ.aac
 text @[Кё]
-text Thanks for Saturday, though.
+text Кстати, спасибо за субботу.
 sound 8SK.aac
 text @[Кё]
-text Botan came home at night.
+text Ботан вернулся домой ночью.
 sound 8SL.aac
 text @[Кё]
-text So could you explain what exactly you walked to my home, and how you did it?
+text Так может, объяснишь, зачем именно ты дошёл пешком до моего дома и как ты это сделал?
 text @[Томоя]
 text ...
 sound 8SM.aac
 text @[Кё]
-text He was soaked through by the rain.
+text Он промок насквозь под дождём.
 sound 8SN.aac
 text @[Кё]
-text Hey, Tomoya?
+text Эй, Томоя?
 text @[Томоя]
 text ...
 setvar strS[1000] = "FGKY01B"
@@ -156,12 +156,12 @@ bgload {$strS[1000]}.jpg 30
 music ~
 sound 8SO.aac
 text @[Кё]
-text Um, Tomoya...?
+text Эм, Томоя...?
 text @[Томоя]
 text ...
 sound 8SP.aac
 text @[Кё]
-text Tomoya-kun?
+text Томоя-кун?
 text @[Томоя]
 text ...
 setvar strS[1000] = "FGKY01C"
@@ -196,9 +196,9 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text *Vr... Vrroom*
+text *Вр... Вррум*
 text @[Томоя]
-text Hey, you're leaving me behind?
+text Эй, ты меня бросаешь?
 music BGM10.mp3
 setvar strS[1000] = "FGKY01A"
 setvar intA[1000] = 1
@@ -214,9 +214,9 @@ setvar intF[1113] = 0
 bgload {$strS[1000]}.jpg 30
 sound 8SR.aac
 text @[Кё]
-text Oh, you're fine?
+text О, ты в порядке?
 text @[Томоя]
-text That hurt so much my mind went completely blank!
+text Было так больно, что у меня в голове помутилось!
 if intF[301] == 0
 	goto s11
 fi
@@ -417,12 +417,12 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text *Click*
+text *Щёлк*
 text @[Томоя]
 text Хм?
 text Кю выключила двигатель.
 text Она спрыгнула с мотоцикла и положила шлем под сиденье.
-text *Thud*
+text *Бух*
 text @[Томоя]
 text Что ты делаешь?
 setvar strS[1001] = "CGKY11"
@@ -680,8 +680,8 @@ if intF[1113] == 1
 fi
 sound 8TU.aac
 text @[Кё]
-text Well...
-text Kyou's finger covers her lips as she starts to think.
+text Ну...
+text Кё прижимает палец к губам, задумавшись.
 setvar strS[1001] = "CGKY17B"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -691,7 +691,7 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text She looks at the sky, and the ground, and murmurs, "Hmm."
+text Она смотрит то в небо, то на землю, бормоча: «Хм».
 setvar strS[1001] = "CGKY18B"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -703,9 +703,9 @@ if intF[1113] == 1
 fi
 sound 8TV.aac
 text @[Кё]
-text I think we might have had something like that when we were kids...
+text Кажется, что-то такое у нас было в детстве...
 text @[Томоя]
-text Seriously?
+text Серьёзно?
 setvar strS[1001] = "CGKY11"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -717,10 +717,10 @@ if intF[1113] == 1
 fi
 sound 8TW.aac
 text @[Кё]
-text Well, the two of us are twins, right?
+text Ну, мы же с ней близнецы, так?
 sound 8TX.aac
 text @[Кё]
-text When one of us sees that the other was hurt, it kind of felt like that we were hurt ourselves.
+text Когда одна из нас видела, что другая пострадала, было такое чувство, будто пострадали мы сами.
 setvar strS[1001] = "CGKY12"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -732,9 +732,9 @@ if intF[1113] == 1
 fi
 sound 8TY.aac
 text @[Кё]
-text And just from seeing it, we'd start to feel it.
+text И просто увидев это, мы начинали чувствовать то же самое.
 text @[Томоя]
-text What...? That sounds boring.
+text Что?.. Звучит скучно.
 setvar strS[1001] = "CGKY25"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -746,9 +746,9 @@ if intF[1113] == 1
 fi
 sound 8TZ.aac
 text @[Кё]
-text Oh, speaking of being late, I'm surprised you managed to get to your third year.
+text О, кстати об опозданиях — удивительно, что ты вообще добрался до третьего курса.
 text @[Томоя]
-text Huh? Why?
+text А? Почему?
 setvar strS[1001] = "CGKY15"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -760,14 +760,14 @@ if intF[1113] == 1
 fi
 sound 8U0.aac
 text @[Кё]
-text After all, the number of times you attended class in the morning during our second year could easily be counted.
+text В конце концов, число раз, когда ты приходил на утренние занятия на втором курсе, можно было пересчитать по пальцам.
 sound 8U1.aac
 text @[Кё]
-text I thought you were definitely going to have to repeat the year.
+text Я была уверена, что тебе точно придётся остаться на второй год.
 text @[Томоя]
-text Come on, there's no way I would repeat.
+text Да ладно, не остался бы я на второй год.
 text @[Томоя]
-text If I had to repeat, I might as well just drop out.
+text Если бы пришлось остаться, я бы с тем же успехом просто бросил учёбу.
 setvar strS[1001] = "CGKY26"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -779,9 +779,9 @@ if intF[1113] == 1
 fi
 sound 8U2.aac
 text @[Кё]
-text Hmm... but don't you think that would be disgraceful?
+text Хм... а не кажется ли тебе, что это было бы позорно?
 text @[Томоя]
-text ...Are you picking a fight?
+text ...Ты напрашиваешься на ссору?
 setvar strS[1001] = "CGKY25"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -793,13 +793,13 @@ if intF[1113] == 1
 fi
 sound 8U3.aac
 text @[Кё]
-text Nope, I didn't mean it like that.
+text Не-а, я не это имела в виду.
 sound 8U4.aac
 text @[Кё]
-text But don't you think it's a shame to give up on something you've started, no matter what it is?
+text Но разве не жаль бросать то, что ты начал, чем бы оно ни было?
 sound 8U5.aac
 text @[Кё]
-text It kind of feels like you lost to yourself, no?
+text Это ведь как будто проиграть самому себе, разве нет?
 text @[Томоя]
 text ...
 setvar strS[1001] = "CGKY11"
@@ -813,14 +813,14 @@ if intF[1113] == 1
 fi
 sound 8U6.aac
 text @[Кё]
-text If I put it that way, that makes you quite a fine chap now, doesn't it?
+text Если так посмотреть, то ты сейчас вполне приличный парень, не находишь?
 text @[Томоя]
-text What's with the weird turn of phrase...?
+text Что это за странный оборот речи...?
 sound 8U7.aac
 text @[Кё]
-text Well, you can't really call someone who's still always late a fine person, can you?
+text Ну, вряд ли можно назвать приличным человеком того, кто до сих пор вечно опаздывает, разве нет?
 text @[Томоя]
-text I don't want to hear that from a class president who's also late.
+text Не хочу слышать это от старосты класса, которая сама тоже опаздывает.
 setvar strS[1001] = "CGKY12"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -832,9 +832,9 @@ if intF[1113] == 1
 fi
 sound 8U8.aac
 text @[Кё]
-text It's fine for me. I'm doing everything that I have to do.
-text Can you really say you're doing everything you need to do when, as a student, you're missing class?
-text First of all, don't you need to be there to lead the morning greeting?
+text У меня всё в порядке. Я делаю всё, что должна.
+text А ты правда можешь сказать, что делаешь всё, что нужно, когда, будучи учеником, пропускаешь занятия?
+text Прежде всего, разве тебе не нужно быть там, чтобы вести утреннее приветствие?
 setvar strS[1001] = "CGKY11"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -846,10 +846,10 @@ if intF[1113] == 1
 fi
 sound 8U9.aac
 text @[Кё]
-text Hm? What?
+text Хм? Что?
 text @[Томоя]
-text Nah... Nothing.
-text I bet pointing out the irony isn't going to do me much good here.
+text Не... ничего.
+text Готов поспорить, указывать на иронию ситуации мне здесь ничем не поможет.
 music ~
 if 0 == 0
 	goto s18

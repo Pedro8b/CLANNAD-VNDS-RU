@@ -1,0 +1,2353 @@
+setvar intF[29] = intG[51]
+setvar intF[31] = intG[52]
+setvar intF[610] = intG[53]
+setvar intF[831] = intG[54]
+setvar intF[613] = intG[55]
+setvar intF[601] = intG[56]
+setvar intF[17] = intG[57]
+setvar intF[14] = intG[59]
+setvar intF[826] = intG[58]
+setvar intF[21] = intG[60]
+setvar intF[18] = intG[61]
+setvar intF[611] = intG[62]
+setvar intF[23] = intG[50]
+setvar intF[833] = intG[63]
+if rtf0 != ""
+	setvar rtf1 = "SEEN6800_0_0.scr"
+	setvar rtl1 = "rtl0"
+fi
+if rtf0 == ""
+	setvar rtf0 = "SEEN6800_0_0.scr"
+	setvar rtl0 = "rtl0"
+fi
+jump SEEN6900_11_0.scr
+label rtl0
+if rtf1 == ""
+	setvar rtf0 = ""
+fi
+if rtf1 != ""
+	setvar rtf1 = ""
+fi
+setvar intF[1112] = 0
+if 0 == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1000] = "KURO"
+goto 3
+label 1
+if 0 == 1
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = "SIRO"
+goto 3
+label 2
+setvar strS[1000] = "KURO"
+label 3
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG007"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s2
+fi
+goto 4
+label s2
+setvar strS[1000] = ""
+label 4
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM14.mp3
+text Я захожу в магазин и вижу, как Санаэ-сан бегает туда-сюда с большой коробкой в руках.
+text @[Томоя]
+text Доброе утро.
+setvar strS[1001] = "CGSN11E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN11E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LVF.aac
+text @[Санаэ]
+text О, Томоя-сан. Доброе утро.
+text @[Томоя]
+text Э, давайте я это возьму.
+setvar strS[1001] = "CGSN10E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN10E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LVG.aac
+text @[Санаэ]
+text Хорошо. Спасибо за помощь.
+setvar strS[1001] = "CGAK23E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK23E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LVH.aac
+text @[Акио]
+text О, ты пришёл.
+text Старик тоже выходит из подсобки, чтобы показаться.
+text @[Томоя]
+text Ага...
+text @[Томоя]
+text Доброе утро.
+text Я хотя бы вежливо здороваюсь.
+sound LVI.aac
+text @[Акио]
+text Ага, доброе утро.
+setvar strS[1001] = "CGAK14E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK14E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LVJ.aac
+text @[Акио]
+text А где, чёрт возьми, твой фартук?
+text @[Томоя]
+text Чего...? У меня его нет.
+setvar strS[1001] = "CGSN19E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN19E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LVK.aac
+text @[Санаэ]
+text А, точно. Забыл.
+setvar strS[1001] = "CGSN11E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN11E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LVL.aac
+text @[Санаэ]
+text Я и для вас приготовила один, Томоя-сан.
+text @[Томоя]
+text О, правда? Спасибо, приятно это слышать.
+sound LVM.aac
+text @[Санаэ]
+text Панда подойдёт?
+text @[Томоя]
+text Панда? Какая панда?
+setvar strS[1001] = "CGSN10E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN10E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LVN.aac
+text @[Санаэ]
+text Узор и метка на фартуке.
+setvar strS[1001] = "CGAK13E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK13E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LVO.aac
+text @[Акио]
+text Это чёрно-белый клетчатый фартук с меткой панды на груди.
+setvar strS[1001] = "CGAK14E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK14E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LVP.aac
+text @[Акио]
+text Это мой старый фартук. Что, не нравится, сопляк?
+text @[Томоя]
+text Нет... всё нормально.
+setvar strS[1001] = "CGAK11E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK11E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LVQ.aac
+text @[Акио]
+text Ага. И работать будешь до седьмого пота, точь-в-точь как чёртова панда.
+text Обычно про панд так не думают.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 5
+label s3
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text День выпуска.
+text Поскольку я даже не искал работу, я совершенно не представляю, что делать дальше.
+setvar strS[1000] = "BG002"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s4
+fi
+goto 6
+label s4
+setvar strS[1000] = ""
+label 6
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08D.mp3
+setvar strS[1001] = "CGSN10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LVR.aac
+text @[Санаэ]
+text Поздравляю с этим важным днём, Томоя-сан.
+text @[Томоя]
+text И теперь я начинаю жизнь безработного взрослого.
+text @[Томоя]
+text Вот что бывает, когда постоянно избегаешь профориентации.
+setvar strS[1001] = "CGAK13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LVS.aac
+text @[Акио]
+text Не думаю, что тебе стоит переживать. Способов заработать на жизнь полно.
+setvar strS[1001] = "CGSN10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LVT.aac
+text @[Санаэ]
+text Какие у тебя планы на ближайшее время?
+text @[Томоя]
+text Ну, вообще никаких...
+setvar strS[1001] = "CGAK19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LVU.aac
+text @[Акио]
+text Поверить не могу в этого парня... ты вообще ни о чём не подумал...?
+sound LVV.aac
+text @[Акио]
+text Что за никчёмный бездельник!
+setvar strS[1001] = "CGSN15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LVW.aac
+text @[Санаэ]
+text Последние несколько месяцев были тяжёлыми и для Томои-сан тоже, милый.
+text Санаэ-сан заступается за меня, но как ни посмотри, это результат моей же собственной нерадивости.
+setvar strS[1001] = "CGAK20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LVX.aac
+text @[Акио]
+text И нет ничего, чем бы тебе хотелось заняться?
+text @[Томоя]
+text Нет... ничего не приходит в голову.
+setvar strS[1001] = "CGAK14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LVY.aac
+text @[Акио]
+text Ну, даже если у тебя нет никаких идей, нельзя же просто целыми днями слоняться по городу без дела.
+text @[Томоя]
+text Я это и без тебя знаю, просто не знаю, с чего начать.
+setvar strS[1001] = "CGAK13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LVZ.aac
+text @[Акио]
+text Хмф...
+text Старик вздыхает, будто у него больше не осталось вариантов.
+sound LW0.aac
+text @[Акио]
+text Хочешь пока поработать здесь тогда?
+text @[Томоя]
+text Чего? Это точно можно?
+sound LW1.aac
+text @[Акио]
+text Ага. Заодно и школу Санаэ сможем немного расширить.
+setvar strS[1001] = "CGSN10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LW2.aac
+text @[Санаэ]
+text Да, ты прав.
+sound LW3.aac
+text @[Санаэ]
+text И если ты не против помогать рано утром...
+sound LW4.aac
+text @[Санаэ]
+text Тогда я смогу готовить обеды для Нагисы.
+sound LW5.aac
+text @[Санаэ]
+text Я всегда хотела это делать.
+setvar strS[1001] = "CGAK13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LW6.aac
+text @[Акио]
+text Ага, ты и правда так говорила, помню.
+setvar strS[1001] = "CGAK23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LW7.aac
+text @[Акио]
+text Хорошо, похоже, все согласны.
+sound LW8.aac
+text @[Акио]
+text Кстати, оплата 30 йен в час. Идёт?
+text @[Томоя]
+text Пожалуй, я всё-таки поищу что-нибудь другое.
+setvar strS[1001] = "CGAK11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LW9.aac
+text @[Акио]
+text Это была шутка, придурок. Но оплата и правда низкая, так что готовься.
+setvar strS[1001] = "CGSN11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LWA.aac
+text @[Санаэ]
+text Зато взамен получишь трёхразовое питание и даже бесплатное жильё.
+text @[Томоя]
+text Ладно, звучит вполне справедливо. Спасибо, правда.
+music ~
+if 0 == 0
+	goto s5
+fi
+goto 7
+label s5
+setvar strS[1000] = "KURO"
+goto 9
+label 7
+if 0 == 1
+	goto s6
+fi
+goto 8
+label s6
+setvar strS[1000] = "SIRO"
+goto 9
+label 8
+setvar strS[1000] = "KURO"
+label 9
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text Так, благодаря их доброте, я в итоге устраиваюсь на подработку в пекарню Фурукава.
+setvar strS[1000] = "BG007"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s7
+fi
+goto 10
+label s7
+setvar strS[1000] = ""
+label 10
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM14.mp3
+text 5 утра... время работать.
+text Старик уже начал печь хлеб, так что я присоединяюсь к нему, всё ещё немного сонный.
+text Поскольку магазин открывается в 7, мы печём хлеб достаточно рано, чтобы успеть к утреннему наплыву покупателей.
+text После открытия я работаю за кассой.
+text Больше всего покупателей в пекарне Фурукава с 7 до 9 часов.
+text Раньше я этого не знал, ведь никогда не бывал в магазине в такую рань.
+text Из-за этого работа оказывается даже тяжелее, чем я ожидал.
+text Санаэ-сан тоже помогает по утрам во время весенних каникул.
+text Она берёт хлеб, испечённый стариком, и раскладывает его по подносам в магазине.
+text Затем встречает покупателей со своим природным, общительным характером.
+text Смотреть, как она работает, само по себе вдохновляет — она такая обаятельная, что просто сияет; её позитивный настрой прямо-таки заразителен.
+text Я думаю, старик и правда нашёл себе потрясающую жену.
+setvar strS[1001] = "CGSN10E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN10E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LWB.aac
+text @[Санаэ]
+text Томоя-сан.
+text Моё сердце вздрагивает, когда я вдруг слышу её голос.
+text @[Томоя]
+text Д-да? В чём дело?
+sound LWC.aac
+text @[Санаэ]
+text Когда закончатся весенние каникулы, ты займёшь моё место здесь.
+sound LWD.aac
+text @[Санаэ]
+text Так что хочу, чтобы ты внимательно запоминал, где что лежит и сколько что стоит.
+text @[Томоя]
+text Понял.
+setvar strS[1001] = "CGSN12E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN12E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LWE.aac
+text @[Санаэ]
+text Удачи. Старайся изо всех сил.
+music ~
+bgload KURO.jpg 88
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08C.mp3
+text Как только наступает вторая половина дня, часто бывает так, что в магазине нет ни одного покупателя.
+text Из-за этого работа кажется намного легче.
+text И вот так пекарня Фурукава снова становится тем самым безлюдным местом, каким я её и знаю.
+text Испёкши последнюю на сегодня партию хлеба, старик слоняется по магазину, не зная, чем бы заняться.
+setvar strS[1001] = "CGAK19E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK19E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LWF.aac
+text @[Акио]
+text Ух, как же скучно.
+setvar strS[1001] = "CGAK23E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK23E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LWG.aac
+text @[Акио]
+text Ладно. Давай поиграем в мяч хлебом Санаэ!
+text @[Томоя]
+text Ни за что.
+setvar strS[1001] = "CGAK19E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK19E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LWH.aac
+text @[Акио]
+text Тьфу. На работе положено веселиться. Не будь таким занудой.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LWI.aac
+text @[Голос]
+text Извините?
+setvar strS[1001] = "CGNG10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Заходит покупатель. По крайней мере, так мне сначала кажется, пока я не замечаю, что это Нагиса.
+text @[Томоя]
+text Слушай, это же вводит в заблуждение.
+text Температура у Нагисы наконец спала, когда начались весенние каникулы.
+text В последнее время она ходит по дому, не перенапрягаясь особо.
+sound LWJ.aac
+text @[Нагиса]
+text Я хотела посмотреть, как ты работаешь, Томоя-кун.
+setvar strS[1001] = "CGNG23A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LWK.aac
+text @[Нагиса]
+text Этот фартук тебе идёт. Милый, эхехе.
+text Мне становится немного неловко.
+setvar strS[1001] = "CGNG10AZ"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10AZ.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LWL.aac
+text @[Нагиса]
+text Могу я чем-нибудь помочь?
+text @[Томоя]
+text Как видишь, у нас свободного времени больше, чем мы знаем, куда девать.
+setvar strS[1001] = "CGAK23E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK23E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LWM.aac
+text @[Акио]
+text Ладно. Давай устроим снежки хлебом Санаэ!
+sound LWN.aac
+text @[Акио]
+text Ну, наверное, это будет скорее хлебная битва.
+setvar strS[1001] = "CGNG16A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LWO.aac
+text @[Нагиса]
+text Мама у тебя за спиной, пап.
+music ~
+setvar strS[1001] = "CGAK18E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK18E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LWP.aac
+text @[Акио]
+text Чего?!
+music BGM08A.mp3
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Старик оборачивается посмотреть, что там, и видит Санаэ-сан, уже готовую расплакаться.
+setvar strS[1001] = "CGSN18E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN18E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LWQ.aac
+text @[Санаэ]
+text Так значит, хлеб, который я пеку...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LWR.aac
+text @[Санаэ]
+text ...это просто метательное оружие?!!
+text Она оборачивается и убегает.
+setvar strS[1001] = "CGAK15E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK15E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LWS.aac
+text @[Акио]
+text Я тебя люблюююю!!
+music ~
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Старик, как обычно, бросается вдогонку.
+text Мы с Нагисой остаёмся одни.
+music BGM15.mp3
+setvar strS[1001] = "CGNG10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LWT.aac
+text @[Нагиса]
+text Ты стараешься изо всех сил, Томоя-кун.
+text @[Томоя]
+text Даже не знаю...
+setvar strS[1001] = "CGNG23A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LWU.aac
+text @[Нагиса]
+text Это здорово.
+text @[Томоя]
+text Я всего лишь работаю за кассой, вообще-то.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LWV.aac
+text @[Голос]
+text Извините?
+text Заходит уже настоящий покупатель.
+setvar strS[1001] = "CGNG25A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG25A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LWW.aac
+text @[Нагиса]
+text Добро пожаловать.
+text Нагиса встречает его с улыбкой.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Меня внезапно охватывает чувство умиротворения.
+text На мгновение я представляю будущее, где мы вдвоём вот так же работаем вместе.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s8
+fi
+goto 11
+label s8
+setvar strS[1000] = ""
+label 11
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar intF[1110] = 5
+setvar intF[1112] = 1
+setvar strS[1004] = "SDTB0405"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s9
+fi
+goto 12
+label s9
+setvar strS[1004] = ""
+label 12
+bgload SCLBB00.jpg 45
+delay 60
+setimg SCLBP00.png 5 5
+setimg SCLB0405.png 159 160
+delay 120
+if 0 == 0
+	goto s10
+fi
+goto 13
+label s10
+setvar strS[1000] = "KURO"
+goto 15
+label 13
+if 0 == 1
+	goto s11
+fi
+goto 14
+label s11
+setvar strS[1000] = "SIRO"
+goto 15
+label 14
+setvar strS[1000] = "KURO"
+label 15
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG001"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s12
+fi
+goto 16
+label s12
+setvar strS[1000] = ""
+label 16
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM01.mp3
+text Утро торжественной церемонии начала учебного года.
+setvar strS[1001] = "CGNG10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LWX.aac
+text @[Нагиса]
+text Ну ладно...
+sound LWY.aac
+text @[Нагиса]
+text Я пойду.
+text @[Томоя]
+text Хорошо.
+setvar strS[1001] = "CGSN10E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN10E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LWZ.aac
+text @[Санаэ]
+text До вечера.
+setvar strS[1001] = "CGAK23E"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK23E.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LX0.aac
+text @[Акио]
+text Ага, вперёд!
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Нагиса уходит в школу одна.
+text Теперь так будет каждый день.
+text Интересно, не остановится ли она у подножия холма, тревожась...
+text Я... думаю, не остановится.
+text С того самого дня она стала намного сильнее.
+text Именно поэтому я провожаю её отсюда.
+setvar strS[1001] = "CGNG10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Томоя]
+text ...Старайся изо всех сил.
+text Мои слова поддержки отправляются вместе с ней.
+setvar strS[1001] = "CGNG23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LX1.aac
+text @[Нагиса]
+text Хорошо!
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s13
+fi
+goto 17
+label s13
+setvar strS[1000] = ""
+label 17
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG006N1"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s14
+fi
+goto 18
+label s14
+setvar strS[1000] = ""
+label 18
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Тем вечером я иду в комнату Нагисы.
+text За ужином Нагиса выглядела весёлой, разговаривая с нами, но было такое чувство, будто она себя заставляет.
+text Старик и Санаэ-сан, наверное, тоже это заметили.
+text @[Томоя]
+text Это я, Нагиса.
+sound LX2.aac
+text @[Нагиса]
+text А, да? Что случилось?
+text Она отвечает из-за двери.
+text @[Томоя]
+text Я захожу.
+sound LX3.aac
+text @[Нагиса]
+text Хорошо, заходи.
+setvar strS[1000] = "BG003N1H"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s15
+fi
+goto 19
+label s15
+setvar strS[1000] = ""
+label 19
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Нагиса сидит там, обнимая свою плюшевую игрушку Большой Семьи Данго.
+text Кажется, я застал её за тем, как она дуется, вспоминая, что случилось сегодня в школе.
+text @[Томоя]
+text Присяду, ладно?
+setvar strS[1001] = "CGNG10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LX4.aac
+text @[Нагиса]
+text Дай принесу тебе подушку.
+text @[Томоя]
+text Не нужно.
+setvar strS[1001] = "CGNG12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LX5.aac
+text @[Нагиса]
+text Думаю, у тебя заболит попа, если сядешь без неё.
+text @[Томоя]
+text Я сказала, не нужно.
+sound LX6.aac
+text @[Нагиса]
+text Хорошо...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Она садится обратно и крепко прижимает к себе плюшевую игрушку.
+text @[Томоя]
+text Кажется, есть в твоём классе кто-то, с кем можно поговорить?
+setvar strS[1001] = "CGNG12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LX7.aac
+text @[Нагиса]
+text Раз я уже дважды оставалась на второй год, такое чувство, что мне и поговорить с одноклассниками не о чем.
+text @[Томоя]
+text Ты так говоришь, будто ты женщина средних лет какая-то...
+text @[Томоя]
+text Это же всего два года. Нельзя считать это ТАКОЙ уж большой разницей в возрасте.
+sound LX8.aac
+text @[Нагиса]
+text Даже не знаю...
+text Меня вдруг осеняет.
+text Не загоняю ли я Нагису ещё сильнее в угол, отчитывая её вот так?
+text Она просто искала оправдание.
+text @[Томоя]
+text Интересно... знают ли все.
+setvar strS[1001] = "CGNG13A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG13A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LX9.aac
+text @[Нагиса]
+text Знают что?
+text @[Томоя]
+text Ну, что... я дважды оставалась на второй год.
+sound LXA.aac
+text @[Нагиса]
+text Думаю, знают.
+setvar strS[1001] = "CGNG31A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG31A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LXB.aac
+text @[Нагиса]
+text Похоже, об этом говорили ещё на церемонии начала учебного года.
+sound LXC.aac
+text @[Нагиса]
+text Говорили, что в моём классе есть такая ученица.
+sound LXD.aac
+text @[Нагиса]
+text Я немного подслушала...
+text @[Томоя]
+text О...
+setvar strS[1001] = "CGNG32A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LXE.aac
+text @[Нагиса]
+text И все остальные учатся в одном классе с первого курса и знают друг друга в лицо, но...
+sound LXF.aac
+text @[Нагиса]
+text А я как будто перевод из другой школы... так что они наверняка сразу всё поймут.
+text @[Томоя]
+text Но есть же знакомые лица, да?
+text @[Томоя]
+text Нисина и Сугисака.
+sound LXG.aac
+text @[Нагиса]
+text Да. Я думала, как было бы здорово попасть в их класс.
+text Но раз мы в разных классах, у нас будет не так много возможностей видеться...
+if intF[31] == 1
+	goto s16
+fi
+goto 20
+label s16
+text @[Томоя]
+text А как насчёт Томоё?
+setvar strS[1001] = "CGNG31A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG31A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LXH.aac
+text @[Нагиса]
+text Сакагами-сан тоже в другом классе.
+text @[Томоя]
+text О...
+sound LXI.aac
+text @[Нагиса]
+text Кстати, о Сакагами-сан — я столкнулась с ней, возвращаясь из спортзала.
+sound LXJ.aac
+text @[Нагиса]
+text Она сказала, что мне тоже стоит стараться.
+text @[Томоя]
+text Похоже на неё...
+setvar strS[1001] = "CGNG32A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LXK.aac
+text @[Нагиса]
+text Да. Она очень хороший человек.
+text @[Томоя]
+text Тебе стоит проводить время с Томоё.
+setvar strS[1001] = "CGNG16A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LXL.aac
+text @[Нагиса]
+text Что? Но... она для меня недосягаема.
+text @[Томоя]
+text Студсовет меняется в конце месяца, да? После этого она должна освободиться.
+sound LXM.aac
+text @[Нагиса]
+text Она наверняка будет занята подготовкой к экзаменам.
+text @[Томоя]
+text Даже если так, она найдёт для тебя время. Я её знаю.
+setvar strS[1001] = "CGNG32A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LXN.aac
+text @[Нагиса]
+text Правда? Думаешь, она бы...?
+text @[Томоя]
+text Скорее всего.
+sound LXO.aac
+text @[Нагиса]
+text Если бы так вышло, я была бы очень рада.
+text @[Томоя]
+text Ага. И тебе ещё нужно завести друзей в своём классе.
+goto 21
+label 20
+if intF[31] == 0
+	goto s17
+fi
+goto 21
+label s17
+text @[Томоя]
+text О...
+text @[Томоя]
+text Но, знаешь ли...
+label 21
+text @[Томоя]
+text У тебя хороший характер. Даже если подойдёшь заговорить с людьми, не думаю, что им это покажется навязчивым.
+setvar strS[1001] = "CGNG31A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG31A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LXP.aac
+text @[Нагиса]
+text Да, надеюсь, что так и будет...
+text @[Томоя]
+text Ага. Ты в итоге всем понравишься, я уверен.
+text @[Томоя]
+text По сути, дело просто в том, чтобы сделать первый шаг.
+sound LXQ.aac
+text @[Нагиса]
+text Да...
+text @[Томоя]
+text Что ещё... точно, драмкружок.
+text @[Томоя]
+text Ты же будешь его продолжать, да?
+setvar strS[1001] = "CGNG17A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG17A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LXR.aac
+text @[Нагиса]
+text Да, я бы хотела.
+text @[Томоя]
+text И в этом году сможешь набирать участников законным путём.
+setvar strS[1001] = "CGNG18A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG18A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LXS.aac
+text @[Нагиса]
+text Да, смогу.
+sound LXT.aac
+text @[Нагиса]
+text Но...
+text @[Томоя]
+text Но что?
+sound LXU.aac
+text @[Нагиса]
+text У меня нет куратора.
+text @[Томоя]
+text Почему нет? Комура же...
+text Я вспоминаю на полуслове.
+sound LXV.aac
+text @[Нагиса]
+text Комура-сенсей вышел на пенсию в конце прошлого года...
+text @[Томоя]
+text Ага, точно, вспомнил...
+sound LXW.aac
+text @[Нагиса]
+text Но на его месте новый учитель, и, может, он возьмёт на себя роль куратора драмкружка.
+text @[Томоя]
+text Точно. Тебе стоит пойти и спросить его прямо сейчас!
+setvar strS[1001] = "CGNG32A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LXX.aac
+text @[Нагиса]
+text Да... я так и планировала.
+sound LXY.aac
+text @[Нагиса]
+text Но, ну, он немного...
+text @[Томоя]
+text Немного какой?
+sound LXZ.aac
+text @[Нагиса]
+text Он выглядит немного пугающим... так что я замешкалась.
+text @[Томоя]
+text Пугающим? Это просто внешность такая, да?
+sound LY0.aac
+text @[Нагиса]
+text Нет, кажется, он раньше был куратором по профориентации в своей прежней школе, и даже сегодня, на приветствии, он сказал: «Идите и добейтесь своего!»...
+text Ага...
+text Не все учителя такие дружелюбные старички, как Комура.
+sound LY1.aac
+text @[Нагиса]
+text Он выглядел скорее как спортивный учитель, не тот, кто станет куратором драмкружка.
+text @[Томоя]
+text Понятно...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я закрываю лицо руками.
+text И как у неё получается натыкаться на столько проблем в школе...?
+text Почему у неё не может быть более обычного времени там?
+text Заводить друзей, как все остальные, весело болтать с людьми, стараться в клубе...
+text Почему ей не позволено насладиться такой простой, обычной радостью?
+setvar strS[1001] = "CGNG16A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LY2.aac
+text @[Нагиса]
+text Прости, Томоя-кун.
+text @[Томоя]
+text За что...?
+text Мой голос звучит почти так, будто я вот-вот заплачу.
+sound LY3.aac
+text @[Нагиса]
+text За то, что заставляю тебя волноваться.
+text @[Томоя]
+text Всё нормально... было бы ещё печальнее, если бы тебе пришлось держать всё это в себе.
+sound LY4.aac
+text @[Нагиса]
+text Нет, я просто жалуюсь.
+sound LY5.aac
+text @[Нагиса]
+text Я решила стараться изо всех сил, так что буду стараться.
+text @[Томоя]
+text Ну, конечно, я хочу, чтобы ты так и делала.
+text @[Томоя]
+text Но не просто обнимай свои игрушки, когда тебе так тяжело. Приходи поговорить со мной.
+setvar strS[1001] = "CGNG32A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LY6.aac
+text @[Нагиса]
+text Мне кажется, что она — тоже часть тебя.
+sound LY7.aac
+text @[Нагиса]
+text Ты ведь мне её подарил, в конце концов...
+sound LY8.aac
+text @[Нагиса]
+text Поэтому, обнимая её, было такое чувство, будто я всё тебе рассказываю.
+sound LY9.aac
+text @[Нагиса]
+text Это меня очень успокаивает.
+setvar strS[1001] = "CGNG10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LYA.aac
+text @[Нагиса]
+text Хотя это ещё и значило, что я обнимала её изо всех сил.
+setvar strS[1001] = "CGNG22A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG22A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LYB.aac
+text @[Нагиса]
+text ...Эхехе.
+text Она старается справиться по-своему. Пытается никому не жаловаться.
+text А может, это я пытался заставить её пожаловаться.
+text Может, я просто сдерживаю Нагису, когда она пытается стать сильнее.
+text @[Томоя]
+text Но ты ведь и об этом мне будешь рассказывать, да?
+text @[Томоя]
+text Это будет не жалоба... это будет просьба о совете, или что-то вроде того.
+setvar strS[1001] = "CGNG10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LYC.aac
+text @[Нагиса]
+text Хорошо. Спасибо.
+sound LYD.aac
+text @[Нагиса]
+text Но мне хочется рассказывать тебе о более весёлых вещах, Томоя-кун.
+sound LYE.aac
+text @[Нагиса]
+text Я хочу улыбаться, рассказывая тебе обо всём, что случилось в школе.
+text @[Томоя]
+text Ага, ты права. Надеюсь, в будущем у тебя будет получаться так чаще.
+sound LYF.aac
+text @[Нагиса]
+text Да. Я буду стараться, чтобы так и было.
+text Но...
+music ~
+if 0 == 0
+	goto s18
+fi
+goto 22
+label s18
+setvar strS[1000] = "KURO"
+goto 24
+label 22
+if 0 == 1
+	goto s19
+fi
+goto 23
+label s19
+setvar strS[1000] = "SIRO"
+goto 24
+label 23
+setvar strS[1000] = "KURO"
+label 24
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text Даже после того дня Нагиса не рассказывает мне ни о чём весёлом, что случается в школе.
+if 0 == 0
+	goto s20
+fi
+goto 25
+label s20
+setvar strS[1000] = "KURO"
+goto 27
+label 25
+if 0 == 1
+	goto s21
+fi
+goto 26
+label s21
+setvar strS[1000] = "SIRO"
+goto 27
+label 26
+setvar strS[1000] = "KURO"
+label 27
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar intF[1110] = 6
+setvar intF[1112] = 1
+setvar strS[1004] = "SDTB0406"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s22
+fi
+goto 28
+label s22
+setvar strS[1004] = ""
+label 28
+bgload SCLBB00.jpg 45
+delay 60
+setimg SCLBP01.png 5 5
+setimg SCLB0406.png 159 160
+delay 120
+if 0 == 0
+	goto s23
+fi
+goto 29
+label s23
+setvar strS[1000] = "KURO"
+goto 31
+label 29
+if 0 == 1
+	goto s24
+fi
+goto 30
+label s24
+setvar strS[1000] = "SIRO"
+goto 31
+label 30
+setvar strS[1000] = "KURO"
+label 31
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG004AN1"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s25
+fi
+goto 32
+label s25
+setvar strS[1000] = ""
+label 32
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08D.mp3
+text @[Томоя]
+text Что там с куратором клуба?
+text На следующий вечер я снова в комнате Нагисы.
+setvar strS[1001] = "CGNG32A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LYG.aac
+text @[Нагиса]
+text А, да...
+sound LYH.aac
+text @[Нагиса]
+text Миносима-сенсей, тот новый учитель, о котором я вчера рассказывала, согласился взять на себя эту роль.
+text @[Томоя]
+text О. Это здорово.
+sound LYI.aac
+text @[Нагиса]
+text Да, это прекрасно.
+text Но судя по её выражению лица, не всё так радужно.
+text @[Томоя]
+text В чём дело? Не всё прошло гладко?
+setvar strS[1001] = "CGNG16A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LYJ.aac
+text @[Нагиса]
+text А, нет... всё прошло хорошо, но, как бы это сказать...
+text @[Томоя]
+text Расскажи мне, как всё было.
+setvar strS[1001] = "CGNG32A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LYK.aac
+text @[Нагиса]
+text Хорошо.
+sound LYL.aac
+text @[Нагиса]
+text После уроков я пошла в учительскую поговорить с ним.
+sound LYM.aac
+text @[Нагиса]
+text Миносима-сенсей был там, так что мы там всё и обсудили.
+text @[Томоя]
+text Понятно.
+setvar strS[1001] = "CGNG31A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG31A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LYN.aac
+text @[Нагиса]
+text И когда я это сделала, ну... он не выглядел особо воодушевлённым...
+text @[Томоя]
+text Значит, не так уж гладко...
+sound LYO.aac
+text @[Нагиса]
+text Ну, вот в чём дело: пока мы разговаривали, рядом с нами сидел завуч и, оказывается, слушал...
+sound LYP.aac
+text @[Нагиса]
+text И он назначил Миносиму-сенсея куратором драмкружка.
+text @[Томоя]
+text О, ого... хм...
+text @[Томоя]
+text И как этот Миносима на это отреагировал?
+setvar strS[1001] = "CGNG32A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LYQ.aac
+text @[Нагиса]
+text Ну... мне не очень хочется говорить.
+text В лучшем случае он, наверное, просто цокнул языком, а в худшем... хм... даже представить не могу.
+text Конечно, спортивному учителю не было бы никакого веселья, если бы его назначили куратором драмкружка.
+setvar strS[1001] = "CGNG31A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG31A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LYR.aac
+text @[Нагиса]
+text Но Миносима-сенсей ещё и помощник куратора команды по лёгкой атлетике, так что не думаю, что он будет уделять нам много внимания.
+text Не могу понять, хорошо это или плохо.
+text Но раз нельзя проводить занятия клуба без куратора рядом, наверное, это всё же не хорошо.
+sound LYS.aac
+text @[Нагиса]
+text И...
+text Есть ещё плохие новости.
+setvar strS[1001] = "CGNG32A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LYT.aac
+text @[Нагиса]
+text Если я не смогу набрать новых участников, клуб придётся распустить...
+text @[Томоя]
+text А, да... наверное, ты права..
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s26
+fi
+goto 33
+label s26
+setvar strS[1000] = ""
+label 33
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar intF[1110] = 7
+setvar intF[1112] = 1
+setvar strS[1004] = "SDTB0407"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s27
+fi
+goto 34
+label s27
+setvar strS[1004] = ""
+label 34
+bgload SCLBB00.jpg 45
+delay 60
+setimg SCLBP02.png 5 5
+setimg SCLB0407.png 159 160
+delay 120
+if 0 == 0
+	goto s28
+fi
+goto 35
+label s28
+setvar strS[1000] = "KURO"
+goto 37
+label 35
+if 0 == 1
+	goto s29
+fi
+goto 36
+label s29
+setvar strS[1000] = "SIRO"
+goto 37
+label 36
+setvar strS[1000] = "KURO"
+label 37
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG004AN1"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s30
+fi
+goto 38
+label s30
+setvar strS[1000] = ""
+label 38
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08D.mp3
+setvar strS[1001] = "CGNG10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LYU.aac
+text @[Нагиса]
+text Сегодня я сделала листовки для набора в клуб.
+sound LYV.aac
+text @[Нагиса]
+text На них милые рисунки Большой Семьи Данго, прямо как в прошлом году.
+text @[Томоя]
+text Хорошо.
+sound LYW.aac
+text @[Нагиса]
+text Я развесила их на досках объявлений во время обеда.
+setvar strS[1001] = "CGNG32A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LYX.aac
+text @[Нагиса]
+text Сегодня была моя очередь убираться после уроков, и когда я пошла убирать класс... почему-то увидела их на полу.
+sound LYY.aac
+text @[Нагиса]
+text Мне стало интересно почему, и я их подобрала.
+sound LYZ.aac
+text @[Нагиса]
+text И когда я это сделала, окружающие начали говорить: «О, она их нашла...»
+text @[Томоя]
+text ...
+setvar strS[1001] = "CGNG31A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG31A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LZ0.aac
+text @[Нагиса]
+text Пока я не смотрела, их сняли с доски и передавали по рукам.
+sound LZ1.aac
+text @[Нагиса]
+text ...интересно, в чём была проблема.
+text В лучшем случае её одноклассники считают её странной из-за того, что она уже дважды оставалась на второй год.
+text ...Но как ни крути, она всё равно привлекла бы к себе негативное внимание и над ней бы посмеялись.
+text Если бы я только был в школе... я бы утешил её прямо там...
+text А потом вместе с ней развесил бы листовки обратно после уроков.
+sound LZ2.aac
+text @[Нагиса]
+text Может, дело в Большой Семье Данго...?
+text @[Томоя]
+text Нет, ты не сделала ничего плохого.
+text @[Томоя]
+text Просто мне кажется, что это займёт немного больше времени.
+text @[Томоя]
+text Так что тебе просто нужно пока продержаться.
+setvar strS[1001] = "CGNG34A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG34A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LZ3.aac
+text @[Нагиса]
+text Мне было бы очень неприятно, если бы их снова сняли...
+text @[Томоя]
+text Ага, и думаю, для тебя важно прямо говорить о таких вещах. Ты дала им знать, что чувствуешь?
+setvar strS[1001] = "CGNG16A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LZ4.aac
+text @[Нагиса]
+text А, да...
+sound LZ5.aac
+text @[Нагиса]
+text Я сказала, что мне бы не хотелось, чтобы их снова сняли.
+text @[Томоя]
+text Хорошо, это правильно. Тогда больше не снимут.
+setvar strS[1001] = "CGNG10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LZ6.aac
+text @[Нагиса]
+text Хорошо... я тебе поверю и снова развешу их завтра.
+text @[Томоя]
+text Хорошо.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s31
+fi
+goto 39
+label s31
+setvar strS[1000] = ""
+label 39
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar intF[1110] = 8
+setvar intF[1112] = 1
+setvar strS[1004] = "SDTB0408"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s32
+fi
+goto 40
+label s32
+setvar strS[1004] = ""
+label 40
+bgload SCLBB00.jpg 45
+delay 60
+setimg SCLBP03.png 5 5
+setimg SCLB0408.png 159 160
+delay 120
+if 0 == 0
+	goto s33
+fi
+goto 41
+label s33
+setvar strS[1000] = "KURO"
+goto 43
+label 41
+if 0 == 1
+	goto s34
+fi
+goto 42
+label s34
+setvar strS[1000] = "SIRO"
+goto 43
+label 42
+setvar strS[1000] = "KURO"
+label 43
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG004AN1"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s35
+fi
+goto 44
+label s35
+setvar strS[1000] = ""
+label 44
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08D.mp3
+setvar strS[1001] = "CGNG10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LZ7.aac
+text @[Нагиса]
+text Прости, что беспокою тебя, когда ты устал, но... можно я снова с тобой поговорю?
+text @[Томоя]
+text Ага, конечно.
+sound LZ8.aac
+text @[Нагиса]
+text Сегодня утром я снова развесила листовки.
+sound LZ9.aac
+text @[Нагиса]
+text На этот раз их не сняли.
+sound LZA.aac
+text @[Нагиса]
+text Пока я наблюдала за ними издалека, к доске объявлений подошла девочка, похожая на первокурсницу, и остановилась там.
+sound LZB.aac
+text @[Нагиса]
+text Думаю, она, наверное, смотрела на листовку драмкружка...
+text @[Томоя]
+text Ага, наверное, и правда увидела.
+text @[Томоя]
+text На самом деле, я бы сказал, что твои листовки производят настолько сильное впечатление, что их просто невозможно игнорировать.
+setvar strS[1001] = "CGNG23A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LZC.aac
+text @[Нагиса]
+text Да. Я была бы рада, если бы она хоть немного заинтересовалась.
+text @[Томоя]
+text Кстати, когда там информационная встреча?
+setvar strS[1001] = "CGNG10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LZD.aac
+text @[Нагиса]
+text В субботу, послезавтра.
+sound LZE.aac
+text @[Нагиса]
+text Общая информационная встреча пройдёт в спортзале.
+text В прошлом году Нагиса вернулась в школу только после того, как она уже прошла.
+text Так что ситуация отличается от прошлогодней, когда ей пришлось делать всё в одиночку.
+text Но если у неё будет такая возможность, это должно сильно всё облегчить.
+setvar strS[1001] = "CGNG32A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG32A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LZF.aac
+text @[Нагиса]
+text Мне очень тревожно.
+text @[Томоя]
+text Ага, в прошлом году у тебя в итоге были только репетиции. Саму встречу ты так и не провела.
+sound LZG.aac
+text @[Нагиса]
+text Да... это правда.
+setvar strS[1001] = "CGNG31A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG31A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LZH.aac
+text @[Нагиса]
+text Но я постараюсь вспомнить, что мы репетировали в прошлом году, и сделать это в этот раз.
+text @[Томоя]
+text Ага. С тех пор прошло много времени, но всё будет хорошо. Ты же репетировала.
+sound LZI.aac
+text @[Нагиса]
+text Да. И... я представлю, что ты наблюдаешь где-то поблизости, пока я это делаю.
+text @[Томоя]
+text Ты так говоришь, будто я умер.
+setvar strS[1001] = "CGNG16A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LZJ.aac
+text @[Нагиса]
+text Я не это имела в виду. Ты в это время будешь усердно работать, Томоя-кун.
+text @[Томоя]
+text Ага.
+setvar strS[1001] = "CGNG18A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG18A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LZK.aac
+text @[Нагиса]
+text Но всё же...
+sound LZL.aac
+text @[Нагиса]
+text Мне бы хотелось, чтобы ты был рядом и смотрел на меня... Томоя-кун.
+sound LZM.aac
+text @[Нагиса]
+text Если бы ты был там, это было бы так успокаивающе... и обнадёживающе...
+sound LZN.aac
+text @[Нагиса]
+text Больше всего это дало бы мне почувствовать, что я могу вложить в это всю душу без остатка...
+text Она начинает рассказывать о своих собственных слабостях.
+text Вся боль, что она чувствовала до этого, будто поднимается в ней, пока она говорит, и её глаза вдруг начинают наполняться слезами.
+text Но она не проливает ни единой слезинки.
+text Сделав всё возможное, чтобы сдержать боль..
+setvar strS[1001] = "CGNG23A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LZO.aac
+text @[Нагиса]
+text Но сейчас я в порядке и одна справлюсь.
+text Она улыбается и произносит эти слова.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s36
+fi
+goto 45
+label s36
+setvar strS[1000] = ""
+label 45
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar intF[1110] = 10
+setvar intF[1112] = 1
+setvar strS[1004] = "SDTB0410"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s37
+fi
+goto 46
+label s37
+setvar strS[1004] = ""
+label 46
+bgload SCLBB00.jpg 45
+delay 60
+setimg SCLBP05.png 5 5
+setimg SCLB0410.png 159 160
+delay 120
+if 0 == 0
+	goto s38
+fi
+goto 47
+label s38
+setvar strS[1000] = "KURO"
+goto 49
+label 47
+if 0 == 1
+	goto s39
+fi
+goto 48
+label s39
+setvar strS[1000] = "SIRO"
+goto 49
+label 48
+setvar strS[1000] = "KURO"
+label 49
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG004A"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s40
+fi
+goto 50
+label s40
+setvar strS[1000] = ""
+label 50
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM14.mp3
+text Сегодня день информационных встреч клубов.
+text Нагиса витает в облаках, едва проснувшись. Может, из-за тревоги и волнения.
+text Она всё ещё не отрывает глаз от своих рукописных заметок к речи, даже когда пора выходить.
+text @[Томоя]
+text Слушай, Нагиса!
+setvar strS[1001] = "CGNG30"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG30.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LZP.aac
+text @[Нагиса]
+text ...
+setvar strS[1001] = "CGNG13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LZQ.aac
+text @[Нагиса]
+text Хм? Ты позвал меня?
+text Она отвечает на моё оклик спустя мгновение.
+text @[Томоя]
+text Тебе пора выходить, а то опоздаешь.
+setvar strS[1001] = "CGNG16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LZR.aac
+text @[Нагиса]
+text Ещё немного. Хочу подольше это заучивать.
+setvar strS[1001] = "CGNG30"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG30.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Она снова смотрит на свои заметки.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Ах. Интересно, всё ли будет в порядке в таком темпе.
+text @[Томоя]
+text Слушай, Нагиса!
+setvar strS[1001] = "CGNG30"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG30.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LZS.aac
+text @[Нагиса]
+text ...
+setvar strS[1001] = "CGNG13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LZT.aac
+text @[Нагиса]
+text Хм? Ты позвал меня?
+text @[Томоя]
+text Хочу сделать с тобой кое-что развратное.
+setvar strS[1001] = "CGNG30"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG30.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LZU.aac
+text @[Нагиса]
+text Прости, можно это отложить до моего возвращения домой?
+text Её взгляд тут же возвращается к заметкам.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Томоя]
+text (Значит, она согласна, если это будет после того, как вернётся домой...?)
+text @[Томоя]
+text (Погоди, она была такой же и в утро репетиции спектакля в прошлом году...)
+text На моём лице невольно появляется кривая улыбка, когда я вспоминаю, что случилось в прошлом году.
+setvar strS[1000] = "BG001"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s41
+fi
+goto 51
+label s41
+setvar strS[1000] = ""
+label 51
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGNG18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LZV.aac
+text @[Нагиса]
+text Ладно, я пошёл.
+text @[Томоя]
+text Хорошо, до вечера.
+sound LZW.aac
+text @[Нагиса]
+text ...
+text @[Томоя]
+text Удачи.
+setvar strS[1001] = "CGNG10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound LZX.aac
+text @[Нагиса]
+text ...Хорошо!
+text Она отвечает с улыбкой перед тем, как уйти.
+if 0 == 0
+	goto s42
+fi
+jump SEEN6800_0_1.scr 52
+label s42
+setvar strS[1000] = "KURO"
+jump SEEN6800_0_1.scr 54
+jump SEEN6800_0_1.scr

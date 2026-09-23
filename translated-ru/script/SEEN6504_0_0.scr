@@ -1,0 +1,1556 @@
+setvar intF[1110] = 4
+setvar intF[1112] = 1
+setvar strS[1004] = "SDTA0504"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1004] = ""
+label 1
+bgload SCLAB00.jpg 45
+delay 60
+setimg SCLAP06.png 5 5
+setimg SCLA0504.png 159 160
+delay 120
+if 0 == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = "KURO"
+goto 4
+label 2
+if 0 == 1
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = "SIRO"
+goto 4
+label 3
+setvar strS[1000] = "KURO"
+label 4
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+music BGM15.mp3
+text Уже третий день, как я живу в доме Фурукавы.
+text Сегодня снова выходной, так что я весь день провожу с Нагисой.
+text Но мы проводим день совсем не так, как обычно проводят время парень с девушкой. Вместо этого мы работаем над одной целью... пьесой.
+setvar strS[1000] = "BG003H"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 5
+label s3
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Нагиса начала писать сценарий пьесы.
+text Ни она, ни я не знаем, как правильно писать сценарий, так что она просто записывает свои реплики на разлинованном листе бумаги.
+text Я сижу рядом с ней и молча наблюдаю, как она бьётся над каждой строчкой, которую заносит на бумагу.
+text Я надеюсь, что это поможет ей что-то вспомнить.
+text Но, глядя на её дилетантские строки, я чувствую, что история всё дальше уходит от моего первоначального впечатления о сказке, и это немного сбивает меня с толку.
+setvar strS[1001] = "CGNG31A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG31A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KEG.aac
+text @[Нагиса]
+text Эм... что-то не так...?
+text Рука Нагисы останавливается, и она смотрит на меня с беспокойством.
+text @[Томоя]
+text Что? Почему ты так говоришь?
+setvar strS[1001] = "CGNG16A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG16A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KEH.aac
+text @[Нагиса]
+text Ты просто стонал, закрыв лицо руками.
+text @[Томоя]
+text А... ничего, не бери в голову.
+sound KEI.aac
+text @[Нагиса]
+text Нет, если что-то не так, пожалуйста, скажи мне. Я хочу это исправить.
+text @[Томоя]
+text Да нет, всё нормально. У тебя красивый почерк.
+setvar strS[1001] = "CGNG31A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG31A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KEJ.aac
+text @[Нагиса]
+text Спасибо большое.
+sound KEK.aac
+text @[Нагиса]
+text Но мне хотелось услышать твои впечатления от истории.
+text @[Томоя]
+text Ну, ты пока только на вступлении. Думаю, пока всё нормально.
+setvar strS[1001] = "CGNG10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KEL.aac
+text @[Нагиса]
+text Понятно. Рада это слышать.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Похоже, этого оказалось достаточно, чтобы её успокоить — она снова поворачивается к листу бумаги и погружается в раздумья.
+text Ну, нет никакой причины, почему у неё непременно должно это хорошо получаться...
+text Может, я ожидал от неё слишком многого.
+if 0 == 0
+	goto s4
+fi
+goto 6
+label s4
+setvar strS[1000] = "KURO"
+goto 8
+label 6
+if 0 == 1
+	goto s5
+fi
+goto 7
+label s5
+setvar strS[1000] = "SIRO"
+goto 8
+label 7
+setvar strS[1000] = "KURO"
+label 8
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG001Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s6
+fi
+goto 9
+label s6
+setvar strS[1000] = ""
+label 9
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Когда наступает вечер, я иду с ней за покупками для ужина и несу её сумки.
+music ~
+if 0 == 0
+	goto s7
+fi
+goto 10
+label s7
+setvar strS[1000] = "KURO"
+goto 12
+label 10
+if 0 == 1
+	goto s8
+fi
+goto 11
+label s8
+setvar strS[1000] = "SIRO"
+goto 12
+label 11
+setvar strS[1000] = "KURO"
+label 12
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG002N1"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s9
+fi
+goto 13
+label s9
+setvar strS[1000] = ""
+label 13
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08A.mp3
+text Затем — время ужина.
+setvar strS[1001] = "CGAK10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KEM.aac
+text @[Акио]
+text Завтра последний день твоих каникул.
+text Старик начинает разговор, глядя на стол с едой, приготовленной Нагисой и Санаэ-сан.
+sound KEN.aac
+text @[Нагиса]
+text Да, верно.
+setvar strS[1001] = "CGAK23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KEO.aac
+text @[Акио]
+text Так вот, у нас с Санаэ появилась идея.
+sound KEP.aac
+text @[Нагиса]
+text Какая?
+setvar strS[1001] = "CGAK13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KEQ.aac
+text @[Акио]
+text Ха. Так я тебе сразу и скажу. Так что — время викторины!
+setvar strS[1001] = "CGAK23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KER.aac
+text @[Акио]
+text Что из перечисленного — это то, что мы с Санаэ придумали для проведения твоего последнего дня каникул?
+sound KES.aac
+text @[Акио]
+text 1: Пикник.
+sound KET.aac
+text @[Акио]
+text 2: Бить баклуши.
+sound KEU.aac
+text @[Акио]
+text 3: С племенем пигмеев.
+setvar strS[1001] = "CGAK13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KEV.aac
+text @[Акио]
+text Так что же это?
+text @[Томоя]
+text (Что за дурацкий вопрос...)
+setvar strS[1001] = "CGNG17A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG17A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KEW.aac
+text @[Нагиса]
+text Все три варианта звучат так похоже, что трудно понять правильный ответ.
+text @[Томоя]
+text Насколько же глупой можно быть?!
+setvar strS[1001] = "CGAK12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KEX.aac
+text @[Акио]
+text Эй! Не смей называть девушку глупой перед её родителями!
+sound KEY.aac
+text @[Акио]
+text Тогда иди сам поиграй с племенем пигмеев.
+setvar strS[1001] = "CGSN11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KEZ.aac
+text @[Санаэ]
+text Дайте нам знать, если там будет весело.
+text @[Томоя]
+text (И-и она туда же...)
+setvar strS[1001] = "CGAK10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KF0.aac
+text @[Акио]
+text Так что, Нагиса. Какой же ответ?
+sound KF1.aac
+text @[Нагиса]
+text Номер один, пикник.
+setvar strS[1001] = "CGAK13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KF2.aac
+text @[Акио]
+text ДЗЫНЬ! Правильный ответ — номер два, бить баклуши.
+setvar strS[1001] = "CGAK11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KF3.aac
+text @[Акио]
+text Ладно, тогда завтра пойдём все вместе бить баклуши!
+setvar strS[1001] = "CGSN10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KF4.aac
+text @[Санаэ]
+text Ты можешь заняться этим сам, Акио-сан.
+setvar strS[1001] = "CGSN11H"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN11H.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KF5.aac
+text @[Санаэ]
+text Нагиса, пойдём на пикник.
+setvar strS[1001] = "CGAK14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KF6.aac
+text @[Акио]
+text Ай, я соврал! Ты права! Значит, пикник!
+setvar strS[1001] = "CGNG25A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG25A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KF7.aac
+text @[Нагиса]
+text Правда? Не могу дождаться!
+setvar strS[1001] = "CGNG10AZ"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG10AZ.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KF8.aac
+text @[Нагиса]
+text Томоя-кун, ничего, если мы на один денёк забудем про пьесу, чтобы просто повеселиться?
+text Нагиса задаёт мне этот вопрос.
+text @[Томоя]
+text Да, думаю, это нормально.
+setvar strS[1001] = "CGNG23A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGNG23A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KF9.aac
+text @[Нагиса]
+text Слава богу. Давайте завтра как следует повеселимся!
+setvar strS[1001] = "CGAK13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KFA.aac
+text @[Акио]
+text Тьфу, ладно. Полагаю, он тоже может пойти.
+setvar strS[1001] = "CGSN11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KFB.aac
+text @[Санаэ]
+text Не переживай. Мы с самого начала планировали взять и тебя, Оказаки-сан.
+text Меня снова охватывает то щекочущее, смущённое чувство.
+text Эта семья и правда очень дружная.
+music ~
+if 0 == 0
+	goto s10
+fi
+goto 14
+label s10
+setvar strS[1000] = "KURO"
+goto 16
+label 14
+if 0 == 1
+	goto s11
+fi
+goto 15
+label s11
+setvar strS[1000] = "SIRO"
+goto 16
+label 15
+setvar strS[1000] = "KURO"
+label 16
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG005N1"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s12
+fi
+goto 17
+label s12
+setvar strS[1000] = ""
+label 17
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08B.mp3
+text Я слышу стук в дверь.
+sound KFC.aac
+text @[Акио]
+text Открывай, пацан.
+sound KFD.aac
+text @[Акио]
+text Погоди-ка. Это мой дом, мне не нужно твоё разрешение.
+text Я и слова не сказал, а он уже распахивает дверь.
+setvar strS[1001] = "CGAK20P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK20P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KFE.aac
+text @[Акио]
+text Эй, пацан.
+text @[Томоя]
+text Что такое, старик?
+setvar strS[1001] = "CGAK19P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK19P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KFF.aac
+text @[Акио]
+text Эй, хватит уже с этим «стариком».
+text @[Томоя]
+text Перестану, если ты перестанешь называть меня «пацаном».
+setvar strS[1001] = "CGAK14P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK14P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KFG.aac
+text @[Акио]
+text Ты реально наглый, знаешь? Так со мной разговаривать, когда ты ещё такой молодой, что там у тебя внизу едва что-то выросло.
+text ...Насколько же он был поздним цветочком?
+setvar strS[1001] = "CGAK13P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK13P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KFH.aac
+text @[Акио]
+text В общем, слушай.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Он с грохотом плюхается на пол прямо передо мной.
+setvar strS[1001] = "CGAK13P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK13P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KFI.aac
+text @[Акио]
+text Тебе нужно держать в секрете от Нагисы то, что я собираюсь сказать. Понял?
+text @[Томоя]
+text Ага.
+sound KFJ.aac
+text @[Акио]
+text И Санаэ тоже не говори, что мы вообще о чём-то разговаривали. Не хочу новых проблем.
+text @[Томоя]
+text Ладно.
+setvar strS[1001] = "CGAK19P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK19P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KFK.aac
+text @[Акио]
+text Эх... сейчас бы чайку.
+setvar strS[1001] = "CGAK11P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK11P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KFL.aac
+text @[Акио]
+text Эй, Санаэ!! Завари чай!!
+setvar strS[1001] = "CGAK12P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGAK12P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KFM.aac
+text @[Акио]
+text Погоди-ка, я же только что сказал держать эту встречу в секрете от неё!
+sound KFN.aac
+text @[Акио]
+text Меняем локацию, пацан.
+sound KFO.aac
+text @[Акио]
+text Поторапливайся, пока Санаэ не пришла!
+setvar strS[1001] = "CGAK11P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK11P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KFP.aac
+text @[Акио]
+text Что ты будешь делать, если она нас найдёт?!
+text @[Томоя]
+text (С этим мужиком точно что-то не так в голове...)
+setvar strS[1000] = "BG006N1"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s13
+fi
+goto 18
+label s13
+setvar strS[1000] = ""
+label 18
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я следую за стариком из своей комнаты.
+setvar strS[1001] = "CGAK11P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK11P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KFQ.aac
+text @[Акио]
+text Идём на улицу, пацан.
+setvar strS[1000] = "BG001N2"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s14
+fi
+goto 19
+label s14
+setvar strS[1000] = ""
+label 19
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGAK13P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK13P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KFR.aac
+text @[Акио]
+text Фух... Едва обошлось. Здесь должно быть безопасно.
+text @[Томоя]
+text Ага, наверное.
+text Я нехотя соглашаюсь с ним.
+setvar strS[1001] = "CGAK14P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK14P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KFS.aac
+text @[Акио]
+text Так вот, пацан. По правде говоря...
+sound KFT.aac
+text @[Голос]
+text Вот ваш чай.
+setvar strS[1001] = "CGAK13P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK13P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KFU.aac
+text @[Акио]
+text Ой, Санаэ. Спасибо!
+setvar strS[1001] = "CGSN10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KFV.aac
+text @[Санаэ]
+text Я и для тебя тоже заварила, Оказаки-сан. Пожалуйста, будь осторожен, горячо.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я беру у Санаэ-сан чашку с дымящимся горячим чаем.
+text *Глоток*
+setvar strS[1001] = "CGAK23P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK23P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KFW.aac
+text @[Акио]
+text Фух, ничто так не успокаивает, как чашка чая. Как будто японцев специально создали для того, чтобы пить чай.
+setvar strS[1001] = "CGAK13P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK13P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KFX.aac
+text @[Акио]
+text А теперь слушай. Хочу ещё раз это подчеркнуть. Держи это в секрете от Нагисы и Санаэ.
+setvar strS[1001] = "CGSN14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KFY.aac
+text @[Санаэ]
+text А как же я?
+setvar strS[1001] = "CGAK15P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGAK15P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KFZ.aac
+text @[Акио]
+text Погоди-ка, она же стоит прямо рядом со мнооой!!
+setvar strS[1001] = "CGSN11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KG0.aac
+text @[Санаэ]
+text Я просто подожду здесь, пока вы допьёте чай. Пожалуйста, не обращайте на меня внимания.
+setvar strS[1001] = "CGAK12P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK12P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KG1.aac
+text @[Акио]
+text Чёрт. Допивай уже, пацан.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Глоток*
+text Странная компания взрослых стоит перед домом и пьёт чай.
+setvar strS[1001] = "CGAK13P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK13P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KG2.aac
+text @[Акио]
+text Фух. Теперь забери это, Санаэ.
+setvar strS[1001] = "CGSN10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSN10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KG3.aac
+text @[Санаэ]
+text Хотите ещё чашечку?
+sound KG4.aac
+text @[Акио]
+text С нас хватит.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Санаэ-сан ставит обе наши чашки на поднос и уходит обратно в дом.
+setvar strS[1001] = "CGAK14P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK14P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KG5.aac
+text @[Акио]
+text Теперь можем спокойно поговорить.
+text @[Томоя]
+text Этой проблемы бы не было, если бы ты не позвал Санаэ-сан.
+setvar strS[1001] = "CGAK13P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK13P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KG6.aac
+text @[Акио]
+text Думаешь, я бы сделал что-то настолько глупое, глупыш?
+setvar strS[1001] = "CGAK19P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK19P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KG7.aac
+text @[Акио]
+text Но почему мы вообще должны стоять на улице, пока разговариваем?
+sound KG8.aac
+text @[Акио]
+text Идём обратно, пацан.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Мы возвращаемся в дом.
+setvar strS[1000] = "BG005N1"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s15
+fi
+goto 20
+label s15
+setvar strS[1000] = ""
+label 20
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGAK20P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK20P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KG9.aac
+text @[Акио]
+text Так вот. Пацан.
+text Он наконец начинает говорить.
+sound KGA.aac
+text @[Акио]
+text Что там в итоге вышло с той штукой?
+text @[Томоя]
+text «Той штукой»? Какой ещё штукой?
+setvar strS[1001] = "CGAK14P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK14P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KGB.aac
+text @[Акио]
+text Да той самой штукой. Неужто сам не можешь сообразить, глупыш?
+sound KGC.aac
+text @[Акио]
+text Ты её искал.
+text @[Томоя]
+text А, это?
+sound KGD.aac
+text @[Акио]
+text Ага. Что в итоге с этим стало?
+text @[Томоя]
+text Да ничего особенного.
+setvar strS[1001] = "CGAK13P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK13P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KGE.aac
+text @[Акио]
+text Понятно...
+sound KGF.aac
+text @[Акио]
+text Не то чтобы мне было любопытно или ещё что, знаешь ли.
+sound KGG.aac
+text @[Акио]
+text Меня совершенно точно не интересует горшок, которым Нагиса пользовалась в детстве.
+text @[Томоя]
+text Эм, меня тоже?
+setvar strS[1001] = "CGAK15P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGAK15P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KGH.aac
+text @[Акио]
+text Ты же весь дом перевернул, разыскивая его!
+text @[Томоя]
+text Да я бы ничего не переворачивал, разыскивая детский горшок!
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KGI.aac
+text @[Голос]
+text Простите, вы двое. Уже поздно, не могли бы вы говорить потише?
+text Голос Санаэ-сан доносится из коридора.
+text Похоже, мы вели очень громкую секретную беседу.
+setvar strS[1001] = "CGAK13P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK13P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KGJ.aac
+text @[Акио]
+text Тц. Ну, ладно. Забудь пока про горшок.
+text @[Томоя]
+text Пока? Да меня это вообще ни капли не интересует с самого начала.
+setvar strS[1001] = "CGAK19P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK19P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KGK.aac
+text @[Акио]
+text Ну да, конечно. Заткнись уже насчёт этого.
+text @[Томоя]
+text Нет!
+sound KGL.aac
+text @[Акио]
+text Ладно, тогда как насчёт такого? Назовём то, чем ты занимался, «Кодовое имя: Горшок».
+setvar strS[1001] = "CGAK13P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK13P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KGM.aac
+text @[Акио]
+text Тогда это как бы про горшок, но и как бы не про горшок.
+text @[Томоя]
+text Мне на данный момент серьёзно уже всё равно, как это назвать.
+setvar strS[1001] = "CGAK20P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK20P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KGN.aac
+text @[Акио]
+text Понятно. Ладно, тогда продолжим.
+sound KGO.aac
+text @[Акио]
+text Мне на самом деле совершенно всё равно, искал ты горшок или нет.
+text Похоже, он застрял на этой мысли...
+setvar strS[1001] = "CGAK13P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK13P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KGP.aac
+text @[Акио]
+text Но, видишь ли, было бы проблемой, если бы ты нашёл кое-что другое.
+text @[Томоя]
+text Это что-то другое находится в кладовке?
+sound KGQ.aac
+text @[Акио]
+text Ага. Именно так.
+sound KGR.aac
+text @[Акио]
+text И именно это ищет Нагиса.
+text @[Томоя]
+text Что это?
+setvar strS[1001] = "CGAK20P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK20P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KGS.aac
+text @[Акио]
+text Хочешь узнать?
+text @[Томоя]
+text Ничего, если не хочешь говорить.
+setvar strS[1001] = "CGAK13P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK13P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KGT.aac
+text @[Акио]
+text Эх, ладно. Скажу.
+sound KGU.aac
+text @[Акио]
+text Не хочу, чтобы ты думал, будто я скрываю что-то вроде тайного тайника с десятью тысячами порножурналов, раз не говорю тебе, что это на самом деле.
+text Да кто в здравом уме вообще такое бы предположил?
+setvar strS[1001] = "CGAK11P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK11P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KGV.aac
+text @[Акио]
+text А теперь смотри внимательно, потому что я скажу это только раз.
+music ~
+text Погоди, что?
+sound KGW.aac
+text @[Акио]
+text То, что спрятано в глубине этой кладовки...
+music BGM08D.mp3
+setvar strS[1001] = "CGAK26P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK26P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KGX.aac
+text @[Акио]
+text ...это моё прошлое и прошлое Санаэ.
+sound KGY.aac
+text @[Акио]
+text Старые фотографии, видеокассеты и дневники.
+text Его ответ на удивление прост.
+text @[Томоя]
+text А что с ними не так?
+setvar strS[1001] = "CGAK14P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK14P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KGZ.aac
+text @[Акио]
+text В них...
+sound KH0.aac
+text @[Акио]
+text ...ты можешь найти нас в те времена, когда мы ещё гнались за своими мечтами.
+setvar strS[1001] = "CGAK22P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK22P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KH1.aac
+text @[Акио]
+text Классная фраза вышла, правда?
+text Он выглядит таким довольным собой. Вот же дурак.
+setvar strS[1001] = "CGAK13P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK13P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KH2.aac
+text @[Акио]
+text Ты в курсе, что Нагиса чуть не умерла, когда была маленькой, да?
+text @[Томоя]
+text Нет, не знаю...
+setvar strS[1001] = "CGAK19P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK19P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KH3.aac
+text @[Акио]
+text Что, ты не слышал?
+text @[Томоя]
+text Я знаю, что она хрупкая, вот и всё.
+setvar strS[1001] = "CGAK26P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK26P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KH4.aac
+text @[Акио]
+text Ага. С того самого дня...
+text Старик опускает взгляд в пол, глаза его стекленеют.
+text Он готовится рассказать печальную историю.
+music ~
+text *Пуф*
+sound KH5.aac
+text @[Акио]
+text Извини, я просто взял и пёрнул.
+text @[Томоя]
+text ...
+music BGM01.mp3
+setvar strS[1001] = "CGAK24P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK24P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KH6.aac
+text @[Акио]
+text Это было очень грустное событие.
+text Он насильно тащит тему в мрачное русло, пока в воздухе разносится его метеоризм.
+sound KH7.aac
+text @[Акио]
+text Я только что сказал, что Нагиса чуть не умерла, но это, наверное, не совсем точно.
+text @[Томоя]
+text Что ты имеешь в виду?
+setvar strS[1001] = "CGAK20P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK20P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KH8.aac
+text @[Акио]
+text Ну, это уже другая история. Давай пока отложим это.
+text @[Томоя]
+text ...
+setvar strS[1001] = "CGAK13P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK13P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KH9.aac
+text @[Акио]
+text В общем, жизнь Нагисы была в опасности.
+sound KHA.aac
+text @[Акио]
+text И это была наша с Санаэ вина.
+setvar strS[1001] = "CGAK20P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK20P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KHB.aac
+text @[Акио]
+text Думаю, это было наказанием от Бога.
+sound KHC.aac
+text @[Акио]
+text За то, что мы бросили дочь на произвол судьбы, пока сами гнались за собственными мечтами.
+sound KHD.aac
+text @[Акио]
+text Он собирался забрать её у нас.
+setvar strS[1001] = "CGAK24P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK24P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KHE.aac
+text @[Акио]
+text Потому что мы бы не поняли, насколько она драгоценна, пока не потеряли бы её.
+sound KHF.aac
+text @[Акио]
+text Но потом, когда Нагиса снова открыла глаза...
+setvar strS[1001] = "CGAK20P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK20P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KHG.aac
+text @[Акио]
+text Мы с Санаэ дали клятву.
+sound KHH.aac
+text @[Акио]
+text Что никогда не покинем её.
+text @[Томоя]
+text ...
+setvar strS[1001] = "CGAK24P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK24P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KHI.aac
+text @[Акио]
+text Мы никогда прежде не пробовали печь хлеб. Это оказалось непросто.
+sound KHJ.aac
+text @[Акио]
+text Но Санаэ сказала, что уверена в своих силах, когда дело касается выпечки.
+setvar strS[1001] = "CGAK23P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK23P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KHK.aac
+text @[Акио]
+text Когда она реально попробовала, ну, ты сам видел, что вышло. Так что мне пришлось учиться печь с самых азов.
+sound KHL.aac
+text @[Акио]
+text ...Но это было весело, так что я не жаловался.
+text Многие ли зашли бы так далеко?
+text Или, может, я всё это время недооценивал, что на самом деле значит семья.
+text Либо так, либо эта семья просто особенная.
+text Понятия не имею.
+setvar strS[1001] = "CGAK20P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK20P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KHM.aac
+text @[Акио]
+text Мы не хотим, чтобы она чувствовала себя обязанной нам.
+sound KHN.aac
+text @[Акио]
+text Зная её, она, наверное, подумает что-то вроде...
+sound KHO.aac
+text @[Акио]
+text ...что это была её вина, что мы с Санаэ отказались от своих мечт.
+setvar strS[1001] = "CGAK19P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK19P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KHP.aac
+text @[Акио]
+text Но она начинает кое-что подозревать.
+sound KHQ.aac
+text @[Акио]
+text Она весьма проницательна в подобных вещах.
+setvar strS[1001] = "CGAK13P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK13P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KHR.aac
+text @[Акио]
+text Вот почему я спрятал все наши памятные вещи в глубине кладовки.
+sound KHS.aac
+text @[Акио]
+text Мне бы стоило просто всё это сжечь, но...
+setvar strS[1001] = "CGAK24P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK24P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KHT.aac
+text @[Акио]
+text Санаэ была бы убита горем, если бы я так сделал.
+text Он тяжело вздыхает.
+setvar strS[1001] = "CGAK20P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK20P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KHU.aac
+text @[Акио]
+text Так что, теперь понимаешь? Вот как обстоят дела.
+sound KHV.aac
+text @[Акио]
+text Я помогу тебе найти то, что ты ищешь.
+sound KHW.aac
+text @[Акио]
+text Так что просто не впутывай в это Нагису.
+setvar strS[1001] = "CGAK24P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK24P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KHX.aac
+text @[Акио]
+text Понял?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Старик встаёт, закончив разговор.
+setvar strS[1001] = "CGAK23P"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGAK23P.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound KHY.aac
+text @[Акио]
+text Увидимся, пацан. Давай завтра повеселимся.
+text @[Томоя]
+text Само собой, старик.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Он издаёт раздражённый звук и уходит из комнаты.
+text Теперь я один.
+text @[Томоя]
+text ...
+text Мне немного не по себе, может быть, из-за того, что я только что услышал.
+text Такой посторонний, как я, теперь в доме Фурукавы.
+text Я не могу смириться с тем, что вторгаюсь в их семейное время.
+text Как я могу не чувствовать себя каким-то бестактным чужаком?
+text @[Томоя]
+text (Может, мне стоит отказаться идти завтра...)
+text Я хочу, чтобы они насладились завтрашним днём как семья. Без необходимости беспокоиться о посторонних.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s16
+fi
+goto 21
+label s16
+setvar strS[1000] = ""
+label 21
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 98
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+jump SEEN6505_0_0.scr

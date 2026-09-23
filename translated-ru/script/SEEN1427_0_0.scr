@@ -529,7 +529,7 @@ text Даже {$lnmA} покинул(а) комнату.
 music ~
 text ......
 text ...Новое молчание охватывает всю комнату, как затишье после бури.
-text *Skritch* ... *Skritch* ...
+text *Скрип* ... *Скрип* ...
 music BGM15.mp3
 text Слышны лишь звуки, как Фуко работает над своей резьбой.
 text @[Томоя]
@@ -776,7 +776,7 @@ goto 13
 label s9
 text Хотя я хочу вернуть это, но оно уже не в моих владениях...
 label 13
-choice Tell her the truth|Don't tell her the truth
+choice Сказать ей правду|Не говорить ей правду
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -1001,7 +1001,7 @@ text @[Фуко]
 text Это невероятно!
 text Похоже, я сильно её разозлил.
 label 19
-choice Slowly pinch her nose|Just stay still
+choice Медленно ущипнуть её за нос|Просто оставаться неподвижным
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -1103,7 +1103,7 @@ if intF[1113] == 1
 	fi
 fi
 text Фуко достаёт из тканого мешка деревянный куб и сразу же начинает над ним работать.
-text *skritch* *skritch*
+text *скрип* *скрип*
 text ......
 setvar strS[1001] = "CGNG23A"
 setvar intF[1113] = intF[1112]
@@ -1523,7 +1523,7 @@ text Ибуки‑сэнсэй сможет поговорить с Фу‑тя�
 sound 2RO.aac
 text @[{$lnmA}]
 text ...и Фу‑тян сможет поздравить свою сестру.
-choice I guess so...|No...
+choice Наверное...|Нет...
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -1653,22 +1653,22 @@ text @[Томоя]
 text Что ты хочешь сказать?
 sound 2S2.aac
 text @[Фуко]
-text Because Fuko cannot meet her...
+text Потому что Фуко не может встретиться с ней...
 sound 2S3.aac
 text @[Фуко]
-text Fuko cannot make the words reach her...
+text Фуко не может донести до неё слова...
 sound 2S4.aac
 text @[Фуко]
-text Fuko cannot say "congratulations" to her...
+text Фуко не может сказать ей «поздравляю»...
 sound 2S5.aac
 text @[Фуко]
-text That's why Fuko is here...
+text Вот почему Фуко здесь...
 text @[Томоя]
 text ...
-text I wonder if what she's saying is true...
-text Do things absolutely have to be that way...?
+text Интересно, правда ли то, что она говорит...
+text Разве всё обязательно должно быть именно так...?
 text @[Томоя]
-text If that's the case, how about we tell her that in your place? No good?
+text Если так, может, мы скажем ей это вместо тебя? Не пойдёт?
 setvar strS[1001] = "CGFU30"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -1680,14 +1680,14 @@ if intF[1113] == 1
 fi
 sound 2S6.aac
 text @[Фуко]
-text That's like cheating. It won't work.
+text Это как обман. Не получится.
 text @[Томоя]
-text It's not cheating.
+text Это не обман.
 sound 2S7.aac
 text @[Фуко]
-text It is because Fuko won't be there.
+text Потому что Фуко там не будет.
 text @[Томоя]
-text But you will, won't you?
+text Но ты же будешь, разве нет?
 setvar strS[1001] = "NONE"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -1696,12 +1696,12 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text Not a single word comes back from her.
-text *Skritch* ... *Skritch* ...
-text Fuko is moving the knife in silence again.
+text От неё не приходит в ответ ни единого слова.
+text *Скрип* ... *Скрип* ...
+text Фуко снова молча двигает ножом.
 sound 2S8.aac
 text @[{$lnmA}]
-text Fu-chan...
+text Фу-тян...
 goto 31
 label 28
 if intF[1089] == 1
@@ -1710,8 +1710,8 @@ fi
 goto 31
 label s22
 text @[Томоя]
-text No...
-text I deny it vaguely.
+text Нет...
+text Я неопределённо отрицаю это.
 setvar strS[1001] = "CGNG16A"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -1971,7 +1971,7 @@ text @[{$lnmA}]
 text Это не обман.
 sound 2T6.aac
 text @[Фуко]
-text It is because Fuko won't be there.
+text Потому что Фуко там не будет.
 setvar strS[1001] = "CGNG18A"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -1984,7 +1984,7 @@ fi
 sound 2T7.aac
 text @[{$lnmA}]
 text ...
-text Fuko's words have silenced {$lnmA}.
+text Слова Фуко заставили {$lnmA} замолчать.
 setvar strS[1001] = "NONE"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -1993,24 +1993,24 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text *Skritch* ... *Skritch* ...
-text Fuko is moving the knife in silence again.
+text *Скрип* ... *Скрип* ...
+text Фуко снова молча двигает ножом.
 sound 2T8.aac
 text @[{$lnmA}]
-text Fu-chan...
+text Фу-тян...
 label 31
-text We don't understand anything.
-text Just what her existence really means...
-text Maybe someday... she will suddenly disappear from our sight...
-text If that's the case...
-text The thought flashes by, leaving behind a trail of sadness in me.
+text Мы ничего не понимаем.
+text Что на самом деле означает её существование...
+text Может быть, однажды... она вдруг исчезнет из нашего поля зрения...
+text Если это так...
+text Эта мысль мелькает, оставляя во мне след печали.
 music ~
 sound 2T9.aac
 text @[Голос]
-text Wah.
-text A voice from behind.
+text Вах.
+text Голос сзади.
 music BGM08C.mp3
-text Sanae-san has returned.
+text Санаэ-сан вернулась.
 setvar strS[1001] = "CGSN11HE"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -2022,11 +2022,11 @@ if intF[1113] == 1
 fi
 sound 2TA.aac
 text @[Санаэ]
-text They look so pretty lined up like this.
+text Они так красиво смотрятся, выстроенные в ряд.
 text @[Томоя]
-text (There you go again. She must still be thinking that they're stars...)
+text (Ну вот, опять. Она наверняка всё ещё думает, что это звёзды...)
 text @[Томоя]
-text (Ignorance can be such a bliss...)
+text (Неведение — это порой настоящее блаженство...)
 setvar strS[1001] = "CGSN12HE"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -2038,9 +2038,9 @@ if intF[1113] == 1
 fi
 sound 2TB.aac
 text @[Санаэ]
-text They must be starfish!
+text Должно быть, это морские звёзды!
 text @[Томоя]
-text Pfff!!
+text Пффф!!
 setvar strS[1001] = "CGSN10HE"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -2052,7 +2052,7 @@ if intF[1113] == 1
 fi
 sound 2TC.aac
 text @[Санаэ]
-text Okazaki-san, please don't get too excited when drinking like that.
+text Окадзаки-сан, не стоит так волноваться, когда пьёшь.
 text @[Томоя]
 text (Она меня поймала. Вот сила крови, всё в порядке... Они, без сомнения, мать и дочь...)
 setvar strS[1001] = "CGFU12A"
@@ -2221,7 +2221,7 @@ fi
 sound 2TZ.aac
 text @[Фуко]
 text ...Фуко дома, потому что её оценки по искусству были не слишком хорошими.
-text *fwump*
+text *Бух*
 text Моё лицо прильнуло к полу.
 text @[Томоя]
 text Мы же здесь не говорим о твоих оценках!
@@ -2256,7 +2256,7 @@ fi
 sound 2U3.aac
 text @[Фуко]
 text ...очень хороша в кулинарии.
-text *fwump*
+text *Бух*
 text @[Томоя]
 text Это не имеет никакого отношения к твоим оценкам по рисованию!
 setvar strS[1001] = "CGSN12HE"
@@ -2371,7 +2371,7 @@ if intF[1113] == 1
 fi
 sound 2U9.aac
 text @[Санаэ]
-text Итак, имя твоей сестры — Исоґай Тагучи?
+text Итак, имя твоей сестры — Исогай Тагучи?
 text @[Томоя]
 text Разве тебе не кажется странным?!
 setvar strS[1001] = "CGFU32"

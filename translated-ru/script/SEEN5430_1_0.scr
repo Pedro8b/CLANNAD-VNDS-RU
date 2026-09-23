@@ -1,1 +1,1129 @@
-��$
+setvar strS[1000] = "FGYK02"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s130
+fi
+goto 154
+label s130
+setvar strS[1000] = ""
+label 154
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 55
+music BGM17A.mp3
+text ...Вот, значит, как.
+sound GAW.aac
+text @[Миядзава]
+text Меня поддерживает столько друзей.
+text У меня такое чувство, будто она вложила в эти немногие слова всё сразу.
+text Всю жизнь, которой она была верна до сегодняшнего дня.
+text @[Томоя]
+text Понятно... значит, теперь с тобой всё в порядке.
+sound GAX.aac
+text @[Миядзава]
+text Да. Если бы это было не так, я бы не знала, как извиниться перед всеми.
+sound GAY.aac
+text @[Миядзава]
+text Наверное, я самый везучий человек на свете — меня поддерживает столько людей.
+text @[Томоя]
+text Пожалуй...
+text Поддерживать других, быть поддержанным самому...
+text Всё это ходит по кругу, снова и снова...
+text В какой-то момент вокруг неё начало собираться всё больше людей...
+text @[Томоя]
+text (Наверное, я тоже один из них...)
+setvar strS[1000] = "BG052"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s131
+fi
+goto 155
+label s131
+setvar strS[1000] = ""
+label 155
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+if intG[6] == 0
+	goto s132
+fi
+goto 158
+label s132
+text Я щурюсь от яркого солнца.
+text И вот, прямо с неба, в этот самый миг... опускается белый свет, паря у меня над головой.
+text Затем он просто зависает там, будто наблюдая за Миядзавой и её друзьями.
+text Я пытаюсь протянуть к нему руку.
+if intG[30] == 0
+	goto s133
+fi
+goto 157
+label s133
+gsetvar intG[30] = 1
+gsetvar intG[0] + 1
+bgload SHGET00.jpg 45
+setimg SHGET26.png 119 -11
+delay 1
+bgload SHGET00.jpg
+setimg SHGET26.png 119 14
+delay 1
+bgload SHGET00.jpg
+setimg SHGET26.png 119 39
+setimg SHGET32.png 120 30
+delay 1
+bgload SHGET00.jpg
+setimg SHGET26.png 119 64
+setimg SHGET32.png 120 25
+delay 1
+bgload SHGET00.jpg
+setimg SHGET26.png 119 89
+setimg SHGET23.png 123 25
+setimg SHGET32.png 120 80
+delay 1
+bgload SHGET00.jpg
+setimg SHGET26.png 119 114
+setimg SHGET23.png 123 15
+setimg SHGET32.png 120 75
+setimg SHGET25.png 123 100
+delay 1
+bgload SHGET00.jpg
+setimg SHGET26.png 119 139
+setimg SHGET23.png 123 10
+setimg SHGET32.png 120 70
+setimg SHGET25.png 123 95
+delay 1
+bgload SIRO.jpg 30
+sound I.aac
+delay 30
+setvar strS[1000] = "BG052"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s134
+fi
+goto 156
+label s134
+setvar strS[1000] = ""
+label 156
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+label 157
+text Шарик света мягко приземляется на мою руку и мгновенно исчезает, будто впитавшись в ладонь.
+text Оттуда по всему телу разливается тёплое ощущение.
+text Не знаю почему, но мне кажется, что именно так сейчас чувствует себя она.
+label 158
+setvar strS[1001] = "CGYK15A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK15A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GAZ.aac
+text @[Миядзава]
+text Простите. Наверное, я испортила настроение.
+text Но никто ничего не отвечает.
+text Все просто стоят, держа в руках по цветку.
+text Не знаю, какое воспоминание сейчас всплывает у них в голове.
+text Но у меня с ними есть кое-что общее.
+text @[Томоя]
+text В таком случае, хочешь, я покажу заклинание, которое всех взбодрит?
+text Мне в голову приходит идея.
+setvar strS[1001] = "CGYK16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GB0.aac
+text @[Миядзава]
+text А? Разве бывает такое заклинание?
+text @[Томоя]
+text Могу гарантировать, все тут поднимут шум.
+setvar strS[1001] = "CGYK11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GB1.aac
+text @[Миядзава]
+text Ах, звучит как раз то, что нам сейчас нужно. Пожалуйста, попробуй.
+text @[Томоя]
+text Тогда, прошу прощения...
+setvar strS[1000] = "FGYK03"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s135
+fi
+goto 159
+label s135
+setvar strS[1000] = ""
+label 159
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 98
+text Я привлекаю к себе её стройное тело руками... и прижимаюсь губами к её губам.
+text Уже совсем скоро... разразится неизбежная война.
+text Эта мысль проносится у меня в голове.
+text *Вздох*
+text Влюбить в себя эту девушку...
+music ~
+text @Это будет по-настоящему, буквально... самоубийственная миссия.
+delay 264
+cleartext
+music BGM33.mp3
+bgload SIRO.jpg 1186
+bgload SR_NAME3_0.jpg 45
+bgload SR_NAME3_1.jpg 45
+bgload SR_NAME3_2.jpg 45
+bgload SR_NAME3_3.jpg 45
+bgload SR_NAME3_4.jpg 45
+bgload SR_NAME3_5.jpg 45
+bgload SR_NAME3_6.jpg 45
+bgload SR_NAME3_7.jpg 45
+bgload SR_NAME3_8.jpg 45
+bgload SR_NAME3_9.jpg 45
+bgload SR_NAME3_10.jpg 45
+bgload SR_NAME3_11.jpg 45
+bgload SR_NAME3_12.jpg 45
+bgload SR_NAME3_13.jpg 45
+bgload SR_NAME3_14.jpg 45
+bgload SR_NAME3_15.jpg 45
+bgload SR_NAME3_16.jpg 45
+bgload SR_NAME3_17.jpg 45
+bgload SR_NAME3_18.jpg 45
+bgload SR_NAME3_19.jpg 45
+bgload SR_NAME3_20.jpg 45
+bgload SR_NAME3_21.jpg 45
+bgload SR_NAME3_22.jpg 45
+bgload SR_NAME3_23.jpg 45
+bgload SR_NAME3_24.jpg 45
+bgload SR_NAME3_25.jpg 45
+bgload SR_NAME3_26.jpg 45
+bgload SR_NAME3_27.jpg 45
+bgload SR_NAME3_28.jpg 45
+bgload SR_NAME3_29.jpg 45
+bgload SR_NAME3_30.jpg 45
+bgload SR_NAME3_31.jpg 45
+bgload SR_NAME3_32.jpg 45
+bgload SR_NAME3_33.jpg 45
+bgload SR_NAME3_34.jpg 45
+bgload SR_NAME3_35.jpg 45
+bgload SR_NAME3_36.jpg 45
+bgload SR_NAME3_37.jpg 45
+bgload SR_NAME3_38.jpg 45
+bgload SR_NAME3_39.jpg 45
+bgload SR_NAME3_40.jpg 45
+bgload SR_NAME3_41.jpg 45
+bgload SR_NAME3_42.jpg 45
+bgload SR_NAME3_43.jpg 45
+bgload SR_NAME3_44.jpg 45
+bgload SR_NAME3_45.jpg 45
+bgload SR_NAME3_46.jpg 45
+bgload SR_NAME3_47.jpg 45
+bgload SR_NAME3_48.jpg 45
+bgload SR_NAME3_49.jpg 45
+bgload SR_NAME3_50.jpg 45
+bgload SR_NAME3_51.jpg 45
+bgload SR_NAME3_52.jpg 45
+bgload SR_NAME3_53.jpg 45
+bgload SR_NAME3_54.jpg 45
+bgload SR_NAME3_55.jpg 45
+bgload SR_NAME3_56.jpg 45
+bgload SR_NAME3_57.jpg 45
+bgload SR_NAME3_58.jpg 45
+bgload SR_NAME3_59.jpg 45
+bgload SR_NAME3_60.jpg 45
+bgload SR_NAME3_61.jpg 45
+bgload SR_NAME3_62.jpg 45
+bgload SR_NAME3_63.jpg 45
+bgload SR_NAME3_64.jpg 45
+bgload SR_NAME3_65.jpg 45
+bgload SR_NAME3_66.jpg 45
+bgload SR_NAME3_67.jpg 45
+bgload SR_NAME3_68.jpg 45
+bgload SR_NAME3_69.jpg 45
+bgload SR_NAME3_70.jpg 45
+bgload SR_NAME3_71.jpg 45
+bgload SR_NAME3_72.jpg 45
+bgload SR_NAME3_73.jpg 45
+bgload SR_NAME3_74.jpg 45
+bgload SR_NAME3_75.jpg 45
+bgload SR_NAME3_76.jpg 45
+bgload SR_NAME3_77.jpg 45
+bgload SR_NAME3_78.jpg 45
+bgload SR_NAME3_79.jpg 45
+bgload SR_NAME3_80.jpg 45
+bgload SR_NAME3_81.jpg 45
+bgload SR_NAME3_82.jpg 45
+bgload SR_NAME3_83.jpg 45
+bgload SR_NAME3_84.jpg 45
+bgload SR_NAME3_85.jpg 45
+bgload SR_NAME3_86.jpg 45
+bgload SR_NAME3_87.jpg 45
+bgload SR_NAME3_88.jpg 45
+bgload SR_NAME3_89.jpg 45
+bgload SR_NAME3_90.jpg 45
+bgload SR_NAME3_91.jpg 45
+bgload SR_NAME3_92.jpg 45
+bgload SR_NAME3_93.jpg 45
+bgload SR_NAME3_94.jpg 45
+bgload SR_NAME3_95.jpg 45
+bgload SR_NAME3_96.jpg 45
+bgload SR_NAME3_97.jpg 45
+bgload SR_NAME3_98.jpg 45
+bgload SR_NAME3_99.jpg 45
+bgload SR_NAME3_100.jpg 45
+bgload SR_NAME3_101.jpg 45
+bgload SR_NAME3_102.jpg 45
+bgload SR_NAME3_103.jpg 45
+bgload SR_NAME3_104.jpg 45
+bgload SR_NAME3_105.jpg 45
+bgload SR_NAME3_106.jpg 45
+bgload SR_NAME3_107.jpg 45
+bgload SR_NAME3_108.jpg 45
+bgload SR_NAME3_109.jpg 45
+bgload SR_NAME3_110.jpg 45
+bgload SR_NAME3_111.jpg 45
+bgload SR_NAME3_112.jpg 45
+bgload SR_NAME3_113.jpg 45
+bgload SR_NAME3_114.jpg 45
+bgload SR_NAME3_115.jpg 45
+bgload SR_NAME3_116.jpg 45
+bgload SR_NAME3_117.jpg 45
+bgload SR_NAME3_118.jpg 45
+bgload SR_NAME3_119.jpg 45
+bgload SR_NAME3_120.jpg 45
+bgload SR_NAME3_121.jpg 45
+bgload SR_NAME3_122.jpg 45
+bgload SR_NAME3_123.jpg 45
+bgload SR_NAME3_124.jpg 45
+bgload SR_NAME3_125.jpg 45
+bgload SR_NAME3_126.jpg 45
+bgload SR_NAME3_127.jpg 45
+bgload SR_NAME3_128.jpg 45
+bgload SR_NAME3_129.jpg 45
+bgload SR_NAME3_130.jpg 45
+bgload SR_NAME3_131.jpg 45
+bgload SR_NAME3_132.jpg 45
+bgload SR_NAME3_133.jpg 45
+bgload SR_NAME3_134.jpg 45
+bgload SR_NAME3_135.jpg 45
+bgload SR_NAME3_136.jpg 45
+bgload SR_NAME3_137.jpg 45
+bgload SR_NAME3_138.jpg 45
+bgload SR_NAME3_139.jpg 45
+bgload SR_NAME3_140.jpg 45
+bgload SR_NAME3_141.jpg 45
+bgload SR_NAME3_142.jpg 45
+bgload SR_NAME3_143.jpg 45
+bgload SR_NAME3_144.jpg 45
+bgload SR_NAME3_145.jpg 45
+bgload SIRO.jpg 45
+delay 295
+setimg SR_C_COPY.png 200 184
+delay 424
+bgload SIRO.jpg 0
+music ~
+if 0 == 0
+	goto s136
+fi
+goto 160
+label s136
+setvar strS[1000] = "KURO"
+goto 162
+label 160
+if 0 == 1
+	goto s137
+fi
+goto 161
+label s137
+setvar strS[1000] = "SIRO"
+goto 162
+label 161
+setvar strS[1000] = "KURO"
+label 162
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG028"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s138
+fi
+goto 163
+label s138
+setvar strS[1000] = ""
+label 163
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM07B.mp3
+text Сегодня снова обычная справочная комната.
+text В воздухе всё ещё витает лёгкий аромат плова.
+text Мой взгляд свободно блуждает за окном, пока я наслаждаюсь этой горячей чашкой кофе.
+text Миядзава сидит рядом со мной, читая свою книгу заклинаний.
+text А что касается Сунохары...
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GB2.aac
+text @[Сунохара]
+text Слушай внимательно. Чем сильнее духом девушка, тем легче ей чувствовать одиночество.
+sound GB3.aac
+text @[Ю]
+text Правда?
+sound GB4.aac
+text @[Сунохара]
+text Ага. Вот почему такие девушки слабы перед мужчинами, готовыми их баловать.
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GB5.aac
+text @[Сунохара]
+text Ну, или, проще говоря, перед такими мужчинами, как я.
+sound GB6.aac
+text @[Ю]
+text Правда?
+text @[Томоя]
+text Он из тех, кто обожает, когда им помыкают.
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GB7.aac
+text @[Сунохара]
+text Да мне без разницы, что мной помыкают, лишь бы встречаться с девушкой!
+text До чего же жалко-немужественная фраза для того, чтобы говорить её при ребёнке...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Томоя]
+text Кстати, Ю, а как же школа?
+sound GB8.aac
+text @[Ю]
+text Сегодня же день основания школы.
+text @[Томоя]
+text У вас что, каждую неделю день основания школы?
+sound GB9.aac
+text @[Ю]
+text Ага.
+text @[Томоя]
+text ...
+text Он сказал это без малейшего колебания...
+text Малец совсем закалился.
+setvar strS[1001] = "CGYK11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GBA.aac
+text @[Миядзава]
+text Ах, Сунохара-сан, я нашла как раз подходящее для тебя заклинание.
+sound GBB.aac
+text @[Сунохара]
+text А? Это что такое? Заклинание, которое помогает завести девушку?
+sound GBC.aac
+text @[Миядзава]
+text Не совсем уверена, но, похоже, оно помогает двум людям стать более совместимыми друг с другом.
+setvar strS[1001] = "CGSH19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GBD.aac
+text @[Сунохара]
+text И как его творить?
+setvar strS[1001] = "CGYK20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GBE.aac
+text @[Миядзава]
+text Так, для начала нужно положить руки на плечи человека.
+setvar strS[1001] = "CGSH18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GBF.aac
+text @[Сунохара]
+text Оказаки, помоги мне провести эксперимент.
+text @[Томоя]
+text С чего бы это мне помогать тебе становиться более совместимым со мной?..
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Не обращая внимания на мои протесты, Сунохара продолжает идти, пока не оказывается прямо передо мной.
+setvar strS[1001] = "CGSH15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Затем он как ни в чём не бывало кладёт руки мне на плечи.
+text ...Можно мне уже его ударить?..
+sound GBG.aac
+text @[Сунохара]
+text Так, что дальше?
+setvar strS[1001] = "CGYK20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GBH.aac
+text @[Миядзава]
+text Пусть человек закроет глаза.
+setvar strS[1001] = "CGSH15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GBI.aac
+text @[Сунохара]
+text Слыхал?
+text @[Томоя]
+text Мне не нравится, к чему всё идёт...
+if 0 == 0
+	goto s139
+fi
+goto 164
+label s139
+setvar strS[1000] = "KURO"
+goto 166
+label 164
+if 0 == 1
+	goto s140
+fi
+goto 165
+label s140
+setvar strS[1000] = "SIRO"
+goto 166
+label 165
+setvar strS[1000] = "KURO"
+label 166
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text Тем не менее, я следую указаниям и закрываю глаза, представляя, как мы вдвоём выглядим со стороны.
+sound GBJ.aac
+text @[Миядзава]
+text А теперь, пожалуйста, тоже закрой глаза.
+sound GBK.aac
+text @[Сунохара]
+text Мм-хм, мм-хм.
+sound GBL.aac
+text @[Миядзава]
+text Теперь, оставаясь в этом положении, подайся лицом вперёд...
+text Я чувствую, как воздух касается моего лица.
+text Спереди накатывает какое-то странное давление, вызывающее неприятное чувство.
+text До меня отчётливо доносится звук переворачиваемых Миядзавой страниц.
+sound GBM.aac
+text @[Миядзава]
+text Так, посмотрим... если сможете поцеловаться как следует даже с закрытыми глазами, вам гарантировано счастье вдвоём!
+setvar strS[1000] = "BG028"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s141
+fi
+goto 167
+label s141
+setvar strS[1000] = ""
+label 167
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Томоя]
+text Погоди! Что?!
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я поспешно открываю глаза, но лицо Сунохары уже приближается.
+text @[Томоя]
+text Твою мать!!
+text Рефлекторно я резко опускаю голову и впечатываю лоб прямо в центр лица Сунохары.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GBN.aac
+text @[Сунохара]
+text ММБВААА!
+text Сунохару отбрасывает назад лицом к потолку. Кровь из носа чертит в воздухе красную дугу.
+text @[Томоя]
+text Это было в секунде от...
+sound GBO.aac
+text @[Сунохара]
+text ...Вообще-то... я сейчас в секунде от смерти...
+text Всё ещё лёжа на полу, Сунохара стонет, его тело дрожит.
+setvar strS[1001] = "CGYK15A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK15A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GBP.aac
+text @[Миядзава]
+text Ах, тут в сноске написано, что это заклинание только для пар.
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GBQ.aac
+text @[Сунохара]
+text Я ЕЩЁ НЕ ДОШЁЛ ДО ЭТОЙ СТАДИИ!
+text Сунохара с криком вскакивает с пола, всё ещё в слезах.
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GBR.aac
+text @[Сунохара]
+text Ууу... больно... этот удар лбом оказался просто убийственным...
+text @[Томоя]
+text Не удивительно, там же был такой звук «бам», когда попало.
+sound GBS.aac
+text @[Сунохара]
+text И теперь я вижу что-то сверкающее в глубине глаз...
+if intG[6] == 0
+	goto s142
+fi
+goto 168
+label s142
+text @[Томоя]
+text Что-то сверкающее...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Его слова заставляют меня посмотреть на свою руку.
+text То ощущение было... мягким... нет, скорее тёплым и мягким...
+setvar strS[1001] = "CGYK16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GBT.aac
+text @[Миядзава]
+text Что-то случилось?
+text @[Томоя]
+text Мм... ну...
+text @[Томоя]
+text Это было во время визита на могилу твоего брата.
+text @[Томоя]
+text Тогда над моей головой летал такой светящийся шарик.
+text @[Томоя]
+text Интересно... видел ли его ещё кто-нибудь, кроме меня.
+setvar strS[1001] = "CGSH19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GBU.aac
+text @[Сунохара]
+text Кстати, ты тогда как раз поднимал руку... разве нет?
+text @[Томоя]
+text Ага, точно. Я протянул руку к тому свету. Ты тоже его видел, да?
+sound GBV.aac
+text @[Сунохара]
+text Не-а... Ты выглядел так, будто пытаешься что-то поймать, но там ничего не было, вот я и гадал, что ты делаешь.
+text @[Томоя]
+text Он там был, шарик света.
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GBW.aac
+text @[Сунохара]
+text Погоди-ка секунду...
+sound GBX.aac
+text @[Сунохара]
+text Может, это был... чей-то дух?..
+text @[Томоя]
+text Ты о чём вообще...
+setvar strS[1001] = "CGSH20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GBY.aac
+text @[Сунохара]
+text Но это же было на кладбище, разве нет?
+sound GBZ.aac
+text @[Сунохара]
+text Не так уж странно, что там что-то такое парит!
+setvar strS[1001] = "CGSH15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GC0.aac
+text @[Сунохара]
+text Так что ты сделал с тем светящимся шариком?!
+text @[Томоя]
+text Э-э... он упал и исчез в моей руке.
+setvar strS[1001] = "CGSH27"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH27.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GC1.aac
+text @[Сунохара]
+text Он уже одержим!
+sound GC2.aac
+text @[Сунохара]
+text Тот, кто сейчас говорит — это не Оказаки. Это дух!
+text @[Томоя]
+text Хватит нести чушь, а?
+setvar strS[1001] = "CGSH18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GC3.aac
+text @[Сунохара]
+text Тогда докажи мне это!
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GC4.aac
+text @[Сунохара]
+text ...Аргх!
+text Ладно. Мой удар попадает ему прямо под дых.
+sound GC5.aac
+text @[Сунохара]
+text Этот безжалостный удар... таким может быть только Оказаки...
+sound GC6.aac
+text @[Сунохара]
+text @Я уверен... что у духа...
+delay 181
+text @всё же
+delay 67
+text @больше
+delay 95
+text @души...
+delay 57
+text чем у тебя...
+text Сунохара падает лицом на стол.
+setvar strS[1001] = "CGYK15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GC7.aac
+text @[Миядзава]
+text С Сунохарой-саном всё в порядке?
+text @[Томоя]
+text Ага, просто оставь его. У нас это вроде как обычное дело во время перекуса.
+sound GC8.aac
+text @[Миядзава]
+text Понятно.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Миядзава подкладывает под голову Сунохары свёрнутое полотенце, видимо, чтобы он мог использовать его как подушку.
+text Затем поворачивается ко мне.
+setvar strS[1001] = "CGYK10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GC9.aac
+text @[Миядзава]
+text Насчёт того света...
+text @[Томоя]
+text Да?
+sound GCA.aac
+text @[Миядзава]
+text Похоже, очень давно его видели довольно часто.
+text @[Томоя]
+text Э... Серьёзно?
+setvar strS[1001] = "CGYK11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GCB.aac
+text @[Миядзава]
+text Да. Вот почему я думаю, что Томоя-сан говорит правду.
+text @[Томоя]
+text Ты знаешь, что это было?
+setvar strS[1001] = "CGYK10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GCC.aac
+text @[Миядзава]
+text В этой комнате хранится несколько книг по местной истории, и там как народное предание упоминается что-то очень похожее на тот шарик света, что ты видел.
+sound GCD.aac
+text @[Миядзава]
+text Хочешь почитать?
+text @[Томоя]
+text Не-а, чтение не по мне... хочу услышать от тебя.
+sound GCE.aac
+text @[Миядзава]
+text Хорошо. Хотя, если честно, подробностей нигде особо не написано.
+sound GCF.aac
+text @[Миядзава]
+text Кто-то говорил, что это пух с семян какого-то растения, кто-то — что это разновидность стрекозы... одни только догадки.
+sound GCG.aac
+text @[Миядзава]
+text Однако есть кое-что общее у всех версий...
+setvar strS[1001] = "CGYK14A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK14A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GCH.aac
+text @[Миядзава]
+text Не знаю, с каких пор, но эти шарики света стали ассоциироваться со счастьем.
+sound GCI.aac
+text @[Миядзава]
+text Судя по всему, многие их видели, когда случалось что-то хорошее.
+sound GCJ.aac
+text @[Миядзава]
+text Когда люди находили что-то радостное, шарики света начинали парить рядом, будто наблюдая за этим.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Со мной было то же самое...
+text Тот пейзаж тогда был в точности символом нынешнего счастья Миядзавы.
+text Я невольно снова смотрю на свою руку...
+text ...но ничего, что напоминало бы о белом свете, больше не видно.
+setvar strS[1001] = "CGYK10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GCK.aac
+text @[Миядзава]
+text Хотя это всего лишь народное предание. Не думаю, что сейчас кто-то верит в их существование.
+sound GCL.aac
+text @[Миядзава]
+text Потому что их никто никогда не видел.
+text @[Томоя]
+text А я видел.
+setvar strS[1001] = "CGYK11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GCM.aac
+text @[Миядзава]
+text Да, действительно. Вот почему я тоже буду в них верить.
+text @[Томоя]
+text Вот оно как...
+text Она даже не представляет, как много значат для меня эти её слова.
+text @[Томоя]
+text Но тогда почему это видел только я один?
+setvar strS[1001] = "CGYK10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GCN.aac
+text @[Миядзава]
+text Не знаю.
+setvar strS[1001] = "CGYK11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GCO.aac
+text @[Миядзава]
+text Может быть, в Томое-сане есть что-то особенное.
+setvar strS[1001] = "CGYK10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GCP.aac
+text @[Миядзава]
+text Нет, дело не в этом. Особенные — это мы.
+sound GCQ.aac
+text @[Миядзава]
+text Потому что раньше их могли видеть все.
+text @[Томоя]
+text Тогда почему мы больше не можем их видеть?..
+sound GCR.aac
+text @[Миядзава]
+text Думаю... это из-за того, что изменились людские сердца.
+sound GCS.aac
+text @[Миядзава]
+text Может быть, для этого нужно сердце, которое по-настоящему заботится об этом городе.
+sound GCT.aac
+text @[Миядзава]
+text Если бы мы всё ещё жили, глубоко связанные с городом, как жили когда-то люди, может, многие всё ещё могли бы их видеть.
+sound GCU.aac
+text @[Миядзава]
+text То, что изменилось с прежних времён...
+sound GCV.aac
+text @[Миядзава]
+text Всё это — результат того, что люди вспомнили, что живут для себя самих.
+text @[Томоя]
+text Эгоизм, значит?
+text @[Томоя]
+text Тогда то же самое и со мной. Я ведь вообще-то терпеть не могу этот город.
+setvar strS[1001] = "CGYK16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GCW.aac
+text @[Миядзава]
+text Правда?
+text @[Томоя]
+text Ага...
+text @[Томоя]
+text Забудь про Сунохару, это ты, а не я, должна была бы уметь их видеть.
+setvar strS[1001] = "CGYK15A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK15A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound GCX.aac
+text @[Миядзава]
+text Интересно, почему тогда я его не увидела.
+text Хватит об этом думать.
+text Но кое-что я всё же должна признать...
+text Я больше не ненавижу этот город так сильно, как раньше.
+goto 169
+label 168
+if intG[6] == 1
+	goto s143
+fi
+goto 169
+label s143
+text @[Томоя]
+text Хахаха.
+text У меня такое чувство, будто я уже где-то видел этот пейзаж.
+text Эта мысль приходит мне в голову, пока я смеюсь.
+text На самом деле, есть ещё кое-что. Я тоже больше не чувствую, что ненавижу эту школу.
+label 169
+text ...И всё это благодаря одному определённому человеку.
+music ~
+delay 120
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s144
+fi
+goto 170
+label s144
+setvar strS[1000] = ""
+label 170
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 301
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+gsetvar intG[6] = 1
+delay 120
+cleartext
+jump main.scr

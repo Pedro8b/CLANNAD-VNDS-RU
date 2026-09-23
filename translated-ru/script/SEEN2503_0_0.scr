@@ -1,1 +1,879 @@
-��$
+setvar intF[1110] = 3
+setvar intF[1112] = 1
+setvar strS[1004] = "SDTA0503"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1004] = ""
+label 1
+bgload SCLAB00.jpg 45
+delay 60
+setimg SCLAP05.png 5 5
+setimg SCLA0503.png 159 160
+delay 120
+if 0 == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = "KURO"
+goto 4
+label 2
+if 0 == 1
+	goto s2
+fi
+goto 3
+label s2
+setvar strS[1000] = "SIRO"
+goto 4
+label 3
+setvar strS[1000] = "KURO"
+label 4
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "BG009"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 5
+label s3
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM06.mp3
+text Звонит дверной звонок.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s4
+fi
+goto 6
+label s4
+setvar strS[1000] = ""
+label 6
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я выбегаю из комнаты и мчусь к входной двери.
+setvar strS[1000] = "BG010"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s5
+fi
+goto 7
+label s5
+setvar strS[1000] = ""
+label 7
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGTM10S"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM10S.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я быстро отодвигаю дверь и вижу Томоё в обычной одежде, с пакетом из супермаркета в руках.
+text @[Томоя]
+text (Почему-то я растроган...)
+setvar strS[1001] = "CGTM11S"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM11S.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 6ZQ.aac
+text @[Томоё]
+text Что такое?
+text @[Томоя]
+text Неожиданно, но тебе это идёт.
+setvar strS[1001] = "CGTM18S"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM18S.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 6ZR.aac
+text @[Томоё]
+text Довольно грубо говорить, что это тебя удивляет.
+text @[Томоя]
+text Ладно, тогда тебе это чертовски идёт.
+setvar strS[1001] = "CGTM13S"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM13S.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 6ZS.aac
+text @[Томоё]
+text Знаешь... это прямо похоже на то, будто ты меня тут домогаешься.
+text @[Томоя]
+text Ну, немного. Просто это ситуация, о которой я всегда мечтал.
+sound 6ZT.aac
+text @[Томоё]
+text ...
+text Томоё оглядывает комнату.
+sound 6ZU.aac
+text @[Томоё]
+text ...Можно задать тебе один вопрос?
+text @[Томоя]
+text Да, валяй.
+sound 6ZV.aac
+text @[Томоё]
+text Где твой отец?
+text @[Томоя]
+text Его тут нет.
+text @[Томоё]
+text ...
+text @[Томоя]
+text Его не бывает дома днём.
+sound 6ZW.aac
+text @[Томоё]
+text Почему-то я начинаю беспокоиться за собственную безопасность...
+text @[Томоя]
+text Ну, в тот момент, когда ты начнёшь беспокоиться о своей безопасности здесь, я буду немало беспокоиться о своей...
+setvar strS[1001] = "CGTM18S"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGTM18S.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound 6ZX.aac
+text @[Томоё]
+text Что... Что ты хочешь этим сказать?
+text @[Томоя]
+text Ничего... Просто имел в виду, что мы окажемся в одной лодке, если что-нибудь случится.
+sound 6ZY.aac
+text @[Томоё]
+text Мне это прозвучало иначе...
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s6
+fi
+goto 8
+label s6
+setvar strS[1000] = ""
+label 8
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "FGTM01G"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s7
+fi
+goto 9
+label s7
+setvar strS[1000] = ""
+label 9
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound 6ZZ.aac
+text @[Томоё]
+text В чём дело? Тебе нравится на меня смотреть?
+text @[Томоя]
+text Да, нравится.
+sound 700.aac
+text @[Томоё]
+text Понятно... Ну, тогда я не против...
+setvar strS[1000] = "FGTM01F"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s8
+fi
+goto 10
+label s8
+setvar strS[1000] = ""
+label 10
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text @[Томоё]
+text ...
+setvar strS[1000] = "FGTM01I"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s9
+fi
+goto 11
+label s9
+setvar strS[1000] = ""
+label 11
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound 701.aac
+text @[Томоё]
+text Но знаешь, когда за тобой молча наблюдают, это довольно смущает.
+sound 702.aac
+text @[Томоё]
+text Я не могу так толком сосредоточиться.
+text @[Томоя]
+text Тогда, может, займёмся чем-нибудь?
+sound 703.aac
+text @[Томоё]
+text И чем же ты собираешься заняться?
+text @[Томоя]
+text Ну, давай посмотрим...
+text Томоё не в том положении, чтобы выпустить кухонный нож из рук, пока им пользуется.
+text Сейчас, что бы я с ней ни делал, она, вероятно, вообще не будет сопротивляться, пока готовит.
+text Даже если это что-то извращённое...
+choice Провести симуляцию|Не стоит
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s10
+fi
+goto 12
+label s10
+goto 17
+label 12
+if intF[1089] == 1
+	goto s11
+fi
+goto 17
+label s11
+setvar strS[1000] = "FGTM01F"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s12
+fi
+goto 13
+label s12
+setvar strS[1000] = ""
+label 13
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text Давай просто помолчим и подождём.
+text В следующий раз, когда я смотрю, Томоё уже начала варить тыквенное пюре.
+sound 704.aac
+text @[Томоё]
+text Тыквенный суп — одно из тех блюд, которые у меня отлично получаются.
+sound 705.aac
+text @[Томоё]
+text В этом я довольно уверена, знаешь ли.
+setvar strS[1000] = "FGTM01H"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s13
+fi
+goto 14
+label s13
+setvar strS[1000] = ""
+label 14
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound 706.aac
+text @[Томоё]
+text К тому же, я готовлю его с любовью, специально для тебя.
+sound 707.aac
+text @[Томоё]
+text Даже если остальным покажется невкусно, для тебя, думаю, это будет просто восхитительно.
+setvar strS[1000] = "FGTM01F"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s14
+fi
+goto 15
+label s14
+setvar strS[1000] = ""
+label 15
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text Томоё наливает немного в блюдце и пробует на вкус.
+setvar strS[1000] = "FGTM01H"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s15
+fi
+goto 16
+label s15
+setvar strS[1000] = ""
+label 16
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound 708.aac
+text @[Томоё]
+text Хорошо получилось. Даже остальным, наверное, понравится.
+setvar intF[224] = 1
+goto 50
+label 17
+text Да... наверное, всё было бы примерно так.
+music ~
+if 0 == 0
+	goto s16
+fi
+goto 18
+label s16
+setvar strS[1000] = "KURO"
+goto 20
+label 18
+if 0 == 1
+	goto s17
+fi
+goto 19
+label s17
+setvar strS[1000] = "SIRO"
+goto 20
+label 19
+setvar strS[1000] = "KURO"
+label 20
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "FGTM01F"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s18
+fi
+goto 21
+label s18
+setvar strS[1000] = ""
+label 21
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+music BGM10.mp3
+text @[Томоя]
+text Хаах... хаах...
+text Шаг за шагом я медленно подкрадываюсь к ней сзади.
+setvar strS[1000] = "FGTM01G"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s19
+fi
+goto 22
+label s19
+setvar strS[1000] = ""
+label 22
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound 709.aac
+text @[Томоё]
+text Что такое? Ты как-то тяжело дышишь.
+text @[Томоя]
+text Не обращай на меня внимания, просто продолжай готовить...
+setvar strS[1000] = "FGTM01F"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s20
+fi
+goto 23
+label s20
+setvar strS[1000] = ""
+label 23
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound 70A.aac
+text @[Томоё]
+text Конечно, буду. Секрет вкусного блюда — делать всё вовремя. Я не могу оторвать от этого руки ни на секунду.
+text @[Томоя]
+text Точно. Ты ведь не можешь сейчас оторвать руки, да?
+text Я крепко обнимаю её сзади.
+text И, вдыхая её аромат, теряю над собой контроль ещё сильнее.
+sound 70B.aac
+text @[Томоё]
+text Ты мне мешаешь. Отойди.
+text @[Томоя]
+text Томоё...
+setvar strS[1000] = "FGTM01G"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s21
+fi
+goto 24
+label s21
+setvar strS[1000] = ""
+label 24
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound 70C.aac
+text @[Томоё]
+text Что теперь...? Я же прямо здесь. Не обязательно говорить мне прямо в ухо.
+text @[Томоя]
+text Я люблю тебя, Томоё...
+sound 70D.aac
+text @[Томоё]
+text Да, я знаю. Я никогда и не думала иначе.
+text @[Томоя]
+text Так вот, поэтому...
+text Я кладу подбородок ей на плечо. Опустив взгляд, я даже не вижу разделочную доску — её закрывают собой эти две большие штуки...
+text Я просовываю руку под её фартук.
+text И тогда...
+text *Тык*
+text @[Томоя]
+text ...А?
+text ...Что это был за звук только что?
+text Разве в такой ситуации не должно быть что-то вроде «хлюп» или «чмок»?
+text *Пффшшш*
+text Что-то хлещет у меня изо лба.
+text Присмотревшись к этому месту повнимательнее, я вижу нечто похожее на рукоятку кухонного ножа...
+text @[Томоя]
+text А-А-А-А-А! Меня ударили ножом!!
+music ~
+setvar strS[1000] = "FGTM01J"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s22
+fi
+goto 25
+label s22
+setvar strS[1000] = ""
+label 25
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+music BGM28.mp3
+sound 70E.aac
+text @[Томоё]
+text Томоя...
+sound 70F.aac
+text @[Томоё]
+text По-моему, это была твоя собственная вина.
+text *Пффшшш*
+if 0 == 0
+	goto s23
+fi
+goto 26
+label s23
+setvar strS[1000] = "KURO"
+goto 28
+label 26
+if 0 == 1
+	goto s24
+fi
+goto 27
+label s24
+setvar strS[1000] = "SIRO"
+goto 28
+label 27
+setvar strS[1000] = "KURO"
+label 28
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+music ~
+text Моё сознание угасает...
+text .........
+text ......
+text ...
+cleartext
+text @«Ты»
+delay 6
+cleartext
+text @«Ты Есть»
+delay 6
+cleartext
+text @«Ты Есть Умереть!»
+delay 6
+setvar strS[1000] = "FGTM01G"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s25
+fi
+goto 29
+label s25
+setvar strS[1000] = ""
+label 29
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+music BGM08A.mp3
+text @[Томоя]
+text Хаах... хаах...
+sound 70G.aac
+text @[Томоё]
+text Что такое? Ты как-то тяжело дышишь.
+text @[Томоя]
+text Ничего, просто представил себе кое-что жуткое...
+setvar strS[1000] = "FGTM01J"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s26
+fi
+goto 30
+label s26
+setvar strS[1000] = ""
+label 30
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound 70H.aac
+text @[Томоё]
+text Ну, это же ты. Наверняка представлял себе что-то извращённое, да?
+text @[Томоя]
+text Н-нет, конечно же нет!
+sound 70I.aac
+text @[Томоё]
+text ...?
+sound 70J.aac
+text @[Томоё]
+text Странный ты всё-таки тип, знаешь ли...
+text Пока что... лучше не будем ничего делать, пока она держит в руках кухонный нож...
+setvar strS[1000] = "FGTM01F"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s27
+fi
+goto 31
+label s27
+setvar strS[1000] = ""
+label 31
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text Томоё уже начала варить тыквенное пюре.
+sound 70K.aac
+text @[Томоё]
+text Тыквенный суп — одно из тех блюд, которые у меня отлично получаются.
+sound 70L.aac
+text @[Томоё]
+text В этом я довольно уверена, знаешь ли.
+setvar strS[1000] = "FGTM01H"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s28
+fi
+goto 32
+label s28
+setvar strS[1000] = ""
+label 32
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound 70M.aac
+text @[Томоё]
+text К тому же, я готовлю его с любовью, специально для тебя.
+sound 70N.aac
+text @[Томоё]
+text Даже если остальным покажется невкусно, для тебя, думаю, это будет просто восхитительно.
+setvar strS[1000] = "FGTM01F"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s29
+fi
+goto 33
+label s29
+setvar strS[1000] = ""
+label 33
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text Томоё наливает немного в блюдце и пробует на вкус.
+setvar strS[1000] = "FGTM01H"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s30
+fi
+goto 34
+label s30
+setvar strS[1000] = ""
+label 34
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound 70O.aac
+text @[Томоё]
+text Хорошо получилось. Даже остальным, наверное, понравится.
+text Сейчас у неё в руках половник.
+text Возможно, это как раз мой шанс.
+choice Провести симуляцию|Не стоит
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s31
+fi
+goto 35
+label s31
+goto 36
+label 35
+if intF[1089] == 1
+	goto s32
+fi
+goto 36
+label s32
+text Давайте уже просто помолчим и подождём...
+goto 50
+label 36
+text Да... наверное, всё было бы примерно так.
+music ~
+if 0 == 0
+	goto s33
+fi
+goto 37
+label s33
+setvar strS[1000] = "KURO"
+goto 39
+label 37
+if 0 == 1
+	goto s34
+fi
+goto 38
+label s34
+setvar strS[1000] = "SIRO"
+goto 39
+label 38
+setvar strS[1000] = "KURO"
+label 39
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+setvar strS[1000] = "FGTM01F"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s35
+fi
+goto 40
+label s35
+setvar strS[1000] = ""
+label 40
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+music BGM10.mp3
+text @[Томоя]
+text Хаах... хаах...
+text Шаг за шагом я медленно подкрадываюсь к ней сзади.
+setvar strS[1000] = "FGTM01G"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s36
+fi
+goto 41
+label s36
+setvar strS[1000] = ""
+label 41
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound 70P.aac
+text @[Томоё]
+text Что такое? Ты как-то тяжело дышишь.
+text @[Томоя]
+text Не обращай на меня внимания, просто продолжай готовить...
+sound 70Q.aac
+text @[Томоё]
+text Конечно.
+setvar strS[1000] = "FGTM01F"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s37
+fi
+goto 42
+label s37
+setvar strS[1000] = ""
+label 42
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+text Я крепко обнимаю её сзади.
+text И, вдыхая её аромат, смешанный с запахом тыквенного супа, теряю над собой контроль ещё сильнее.
+sound 70R.aac
+text @[Томоё]
+text Ты мне мешаешь. Отойди.
+text @[Томоя]
+text Томоё...
+setvar strS[1000] = "FGTM01G"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s38
+fi
+goto 43
+label s38
+setvar strS[1000] = ""
+label 43
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound 70S.aac
+text @[Томоё]
+text Что теперь...? Я же прямо здесь. Не обязательно говорить мне прямо в ухо.
+text @[Томоя]
+text Я люблю тыквенный суп, но тебя я тоже люблю...
+sound 70T.aac
+text @[Томоё]
+text Если честно, меня немного тревожит, что меня сравнивают с тыквенным супом...
+text @[Томоя]
+text Так вот, поэтому...
+text Я кладу подбородок ей на плечо. Опустив взгляд, я даже не вижу разделочную доску — её закрывают собой эти две большие штуки...
+text Я просовываю руку под её фартук.
+text И тогда...
+text *Тык*
+text @[Томоя]
+text ...А?
+text ...Что это был за звук только что?
+text *Пффшшш*
+text Что-то хлещет у меня изо лба.
+text Присмотревшись к этому месту повнимательнее, я вижу нечто похожее на рукоятку половника...
+text @[Томоя]
+text А-А-А-А-А─!! Меня и этой штукой можно проткнуть?!
+text @[Томоя]
+text И это ещё не всё, меня проткнули её круглой частью?!
+music ~
+setvar strS[1000] = "FGTM01J"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s39
+fi
+goto 44
+label s39
+setvar strS[1000] = ""
+label 44
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+music BGM28.mp3
+sound 70U.aac
+text @[Томоё]
+text Томоя...
+sound 70V.aac
+text @[Томоё]
+text ...Ты меня недооценил, да?
+text *Пффшшш*
+if 0 == 0
+	goto s40
+fi
+goto 45
+label s40
+setvar strS[1000] = "KURO"
+goto 47
+label 45
+if 0 == 1
+	goto s41
+fi
+goto 46
+label s41
+setvar strS[1000] = "SIRO"
+goto 47
+label 46
+setvar strS[1000] = "KURO"
+label 47
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+music ~
+text Моё сознание угасает...
+cleartext
+text @«Ты»
+delay 6
+cleartext
+text @«Ты Есть»
+delay 6
+cleartext
+text @«Ты Есть Умереть!»
+delay 6
+setvar strS[1000] = "FGTM01G"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s42
+fi
+goto 48
+label s42
+setvar strS[1000] = ""
+label 48
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+music BGM08A.mp3
+text @[Томоя]
+text Хаах... хаах...
+sound 70W.aac
+text @[Томоё]
+text Что такое? Ты как-то тяжело дышишь.
+text @[Томоя]
+text Ничего, просто представил себе кое-что жуткое...
+setvar strS[1000] = "FGTM01J"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s43
+fi
+goto 49
+label s43
+setvar strS[1000] = ""
+label 49
+setvar strS[1001] = ""
+setvar intF[1113] = 0
+bgload {$strS[1000]}.jpg 30
+sound 70X.aac
+text @[Томоё]
+text Опять...? Да ты извращенец, как я погляжу...
+text @[Томоя]
+text Н-нет, конечно же нет!
+sound 70Y.aac
+text @[Томоё]
+text ...?
+sound 70Z.aac
+text @[Томоё]
+text Странный ты всё-таки тип, знаешь ли...
+text У Томоё вообще нет слепых зон...
+label 50
+music ~
+if 0 == 0
+	goto s44
+fi
+goto 51
+label s44
+setvar strS[1000] = "KURO"
+jump SEEN2503_0_1.scr 53
+label 51
+if 0 == 1
+	goto s45
+fi
+jump SEEN2503_0_1.scr 52
+label s45
+setvar strS[1000] = "SIRO"
+jump SEEN2503_0_1.scr 53
+jump SEEN2503_0_1.scr

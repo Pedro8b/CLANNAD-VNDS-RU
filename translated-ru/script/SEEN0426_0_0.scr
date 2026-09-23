@@ -307,11 +307,11 @@ fi
 text Кё покидает класс, будто пытается убежать.
 text @[Томоя]
 text (Она просто распространяет ущерб...)
-text I sit down at my seat.
+text Я сажусь на своё место.
 label 11
-text As always, the seat next to mine is empty.
-text And... it stays that way the entire day.
-text ...Rest in peace.
+text Как всегда, место рядом со мной пустует.
+text И... таким оно остаётся весь день.
+text ...Покойся с миром.
 if intF[17] == 1
 	goto s11
 fi
@@ -328,15 +328,15 @@ if intF[1113] == 1
 fi
 sound 0PQ.aac
 text @[Сунохара]
-text Hey, whose seat are you offering your prayers to?
+text Эй, за чьё место ты тут молишься?
 label 12
 text @[Томоя]
-text Oh, well would you look at who decided to show up.
+text О, смотрите-ка, кто решил объявиться.
 sound 0PR.aac
 text @[Сунохара]
-text Yeah, I remembered.
+text Ага, я вспомнил.
 text @[Томоя]
-text Remembered what?
+text Вспомнил что?
 setvar strS[1001] = "CGSH18"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -348,9 +348,9 @@ if intF[1113] == 1
 fi
 sound 0PS.aac
 text @[Сунохара]
-text Isn't my little sister showing up today?
+text Разве сегодня не должна прийти моя младшая сестра?
 text @[Томоя]
-text How should I know?
+text Откуда мне знать?
 setvar strS[1001] = "CGSH23"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 0
@@ -362,7 +362,7 @@ if intF[1113] == 1
 fi
 sound 0PT.aac
 text @[Сунохара]
-text Because it's your fault this is happening!
+text Потому что это по твоей вине всё это происходит!
 setvar strS[1001] = "CGSH16"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -374,20 +374,20 @@ if intF[1113] == 1
 fi
 sound 0PU.aac
 text @[Сунохара]
-text Hold on, we already had this conversation before.
+text Погоди, у нас уже был этот разговор.
 text @[Томоя]
-text Oh, did we...?
+text Да ну, разве?..
 sound 0PV.aac
 text @[Сунохара]
-text Dammit...! What am I supposed to do?
+text Чёрт...! Что мне делать?
 sound 0PW.aac
 text @[Сунохара]
-text Happiness... happiness...
+text Счастье... счастье...
 sound 0PX.aac
 text @[Сунохара]
-text We need to find a new source of happiness for me before the day's done.
+text Нужно найти для меня новый источник счастья до конца дня.
 text @[Томоя]
-text That's impossible.
+text Это невозможно.
 setvar strS[1001] = "NONE"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -556,7 +556,7 @@ fi
 text Пока я иду... я замечаю пару парней, которые смотрят на меня с угла коридора.
 text Я огляделся назад.
 text ...Ничего нет.
-choice Ask them what's wrong|I'm not interested
+choice Спросить, что случилось|Мне неинтересно
 setvar intF[1089] = selected
 sound 02.aac
 setvar intF[1089] - 1
@@ -912,24 +912,24 @@ text Поняла?
 text *Кивок* *Кивок*
 text Она отвечает мне, но остаётся осторожной, прижавшись к стенам.
 text @[Томоя]
-text (I guess I did yell at her and give her a noogie...)
+text (Пожалуй, я и правда наорал на неё и дал ей тумака...)
 text @[Томоя]
-text (I could see how that'd make her hate me...)
-text I got ahead of myself because we started getting along despite her extreme shyness.
-text It makes me kind of sad for this to have happened.
+text (Могу понять, почему после этого она могла меня возненавидеть...)
+text Я поторопился с выводами, раз уж мы начали ладить, несмотря на её крайнюю застенчивость.
+text От того, что так вышло, мне немного грустно.
 text @[Томоя]
-text Well, I'll be checking up on you now and then to make sure you're not hurt, so don't run away from me when I do, okay?
+text Ну, я буду время от времени проверять, что с тобой всё в порядке, так что не убегай от меня, ладно?
 sound 0QY.aac
 text @[Фуко]
 text ...
-text She doesn't reply, but she doesn't shake her head no either.
-text I take my leave with every intention of coming back later.
+text Она не отвечает, но и не качает головой в знак отказа.
+text Я ухожу, твёрдо намереваясь вернуться позже.
 text @[Томоя]
-text Promise me you'll talk to your friends, okay? I'm gonna go now.
+text Обещай мне, что поговоришь со своими друзьями, хорошо? Я пошёл.
 sound 0QZ.aac
 text @[Фуко]
 text ...
-text I leave the classroom.
+text Я выхожу из класса.
 label 28
 goto 30
 label 29
@@ -938,8 +938,8 @@ if intF[1089] == 1
 fi
 goto 30
 label s28
-text It's probably something stupid, anyway.
-text I ignore them, pass by, and go down the stairs.
+text Впрочем, это наверняка какая-то глупость.
+text Я не обращаю на них внимания, прохожу мимо и спускаюсь по лестнице.
 label 30
 if intF[17] == 1
 	goto s29
@@ -980,10 +980,10 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text What should I do today...?
-text So Sunohara's little sister is gonna come to his room...
-text It'd be pretty tasteless of me to be there when that happens...
-text Oh well... I guess I'll kill time walking around an arcade and go home...
+text Что бы мне сегодня сделать...?
+text Значит, младшая сестра Сунохары придёт к нему в комнату...
+text Было бы довольно бестактно с моей стороны быть там в этот момент...
+text Ну ладно... наверное, убью время, прогулявшись по игровому залу, и пойду домой...
 goto 49
 label 33
 setvar strS[1000] = "KURO"
@@ -1020,7 +1020,7 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text Off to Sunohara's room yet again...
+text Снова направляюсь в комнату Сунохары...
 if intF[838] == 1
 	if intF[844] == 0
 		if intF[839] == 1
@@ -1041,7 +1041,7 @@ if intF[1113] == 1
 fi
 sound 0R0.aac
 text @[Голос]
-text Hey, you. You wanna play baseball?
+text Эй, ты. Хочешь сыграть в бейсбол?
 setvar strS[1001] = "NONE"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -1050,10 +1050,10 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text I'm feeling pretty bored, but there's nowhere else to go.
+text Мне довольно скучно, но идти больше некуда.
 sound 0R1.aac
 text @[Голос]
-text Hey, I'm talking to you. Yeah, you!
+text Эй, я с тобой разговариваю. Да, с тобой!
 music ~
 text @[Томоя]
 text А?
@@ -1160,7 +1160,7 @@ sound 0R7.aac
 text @[Акио]
 text Думаешь, сможешь собрать команду?
 text @[Томоя]
-text I don't see where you're going with this.
+text Не понимаю, к чему ты клонишь.
 setvar strS[1001] = "CGAK15"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -1172,12 +1172,12 @@ if intF[1113] == 1
 fi
 sound 0R8.aac
 text @[Акио]
-text I'm saying we should play grass-lot baseball! I already have a team to play against!
+text Я говорю, что нам нужно сыграть в дворовый бейсбол! У меня уже есть команда соперников!
 sound 0R9.aac
 text @[Акио]
-text So you need to get a team together! It's simple!
+text Так что тебе нужно собрать команду! Всё просто!
 text @[Томоя]
-text Why would I ever want to do that?
+text С чего бы мне вообще этого хотеть?
 setvar strS[1001] = "CGAK13"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -1189,9 +1189,9 @@ if intF[1113] == 1
 fi
 sound 0RA.aac
 text @[Акио]
-text Fine, then it's part of your punishment.
+text Ладно, тогда это часть твоего наказания.
 text @[Томоя]
-text Huh?
+text А?
 setvar strS[1001] = "CGAK20"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -1203,14 +1203,14 @@ if intF[1113] == 1
 fi
 sound 0RB.aac
 text @[Акио]
-text I either drip yakiniku sauce in your eyes, or you play baseball. Which one will it be?
+text Либо я капаю тебе в глаза соусом якинику, либо ты играешь в бейсбол. Что выбираешь?
 text @[Томоя]
-text Wait, I thought I was exempt from that!
+text Погоди, я думал, меня это не касается!
 sound 0RC.aac
 text @[Акио]
-text You are, if you play baseball.
+text Не касается, если сыграешь в бейсбол.
 text @[Томоя]
-text That's not what we agreed on...
+text Мы не так договаривались...
 setvar strS[1001] = "CGAK14"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -1222,7 +1222,7 @@ if intF[1113] == 1
 fi
 sound 0RD.aac
 text @[Акио]
-text What do you say...? Soy sauce-based condiment in the right eye... creamy sesame in the left...!
+text Так что скажешь...? Соевая приправа в правый глаз... кунжутный соус в левый...!
 setvar strS[1001] = "CGAK10"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -1234,9 +1234,9 @@ if intF[1113] == 1
 fi
 sound 0RE.aac
 text @[Акио]
-text Which one do you think will hurt?
+text Как думаешь, что из этого будет больнее?
 text @[Томоя]
-text Both of them...?
+text И то, и другое...?
 setvar strS[1001] = "CGAK15"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -1248,9 +1248,9 @@ if intF[1113] == 1
 fi
 sound 0RF.aac
 text @[Акио]
-text You never know! Creamy sesame might feel really good! Can you speak from experience?
+text Как знать! Кунжутный соус может оказаться довольно приятным! Ты можешь судить по опыту?
 text @[Томоя]
-text No, but...
+text Нет, но...
 setvar strS[1001] = "CGAK13"
 setvar intF[1113] = intF[1112]
 bgload {$strS[1000]}.jpg 30
@@ -1260,7 +1260,7 @@ if intF[1113] == 1
 		setimg {$strS[1004]}.png -7 -7
 	fi
 fi
-text He has a grip on my arm... I can't run away.
+text Он крепко держит меня за руку... Мне не сбежать.
 text И даже если бы я попытался, этот парень мог бы мгновенно меня поймать...
 text И он угрожает буквально замариновать меня заживо...
 text @[Томоя]

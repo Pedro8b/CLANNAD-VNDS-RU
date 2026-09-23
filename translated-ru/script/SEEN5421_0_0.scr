@@ -1,1 +1,1424 @@
-��$
+if intF[1110] == 21
+	goto s0
+fi
+goto 2
+label s0
+setvar strS[1000] = "BG018"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s1
+fi
+goto 1
+label s1
+setvar strS[1000] = ""
+label 1
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Томоя]
+text Кстати, ты в последнее время бывал в справочной комнате?
+text Всё ещё идя, я задаю этот вопрос Сунохаре, будто он только что внезапно всплыл у меня в голове.
+goto 3
+label 2
+if intF[1110] == 22
+	goto s2
+fi
+goto 3
+label s2
+text @[Томоя]
+text Кстати, ты в последнее время бывал в справочной комнате?
+text Я задаю этот вопрос Сунохаре, будто он только что внезапно всплыл у меня в голове.
+label 3
+text Раз это Сунохара, он может что-то знать про ту девушку.
+setvar strS[1001] = "CGSH19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound ELJ.aac
+text @[Сунохара]
+text Справочная комната?
+text @[Томоя]
+text Ага, остатки библиотеки в старом здании школы. Теперь её называют справочной комнатой.
+setvar strS[1001] = "CGSH20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound ELK.aac
+text @[Сунохара]
+text А, это место. Правда, я там давно не был.
+text @[Томоя]
+text Понятно... Ну, тогда забудь.
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound ELL.aac
+text @[Сунохара]
+text ...
+sound ELM.aac
+text @[Сунохара]
+text Да ладно тебе, не бросай на полуслове!
+text @[Томоя]
+text Больше сказать нечего.
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound ELN.aac
+text @[Сунохара]
+text Хмф... Тут явно что-то есть.
+sound ELO.aac
+text @[Сунохара]
+text Это что-то интересное?
+text @[Томоя]
+text Нет вообще ничего.
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound ELP.aac
+text @[Сунохара]
+text Ха, чем больше ты отрицаешь, тем подозрительнее это выглядит.
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound ELQ.aac
+text @[Сунохара]
+text Просто скажи уже. Что там, в справочной комнате?
+sound ELR.aac
+text @[Сунохара]
+text Ты прячешь там девушку?
+text @[Томоя]
+text Зачем мне вообще прятать что-то подобное?
+sound ELS.aac
+text @[Сунохара]
+text Хм~
+sound ELT.aac
+text @[Сунохара]
+text Ладно. Похоже, придётся сходить и посмотреть самому.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Было уже поздно с того момента, как я завёл этот разговор... Он сунет нос куда угодно, если решит, что это поможет убить свободное время.
+setvar strS[1001] = "CGSH18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound ELU.aac
+text @[Сунохара]
+text Мы идём туда, Оказаки!
+text Теперь его никто не остановит.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s3
+fi
+goto 4
+label s3
+setvar strS[1000] = ""
+label 4
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG019"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s4
+fi
+goto 5
+label s4
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Томоя]
+text Просто чтобы ты знал: даже если там девушка, она не моя, ясно?
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound ELV.aac
+text @[Сунохара]
+text Хаха, чем больше ты выкручиваешься, тем подозрительнее это выглядит.
+sound ELW.aac
+text @[Сунохара]
+text Это наверняка что-то интересное.
+text Господи, пожалуйста, пусть там не будет Миядзавы.
+bgload KURO.jpg 88
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Мы с идиотом стоим перед дверью справочной комнаты.
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound ELX.aac
+text @[Сунохара]
+text Пошли!
+text @[Томоя]
+text Ладно...
+music ~
+setvar strS[1000] = "BG028"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s5
+fi
+goto 6
+label s5
+setvar strS[1000] = ""
+label 6
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Мы заходим в комнату.
+music BGM07B.mp3
+setvar strS[1001] = "CGYK12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound ELY.aac
+text @[Миядзава]
+text Ах, Томоя-сан! Вы снова сегодня пришли. Добро пожаловать.
+sound ELZ.aac
+text @[Миядзава]
+text Я заварю кофе. Или сегодня хотите чай?
+text Спасибо за это в корне неверное приветствие.
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EM0.aac
+text @[Сунохара]
+text Так вот оно как... Наконец-то я держу слабость Оказаки прямо в ладони.
+text @[Томоя]
+text Ага, признаю, твоё заблуждение вполне понятно.
+setvar strS[1001] = "CGYK16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EM1.aac
+text @[Миядзава]
+text А? Это твой друг?
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EM2.aac
+text @[Сунохара]
+text Ага. Я его друг. Зовут меня Сунохара.
+setvar strS[1001] = "CGYK10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EM3.aac
+text @[Миядзава]
+text Так вы Сунохара-сан.
+sound EM4.aac
+text @[Миядзава]
+text Кажется, я где-то уже слышала ваше имя.
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EM5.aac
+text @[Сунохара]
+text Ну, я его лучший друг.
+sound EM6.aac
+text @[Сунохара]
+text Если вы двое достаточно наговоритесь, моё имя всяко всплывёт хотя бы раз-другой.
+if intF[503] == 1
+	goto s6
+fi
+goto 7
+label s6
+text @[Томоя]
+text Просто чтобы ты знал: это уже вроде как третий раз, когда я её вижу.
+goto 8
+label 7
+if intF[503] == 0
+	goto s7
+fi
+goto 8
+label s7
+text @[Томоя]
+text Просто чтобы ты знал: это уже вроде как второй раз, когда я её вижу.
+label 8
+sound EM7.aac
+text @[Сунохара]
+text Опять он за своё. Такая ложь ведь может её ранить, знаешь?
+text @[Томоя]
+text Не, это правда, так что с ней всё будет в порядке.
+setvar strS[1001] = "CGSH20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EM8.aac
+text @[Сунохара]
+text А? Правда?
+setvar strS[1001] = "CGYK11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EM9.aac
+text @[Миядзава]
+text Да.
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EMA.aac
+text @[Сунохара]
+text ...
+sound EMB.aac
+text @[Сунохара]
+text Оказаки... Ты невероятен.
+text О чём ты вообще...
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EMC.aac
+text @[Сунохара]
+text Оказаки... Ты невероятен!
+text @[Томоя]
+text Ты просто повторил ту же фразу!
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EMD.aac
+text @[Сунохара]
+text Я просто в таком шоке... Подумать только, что ты можешь быть таким...
+if intF[503] == 0
+	goto s8
+fi
+goto 9
+label s8
+sound EME.aac
+text @[Сунохара]
+text Всего за один день... Какую технику ты вообще использовал...
+goto 10
+label 9
+if intF[503] == 1
+	goto s9
+fi
+goto 10
+label s9
+sound EMF.aac
+text @[Сунохара]
+text Всего за два дня... Какую технику ты вообще использовал...
+label 10
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EMG.aac
+text @[Сунохара]
+text Стоит мне только представить это... Чёрт возьми... Это точно зло... Это дьявольщина какая-то...
+text @[Томоя]
+text Отойди с дороги.
+setvar strS[1001] = "CGYK16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EMH.aac
+text @[Миядзава]
+text Да.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Пока Сунохара всё ещё тонет в море заблуждений, я беру его руку и подтаскиваю к электрочайнику.
+text Затем я подставляю его руку под носик и бесстрастно нажимаю кнопку.
+text *Бульк* *Бульк*
+setvar strS[1001] = "CGSH20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EMI.aac
+text @[Сунохара]
+text А?
+music ~
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EMJ.aac
+text @[Сунохара]
+text Что за-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А-А────!!
+bgload KURO.jpg 55
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM10.mp3
+setvar strS[1001] = "CGSH26"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH26.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EMK.aac
+text @[Сунохара]
+text ...
+text Сунохара тратит какое-то время, охлаждая ожог холодной водой, прежде чем вернуться ко мне.
+sound EML.aac
+text @[Сунохара]
+text Слушай... Оказаки.
+text @[Томоя]
+text Знаю, моя вина.
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EMM.aac
+text @[Сунохара]
+text ТЫ ДУМАЕШЬ, Я ОТПУЩУ ТЕБЯ С ПРОСТЫМ ИЗВИНЕНИЕМ?!
+sound EMN.aac
+text @[Сунохара]
+text Ты сделал это абсолютно нарочно! НАРОЧНО!
+sound EMO.aac
+text @[Сунохара]
+text Если бы жертвой был не я, они были бы мертвы!
+text @[Томоя]
+text Ага-ага, они бы точно были мертвы. Сунохара-кун просто супермен.
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EMP.aac
+text @[Сунохара]
+text Я... хочу... его убить.
+setvar strS[1001] = "CGYK15A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK15A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EMQ.aac
+text @[Миядзава]
+text Ну-ну, пожалуйста, успокойтесь. Все ошибаются. Главное — уметь прощать.
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EMR.aac
+text @[Сунохара]
+text Так это была просто ошибка, которую он совершил?!
+text @[Томоя]
+text Я перепутал твою руку с чашкой кофе.
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EMS.aac
+text @[Сунохара]
+text ЭТО СОВЕРШЕННО РАЗНЫЕ ВЕЩИ!
+text @[Томоя]
+text Не совсем. Подумай, как редко и то, и другое используется. Разве не похоже?
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EMT.aac
+text @[Сунохара]
+text Ты откопал где-то один чертовски скользкий аргумент, да?
+setvar strS[1001] = "CGYK15A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK15A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EMU.aac
+text @[Миядзава]
+text Пожалуйста, покажите мне вашу руку.
+text Миядзава оборачивает руку Сунохары влажным носовым платком.
+setvar strS[1001] = "CGYK10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EMV.aac
+text @[Миядзава]
+text Сунохара-сан, вы тоже хотите кофе, верно?
+text Она смотрит вверх и спрашивает.
+setvar strS[1001] = "CGYK11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EMW.aac
+text @[Миядзава]
+text Верно?
+setvar strS[1001] = "CGSH20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EMX.aac
+text @[Сунохара]
+text Д-да...
+text Даже разъярённый Сунохара бессилен перед её улыбкой.
+music ~
+bgload KURO.jpg 60
+bgload {$strS[1000]}.jpg 60
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM07B.mp3
+text Мы вдвоём сидим за столом друг напротив друга, наслаждаясь кофе.
+text Сунохара полностью успокоился.
+text @[Томоя]
+text (Это стоило бы назвать магией Миядзавы... Только посмотрите на спокойствие этого идиота после всей этой суматохи... Невероятно.)
+text Давай кое-что проверю.
+text @[Томоя]
+text Сунохара — тупица.
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EMY.aac
+text @[Сунохара]
+text Ха, блин, это всё, что ты умеешь говорить?
+text ...Посмотрите на него. Ни малейшего намёка на гнев.
+text @[Томоя]
+text Сунохара — самая тупая задница в школе.
+sound EMZ.aac
+text @[Сунохара]
+text Хахах, ну, это же такая школа в конце концов. Но не обязательно было говорить это вслух, да?
+text ...А как насчёт этого? Я даже чувствую некую зрелость в его словах.
+text @[Томоя]
+text Сунохара — самая тупая задница во вселенной.
+sound EN0.aac
+text @[Сунохара]
+text Хахах, значит, я самая тупая задница во вселенной? В каком-то смысле я должен этим гордиться.
+text ...Теперь он достиг состояния безличности.
+setvar strS[1001] = "CGYK12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EN1.aac
+text @[Миядзава]
+text Ваш разговор так забавно странный.
+text @[Томоя]
+text Ну да, конечно. Мы просто типичные идиоты...
+setvar strS[1001] = "CGSH17"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH17.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EN2.aac
+text @[Сунохара]
+text ЧТО ТЫ ИМЕЕШЬ В ВИДУ ПОД "ИДИОТОМ", УБЛЮДОК?!
+text @[Томоя]
+text По-моему, ты взбесился не от того...
+setvar strS[1001] = "CGYK11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Глядя на нас двоих, Миядзава продолжает хихикать.
+text Её улыбка заставляет меня чувствовать, что в этом дурачестве есть смысл.
+setvar strS[1001] = "CGSH19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EN3.aac
+text @[Сунохара]
+text Если серьёзно, что ты вообще тут делаешь, Миядзава?
+text Раз уж нам больше не над чем орать или смеяться, Сунохара продолжает разговор.
+setvar strS[1001] = "CGYK10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EN4.aac
+text @[Миядзава]
+text Обычно я просто читаю книги.
+sound EN5.aac
+text @[Сунохара]
+text Тебе не скучно?
+setvar strS[1001] = "CGYK11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EN6.aac
+text @[Миядзава]
+text Пожалуйста, взгляните, сколько тут книг.
+sound EN7.aac
+text @[Миядзава]
+text Мне никогда не надоедает, сколько бы я тут ни оставалась.
+setvar strS[1001] = "CGSH15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EN8.aac
+text @[Сунохара]
+text Нет, я не про количество, я про качество.
+setvar strS[1001] = "CGSH18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EN9.aac
+text @[Сунохара]
+text Тут вокруг сплошные книги, которые никто не хочет читать, разве нет?
+setvar strS[1001] = "CGYK12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound ENA.aac
+text @[Миядзава]
+text Именно поэтому.
+sound ENB.aac
+text @[Миядзава]
+text Именно поэтому они все мне так интересны.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Миядзава встаёт и оглядывает полку.
+setvar strS[1001] = "CGYK10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound ENC.aac
+text @[Миядзава]
+text Вот, к примеру, это.
+sound END.aac
+text @[Миядзава]
+text Энциклопедия заклинаний на все случаи жизни.
+sound ENE.aac
+text @[Сунохара]
+text Хм.
+setvar strS[1001] = "CGYK11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound ENF.aac
+text @[Миядзава]
+text Тут написано: "С этим сегодняшний день станет началом твоей новой жизни в качестве удачливой девушки!"
+sound ENG.aac
+text @[Сунохара]
+text Ну, технически мы "парни".
+text Миядзава открывает книгу.
+setvar strS[1001] = "CGYK14A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK14A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound ENH.aac
+text @[Миядзава]
+text Давайте попробуем одно из них.
+sound ENI.aac
+text @[Сунохара]
+text Она меня совсем не слушает.
+setvar strS[1001] = "CGYK20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound ENJ.aac
+text @[Миядзава]
+text Для начала скрестите руки. Теперь указательным пальцем правой руки слегка надавите на левый висок; то же самое левым указательным пальцем на правый висок.
+setvar strS[1001] = "CGSH19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound ENK.aac
+text @[Сунохара]
+text ...
+sound ENL.aac
+text @[Миядзава]
+text Пожалуйста, надавите пальцем.
+setvar strS[1001] = "CGSH27"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH27.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound ENM.aac
+text @[Сунохара]
+text А, мне?
+setvar strS[1001] = "CGYK20A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK20A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound ENN.aac
+text @[Миядзава]
+text Да.
+text Сунохара делает, как ему говорят.
+sound ENO.aac
+text @[Сунохара]
+text Вот так...?
+sound ENP.aac
+text @[Миядзава]
+text Да, этого достаточно.
+sound ENQ.aac
+text @[Миядзава]
+text Теперь, пожалуйста, закройте глаза и произнесите про себя...
+sound ENR.aac
+text @[Миядзава]
+text "Я ВСЕГДА РЯДОМ С ТОБОЙ И НАБЛЮДАЮ, Я ВСЕГДА РЯДОМ С ТОБОЙ И НАБЛЮДАЮ, Я ВСЕГДА РЯДОМ С ТОБОЙ И НАБЛЮДАЮ..."
+sound ENS.aac
+text @[Миядзава]
+text ...три раза в уме.
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound ENT.aac
+text @[Сунохара]
+text Хм...
+sound ENU.aac
+text @[Сунохара]
+text ...
+text Сунохара закрывает глаза и беззвучно шевелит губами.
+text Я продолжаю пристально смотреть на него сбоку.
+setvar strS[1001] = "CGYK10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound ENV.aac
+text @[Миядзава]
+text Да, этого достаточно.
+setvar strS[1001] = "CGSH19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound ENW.aac
+text @[Сунохара]
+text И что это делает?
+setvar strS[1001] = "CGYK20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound ENX.aac
+text @[Миядзава]
+text Посмотрим...
+text Она переворачивает страницу.
+setvar strS[1001] = "CGYK12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound ENY.aac
+text @[Миядзава]
+text Это поможет вам и вашему соседу по парте влюбиться друг в друга!
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound ENZ.aac
+setvar strS[1017] = "Sunohara"
+setvar strS[1020] = "ЭТО НЕ МОЖЕШЬ БЫТЬ ТЫ!"
+setvar strS[1018] = ""
+setvar strS[1021] = "ЭТО НЕ МОЖЕШЬ БЫТЬ ТЫ!"
+text @[Сунохара Томоя]
+text @ЭТО НЕ МОЖЕШЬ БЫТЬ ТЫ!
+text ЭТО НЕ МОЖЕШЬ БЫТЬ ТЫ!
+text Лицом к лицу, слово в слово.
+setvar strS[1001] = "CGYK12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EO0.aac
+text @[Миядзава]
+text Заклинание правда работает. Вы двое отлично подходите друг другу.
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EO1.aac
+setvar strS[1020] = "НИ ЗА ЧТО НА СВЕТЕ!"
+setvar strS[1021] = "НИ ЗА ЧТО НА СВЕТЕ!"
+text @[Сунохара Томоя]
+text @НИ ЗА ЧТО НА СВЕТЕ!
+text НИ ЗА ЧТО НА СВЕТЕ!
+text Снова слишком идеальное совпадение по времени.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Томоя]
+text Аргх, даже думать не хочу, что это могло быть делом заклинания.
+text @[Томоя]
+text В любом случае, мне нужно тебя ударить, чтобы показать, насколько плохи наши отношения. Ха.
+text Я разогреваю кулак своим дыханием.
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EO2.aac
+text @[Сунохара]
+text Не бей людей по такой идиотской причине!
+text @[Томоя]
+text Не, это вопрос жизни и смерти.
+setvar strS[1001] = "CGYK11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EO3.aac
+text @[Миядзава]
+text Ну как? Интересно, да?
+text @[Томоя]
+text Думаю, ты единственный человек тут, кому это может быть интересно...
+setvar strS[1001] = "CGYK15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EO4.aac
+text @[Миядзава]
+text Правда, что ли? Хаха...
+setvar strS[1001] = "CGYK10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EO5.aac
+text @[Миядзава]
+text Другими словами, я хотела сказать вот что...
+sound EO6.aac
+text @[Миядзава]
+text В отличие от книг в главной библиотеке, которые используются только для учёбы,
+sound EO7.aac
+text @[Миядзава]
+text ...большинство книг тут можно читать просто для отдыха.
+setvar strS[1001] = "CGYK11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EO8.aac
+text @[Миядзава]
+text Если посмотреть с этой стороны, разве это не чудесное место?
+text @[Томоя]
+text Ага, как-то странно находить книгу про заклинания тут, в этой школе...
+setvar strS[1001] = "CGYK10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EO9.aac
+text @[Миядзава]
+text Наверное, кто-то её сюда принёс.
+if intF[503] == 0
+	goto s10
+fi
+goto 11
+label s10
+sound EOA.aac
+text @[Миядзава]
+text Похоже, тут же хранят и потерянные или конфискованные книги.
+goto 12
+label 11
+if intF[503] == 1
+	goto s11
+fi
+goto 12
+label s11
+text @[Томоя]
+text Ага, точно... Книги, конфискованные у учеников, тоже суют сюда.
+sound EOB.aac
+text @[Миядзава]
+text Да. Эта книга заклинаний, должно быть, принадлежала какому-то ученику.
+label 12
+setvar strS[1001] = "CGSH25"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH25.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EOC.aac
+text @[Сунохара]
+text Хех, интересно, есть ли тут порнушка.
+text Эта реплика заставляет Миядзаву рассмеяться.
+setvar strS[1001] = "CGYK11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGYK11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EOD.aac
+text @[Миядзава]
+text Может, и есть!
+text ...Нет, вряд ли, наверное...?
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EOE.aac
+text @[Сунохара]
+text Отлично. Кажется, это место мне начинает нравиться.
+text @[Томоя]
+text Извращенец.
+setvar strS[1001] = "CGSH18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EOF.aac
+text @[Сунохара]
+text Продолжай говорить это. Я тебе всё равно не покажу, даже если найду!
+text @[Томоя]
+text Ладно. Неважно.
+music ~
+if intF[1110] == 21
+	goto s12
+fi
+goto 14
+label s12
+setvar strS[1000] = "BG019Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s13
+fi
+goto 13
+label s13
+setvar strS[1000] = ""
+label 13
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+goto 16
+label 14
+if intF[1110] == 22
+	goto s14
+fi
+goto 16
+label s14
+setvar strS[1000] = "BG019"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s15
+fi
+goto 15
+label s15
+setvar strS[1000] = ""
+label 15
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+label 16
+music BGM08B.mp3
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EOG.aac
+text @[Сунохара]
+text Чувак, она такая классная девчонка.
+sound EOH.aac
+text @[Сунохара]
+text Расслабляет, да? Там было так спокойно.
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EOI.aac
+text @[Сунохара]
+text Прекрасно понимаю, почему ты пытался держать её при себе.
+text @[Томоя]
+text Я не пытался...
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EOJ.aac
+text @[Сунохара]
+text Возьми меня с собой в следующий раз, когда пойдёшь туда, ладно?
+text @[Томоя]
+text Иди туда сам...
+setvar strS[1001] = "CGSH10"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH10.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EOK.aac
+text @[Сунохара]
+text Не, чувак. "Никакой скрытности" — вот девиз нашей дружбы, разве нет?
+text @[Томоя]
+text Ну, знаешь, я не против это правило нарушить.
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 0
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EOL.aac
+text @[Сунохара]
+text Не говори об этом так легко!
+if intF[1110] == 21
+	goto s16
+fi
+goto 19
+label s16
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s17
+fi
+goto 17
+label s17
+setvar strS[1000] = ""
+label 17
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG012Y"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s18
+fi
+goto 18
+label s18
+setvar strS[1000] = ""
+label 18
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Томоя]
+text Так что, теперь идём в игровые автоматы?
+setvar strS[1001] = "CGSH13"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH13.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EOM.aac
+text @[Сунохара]
+text Ага, почему бы и нет? Ещё рано.
+setvar strS[1001] = "CGSH12"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH12.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound EON.aac
+text @[Сунохара]
+text Пойдём найдём какого-нибудь первокурсника, пусть нас угостит.
+label 19
+setvar intF[504] = 1
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0

@@ -1,1 +1,1973 @@
-��$
+text Я решаю пойти в библиотеку.
+text Я думаю о девушке, что сидит на полу и читает.
+text @[Томоя]
+text (Как же её звали снова? Котоми?)
+text Вчера она сказала, что собирается провести весь день за чтением.
+text Может, она там прямо сейчас.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s0
+fi
+goto 1
+label s0
+setvar strS[1000] = ""
+label 1
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG020"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s1
+fi
+goto 2
+label s1
+setvar strS[1000] = ""
+label 2
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Когда я сворачиваю за угол, я слышу, как кто-то идёт по коридору.
+text Судя по звуку, на них тапочки, а не уличная обувь.
+text Значит, это ученик, а не учитель.
+text На этом этаже есть только библиотека и редко используемый класс коррекционного обучения.
+text Есть только один человек, кто пошёл бы в библиотеку во время урока.
+choice Напугать её|Спрятаться и посмотреть, что происходит
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s2
+fi
+goto 3
+label s2
+text Я решаю её напугать.
+text @[Томоя]
+text *Кашель*
+text @[Томоя]
+text *Кхм* *Кхм*
+text Я прочищаю горло и готовлюсь закричать.
+text Ничего не подозревающие, беспечные шаги приближаются.
+music ~
+text Готовсь, внимание...
+text @[Томоя]
+text Эй! Что ты делаешь вне класса?!
+music BGM10.mp3
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BPA.aac
+text @[Сунохара]
+text Агх!
+setvar strS[1001] = "CGSH22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BPB.aac
+text @[Сунохара]
+text П-простите! У меня болит живот и голова кружится. Я искал кабинет медсестры и заблудился...
+text @[Томоя]
+text ...
+text Вижу перед собой идиота.
+goto 4
+label 3
+if intF[1089] == 1
+	goto s3
+fi
+goto 4
+label s3
+text Я хочу её напугать, но что, если это учитель? Я себе этого не прощу.
+text Я прячусь за углом и продолжаю прислушиваться.
+text Вперемешку с этими беззаботными шагами я слышу приглушённое пение.
+sound BPC.aac
+text @[Голос]
+text Бомб а хэд~
+text @[Томоя]
+text ...
+text Это Сунохара.
+text Он идиот. Другого способа его описать нет.
+text @[Томоя]
+text ...
+text Меня вдруг охватывает раздражение.
+text @[Томоя]
+text *Кашель*
+text @[Томоя]
+text *Кхм* *Кхм*
+text Я прочищаю горло и готовлюсь закричать.
+text Ничего не подозревающий Сунохара неспешно проходит мимо.
+music ~
+text Готовсь, внимание...
+text @[Томоя]
+text Эй! Что ты делаешь вне класса?!
+music BGM10.mp3
+setvar strS[1001] = "CGSH23"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH23.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BPD.aac
+text @[Сунохара]
+text Агх!
+setvar strS[1001] = "CGSH22"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH22.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BPE.aac
+text @[Сунохара]
+text П-простите! У меня болит живот и голова кружится. Я искал кабинет медсестры и заблудился...
+text @[Томоя]
+text ...
+label 4
+text Ты паникуешь и раболепно извиняешься уж слишком сильно.
+setvar strS[1001] = "CGSH21"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH21.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BPF.aac
+text @[Сунохара]
+text @...Оказаки?!
+delay 88
+text Как ты мог так со мной поступить?!
+text @[Томоя]
+text Прости, я тебя с кем-то перепутал.
+sound BPG.aac
+text @[Сунохара]
+text С кем это ты меня перепутал?!
+sound BPH.aac
+text @[Сунохара]
+text Мы же единственные в этой школе, кто прогуливает уроки.
+text @[Томоя]
+text Не только мы.
+setvar strS[1001] = "CGSH20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BPI.aac
+text @[Сунохара]
+text А?
+text @[Томоя]
+text Ты хоть раз ходил в библиотеку во время урока?
+sound BPJ.aac
+text @[Сунохара]
+text В библиотеку?
+sound BPK.aac
+text @[Сунохара]
+text У нас тут есть библиотека?
+text @[Томоя]
+text Ты самый тупой парень в школе.
+setvar strS[1001] = "CGSH18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BPL.aac
+text @[Сунохара]
+text От тебя это слышать особенно приятно.
+text Двое идиотов, наезжающих друг на друга.
+text Какая бесполезная перепалка.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Томоя]
+text В любом случае, библиотека, о которой ты, очевидно, не знал, находится дальше по коридору.
+text @[Томоя]
+text Там в одиночестве читает загадочная симпатичная девушка очень сложные книги.
+text @[Томоя]
+text Если с ней заговорить, она подарит тебе кусочек страницы.
+text @[Томоя]
+text Иногда она даже кормит тебя обедом.
+text @[Томоя]
+text ...
+text Я понимаю, что произнося это вслух, звучит это совершенно нереально.
+text Совсем не похоже на то, что бывает в реальной жизни.
+text Я правда видел эту девушку?
+text Я осторожно поднимаю взгляд, чтобы увидеть реакцию Сунохары.
+setvar strS[1001] = "CGSH11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BPM.aac
+text @[Сунохара]
+text Пожалуйста, познакомь меня с ней!
+text Он верит мне без единой капли сомнения.
+text @[Томоя]
+text Просто зайди. Увидишь её, если повезёт.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Говорю я, указывая на библиотеку.
+text С задними мыслями, написанными прямо у него на лице, Сунохара смотрит на вход в библиотеку.
+text Он спрашивает меня кое о чём.
+setvar strS[1001] = "CGSH11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BPN.aac
+text @[Сунохара]
+text Тут написано «закрыто».
+text @[Томоя]
+text Она всё ещё там. Вот почему это загадка.
+sound BPO.aac
+text @[Сунохара]
+text Ты точно уверен, что она симпатичная?
+text @[Томоя]
+text В каком-то смысле.
+sound BPP.aac
+text @[Сунохара]
+text И она читает книги совсем одна?
+text @[Томоя]
+text Наверное.
+setvar strS[1001] = "CGSH14"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH14.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BPQ.aac
+text @[Сунохара]
+text Ладно.
+text Он настраивает себя.
+setvar strS[1001] = "CGSH11"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH11.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BPR.aac
+text @[Сунохара]
+text Я выведу тебя во внешний мир.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text *Дребезг* *Дребезг*
+text Он открывает раздвижную дверь и заходит в библиотеку один.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s4
+fi
+goto 5
+label s4
+setvar strS[1000] = ""
+label 5
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Мне всё равно нечем заняться, так что я решаю подождать.
+text Одна минута.
+text Две минуты.
+text Три минуты.
+text Похоже, ничего не происходит.
+text Проходит пять минут.
+text *Хлоп*
+text *Бух*
+text *Бам*
+text Я начинаю слышать странные звуки из библиотеки.
+text Они что, дерутся?
+text Может, Сунохара потерял терпение и напал на неё.
+text Есть шанс, что он крушит всё вокруг, потому что там никого не было.
+text В любом случае, давай-ка заглянем внутрь.
+text Как раз в этот момент выходит Сунохара.
+setvar strS[1000] = "BG020"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s5
+fi
+goto 6
+label s5
+setvar strS[1000] = ""
+label 6
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1001] = "CGSH16"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH16.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BPS.aac
+text @[Сунохара]
+text Фух...
+text Он закрывает за собой дверь и издаёт огромный вздох.
+text Он почему-то выглядит уставшим.
+text Естественно, рядом с ним никого нет.
+text @[Томоя]
+text Её там не было?
+text Спрашиваю я его.
+sound BPT.aac
+text @[Сунохара]
+text Она была там.
+text @[Томоя]
+text Ты получил кусочек страницы?
+sound BPU.aac
+text @[Сунохара]
+text @Меня полностью проигнорирова-
+delay 158
+text -ли.
+text Странный способ это выразить.
+sound BPV.aac
+text @[Сунохара]
+text Что бы я ей ни говорил и как бы ни флиртовал, она просто продолжала читать и совсем никак не реагировала.
+text @[Томоя]
+text Может, ты просто настолько незапоминающийся, что она тебя даже не заметила.
+setvar strS[1001] = "CGSH15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BPW.aac
+text @[Сунохара]
+text Дело не в этом! Я пробовал ещё кучу всего.
+sound BPX.aac
+text @[Сунохара]
+text Я уронил несколько книг на пол.
+text @[Томоя]
+text Так вот что это был за звук...
+sound BPY.aac
+text @[Сунохара]
+text Я даже думал повалить книжную полку, но она оказалась слишком тяжёлой.
+text @[Томоя]
+text Ты кретин.
+setvar strS[1001] = "CGSH20"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH20.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BPZ.aac
+text @[Сунохара]
+text Чёрт...
+sound BQ0.aac
+text @[Сунохара]
+text Кто эта девушка?
+text @[Томоя]
+text Я и сам толком не знаю...
+text Правда не знаю.
+text Всё, что я знаю, это...
+text @[Томоя]
+text Она сказала, что её зовут Котоми.
+sound BQ1.aac
+text @[Сунохара]
+text Котоми?
+text Бровь Сунохары дёргается, услышав это.
+setvar strS[1001] = "CGSH19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BQ2.aac
+text @[Сунохара]
+text Ах...
+sound BQ3.aac
+text @[Сунохара]
+text Значит, это Котоми Итиносэ...
+text Бормочет он с досадой.
+text @[Томоя]
+text Ты её знаешь?
+sound BQ4.aac
+text @[Сунохара]
+text Она знаменита.
+text Ты так говоришь, но я вообще без понятия.
+sound BQ5.aac
+text @[Сунохара]
+text Ты видел рейтинги пробных экзаменов? Её имя всегда наверху.
+text @[Томоя]
+text Рейтинги? Какие ещё рейтинги?
+setvar strS[1001] = "CGSH18"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH18.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BQ6.aac
+text @[Сунохара]
+text Ты худший ученик в этой школе.
+text @[Томоя]
+text От тебя это слышать особенно приятно.
+sound BQ7.aac
+text @[Сунохара]
+text От тебя тоже, взаимно.
+text @[Томоя]
+text И от меня тебе тоже, взаимно. С розовым бантиком сверху.
+sound BQ8.aac
+text @[Сунохара]
+text ...
+text @[Томоя]
+text ...
+setvar strS[1001] = "CGSH19"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH19.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BQ9.aac
+text @[Сунохара]
+text Эта Котоми Итиносэ учится по стипендии.
+text @[Томоя]
+text Прямо как ты.
+sound BQA.aac
+text @[Сунохара]
+text Я поступил по спортивной стипендии. А она получила свою за отличные оценки. Мы не одно и то же.
+text Я не совсем понимаю, но для Сунохары это принципиальный момент.
+sound BQB.aac
+text @[Сунохара]
+text Она настоящая зубрилка, которая никогда не опускается ниже десятого места ни по одному предмету. Ну, она не в моём вкусе.
+text @[Томоя]
+text Оставим в стороне твой вкус и тот факт, что ты только что использовал слово «зубрилка»...
+text @[Томоя]
+text Десятое место по всем предметам среди пробных экзаменов по всей школе? Это впечатляет.
+sound BQC.aac
+text @[Сунохара]
+text Не так быстро. Я имею в виду общенациональные пробные экзамены.
+text @[Томоя]
+text Общенациональные?!
+text Другими словами, она всегда в топ-десятке среди всех абитуриентов страны.
+text Это пугающий мир, который я даже представить не могу.
+sound BQD.aac
+text @[Сунохара]
+text Я слышал, что она освобождена от уроков и учится сама, потому что наша школа не преподаёт на достаточно высоком уровне.
+text @[Томоя]
+text Освобождена? Это ещё что за чертовщина?
+setvar strS[1001] = "CGSH15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BQE.aac
+text @[Сунохара]
+text Пока у неё достаточно дней посещаемости, она может делать всё, что захочет.
+sound BQF.aac
+text @[Сунохара]
+text Ходят слухи, что она не состоит ни в одном клубе. Она даже во время урока почти не разговаривает.
+text Объясняет Сунохара с раздражённым тоном.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я знал, что она нечто большее, чем просто ещё одна ученица, прогуливающая занятия.
+text Она легко читает технические книги на английском. Конечно, она умная.
+text Сама идея о том, что есть уроки, «на которые она обязана ходить», для неё, похоже, совершенно чужда.
+setvar strS[1001] = "CGSH15"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGSH15.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BQG.aac
+text @[Сунохара]
+text Скажем так, она живёт в совершенно другом мире, нежели мы.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Сказав это, Сунохара поворачивается ко мне спиной.
+sound BQH.aac
+text @[Сунохара]
+text Если тут больше нечего делать, я пошёл.
+text @[Томоя]
+text Классный руководитель тебя искал. В последнее время ты слишком уж выделяешься.
+sound BQI.aac
+text @[Сунохара]
+text Кто бы говорил.
+text @[Томоя]
+text Это не твоё дело.
+sound BQJ.aac
+text @[Сунохара]
+text И тебе тоже, взаимно.
+music ~
+text Он засовывает руки в карманы и уходит.
+text Сомневаюсь, что ему вообще есть куда идти.
+text Мы с ним одинаковые.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s6
+fi
+goto 7
+label s6
+setvar strS[1000] = ""
+label 7
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM08D.mp3
+text @[Томоя]
+text Фух...
+text Я вздыхаю.
+text Всё, что я делаю, — это прогуливаю уроки и слоняюсь без дела. Я вдруг осознаю, насколько же я бесполезен.
+text Я вспоминаю, что сказал Сунохара.
+text Она блестящая ученица, всегда входящая в топ-десятку по всей стране.
+text Отличница, к которой в школе особое отношение.
+text У нас с ней не может быть ничего общего.
+text Мне стоит вернуться на урок.
+text Я вяло начинаю идти.
+setvar strS[1000] = "BG020"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s7
+fi
+goto 8
+label s7
+setvar strS[1000] = ""
+label 8
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я снова поворачиваю голову, чтобы взглянуть на вход в библиотеку.
+choice Зайти в библиотеку|Вернуться на урок
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 1
+	goto s8
+fi
+goto 10
+label s8
+text @[Томоя]
+text (Просто определись уже.)
+text Говорю я себе, уходя.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s9
+fi
+goto 9
+label s9
+setvar strS[1000] = ""
+label 9
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+label 10
+text @[Томоя]
+text Мне лучше поскорее вернуться...
+text Мои ноги указывают в направлении библиотеки.
+text Я тихо открываю дверь с висящей табличкой «Закрыто».
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s10
+fi
+goto 11
+label s10
+setvar strS[1000] = ""
+label 11
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 55
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG027"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s11
+fi
+goto 12
+label s11
+setvar strS[1000] = ""
+label 12
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Слабый аромат пыли и бумаги.
+text Это место должно быть пустым.
+music BGM05A.mp3
+text У окна с развевающимися занавесками, в солнечном луче, сидит она.
+text Она сидит босиком на полу и читает, точно так же, как вчера.
+text Один только вид этого приносит мне облегчение.
+text Как обычно, она окружила себя книгами.
+text А за пределами этого круга книг разбросано ещё больше книг.
+text Наверное, это дело рук Сунохары.
+text Если она правда не заметила, её концентрация, должно быть, невероятна.
+text Нет, это невозможно. Она явно знала, что происходит, и намеренно его игнорировала.
+text @[Томоя]
+text Бедняга Сунохара...
+text Но нет никакой гарантии, что она не проигнорирует и меня сегодня тоже.
+text @[Томоя]
+text Эй...
+text Я подхожу и пытаюсь с ней заговорить.
+text Нет ответа.
+text @[Томоя]
+text Я здесь. Заметь меня.
+text Естественно, нет ответа.
+text @[Томоя]
+text Эй. Скажи хоть что-нибудь.
+text *Шелест*
+text Её тонкие пальцы переворачивают страницу.
+text Она полностью меня игнорирует.
+text @[Томоя]
+text ...
+text Я решаю подождать и посмотреть.
+text Я в упор смотрю на её лицо сбоку.
+text Она продолжает читать.
+text Должно быть, она читает книгу с вертикальным текстом. Я вижу, как её глаза двигаются вверх-вниз.
+text Я уже знал это, но читает она и правда очень быстро.
+text Она правда понимает всё, что читает?
+text Ах, она перевернула ещё одну страницу.
+text @[Томоя]
+text Неужели я и правда буду просто стоять и наблюдать?!
+text Я выкрикиваю что-то, но она всё равно меня игнорирует.
+text @[Томоя]
+text ...
+text Что мне делать?
+choice Перевернуть страницу|Позвать её по имени|Ткнуть её в щёку
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s12
+fi
+goto 17
+label s12
+text Я решаю взять дело в свои руки.
+label 13
+text *Шелест*
+text Я переворачиваю страницу за неё.
+text *Шелест*
+text Она переворачивает обратно на ту страницу, где была.
+text *Шелест* *Шелест* *Шелест*
+text Я переворачиваю ещё несколько страниц.
+text *Шелест* *Шелест* *Шелест*
+text Она сразу же переворачивает их обратно.
+text Наверное, она думает, что это ветер листает страницы, или что-то в этом духе.
+if intF[406] == 1
+	goto s13
+fi
+goto 14
+label s13
+text @В итоге...
+goto 21
+label 14
+text Я прихожу к выводу, что мне нужна тактика получше.
+choice Позвать её по имени|Ткнуть её в щёку
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s14
+fi
+goto 15
+label s14
+goto 21
+goto 16
+label 15
+if intF[1089] == 1
+	goto s15
+fi
+goto 16
+label s15
+setvar intF[406] = 1
+goto 18
+label 16
+goto 21
+label 17
+if intF[1089] == 2
+	goto s16
+fi
+goto 21
+label s16
+label 18
+text *Тык*
+text Я тыкаю её в щёку.
+text Она мягкая.
+text Но она вообще этого не замечает.
+text *Тык* *Тык* *Тык* *Тык*
+text Я снова и снова прикасаюсь к её щеке и отдёргиваю палец.
+text Она всё ещё этого не замечает.
+text Она продолжает читать, с моим пальцем на своём лице.
+text Как обычно, она переворачивает страницы с невероятной скоростью.
+text Она даже этого не замечает?
+text Она полностью беззащитна перед чем угодно.
+text Готов поспорить, она бы не заметила, к какой бы части её тела я ни прикоснулся...
+text @[Томоя]
+text ...
+text Я стряхиваю с себя эту фантазию, всплывшую у меня в голове.
+text Хотя, если подумать, если она никак не реагирует, прикасаться к ней не так уж и весело.
+setvar intF[407] = 1
+if intF[406] == 1
+	goto s17
+fi
+goto 19
+label s17
+text @В итоге...
+goto 21
+label 19
+text Как мне вернуть её сознание сюда?
+choice Перевернуть страницу|Позвать её по имени
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s18
+fi
+goto 20
+label s18
+setvar intF[406] = 1
+goto 13
+goto 21
+label 20
+if intF[1089] == 1
+	goto s19
+fi
+goto 21
+label s19
+goto 21
+label 21
+text Я решаю позвать её по имени.
+text Я приближаюсь к её уху.
+text Я чувствую аромат её шампуня в длинных, слегка синеватых волосах.
+text Я шепчу ей на ухо.
+text @[Томоя]
+text Эй, Котоми.
+text Нет ответа.
+text @[Томоя]
+text Котоми, Котоми, Котоми...
+text Я начинаю повторять это.
+text Снова нет ответа.
+text @[Томоя]
+text Котоми?
+text Я произношу это в форме вопроса.
+text Результат тот же.
+text @[Томоя]
+text В таком случае...
+text Время для последнего средства.
+text @[Томоя]
+text Котоми......-тян.
+text Я пробую сделать паузу без всякой на то причины.
+text В этот момент её пальцы перестают переворачивать страницы.
+setvar strS[1001] = "CGKT11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Она поднимает взгляд от книги.
+text Она смотрит на меня, будто просыпаясь ото сна.
+setvar strS[1001] = "CGKT12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BQK.aac
+text @[Котоми]
+text Томоя-кун.
+text Она улыбается.
+text @[Томоя]
+text Эй, погоди! Почему ты заметила именно это?!
+text Меня больше удивляет то, что это сработало.
+sound BQL.aac
+text @[Котоми]
+text Ты сегодня опоздал.
+text @[Томоя]
+text Нет, это ты меня поздно заметила.
+setvar strS[1001] = "CGKT11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BQM.aac
+text @[Котоми]
+text ...?
+text Заметив что-то странное, она медленно оглядывается.
+sound BQN.aac
+text @[Котоми]
+text А...?
+text Она смотрит на беспорядочно разбросанные книги.
+sound BQO.aac
+text @[Котоми]
+text А...?
+text Она смотрит на меня.
+sound BQP.aac
+text @[Котоми]
+text ...
+setvar strS[1001] = "CGKT10B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT10B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BQQ.aac
+text @[Котоми]
+text С книгами нужно обращаться бережно.
+text Она разговаривает со мной, как мать, читающая нотации ребёнку.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Она встаёт и начинает расставлять разбросанные книги обратно на полки.
+text @[Томоя]
+text Слушай, это не я это сделал.
+text Я кое-что осознаю, пытаясь оправдаться.
+text @[Томоя]
+text На днях ты вырезала страницы.
+sound BQR.aac
+text @[Котоми]
+text Это сюда. То туда...
+text Она не слушает.
+text Она бережно поднимает каждую книгу и вставляет их обратно на полку.
+text Ну ладно. Пожалуй, помогу.
+text @[Томоя]
+text Вот так вот...
+text Я поднимаю ближайшую книгу и запихиваю её в случайную свободную щель на полке.
+setvar strS[1001] = "CGKT10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BQS.aac
+text @[Котоми]
+text Это не туда.
+text Она сразу же на это указывает.
+sound BQT.aac
+text @[Котоми]
+text Сюда...
+text Она пытается указать на правильное место, и её палец касается моей руки.
+setvar strS[1001] = "CGKT19B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT19B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BQU.aac
+text @[Котоми]
+text Ах...
+text Она быстро отдёргивает руку.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Она смотрит на кончики своих пальцев так, будто они обожглись.
+text В этом жесте есть что-то по-настоящему наивное.
+text Кажется, это первый раз, когда я вижу, как она ведёт себя по-женски.
+text @[Томоя]
+text ...
+if intF[407] == 1
+	goto s20
+fi
+goto 22
+label s20
+text @[Томоя]
+text Ты что, не замечала, как сильно я тыкал тебя в лицо чуть раньше?
+setvar strS[1001] = "CGKT11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BQV.aac
+text @[Котоми]
+text ???
+text @[Томоя]
+text *Вздох* Забудь.
+text Тут столько всего можно было бы отметить, что я даже не знаю, с чего начать.
+text Скажем так, хорошо, что я выяснил, что она не такая уж бесчувственная.
+label 22
+text В любом случае, похоже, от меня будет мало толку в расстановке книг.
+text Я решаю просто молча наблюдать.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я наклоняюсь, чтобы поднять книги с пола.
+text Никаких меток по категориям нет. Похоже, она узнаёт каждую книгу просто по обложке.
+text Она бесшумно задвигает корешок книги на её законное место на полке.
+text По тому, насколько умело двигаются её руки, я вижу, как сильно она заботится об этих книгах.
+text Есть ли у меня хоть что-то, о чём я забочусь настолько, чтобы вести себя так же?
+setvar strS[1001] = "CGKT12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BQW.aac
+text @[Котоми]
+text Томоя-кун, тебе нравятся книги?
+text Она задаёт мне этот вопрос, будто читая мои мысли.
+text @[Томоя]
+text Не особо нравятся. В последнее время я мало что читал.
+sound BQX.aac
+text @[Котоми]
+text Ах...
+text Говорит она с ноткой разочарования в голосе.
+text Было время, когда я жадно читал книги.
+text Тогда я думал, что если найду слова, которые тронут меня за душу, я смогу измениться сам.
+text Мне это быстро наскучило.
+text Книги, что я тогда купил, теперь покрыты пылью у меня в комнате.
+text @[Томоя]
+text Тебе же нравятся книги, да?
+sound BQY.aac
+text @[Котоми]
+text Да. Я их люблю.
+text @[Томоя]
+text Но разве не скучно, если ты только и делаешь, что читаешь?
+setvar strS[1001] = "CGKT11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BQZ.aac
+text @[Котоми]
+text ?
+text @[Томоя]
+text Ты вообще когда-нибудь выходишь на улицу или общаешься с другими людьми?
+text Я не вкладываю в это особого смысла. Просто пытаюсь поддержать разговор.
+setvar strS[1001] = "CGKT10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BR0.aac
+text @[Котоми]
+text ...
+text Она умолкает.
+text Я вспоминаю, что сказал Сунохара.
+text «Я слышал, что она освобождена от уроков и учится сама, потому что наша школа не преподаёт на достаточно высоком уровне».
+text Любой университет примет её, и она может делать всё, что хочет, без каких-либо последствий.
+text Это может прозвучать странно от меня, но я не думаю, что это правильно.
+text @[Томоя]
+text Слушай, ты...
+text @[Томоя]
+text Ты всегда приносишь свои собственные книги.
+text Не успеваю я опомниться, как уже меняю тему.
+text @[Томоя]
+text Ты не читаешь книги, что здесь?
+setvar strS[1001] = "CGKT12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BR1.aac
+text @[Котоми]
+text Нет.
+sound BR2.aac
+text @[Котоми]
+text Мне нравятся и здешние книги тоже, но...
+sound BR3.aac
+text @[Котоми]
+text Я их уже все прочитала.
+text Говорит она так, будто в этом нет ничего особенного.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я оглядываю всю библиотеку.
+text Высокие книжные полки выстроены систематично от окон до середины комнаты.
+text На полках стоят всевозможные книги.
+text По сравнению с большой библиотекой, эта, может, и не так уж велика.
+text Но здесь всё равно десятки тысяч книг.
+text Никак не может быть, чтобы она прочитала их все.
+text @[Томоя]
+text Эта шутка совсем не смешная.
+sound BR4.aac
+text @[Котоми]
+text ???
+text Что означает эта реакция?
+text Пока я сижу тут в лёгком шоке, она ставит последнюю книгу обратно на полку.
+setvar strS[1001] = "CGKT12B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BR5.aac
+text @[Котоми]
+text Это все они. Вернулись на свои места, как и были.
+sound BR6.aac
+text @[Котоми]
+text Когда они все стоят вместе, они выглядят такими счастливыми.
+text Я где-то уже слышал эту фразу.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BR7.aac
+text @[Котоми]
+text Вот так вот...
+text Она садится на свою подушку.
+text Она тянется за книгой... хотя нет. Она почему-то пристально смотрит на меня.
+setvar strS[1001] = "CGKT12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BR8.aac
+text @[Котоми]
+text Хочешь пообедать?
+text @[Томоя]
+text ...
+text Откуда это вообще взялось?
+text @[Томоя]
+text Обед уже давно закончился.
+setvar strS[1001] = "CGKT11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BR9.aac
+text @[Котоми]
+text ?
+text @[Томоя]
+text Хотя, если подумать, нет никакого правила, запрещающего есть после обеда.
+text Я оправдываюсь.
+text Она достаёт свой ланч-бокс из сумки и снимает крышку.
+setvar strS[1001] = "CGKT12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BRA.aac
+text @[Котоми]
+text Вот.
+text @[Томоя]
+text Ладно.
+text Я принимаю его, потому что это кажется уместным.
+sound BRB.aac
+text @[Котоми]
+text Сегодняшнее меню в западном стиле.
+sound BRC.aac
+text @[Котоми]
+text Я горжусь этим куриным рулетом, завёрнутым в бекон.
+sound BRD.aac
+text @[Котоми]
+text Возможно, я пережарила омлет.
+sound BRE.aac
+text @[Котоми]
+text Рис — это плов. Он может быть немного жёстким.
+text Она изо всех сил старается описать еду.
+text Она указывает на каждое из блюд в своём маленьком ланч-боксе.
+text Рулет в беконе, омлет и плов — все они на половину меньше, чем были изначально.
+text @[Томоя]
+text ...
+setvar strS[1001] = "CGKT11B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BRF.aac
+text @[Котоми]
+text ?
+text @[Томоя]
+text Ты это специально оставила для меня?
+setvar strS[1001] = "CGKT10B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT10B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Она кивает, будто это и так очевидно.
+setvar strS[1001] = "CGKT12B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BRG.aac
+text @[Котоми]
+text Я сыта.
+text Она склоняет голову набок и улыбается.
+text Никак не может быть, чтобы половина этого ланч-бокса могла её насытить.
+text Она никак не могла знать, приду ли я сегодня сюда вообще.
+text Я чувствую, как что-то в моём сердце болезненно сжимается.
+text Хоть это и кажется уютным, будто хорошо изношенная одежда, что я ношу годами, это также ощущается как заноза вины.
+text Именно такое впечатление производят её слова.
+choice Я не могу оставить её в покое|Я не хочу иметь с ней ничего общего
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 1
+	goto s21
+fi
+goto 26
+label s21
+text @[Томоя]
+text Эм...
+text Я машинально чешу чёлку.
+text @[Томоя]
+text Если быть добрым с незнакомцами, они могут неправильно понять.
+text Говорю я, возвращая ей ланч-бокс.
+setvar strS[1001] = "CGKT11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Она смотрит мне в лицо с растерянным видом.
+sound BRH.aac
+text @[Котоми]
+text Ты сыт, Томоя-кун?
+text Что-то в моём сердце снова сжимается.
+text @[Томоя]
+text Я пойду.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Внезапно охваченный чувством вины, я разворачиваюсь.
+sound BRI.aac
+text @[Котоми]
+text До завтра.
+text Кажется, я слышу это позади себя.
+text Я молчу, выходя из библиотеки.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s22
+fi
+goto 23
+label s22
+setvar strS[1000] = ""
+label 23
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG020"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s23
+fi
+goto 24
+label s23
+setvar strS[1000] = ""
+label 24
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Томоя]
+text Фух...
+text Я издаю огромный вздох.
+text @[Томоя]
+text (Я не умею обращаться с этим местом.)
+text Учитывая, как часто я прогуливал, мне вообще не стоило бы сейчас тут находиться.
+text Эта странная книголюбивая отличница...
+text Ей стоит тщательнее выбирать друзей.
+text @[Томоя]
+text Мне стоит вернуться на урок.
+text Я засовываю руки в карманы и начинаю идти.
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s24
+fi
+goto 25
+label s24
+setvar strS[1000] = ""
+label 25
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+label 26
+text @[Томоя]
+text Эм...
+setvar strS[1001] = "CGKT11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Я машинально чешу чёлку.
+text Если быть добрым с незнакомцами, они могут неправильно понять.
+text Я подумываю о том, чтобы прочитать ей нотацию, но мне уже всё равно.
+text Она ждёт моего ответа с обеспокоенным видом.
+text @[Томоя]
+text Я немного возьму.
+setvar strS[1001] = "CGKT12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BRJ.aac
+text @[Котоми]
+text Хорошо.
+sound BRK.aac
+text @[Котоми]
+text Вот твои палочки.
+text @[Томоя]
+text Ладно.
+text Я беру чёрные лакированные палочки.
+text Я откусываю кусочек от её горячо расхваленного рулета в беконе.
+text @[Томоя]
+text Ага.
+text Довольно вкусно.
+text Затем омлет, затем плов...
+text Как она и говорила, он немного жёсткий.
+text Но вкусно. На вкус так, будто это готовил кто-то с большим кулинарным опытом.
+sound BRL.aac
+text @[Котоми]
+text Вкусно?
+text @[Томоя]
+text Неплохо.
+setvar strS[1001] = "CGKT15B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT15B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BRM.aac
+text @[Котоми]
+text Это хорошо.
+text Она облегчённо вздыхает и улыбается.
+text Она и правда выглядит счастливой, услышав это.
+text Пока она наблюдает, я продолжаю есть блюда.
+text Пока я ем, я продолжаю думать.
+text Кто она такая?
+text Зачем я вообще пришёл её проведать?
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text В ланч-боксе и правда не так уж много еды.
+text Я быстро его доедаю.
+text @[Томоя]
+text Было вкусно.
+text Я возвращаю ей пустой ланч-бокс и палочки.
+text @[Томоя]
+text Большое спасибо. Правда.
+text Эти слова срываются у меня с языка сами собой.
+setvar strS[1001] = "CGKT10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BRN.aac
+text @[Котоми]
+text Эм...
+text Поколебавшись в поисках подходящих слов, она произносит что-то приглушённым голосом.
+setvar strS[1001] = "CGKT11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BRO.aac
+text @[Котоми]
+text Ах...
+sound BRP.aac
+text @[Котоми]
+text Я забыла купить чай.
+sound BRQ.aac
+text @[Котоми]
+text Я схожу...
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Томоя]
+text Погоди.
+text Я быстро её останавливаю.
+text Взглянув на настенные часы, я вижу, что до конца урока осталось всего десять минут.
+text В отличие от неё, мне прогуливать нельзя. Я здесь под предлогом того, что ищу Сунохару.
+text Если я не хочу, чтобы меня отметили как прогульщика, мне лучше вернуться.
+text @[Томоя]
+text У меня нет времени, так что мне нужно идти...
+text Будто увлечённая тем, что я встаю, она тоже поднимается со своей подушки.
+text Стоя на босых ногах, она ждёт, что я что-то скажу.
+text Если бы я не пришёл, она бы просто продолжала ждать здесь.
+text Окружённая молчаливыми книгами, она бы ждала с нетронутой половиной своего обеда.
+text Вот что я чувствую.
+if intF[3] == 0
+	goto s25
+fi
+goto 27
+label s25
+goto 28
+goto 36
+label 27
+if intF[3] == 1
+	goto s26
+fi
+goto 36
+label s26
+choice Начать есть вместе с Котоми|Продолжать есть с Нагисой как обычно
+setvar intF[1089] = selected
+sound 02.aac
+setvar intF[1089] - 1
+if intF[1089] == 0
+	goto s27
+fi
+goto 32
+label s27
+label 28
+text @[Томоя]
+text Слушай...
+setvar strS[1001] = "CGKT11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BRR.aac
+text @[Котоми]
+text ?
+text @[Томоя]
+text Со следующей недели я начну обедать здесь.
+text @[Томоя]
+text Куплю хлебных булочек или что-то такое.
+text @[Томоя]
+text Так что съедай весь свой обед сама, ладно?
+text @[Томоя]
+text Заболеешь, если не будешь есть достаточно.
+text У неё на лице то же самое обычное отсутствующее выражение.
+text Будто она позволяет каждому моему слову впитаться в себя.
+setvar strS[1001] = "CGKT12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Она кивает.
+sound BRS.aac
+text @[Котоми]
+text Хорошо.
+sound BRT.aac
+text @[Котоми]
+text Хорошо, я так и сделаю.
+sound BRU.aac
+text @[Котоми]
+text Но...
+setvar strS[1001] = "CGKT15B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT15B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BRV.aac
+text @[Котоми]
+text Я буду рад, если ты тоже съешь обед, который приготовлю я.
+text Она слегка прищуривается и ждёт моей реакции.
+text @[Томоя]
+text Хорошо.
+text @[Томоя]
+text Поделюсь с тобой половиной своих булочек.
+sound BRW.aac
+text @[Котоми]
+text Пополам...
+setvar strS[1001] = "CGKT12B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BRX.aac
+text @[Котоми]
+text Да. Пополам.
+text Она повторяет мои слова, как маленький ребёнок, а затем смеётся.
+text Мне хочется остаться и расслабиться с ней, но у меня правда мало времени.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Томоя]
+text До встречи...
+text Я разворачиваюсь и быстро иду к двери.
+text В момент, когда я открываю деревянную дверь...
+sound BRY.aac
+text @[Котоми]
+text Томоя-кун.
+text Она меня останавливает.
+text В её голосе звучит серьёзная нотка, какой я раньше не слышал.
+text @[Томоя]
+text Что... такое?
+text В замешательстве я оборачиваюсь.
+setvar strS[1001] = "CGKT10B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT10B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Нет ответа.
+text Она медленно поворачивается ко мне.
+text Она сжимает вместе свои тонкие голые ноги.
+setvar strS[1001] = "CGKT10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text Будто стараясь отбросить все сомнения в себе, она смотрит прямо на меня.
+text Затем произносит...
+setvar strS[1001] = "CGKT15A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT15A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BRZ.aac
+text @[Котоми]
+text «Позавчера я видела кролика...
+sound BS0.aac
+text @[Котоми]
+text ...а вчера — оленя, а сегодня — тебя.»
+text @[Томоя]
+text ...
+text @[Томоя]
+text А?
+text Понятия не имею, о чём она вообще говорит.
+text Это строчка из какой-то пьесы или чего-то такого?
+text По крайней мере, я никогда раньше этого не слышал.
+text @[Томоя]
+text Что это было?
+setvar strS[1001] = "CGKT19A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT19A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BS1.aac
+text @[Котоми]
+text Эм...
+setvar strS[1001] = "CGKT16B"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT16B.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BS2.aac
+text @[Котоми]
+text Ничего.
+text Она улыбается.
+text Но в этом есть что-то неловкое.
+text Это похоже на волшебницу, испортившую своё любимое заклинание, а затем пытающуюся это скрыть.
+setvar strS[1001] = "CGKT12A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT12A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BS3.aac
+text @[Котоми]
+text До завтра.
+text И в итоге мы снова обмениваемся теми же словами.
+text @[Томоя]
+text Ага.
+text Я машу рукой и закрываю дверь библиотеки.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s28
+fi
+goto 29
+label s28
+setvar strS[1000] = ""
+label 29
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+setvar strS[1000] = "BG020"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s29
+fi
+goto 30
+label s29
+setvar strS[1000] = ""
+label 30
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM14.mp3
+text Я спешу прочь.
+text Мои шаги эхом разносятся по пустому коридору.
+text Послеполуденное солнце пробивается сквозь окна и мерцает на полу, будто я на дне океана.
+text Я осознаю, что остановился на месте.
+text @[Томоя]
+text Котоми...-тян.
+text Шепчу я себе под нос.
+text Что-то меня беспокоит.
+text Лёгкий оттенок вины в моём сердце, от которого я никак не могу избавиться.
+text Быть здесь приятно, но мне всё равно хочется уйти. Что-то вроде такого чувства.
+text Я чувствовал то же самое, когда впервые её встретил...
+text @[Томоя]
+text ...?
+text Этот огромный вопросительный знак нависает у меня над головой, и я пытаюсь поскорее от него избавиться.
+text У меня больше нет времени на пустую трату.
+text Я бегу быстрее.
+setvar intF[405] = 1
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s30
+fi
+goto 31
+label s30
+setvar strS[1000] = ""
+label 31
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+goto 36
+label 32
+if intF[1089] == 1
+	goto s31
+fi
+goto 36
+label s31
+text @[Томоя]
+text Слушай...
+setvar strS[1001] = "CGKT11A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT11A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+sound BS4.aac
+text @[Котоми]
+text ?
+text @[Томоя]
+text Я обещал обедать вместе с кое-кем ещё. Просто сегодня так получилось, что я взял немного твоего...
+text @[Томоя]
+text На следующей неделе мне снова нужно есть с тем человеком. Так что тебе не нужно оставлять мне ничего.
+text Я рассказываю ей всё.
+text Мне нужно быть прямым и строгим на этот счёт, иначе она, вероятно, не поймёт.
+text Она смотрит на меня в замешательстве.
+text @[Томоя]
+text Другими словами, съедай весь свой обед сама.
+text @[Томоя]
+text Это плохо скажется на твоём здоровье, если ты не будешь есть достаточно.
+setvar strS[1001] = "CGKT10A"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+setimg CGKT10A.png
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text После долгой паузы она серьёзно кивает.
+sound BS5.aac
+text @[Котоми]
+text Хорошо.
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Томоя]
+text Что ж, тогда...
+text Пока я иду к двери, она продолжает смотреть на меня.
+sound BS6.aac
+text @[Котоми]
+text Томоя-кун, ты вернёшься?
+text @[Томоя]
+text Если захочется.
+sound BS7.aac
+text @[Котоми]
+text Тогда до завтра.
+text Кажется, я слышу это позади себя.
+text Я молчу, выходя из библиотеки.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s32
+fi
+goto 33
+label s32
+setvar strS[1000] = ""
+label 33
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+music BGM14.mp3
+setvar strS[1000] = "BG020"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s33
+fi
+goto 34
+label s33
+setvar strS[1000] = ""
+label 34
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 88
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+text @[Томоя]
+text Фух...
+text Я издаю огромный вздох.
+text @[Томоя]
+text (Я не умею с ней обращаться...)
+text Не то чтобы она мне не нравилась. Просто рядом с ней утомительно.
+text Уверен, у неё нет друзей.
+text @[Томоя]
+text Мне лучше вернуться до конца урока...
+text Я начинаю бежать по пустому коридору.
+music ~
+setvar strS[1000] = "KURO"
+setvar intA[1000] = 1
+if intA[1000] == 0
+	goto s34
+fi
+goto 35
+label s34
+setvar strS[1000] = ""
+label 35
+setvar strS[1001] = "NONE"
+setvar intF[1113] = intF[1112]
+bgload {$strS[1000]}.jpg 30
+if intF[1113] == 1
+	if strS[1000] < "C"
+		setimg {$strS[1004]}.png -7 -7
+	fi
+fi
+if rtf1 != ""
+	jump $rtf1 $rtl1
+fi
+jump $rtf0 $rtl0
+label 36
